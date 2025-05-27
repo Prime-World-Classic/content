@@ -537,27 +537,54 @@ height: 100cqh;
 	
 }
 
+
+/* Базовый стиль кнопки закрытия */
 .close-button {
-    top: -4cqh;
-    right: -4cqh;
-    background-size: contain;
     position: absolute;
-    transform: scale(0.8);
-    transition: transform 0.2s ease; /* Добавляем плавный переход */
+    top: 0;
+    right: 0;
+    width: 48px;
+    height: 48px;
+    background-image: url('content/icons/close-cropped.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.3s ease;
+    border: none;
+    background-color: transparent;
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transform: translate(50%, -40%); /* Сдвигаем кнопку на половину её ширины/высоты */
 }
 
+
+
+/* Альтернативный вариант - увеличение всей кнопки */
+ .close-button:hover {
+    opacity: 1;
+    transform: translate(50%, -40%) scale(1.1);
+} 
+
+/* Для поддержки темной/светлой темы */
+@media (prefers-color-scheme: light) {
+    .close-button {
+        filter: invert(1);
+    }
+}
+
+/* Модификаторы ДОЛЖНЫ содержать только отличия от базового стиля */
 .build-list-close {
-    top: -2.5cqh;
-    right: -1cqw;
-}
-
-.close-button:hover {
-    transform: scale(0.9); /* Увеличиваем масштаб при наведении */
+    /* Если нужны специфичные стили, иначе можно удалить этот класс */
 }
 
 .close-image-style {
-	width: 8cqh;
-	height: 8cqh;
+    /* Фиксируем размеры, переопределяя возможные другие стили */
+    width: 48px !important;
+    height: 48px !important;
+    /* !important используется как крайняя мера, если другие стили переопределяют размеры */
 }
 
 .build-active-bar-hint {
@@ -635,15 +662,7 @@ button.build-action-item:hover {
 }
 
 
-.build-list {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
 
-	overflow-y: hidden;
-	overflow-x: scroll;
-	max-width: 70cqw;
-}
 .button-build--wrapper {
 	height: 4.5cqh;
 }
@@ -665,7 +684,15 @@ button.build-action-item:hover {
     color: #fff;
     text-align:center;
 }
-
+.build-list {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+    white-space: nowrap;
+	overflow-y: hidden;
+	overflow-x: scroll;
+	max-width: 70cqw;
+}
 
 .build-list::-webkit-scrollbar {
 	background-color: rgba(0, 51, 0, 0.479);
@@ -763,15 +790,23 @@ button.build-action-item:hover {
 }
 
 
-.build-talent-item{
-	width: 100cqw;
-	height: 100cqw;
-	background-size: contain;
-	background-position:center;
-	background-repeat:no-repeat;
-	position: static;
+.build-talent-item {
+    width: 100cqw;
+    height: 100cqw;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; /* Изменено с static на relative */
+    transform-origin: center !important; /* Масштабирование от центра */
+    will-change: transform; /* Оптимизация анимации */
 }
-
+.build-talent-item.dragging {
+    transform: scale(1.1) !important;
+    transform-origin: center center !important;
+    transition: transform 0.1s ease-out !important;
+    z-index: 9999 !important;
+    position: absolute !important;
+}
 
 .build-talent-item-container .build-talent-item[data-active='1']:after,
 .build-rarity-other:after,
@@ -1140,35 +1175,118 @@ text-align:center;
 
 }
 
-.adm{
-	
-	display:flex;
-	flex-flow:column nowrap;
-	align-items:center;
-	overflow-y:scroll;
-	height:100cqh;
-	color:rgba(255,255,255,0.7)
-	
-	
+.adm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  overflow-y: auto;
+  height: 100cqh;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: rgba(25, 25, 35, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
 }
 
-.adm div{
-	display:flex;
-	flex-flow:row nowrap;
-	padding:1cqh 1cqw;
-	
-	
+.adm div {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0.75rem; /* Уменьшил отступ между элементами */
+  padding: 0.5rem 0.75rem; /* Уменьшил padding */
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px; /* Уменьшил скругление */
+  transition: all 0.2s ease;
 }
 
-.adm input{
-	width:200px;
-	border:none;
-	font-size:28px;
-	background:rgba(255,255,255,0.1);
-	border-radius:25px;
-	
+.adm-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 0.5rem;
 }
 
+.adm div:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.adm input {
+  width: 100%;
+  max-width: 250px; /* Уменьшил максимальную ширину */
+  padding: 0.5rem 1rem; /* Уменьшил padding */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Уменьшил толщину границы */
+  font-size: 0.9rem; /* Уменьшил размер шрифта */
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 6px; /* Уменьшил скругление */
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.adm input:focus {
+  outline: none;
+  border-color: rgba(100, 150, 255, 0.5);
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 0 2px rgba(100, 150, 255, 0.2); /* Уменьшил тень */
+}
+
+/* Уменьшенные лейблы */
+.adm label {
+  min-width: 80px; /* Уменьшил минимальную ширину */
+  font-size: 0.8rem; /* Уменьшил размер шрифта */
+  color: rgba(255, 255, 255, 0.6); /* Сделал текст менее заметным */
+}
+
+/* Стиль для скроллбара */
+.adm::-webkit-scrollbar {
+  width: 6px; /* Уменьшил ширину */
+}
+
+.adm::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.adm::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px; /* Уменьшил скругление */
+}
+
+.adm::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+.close-btn {
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  background: rgba(255, 50, 50, 0.2);
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  font-weight: bold;
+}
+.close-btn:hover {
+  background: rgba(255, 50, 50, 0.3);
+}
+
+
+/* Стиль для контейнера талантов */
+.talents-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Стиль для отдельного таланта */
+.talent-item {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
 .error-message, .notify-message{
 	
 	position:fixed;
@@ -1273,8 +1391,9 @@ text-align:center;
 
 .splash-text{
 	
-	margin:0 15cqw;
-	font: 1.5cqw / 1.3 Tahoma;
+	text-align: center;
+	margin:0 0cqw;
+	font: 1.2rem / 1.3 Tahoma;
 	color:rgba(255,255,255,0.9);
 	text-shadow: rgba(0, 0, 0, 0.3) 0 0 0.5cqw;
 	
@@ -1332,30 +1451,35 @@ text-align:center;
 	
 }
 
-.splash-content{
-	
-	width: 35cqw;
-	display:flex;
-	flex-flow:column nowrap;
-	font: 2rem / 1 Tahoma;
-	color:rgba(255,255,255,0.8);
-	container-type: inline-size;
-	
+.splash-content {
+    --splash-text-color: rgba(255, 255, 255, 0.9);
+    --splash-bg-color: linear-gradient(to bottom, rgba(4, 32, 42, 0.9), rgba(18, 69, 73, 0.85), rgba(21, 51, 59, 0.8), rgba(18, 69, 73, 0.85), rgba(4, 32, 42, 0.9));
+    
+    width: min(35cqw, 500px); /* Ограничение максимальной ширины */
+    padding: 2.5cqmin;
+    display: flex;
+    flex-direction: column;
+    background: var(--splash-bg-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(8px);
+    font-family: Tahoma, sans-serif;
+    font-size: clamp(1.5rem, 3.5cqw, 2rem); /* Адаптивный размер текста */
+    line-height: 1.3;
+    color: var(--splash-text-color);
+    text-align: center;
+    container-type: inline-size;
+    border: 0.1cqh solid rgb(158, 155, 104);
 }
 
-.splash-content div{
-	
-	margin-bottom:2cqh;
-	
-}
 
 .splash-content input{
 	
 transition: all 0.3s ease-out;
 width:100%;
-padding: 2vmin 0;
+padding: 0.6vmin 0;
 margin-bottom:15px;
-font: 1.5rem / 1 Tahoma;
+font: 1.0rem / 1 Tahoma;
 background:rgba(255,255,255,0.5);
 border:none;
 border-radius:50px;
@@ -1369,33 +1493,90 @@ text-align:center;
 	background:rgba(255,255,255,0.8);
 	
 }
+.splash-content-window {
+    --splash-text-color: rgba(255, 255, 255, 0.9);
+    --splash-bg-color: linear-gradient(to bottom, rgba(4, 32, 42, 0.9), rgba(18, 69, 73, 0.85), rgba(21, 51, 59, 0.8), rgba(18, 69, 73, 0.85), rgba(4, 32, 42, 0.9));
+    
+    width: min(90cqw); /* Ограничение максимальной ширины */
+    padding: 2.5cqmin;
+    display: flex;
+    flex-direction: column;
+    background: var(--splash-bg-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(8px);
+    font-family: Tahoma, sans-serif;
+    font-size: clamp(1.5cqw, 3.5cqh, 2cqh); /* Адаптивный размер текста */
+    line-height: 1.3;
+    color: var(--splash-text-color);
+    text-align: center;
+    container-type: inline-size;
+    border: 0.1cqh solid rgb(158, 155, 104);
+}
 
 
-.splash-content-button{
+.splash-content-window input{
 	
-flex-grow:1;
 transition: all 0.3s ease-out;
-padding: 2vmin 2vmin;
-border-radius:50px;
-font: 1.3rem / 1 Tahoma;
-text-align:center;
-background:rgba(255,255,255,0.2);
-color:rgba(0,0,0,0.7);
-margin:0.3cqh 0;
-	
-	
-}
-
-.splash-content-button:hover{
-
+width:100%;
+padding: 0.6vmin 0;
+margin-bottom:15px;
+font: 1.0rem / 1 Tahoma;
 background:rgba(255,255,255,0.5);
-
+border:none;
+border-radius:50px;
+color:rgba(0,0,0,0.9);
+text-align:center;
+	
 }
 
+
+.splash-content-window input:hover{
+	background:rgba(255,255,255,0.8);
+	
+}
+
+.splash-content-button {
+    padding: 1.5cqmin 3cqmin;
+    font-size: 1.0rem;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.25s ease-out;
+}
+/* Адаптация для маленьких экранов */
+@container (width < 300px) {
+    .splash-content {
+        padding: 5cqmin;
+        gap: 3cqmin;
+        font-size: 1.3rem;
+    }
+}
+
+/* Элементы внутри контента */
+.splash-content > * {
+    margin: 4px;
+    padding: 0.5cqmin 0;
+}
+.splash-content-button:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+}
+
+.splash-content input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+}
 .splash-content .close {
-	position: absolute;
-	top: 1cqh;
-	right: 2cqw;
+	 top: -4cqh;
+    right: -4cqh;
+    background-size: contain;
+    position: absolute;
+    transform: scale(0.8);
+    transition: transform 0.2s ease; /* Добавляем плавный переход */
 }
 
 .splash-content .wrap {
@@ -1406,7 +1587,88 @@ background:rgba(255,255,255,0.5);
 .splash-content .wrap div {
 	margin: 2cqh;
 }
+.btn-duplicate {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    background: url('content/icons/copy-white.svg') no-repeat center;
+    background-size: contain;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+.build-action-item:hover .btn-duplicate {
+	opacity: 1;
+    filter: brightness(1.2); /* Усиливаем яркость белого */
+}
 
+.btn-duplicate:hover {
+    filter: invert(0.6) brightness(1.4); /* Эффект при наведении */
+}
+.btn-danger {
+    background-color: #ff4d4d;
+    color: white;
+}
+.btn-danger:hover {
+    background-color: #ff3333;
+}
+
+/* Стили для окна замены билда */
+.build-replace-title {
+    font: 1.5rem / 1 Tahoma;
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 3cqh;
+    text-align: center;
+}
+
+.build-replace-btn {
+    transition: all 0.3s ease-out;
+    width: 100%;
+    padding: 2vmin 0;
+    margin-bottom: 1cqh;
+    font: 1.3rem / 1 Tahoma;
+    background: rgba(255,255,255,0.3);
+    border: none;
+    border-radius: 50px;
+    color: rgba(0,0,0,0.9);
+    text-align: center;
+}
+
+.build-replace-btn:hover {
+    background: rgba(255,255,255,0.6);
+}
+
+.build-replace-cancel {
+    transition: all 0.3s ease-out;
+    width: 100%;
+    padding: 2vmin 0;
+    margin-top: 2cqh;
+    font: 1.3rem / 1 Tahoma;
+    background: rgba(255,255,255,0.3);
+    border: none;
+    border-radius: 50px;
+    color: rgba(0,0,0,0.9);
+    text-align: center;
+}
+
+.build-replace-cancel:hover {
+    background: rgba(255, 100, 100, 0.6);
+}
+
+/* Адаптация под мобильные устройства */
+@container (max-width: 500px) {
+    .build-replace-btn,
+    .build-replace-cancel {
+        font-size: 1.1rem;
+        padding: 1.5vmin 0;
+    }
+    
+    .build-replace-title {
+        font-size: 1.3rem;
+    }
+}
 .mm-timer{
 	
 	display:flex;
@@ -2165,57 +2427,97 @@ border-radius:5px;
 	
 }
 
-.search{
-	
-	display:flex;
-	flex-flow:column nowrap;
-	width:50cqw;
-	
+.search {
+    --search-text-color: rgba(255, 255, 255, 0.9);
+    --search-bg-color: linear-gradient(to bottom, rgba(4, 32, 42, 0.9), rgba(18, 69, 73, 0.85), rgba(21, 51, 59, 0.8), rgba(18, 69, 73, 0.85), rgba(4, 32, 42, 0.9));
+    
+    display: flex;
+    flex-flow: column nowrap;
+    width: min(50cqw, 500px);
+    padding: 2.5cqmin;
+    background: var(--search-bg-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(8px);
+    font-family: Tahoma, sans-serif;
+    color: var(--search-text-color);
+    container-type: inline-size;
+    border: 0.1cqh solid rgb(158, 155, 104);
 }
 
-.search-input{
-	
-	height:10%;
-	width:94%;
-	padding:0 3%;
-	font: 3cqw / 1 Tahoma;
-	background:rgba(255,255,255,0.1);
-	border-radius:15px;
-	color: rgba(255, 255, 255, 0.7);
-	box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
-	
-}
-.search-body{
-	
-	display:flex;
-	flex-flow:row wrap;
-	margin:5cqh 0;
-	
+.search-input {
+    width: 100%;
+    padding: 1.2cqmin 2.5cqmin;
+    margin-bottom: 1.5cqmin;
+    font-size: clamp(0.9rem, 1.5cqw, 1.2rem);
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    border-radius: 50px;
+    color: var(--search-text-color);
+    text-align: center;
+    transition: all 0.3s ease-out;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.search-body div{
-	
-	padding: 1.5cqh 1.5cqw;
-	font: 1.5cqw / 1 Tahoma;
-	color: rgba(255, 255, 255, 0.7);
-	text-shadow: rgba(0, 0, 0, 0.3) 0 0 5px;
-	
+.search-input:hover {
+    background: rgba(255, 255, 255, 0.25);
 }
 
-.search-body div:hover{
-	
-	background:rgba(255,255,255,0.3);
-	border-radius:15px;
-	text-decoration:underline;
-	
+.search-input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 0 2px rgba(100, 150, 255, 0.3);
 }
 
-.search-bottom{
-	
-	text-align:center;
-	color: rgba(255, 255, 255, 0.7);
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
 }
 
+.search-body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1cqmin;
+    margin: 1.5cqmin 0;
+}
+
+.search-body div {
+    padding: 1cqmin 2cqmin;
+    font-size: clamp(0.8rem, 1.5cqw, 1rem);
+    color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.25s ease-out;
+}
+
+.search-body div:hover {
+    background: rgba(255, 255, 255, 0.3);
+    text-decoration: underline;
+    transform: translateY(-1px);
+}
+
+.search-bottom {
+    text-align: center;
+    font-size: clamp(0.8rem, 1.5cqw, 1rem);
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 1cqmin;
+}
+
+/* Адаптация для маленьких экранов */
+@container (width < 300px) {
+    .search {
+        padding: 3cqmin;
+        width: 80cqw;
+    }
+    
+    .search-input {
+        padding: 1.5cqmin;
+    }
+    
+    .search-body div {
+        padding: 1.2cqmin;
+    }
+}
 
 #ADMStat{
 	
@@ -2939,7 +3241,7 @@ border-radius:5px;
 	right: 0;
 	text-align: center;
 	width: calc(min(26cqh, 19cqw));
-	height: 53cqh;
+	height: 59cqh;
 	/*background-color: #8d8b8b;*/
 	border-radius: 2cqh;
 	border: 0.1cqh solid rgb(158, 155, 104);
@@ -2949,6 +3251,79 @@ border-radius:5px;
 	align-items: center;
 	justify-content: center;
 	padding: 1cqh 1cqh;
+}
+.keybinding-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1cqh 0;
+}
+
+.keybinding-label {
+    width: 60%;
+    text-align: left;
+    font: 2.5cqh / 1 Tahoma;
+    color: rgba(255,255,255,0.9);
+    text-shadow: rgba(0,0,0,0.3) 0 0 0.5cqh;
+}
+
+.castle-keybinding-input {
+    width: 30%;
+    height: 4cqh;
+    text-align: center;
+    font-size: 2.5cqh;
+    background: rgba(0,0,0,0.3);
+    border: 0.1cqh solid rgb(158, 155, 104);
+    border-radius: 0.5cqh;	
+    color: white;
+    transition: all 0.2s;
+}
+#wcastle-keybindings {
+	container-type: size;
+	position: absolute;
+	margin-top: 18cqh;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	width: calc(min(26cqh, 19cqw));
+	height: 59cqh;
+	/*background-color: #8d8b8b;*/
+	border-radius: 2cqh;
+	border: 0.1cqh solid rgb(158, 155, 104);
+	background-image: linear-gradient(to bottom, rgba(4, 32, 42, 0.9), rgba(18, 69, 73, 0.85), rgba(21, 51, 59, 0.8), rgba(18, 69, 73, 0.85), rgba(4, 32, 42, 0.9));
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 1cqh 1cqh;
+}
+/* Стили для кнопок */
+.reset-btn {
+    background-image: linear-gradient(to bottom, rgba(255,235,59,0.3), rgba(245,166,35,0.3));
+}
+
+.save-btn {
+    background-image: linear-gradient(to bottom, rgba(76,175,80,0.3), rgba(56,142,60,0.3));
+}
+
+/* Анимации */
+.input-success {
+    background-color: rgba(76,175,80,0.3) !important;
+}
+
+.input-error {
+    background-color: rgba(244,67,54,0.3) !important;
+}
+
+.action-success {
+    background-image: linear-gradient(to bottom, rgba(76,175,80,0.7), rgba(56,142,60,0.7)) !important;
+}
+
+.action-error {
+    background-image: linear-gradient(to bottom, rgba(244,67,54,0.5), rgba(211,47,47,0.5)) !important;
 }
 
 .menu-icons {
@@ -3241,6 +3616,7 @@ border-radius:5px;
 	position: absolute;
 	top: -10cqh;
 }
+
 @media (max-aspect-ratio: 1/1) {
 
 	.build-horizontal {
