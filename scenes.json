@@ -2720,7 +2720,7 @@
                 },
                 {
                     "name": "talent_farm",
-                    "translation": [1092.5, 1376.5],
+                    "translation": [1092.5, 1382.5],
                     "size": [6, 6],
                     "objects": [
                         {
@@ -13725,18 +13725,6 @@
                     "transform": [
                         1, 0, 0, 0,
                         0, 1, 0, 0,
-                        0, 0, 1, 0,
-                        0, 0, 0, 1
-                    ]
-                },
-                {
-                    "mesh": "ad/trees_10_03.bin",
-                    "indexCount": 36801,
-                    "shader": "shader_pos_norm_uv16_uv_ak",
-                    "texture": "trees",
-                    "transform": [
-                        1, 0, 0, 0,
-                        0, 1, 0, 2,
                         0, 0, 1, 0,
                         0, 0, 0, 1
                     ]
