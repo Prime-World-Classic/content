@@ -1,1 +1,18011 @@
-const _0x4487d4=_0x5ecf;function _0x72fb(){const _0xe3923b=['mute','build-talents','wss://relay.26rus-game.ru:8443','checkConnection','Сила\x20на\x20родной\x20земле','DST_COLOR','wcastle-keybindings','username','content/hero/','deco_4','Intelligence','sceneObjects','game_data5','findIndex','administration-text','Меню','Прорвать\x20оборону\x20противника\x20и\x20недопустить\x20подхода\x20вражеских\x20героев\x20к\x20более\x20уязвимым\x20союзникам\x20вашей\x20команды.','clearColor','mm-lobby-header','put','toUpperCase','POST','rgba(51,255,0,0.9)','music-volume-percentage','buildActions','castle-menu','both','Skins','blendEquation','Адорния','currentFixedValue','FRAMEBUFFER','openProtocolSocket','mm-lobby-middle-chat-button','joinParty','warn','menu-button-play','CLAMP_TO_EDGE','0.01','setAxisAngle','splash-content','txtNum','adm-header','build-hero','rgba(153,255,51,0.7)','Воля/Стойкость','https://store.steampowered.com/app/3684820/Prime_World_Classic','center\x20center','Volume','RGBA','build-active-bar','registration','writeFile','isSMEnabled','razumrz','winventory','send','currentScene','191016SaaAbc','contextmenu','fontWeight','toLocaleString','cursorGridPosition','castle-friend-add-group','scale','provorstvorz','Цветущая\x20сакура','SIMD','considerStacks','close-btn','transform','penetration','Топиарный\x20конус','https://vk.com/primeworldclassic','icon','checkUpdates','build-left','Запрос\x20не\x20выполнен,\x20ошибка\x20интернет\x20соединения','stringify','structure','BUILDING_OUTLINE_BAD','texImage2D','enterFullscreen','open','fullscreen-toggle','mat3(','EPSILON','focus','onmessage','vec2','background','game_data6','PReady','buff','preload','queue','set','radminPriority','castle-menu-label','DOMContentLoaded','login-box-forma-logo','Выберите\x20героя,\x20чтобы\x20отсортировать\x20игроков\x20зала\x20славы','cwd','cancelSortInventory','createObjectStore','frame-body','PATH_UPDATE','DISCONNECT_TOTAL','scroll','volume','win','scale(3)','.enemy.highlight','Volume\x20of\x20sounds','mViewProj','constructor','mat4(','Герои','MMPosition','Ошибка\x20сохранения\x20настроек:\x20','build-hero-stats-line','zFarSM','yellow','talentHeroEdit','Начало\x20боя\x20через\x2015...','url(\x22','prototype','castle-button-play-9','appendFile','deco_25','PATH_UPDATE_LINUX','offsetX','castle-button-play-m3','objectStore','UNSIGNED_SHORT','fullscreen','Создать\x20и\x20дублировать','createProgram','initDemo','writeHead','field','window','save','koef','targetAnimate','PATH_TEST_HASHES','fromXRotation','Строительство','list','cross','Скорость\x20на\x20вражеской\x20или\x20нейтральной\x20земле','transformMat2d','krajahpvz','defaultSettings','Никнейм','Вкл/Выкл\x20графики\x20замка','stoikostrz','heroAttackModifier','Бог','Ходов:\x20','fromValues','fromMat3','briefing','parentElement','Поиск\x20талантов...','Мы\x20отказались\x20от\x20поиска\x20боя\x20и\x20запуска\x20игры\x20Prime\x20World\x20через\x20браузер,\x20так\x20как\x20у\x20игроков\x20регулярно\x20возникали\x20с\x20этим\x20проблемы.','content/icons/vk.webp','readFile','<div\x20class=\x22castle-play-lobby-empty\x22><div>+</div></div>','wheel','Рейтинг','Сброс\x20пароля\x20произведен\x20успешно','deco_23','Вернуться\x20назад','/getConnectionData','Склад','token','mm-lobby-middle-hero-line-name','content/icons/telegram.webp','PUpdate','login-box-forma-button','Fight!','analysis','Урон','deco_29','getElementsByClassName','Здоровье','__proto__','castle-hero-item','events','Пальма\x20с\x20птицей','CULL_FACE','zNear','hero-item','Найти\x20уязвимых\x20героев\x20вражеской\x20команды\x20для\x20нанесения\x20урона\x20с\x20целью\x20ослабления\x20роли\x20противника\x20или\x20его\x20уничтожения.','menu','Switch\x20account','prepend','ONE','Сброс\x20пароля','getIndexAll','.build-level\x20div.highlight','italic','critProb','castle-button-play-mode','Круглое\x20дерево','RadminVPN\x20Priority','buildSelectName','https://t.me/primeworldclassic/8232','stak','url(content/talents/','defaultOptionAnimation','scrollLeft','move2','sceneName','currentPlayPwProtocol','DEPTH_COMPONENT','len','Загрузка\x20игровых\x20архивов\x204/8','trim','lobbyBuildView','Приглашение\x20отправлено\x20игроку\x20','popup','url(content/htalents/270.webp)','frontFace','builds','backgroundAnimate','stylesheet','\x2000:00','map-item-','reverse','getAttribLocation','add','bindFramebuffer','steamauthTitle','aram-text','uniform2f','querySelectorAll','Выдать\x20мут\x20чата\x20','Подтвердить','<mag>\x20</mag>','loadAsync','stopMove','offsetHeight','/OneDrive/Documents/My\x20Games/Prime\x20World\x20Classic/input_new.cfg',')\x22>','Exit\x20from\x20Prime\x20World','\x0a#define\x20RENDER_PASS_SM\x0a','setupSMCam','talent_farm','pageY','PMMActive','music','FALSE','observe','write','eventBack','uniform4f','viewMessage','talents2','targetFixedValue','user','ifst','getBlendFunc','USERPROFILE','Штурмовик','statModifiers','progress','leaveFullscreen','rgba(255,255,255,0.1)','viewbuild','gamev2','loadParty','lastChild','Поиск\x20геройских\x20талантов...','LINK_STATUS','build-active-bar-item','castleBottom','colorMask','Не\x20готов','backdropFilter','style','documents','keybindings','toLowerCase','Количество\x20символов\x20>\x20256','Стойкость','build-hero-stats-setting-land-type-rz','border-box','\x20мин.','Prime\x20World\x20Classic','scaleAndAdd','viewProjInv','scoring','[Х]','multiply','top-item-hero','innerText','readyParty','destroy','Начать\x20фарм','url(\x27content/icons/dice.svg\x27)','Привет\x20от\x20ifst\x20😎','Заблокировать','position','castle-menu-item-button\x20save-btn','blur(0)','fromScaling','top-scroll','scale(1)','level','fixedFovValues','game-view-info','castle-party-remove','getSumStat','exec','party-middle','fixedCameraHeightValues','Back','game_data1',',\x20toolbar=no,\x20menubar=no,\x20location=no,\x20scrollbars=no,\x20resizable=no,\x20status=no','Backspace','#7b001c','Сбросить','hitrost','ShowCurrentView','totalScore','Версия','inverse','duplicate','content/castle.css','scale(0.8)','build-action-item','Полковник','Учитывание\x20талантов,\x20которые\x20действуют\x20\x22на\x20всех\x20союзников/врагов\x22\x20кратковременно\x20или\x20постоянно,\x20активно\x20или\x20пассивно\x0a(например\x20таланты\x20красного\x20качества\x20\x22Гимн\x20решительности\x22,\x20Воодушевляющий\x20гимн\x22)','stoikost','wrapper','btn-duplicate','deco_11','Сила/Разум/Стойкость/Воля','%<speedtal></speedtal>\x20на\x20родной\x20земле','proxyHasConnection','buildingsNames','2cqw','launcher.cfg','title','altKey','silarz','skins','Маленькое\x20дерево','Топиарный\x20куб','update','action-error','castle-button-play-l1','soundEvent','Не\x20допустить\x20ослабления\x20героев\x20союзной\x20команды\x20и\x20любой\x20ценой\x20быть\x20готовым\x20спасти\x20каждого\x20из\x20них.','applyRz','Калі\x20збіваюцца\x20налады\x20гуку,\x20то\x20можна\x20адрэгуляваць\x20ў\x20мікшар\x20гучнасці:\x20правы\x20пстрык\x20мышы\x20на\x20значок\x20гуку\x20на\x20панэлі\x20задач\x20->\x20Мікшар\x20гучнасці\x20->\x20Значок\x20гульні\x20->\x20рабіце\x20цішэй','btn-talents','url(content/hero/','login-box-form-invite-text','login-box-forma','mm-lobby-middle-chat','sr_sum','all','sceneBuildings','getMaxStat','content/img/logo.webp','house','subtract','Верховный\x20повелитель','STATIC_DRAW','statsRefine','Попытка\x20соединения\x20','http','activeBarItems','PSO_SM','Громкость\x20музыки','ReadBuildings','DEPTH_ATTACHMENT','allowedToBuildGrid','Запрос\x20уже\x20выполнен,\x20пожалуйста\x20дождитесь\x20ответа\x20от\x20сервера\x20(15\x20секунд)...\x20|\x20','Каучуковое\x20дерево','Penetration','getName','MMEnd','leftDegrees','COMPILE_STATUS','.home','list-not-highlight','Failed\x20to\x20swap\x20activebar','pwcLauncherSettingsDir','TODO\x20еще\x20не\x20готово\x20-\x20команда\x20PW\x20Classic\x20работает\x20над\x20этим','main','rgba(0,0,0,0)','fromRotationTranslationScaleOrigin','App','ZERO','RANDOM','test','Здароўе','negate','threeD','toRadian','scale(1.5)','Скорость','.reset-btn','show','mm-lobby-header-team-player-name','Вы\x20были\x20исключены\x20из\x20матчмейкинга\x20за\x20АФК!','Хитрость\x20на\x20вражеской\x20земле','Образы\x20на\x20героя','stack','compileShader','targetPlayerAnimate','Отсутствует\x20поддержка\x20IndexedDB!','Не\x20все\x20значения\x20указаны','keydown','Наименование\x20билда','[data-level=\x22','volume-percentage','width=1280,\x20height=720,\x20top=','{}.constructor(\x22return\x20this\x22)(\x20)','remove','heroData','regenhpvz','isBuildingAllowed','provorstvovz','castle-button-play-6','Закрыть','MainLoop','buildings','ease-out','.ogg','60cqmin','castle-play-lobby','Fatal\x20error\x20getting\x20index\x20count\x20(','sqrt','rotate(0)\x20scale(0.9)','view','LUTRIS_EXEC','Украсть\x20билд?','forwards','sin','zFar','renderMap','movementX','wbuild','clipboard','scalar','game-info','span','DEPTH_TEST','fieldView','—\x20необходимо\x20собрать\x201000\x20осколков\x20одного\x20и\x20того\x20же\x20таланта,\x20чтобы\x20получить\x201\x20талант\x20для\x20билда;','srsv','color','onclose','mm-lobby-middle-chat-body','damage','promises','Библиотека\x20талантов','reset_defaults','size','active','http://95.164.91.124:27302/api','fromYRotation','deltaTime','Дом\x20клана','Скорость\x20на\x20родной\x20земле','notify-message','rank-icon','(((.+)+)+)+$','bodyCastleFriends','MMQueue','Файлы\x20игры\x20повреждены!\x20Обратитесь\x20в\x20поддержку\x20PWClassic','Стойкость/Воля','strength','\x0a\x09\x09\x09\x09\x09.launcher-link\x20{\x0a\x09\x09\x09\x09\x09\x09color:\x20#ff0000;\x0a\x09\x09\x09\x09\x09\x09text-decoration:\x20none;\x0a\x09\x09\x09\x09\x09\x09transition:\x20color\x200.3s\x20ease;\x0a\x09\x09\x09\x09\x09}\x0a\x09\x09\x09\x09\x09.launcher-link:hover\x20{\x0a\x09\x09\x09\x09\x09\x09color:\x20#ff6666;\x0a\x09\x09\x09\x09\x09\x09text-decoration:\x20underline;\x0a\x09\x09\x09\x09\x09}\x0a\x09\x09\x09\x09','Загрузка\x20игровых\x20архивов\x202/8','Банановая\x20пальма','gridTexture','transformMat4','tan','https://discord.gg/MueeP3aAzh','Необходима\x20Windows\x20версия\x20лаунчера','castle-button-play-m2','build-right','log','CleanInvalidDescriptions','Ходы:\x20','Проворство','parse','src','rgba(','viewport','protocolServer','game_data4','Разум','getShaderParameter','build-level','build-talent-item','testSoundIsPlaying','Нанести\x20урон\x20по\x20более\x20уязвимым\x20героям\x20вражеской\x20команды\x20и\x20соблюдать\x20дистанцию\x20между\x20противниками,\x20чтобы\x20исключить\x20их\x20подход\x20близко\x20к\x20вам.','Очередь\x20игроков\x20матчмейкинга\x20на\x20данный\x20режим\x20игры','castle-button-play','Замок','build-rarity','musicVolume','random','141945YumgeU','querySelector','undefined','transformMat2','zIndex','Сообщение\x20API','net','stdout','identify','FRONT','heroAll','isUpToDate','name','.build-talents','setCss','gridTex','deg)\x20scale(0.9)','Гучнасць\x20музыкі','findAndDeleteBuilding','ready-button','lobby','regenmp','Новость\x20не\x20найдена','activeTemplate','build-talent-item-container','Дом\x20милосердия','toString','projMatrix','initialFixedValue','stop','wcastle-menu','Выйти\x20из\x20аккаунта','Учитывание\x20талантов,\x20которые\x20дают\x20дополнительный\x20баф\x20от\x20типа\x20территории\x20(земли)\x20-\x20родная,\x20вражеская/нейтральная\x20\x0a(например\x20таланты\x20красного\x20качества\x20\x22Оберег\x20жизни\x22,\x20\x22Сияние\x20естества\x22)','Увядзіце\x20тэкст\x20і\x20націсніце\x20Enter','updateWindows','url(content/icons/close-cropped.svg)','protectionBody','search-input','Preferences','build-hero-avatar-and-name','normalize','deco_32','viewMode','castle-settings','dataRequest','sizeY','Загрузите\x20и\x20установите\x20последнюю\x20Windows\x20версию\x20<a\x20href=\x22https://pw.26rus-game.ru/\x22\x20class=\x22launcher-link\x22>лаунчера</a>\x20всего\x20один\x20раз,\x20теперь\x20вам\x20не\x20нужно\x20будет\x20делать\x20лишних\x20действий\x20по\x20обновлению\x20игры,\x20лаунчер\x20все\x20сделает\x20автоматически.','edit','move','texture','shaderId','Health','Не\x20могу\x20сохранить\x20настройки:\x20путь\x20или\x20NativeAPI\x20недоступны','attacksPerSecond','Клумба','TEXTURE_MAG_FILTER','squaredLength','party-middle-item-nickname','.webp','readonly','Agility','Родная','Пароль:\x20','message','gameServerHasConnection','application/json;\x20charset=UTF-8','mm-ready','Генерал','Багряный\x20куст','Не\x20удалось\x20найти\x20файл\x20конфигурации\x20клавиш','userInfo','NativeAPI\x20не\x20инициализирован!\x20Используются\x20настройки\x20по\x20умолчанию','library','Арена','perspectiveFromFieldOfView','Вход\x20через\x20Steam','Кокосовая\x20пальма','viewMatrix','Telegram','generateMipmap','https://t.me/primeworldclassic_bot','\x20приглашает\x20вас\x20в\x20лобби','color-1','LDU','head','btn-sets','Монумент','build-hero-grid-item','Большая\x20сакура','offsetWidth','3D\x20графика','castle-friend-confirm','moveTotal','smTexture','zeroTranslation','moveMouse','MUSIC_LAYER_PLAYER','end','updateProgress','reason','deco_1','Событие\x20API','build-field-row','resize','ONE_MINUS_CONSTANT_COLOR','Регистрация','prepareShader','return\x20(function()\x20','</b><div>','code','enableSmartCast','build-description','getElementById','Убрать\x20мут','ERROR\x20linking\x20program!','app','willChange','game_data0','ARRAY_BUFFER','castle-menu-text','skin','ontouchend','parentNode','13335930gwfsrV','enemy','Ваша\x20задача','uvScroll','rank-lvl','function','Флагшток','TEXTURE_WRAP_T','unregisterGlobalHotKey','inventoryView','volumeSound','Фигура\x20слона','Storage','validateProgram','deco_21','content/icons/checkbox.webp','Хитрость\x20на\x20родной\x20земле','castle-button-play-5','search-body','sounds-volume-percentage','Смарткаст\x20выключён','party-middle-item-middle','templateViewTalent','sub','game_data2','canvas','partyId','method','Ник\x20игрока','offsetParent','—\x20на\x20одну\x20карту\x20рассчитано\x20100\x20ходов;','SRC_ALPHA','content/sounds/found.ogg','calcStatsFromPower','Версія','camDeltaPosMinMax','body','MMReadyCount','build-hero-stats-setting-land-type-vz','Window\x20mode','hermite','btn-skins','Нанести\x20основной\x20урон\x20вражеской\x20команде\x20и\x20соблюдать\x20дистанцию\x20между\x20противниками,\x20чтобы\x20исключить\x20их\x20подход\x20близко\x20к\x20вам.','altEnterShortcut','ARRAY_TYPE','cloneNode','GetPlayPwProtocol','Принять','Достигнут\x20лимит\x20билдов\x20(6).\x20Выберите\x20билд\x20для\x20замены:','Отмена','ghost','soundsVolume','smartcast','img','setStat','Алый\x20цветок','237,129,5','pwclassic://runGame/Tester00Tester00Tester00Tester004c8fa55b5ee54d6ddbaab2373f8a6a74d7f9c5d739bdd79da12f3beda73c7115/2.0.0/0','regenmpvz','texture3Id','player','Топиарная\x20башня','party','Сбросить\x20таланты\x20в\x20этом\x20билде','castle-party-middle-item','В\x20бой!','currentTarget','language','createIndex','gridCursorPosX','loadObjectResources','talentEdit','Stamina','FRAGMENT_SHADER','offsetY','keybindings_title','avatar','HERO','unhandledrejection','TEXTURE_2D','castle-menu-items','getContext','contains','Ожидание','Float32x4','Хітрасць','shader','Сіла','multi','health','setupMainCam','childNodes','get','push','speed','Ошибка\x20интернет\x20соединения,\x20время\x20ожидания\x20ответа\x20на\x20запрос\x20','platform','Ошибка\x20доступа\x20к\x20файлу\x20настроек:\x20','updateMainCam','depthMask','deltaMode','protocol','loadModules','rotationTilt','heroImg','wgame','heroSound_','reconnect','hpmp_sum','lutris\x20lutris:rungame/prime-world','noNumber','length','btn-trash','shuffle','deco_26','width:37cqh;height:37cqh','append','downDegrees','Оранжевое','TEXTURE_MIN_FILTER','observer','ReadSettings','testServerConnection','onStatus','castle-input','option','170,20,44','У\x20бой!','keybinding-label','updateLinux','cat','grayscale(100%)','Агульная\x20гучнасць','init','metaKey','Альков\x20жизни','getTalentRefineByRarity','divide','unit','deco_6','...','/1.webp\x22)','Нажимая\x20кнопку\x20Продолжить,\x20произойдёт\x20регистрация\x20нового\x20аккаунта!\x20Если\x20Вы\x20хотите\x20осуществить\x20вход\x20в\x20свой\x20текущий\x20аккаунт\x20PW\x20Classic,\x20Вам\x20необхоидмо\x20сначала\x20привязать\x20свой\x20Steam\x20аккаунт\x20из\x20меню\x20настроек.','createShader','cursorBasis2','arrayBuffer','VERTEX_SHADER','static','lobby-build-tab','whistory','texture_4','unit-container','Необходимо\x20указать\x20пароль','Приоритет\x20RadminVPN','Лавка\x20с\x20фонарями','build-center','lookAt','deco_8','upDegrees','rotateZ','Докты','hpmp','mode','solid\x20calc(min(0.5cqh,\x201cqw))\x20rgb(153,255,51)','.build-talent-item-container','squaredDistance','Домик\x20щенка','castle-settings-window','leaveParty','castle-fade-in','loop','createUnit','requestSmartcast','castle.cfg','Группа','CONSTANT_COLOR','width:100%;background:green;text-align:center;font-size:5cqw','setZeroActive','build-replace-btn','Воля\x20на\x20родной\x20земле','fontSize','rot','setSortInventory','setVolume','aram-timer','start','3D\x20графіка','50%','animate','step','moveAnimate','training','setAttribute','Нажмите\x20правой\x20кнопкой\x20мыши\x20на\x20талант\x20в\x20этой\x20полосе\x20чтобы\x20включить/выключить\x20смарткаст\x20(применение\x20навыка\x20без\x20подтверждения)','castle-party-middle-item-ready-notready','rgba(51,255,51,0.5)','homedir','Цягавітасьць','abs','listView','ease-in-out','clearCache','initialStats','krajamp','viewModel','identityMatrix','offsetLeft','targetHeroId','online','</b><div>Информация\x20отсутствует.\x20Сообщите\x20пожалуйста\x20об\x20этом\x20в\x20отдельную\x20тему\x20Telegram\x20сообщества\x20Prime\x20World\x20Classic.</div><span>+1000\x20Уважение</span>','clientY','Сила/Разум','Таверна','ban','awaiting','grid','light_farm','value','isAdmin','Фонтан','\x20качество\x20талантов','content/sounds/aram/bg.mp3','gameServerConnectionCheckTimeout','sizeElem','Домик\x20единорожка','tambur','speedrz','.gif','Пароль','Еще\x20раз\x20пароль','RADMIN_GAME_SERVER_IP','PATH','onmouseover','NEAREST','sila','Янтарный\x20цветок','../update.sh','mainServerHasConnection','loadTime','Завершить\x20игру','castle-name-autoscroll','deltaY','status','Защитник','isFullscreen','Пользователи','Большой\x20фонарь','center','MUSIC_LAYER_GAME','BUILDING_OUTLINE_SELECTION','Учитывание\x20талантов,\x20которые\x20дают\x20постепенную\x20прибавку\x20к\x20определенному\x20параметру\x20Ваших\x20характеристик\x0a(например\x20таланты\x20оранжевого\x20качества\x20\x22Убийственная\x20логика\x22,\x20Неудержимая\x20сила\x22)','Терем','Library','params','keys','/Documents/My\x20Games/Prime\x20World\x20Classic/input_new.cfg','reciprocalApproximation','param','beforeunload','/revive/','range','crypto','.wrapper','Игровой\x20сервер\x20недоступен!','linux','game-view-score','windows','descriptionView','writeDefaultSettings','viewScore','hero','friend','onmouseup','levelView','castle-farm','smooth','gameStopEvent','splash','castle-party-middle-item-not-ready','Не\x20в\x20сети','\x20из\x20друзей?','unpause','build-hero-stats-daw','game-text','\x0a#define\x20RENDER_PASS_COLOR\x0a','login-box-forma-buttons','MAIN_GAME_SERVER_IP','splash-content-button','BUILDING_OUTLINE_GOOD','calculateW','Капрал','placePhantomBuilding','role','silavz','castle-menu-label\x20keybinding-row','resizeTo','fair','ERROR\x20validating\x20program!','sizeX','prepareMove','glMatrix','<a\x20href=\x22$1\x22>$1</a>','min','activeTexture','Куст','heroMainAttackStat','Ошибка\x20чтения\x20конфига:','.castle-keybinding-input','close-button','storage','getBoundingClientRect','appendChild','nextSibling','adm','allowedToBuildGridTex','defaultAnimation','Прыярытэт\x20RadminVPN','api','Смарткаст\x20включён','protectionSpirit','content/shaders/shader.fs.glsl','index','REPEAT','renderBody','API\x20(events/action)','fromRotation','PLAYER','Необходима\x20Windows\x20версия\x20лаунчера!','openExternal','gameServerIps','determinant','Сбросить\x20на\x201-0','login','fromMat2d','game_data7','flex','checkbox','scrollIntoView','auto','apply','ONE_MINUS_SRC_ALPHA','enableVertexAttribArray','uvScale','_blank','\x20отправлена','map','Живая\x20изгородь','Прокрутить\x20чат\x20вниз','rank','Количество\x20символов\x20<\x202','gridTranslation','substring','objects','Стрелок','rotate(360deg)\x20scale(0.9)','setMode','Раффлезия','profile','hostChange','copy','Window','Огромный\x20кактус','exitOrLogout','depthTextureSize','Разблокировать','heroName','SIMD_AVAILABLE','nickname','castle-game-surface','Добавить','Сделать\x20характеристику\x20приоритетной','env','304075dUdiqm','Defence\x20Magic','%<speedtal></speedtal>','Поддержка','layout','mat2d(','textureId','Пароли\x20не\x20совпадают','indexCount','MMQueueV2','input','content/textures/','mm-lobby-middle-hero-item','CONSTANT_ALPHA','DISCONNECT_LIMIT','mm-lobby-middle','support','eventExit','event.data','endsWith','talentStatFilter','KeyM','SRC_ALPHA_SATURATE','provorstvo','inventory','Damage','height','restore','ensureCastleFile','author','NumpadEnter','framebufferTexture2D','support-icon','content/meshes/','castleHeroes','dataStats','curLabel','hitrostvz','heroStatsFromPower','vec3','host','testGameServerConnection','Регенерация\x20здоровья\x20на\x20вражеской\x20земле','ended','Привязать\x20Steam','build-body','content/htalents/','maxFov','<b>Талант\x20#','Друзья','sound_test','Version','bindTexture','krajahprz','transparent',';\x20id:\x20','child_process','Необходимо\x20указать\x20логин','toggle','upgradeneeded','toFixed','chat-input','link','farm','Падтрымка','keybindings_error','list-highlight','aram-background-part','startsWith','castle-menu-item-checkbox','Чайный\x20домик','56007390xzObmA','data','history-text-box','owner-text','Указатель','preventDefault','clone','Сила\x20на\x20вражеской\x20земле','bufferData','options','dop','disconnect','lineHeight','sets','Разум\x20на\x20родной\x20земле','loadResources','back','OPEN','backgroundColor','ondragstart','Will','replace','activeAnimation','speedvz','margin','Не\x20указан\x20хост','Delete','join','viewTotalScore','getComputedStyle','profileStats','deco_13','talents-container','loadBuildings','talentRefineByRarity','windowMode','red','url(content/hero/empty.webp)','game_data3','gameConnectionTestIsActive','lobbyHeroes','clan','Калі\x20ў\x20вас\x20ёсць\x20пытанні,\x20вы\x20можаце\x20звязацца\x20з\x20намі\x20праз:','castle-menu-item-button','fieldScoringContainer','btn-random','top-filter','animation1','AUDIO_MUSIC','TRIANGLE_STRIP','bfr','ensureSettingsFile','Выдан\x20мут\x20игроку\x20','talent-item','Регенерация\x20энергии\x20на\x20вражеской\x20земле','Enter\x20the\x20text\x20and\x20press\x20Enter','str','razumvz','ONE_MINUS_SRC_COLOR','clear','login-box-forma-right','RECONNECT_TIME','split','Библиотека','talentHeroAll','children','target','Ошибка\x20чтения\x20настроек:\x20','Шпаркасць','Ошибочка,\x20которую\x20мы\x20скрыли:\x20','build-hero-stats-settings','placedBuildings','local','DOM_DELTA_LINE','Таланты','upgrade','intervalId','fov','3116952CkPBsR','find','mm-lobby-middle-build','ease-in','pow','resolve','isBuildingsLoaded','getIndexAllSync','Кража\x20здоровья','dropAnimate','linkHandler','phantomBuildingIsAllowedToBuild','\x20->\x20','radmin-priority','leaderKickParty','LINEAR','absolute','error','Рейтинг\x20отсутствует','127.0.0.1','Сохранить','btn-separator','Дистиллятор\x20прайма','castle-menu-error','castle-button-play-8','strip','disableSmartCast','castle-menu-slider','deco_27','top-item-player','Удалено\x20протухшее\x20описание','fromRotationTranslationScale','error.txt','fromZRotation','important','RENDER_LAYER_LAUNCHER','updateHeroStats','Одна\x20ошибка\x20в\x20ARAM\x20—\x20равномерна\x20гибели\x20всей\x20команды.\x20Восстановить\x20запас\x20здоровья\x20или\x20энергии\x20героя\x20на\x20главной\x20базе\x20нельзя.','Неисправна\x20проверка\x20файлов:\x20','top-item-hero-rank','createElement','installedTalents','movementY','oncontextmenu','game-button','WriteSettings','getShaderInfoLog','blur(1cqh)','exit','path','saved','skinView','onwheel','unhandledrejection.txt','applyVz','attachShader','activeBar','lobbyBuildTab','Прабіванне','build-hero-stats-setting-land-type','setProperty','\x2000:','cameraHeight','Ready','deleteIndexAll','blendFunc','Закрываем\x20соединение\x20','url(content/htalents/456.webp)','UChat','eventChangeHero','Отсутствует\x20поддержка\x20WebSocket','count','sr_max','Удалить','castlePlay','close-image-style','GetLauncherFilePath','exception','transition','response','activeSelectHero','mm-lobby-middle-hero-line-icon','blocked','meshData','Не\x20удалось\x20найти\x20файл\x20конфигурации\x20ни\x20по\x20одному\x20из\x20путей','uniform1i','blur','game-field','./content/PW_HashTest.exe','search','create','loadTexture','Закрыто\x20соедниение...\x20Выполняется\x20переподключение,\x20подождите...\x20[','RENDER_LAYER_PLAYER','TRUE','Зарегистрироваться','deco_19','highlight','addEventListener','PSO','updated','result','rgba(255,215,0,0.9)','fromMat4','deco_31','white','setDefaultWindow','round','VALIDATE_STATUS','translate','uniformMatrix4fv','drawArrays','totalmem','content/hero/empty.webp','onmousedown','Shortcut','Фонарь','DEPTH_BUFFER_BIT','onmousemove','tex','ONE_MINUS_DST_ALPHA','toggleRender','searchActive','getProgramParameter','Shell','Steam','fight','Дублировать\x20в\x20новый\x20билд','sceneShaders','rarity','moves','canvasWidth','dot','Escape','Сторона','Преследователь','heroParty','Не\x20удалось\x20прочитать\x20файл\x20конфигурации\x20клавиш.\x20Проверьте\x20путь:','phantomBuilding','CCW','onclick','loadMesh','content/shaders/shader.vs.glsl','invite','rotate(','0.5cqw\x200','sqrDist','outlinedBuilding','applyStak','eventFinish','div','Тростниковая\x20башня','../Game/Bin/','buttons-talents-and-sets','Лобби','castle-hero-name','textContent','Проверка\x20обновлений\x20и\x20файлов\x20игры...\x20Подождите','scale(0.9)','ApplySettings','chat-body-item','access','castle-party-middle-item-nickname-hidden-overflow','build-hero-stats-view','MM_found','Хитрость','useProgram','Questions?\x20Feel\x20free\x20to\x20contact\x20us:','SteamAuth','cameraAnimationSpeed','../Tools/PW_NanoUpdater.exe','Переименовать\x20билд','ADMStat','party-middle-item-ready','Синее','Updating\x20launcher','rgba(255,255,255,0)','experimental-webgl','OpenExternalLink','Скорость\x20атаки','castle-friend-item','drawObject','Тип\x20земли\x20-\x20с\x20учетом\x20родной\x20земли','childProcess','Цветущий\x20куст','keypress','setActive','.build-list','Нельзя\x20перезаписать\x20идентификатор','angle','elementsFromPoint','RESTORE','block','Хуткасць\x20атакі','heroPower','rotateY','enterTextAndPressEnter','DOM_DELTA_PAGE','Адорнийцы','table','heroPowerFromInstalledTalents','setTimeout','transformOrigin','Лесопилка','adminPanel','Стойкость\x20на\x20родной\x20земле','getPropertyValue','posX','castle-bottom-menu','forEach','Рекрут','castle-chat','accountSwitch','castle-clans','splash-text','История','buildMode','posY','button','steal','party-hero','Режим\x20тренировки','Подполковник',',0.6)','texParameteri','lobbyConfirm','cursorBasis','aram-background','heroStatMods','main-body-column','href','heavy_farm','bindBuffer','dist','shaderSource','Воля','input-success','Гатоў','ctrlKey','Таланты\x20(обычные)','food_farm','Шкода','background-image','header','Лазурный\x20куст','USE_SIMD','RENDER_LAYER_GAME','uniform2fv','settings','rotationTo','readwrite','createFramebuffer','slot','Не\x20найден\x20талант\x20в\x20билде:\x20','Alt+Enter','cos','removeTalentFromActive','razum','slide','heroId','finish','castleChat','Инвайт-код','assign','castle-button-play-1','Сеты','vertices','Громкость\x20звуков','0\x200\x2020cqh\x20rgba(174,80,251,0.8),\x20inset\x2010cqh\x2010cqh\x2015cqh\x20rgba(174,80,251,0.5)','Обновление\x20игры','content','bezier','Защита\x20духа','wrap','className','castle-friend-item-bottom','hideAnimate','Оcколки:\x20','fileSystem','Бібліятэка','2.5.4','BLEND','content/icons/discord.webp','createDocumentFragment','transpose','build-list','reset','loading','castle','mm-status-commander-','session\x20is\x20not\x20valid','castle-button-play-m6','tag','mkdir','border','isTestHashesFailed','lobbyBuildField','borderColor','—\x20чтобы\x20сделать\x20ход,\x20переставляйте\x20два\x20соседних\x20таланта\x20местами.\x20Если\x20такая\x20перестановка\x20приводит\x20к\x20образованию\x20комбинации,\x20то\x20«выстроившиеся»‎\x20таланты\x20исчезают,\x20и\x20на\x20их\x20место\x20падают\x20таланты\x20верхних\x20рядов;','toggleMusic','Кража\x20энергии','viewMatrix2','wsteamauth','buildActionsView','bind','getDataPath','bodyCastleBuildings','main-header','conflict','rotation','castle-friend-cancel','model','reload','users','ready','units','content/icons/close-cropped.svg','event','inviteParty','applyBuffs','pwclassic://runGame/','UpdateGridImage','punching','build-active-bar-container','WriteBuildings','inherit','game','build-active-bar-hint','setProfile','considerBuff','render','createBackgroundUnit','Дополнительный\x20бонус\x20к\x20скорости','groundType','from','lobbyUsers','select','chatBody','getRandomInt','main-body-full','ruleSortInventory','COLOR_BUFFER_BIT','Enter','mousemove','Разрыв\x20соединения\x20','viewMoves','cancel','slerp','Discord','III','modules','keyup','#ff3333','getProgramInfoLog','ENABLE_SIMD','content/icons/steam2.webp','version','6lafjkG','url(content/talents/763.webp)','AUDIO_SOUNDS','Загрузка\x20игровых\x20архивов\x207/8','flipMatr','ceil','Настройка\x20клавиш','tintColor','Малый\x20топиарный\x20конус','BG:','deco_5','dog','cursorDeltaPos','scale(1.2)','settingsFilePath','unicorn','telegram-bot','castle-menu-title','color-3','ONE_MINUS_CONSTANT_ALPHA','mm-lobby-header-team','display','defencePsys','notify','frob','text','Удалить\x20','delete','isUpdateFailed','0\x200\x2020cqh\x20rgba(255,26,26,0.8),\x20inset\x2010cqh\x2010cqh\x2015cqh\x20rgba(255,26,26,0.5)','prevTime','applySorting','Лорды\x20и\x20леди!','chat','232SvofPP','utf-8','globalCanvas','gameStartCheck','play','Рядовой','speedtal','ERROR\x20compiling\x20vertex\x20shader!','fontStyle','ontouchstart','includes','scale(1.1)','Грибница','.png','cursorPosition','Обновление\x20лаунчера','PExit','hide','wss://api.26rus-game.ru:8443',':\x20v.','intelligence','mm-lobby-header-team-player','Активные\x20таланты','voliarz','invert','attributes','MMReady','Шанец\x20крытычнага\x20траплення','total','Если\x20сбиваются\x20настройки\x20звука,\x20то\x20можно\x20отрегулировать\x20в\x20микшере\x20громкости:\x20ПКМ\x20на\x20значок\x20звука\x20на\x20Панели\x20задач\x20->\x20Микшер\x20громкости\x20->\x20Значок\x20игры\x20->\x20делаете\x20тише','ph_sum','label','depthTexture','game-field-scoring-container','object','Прядильня','Храм\x20чистоты','inv\x20','.webp)','transformMat3','Выйсці\x20з\x20Prime\x20World','Если\x20у\x20Вас\x20есть\x20вопросы,\x20Вы\x20можете\x20связаться\x20с\x20нами\x20через:','calculationStats','gameRunEvent','deco_2','indexedDB','bar','DOM_DELTA_PIXEL','isStaticSMCached','callback','clamp','url(content/icons/buildings.webp)','sendMessage','mesh','onmouseout','vertStride','url','MAIN_HOST','WriteDefaultBuildings','blur(5vmax)','limit','Кошкин\x20дом','prepareAndDrawObject','content/shaders/','fromQuat','17,105,237','cqh','texture_2','input-error','SRC_COLOR','TEXTURE0','build-bottom','checked','aram-random','width',',\x20left=','Здоровье/Энергия','heroEdit','spawn','transparentObjects','opacity','Цветущая\x20стена','score','vec2(','Больше\x20так\x20не\x20буду','Ошибка\x20применения\x20настроек:\x20','build','regenhp','getUniformLocation','Админ','#5899','\x20|\x20','Загрузка\x20игровых\x20архивов\x208/8','added','radminHasConnection','listen','Updating\x20game\x20files','innerHTML','say','deco_3','createBuffer','Пробивание','Login\x20with\x20Steam','castle-button-play-4','rating','Prime\x20World:\x20Classic\x20v.','MUSIC_LAYER_TAMBUR','Мануфактура','rotateX','outlined','Ошибка\x20сохранения:','zoom','silent','dataset','Назад','texture_3','firstChild','deco_0',')...','Отменить','width:100%','Загрузка\x20игровых\x20архивов\x206/8','GetVolume','console','splat','Загрузка\x20игровых\x20архивов','svvz','connect','TRIANGLES','depthFramebuffer','fromTranslation','Дублировать\x20текущий\x20билд','swizzle','castle-friend-request','clientHeight','classList','state','deco_24','PHero','Получить\x20инвайт-код\x20через\x20QR-код','wrapLinksInATag','camDeltaPos','talents','json','camRot','grayscale(1)','url(content/ranks/','Your\x20browser\x20does\x20not\x20support\x20WebGL','UpdateAllowedToBuildGrid','preferences','background:rgba(255,0,0,0.3)','deleteObjectStore','castleSettings','chat-body','shaderLayouts','vertexAttribPointer','menu-icons','Нет','Без\x20права\x20на\x20ошибку','talentsAndSetsView','clientX','url(\x27content/icons/plus.svg\x27)','bodyCastleHeroes','attackSpeed','Проворство\x20на\x20родной\x20земле','rgba(255,255,255,0.3)','grayscale(0)','main-header-item','save_error','9999','url(content/ranks/99.png)','button-outline','MMStart','lerp','/1.webp)','url(\x27content/icons/trash.svg\x27)','castle-play-lobby-player','loaded','phantomBuildingSize','authorization','isArray','removeSortInventory','timeFinish','linkProgram','ping','setZero','none','.enemy','global-volume-percentage','distance','Админ\x20Панель','DISCONNECT_LAST_DATE_LIMIT_MS','info','agility','login_box','skin-change','Живая\x20стена','click','max','castle-item-hero-name','floor','<b\x20style=\x22color:rgb(','PROXY_GAME_SERVER_IP','totalStat','deco_28','ru-RU','COLOR_ATTACHMENT0','load','WebGL\x20not\x20supported,\x20falling\x20back\x20on\x20experimental-webgl','activeBarView','Кража\x20здоровья\x20на\x20родной\x20земле','zNear_zFar','action','392JBaOAz','rotate','Dexterity','[X]','Critical\x20Hit','borderRadius','stats','game-unit-bg','pause','canvasHeight','Сила','setMatrixArrayType','Support','UNSIGNED_BYTE','.save-btn','sqrLen','Кузница\x20талантов','build-field-container','Мухоловка','button-play','build-action-item-background','deco_20','currentTime','globalVolume','enable','readyState','chat-input-container','castle-button-play-7','login-box-forma-inputs','now','onfinish','lobbyPlayerAnimate','texture2Id','error-message','store','Поддержать\x20прорыв\x20обороны\x20противника\x20и\x20недопустить\x20подхода\x20вражеских\x20героев\x20к\x20более\x20уязвимым\x20союзникам\x20вашей\x20команды.','fromRotationTranslation','dexterity','energy','<br>','Таланты\x20(классовые)','content/img/logo_classic.webp','Ошибка!','grayscale(80%)','isValidated','blend','Розум','Перезаписать\x20текущий\x20билд?','28cqw','setAxes','uniform4fv','createTexture','description','inventory-header','Энергія','history','aram-briefing-left','wasMoved','zNearSM','%<speedtal></speedtal>\x20на\x20вражеской\x20земле','WEBGL_depth_texture','transaction','adjoint','mm-lobby-middle-chat-body-item','winrate','FUNC_ADD','left','rgba(255,\x20255,\x20255,\x200)','getAll','setResizable','Выйти','skinChange','http://81.88.210.30:27302/api','translation','scale(1.6)','<fiz>\x20</fiz>','key','Кланы','hostname','mm-lobby-middle-hero','dataScore','[data-position\x20=\x20\x22','game-unit-item','hpmp_max','acos','defaultPlacedBuildings','scenesJson','Товарищеские\x20матчи\x20в\x20процессе\x20разработки...','boxSizing','setPosition','render-toggle','change','fixedRotationTiltValues','sortInventory','gridCursorPosZ','WebSocket','heroPowerModifier','action-success','Осколки','pageX','deco_17','rgba(255,\x2050,\x200,\x200.9)','Готов','castle-bottom','deco_16','request','castle-settings-btn','content/talents/','mul','doct','Неизвестная\x20структура\x20сообщения\x20->\x20','TEXTURE_WRAP_S','100','Колонна','—\x20если\x20за\x20100\x20ходов\x20серебряных\x20монет\x20будет\x20150,\x20даётся\x20+100\x20дополнительных\x20ходов;','backgroundImage','transform\x200.1s\x20ease','btn-hover','Сброс\x20пароля\x20«','stamina','Мут\x20чата','steamauth','Проворство/Хитрость','keyCode','sceneTextures','content/img/pwclassicbot.png','volumeMusic','vec3(','castle-builds','mouseout','build-rarity-other','../Game/Bin/PW_Game.exe','mat2d','userId','team','Фарм','Ферма','viewProjMatr','offsetTop','identity','Штольня','execFile','Таран','lobby-timer','currentSceneName','password','texture4Id','close','Filter\x20only\x20banned','success','requestAttention','Defence\x20Psysical','inject','lastBranchV','cpus','doMove','disable','MMChangeHero','userParam-blocked','lightViewProjMatrix','top','ERROR\x20compiling\x20fragment\x20shader!','build-body-row','viewInfo','Билды','DST_ALPHA','Отклонить','fieldConflict','exports','sound','Фигурный\x20тростник','Прылады','WORKING_DIR_PATH','build-talent-view','Хуткасць','indexOf','party-middle-item-not-ready','fraction','deco_12','MMChat','search-bottom','mat2(','transformQuat','check','sv_max','\x20:ибо\x20как\x20проверить\x20на\x20наличие\x20таблицы?\x20;>','testHashes','user-item','rarityView','quit','commander','5902548orkPPi','type','Выберите\x20билд\x20для\x20замены\x20или\x20создайте\x20новый:','content/scenes.json','MMKick','unobserve','rgba(255,\x20255,\x20255,\x200.3)','heroView','scenes','mat2','filter','bind\x20cmd_action_bar_slot','volia'];_0x72fb=function(){return _0xe3923b;};return _0x72fb();}(function(_0x73844a,_0x1a210c){const _0x28f5b1=_0x5ecf,_0xca0251=_0x73844a();while(!![]){try{const _0x3e3e73=parseInt(_0x28f5b1(0x3f2))/0x1*(-parseInt(_0x28f5b1(0x5ec))/0x2)+-parseInt(_0x28f5b1(0x7a2))/0x3+-parseInt(_0x28f5b1(0x60e))/0x4*(parseInt(_0x28f5b1(0x203))/0x5)+parseInt(_0x28f5b1(0x7e9))/0x6*(parseInt(_0x28f5b1(0x6e3))/0x7)+-parseInt(_0x28f5b1(0x487))/0x8+-parseInt(_0x28f5b1(0x27e))/0x9+parseInt(_0x28f5b1(0x439))/0xa;if(_0x3e3e73===_0x1a210c)break;else _0xca0251['push'](_0xca0251['shift']());}catch(_0x2389ce){_0xca0251['push'](_0xca0251['shift']());}}}(_0x72fb,0xf0b07));const _0x47ae4f=(function(){let _0x1d4211=!![];return function(_0x448a76,_0x406f7d){const _0x1eaa18=_0x1d4211?function(){const _0x4e45b8=_0x5ecf;if(_0x406f7d){const _0x6496e6=_0x406f7d[_0x4e45b8(0x3d1)](_0x448a76,arguments);return _0x406f7d=null,_0x6496e6;}}:function(){};return _0x1d4211=![],_0x1eaa18;};}()),_0x364ba8=_0x47ae4f(this,function(){const _0x3387bc=_0x5ecf;return _0x364ba8[_0x3387bc(0x21d)]()['search'](_0x3387bc(0x1dd))['toString']()[_0x3387bc(0x822)](_0x364ba8)[_0x3387bc(0x4e0)](_0x3387bc(0x1dd));});_0x364ba8();const _0x19bc15=(function(){let _0x395d9d=!![];return function(_0x415eab,_0x247687){const _0x726b2=_0x395d9d?function(){const _0x3d2c0f=_0x5ecf;if(_0x247687){const _0x47bbdd=_0x247687[_0x3d2c0f(0x3d1)](_0x415eab,arguments);return _0x247687=null,_0x47bbdd;}}:function(){};return _0x395d9d=![],_0x726b2;};}()),_0x2466af=_0x19bc15(this,function(){const _0x26f652=_0x5ecf;let _0x1bc72f;try{const _0x4aa654=Function(_0x26f652(0x26e)+_0x26f652(0x1ab)+');');_0x1bc72f=_0x4aa654();}catch(_0x1797fa){_0x1bc72f=window;}const _0x1583ae=_0x1bc72f['console']=_0x1bc72f[_0x26f652(0x689)]||{},_0xe2e9e2=[_0x26f652(0x1ed),_0x26f652(0x7d2),_0x26f652(0x6ce),_0x26f652(0x498),_0x26f652(0x4d4),_0x26f652(0x54e),'trace'];for(let _0x142a09=0x0;_0x142a09<_0xe2e9e2[_0x26f652(0x2ed)];_0x142a09++){const _0x400632=_0x19bc15[_0x26f652(0x822)][_0x26f652(0x82d)][_0x26f652(0x5b7)](_0x19bc15),_0x42d53e=_0xe2e9e2[_0x142a09],_0x335a7a=_0x1583ae[_0x42d53e]||_0x400632;_0x400632[_0x26f652(0xc0)]=_0x19bc15[_0x26f652(0x5b7)](_0x19bc15),_0x400632[_0x26f652(0x21d)]=_0x335a7a['toString'][_0x26f652(0x5b7)](_0x335a7a),_0x1583ae[_0x42d53e]=_0x400632;}});_0x2466af(),APP_VERSION='0',PW_VERSION=_0x4487d4(0x59f),CURRENT_MM='mm';class ParentEvent{static [_0x4487d4(0x47a)];static async[_0x4487d4(0x6c1)](_0x220fc5){const _0x5654f5=_0x4487d4;!_0x220fc5['id']&&(ParentEvent[_0x5654f5(0x47a)]&&ParentEvent['children']['close']()),await App[_0x5654f5(0x3b3)]['set']({'id':_0x220fc5['id'],'token':_0x220fc5[_0x5654f5(0x85f)],'login':_0x220fc5[_0x5654f5(0x3ca)],'fraction':_0x220fc5[_0x5654f5(0x794)]}),ParentEvent['children']&&ParentEvent[_0x5654f5(0x47a)][_0x5654f5(0x776)](),View[_0x5654f5(0x19c)](_0x5654f5(0x5a7));}static async[_0x4487d4(0x5b7)](_0x2dafd9){const _0x50b6bf=_0x4487d4;ParentEvent[_0x50b6bf(0x47a)]&&ParentEvent[_0x50b6bf(0x47a)][_0x50b6bf(0x776)](),App[_0x50b6bf(0x498)](_0x2dafd9);}}class Lang{static ['target']='ru';static ['default']='ru';static [_0x4487d4(0x843)]={'en':{'fight':_0x4487d4(0x864),'enterTextAndPressEnter':_0x4487d4(0x470),'ready':_0x4487d4(0x4c6),'library':_0x4487d4(0x37a),'menu':_0x4487d4(0x7be),'preferences':_0x4487d4(0x229),'windowMode':_0x4487d4(0x2a5),'radminPriority':_0x4487d4(0xd3),'threeD':'3D','volume':_0x4487d4(0x7df),'volumeMusic':'Volume\x20of\x20music','volumeSound':_0x4487d4(0x820),'back':_0x4487d4(0x143),'soundHelp':'If\x20the\x20sound\x20settings\x20are\x20lost,\x20you\x20can\x20adjust\x20the\x20volume\x20in\x20the\x20mixer:\x20right-click\x20on\x20the\x20sound\x20icon\x20on\x20the\x20Taskbar\x20->\x20Volume\x20Mixer\x20->\x20Game\x20icon\x20->\x20make\x20it\x20quieter','support':_0x4487d4(0x6ef),'supportDesk':_0x4487d4(0x52e),'accountSwitch':_0x4487d4(0xc9),'exit':_0x4487d4(0xfb),'version':_0x4487d4(0x425),'health':_0x4487d4(0x236),'energy':'Energy','speed':'Speed','strength':'Strength','intelligence':_0x4487d4(0x7b9),'agility':_0x4487d4(0x23f),'dexterity':_0x4487d4(0x6e5),'stamina':_0x4487d4(0x2c6),'will':_0x4487d4(0x44d),'damage':_0x4487d4(0x40b),'criticalHit':_0x4487d4(0x6e7),'attacksPerSecond':'Attacks\x20per\x20second','penetration':_0x4487d4(0x184),'defencePsys':_0x4487d4(0x77a),'defenceMagic':_0x4487d4(0x3f3),'skins':_0x4487d4(0x7ca),'steamauthTitle':_0x4487d4(0x674),'steamauth':'By\x20clicking\x20Continue,\x20you\x20will\x20register\x20a\x20new\x20account!\x20If\x20you\x20want\x20to\x20log\x20in\x20to\x20your\x20current\x20PW\x20Classic\x20account,\x20you\x20must\x20first\x20link\x20your\x20Steam\x20account\x20from\x20the\x20settings\x20menu.'},'ru':{'fight':_0x4487d4(0x2bf),'enterTextAndPressEnter':'Введите\x20текст\x20и\x20нажмите\x20Enter','ready':_0x4487d4(0x749),'library':_0x4487d4(0x478),'menu':_0x4487d4(0x7be),'preferences':'Настройки','windowMode':'Оконный\x20режим','radminPriority':_0x4487d4(0x317),'threeD':_0x4487d4(0x25d),'volume':'Общая\x20громкость','volumeMusic':_0x4487d4(0x17e),'volumeSound':_0x4487d4(0x592),'back':_0x4487d4(0x680),'soundHelp':_0x4487d4(0x62b),'support':_0x4487d4(0x3f5),'supportDesk':_0x4487d4(0x637),'accountSwitch':'Сменить\x20аккаунт','exit':'Выйти\x20из\x20Prime\x20World','version':_0x4487d4(0x14c),'health':_0x4487d4(0xbf),'energy':'Энергия','speed':_0x4487d4(0x19a),'strength':_0x4487d4(0x6ed),'intelligence':_0x4487d4(0x1f7),'agility':_0x4487d4(0x1f0),'dexterity':_0x4487d4(0x52c),'stamina':_0x4487d4(0x123),'will':'Воля','damage':_0x4487d4(0xbc),'criticalHit':'Шанс\x20крита','attacksPerSecond':_0x4487d4(0x53a),'penetration':_0x4487d4(0x673),'defencePsys':'Защита\x20тела','defenceMagic':_0x4487d4(0x597),'skins':'Скины','steamauthTitle':_0x4487d4(0x24e),'steamauth':_0x4487d4(0x30c)},'be':{'fight':_0x4487d4(0x2fd),'enterTextAndPressEnter':_0x4487d4(0x224),'ready':_0x4487d4(0x574),'library':_0x4487d4(0x59e),'menu':'Мяню','preferences':_0x4487d4(0x78e),'windowMode':'Аконны\x20рэжым','radminPriority':_0x4487d4(0x3ba),'threeD':_0x4487d4(0x338),'volume':_0x4487d4(0x302),'volumeMusic':_0x4487d4(0x214),'volumeSound':'Гучнасць\x20гукаў','back':_0x4487d4(0x680),'soundHelp':_0x4487d4(0x16a),'support':_0x4487d4(0x432),'supportDesk':_0x4487d4(0x463),'accountSwitch':'Змяніць\x20улiковы\x20запiс','exit':_0x4487d4(0x636),'version':_0x4487d4(0x2a0),'health':_0x4487d4(0x195),'energy':_0x4487d4(0x719),'speed':_0x4487d4(0x791),'strength':_0x4487d4(0x2d5),'intelligence':_0x4487d4(0x711),'agility':_0x4487d4(0x47d),'dexterity':_0x4487d4(0x2d3),'stamina':_0x4487d4(0x343),'will':_0x4487d4(0x572),'damage':_0x4487d4(0x578),'criticalHit':_0x4487d4(0x629),'attacksPerSecond':_0x4487d4(0x548),'penetration':_0x4487d4(0x4c1),'defencePsys':'Абарона\x20цела','defenceMagic':'Абарона\x20духу','skins':'Абалонкі','steamauthTitle':'Увайсці\x20праз\x20steam','steamauth':'Націскаючы\x20кнопку\x20Працягнуць,\x20адбудзецца\x20рэгістрацыя\x20новага\x20акаўнта!\x20Калі\x20Вы\x20жадаеце\x20ажыццявіць\x20уваход\x20у\x20свой\x20бягучы\x20акаўнт\x20PW\x20Classic,\x20Вам\x20неабходна\x20спачатку\x20прывязаць\x20свой\x20Steam\x20акаўнт\x20з\x20меню\x20налад.'}};static['text'](_0x2529fc){const _0x5b66a0=_0x4487d4;if(_0x2529fc in Lang['list'][Lang[_0x5b66a0(0x47b)]])return Lang[_0x5b66a0(0x843)][Lang['target']][_0x2529fc];return Lang[_0x5b66a0(0x843)][Lang['default']][_0x2529fc];}}class News{static async[_0x4487d4(0x303)](){const _0x5e3973=_0x4487d4;News['db']=new DataBase(_0x5e3973(0x843),[{'name':_0x5e3973(0x843),'options':{'keyPath':'id'}}],0x1),await News['db'][_0x5e3973(0x303)]();}static async[_0x4487d4(0x4e1)](_0x45f4b0,_0xbf833f=0x0){const _0xbcb99f=_0x4487d4;!_0xbf833f&&(_0xbf833f=-Date[_0xbcb99f(0x700)]());_0xbf833f=Number(_0xbf833f);if(await News['db']['get'](_0xbcb99f(0x843),_0xbf833f))return;await News['db'][_0xbcb99f(0xed)]('list',{'id':_0xbf833f,'text':_0x45f4b0,'status':0x0});}static async[_0x4487d4(0x164)](){const _0x5d851a=_0x4487d4;let _0xfefd69=[{'id':'Привет\x20мир!','text':'Тестовая\x20новость\x20с\x20сервера'}];for(let _0x5e6bf9 of _0xfefd69){News[_0x5d851a(0x4e1)](_0x5e6bf9['id'],_0x5e6bf9[_0x5d851a(0x605)]);}}static async[_0x4487d4(0x1bc)](){const _0x1d9809=_0x4487d4;let _0x590a3e=await News['db'][_0x1d9809(0x727)](_0x1d9809(0x843)),_0x4d0954=0x0;for(let _0x4955de of _0x590a3e){!_0x4955de['status']&&_0x4d0954++;}return{'list':_0x590a3e,'notifications':_0x4d0954};}static async[_0x4487d4(0x2f9)](_0x5d3f2c){const _0x1a37d9=_0x4487d4;await News[_0x1a37d9(0x80f)](_0x5d3f2c,{'status':0x1});}static async[_0x4487d4(0x80f)](_0x546ebb,_0x398c37){const _0x26e8de=_0x4487d4;if('id'in _0x398c37)throw _0x26e8de(0x543);_0x546ebb=Number(_0x546ebb);let _0x3d6814=await News['db']['get'](_0x26e8de(0x843),_0x546ebb);if(!_0x3d6814)throw _0x26e8de(0x219);await News['db']['add']('list',Object[_0x26e8de(0x58e)](_0x3d6814,_0x398c37));}}window['addEventListener'](_0x4487d4(0x812),()=>{const _0x5aca1b=_0x4487d4;window[_0x5aca1b(0x4e9)](_0x5aca1b(0x242),_0x28a817=>{const _0x2a4e69=_0x5aca1b;if(!('action'in _0x28a817[_0x2a4e69(0x43a)]))return;_0x28a817[_0x2a4e69(0x43a)][_0x2a4e69(0x6e2)]in ParentEvent&&ParentEvent[_0x28a817[_0x2a4e69(0x43a)][_0x2a4e69(0x6e2)]](_0x28a817[_0x2a4e69(0x43a)][_0x2a4e69(0x2a2)]),console[_0x2a4e69(0x1ed)](_0x2a4e69(0x404),_0x28a817[_0x2a4e69(0x43a)]);}),Splash[_0x5aca1b(0x303)](),NativeAPI['init'](),NativeAPI[_0x5aca1b(0x164)](_0x3b7bbc=>{const _0x2382f6=_0x5aca1b;View['updateProgress']&&Splash[_0x2382f6(0x61f)](),_0x3b7bbc[_0x2382f6(0x164)]&&(View[_0x2382f6(0x265)]=View['progress'](),View['updateProgress'][_0x2382f6(0x682)]['style'][_0x2382f6(0x658)]=_0x3b7bbc[_0x2382f6(0x62a)]+'%',View[_0x2382f6(0x265)][_0x2382f6(0x116)][_0x2382f6(0x12e)]=_0x3b7bbc[_0x2382f6(0x15e)]+'\x20'+_0x3b7bbc[_0x2382f6(0x62a)]+'%...');}),App[_0x5aca1b(0x303)](),Settings[_0x5aca1b(0x303)]();let _0x5cb880=async()=>{const _0x2c8ae1=_0x5aca1b;let _0x364fc7=await PWGame['testServerConnection'](PWGame[_0x2c8ae1(0x3c7)][PWGame[_0x2c8ae1(0x364)]]);_0x364fc7&&(PWGame[_0x2c8ae1(0x66c)]=!![]);},_0x479f12=async()=>{const _0x316d6f=_0x5aca1b;let _0x5bdfc2=await PWGame[_0x316d6f(0x2f8)](PWGame[_0x316d6f(0x3c7)][PWGame[_0x316d6f(0x39c)]]);_0x5bdfc2&&(PWGame[_0x316d6f(0x36b)]=!![]);};setTimeout(_0x375686=>{_0x5cb880(),_0x479f12();},0xbb8);});class DataBase{constructor(_0x407bdf,_0x2b1453,_0xc5b4e1=0x1){const _0x32ca0e=_0x4487d4;if(!(_0x32ca0e(0x63b)in window))throw _0x32ca0e(0x1a4);this[_0x32ca0e(0x20f)]=_0x407bdf,this[_0x32ca0e(0x7fe)]=_0x2b1453,this[_0x32ca0e(0x5eb)]=_0xc5b4e1;}async[_0x4487d4(0x303)](){const _0x4ca74c=_0x4487d4;let _0xf0f8f7=indexedDB[_0x4ca74c(0x802)](this[_0x4ca74c(0x20f)],this[_0x4ca74c(0x5eb)]);return _0xf0f8f7['addEventListener'](_0x4ca74c(0x42d),async _0x140f94=>await this['upgrade'](_0x140f94)),new Promise((_0x1b4b3d,_0x711360)=>{const _0x4a5780=_0x4ca74c;_0xf0f8f7[_0x4a5780(0x4e9)](_0x4a5780(0x778),_0x469d13=>{const _0x516d58=_0x4a5780;this[_0x516d58(0x430)]=_0x469d13[_0x516d58(0x47b)]['result'],_0x1b4b3d();}),_0xf0f8f7[_0x4a5780(0x4e9)](_0x4a5780(0x498),_0x711360);});}async['add'](_0x4c2eec,_0x3dbf94,_0x59867a){const _0x27a0e6=_0x4487d4;let _0xd3168c,_0x38abeb,_0x232923;return _0xd3168c=this[_0x27a0e6(0x430)][_0x27a0e6(0x720)](_0x4c2eec,_0x27a0e6(0x581)),_0x38abeb=_0xd3168c[_0x27a0e6(0x834)](_0x4c2eec),_0x232923=_0x38abeb[_0x27a0e6(0x7c2)](_0x3dbf94,_0x59867a),new Promise((_0x27d3c6,_0x2112ef)=>{const _0xd8e10a=_0x27a0e6;_0x232923[_0xd8e10a(0x4e9)](_0xd8e10a(0x778),_0x187957=>{const _0x594e6b=_0xd8e10a;_0x27d3c6(_0x187957[_0x594e6b(0x47b)][_0x594e6b(0x4ec)]);}),_0xd3168c[_0xd8e10a(0x4e9)](_0xd8e10a(0x498),_0x2112ef);});}async[_0x4487d4(0x2da)](_0x5f560d,_0x3d7307){const _0x9869c0=_0x4487d4;let _0x1dcf72,_0xd782d0,_0x3e434e;return _0x1dcf72=this[_0x9869c0(0x430)]['transaction'](_0x5f560d,'readonly'),_0xd782d0=_0x1dcf72[_0x9869c0(0x834)](_0x5f560d),_0x3e434e=_0xd782d0[_0x9869c0(0x2da)](_0x3d7307),await new Promise((_0x101c0a,_0x41c236)=>{const _0x3b5113=_0x9869c0;_0x3e434e['addEventListener']('success',_0xd5a9c0=>{const _0xa1941b=_0x5ecf;_0x101c0a(_0xd5a9c0[_0xa1941b(0x47b)][_0xa1941b(0x4ec)]);}),_0x3e434e[_0x3b5113(0x4e9)](_0x3b5113(0x498),_0x41c236);});}async[_0x4487d4(0x727)](_0x157c46,_0x1bfa35){const _0x136447=_0x4487d4;let _0x4f8dd4,_0x208659,_0x12f2a6;return _0x4f8dd4=this['link'][_0x136447(0x720)](_0x157c46,_0x136447(0x23e)),_0x208659=_0x4f8dd4[_0x136447(0x834)](_0x157c46),_0x12f2a6=_0x208659[_0x136447(0x727)](_0x1bfa35),new Promise((_0xfd846f,_0x472476)=>{const _0x19298e=_0x136447;_0x12f2a6[_0x19298e(0x4e9)](_0x19298e(0x778),_0x3d9624=>{const _0x17c622=_0x19298e;_0xfd846f(_0x3d9624[_0x17c622(0x47b)]['result']);}),_0x12f2a6['addEventListener'](_0x19298e(0x498),_0x472476);});}async[_0x4487d4(0x48e)](_0x366b1b,_0x2c0af1,_0x3dc4c7,_0x19f4b9){const _0x42daee=_0x4487d4;let _0x2c147c,_0x1fab5c,_0x4ac089,_0x40ee75;_0x2c147c=this['link']['transaction'](_0x366b1b,'readonly'),_0x1fab5c=_0x2c147c[_0x42daee(0x834)](_0x366b1b),_0x4ac089=_0x1fab5c[_0x42daee(0x3bf)](_0x2c0af1),_0x40ee75=_0x4ac089[_0x42daee(0x727)](_0x3dc4c7),_0x40ee75[_0x42daee(0x4e9)](_0x42daee(0x778),_0x156424=>{const _0x124219=_0x42daee;_0x19f4b9(_0x156424[_0x124219(0x47b)][_0x124219(0x4ec)]);}),_0x40ee75['addEventListener'](_0x42daee(0x498),_0x4d340b=>{throw _0x4d340b;});}async[_0x4487d4(0xcd)](_0x436a7b,_0x5bb47b,_0x47be81){const _0x71e724=_0x4487d4;let _0x53090e,_0x1139ab,_0x1cb7de,_0x4289e6;return _0x53090e=this[_0x71e724(0x430)][_0x71e724(0x720)](_0x436a7b,_0x71e724(0x23e)),_0x1139ab=_0x53090e['objectStore'](_0x436a7b),_0x1cb7de=_0x1139ab['index'](_0x5bb47b),_0x4289e6=_0x1cb7de['getAll'](_0x47be81),new Promise((_0x2d44ce,_0x22c9bc)=>{const _0x8749c=_0x71e724;_0x4289e6[_0x8749c(0x4e9)](_0x8749c(0x778),_0x363170=>{const _0xcc5e85=_0x8749c;_0x2d44ce(_0x363170['target'][_0xcc5e85(0x4ec)]);}),_0x4289e6[_0x8749c(0x4e9)]('error',_0x22c9bc);});}async[_0x4487d4(0x2d6)](_0x11a8fa){const _0x3b9d04=_0x4487d4;let _0x5d9133=new Array();for(let _0x45b577 in _0x11a8fa){switch(_0x11a8fa[_0x45b577][_0x3b9d04(0x299)]){case _0x3b9d04(0x2da):_0x5d9133['push'](this[_0x3b9d04(0x2da)](_0x45b577,_0x11a8fa[_0x45b577]['id']));break;case _0x3b9d04(0xcd):_0x5d9133[_0x3b9d04(0x2db)](this[_0x3b9d04(0xcd)](_0x45b577,_0x11a8fa[_0x45b577][_0x3b9d04(0x72f)],_0x11a8fa[_0x45b577]['id']));break;default:throw'Неизвестный\x20метод\x20'+_0x11a8fa[_0x45b577][_0x3b9d04(0x299)];break;}}let _0x352198=0x0,_0x406683=await Promise[_0x3b9d04(0x171)](_0x5d9133);for(let _0x441b88 in _0x11a8fa){_0x11a8fa[_0x441b88]=_0x406683[_0x352198],_0x352198++;}return _0x11a8fa;}async[_0x4487d4(0x4c7)](_0x53edb2,_0x2a4295,_0x4ece63){const _0x4d9f49=_0x4487d4;let _0x2aab27=await this[_0x4d9f49(0xcd)](_0x53edb2,_0x2a4295,_0x4ece63);if(!_0x2aab27)return;for(let _0x1fe8c2 of _0x2aab27){await this[_0x4d9f49(0x607)](_0x53edb2,'id');}return!![];}async[_0x4487d4(0x607)](_0x1453c0,_0x53835f){const _0x3f8895=_0x4487d4;let _0x36ef1e,_0x159d9b,_0x2dd18b;return _0x36ef1e=this[_0x3f8895(0x430)][_0x3f8895(0x720)](_0x1453c0,_0x3f8895(0x581)),_0x159d9b=_0x36ef1e[_0x3f8895(0x834)](_0x1453c0),_0x2dd18b=_0x159d9b[_0x3f8895(0x607)](_0x53835f),new Promise((_0x1f5095,_0x3e52df)=>{const _0x2823b9=_0x3f8895;_0x2dd18b['addEventListener'](_0x2823b9(0x778),_0x43dbc9=>{_0x1f5095(_0x43dbc9);}),_0x2dd18b[_0x2823b9(0x4e9)](_0x2823b9(0x498),_0x3e52df);});}async[_0x4487d4(0x474)](_0x5b2008){const _0x31a86a=_0x4487d4;let _0x480573=this['link']['transaction'](_0x5b2008,_0x31a86a(0x581));return _0x480573['objectStore'](_0x5b2008)['clear']();}async[_0x4487d4(0x484)](_0x5c2999){const _0x4dbbfe=_0x4487d4;let _0x14c19a=_0x5c2999[_0x4dbbfe(0x47b)]['result'];if(!this[_0x4dbbfe(0x7fe)])throw'Для\x20создания\x20базы-данных,\x20необходима\x20разметка\x20структуры';let _0x3097a6,_0x4e6cea,_0x1b9455;for(_0x3097a6 of this['structure']){let _0x3f5881=![];try{for(let _0x334132 of _0x14c19a['objectStoreNames']){if(_0x334132==_0x3097a6['name']){_0x3f5881=!![];break;}}if(_0x3f5881){if(_0x4dbbfe(0x474)in _0x3097a6)_0x14c19a[_0x4dbbfe(0x6a5)](_0x3097a6[_0x4dbbfe(0x20f)]);else continue;}_0x4e6cea=_0x14c19a[_0x4dbbfe(0x817)](_0x3097a6[_0x4dbbfe(0x20f)],_0x3097a6[_0x4dbbfe(0x442)]);if(_0x3097a6['indexes'])for(_0x1b9455 of _0x3097a6['indexes']){_0x4e6cea[_0x4dbbfe(0x2c2)](_0x1b9455['name'],_0x1b9455[_0x4dbbfe(0x4b8)]);}}catch(_0x87cf91){console[_0x4dbbfe(0x1ed)](_0x4dbbfe(0x47e)+_0x87cf91+_0x4dbbfe(0x79c));}}}}class Store{static async[_0x4487d4(0x303)](){const _0x2b1146=_0x4487d4;return Store['db']=new DataBase(_0x2b1146(0x28a),[{'name':_0x2b1146(0x37c),'options':{'keyPath':_0x2b1146(0x20b)},'indexes':[{'name':_0x2b1146(0x3de),'path':_0x2b1146(0x630)}]}],0x5),await Store['db'][_0x2b1146(0x303)]();}static async[_0x4487d4(0x2da)](_0xeb6829,_0x287c03){const _0x18816f=_0x4487d4;let _0x18f73b=await Store['db'][_0x18816f(0x2da)](_0x18816f(0x37c),_0xeb6829+'.'+_0x287c03);return _0x18f73b?_0x18f73b[_0x18816f(0x357)]:![];}static async[_0x4487d4(0x727)](_0x46551b){const _0x59f262=_0x4487d4;let _0x3895ab=await Store['db'][_0x59f262(0xcd)](_0x59f262(0x37c),_0x59f262(0x3de),_0x46551b);if(!_0x3895ab[_0x59f262(0x2ed)])return _0x3895ab;let _0x40c144=new Object();for(let _0x5c4a8b of _0x3895ab){_0x40c144[_0x5c4a8b[_0x59f262(0x72f)]]=_0x5c4a8b['value'];}return _0x40c144;}constructor(_0x44e227){const _0x41f82c=_0x4487d4;this[_0x41f82c(0x630)]=_0x44e227,this[_0x41f82c(0x481)]=new Object();}async[_0x4487d4(0x303)](_0x3ccf2b){const _0x527355=_0x4487d4;let _0x38d4ee,_0x12f582;_0x38d4ee=await Store['db']['getIndexAll'](_0x527355(0x37c),_0x527355(0x3de),this[_0x527355(0x630)]);if(_0x38d4ee['length'])for(_0x12f582 of _0x38d4ee){this['local'][_0x12f582['key']]=_0x12f582['value'];}else await this[_0x527355(0x80f)](_0x3ccf2b);}get[_0x4487d4(0x43a)](){return this['local'];}async[_0x4487d4(0x80f)](_0x3da48c){const _0xee5714=_0x4487d4;for(let _0x437ec6 in _0x3da48c){await Store['db'][_0xee5714(0xed)](_0xee5714(0x37c),{'identify':this['object']+'.'+_0x437ec6,'object':this[_0xee5714(0x630)],'key':_0x437ec6,'value':_0x3da48c[_0x437ec6]}),this[_0xee5714(0x481)][_0x437ec6]=_0x3da48c[_0x437ec6];}}async['getAll'](_0x40ec11){const _0x812e16=_0x4487d4;let _0x14bdda=await Store['db'][_0x812e16(0xcd)](_0x812e16(0x37c),_0x812e16(0x3de),_0x40ec11);if(!_0x14bdda['length'])return![];let _0x247c7d=new Object();for(let _0x594ca8 of _0x14bdda){_0x247c7d[_0x594ca8[_0x812e16(0x72f)]]=_0x594ca8[_0x812e16(0x357)];}return _0x247c7d;}static async['delete'](_0x170fac){const _0x1686ad=_0x4487d4;let _0x1e109d=await Store['db'][_0x1686ad(0xcd)](_0x1686ad(0x37c),_0x1686ad(0x3de),_0x170fac);if(!_0x1e109d)return;for(let _0x5ca789 of _0x1e109d){await Store['db']['delete'](_0x1686ad(0x37c),_0x5ca789[_0x1686ad(0x20b)]);}}}class Api{constructor(_0x473248,_0x2f8c60){const _0x2e8666=_0x4487d4;if(!(_0x2e8666(0x742)in window))throw _0x2e8666(0x4cd);if(!Array[_0x2e8666(0x6c2)](_0x473248))throw'Необходим\x20массив\x20хостов';if(!_0x473248[_0x2e8666(0x2ed)])throw _0x2e8666(0x452);this[_0x2e8666(0x742)],this[_0x2e8666(0x41a)]=_0x473248,this[_0x2e8666(0x647)]=this[_0x2e8666(0x41a)][0x0],this[_0x2e8666(0x6cd)]=0x7530,this['DISCONNECT_LAST_DATE']=Date[_0x2e8666(0x700)](),this[_0x2e8666(0x81a)]=0x0,this[_0x2e8666(0x400)]=0x3,this[_0x2e8666(0x476)]=0x3e8,this[_0x2e8666(0x354)]=new Object(),this[_0x2e8666(0xc2)]=_0x2f8c60?_0x2f8c60:new Object();}async['init'](){const _0x390dd1=_0x4487d4;await this[_0x390dd1(0x68d)]();}async[_0x4487d4(0x68d)](_0x1463a8=0x0){return new Promise((_0x5dbdfb,_0x3d7ca8)=>{setTimeout(async()=>{const _0x510d1f=_0x5ecf;console[_0x510d1f(0x1ed)](_0x510d1f(0x17a)+this[_0x510d1f(0x647)]+'\x20('+this[_0x510d1f(0x81a)]+_0x510d1f(0x684));if(this['WebSocket']){if(this[_0x510d1f(0x742)][_0x510d1f(0x6fc)]==0x1)return _0x5dbdfb();await this['disconnect']();}this[_0x510d1f(0x81a)]>=this[_0x510d1f(0x400)]&&this[_0x510d1f(0x3e4)](),this[_0x510d1f(0x742)]=new WebSocket(this[_0x510d1f(0x647)]+'/'+App['storage'][_0x510d1f(0x43a)][_0x510d1f(0x85f)]),this[_0x510d1f(0x742)][_0x510d1f(0x807)]=_0x273fe7=>this[_0x510d1f(0x242)](_0x273fe7[_0x510d1f(0x43a)]),this[_0x510d1f(0x742)]['onerror']=_0x177e02=>{const _0x4d12b0=_0x510d1f;console['log'](_0x4d12b0(0x5df)+this[_0x4d12b0(0x647)]+'...',_0x177e02),App[_0x4d12b0(0x498)]('Разрыв\x20соединения,\x20подождите...\x20['+this[_0x4d12b0(0x81a)]+']',_0x177e02);},this[_0x510d1f(0x742)][_0x510d1f(0x1ce)]=()=>{const _0x1c65b5=_0x510d1f;this['connect'](this[_0x1c65b5(0x476)]),_0x3d7ca8();},this[_0x510d1f(0x742)]['onopen']=()=>{const _0x3be269=_0x510d1f;this['WebSocket'][_0x3be269(0x1ce)]=()=>this[_0x3be269(0x68d)](this[_0x3be269(0x476)]),console[_0x3be269(0x1ed)]('Успешно\x20подключились\x20к\x20'+this[_0x3be269(0x647)]+_0x3be269(0x30a)),this[_0x3be269(0x647)]!=this['host'][0x0]&&App[_0x3be269(0x14a)](),_0x5dbdfb();};},_0x1463a8);});}async[_0x4487d4(0x444)](){const _0x2c710c=_0x4487d4;console['log'](_0x2c710c(0x4c9)+this[_0x2c710c(0x647)]+_0x2c710c(0x30a)),App[_0x2c710c(0x498)](_0x2c710c(0x4e3)+this[_0x2c710c(0x81a)]+']');if(!this[_0x2c710c(0x742)])return;return Date[_0x2c710c(0x700)]()-this['DISCONNECT_LAST_DATE']<this[_0x2c710c(0x6cd)]&&this[_0x2c710c(0x81a)]++,this['DISCONNECT_LAST_DATE']=Date[_0x2c710c(0x700)](),new Promise((_0x34c9d0,_0x1d3ea4)=>{const _0x2a1a44=_0x2c710c;if(this[_0x2a1a44(0x742)][_0x2a1a44(0x6fc)]==0x3)return _0x34c9d0();this[_0x2a1a44(0x742)]['onclose']=_0x34c9d0,this[_0x2a1a44(0x742)][_0x2a1a44(0x776)]();});}[_0x4487d4(0x3e4)](){const _0x3e1e70=_0x4487d4;this[_0x3e1e70(0x81a)]=0x0;if(this[_0x3e1e70(0x41a)][_0x3e1e70(0x2ed)]==0x1)return;let _0x42cbd5=0x0;for(let _0x1187b0=0x0;_0x1187b0<this[_0x3e1e70(0x41a)][_0x3e1e70(0x2ed)];++_0x1187b0){if(this['MAIN_HOST']==this[_0x3e1e70(0x41a)][_0x1187b0]){_0x42cbd5=_0x1187b0;break;}}App['error']('Подождите,\x20подключение\x20восстанавливается\x20['+_0x42cbd5+']'),this[_0x3e1e70(0x647)]=this[_0x3e1e70(0x41a)][(_0x42cbd5+0x1)%this[_0x3e1e70(0x41a)][_0x3e1e70(0x2ed)]];}async[_0x4487d4(0x242)](_0x529669){const _0x58aa1c=_0x4487d4;let _0x214572=JSON[_0x58aa1c(0x1f1)](_0x529669);console[_0x58aa1c(0x1ed)](_0x58aa1c(0x208),_0x214572);if(!_0x214572)return;if(_0x58aa1c(0x4d6)in _0x214572){let {request:_0x3b3355,data:_0x538b15,error:_0x13de51}=_0x214572[_0x58aa1c(0x4d6)];if(!(_0x3b3355 in this[_0x58aa1c(0x354)]))return;_0x13de51?this[_0x58aa1c(0x354)][_0x3b3355]['reject'](_0x13de51):this[_0x58aa1c(0x354)][_0x3b3355][_0x58aa1c(0x48c)](_0x538b15),delete this[_0x58aa1c(0x354)][_0x3b3355];}else{if(_0x58aa1c(0x5d5)in _0x214572){let {action:_0x40911d,data:_0x35487b}=_0x214572[_0x58aa1c(0x5d5)];if('queue'in _0x214572)try{this[_0x58aa1c(0x742)][_0x58aa1c(0x7e7)](JSON[_0x58aa1c(0x7fd)]({'queue':_0x214572[_0x58aa1c(0x80e)]}));}catch(_0x54c6e7){console[_0x58aa1c(0x1ed)]('API\x20(queue)',_0x54c6e7);}if(_0x40911d in this['events']){console[_0x58aa1c(0x1ed)](_0x58aa1c(0x268),_0x214572['from']);try{this[_0x58aa1c(0xc2)][_0x40911d](_0x35487b);}catch(_0x5de708){console[_0x58aa1c(0x1ed)](_0x58aa1c(0x3c2),_0x5de708);}}}else throw _0x58aa1c(0x751)+JSON['stringify'](_0x214572);}}async[_0x4487d4(0x74c)](_0x114d21,_0x2ac203,_0x3f8a6b){const _0x16228f=_0x4487d4;for(let _0x1b5549 in this[_0x16228f(0x354)]){if(this[_0x16228f(0x354)][_0x1b5549][_0x16228f(0x630)]==_0x114d21&&this[_0x16228f(0x354)][_0x1b5549]['method']==_0x2ac203)throw _0x16228f(0x182)+_0x2ac203+_0x16228f(0x493)+_0x114d21;}let _0x20718b=Date[_0x16228f(0x700)]();try{await this[_0x16228f(0x670)](_0x20718b,_0x114d21,_0x2ac203,_0x3f8a6b);}catch(_0x4bcb91){throw _0x16228f(0x7fc);}return await new Promise((_0x562152,_0x15ab84)=>{let _0x2c219d=setTimeout(()=>{const _0xbf8282=_0x5ecf;delete this['awaiting'][_0x20718b],_0x15ab84(_0xbf8282(0x2dd)+_0x114d21+_0xbf8282(0x493)+_0x2ac203+'\x20истекло');},0x3a98);this['awaiting'][_0x20718b]={'object':_0x114d21,'method':_0x2ac203,'resolve':_0x54cdcb=>{clearTimeout(_0x2c219d),_0x562152(_0x54cdcb);},'reject':_0x46f31d=>{clearTimeout(_0x2c219d),_0x15ab84(_0x46f31d);}};});}async[_0x4487d4(0x67e)](_0x4cf5ae,_0x128380,_0x90e472,_0x33bccc,_0x423154=![]){const _0x5ef544=_0x4487d4;let _0x308c58=''+_0x90e472+Date[_0x5ef544(0x700)]();try{await this['say'](_0x308c58,_0x128380,_0x90e472,_0x33bccc);}catch(_0x26b69d){_0x423154&&setTimeout(()=>this[_0x5ef544(0x67e)](_0x4cf5ae,_0x128380,_0x90e472,_0x33bccc,!![]),0xbb8);return;}let _0x33d536=setTimeout(()=>{const _0x21a635=_0x5ef544;delete this[_0x21a635(0x354)][_0x308c58],_0x423154&&this[_0x21a635(0x67e)](_0x4cf5ae,_0x128380,_0x90e472,_0x33bccc,!![]);},0x3a98);this['awaiting'][_0x308c58]={'object':_0x128380,'method':_0x90e472,'resolve':_0x1c106f=>{clearTimeout(_0x33d536),_0x4cf5ae(_0x1c106f,![]);},'reject':_0x33ab2d=>{clearTimeout(_0x33d536),_0x4cf5ae(![],_0x33ab2d);}};return;}async[_0x4487d4(0x2b0)](_0x5324f2,_0x416e73,_0x4ff0ea){const _0x269ad0=_0x4487d4;try{await this[_0x269ad0(0x670)](0x0,_0x5324f2,_0x416e73,_0x4ff0ea);}catch(_0x39b66b){}return;}async['say'](_0x30182f,_0xac0380,_0x2234bd,_0x40b7ef='',_0x5e58de=0x0){const _0x1d8e99=_0x4487d4;this['WebSocket'][_0x1d8e99(0x6fc)]===this[_0x1d8e99(0x742)][_0x1d8e99(0x44a)]?this['WebSocket'][_0x1d8e99(0x7e7)](JSON['stringify']({'token':App[_0x1d8e99(0x3b3)][_0x1d8e99(0x43a)]['token'],'request':_0x30182f,'object':_0xac0380,'method':_0x2234bd,'data':_0x40b7ef,'version':PW_VERSION+'.'+APP_VERSION})):_0x5e58de<0x5&&setTimeout(()=>this[_0x1d8e99(0x670)](_0x30182f,_0xac0380,_0x2234bd,_0x40b7ef,_0x5e58de+0x1),0xbb8);}}class CastleNAVBAR{static ['state']=![];static [_0x4487d4(0x320)]=0x0;static[_0x4487d4(0x303)](){const _0x886b8c=_0x4487d4;let _0x32e4ee=[_0x886b8c(0x166),_0x886b8c(0x675),_0x886b8c(0x28f),_0x886b8c(0x1b1),_0x886b8c(0x6fe),'castle-button-play-3',_0x886b8c(0xd1),_0x886b8c(0x58f),'castle-button-play-2',_0x886b8c(0x49f),_0x886b8c(0x82e),'castle-button-play-m1',_0x886b8c(0x1eb),_0x886b8c(0x833),'castle-button-play-m4','castle-button-play-m5',_0x886b8c(0x5aa)];CastleNAVBAR[_0x886b8c(0x2a2)]=DOM({'style':'castle-button-play'});for(let _0x3c6e28 of _0x32e4ee){CastleNAVBAR[_0x886b8c(0x2a2)][_0x886b8c(0x2f2)](DOM({'style':_0x3c6e28}));}return CastleNAVBAR[_0x886b8c(0x2a2)]['children'][0x3]['onclick']=()=>{const _0x2888d4=_0x886b8c;App[_0x2888d4(0x498)](_0x2888d4(0x133));},CastleNAVBAR[_0x886b8c(0x2a2)][_0x886b8c(0x47a)][0x4][_0x886b8c(0x513)]=()=>{const _0x433cd3=_0x886b8c;App[_0x433cd3(0x498)](_0x433cd3(0x73a));},CastleNAVBAR[_0x886b8c(0x2a2)][_0x886b8c(0x47a)][0x5][_0x886b8c(0x12e)]=Lang[_0x886b8c(0x605)]('fight'),CastleNAVBAR[_0x886b8c(0x2a2)][_0x886b8c(0x47a)][0x9]['onclick']=()=>{const _0x93aea6=_0x886b8c;CastleNAVBAR[_0x93aea6(0x22d)]();},CastleNAVBAR[_0x886b8c(0x2a2)][_0x886b8c(0x47a)][0x9][_0x886b8c(0x2f2)](DOM({'title':_0x886b8c(0x1fd)})),CastleNAVBAR[_0x886b8c(0x2a2)]['children'][0xb]['onclick']=()=>{const _0xbdbbe=_0x886b8c;CastleNAVBAR[_0xbdbbe(0x3e1)](0x1);},CastleNAVBAR[_0x886b8c(0x2a2)][_0x886b8c(0x47a)][0xc][_0x886b8c(0x513)]=()=>{CastleNAVBAR['setMode'](0x2);},CastleNAVBAR[_0x886b8c(0x2a2)][_0x886b8c(0x47a)][0xd][_0x886b8c(0x513)]=()=>{const _0x3ffade=_0x886b8c;CastleNAVBAR[_0x3ffade(0x3e1)](0x3);},CastleNAVBAR[_0x886b8c(0x2a2)][_0x886b8c(0x47a)][0xe]['onclick']=()=>{const _0x4793cd=_0x886b8c;CastleNAVBAR[_0x4793cd(0x3e1)](0x4);},CastleNAVBAR['body'][_0x886b8c(0x47a)][0xf]['onclick']=()=>{const _0x119bb9=_0x886b8c;CastleNAVBAR[_0x119bb9(0x3e1)](0x5);},CastleNAVBAR[_0x886b8c(0x2a2)][_0x886b8c(0x47a)][0x10][_0x886b8c(0x513)]=()=>{const _0xcf4842=_0x886b8c;CastleNAVBAR[_0xcf4842(0x3e1)](0x6);},CastleNAVBAR['body'][_0x886b8c(0x47a)][0x5];}static[_0x4487d4(0x612)](){const _0x1cb50b=_0x4487d4;if(CastleNAVBAR['state'])return;CastleNAVBAR['state']=!![],CastleNAVBAR[_0x1cb50b(0x2a2)][_0x1cb50b(0x47a)][0x0][_0x1cb50b(0x11e)][_0x1cb50b(0x601)]=_0x1cb50b(0x547),CastleNAVBAR['body']['children'][0x5][_0x1cb50b(0x12e)]=_0x1cb50b(0x685),CastleNAVBAR[_0x1cb50b(0x2a2)]['children'][0x1]['style'][_0x1cb50b(0x7ac)]=_0x1cb50b(0x70e),CastleNAVBAR[_0x1cb50b(0x2a2)][_0x1cb50b(0x47a)][0x2][_0x1cb50b(0x11e)][_0x1cb50b(0x7ac)]='grayscale(80%)',CastleNAVBAR[_0x1cb50b(0x2a2)][_0x1cb50b(0x47a)][0x3][_0x1cb50b(0x11e)][_0x1cb50b(0x7ac)]='grayscale(70%)',CastleNAVBAR[_0x1cb50b(0x2a2)]['children'][0x4][_0x1cb50b(0x11e)][_0x1cb50b(0x7ac)]='grayscale(70%)';}static[_0x4487d4(0x5e1)](){const _0x388d34=_0x4487d4;if(!CastleNAVBAR['state'])return;CastleNAVBAR[_0x388d34(0x696)]=![],CastleNAVBAR[_0x388d34(0x2a2)][_0x388d34(0x47a)][0x0]['style'][_0x388d34(0x601)]=_0x388d34(0x6c8),CastleNAVBAR[_0x388d34(0x2a2)][_0x388d34(0x47a)][0x5]['innerText']=Lang['text'](_0x388d34(0x505)),CastleNAVBAR['body'][_0x388d34(0x47a)][0x1][_0x388d34(0x11e)]['filter']=_0x388d34(0x6b4),CastleNAVBAR[_0x388d34(0x2a2)]['children'][0x2]['style'][_0x388d34(0x7ac)]=_0x388d34(0x6b4),CastleNAVBAR[_0x388d34(0x2a2)]['children'][0x3][_0x388d34(0x11e)][_0x388d34(0x7ac)]=_0x388d34(0x6b4),CastleNAVBAR[_0x388d34(0x2a2)][_0x388d34(0x47a)][0x4][_0x388d34(0x11e)][_0x388d34(0x7ac)]='grayscale(0)';}static[_0x4487d4(0x22d)](){const _0x135d08=_0x4487d4;CastleNAVBAR['body'][_0x135d08(0x47a)][0x5][_0x135d08(0x11e)][_0x135d08(0x601)]=_0x135d08(0x6c8),CastleNAVBAR[_0x135d08(0x2a2)]['children'][0xa][_0x135d08(0x11e)][_0x135d08(0x601)]=_0x135d08(0x547),CastleNAVBAR[_0x135d08(0x2a2)][_0x135d08(0x47a)][0xb][_0x135d08(0x11e)][_0x135d08(0x601)]=_0x135d08(0x547),CastleNAVBAR[_0x135d08(0x2a2)][_0x135d08(0x47a)][0xc][_0x135d08(0x11e)]['display']=_0x135d08(0x547),CastleNAVBAR[_0x135d08(0x2a2)][_0x135d08(0x47a)][0xd][_0x135d08(0x11e)][_0x135d08(0x601)]=_0x135d08(0x547),CastleNAVBAR[_0x135d08(0x2a2)]['children'][0xe][_0x135d08(0x11e)][_0x135d08(0x601)]=_0x135d08(0x547),CastleNAVBAR['body'][_0x135d08(0x47a)][0xf]['style'][_0x135d08(0x601)]=_0x135d08(0x547),CastleNAVBAR['body'][_0x135d08(0x47a)][0x10][_0x135d08(0x11e)]['display']=_0x135d08(0x547);}static[_0x4487d4(0x3e1)](_0x234785){const _0x1ab530=_0x4487d4;CastleNAVBAR['body'][_0x1ab530(0x47a)][0x9][_0x1ab530(0x682)][_0x1ab530(0x12e)]='',CastleNAVBAR['mode']=_0x234785-0x1,CastleNAVBAR[_0x1ab530(0x2a2)][_0x1ab530(0x47a)][0x5]['style']['display']=_0x1ab530(0x547);let _0x142be5=window[_0x1ab530(0x456)](CastleNAVBAR[_0x1ab530(0x2a2)][_0x1ab530(0x47a)]['1'+_0x234785],null)[_0x1ab530(0x555)](_0x1ab530(0x579));CastleNAVBAR['body']['children'][0x6][_0x1ab530(0x11e)][_0x1ab530(0x756)]=_0x142be5,CastleNAVBAR[_0x1ab530(0x2a2)][_0x1ab530(0x47a)][0xa][_0x1ab530(0x11e)]['display']='none',CastleNAVBAR[_0x1ab530(0x2a2)]['children'][0xb][_0x1ab530(0x11e)][_0x1ab530(0x601)]=_0x1ab530(0x6c8),CastleNAVBAR[_0x1ab530(0x2a2)][_0x1ab530(0x47a)][0xc][_0x1ab530(0x11e)][_0x1ab530(0x601)]=_0x1ab530(0x6c8),CastleNAVBAR[_0x1ab530(0x2a2)]['children'][0xd][_0x1ab530(0x11e)][_0x1ab530(0x601)]=_0x1ab530(0x6c8),CastleNAVBAR[_0x1ab530(0x2a2)][_0x1ab530(0x47a)][0xe][_0x1ab530(0x11e)][_0x1ab530(0x601)]=_0x1ab530(0x6c8),CastleNAVBAR[_0x1ab530(0x2a2)]['children'][0xf][_0x1ab530(0x11e)][_0x1ab530(0x601)]=_0x1ab530(0x6c8),CastleNAVBAR['body']['children'][0x10][_0x1ab530(0x11e)][_0x1ab530(0x601)]='none';}static[_0x4487d4(0x80e)](_0x4f0258){const _0x234aef=_0x4487d4;let _0x273125=0x0;CastleNAVBAR[_0x234aef(0x320)]in _0x4f0258[_0x234aef(0x320)]&&(_0x4f0258[_0x234aef(0x320)][CastleNAVBAR[_0x234aef(0x320)]]&&(_0x273125=_0x4f0258['mode'][CastleNAVBAR['mode']])),CastleNAVBAR[_0x234aef(0x2a2)][_0x234aef(0x47a)][0x9][_0x234aef(0x682)][_0x234aef(0x12e)]=_0x273125?_0x273125:'';}}class View{static [_0x4487d4(0x21a)]=![];static [_0x4487d4(0x44f)]=![];static [_0x4487d4(0x3b9)]={'transform':['scale(1.1)',_0x4487d4(0x13a)],'opacity':[0x0,0x1],'backdropFilter':['blur(0)',_0x4487d4(0x4b6)]};static [_0x4487d4(0xd8)]={'duration':0x96,'fill':_0x4487d4(0x7c9),'easing':_0x4487d4(0x1b5)};static [_0x4487d4(0x265)]=![];static['setCss'](_0x44b86f='content/style.css'){const _0x598b1f=_0x4487d4;let _0x4e559f=DOM({'tag':_0x598b1f(0x430),'rel':_0x598b1f(0xe8),'href':_0x44b86f});document[_0x598b1f(0x257)][_0x598b1f(0x3b5)](_0x4e559f);}static async[_0x4487d4(0x19c)](_0x26ec40,_0x469c09,_0x2f3b34,_0x492624){const _0x498a21=_0x4487d4;if(!(_0x26ec40 in View))return;Window['close'](_0x498a21(0x18e)),Castle[_0x498a21(0x500)](Castle[_0x498a21(0x4aa)],_0x26ec40==_0x498a21(0x5a7));try{var _0x28e780=await View[_0x26ec40](_0x469c09,_0x2f3b34,_0x492624);}catch(_0x2f3086){App['error'](_0x2f3086);String(_0x2f3086)[_0x498a21(0x4e0)](new RegExp(_0x498a21(0x5a9),'i'))!=-0x1&&App['exit']();return;}View[_0x498a21(0x1d5)]?(View[_0x498a21(0x44f)][_0x498a21(0xeb)](),View[_0x498a21(0x44f)][_0x498a21(0x4e9)]('finish',()=>{const _0x51f3f7=_0x498a21;View[_0x51f3f7(0x1d5)][_0x51f3f7(0x1ac)](),View[_0x51f3f7(0x1d5)]=_0x28e780,View[_0x51f3f7(0x44f)]=_0x28e780[_0x51f3f7(0x33a)](View[_0x51f3f7(0x3b9)],View[_0x51f3f7(0xd8)]),document[_0x51f3f7(0x2a2)][_0x51f3f7(0x2f2)](_0x28e780);})):(View[_0x498a21(0x1d5)]=_0x28e780,View[_0x498a21(0x44f)]=_0x28e780[_0x498a21(0x33a)](View[_0x498a21(0x3b9)],View['defaultOptionAnimation']),document[_0x498a21(0x2a2)][_0x498a21(0x2f2)](_0x28e780));}static[_0x4487d4(0x6c1)](){const _0x41fa38=_0x4487d4;let _0xa5ce34=['keyup',async _0x406e8b=>{const _0x4c13c5=_0x5ecf;(_0x406e8b[_0x4c13c5(0x270)]===_0x4c13c5(0x5dd)||_0x406e8b[_0x4c13c5(0x270)]==='NumpadEnter')&&App[_0x4c13c5(0x6c1)](_0x5f4ec3,_0x366f39);}],_0x5f4ec3=DOM({'tag':_0x41fa38(0x3fc),'placeholder':_0x41fa38(0x849),'event':_0xa5ce34}),_0x366f39=DOM({'tag':'input','placeholder':_0x41fa38(0x362),'type':_0x41fa38(0x774),'event':_0xa5ce34}),_0x2e0487=DOM({'style':_0x41fa38(0x6d0)},DOM({'style':_0x41fa38(0x16e)},DOM({'tag':_0x41fa38(0x51d)},DOM({'tag':_0x41fa38(0x2b3),'style':_0x41fa38(0x813),'src':'content/img/logo_classic.webp'})),DOM({'style':'login-box-forma-inputs'},_0x5f4ec3,_0x366f39,DOM({'style':_0x41fa38(0x39b)},DOM({'style':_0x41fa38(0x863),'event':[_0x41fa38(0x6d3),()=>App['authorization'](_0x5f4ec3,_0x366f39)]},'Войти'),DOM({'style':_0x41fa38(0x863),'event':[_0x41fa38(0x6d3),()=>View[_0x41fa38(0x19c)]('registration')]},_0x41fa38(0x26c))),DOM({'style':_0x41fa38(0x39b)},DOM({'style':[_0x41fa38(0x863),_0x41fa38(0x75c)],'event':[_0x41fa38(0x6d3),()=>Window['show'](_0x41fa38(0x18e),_0x41fa38(0x75c))]},_0x41fa38(0x24e))))),DOM({'style':_0x41fa38(0x40f)},_0x41fa38(0x677)+PW_VERSION+'.'+APP_VERSION));return _0x2e0487;}static[_0x4487d4(0x7e2)](){const _0x5d83a1=_0x4487d4;let _0x307452=[_0x5d83a1(0x5e6),async _0x1d8948=>{const _0xe2c907=_0x5d83a1;(_0x1d8948[_0xe2c907(0x270)]===_0xe2c907(0x5dd)||_0x1d8948['code']===_0xe2c907(0x410))&&App[_0xe2c907(0x7e2)](_0x281263,_0x37a054,_0x182e40,_0x4a0054,_0x56a137);}],_0x281263=DOM({'tag':_0x5d83a1(0x5d7)},DOM({'tag':_0x5d83a1(0x2fb),'value':0x0,'disabled':!![],'selected':!![]},_0x5d83a1(0x50d)),DOM({'tag':_0x5d83a1(0x2fb),'value':0x1},_0x5d83a1(0x54d)),DOM({'tag':_0x5d83a1(0x2fb),'value':0x2},'Докты')),_0xa64af4=_0x5d83a1(0x253),_0x109463=DOM({'style':_0x5d83a1(0x5fc),'tag':'a','target':_0x5d83a1(0x3d5),'href':_0xa64af4,'event':[_0x5d83a1(0x6d3),_0x4e6c1a=>NativeAPI['linkHandler'](_0x4e6c1a)]}),_0x37a054=DOM({'tag':_0x5d83a1(0x3fc),'placeholder':_0x5d83a1(0x58d),'event':_0x307452}),_0x34d4c1=DOM({'style':'invite-input'},_0x37a054,_0x109463),_0x182e40=DOM({'tag':'input','placeholder':_0x5d83a1(0x849),'event':_0x307452}),_0x4a0054=DOM({'tag':_0x5d83a1(0x3fc),'placeholder':'Пароль','type':'password','event':_0x307452}),_0x56a137=DOM({'tag':'input','placeholder':_0x5d83a1(0x363),'type':_0x5d83a1(0x774),'event':_0x307452});return DOM({'style':_0x5d83a1(0x6d0)},DOM({'style':_0x5d83a1(0x16e)},DOM({'style':_0x5d83a1(0x6ff)},_0x281263,_0x34d4c1,_0x182e40,_0x4a0054,_0x56a137,DOM({'style':_0x5d83a1(0x39b)},DOM({'style':_0x5d83a1(0x863),'event':[_0x5d83a1(0x6d3),()=>App[_0x5d83a1(0x7e2)](_0x281263,_0x37a054,_0x182e40,_0x4a0054,_0x56a137)]},_0x5d83a1(0x4e6)),DOM({'style':_0x5d83a1(0x863),'event':[_0x5d83a1(0x6d3),()=>View[_0x5d83a1(0x19c)]('authorization')]},Lang[_0x5d83a1(0x605)]('back')))),DOM({'style':_0x5d83a1(0x475)},DOM({'tag':_0x5d83a1(0x2b3),'style':_0x5d83a1(0x813),'src':_0x5d83a1(0x70c)}),DOM({'style':_0x5d83a1(0x16d)},_0x5d83a1(0x699)),DOM({'tag':_0x5d83a1(0x2b3),'style':_0x5d83a1(0x813),'src':_0x5d83a1(0x760)}))),DOM({'style':_0x5d83a1(0x40f)},_0x5d83a1(0x677)+PW_VERSION+'.'+APP_VERSION));}static[_0x4487d4(0x110)](){const _0x3c97a8=_0x4487d4;let _0x394cf5=DOM({'style':'progress'},DOM({'style':_0x3c97a8(0x468)}),DOM());return Splash[_0x3c97a8(0x19c)](_0x394cf5,![]),_0x394cf5;}static async[_0x4487d4(0x5a7)](){const _0x19a7f9=_0x4487d4;document[_0x19a7f9(0x2a2)][_0x19a7f9(0x695)]['add']('noselect'),View[_0x19a7f9(0x211)](_0x19a7f9(0x14f));let _0x3d85a9=DOM({'tag':_0x19a7f9(0x51d),'id':'castle-body'}),_0x507ac4=DOM({'tag':'div','id':'castle-background-img'});!Castle[_0x19a7f9(0x297)]&&(Castle[_0x19a7f9(0x297)]=DOM({'tag':_0x19a7f9(0x297),'id':_0x19a7f9(0x3ee)}));try{!Castle['gl']&&await Castle[_0x19a7f9(0x839)](App[_0x19a7f9(0x3b3)][_0x19a7f9(0x43a)][_0x19a7f9(0x794)]==0x1?'ad':'doct',Castle[_0x19a7f9(0x297)]);}catch(_0x57763a){App[_0x19a7f9(0x498)](_0x57763a);}_0x3d85a9[_0x19a7f9(0x2f2)](_0x507ac4,Castle[_0x19a7f9(0x297)]);try{let _0x61add1=await View[_0x19a7f9(0x4d1)]();_0x3d85a9['append'](_0x61add1);}catch(_0x56b0ab){console['log'](_0x56b0ab);}_0x3d85a9['append'](View['castleChat']());try{let _0x9f1a1f=await View[_0x19a7f9(0x414)]();_0x3d85a9[_0x19a7f9(0x2f2)](_0x9f1a1f);}catch(_0x4119bf){console[_0x19a7f9(0x1ed)](_0x4119bf);}return _0x3d85a9[_0x19a7f9(0x2f2)](View[_0x19a7f9(0x6a6)]()),setTimeout(()=>{Chat['scroll']();},0x5dc),_0x3d85a9;}static async['castlePlay'](){const _0x4a364b=_0x4487d4;let _0x1d2eef=DOM({'style':'castle-play'}),_0x43f423=MM[_0x4a364b(0x612)]();_0x43f423['classList']['remove'](_0x4a364b(0x6b5)),_0x43f423['classList'][_0x4a364b(0x1ac)](_0x4a364b(0x6f6)),_0x43f423[_0x4a364b(0x695)][_0x4a364b(0xed)]('castle-button-play');let _0x10c221=DOM({'style':_0x4a364b(0x1b8)}),_0x45c612=await App[_0x4a364b(0x3bb)][_0x4a364b(0x74c)](CURRENT_MM,_0x4a364b(0x115)),_0x7964a9=new Array();MM[_0x4a364b(0x298)]=_0x45c612['id'],MM[_0x4a364b(0x4d7)]=_0x45c612[_0x4a364b(0x5c0)][App[_0x4a364b(0x3b3)][_0x4a364b(0x43a)]['id']][_0x4a364b(0x38c)],MM[_0x4a364b(0x501)](_0x45c612[_0x4a364b(0x5c0)][MM[_0x4a364b(0x298)]][_0x4a364b(0x5c1)]);for(let _0x4f7010 in _0x45c612[_0x4a364b(0x5c0)]){_0x7964a9[_0x4a364b(0x2db)]({'id':_0x4f7010,'hero':_0x45c612[_0x4a364b(0x5c0)][_0x4f7010][_0x4a364b(0x38c)],'nickname':_0x45c612[_0x4a364b(0x5c0)][_0x4f7010][_0x4a364b(0x3ed)],'ready':_0x45c612['users'][_0x4f7010][_0x4a364b(0x5c1)],'rating':_0x45c612[_0x4a364b(0x5c0)][_0x4f7010]['rating'],'skin':_0x45c612[_0x4a364b(0x5c0)][_0x4f7010][_0x4a364b(0x27b)]});}for(let _0x22680f in _0x7964a9){let _0x3e2a80=_0x7964a9[_0x22680f],_0x45d4c9=DOM({'style':_0x4a364b(0x6be),'data':{'id':_0x3e2a80['id']}});const _0x55ff61=DOM({'style':_0x4a364b(0x1dc)});_0x55ff61['style'][_0x4a364b(0x756)]=_0x4a364b(0x6a0)+Rank[_0x4a364b(0x7f9)](_0x3e2a80[_0x4a364b(0x676)])+'.webp)',_0x45d4c9['style'][_0x4a364b(0x756)]=_0x3e2a80[_0x4a364b(0x38c)]?_0x4a364b(0x16c)+_0x3e2a80[_0x4a364b(0x38c)]+'/'+(_0x3e2a80[_0x4a364b(0x27b)]?_0x3e2a80[_0x4a364b(0x27b)]:0x1)+_0x4a364b(0x634):'';let _0x15ff08=DOM({'style':_0x4a364b(0x3da)},DOM({'style':_0x4a364b(0x282)},_0x3e2a80[_0x4a364b(0x676)]),_0x55ff61);_0x3e2a80[_0x4a364b(0x676)]&&_0x45d4c9['append'](_0x15ff08);let _0x11edd4=DOM({'style':[_0x4a364b(0x340),'castle-party-middle-item-not-ready']},DOM({},'Не\x20готов'));if(_0x3e2a80['id']){if(_0x3e2a80['ready'])_0x11edd4[_0x4a364b(0x682)]['innerText']=Lang[_0x4a364b(0x605)]('ready'),_0x11edd4['classList'][_0x4a364b(0x44e)](_0x4a364b(0x394),'castle-party-middle-item-ready');else{if(MM[_0x4a364b(0x298)]==_0x3e2a80['id'])_0x11edd4[_0x4a364b(0x682)]['innerText']=Lang[_0x4a364b(0x605)](_0x4a364b(0x5c1)),_0x11edd4[_0x4a364b(0x695)][_0x4a364b(0x44e)](_0x4a364b(0x394),'castle-party-middle-item-ready');else _0x3e2a80['id']==App[_0x4a364b(0x3b3)][_0x4a364b(0x43a)]['id']&&(_0x11edd4['onclick']=async()=>{const _0x5c0e58=_0x4a364b;if(NativeAPI[_0x5c0e58(0x370)]){if(PWGame[_0x5c0e58(0x460)])return;PWGame[_0x5c0e58(0x460)]=!![];try{await PWGame[_0x5c0e58(0x79a)](),await PWGame['testGameServerConnection'](),await PWGame[_0x5c0e58(0x7fa)]();}catch(_0x427124){PWGame[_0x5c0e58(0x460)]=![];throw _0x427124;}PWGame[_0x5c0e58(0x460)]=![];}await App[_0x5c0e58(0x3bb)]['request'](CURRENT_MM,_0x5c0e58(0x12f),{'id':MM[_0x5c0e58(0x298)]}),_0x11edd4[_0x5c0e58(0x513)]=![];},_0x11edd4[_0x4a364b(0x682)]['innerText']=_0x4a364b(0xf4));}_0x45d4c9[_0x4a364b(0x11e)][_0x4a364b(0x756)]=_0x3e2a80[_0x4a364b(0x38c)]?_0x4a364b(0x16c)+_0x3e2a80['hero']+'/'+(_0x3e2a80[_0x4a364b(0x27b)]?_0x3e2a80['skin']:0x1)+'.webp)':_0x4a364b(0x45e);}else _0x45d4c9[_0x4a364b(0x66f)]=_0x4a364b(0x857),_0x11edd4[_0x4a364b(0x11e)][_0x4a364b(0x65e)]=0x0;let _0x30671b=DOM({'style':_0x4a364b(0x13e)});_0x30671b['style'][_0x4a364b(0x756)]=_0x4a364b(0x226);let _0xf60031=DOM({},''+(_0x3e2a80[_0x4a364b(0x3ed)]?_0x3e2a80['nickname']:_0x4a364b(0x3ef))),_0x498f29=DOM({'style':_0x4a364b(0x529)},_0xf60031),_0x23cd72=DOM({'style':'castle-party-middle-item-nickname'},_0x498f29),_0x59176e=DOM({'id':'PP'+_0x3e2a80['id'],'style':_0x4a364b(0x2be),'title':_0x23cd72['innerText']},_0x23cd72,_0x45d4c9,_0x11edd4);_0x22680f>0x0&&!_0x7964a9[_0x22680f-0x1]['id']&&(_0x59176e['style'][_0x4a364b(0x601)]=_0x4a364b(0x6c8)),_0x3e2a80[_0x4a364b(0x3ed)]['length']>0x14&&_0x23cd72['firstChild'][_0x4a364b(0x682)][_0x4a364b(0x695)][_0x4a364b(0xed)](_0x4a364b(0x36e)),_0x59176e['dataset']['id']=_0x3e2a80['id'],_0x23cd72[_0x4a364b(0x682)][_0x4a364b(0x682)][_0x4a364b(0x695)][_0x4a364b(0xed)]('castle-player-nickname'),MM[_0x4a364b(0x298)]==App[_0x4a364b(0x3b3)][_0x4a364b(0x43a)]['id']&&_0x59176e[_0x4a364b(0x67f)]['id']!=App[_0x4a364b(0x3b3)][_0x4a364b(0x43a)]['id']&&_0x59176e[_0x4a364b(0x67f)]['id']!=0x0&&(_0x30671b[_0x4a364b(0x4e9)](_0x4a364b(0x6d3),async()=>{const _0x4dba60=_0x4a364b;await App[_0x4dba60(0x3bb)][_0x4dba60(0x74c)](CURRENT_MM,_0x4dba60(0x495),{'id':_0x59176e[_0x4dba60(0x67f)]['id']});}),_0x3e2a80[_0x4a364b(0x3ed)][_0x4a364b(0x2ed)]>0xf&&_0x23cd72[_0x4a364b(0x682)][_0x4a364b(0x682)][_0x4a364b(0x695)][_0x4a364b(0xed)](_0x4a364b(0x36e)),_0x23cd72['append'](_0x30671b)),MM[_0x4a364b(0x298)]!=App[_0x4a364b(0x3b3)]['data']['id']&&_0x59176e[_0x4a364b(0x67f)]['id']==App[_0x4a364b(0x3b3)]['data']['id']&&(_0x30671b[_0x4a364b(0x4e9)](_0x4a364b(0x6d3),async()=>{const _0x4dbe6c=_0x4a364b;await App[_0x4dbe6c(0x3bb)][_0x4dbe6c(0x74c)](CURRENT_MM,'leaveParty',{'id':MM['partyId']}),View['show'](_0x4dbe6c(0x5a7));}),_0x3e2a80[_0x4a364b(0x3ed)][_0x4a364b(0x2ed)]>0xf&&_0x23cd72[_0x4a364b(0x682)][_0x4a364b(0x682)][_0x4a364b(0x695)][_0x4a364b(0xed)](_0x4a364b(0x36e)),_0x23cd72['append'](_0x30671b)),_0x45d4c9[_0x4a364b(0x4e9)](_0x4a364b(0x6d3),async()=>{const _0x227645=_0x4a364b;if(_0x45d4c9[_0x227645(0x67f)]['id']==App[_0x227645(0x3b3)][_0x227645(0x43a)]['id']){if(MM[_0x227645(0x1d5)])return;let _0x1b6e00=await App['api'][_0x227645(0x74c)](_0x227645(0x664),_0x227645(0x20d));MM[_0x227645(0x38c)]=_0x1b6e00,_0x1b6e00[_0x227645(0x2db)]({'id':0x0});let _0x2ebfd7=DOM({'style':_0x227645(0x563)}),_0x2e4d23=new PreloadImages(_0x2ebfd7);for(let _0x2bd163 of _0x1b6e00){let _0x5da751=DOM();_0x5da751['addEventListener'](_0x227645(0x6d3),async()=>{const _0x8bbef9=_0x227645;try{await App[_0x8bbef9(0x3bb)][_0x8bbef9(0x74c)](CURRENT_MM,_0x8bbef9(0x50f),{'id':MM[_0x8bbef9(0x298)],'hero':_0x2bd163['id']});}catch(_0x46074d){return App[_0x8bbef9(0x498)](_0x46074d);}_0x45d4c9[_0x8bbef9(0x11e)][_0x8bbef9(0x756)]=_0x2bd163['id']?'url(content/hero/'+_0x2bd163['id']+'/'+(_0x2bd163[_0x8bbef9(0x27b)]?_0x2bd163[_0x8bbef9(0x27b)]:0x1)+'.webp)':'url(content/hero/empty.webp)',MM['activeSelectHero']=_0x2bd163['id'],Splash['hide']();}),_0x2bd163['id']?_0x5da751[_0x227645(0x67f)]['url']=_0x227645(0x7b7)+_0x2bd163['id']+'/'+(_0x2bd163[_0x227645(0x27b)]?_0x2bd163[_0x227645(0x27b)]:0x1)+_0x227645(0x23d):_0x5da751[_0x227645(0x67f)][_0x227645(0x646)]=_0x227645(0x4f8),_0x2e4d23[_0x227645(0xed)](_0x5da751);}Splash[_0x227645(0x19c)](_0x2ebfd7,![]);}}),_0x10c221['append'](_0x59176e);}return _0x1d2eef['append'](CastleNAVBAR[_0x4a364b(0x2a2)],_0x10c221),_0x1d2eef;}static[_0x4487d4(0x6a6)](){const _0x33fdc8=_0x4487d4;let _0x11d7b3=DOM({'style':[_0x33fdc8(0x763),_0x33fdc8(0x6b9)],'title':_0x33fdc8(0x859),'event':['click',()=>View[_0x33fdc8(0x19c)](_0x33fdc8(0x783))]}),_0x2adefb=DOM({'style':['castle-top',_0x33fdc8(0x6b9)],'title':_0x33fdc8(0x859),'event':[_0x33fdc8(0x6d3),()=>Window[_0x33fdc8(0x19c)](_0x33fdc8(0x18e),_0x33fdc8(0x783))]}),_0x38b887=DOM({'style':[_0x33fdc8(0x74d),_0x33fdc8(0x6b9)],'title':_0x33fdc8(0x84a),'event':[_0x33fdc8(0x6d3),()=>{const _0x17f582=_0x33fdc8;let _0x1bdefb=DOM({'style':[_0x17f582(0x325)]});_0x38b887['append'](_0x1bdefb);}]}),_0x2c57b4=DOM({'style':[_0x33fdc8(0x55c),_0x33fdc8(0x6b9)],'title':_0x33fdc8(0x730),'event':['click',()=>Frame[_0x33fdc8(0x802)](_0x33fdc8(0x462))]}),_0x49b788=DOM({'style':[_0x33fdc8(0x7c8),_0x33fdc8(0x6b9)],'title':Lang[_0x33fdc8(0x605)](_0x33fdc8(0xc8)),'event':[_0x33fdc8(0x6d3),()=>Window['show'](_0x33fdc8(0x18e),'menu')]}),_0x4bacbf=DOM({'style':['castle-history',_0x33fdc8(0x6b9)],'title':_0x33fdc8(0x55e),'event':[_0x33fdc8(0x6d3),()=>Window[_0x33fdc8(0x19c)](_0x33fdc8(0x18e),_0x33fdc8(0x71a))]}),_0x1c34e2=DOM({'style':[_0x33fdc8(0x390),'button-outline'],'title':'Фарм','event':[_0x33fdc8(0x6d3),()=>Window['show'](_0x33fdc8(0x18e),'farm')]}),_0x4e0bc9=DOM({'style':_0x33fdc8(0x2fa),'tag':_0x33fdc8(0x3fc)});_0x4e0bc9['type']=_0x33fdc8(0x382),_0x4e0bc9[_0x33fdc8(0x3ac)]='0',_0x4e0bc9[_0x33fdc8(0x6d4)]='1',_0x4e0bc9[_0x33fdc8(0x33b)]=_0x33fdc8(0x7d5);let _0x5442bd=DOM({'style':[_0x33fdc8(0x22e)]},_0x49b788,_0x2adefb,_0x4bacbf);return _0x5442bd;}static[_0x4487d4(0x58c)](){const _0x6b48f8=_0x4487d4;let _0x51ef6d=DOM({'style':_0x6b48f8(0x55a)},Chat[_0x6b48f8(0x2a2)]);return _0x51ef6d;}static[_0x4487d4(0x414)](){const _0xa8da82=_0x4487d4;let _0x2ed30d=0x1,_0x135e42=DOM({'style':_0xa8da82(0x74a)});View[_0xa8da82(0x11a)]=DOM({'style':'castle-bottom-content'}),View[_0xa8da82(0x11a)][_0xa8da82(0x4e9)](_0xa8da82(0x858),function(_0x2f0dca){const _0x3d527f=_0xa8da82;let _0x17480f=0x0;if(_0x2f0dca[_0x3d527f(0x2e2)]==_0x2f0dca[_0x3d527f(0x63d)])_0x17480f=0x1;else{if(_0x2f0dca[_0x3d527f(0x2e2)]==_0x2f0dca[_0x3d527f(0x482)])_0x17480f=parseInt(getComputedStyle(this)[_0x3d527f(0x445)]);else _0x2f0dca['deltaMode']==_0x2f0dca[_0x3d527f(0x54c)]&&(_0x17480f=this[_0x3d527f(0x694)]);}_0x2f0dca[_0x3d527f(0x36f)]!=0x0&&(this[_0x3d527f(0xd9)]+=_0x17480f*_0x2f0dca[_0x3d527f(0x36f)],_0x2f0dca[_0x3d527f(0x43e)]());}),View[_0xa8da82(0x6b0)]();let _0x17e991=DOM({'event':[_0xa8da82(0x6d3),()=>{const _0x15adf9=_0xa8da82;View[_0x15adf9(0x6b0)](),Castle['buildMode']=![];}],'title':_0xa8da82(0x824)}),_0x4b3f18=DOM({'event':[_0xa8da82(0x6d3),()=>{const _0x70f0c2=_0xa8da82;View[_0x70f0c2(0x1de)](),Castle[_0x70f0c2(0x55f)]=![];}],'title':_0xa8da82(0x423)}),_0x2bb611=DOM({'event':['click',()=>{const _0x4810bc=_0xa8da82;View[_0x4810bc(0x5b9)](),Castle['buildMode']=!![];}],'title':_0xa8da82(0x842)});return _0x17e991[_0xa8da82(0x11e)][_0xa8da82(0x756)]=_0xa8da82(0xe4),_0x4b3f18[_0xa8da82(0x11e)]['backgroundImage']=_0xa8da82(0x4ca),_0x2bb611[_0xa8da82(0x11e)][_0xa8da82(0x756)]=_0xa8da82(0x641),_0x135e42[_0xa8da82(0x2f2)](DOM({'style':_0xa8da82(0x557)},_0x17e991,_0x4b3f18,_0x2bb611),View[_0xa8da82(0x11a)]),_0x135e42;}static[_0x4487d4(0x5b9)](){const _0x5e00dd=_0x4487d4;while(View[_0x5e00dd(0x11a)]['firstChild']){View[_0x5e00dd(0x11a)][_0x5e00dd(0x682)][_0x5e00dd(0x1ac)]();}let _0x2fdad7=-0x1;Castle['currentSceneName']=='ad'&&(_0x2fdad7=0x0);Castle[_0x5e00dd(0x773)]=='doct'&&(_0x2fdad7=0x1);if(_0x2fdad7==-0x1)return;let _0x3106c9=new PreloadImages(View[_0x5e00dd(0x11a)]);for(let _0x596b60=0x1;_0x596b60<Castle['buildings'][_0x5e00dd(0x2ed)];++_0x596b60){let _0x2b1792=Castle[_0x5e00dd(0x1b4)][_0x596b60],_0x4fe5eb=Castle['buildingsNames'][_0x596b60][_0x2fdad7];const _0x343079=DOM({'style':_0x5e00dd(0x522)},DOM({},_0x4fe5eb));_0x4fe5eb[_0x5e00dd(0x2ed)]>0xa&&_0x343079[_0x5e00dd(0x682)][_0x5e00dd(0x695)][_0x5e00dd(0xed)]('castle-name-autoscroll');let _0x4dfbc2=DOM({'style':'castle-item-hero-name'},_0x343079),_0x4a5589=DOM({'style':_0x5e00dd(0xc1)},_0x4dfbc2);_0x4a5589[_0x5e00dd(0x67f)][_0x5e00dd(0x646)]='content/img/buildings/'+Castle[_0x5e00dd(0x773)]+'/'+_0x2b1792+_0x5e00dd(0x61b),_0x4a5589['dataset']['buildingId']=_0x596b60,_0x4a5589[_0x5e00dd(0x4e9)](_0x5e00dd(0x6d3),async()=>{const _0xbd55c=_0x5e00dd;Castle[_0xbd55c(0x511)]['id']=_0x4a5589['dataset']['buildingId'];}),_0x3106c9['add'](_0x4a5589);}}static[_0x4487d4(0x6b0)](){const _0x13de60=_0x4487d4;let _0x281a6f=new PreloadImages(View[_0x13de60(0x11a)]);App[_0x13de60(0x3bb)][_0x13de60(0x67e)](_0x36659e=>{const _0x5664cf=_0x13de60;MM['hero']=_0x36659e;while(View[_0x5664cf(0x11a)][_0x5664cf(0x682)]){View[_0x5664cf(0x11a)][_0x5664cf(0x682)][_0x5664cf(0x1ac)]();}for(let _0x201870 of _0x36659e){const _0x1d87a6=DOM({'style':_0x5664cf(0x522)},DOM({},_0x201870[_0x5664cf(0x20f)]));_0x201870[_0x5664cf(0x20f)][_0x5664cf(0x2ed)]>0xa&&_0x1d87a6['firstChild'][_0x5664cf(0x695)][_0x5664cf(0xed)](_0x5664cf(0x36e));let _0x28a208=DOM({'style':_0x5664cf(0x6d5)},_0x1d87a6),_0x579f66=DOM({'style':'rank-icon'});_0x579f66[_0x5664cf(0x11e)]['backgroundImage']=_0x5664cf(0x6a0)+Rank[_0x5664cf(0x7f9)](_0x201870[_0x5664cf(0x676)])+_0x5664cf(0x634);let _0xb45aaf=DOM({'style':_0x5664cf(0x3da)},DOM({'style':_0x5664cf(0x282)},_0x201870[_0x5664cf(0x676)]),_0x579f66),_0xd2ad97=DOM({'style':'castle-hero-item'},_0xb45aaf,_0x28a208);_0xd2ad97['addEventListener'](_0x5664cf(0x6d3),async()=>Window[_0x5664cf(0x19c)]('main',_0x5664cf(0x664),_0x201870['id'],0x0,!![])),_0xd2ad97[_0x5664cf(0x67f)][_0x5664cf(0x646)]=_0x5664cf(0x7b7)+_0x201870['id']+'/'+(_0x201870[_0x5664cf(0x27b)]?_0x201870['skin']:0x1)+_0x5664cf(0x23d),_0x281a6f[_0x5664cf(0xed)](_0xd2ad97);}},'build',_0x13de60(0x20d));}static[_0x4487d4(0x1de)](){const _0xd7c347=_0x4487d4;let _0x2a567b=new PreloadImages(View[_0xd7c347(0x11a)]);App[_0xd7c347(0x3bb)]['silent'](_0x2130f9=>{const _0x4ff8ea=_0xd7c347;while(View[_0x4ff8ea(0x11a)][_0x4ff8ea(0x682)]){View[_0x4ff8ea(0x11a)][_0x4ff8ea(0x682)][_0x4ff8ea(0x1ac)]();}console[_0x4ff8ea(0x1ed)]('ДРУЗЬЯ',_0x2130f9);let _0x4543a1=DOM({'style':_0x4ff8ea(0x53b),'onclick':()=>{const _0xd91268=_0x4ff8ea;let _0x4c89ce=DOM({'tag':_0xd91268(0x3fc),'style':_0xd91268(0x228),'placeholder':_0xd91268(0x29a)}),_0x49d895=DOM({'style':_0xd91268(0x290)}),_0x16707e=DOM({'tag':_0xd91268(0x51d),'style':_0xd91268(0x3b2),'event':[_0xd91268(0x6d3),()=>Splash[_0xd91268(0x61f)]()]});_0x16707e[_0xd91268(0x11e)][_0xd91268(0x756)]='url(content/icons/close-cropped.svg)';let _0x2f3b1a=DOM({'style':_0xd91268(0x4e0)},_0x4c89ce,_0x49d895,_0x16707e);_0x4c89ce[_0xd91268(0x4e9)]('input',async()=>{const _0x3221a7=_0xd91268;let _0x202240=await App[_0x3221a7(0x3bb)][_0x3221a7(0x74c)]('user',_0x3221a7(0x488),{'nickname':_0x4c89ce[_0x3221a7(0x357)]});if(_0x49d895[_0x3221a7(0x682)])while(_0x49d895[_0x3221a7(0x682)]){_0x49d895[_0x3221a7(0x682)][_0x3221a7(0x1ac)]();}for(let _0x1838ae of _0x202240){let _0x1f2a2f=DOM({'event':['click',async()=>{const _0x401cdc=_0x3221a7;await App[_0x401cdc(0x3bb)][_0x401cdc(0x74c)](_0x401cdc(0x38d),_0x401cdc(0x74c),{'id':_0x1838ae['id']}),View[_0x401cdc(0x1de)](),App[_0x401cdc(0x603)]('Заявка\x20в\x20друзья\x20'+_0x1838ae[_0x401cdc(0x3ed)]+_0x401cdc(0x3d6),0x3e8),Splash[_0x401cdc(0x61f)]();}]},_0x1838ae[_0x3221a7(0x3ed)]);_0x3221a7(0x4d9)in _0x1838ae&&(_0x1f2a2f[_0x3221a7(0x4b2)]=()=>{const _0x136fd4=_0x3221a7;let _0x284b83=document[_0x136fd4(0x5a2)]();const _0xe8f20e=DOM({'tag':_0x136fd4(0x51d),'style':'close-button','event':['click',()=>Splash[_0x136fd4(0x61f)]()]});return _0xe8f20e['style'][_0x136fd4(0x756)]=_0x136fd4(0x226),_0x284b83[_0x136fd4(0x2f2)](DOM({},_0x1838ae[_0x136fd4(0x3ed)]),DOM({'style':_0x136fd4(0x39d),'event':[_0x136fd4(0x6d3),async()=>{const _0x1838ba=_0x136fd4;await App[_0x1838ba(0x3bb)]['request'](_0x1838ba(0x10a),_0x1838ba(0x4d9),{'id':_0x1838ae['id']}),Splash[_0x1838ba(0x61f)]();}]},_0x1838ae[_0x136fd4(0x4d9)]?_0x136fd4(0x3ea):_0x136fd4(0x134)),DOM({'style':_0x136fd4(0x39d),'event':[_0x136fd4(0x6d3),async()=>{const _0x4ebf18=_0x136fd4;await App[_0x4ebf18(0x3bb)][_0x4ebf18(0x74c)](_0x4ebf18(0x10a),_0x4ebf18(0x7af),{'id':_0x1838ae['id']}),Splash[_0x4ebf18(0x61f)]();}]},_0x1838ae['mute']?_0x136fd4(0x274):_0x136fd4(0x75b)),DOM({'style':_0x136fd4(0x39d),'event':[_0x136fd4(0x6d3),async()=>{const _0x496ae0=_0x136fd4;let _0x5f3b82=await App[_0x496ae0(0x3bb)][_0x496ae0(0x74c)](_0x496ae0(0x10a),_0x496ae0(0x40d),{'id':_0x1838ae['id']});App[_0x496ae0(0x603)]('Скопировано\x20в\x20буфер\x20обмена!\x20Пароль:\x20'+_0x5f3b82),navigator[_0x496ae0(0x1c5)]['writeText'](_0x5f3b82);}]},_0x136fd4(0xcc)),_0xe8f20e),Splash[_0x136fd4(0x19c)](_0x284b83),![];},_0x1838ae[_0x3221a7(0x7af)]&&(_0x1f2a2f[_0x3221a7(0x11e)][_0x3221a7(0x1cd)]=_0x3221a7(0x829)),_0x1838ae[_0x3221a7(0x4d9)]&&(_0x1f2a2f[_0x3221a7(0x11e)][_0x3221a7(0x1cd)]=_0x3221a7(0x45d))),_0x49d895['append'](_0x1f2a2f);}}),Splash['show'](_0x2f3b1a,![]),_0x4c89ce[_0xd91268(0x806)]();}},DOM({'style':'castle-friend-item-middle'},DOM({'style':'castle-friend-add'},'+')));_0x2a567b[_0x4ff8ea(0xed)](_0x4543a1),_0x4543a1[_0x4ff8ea(0x67f)][_0x4ff8ea(0x646)]=_0x4ff8ea(0x4f8);for(let _0x2d1bbb of _0x2130f9){const _0x42cb0e=DOM({'style':'castle-hero-name'},DOM({},_0x2d1bbb[_0x4ff8ea(0x3ed)]));_0x2d1bbb['nickname']['length']>0xa&&_0x42cb0e[_0x4ff8ea(0x682)][_0x4ff8ea(0x695)][_0x4ff8ea(0xed)](_0x4ff8ea(0x36e));let _0xf30d=DOM({'style':_0x4ff8ea(0x6d5)},_0x42cb0e),_0x26ff5e=DOM({'style':_0x4ff8ea(0x59a)}),_0x262d87=DOM({'style':_0x4ff8ea(0x53b)},_0xf30d,_0x26ff5e);if(_0x2d1bbb['status']==0x1){let _0x1611ea=DOM({'style':_0x4ff8ea(0x7ee)},_0x2d1bbb[_0x4ff8ea(0x34e)]?'Группа':_0x4ff8ea(0x395));!_0x2d1bbb['online']?_0x1611ea[_0x4ff8ea(0x11e)][_0x4ff8ea(0x7ac)]=_0x4ff8ea(0x69f):_0x1611ea[_0x4ff8ea(0x513)]=async()=>{const _0x63edb6=_0x4ff8ea;await App['api'][_0x63edb6(0x74c)](CURRENT_MM,_0x63edb6(0x5c5),{'id':_0x2d1bbb['id']}),App[_0x63edb6(0x603)](_0x63edb6(0xe2)+_0x2d1bbb[_0x63edb6(0x3ed)]);},_0x262d87[_0x4ff8ea(0x4b2)]=()=>{const _0x5917da=_0x4ff8ea;let _0x3aa0ad=document[_0x5917da(0x5a2)](),_0xd266af=DOM({'style':_0x5917da(0x39d),'event':[_0x5917da(0x6d3),async()=>{const _0x37c83c=_0x5917da;await App[_0x37c83c(0x3bb)]['request'](_0x37c83c(0x38d),_0x37c83c(0x1ac),{'id':_0x2d1bbb['id']}),_0x262d87[_0x37c83c(0x1ac)](),Splash[_0x37c83c(0x61f)]();}]},_0x5917da(0x4d0)),_0x532b20=DOM({'style':_0x5917da(0x39d),'event':[_0x5917da(0x6d3),()=>Splash['hide']()]},_0x5917da(0x2af));return _0x3aa0ad['append'](DOM(_0x5917da(0x606)+_0x2d1bbb[_0x5917da(0x3ed)]+_0x5917da(0x396)),_0xd266af,_0x532b20),Splash[_0x5917da(0x19c)](_0x3aa0ad),![];},_0x26ff5e[_0x4ff8ea(0x2f2)](_0x1611ea);}else{if(_0x2d1bbb['status']==0x2)_0x26ff5e[_0x4ff8ea(0x2f2)](DOM({'style':_0x4ff8ea(0x25e),'event':[_0x4ff8ea(0x6d3),async()=>{const _0x3a8113=_0x4ff8ea;await App[_0x3a8113(0x3bb)][_0x3a8113(0x74c)](_0x3a8113(0x38d),'accept',{'id':_0x2d1bbb['id']});while(_0x26ff5e[_0x3a8113(0x682)]){_0x26ff5e[_0x3a8113(0x682)][_0x3a8113(0x1ac)]();}_0x26ff5e['append'](DOM({'style':_0x3a8113(0x7ee),'event':[_0x3a8113(0x6d3),async()=>{const _0x5e207e=_0x3a8113;await App[_0x5e207e(0x3bb)]['request'](CURRENT_MM,_0x5e207e(0x5c5),{'id':_0x2d1bbb['id']}),App[_0x5e207e(0x603)](_0x5e207e(0xe2)+_0x2d1bbb[_0x5e207e(0x3ed)]);}]},_0x3a8113(0x32c)));}]},_0x4ff8ea(0x2ad)),DOM({'style':_0x4ff8ea(0x5bd),'event':[_0x4ff8ea(0x6d3),async()=>{const _0x54d9c5=_0x4ff8ea;await App[_0x54d9c5(0x3bb)][_0x54d9c5(0x74c)]('friend','remove',{'id':_0x2d1bbb['id']}),_0x262d87['remove']();}]},_0x4ff8ea(0x789)));else _0x2d1bbb[_0x4ff8ea(0x370)]==0x3&&(_0x262d87[_0x4ff8ea(0x2f2)](DOM({'style':'castle-friend-item-middle'},DOM({'style':_0x4ff8ea(0x693)},_0x4ff8ea(0x2d1)))),_0x262d87[_0x4ff8ea(0x11e)][_0x4ff8ea(0x7ac)]=_0x4ff8ea(0x69f),_0x26ff5e['append'](DOM({'style':_0x4ff8ea(0x5bd),'event':[_0x4ff8ea(0x6d3),async()=>{const _0x47fb8b=_0x4ff8ea;await App[_0x47fb8b(0x3bb)][_0x47fb8b(0x74c)](_0x47fb8b(0x38d),'remove',{'id':_0x2d1bbb['id']}),_0x262d87[_0x47fb8b(0x1ac)]();}]},_0x4ff8ea(0x685))));}_0x262d87[_0x4ff8ea(0x67f)]['url']='content/hero/empty.webp',_0x2a567b[_0x4ff8ea(0xed)](_0x262d87);}},_0xd7c347(0x38d),_0xd7c347(0x843));}static['exitOrLogout'](){const _0x2c0159=_0x4487d4;let _0x15fe41=DOM({'event':[_0x2c0159(0x6d3),async()=>{const _0x4668c6=_0x2c0159;App[_0x4668c6(0x4b7)](),Splash['hide']();}]},_0x2c0159(0x222)),_0x572b19=DOM({'event':[_0x2c0159(0x6d3),()=>Splash[_0x2c0159(0x61f)]()]},_0x2c0159(0x2af)),_0x4ff7c7=DOM({'style':'wrap'},_0x15fe41,_0x572b19);if(NativeAPI['status']){let _0xf2ca6f=DOM({'event':[_0x2c0159(0x6d3),()=>NativeAPI['exit']()]},Lang['text']('exit'));_0x4ff7c7=DOM({'style':_0x2c0159(0x598)},_0x15fe41,_0xf2ca6f,_0x572b19);}let _0x4e870b=DOM({'style':_0x2c0159(0x51d)},'',_0x4ff7c7);Splash[_0x2c0159(0x19c)](_0x4e870b);}static[_0x4487d4(0x57a)](){const _0x332df3=_0x4487d4;let _0x159162=MM['play']();_0x159162[_0x332df3(0x695)][_0x332df3(0xed)](_0x332df3(0x6b5)),_0x159162[_0x332df3(0x695)][_0x332df3(0xed)]('button-play'),_0x159162['classList'][_0x332df3(0x1ac)](_0x332df3(0x1fe));let _0x3ae0d3=DOM({'style':_0x332df3(0x7d3)},_0x159162),_0xb27f21=DOM({'style':_0x332df3(0x5ba)},DOM({'tag':_0x332df3(0x2b3),'src':_0x332df3(0x174),'event':[_0x332df3(0x6d3),()=>View[_0x332df3(0x19c)](_0x332df3(0x5a7))]}),_0x3ae0d3);if(App['isAdmin']()){let _0x419de7=DOM({'style':_0x332df3(0x6b5),'event':[_0x332df3(0x6d3),()=>{const _0x402770=_0x332df3;let _0x19ce2a=document[_0x402770(0x5a2)]();_0x19ce2a[_0x402770(0x2f2)](DOM({'style':_0x402770(0x39d),'event':[_0x402770(0x6d3),()=>{const _0x304430=_0x402770;View[_0x304430(0x19c)](_0x304430(0x69c)),Splash[_0x304430(0x61f)]();}]},_0x402770(0x576)),DOM({'style':_0x402770(0x39d),'event':[_0x402770(0x6d3),()=>{const _0x15db8d=_0x402770;View[_0x15db8d(0x19c)](_0x15db8d(0x108)),Splash[_0x15db8d(0x61f)]();}]},_0x402770(0x70b)),DOM({'style':'splash-content-button','event':[_0x402770(0x6d3),()=>{const _0x2adfad=_0x402770;View['show'](_0x2adfad(0x5c0)),Splash['hide']();}]},_0x402770(0x373)),DOM({'style':_0x402770(0x39d),'event':[_0x402770(0x6d3),()=>Splash['hide']()]},_0x402770(0x6e6))),Splash[_0x402770(0x19c)](_0x19ce2a);}]},_0x332df3(0x667));_0x419de7[_0x332df3(0x695)][_0x332df3(0xed)](_0x332df3(0x468)),_0x419de7['style'][_0x332df3(0x1cd)]='rgba(255,255,255,1)',_0xb27f21[_0x332df3(0x2f2)](_0x419de7);}return _0xb27f21[_0x332df3(0x2f2)](DOM({'style':_0x332df3(0x6b5),'event':[_0x332df3(0x6d3),()=>View[_0x332df3(0x19c)](_0x332df3(0x5a7))]},Castle['gl']?_0x332df3(0x1ff):_0x332df3(0x521)),DOM({'style':_0x332df3(0x6b5),'event':['click',()=>View[_0x332df3(0x19c)](_0x332df3(0xe6))]},_0x332df3(0x787)),DOM({'style':_0x332df3(0x6b5),'event':[_0x332df3(0x6d3),()=>View['show']('history')]},_0x332df3(0x55e)),DOM({'style':_0x332df3(0x6b5),'event':['click',()=>View[_0x332df3(0x19c)](_0x332df3(0x783))]},_0x332df3(0x859)),DOM({'style':_0x332df3(0x6b5),'event':[_0x332df3(0x6d3),()=>View[_0x332df3(0x19c)](_0x332df3(0x5cd))]},_0x332df3(0x76a)),DOM({'style':_0x332df3(0x6b5),'event':['click',()=>View['exitOrLogout']()]},_0x332df3(0x729))),_0xb27f21;}static async[_0x4487d4(0x18e)](_0x306783){const _0x2a8802=_0x4487d4;let _0x16e44f=DOM({'style':_0x2a8802(0x18e)}),_0x938570=DOM({'style':_0x2a8802(0x141)}),_0x3fa80a=DOM({'style':_0x2a8802(0x783)});App[_0x2a8802(0x3bb)][_0x2a8802(0x67e)](_0x21a2aa=>{const _0x178577=_0x2a8802;let _0x109041=0x1;for(let _0x6f004c of _0x21a2aa){let _0x1b88bd=DOM({'style':_0x178577(0x4ae)});_0x1b88bd[_0x178577(0x11e)][_0x178577(0x756)]=_0x178577(0x6a0)+Rank[_0x178577(0x7f9)](_0x6f004c[_0x178577(0x676)])+_0x178577(0x634);let _0x1dc49c=DOM({'style':_0x178577(0x12d)},_0x1b88bd);_0x1dc49c[_0x178577(0x11e)][_0x178577(0x756)]='url(content/hero/'+_0x6f004c[_0x178577(0x38c)]+'/'+(_0x6f004c[_0x178577(0x27b)]?_0x6f004c['skin']:0x1)+'.webp)';let _0x2b69e8=DOM({'style':'top-item','event':['click',()=>Build[_0x178577(0x1bc)](_0x6f004c['id'],_0x6f004c['hero'],_0x6f004c[_0x178577(0x3ed)])]},_0x1dc49c,DOM({'style':_0x178577(0x4a4)},DOM('#'+_0x109041+'.\x20'+_0x6f004c[_0x178577(0x3ed)]),DOM(''+_0x6f004c[_0x178577(0x676)])));_0x109041==0x1&&_0x2b69e8[_0x178577(0x695)]['add']('animation1'),_0x3fa80a[_0x178577(0x2f2)](_0x2b69e8),_0x109041++;}},CURRENT_MM,'top');let _0x2d034f=DOM({'style':_0x2a8802(0x2bc)},_0x938570),_0x3c04c0=new Array();_0x306783=_0x306783?_0x306783:await App[_0x2a8802(0x3bb)][_0x2a8802(0x74c)](CURRENT_MM,'loadParty'),MM[_0x2a8802(0x298)]=_0x306783['id'],MM[_0x2a8802(0x4d7)]=_0x306783[_0x2a8802(0x5c0)][App[_0x2a8802(0x3b3)][_0x2a8802(0x43a)]['id']][_0x2a8802(0x38c)],MM[_0x2a8802(0x501)](_0x306783[_0x2a8802(0x5c0)][MM[_0x2a8802(0x298)]][_0x2a8802(0x5c1)]);for(let _0x59ee97 in _0x306783[_0x2a8802(0x5c0)]){_0x3c04c0[_0x2a8802(0x2db)]({'id':_0x59ee97,'hero':_0x306783['users'][_0x59ee97][_0x2a8802(0x38c)],'nickname':_0x306783[_0x2a8802(0x5c0)][_0x59ee97][_0x2a8802(0x3ed)],'ready':_0x306783[_0x2a8802(0x5c0)][_0x59ee97][_0x2a8802(0x5c1)],'rating':_0x306783[_0x2a8802(0x5c0)][_0x59ee97][_0x2a8802(0x676)],'skin':_0x306783['users'][_0x59ee97][_0x2a8802(0x27b)]});}if(_0x3c04c0[_0x2a8802(0x2ed)]<0x5)while(_0x3c04c0['length']<0x5){_0x3c04c0[_0x2a8802(0x2db)]({'id':0x0,'hero':0x0,'nickname':'','ready':0x0});}for(let _0x3a9493 of _0x3c04c0){let _0xee674f=DOM({'style':_0x2a8802(0x293)}),_0x393600=DOM({'style':_0x2a8802(0x1dc)});_0x393600[_0x2a8802(0x11e)][_0x2a8802(0x756)]='url(content/ranks/'+Rank['icon'](_0x3a9493['rating'])+_0x2a8802(0x634);let _0x5476f4=DOM({'style':'rank'},DOM({'style':_0x2a8802(0x282)},_0x3a9493['rating']),_0x393600);_0xee674f[_0x2a8802(0x2f2)](_0x5476f4);let _0x1d3918=DOM({'style':_0x2a8802(0x793)},DOM({},_0x2a8802(0x11c)));if(_0x3a9493['id']){if(_0x3a9493[_0x2a8802(0x5c1)])_0x1d3918['firstChild']['innerText']=Lang[_0x2a8802(0x605)](_0x2a8802(0x5c1)),_0x1d3918[_0x2a8802(0x695)][_0x2a8802(0x44e)](_0x2a8802(0x793),'party-middle-item-ready');else{if(MM[_0x2a8802(0x298)]==_0x3a9493['id'])_0x1d3918[_0x2a8802(0x682)]['innerText']=Lang['text']('ready'),_0x1d3918['classList'][_0x2a8802(0x44e)](_0x2a8802(0x793),_0x2a8802(0x534));else _0x3a9493['id']==App[_0x2a8802(0x3b3)][_0x2a8802(0x43a)]['id']&&(_0x1d3918[_0x2a8802(0x513)]=async()=>{const _0x5e57d4=_0x2a8802;if(NativeAPI[_0x5e57d4(0x370)]){if(PWGame[_0x5e57d4(0x460)])return;PWGame[_0x5e57d4(0x460)]=!![];try{await PWGame['check'](),await PWGame[_0x5e57d4(0x41b)](),await PWGame[_0x5e57d4(0x7fa)]();}catch(_0x3c6e4e){PWGame['gameConnectionTestIsActive']=![];throw _0x3c6e4e;}PWGame[_0x5e57d4(0x460)]=![];}else return;await App[_0x5e57d4(0x3bb)][_0x5e57d4(0x74c)](CURRENT_MM,_0x5e57d4(0x12f),{'id':MM['partyId']}),_0x1d3918['onclick']=![];},_0x1d3918[_0x2a8802(0x12e)]=_0x2a8802(0xf4));}_0xee674f[_0x2a8802(0x11e)]['backgroundImage']=_0x3a9493[_0x2a8802(0x38c)]?_0x2a8802(0x16c)+_0x3a9493['hero']+'/'+(_0x3a9493[_0x2a8802(0x27b)]?_0x3a9493[_0x2a8802(0x27b)]:0x1)+'.webp)':_0x2a8802(0x45e);}else _0xee674f[_0x2a8802(0x12e)]='+',_0x1d3918[_0x2a8802(0x11e)][_0x2a8802(0x65e)]=0x0;let _0xfc3869=DOM({'style':_0x2a8802(0x23c)},''+(_0x3a9493[_0x2a8802(0x3ed)]?_0x3a9493[_0x2a8802(0x3ed)]:'Добавить')),_0x5201b8=DOM({'id':'PP'+_0x3a9493['id'],'style':'party-middle-item'},_0xfc3869,_0xee674f,_0x1d3918);_0x5201b8[_0x2a8802(0x67f)]['id']=_0x3a9493['id'],MM[_0x2a8802(0x298)]==App[_0x2a8802(0x3b3)][_0x2a8802(0x43a)]['id']&&_0x5201b8[_0x2a8802(0x67f)]['id']!=App[_0x2a8802(0x3b3)][_0x2a8802(0x43a)]['id']&&_0x5201b8[_0x2a8802(0x67f)]['id']!=0x0&&_0xfc3869[_0x2a8802(0x2f2)](DOM({'tag':_0x2a8802(0x1c8),'event':[_0x2a8802(0x6d3),async()=>{const _0x187f0c=_0x2a8802;await App['api'][_0x187f0c(0x74c)](CURRENT_MM,_0x187f0c(0x495),{'id':_0x5201b8[_0x187f0c(0x67f)]['id']});}]},_0x2a8802(0x6e6))),MM[_0x2a8802(0x298)]!=App[_0x2a8802(0x3b3)][_0x2a8802(0x43a)]['id']&&_0x5201b8['dataset']['id']==App['storage']['data']['id']&&_0xfc3869['append'](DOM({'tag':_0x2a8802(0x1c8),'event':[_0x2a8802(0x6d3),async()=>{const _0x40155b=_0x2a8802;await App[_0x40155b(0x3bb)][_0x40155b(0x74c)](CURRENT_MM,_0x40155b(0x326),{'id':MM[_0x40155b(0x298)]}),View[_0x40155b(0x19c)]('castle');}]},_0x2a8802(0x6e6))),_0xee674f[_0x2a8802(0x4e9)](_0x2a8802(0x6d3),async()=>{const _0x393e2e=_0x2a8802;if(_0x5201b8[_0x393e2e(0x67f)]['id']==App[_0x393e2e(0x3b3)][_0x393e2e(0x43a)]['id']){if(MM[_0x393e2e(0x1d5)])return;let _0x1ba344=await App['api'][_0x393e2e(0x74c)](_0x393e2e(0x664),_0x393e2e(0x20d));MM['hero']=_0x1ba344,_0x1ba344[_0x393e2e(0x2db)]({'id':0x0});let _0x4bc52d=DOM({'style':_0x393e2e(0x563)}),_0x4585b9=new PreloadImages(_0x4bc52d);for(let _0x3f469e of _0x1ba344){let _0x2f6669=DOM();_0x2f6669['addEventListener']('click',async()=>{const _0x3bd3c1=_0x393e2e;try{await App[_0x3bd3c1(0x3bb)][_0x3bd3c1(0x74c)](CURRENT_MM,_0x3bd3c1(0x50f),{'id':MM[_0x3bd3c1(0x298)],'hero':_0x3f469e['id']});}catch(_0x1e56bc){return App[_0x3bd3c1(0x498)](_0x1e56bc);}MM['activeSelectHero']=_0x3f469e['id'],Splash['hide']();}),_0x3f469e['id']?_0x2f6669[_0x393e2e(0x67f)][_0x393e2e(0x646)]='content/hero/'+_0x3f469e['id']+'/'+(_0x3f469e[_0x393e2e(0x27b)]?_0x3f469e[_0x393e2e(0x27b)]:0x1)+_0x393e2e(0x23d):_0x2f6669['dataset'][_0x393e2e(0x646)]=_0x393e2e(0x4f8),_0x4585b9['add'](_0x2f6669);}Splash[_0x393e2e(0x19c)](_0x4bc52d,![]);}if(_0x5201b8['dataset']['id']==0x0&&(!MM[_0x393e2e(0x298)]||MM['partyId']==App['storage'][_0x393e2e(0x43a)]['id'])){let _0x461081=DOM({'tag':'input','style':'search-input'}),_0x184494=DOM({'style':_0x393e2e(0x290)}),_0x2d7d25=DOM({'style':_0x393e2e(0x4e0)},_0x461081,_0x184494,DOM({'style':_0x393e2e(0x797),'event':[_0x393e2e(0x6d3),()=>{const _0x2d2ab4=_0x393e2e;Splash[_0x2d2ab4(0x61f)]();}]},Lang[_0x393e2e(0x605)](_0x393e2e(0x449))));_0x461081[_0x393e2e(0x4e9)]('input',async()=>{const _0x484b2b=_0x393e2e;let _0x461b50=await App[_0x484b2b(0x3bb)][_0x484b2b(0x74c)](CURRENT_MM,'findUser',{'name':_0x461081[_0x484b2b(0x357)]});if(_0x184494[_0x484b2b(0x682)])while(_0x184494[_0x484b2b(0x682)]){_0x184494['firstChild'][_0x484b2b(0x1ac)]();}for(let _0xa45d9d of _0x461b50){_0x184494[_0x484b2b(0x2f2)](DOM({'event':[_0x484b2b(0x6d3),async()=>{const _0x3d46ce=_0x484b2b;await App[_0x3d46ce(0x3bb)][_0x3d46ce(0x74c)](CURRENT_MM,'inviteParty',{'id':_0xa45d9d['id']}),App[_0x3d46ce(0x603)](_0x3d46ce(0xe2)+_0xa45d9d[_0x3d46ce(0x3ed)],0x3e8);}]},_0xa45d9d[_0x484b2b(0x3ed)]));}}),Splash[_0x393e2e(0x19c)](_0x2d7d25,![]),_0x461081[_0x393e2e(0x806)]();}}),_0x938570[_0x2a8802(0x2f2)](_0x5201b8);}return _0x16e44f[_0x2a8802(0x2f2)](View['header'](),DOM({'style':_0x2a8802(0x56c)},_0x3fa80a,_0x2d034f)),_0x16e44f;}static async[_0x4487d4(0x71a)](_0x560d3c){const _0x4e8e80=_0x4487d4;let _0x32bba6=DOM({'style':_0x4e8e80(0x18e)}),_0x6195ce=DOM({'style':_0x560d3c?'whistory':_0x4e8e80(0x71a)}),_0x14492d=await App[_0x4e8e80(0x3bb)][_0x4e8e80(0x74c)](CURRENT_MM,_0x4e8e80(0x71a));for(let _0x29648e of _0x14492d){let _0x498621=DOM();_0x498621[_0x4e8e80(0x11e)]['backgroundImage']=_0x4e8e80(0x16c)+_0x29648e['hero']+'/'+(_0x29648e[_0x4e8e80(0x27b)]?_0x29648e[_0x4e8e80(0x27b)]:0x1)+_0x4e8e80(0x634);let _0x3a5f66=DOM({'style':'history-item'},_0x498621,DOM({'style':_0x4e8e80(0x43b),'tag':'div'},_0x29648e['team']==0x1?_0x4e8e80(0x31e):_0x4e8e80(0x7cc)),DOM({'style':_0x4e8e80(0x43b),'tag':_0x4e8e80(0x51d)},Math[_0x4e8e80(0x4f2)]((_0x29648e[_0x4e8e80(0x769)]==_0x29648e[_0x4e8e80(0x81d)]?+_0x29648e['rating']:-_0x29648e[_0x4e8e80(0x676)])*0xa)/0xa),DOM({'style':'history-text-box','tag':_0x4e8e80(0x51d)},new Date(_0x29648e[_0x4e8e80(0x66b)])[_0x4e8e80(0x7ec)]()));_0x29648e[_0x4e8e80(0x769)]==_0x29648e[_0x4e8e80(0x81d)]&&(_0x3a5f66[_0x4e8e80(0x11e)][_0x4e8e80(0x809)]=_0x4e8e80(0x341)),_0x6195ce[_0x4e8e80(0x2f2)](_0x3a5f66);}return!_0x560d3c&&_0x32bba6[_0x4e8e80(0x2f2)](View[_0x4e8e80(0x57a)]()),_0x32bba6[_0x4e8e80(0x2f2)](_0x6195ce),_0x32bba6;}static async[_0x4487d4(0x783)](_0x467b07=0x0,_0x1716ac=![]){const _0x1fc53d=_0x4487d4;let _0x434f1c=DOM({'style':'main'}),_0x3427de=await App[_0x1fc53d(0x3bb)][_0x1fc53d(0x74c)](CURRENT_MM,'top',{'limit':0x64,'hero':_0x467b07});if(!_0x3427de)throw _0x1fc53d(0x499);let _0x3fbc73=DOM({'style':_0x1716ac?'wtop-scroll':_0x1fc53d(0x139)},DOM({'style':_0x1fc53d(0x467),'title':_0x1fc53d(0x814),'event':[_0x1fc53d(0x6d3),async()=>{const _0x207093=_0x1fc53d;let _0x163a06=await App['api']['request'](_0x207093(0x664),_0x207093(0x20d));_0x163a06['push']({'id':0x0});let _0x3d39ef=DOM({'style':'party-hero'}),_0x1cbc02=new PreloadImages(_0x3d39ef);for(let _0x37067b of _0x163a06){let _0x4c0d45=DOM();_0x37067b['id']?_0x4c0d45[_0x207093(0x67f)]['url']=_0x207093(0x7b7)+_0x37067b['id']+'/'+(_0x37067b[_0x207093(0x27b)]?_0x37067b[_0x207093(0x27b)]:0x1)+_0x207093(0x23d):_0x4c0d45[_0x207093(0x67f)][_0x207093(0x646)]=_0x207093(0x4f8),_0x4c0d45[_0x207093(0x4e9)](_0x207093(0x6d3),async()=>{const _0x88bcd2=_0x207093;_0x1716ac?Window['show'](_0x88bcd2(0x18e),_0x88bcd2(0x783),_0x37067b['id']):View[_0x88bcd2(0x19c)]('top',_0x37067b['id']),Splash[_0x88bcd2(0x61f)]();}),_0x1cbc02[_0x207093(0xed)](_0x4c0d45);}Splash[_0x207093(0x19c)](_0x3d39ef,![]);}]},DOM({'tag':_0x1fc53d(0x51d)}),DOM({'tag':'div'})));_0x3fbc73[_0x1fc53d(0x682)]['classList']['add'](_0x1fc53d(0x468)),_0x3fbc73[_0x1fc53d(0x682)][_0x1fc53d(0x682)]['style'][_0x1fc53d(0x756)]='url(content/hero/'+_0x3427de[0x0][_0x1fc53d(0x38c)]+'/'+(_0x3427de[0x0][_0x1fc53d(0x27b)]?_0x3427de[0x0]['skin']:0x1)+_0x1fc53d(0x634),_0x3fbc73[_0x1fc53d(0x682)][_0x1fc53d(0x116)]['innerText']='#1.\x20'+_0x3427de[0x0][_0x1fc53d(0x3ed)];let _0x3c8f4f=0x1;for(let _0x420491 of _0x3427de){let _0x4ada9b=DOM({'style':_0x1fc53d(0x4ae)});_0x4ada9b[_0x1fc53d(0x11e)][_0x1fc53d(0x756)]=_0x1fc53d(0x6a0)+Rank[_0x1fc53d(0x7f9)](_0x420491[_0x1fc53d(0x676)])+'.webp)';let _0x45cedb=DOM({'style':_0x1fc53d(0x12d)},_0x4ada9b);_0x45cedb[_0x1fc53d(0x11e)][_0x1fc53d(0x756)]='url(content/hero/'+_0x420491[_0x1fc53d(0x38c)]+'/'+(_0x420491[_0x1fc53d(0x27b)]?_0x420491[_0x1fc53d(0x27b)]:0x1)+_0x1fc53d(0x634);let _0x51a933=DOM({'style':'top-item','event':[_0x1fc53d(0x6d3),()=>Build[_0x1fc53d(0x1bc)](_0x420491['id'],_0x420491[_0x1fc53d(0x38c)],_0x420491[_0x1fc53d(0x3ed)])]},_0x45cedb,DOM({'style':_0x1fc53d(0x4a4)},DOM('#'+_0x3c8f4f+'.\x20'+_0x420491[_0x1fc53d(0x3ed)]),DOM(''+_0x420491['rating'])));_0x3fbc73[_0x1fc53d(0x2f2)](_0x51a933),_0x3c8f4f++;}return!_0x1716ac&&_0x434f1c[_0x1fc53d(0x2f2)](View[_0x1fc53d(0x57a)]()),_0x434f1c[_0x1fc53d(0x2f2)](_0x3fbc73),_0x434f1c;}static[_0x4487d4(0xe6)](){const _0x31d4dc=_0x4487d4;let _0x572f59=DOM({'style':'main'}),_0x2aac28=DOM({'style':_0x31d4dc(0x38c)}),_0x2e533f=new PreloadImages(_0x2aac28,_0x4ae091=>{});return App['api'][_0x31d4dc(0x67e)](_0x5dc607=>{const _0x483307=_0x31d4dc;MM[_0x483307(0x38c)]=_0x5dc607;for(const _0x5b054e of _0x5dc607){let _0x3fb650=DOM({'style':_0x483307(0x1dc)});_0x3fb650[_0x483307(0x11e)]['backgroundImage']=_0x483307(0x6a0)+Rank[_0x483307(0x7f9)](_0x5b054e[_0x483307(0x676)])+_0x483307(0x634);let _0x32b4ce=DOM({'style':_0x483307(0x3da)},DOM({'style':_0x483307(0x282)},_0x5b054e[_0x483307(0x676)]),_0x3fb650);const _0x1b7df2=DOM({'style':_0x483307(0xc6)},DOM({'tag':_0x483307(0x1c8),'style':_0x483307(0x20f)},_0x5b054e['name']),_0x32b4ce);_0x1b7df2[_0x483307(0x4e9)](_0x483307(0x6d3),()=>View[_0x483307(0x19c)](_0x483307(0x664),_0x5b054e['id'])),_0x1b7df2[_0x483307(0x67f)]['id']=_0x5b054e['id'],_0x1b7df2[_0x483307(0x67f)][_0x483307(0x589)]=0x1,_0x1b7df2[_0x483307(0x67f)][_0x483307(0x62a)]=_0x5b054e['total'],_0x1b7df2[_0x483307(0x67f)]['url']='content/hero/'+_0x5b054e['id']+'/'+(_0x5b054e[_0x483307(0x27b)]?_0x5b054e['skin']:0x1)+'.webp',_0x2e533f[_0x483307(0xed)](_0x1b7df2);}},_0x31d4dc(0x664),_0x31d4dc(0x20d)),_0x572f59[_0x31d4dc(0x2f2)](View[_0x31d4dc(0x57a)](),DOM({'style':_0x31d4dc(0x5da)},_0x2aac28)),_0x572f59;}static[_0x4487d4(0x40a)](_0x45f781){const _0x1e614e=_0x4487d4;let _0x40259b=DOM({'style':'main'}),_0x492599=DOM({'style':_0x1e614e(0x40a)});return App['api'][_0x1e614e(0x67e)](_0x5c3105=>{const _0x1a2056=_0x1e614e;for(let _0x1def1b of _0x5c3105){let _0x308806=DOM({'style':[_0x1a2056(0x508)+_0x1def1b[_0x1a2056(0x508)]]});_0x308806[_0x1a2056(0x11e)][_0x1a2056(0x756)]='url(content/talents/'+_0x1def1b['id']+_0x1a2056(0x634),_0x308806['append'](DOM({'tag':_0x1a2056(0x1c8)},_0x1def1b[_0x1a2056(0x660)])),_0x492599[_0x1a2056(0x2f2)](_0x308806);}},_0x1e614e(0x114),_0x1e614e(0x40a)),!_0x45f781?_0x40259b[_0x1e614e(0x2f2)](DOM({'style':_0x1e614e(0x5ba)},DOM({'tag':_0x1e614e(0x2b3),'src':_0x1e614e(0x174)}),DOM({'style':_0x1e614e(0x6b5),'event':[_0x1e614e(0x6d3),()=>View[_0x1e614e(0x19c)](_0x1e614e(0x5a7))]},App['storage']['data'][_0x1e614e(0x3ca)]),DOM({'style':_0x1e614e(0x6b5),'event':[_0x1e614e(0x6d3),()=>View[_0x1e614e(0x19c)]('inventory')]},_0x1e614e(0x745)),DOM({'style':_0x1e614e(0x6b5),'event':[_0x1e614e(0x6d3),()=>View[_0x1e614e(0x19c)](_0x1e614e(0x5cd))]},_0x1e614e(0x76a)),DOM({'style':_0x1e614e(0x6b5),'event':[_0x1e614e(0x6d3),()=>View[_0x1e614e(0x3e8)]()]},_0x1e614e(0x729)))):_0x40259b[_0x1e614e(0x2f2)](DOM({'style':_0x1e614e(0x718)},Lang[_0x1e614e(0x605)](_0x1e614e(0x24b)))),_0x40259b[_0x1e614e(0x2f2)](DOM({'style':_0x1e614e(0x5da)},_0x492599)),_0x40259b;}static[_0x4487d4(0x5cd)](_0x4234b8){const _0x13cd68=_0x4487d4;let _0x430a43=DOM({'style':'game'}),_0x4efd08=DOM({'style':_0x13cd68(0x4b3),'event':[_0x13cd68(0x6d3),async()=>{const _0x52df77=_0x13cd68;let _0x239948=await App[_0x52df77(0x3bb)][_0x52df77(0x74c)]('gamev2',_0x52df77(0x337));if(_0x52df77(0x498)in _0x239948){_0x4efd08[_0x52df77(0x12e)]='Начать\x20фарм\x20можно\x20будет\x20через\x20'+_0x239948[_0x52df77(0x498)]+_0x52df77(0x126);return;}_0x507719[_0x52df77(0x1ac)](),_0x239948[_0x52df77(0x449)]=()=>{const _0x1b1e05=_0x52df77;View[_0x1b1e05(0x19c)](_0x1b1e05(0x5a7));},_0x239948[_0x52df77(0x58b)]=async()=>{const _0x45ec24=_0x52df77;await App[_0x45ec24(0x3bb)][_0x45ec24(0x74c)]('gamev2',_0x45ec24(0x58b)),_0x4234b8?Window['close'](_0x45ec24(0x18e)):View['show'](_0x45ec24(0x5a7));},_0x239948[_0x52df77(0x4b7)]=()=>{const _0x43f887=_0x52df77;View[_0x43f887(0x19c)](_0x43f887(0x5a7));},Game[_0x52df77(0x303)](_0x430a43,_0x239948,_0x4234b8);}]},_0x13cd68(0x131)),_0x507719=DOM({'style':'game-description'},DOM({'tag':'h1'},_0x13cd68(0x60c)),DOM({'tag':'p'},_0x13cd68(0x1cb)),DOM({'tag':'p'},_0x13cd68(0x29c)),DOM({'tag':'p'},_0x13cd68(0x5b1)),DOM({'tag':'p'},'—\x20засчитывается\x20комбинация\x20минимум\x20из\x20трёх\x20одинаковых\x20талантов;'),DOM({'tag':'p'},_0x13cd68(0x755)),_0x4efd08,_0x4234b8?DOM():DOM({'style':'game-button','event':[_0x13cd68(0x6d3),()=>View[_0x13cd68(0x19c)]('castle')]},Lang[_0x13cd68(0x605)](_0x13cd68(0x449))));return _0x430a43['append'](_0x507719),_0x430a43;}static async[_0x4487d4(0x664)](_0x5ae9c9,_0x2b0e05=0x0,_0x4780d4=![]){const _0x4de015=_0x4487d4,_0xa08df1=DOM({'style':'build-horizontal'});return await Build[_0x4de015(0x303)](_0x5ae9c9,_0x2b0e05,_0x4780d4),_0xa08df1['append'](DOM({'style':_0x4de015(0x7fb)},Build[_0x4de015(0x7a9)]),DOM({'style':_0x4de015(0x319)},Build[_0x4de015(0x5b6)],DOM({'style':'build-field-with-tabs'},Build[_0x4de015(0x345)],DOM({'style':_0x4de015(0x6f4)},Build['levelView'],Build[_0x4de015(0x1ca)])),DOM({'style':_0x4de015(0x5ca)},Build[_0x4de015(0x6df)],DOM({'style':_0x4de015(0x5ce)},_0x4de015(0x33f)))),DOM({'style':_0x4de015(0x1ec)},Build[_0x4de015(0x6ad)],Build[_0x4de015(0x79f)],Build[_0x4de015(0x287)])),!_0x4780d4&&_0xa08df1[_0x4de015(0x2f2)](DOM({'style':['build-list-close',_0x4de015(0x3b2)],'title':'Закрыть','event':[_0x4de015(0x6d3),()=>{const _0x33e1d8=_0x4de015;Build[_0x33e1d8(0x1ee)](),_0x4780d4?View[_0x33e1d8(0x19c)](_0x33e1d8(0x5a7)):View['show'](_0x33e1d8(0xe6));}]},DOM({'tag':_0x4de015(0x2b3),'src':_0x4de015(0x5c3),'alt':_0x4de015(0x1b2),'style':_0x4de015(0x4d2)}))),_0x4780d4?_0xa08df1:DOM({'id':_0x4de015(0x113)},_0xa08df1);}static async[_0x4487d4(0x69c)](){const _0x38cf97=_0x4487d4;let _0x3dcd40=DOM({'style':_0x38cf97(0x18e)}),_0x3a21e8=DOM({'style':_0x38cf97(0x7d9)}),_0x3d3aef=DOM({'style':_0x38cf97(0x7f4),'event':['click',()=>View[_0x38cf97(0x19c)](_0x38cf97(0x5a7))]},_0x38cf97(0x6e6)),_0x359526=DOM({'tag':_0x38cf97(0x3fc),'placeholder':_0x38cf97(0x853),'style':'search-input'});_0x3a21e8[_0x38cf97(0x2f2)](_0x3d3aef,_0x359526);let _0xea8e89=DOM({'style':_0x38cf97(0x3b7)},_0x3a21e8),_0x6f0987=await App['api'][_0x38cf97(0x74c)]('build','talentAll'),_0x4a949d=[],_0x1a3094=DOM({'style':_0x38cf97(0x459)});for(let _0x24f800 of _0x6f0987){let _0x3c575e=DOM({'tag':_0x38cf97(0x51d),'class':'talent-item'});_0x3c575e[_0x38cf97(0x2f2)](DOM('id'+_0x24f800['id']),DOM({'tag':_0x38cf97(0x2b3),'src':_0x38cf97(0x74e)+_0x24f800['id']+_0x38cf97(0x23d)}));for(let _0x374bf6 in _0x24f800){if(_0x374bf6=='id')continue;_0x3c575e[_0x38cf97(0x2f2)](DOM({'tag':'div'},_0x374bf6),App[_0x38cf97(0x3fc)](async _0x26075b=>{const _0x1bf5de=_0x38cf97;let _0x5e06f4=new Object();_0x5e06f4[_0x374bf6]=_0x26075b,await App[_0x1bf5de(0x3bb)]['request'](_0x1bf5de(0x664),_0x1bf5de(0x2c5),{'id':_0x24f800['id'],'object':_0x5e06f4});},{'value':_0x24f800[_0x374bf6]}));}_0x4a949d[_0x38cf97(0x2db)]({'element':_0x3c575e,'data':_0x24f800}),_0x1a3094[_0x38cf97(0x2f2)](_0x3c575e);}const _0x48bac0=_0x26f395=>{const _0x2468d2=_0x38cf97;_0x26f395=_0x26f395[_0x2468d2(0x121)](),_0x4a949d[_0x2468d2(0x558)](({element:_0x138561,data:_0x4cc0cc})=>{const _0x1aedde=_0x2468d2;let _0x27b0f5=![];for(let _0x5193ad in _0x4cc0cc){if(String(_0x4cc0cc[_0x5193ad])[_0x1aedde(0x121)]()[_0x1aedde(0x618)](_0x26f395)){_0x27b0f5=!![];break;}}_0x138561['style']['display']=_0x27b0f5?'flex':'none';});};return _0x359526[_0x38cf97(0x4e9)](_0x38cf97(0x3fc),_0x1ac65e=>{const _0xc36190=_0x38cf97;_0x48bac0(_0x1ac65e[_0xc36190(0x47b)]['value']);}),_0xea8e89[_0x38cf97(0x2f2)](_0x1a3094),_0x3dcd40[_0x38cf97(0x2f2)](_0xea8e89),_0x3dcd40;}static async[_0x4487d4(0x108)](){const _0x2500f0=_0x4487d4;let _0x163a5d=DOM({'style':_0x2500f0(0x18e)}),_0x3056b0=DOM({'style':_0x2500f0(0x7d9)}),_0x3667e8=DOM({'style':'close-btn','event':[_0x2500f0(0x6d3),()=>View[_0x2500f0(0x19c)](_0x2500f0(0x5a7))]},_0x2500f0(0x6e6)),_0x29d6c3=DOM({'tag':_0x2500f0(0x3fc),'placeholder':_0x2500f0(0x117),'style':_0x2500f0(0x228)});_0x3056b0['append'](_0x3667e8,_0x29d6c3);let _0x525005=DOM({'style':_0x2500f0(0x3b7)},_0x3056b0),_0x1f56bf=await App[_0x2500f0(0x3bb)]['request'](_0x2500f0(0x664),_0x2500f0(0x479)),_0x5c4474=[],_0x77e70b=DOM({'style':_0x2500f0(0x459)});for(let _0x4ef8fe of _0x1f56bf){let _0x189e3d=DOM({'tag':_0x2500f0(0x51d),'class':_0x2500f0(0x46e)});_0x189e3d['append'](DOM('id'+_0x4ef8fe['id']),DOM({'tag':'img','src':_0x2500f0(0x420)+_0x4ef8fe['id']+_0x2500f0(0x23d)}));for(let _0x374c0 in _0x4ef8fe){if(_0x374c0=='id')continue;_0x189e3d['append'](DOM({'tag':'div'},_0x374c0),App[_0x2500f0(0x3fc)](async _0x17f0c1=>{const _0x55ac61=_0x2500f0;let _0x3d1130=new Object();_0x3d1130[_0x374c0]=_0x17f0c1,await App[_0x55ac61(0x3bb)]['request'](_0x55ac61(0x664),_0x55ac61(0x82a),{'id':_0x4ef8fe['id'],'object':_0x3d1130});},{'value':_0x4ef8fe[_0x374c0]}));}_0x5c4474[_0x2500f0(0x2db)]({'element':_0x189e3d,'data':_0x4ef8fe}),_0x77e70b[_0x2500f0(0x2f2)](_0x189e3d);}const _0x251e20=_0x47df2e=>{const _0x571c96=_0x2500f0;_0x47df2e=_0x47df2e['toLowerCase'](),_0x5c4474[_0x571c96(0x558)](({element:_0x473b3b,data:_0x49c21f})=>{const _0x1fb702=_0x571c96;let _0x18c3e2=![];for(let _0x1890ea in _0x49c21f){if(String(_0x49c21f[_0x1890ea])[_0x1fb702(0x121)]()[_0x1fb702(0x618)](_0x47df2e)){_0x18c3e2=!![];break;}}_0x473b3b[_0x1fb702(0x11e)][_0x1fb702(0x601)]=_0x18c3e2?'flex':'none';});};return _0x29d6c3[_0x2500f0(0x4e9)]('input',_0x1eacba=>{_0x251e20(_0x1eacba['target']['value']);}),_0x525005[_0x2500f0(0x2f2)](_0x77e70b),_0x163a5d[_0x2500f0(0x2f2)](_0x525005),_0x163a5d;}static async[_0x4487d4(0x5c0)](){const _0x247058=_0x4487d4;let _0x3c4f78=DOM({'event':[_0x247058(0x6d3),()=>{const _0x1a7a38=_0x247058;let _0x199151=document[_0x1a7a38(0xbe)](_0x1a7a38(0x79e));for(let _0x24c0dd in _0x199151){if(_0x199151[_0x24c0dd][_0x1a7a38(0x599)]&&_0x199151[_0x24c0dd][_0x1a7a38(0x599)]=='user-item'){let _0x29049c=_0x199151[_0x24c0dd][_0x1a7a38(0xbe)](_0x1a7a38(0x781))[0x0][_0x1a7a38(0x3b6)][_0x1a7a38(0x357)]!='0';!_0x29049c&&(_0x199151[_0x24c0dd]['style']['display']=_0x199151[_0x24c0dd][_0x1a7a38(0x11e)][_0x1a7a38(0x601)]==_0x1a7a38(0x6c8)?_0x1a7a38(0x5cc):'none');}}}]},_0x247058(0x777)),_0x5bb0cf=DOM({'tag':_0x247058(0x3fc),'placeholder':'mute','event':[_0x247058(0x7ea),_0x4b54d1=>{const _0x320bcf=_0x247058;_0x4b54d1['preventDefault']();if(App[_0x320bcf(0x358)]()){let _0x479a61=parseInt(_0x5bb0cf[_0x320bcf(0x357)]);if(!_0x479a61)return;let _0x1dd3f0=document['getElementsByClassName'](_0x320bcf(0x79e)),_0x3b07e8=Array['from'](_0x1dd3f0)[_0x320bcf(0x7bc)](_0xe231bb=>_0xe231bb[_0x320bcf(0x682)][_0x320bcf(0x12e)]==='id'+_0x479a61),_0x4baa17=_0x1dd3f0[_0x3b07e8][_0x320bcf(0x47a)][0x3]['value'],_0x5b838a=document[_0x320bcf(0x5a2)]();_0x5b838a[_0x320bcf(0x2f2)](DOM(_0x320bcf(0xf3)+_0x4baa17+'?'),DOM({'style':_0x320bcf(0x39d),'event':[_0x320bcf(0x6d3),async()=>{const _0x240612=_0x320bcf;await App[_0x240612(0x3bb)][_0x240612(0x74c)](_0x240612(0x10a),_0x240612(0x7af),{'id':_0x479a61}),App[_0x240612(0x603)](_0x240612(0x46d)+_0x4baa17+_0x240612(0x429)+_0x479a61),Splash[_0x240612(0x61f)]();}]},'Да'),DOM({'style':_0x320bcf(0x39d),'event':[_0x320bcf(0x6d3),async()=>Splash[_0x320bcf(0x61f)]()]},'Нет')),Splash['show'](_0x5b838a);}}]},''),_0x3147a1=DOM({'style':'main'}),_0xbdaf41=DOM({'style':_0x247058(0x3b7)},DOM({'event':[_0x247058(0x6d3),()=>View[_0x247058(0x19c)](_0x247058(0x5a7))]},_0x247058(0x6e6)),_0x3c4f78,_0x5bb0cf),_0x5a9d2a=await App[_0x247058(0x3bb)][_0x247058(0x74c)](_0x247058(0x10a),_0x247058(0x171));for(let _0x26f8ac of _0x5a9d2a){let _0x29d812=DOM({'tag':_0x247058(0x51d),'className':'user-item'});_0x29d812[_0x247058(0x2f2)](DOM('id'+_0x26f8ac['id']),DOM(_0x247058(0x633)+_0x26f8ac[_0x247058(0x516)]));for(let _0x3e5d8f in _0x26f8ac){if(['id',_0x247058(0x516)][_0x247058(0x618)](_0x3e5d8f))continue;if(_0x3e5d8f==_0x247058(0x66b)){_0x29d812['append'](DOM(''+new Date(_0x26f8ac[_0x247058(0x66b)])[_0x247058(0x7ec)](_0x247058(0x6db))));continue;}_0x29d812[_0x247058(0x2f2)](DOM({'tag':_0x247058(0x51d),'className':'userParam-'+_0x3e5d8f},_0x3e5d8f),App[_0x247058(0x3fc)](async _0x566952=>{const _0x3f1363=_0x247058;let _0x4e597f=new Object();_0x4e597f[_0x3e5d8f]=_0x566952,await App[_0x3f1363(0x3bb)]['request']('user',_0x3f1363(0x232),{'id':_0x26f8ac['id'],'object':_0x4e597f});},{'value':_0x26f8ac[_0x3e5d8f]}));}_0x29d812[_0x247058(0x2f2)](DOM({'event':[_0x247058(0x6d3),async()=>{const _0x515820=_0x247058;if(!confirm(_0x515820(0x759)+_0x26f8ac['nickname']+'»?'))return;let _0xd11b89=await App['api'][_0x515820(0x74c)](_0x515820(0x10a),_0x515820(0x40d),{'id':_0x26f8ac['id']});prompt(_0x515820(0x85a),_0x515820(0x241)+_0xd11b89);}]},_0x247058(0x546))),_0xbdaf41[_0x247058(0x2f2)](_0x29d812);}return _0x3147a1['append'](_0xbdaf41),_0x3147a1;}}class Window{static [_0x4487d4(0x388)]={};static async[_0x4487d4(0x19c)](_0x1d4ecb,_0x35cd7f,_0x3ce159,_0x57fed8,_0x5ebd61){const _0x150dfd=_0x4487d4;if(!(_0x35cd7f in Window))return;let _0x5c8e2c=await Window[_0x35cd7f](_0x3ce159,_0x57fed8,_0x5ebd61),_0x3c0bbc=DOM({'style':_0x150dfd(0x3b2),'title':_0x150dfd(0x1b2),'event':[_0x150dfd(0x6d3),()=>{const _0x58760e=_0x150dfd;Window[_0x58760e(0x776)](_0x1d4ecb);}]},DOM({'tag':_0x150dfd(0x2b3),'src':'content/icons/close-cropped.svg','alt':_0x150dfd(0x1b2),'style':_0x150dfd(0x4d2)}));_0x5c8e2c['append'](_0x3c0bbc),_0x1d4ecb in Window[_0x150dfd(0x388)]&&Window[_0x150dfd(0x388)][_0x1d4ecb][_0x150dfd(0x1ac)](),Window[_0x150dfd(0x388)][_0x1d4ecb]=_0x5c8e2c,View['active'][_0x150dfd(0x2f2)](_0x5c8e2c);}static[_0x4487d4(0x776)](_0xb7b8a){const _0x4413d8=_0x4487d4;if(_0xb7b8a in Window['windows'])return Window[_0x4413d8(0x388)][_0xb7b8a][_0x4413d8(0x1ac)](),delete Window['windows'][_0xb7b8a],!![];return![];}static async[_0x4487d4(0x75c)](){const _0x396da4=_0x4487d4;return DOM({'id':_0x396da4(0x5b5)},DOM({'style':_0x396da4(0x5fd)},Lang[_0x396da4(0x605)](_0x396da4(0xef))),DOM({'style':_0x396da4(0x2ce)},DOM({'style':_0x396da4(0x27a)},Lang[_0x396da4(0x605)](_0x396da4(0x75c))),DOM({'style':_0x396da4(0x464),'event':[_0x396da4(0x6d3),()=>window['open']('https://api2.26rus-game.ru:2087',_0x396da4(0x52f),_0x396da4(0x1aa)+(screen[_0x396da4(0x40c)]-0x2d0)/0x2+',\x20left='+(screen[_0x396da4(0x658)]-0x500)/0x2+_0x396da4(0x145))]},'Продолжить')));}static async['build'](_0x529a7b,_0x2e4ccf=0x0,_0x13421b=![]){const _0x2ed6c9=_0x4487d4;let _0x2d75fb=await View[_0x2ed6c9(0x664)](_0x529a7b,_0x2e4ccf,_0x13421b);return DOM({'id':_0x2ed6c9(0x1c4)},_0x2d75fb);}static async['top'](_0x14d3af=0x0){const _0x126cb9=_0x4487d4;let _0x2527c9=await View[_0x126cb9(0x783)](_0x14d3af,!![]);return DOM({'id':'wtop'},_0x2527c9);}static async[_0x4487d4(0x431)](){const _0x871ea=_0x4487d4;let _0x3e7f52=await View['game'](!![]);return DOM({'id':_0x871ea(0x2e7)},_0x3e7f52);}static async[_0x4487d4(0x71a)](){const _0x2ac331=_0x4487d4;let _0x57c8f6=await View[_0x2ac331(0x71a)](!![]);return DOM({'id':_0x2ac331(0x313)},_0x57c8f6);}static async[_0x4487d4(0x40a)](){const _0x28be60=_0x4487d4;let _0x291e14=await View[_0x28be60(0x40a)](!![]);return DOM({'id':_0x28be60(0x7e6)},_0x291e14);}static async[_0x4487d4(0xc8)](){const _0xb6aab7=_0x4487d4;return DOM({'id':_0xb6aab7(0x221)},DOM({'style':'castle-menu-title'},Lang['text'](_0xb6aab7(0xc8))),DOM({'style':_0xb6aab7(0x2ce)},App['isAdmin']()?DOM({'style':_0xb6aab7(0x464)},DOM({'event':[_0xb6aab7(0x6d3),()=>Window[_0xb6aab7(0x19c)]('main',_0xb6aab7(0x553))]},_0xb6aab7(0x667))):DOM(),DOM({'style':_0xb6aab7(0x464)},DOM({'event':[_0xb6aab7(0x6d3),()=>Window['show'](_0xb6aab7(0x18e),'settings')]},Lang['text'](_0xb6aab7(0x6a3)))),DOM({'style':_0xb6aab7(0x464)},DOM({'event':[_0xb6aab7(0x6d3),()=>Window[_0xb6aab7(0x19c)](_0xb6aab7(0x18e),_0xb6aab7(0x402))]},Lang['text']('support'))),DOM({'style':[_0xb6aab7(0x464)]},DOM({'event':['click',()=>{const _0x531620=_0xb6aab7;ParentEvent[_0x531620(0x47a)]=window[_0x531620(0x802)]('https://api2.26rus-game.ru:2087/connect/'+App['storage'][_0x531620(0x43a)][_0x531620(0x85f)],_0x531620(0x52f),_0x531620(0x1aa)+(screen[_0x531620(0x40c)]-0x2d0)/0x2+_0x531620(0x659)+(screen[_0x531620(0x658)]-0x500)/0x2+_0x531620(0x145));}]},_0xb6aab7(0x41e))),DOM({'style':'castle-menu-item-button','event':[_0xb6aab7(0x6d3),async()=>{const _0x4d4253=_0xb6aab7;App[_0x4d4253(0x4b7)](),Splash[_0x4d4253(0x61f)]();}]},Lang[_0xb6aab7(0x605)](_0xb6aab7(0x55b))),DOM({'style':'castle-menu-item-button','event':[_0xb6aab7(0x6d3),()=>{NativeAPI['status']&&NativeAPI['exit']();}]},Lang['text'](_0xb6aab7(0x4b7))),DOM({'style':_0xb6aab7(0x811)},Lang[_0xb6aab7(0x605)](_0xb6aab7(0x5eb))+_0xb6aab7(0x621)+PW_VERSION),DOM({'style':_0xb6aab7(0x6aa)},DOM({'tag':'a','href':_0xb6aab7(0x7f8),'target':_0xb6aab7(0x3d5),'event':[_0xb6aab7(0x6d3),_0x1a1b50=>NativeAPI[_0xb6aab7(0x491)](_0x1a1b50)]},DOM({'tag':_0xb6aab7(0x2b3),'src':_0xb6aab7(0x855),'alt':'VK','style':_0xb6aab7(0x6aa)})),DOM({'tag':'a','href':'https://t.me/primeworldclassic','target':_0xb6aab7(0x3d5),'event':[_0xb6aab7(0x6d3),_0x14666a=>NativeAPI['linkHandler'](_0x14666a)]},DOM({'tag':_0xb6aab7(0x2b3),'src':_0xb6aab7(0x861),'alt':_0xb6aab7(0x251),'style':_0xb6aab7(0x6aa)})),DOM({'tag':'a','href':_0xb6aab7(0x1e9),'target':_0xb6aab7(0x3d5),'event':[_0xb6aab7(0x6d3),_0x27efd6=>NativeAPI[_0xb6aab7(0x491)](_0x27efd6)]},DOM({'tag':'img','src':_0xb6aab7(0x5a1),'alt':'Discord','style':_0xb6aab7(0x6aa)})),DOM({'tag':'a','href':_0xb6aab7(0x7dd),'target':'_blank','event':[_0xb6aab7(0x6d3),_0x161e6c=>NativeAPI[_0xb6aab7(0x491)](_0x161e6c)]},DOM({'tag':_0xb6aab7(0x2b3),'src':_0xb6aab7(0x5ea),'alt':_0xb6aab7(0x504),'style':_0xb6aab7(0x6aa)})))));}static async['settings'](){const _0x2bc819=_0x4487d4;let _0x2067fd=_0x2bc819(0x424);return DOM({'id':'wcastle-menu'},DOM({'style':_0x2bc819(0x5fd)},Lang['text'](_0x2bc819(0x6a3))),DOM({'style':_0x2bc819(0x2ce)},DOM({'style':_0x2bc819(0x437)},DOM({'tag':_0x2bc819(0x3fc),'type':_0x2bc819(0x3ce),'id':_0x2bc819(0x803),'checked':!Settings[_0x2bc819(0x57f)][_0x2bc819(0x836)],'event':[_0x2bc819(0x73e),_0x1c3c70=>{const _0x27b65b=_0x2bc819;Settings['settings'][_0x27b65b(0x836)]=!_0x1c3c70[_0x27b65b(0x47b)][_0x27b65b(0x656)],Settings[_0x27b65b(0x526)]({'render':![],'audio':![]});}]},{'checked':Settings[_0x2bc819(0x57f)][_0x2bc819(0x836)]}),DOM({'tag':_0x2bc819(0x62d),'for':'fullscreen-toggle'},Lang[_0x2bc819(0x605)](_0x2bc819(0x45c)))),DOM({'style':'castle-menu-item-checkbox'},DOM({'tag':_0x2bc819(0x3fc),'type':'checkbox','id':_0x2bc819(0x73d),'checked':Settings[_0x2bc819(0x57f)][_0x2bc819(0x5d1)],'event':['change',_0x1e0add=>{const _0x4936c9=_0x2bc819;Settings[_0x4936c9(0x57f)][_0x4936c9(0x5d1)]=_0x1e0add[_0x4936c9(0x47b)]['checked'],Settings[_0x4936c9(0x526)]({'audio':![],'window':![]});}]}),DOM({'tag':_0x2bc819(0x62d),'for':_0x2bc819(0x73d)},Lang['text'](_0x2bc819(0x197)))),DOM({'style':_0x2bc819(0x437)},DOM({'tag':'input','type':_0x2bc819(0x3ce),'id':_0x2bc819(0x494),'checked':Settings[_0x2bc819(0x57f)][_0x2bc819(0x810)],'event':[_0x2bc819(0x73e),_0x1d74ca=>{const _0x57532c=_0x2bc819;Settings[_0x57532c(0x57f)]['radminPriority']=_0x1d74ca[_0x57532c(0x47b)][_0x57532c(0x656)];}]},{'checked':Settings['settings']['radminPriority']}),DOM({'tag':_0x2bc819(0x62d),'for':_0x2bc819(0x494)},Lang[_0x2bc819(0x605)](_0x2bc819(0x810)))),DOM({'style':'castle-menu-label'},Lang[_0x2bc819(0x605)](_0x2bc819(0x81c)),DOM({'tag':_0x2bc819(0x3fc),'type':_0x2bc819(0x382),'value':Settings[_0x2bc819(0x57f)][_0x2bc819(0x6fa)]*0x64,'min':'0','max':_0x2bc819(0x753),'step':'1','style':_0x2bc819(0x4a2),'event':['input',_0x656710=>{const _0x4bda6b=_0x2bc819;Settings['settings'][_0x4bda6b(0x6fa)]=parseFloat(_0x656710[_0x4bda6b(0x47b)][_0x4bda6b(0x357)])/0x64,Settings['ApplySettings']({'render':![],'window':![]}),document[_0x4bda6b(0x273)](_0x4bda6b(0x6ca))[_0x4bda6b(0x523)]=Math[_0x4bda6b(0x4f2)](Settings[_0x4bda6b(0x57f)]['globalVolume']*0x64)+'%';}]}),DOM({'tag':'span','id':_0x2bc819(0x6ca),'style':_0x2bc819(0x1a9)},Math[_0x2bc819(0x4f2)](Settings[_0x2bc819(0x57f)]['globalVolume']*0x64)+'%')),DOM({'style':_0x2bc819(0x811)},Lang[_0x2bc819(0x605)](_0x2bc819(0x761)),DOM({'tag':_0x2bc819(0x3fc),'type':_0x2bc819(0x382),'value':Settings[_0x2bc819(0x57f)][_0x2bc819(0x201)]*0x64,'min':'0','max':_0x2bc819(0x753),'step':'1','style':_0x2bc819(0x4a2),'event':[_0x2bc819(0x3fc),_0x5eebe0=>{const _0x55ab17=_0x2bc819;Settings['settings'][_0x55ab17(0x201)]=parseFloat(_0x5eebe0[_0x55ab17(0x47b)][_0x55ab17(0x357)])/0x64,Settings['ApplySettings']({'render':![],'window':![]}),document[_0x55ab17(0x273)](_0x55ab17(0x7c6))[_0x55ab17(0x523)]=Math[_0x55ab17(0x4f2)](Settings[_0x55ab17(0x57f)][_0x55ab17(0x201)]*0x64)+'%';}]}),DOM({'tag':_0x2bc819(0x1c8),'id':_0x2bc819(0x7c6),'style':_0x2bc819(0x1a9)},Math[_0x2bc819(0x4f2)](Settings[_0x2bc819(0x57f)]['musicVolume']*0x64)+'%')),DOM({'style':_0x2bc819(0x811)},Lang[_0x2bc819(0x605)](_0x2bc819(0x288)),DOM({'tag':_0x2bc819(0x3fc),'type':'range','value':Settings[_0x2bc819(0x57f)]['soundsVolume']*0x64,'min':'0','max':_0x2bc819(0x753),'step':'1','style':_0x2bc819(0x4a2),'event':[_0x2bc819(0x3fc),_0x29cc29=>{const _0x30bd2d=_0x2bc819;Settings[_0x30bd2d(0x57f)]['soundsVolume']=parseFloat(_0x29cc29[_0x30bd2d(0x47b)]['value'])/0x64,Settings[_0x30bd2d(0x526)]({'render':![],'window':![]}),!Castle[_0x30bd2d(0x1fb)]&&(Castle[_0x30bd2d(0x1fb)]=!![],Sound[_0x30bd2d(0x612)](_0x30bd2d(0x29e),{'id':_0x2067fd,'volume':Castle[_0x30bd2d(0x688)](Castle['AUDIO_SOUNDS'])},()=>{const _0x2cc0d2=_0x30bd2d;Castle[_0x2cc0d2(0x1fb)]=![];})),document[_0x30bd2d(0x273)](_0x30bd2d(0x291))['textContent']=Math[_0x30bd2d(0x4f2)](Settings[_0x30bd2d(0x57f)][_0x30bd2d(0x2b1)]*0x64)+'%';}]}),DOM({'tag':'span','id':_0x2bc819(0x291),'style':_0x2bc819(0x1a9)},Math[_0x2bc819(0x4f2)](Settings[_0x2bc819(0x57f)][_0x2bc819(0x2b1)]*0x64)+'%')),DOM({'style':'castle-menu-item-button','event':[_0x2bc819(0x6d3),()=>Window[_0x2bc819(0x19c)]('main','menu')]},Lang[_0x2bc819(0x605)](_0x2bc819(0x449)))));}static async[_0x4487d4(0x120)](){const _0xfd8aca=_0x4487d4;async function _0x4b1d3b(){const _0xb66801=_0x5ecf,_0x4b7fb4=[nw[_0xb66801(0x191)][_0xb66801(0x5b8)](_0xb66801(0x11f))+'/My\x20Games/Prime\x20World\x20Classic/input_new.cfg',process[_0xb66801(0x3f1)]['USERPROFILE']+_0xb66801(0x37d),process['env'][_0xb66801(0x10d)]+_0xb66801(0xf9)];for(const _0x5e34bd of _0x4b7fb4){try{return await fs[_0xb66801(0x528)](_0x5e34bd),_0x5e34bd;}catch(_0x1e5a0b){continue;}}return null;}const _0x324d72=await _0x4b1d3b();if(!_0x324d72)return console[_0xfd8aca(0x498)](_0xfd8aca(0x4db)),DOM({'id':_0xfd8aca(0x7b5)},DOM({'style':_0xfd8aca(0x49e)},Lang[_0xfd8aca(0x605)](_0xfd8aca(0x433),_0xfd8aca(0x248))),DOM({'class':_0xfd8aca(0x464),'event':[_0xfd8aca(0x6d3),()=>Window[_0xfd8aca(0x19c)]('settings','menu')]},Lang[_0xfd8aca(0x605)](_0xfd8aca(0x449),_0xfd8aca(0x680))));const _0x33bd9e=['1','2','3','4','5','6','7','8','9','0'];let _0x399c41={},_0x60ca3b=![];try{const _0x901f6=await fs[_0xfd8aca(0x856)](_0x324d72,_0xfd8aca(0x60f)),_0xd99465=/bind cmd_action_bar_slot(\d+) '(.+?)'/g;let _0xa07598;while((_0xa07598=_0xd99465[_0xfd8aca(0x140)](_0x901f6))!==null){_0x399c41[_0xfd8aca(0x583)+_0xa07598[0x1]]=_0xa07598[0x2];}}catch(_0x5919be){console[_0xfd8aca(0x498)](_0xfd8aca(0x3b0),_0x5919be),_0x60ca3b=!![];}return DOM({'id':_0xfd8aca(0x7b5)},DOM({'style':'castle-menu-title'},Lang[_0xfd8aca(0x605)](_0xfd8aca(0x2c9),_0xfd8aca(0x5f2))),_0x60ca3b?DOM({'style':_0xfd8aca(0x49e)},Lang[_0xfd8aca(0x605)]('keybindings_error',_0xfd8aca(0x510))+'\x20'+_0x324d72):DOM({},...Array[_0xfd8aca(0x5d5)]({'length':0xa},(_0x10d35f,_0x2d938d)=>{const _0x4cc508=_0xfd8aca,_0x3a186a=_0x2d938d+0x1,_0x3ac4a0=_0x4cc508(0x583)+_0x3a186a,_0x28cc94=_0x399c41[_0x3ac4a0]||_0x33bd9e[_0x2d938d];return DOM({'style':_0x4cc508(0x3a4)},DOM({'style':_0x4cc508(0x2fe)},Lang[_0x4cc508(0x605)]('talent_slot_'+_0x3a186a,'Талант\x20'+_0x3a186a)),DOM({'tag':'input','type':_0x4cc508(0x605),'value':_0x28cc94,'class':'castle-keybinding-input','maxLength':0x1,'event':[_0x4cc508(0x1a6),_0x351df7=>{const _0x2d3e3e=_0x4cc508;if(_0x351df7['key']===_0x2d3e3e(0x146)||_0x351df7[_0x2d3e3e(0x72f)]===_0x2d3e3e(0x453)){_0x351df7[_0x2d3e3e(0x47b)][_0x2d3e3e(0x357)]='',_0x399c41[_0x3ac4a0]='';return;}if(_0x351df7[_0x2d3e3e(0x575)]||_0x351df7[_0x2d3e3e(0x15f)]||_0x351df7[_0x2d3e3e(0x304)]||_0x351df7[_0x2d3e3e(0x72f)]['length']>0x1)return;_0x351df7[_0x2d3e3e(0x43e)]();const _0x573478=_0x351df7[_0x2d3e3e(0x72f)][_0x2d3e3e(0x7c3)]();/^[0-9A-Z]$/[_0x2d3e3e(0x194)](_0x573478)?(_0x351df7[_0x2d3e3e(0x47b)][_0x2d3e3e(0x357)]=_0x573478,_0x399c41[_0x3ac4a0]=_0x573478,_0x351df7['target'][_0x2d3e3e(0x695)]['add']('input-success'),setTimeout(()=>_0x351df7[_0x2d3e3e(0x47b)][_0x2d3e3e(0x695)]['remove'](_0x2d3e3e(0x573)),0xc8)):(_0x351df7[_0x2d3e3e(0x47b)][_0x2d3e3e(0x695)]['add'](_0x2d3e3e(0x652)),setTimeout(()=>_0x351df7[_0x2d3e3e(0x47b)][_0x2d3e3e(0x695)][_0x2d3e3e(0x1ac)]('input-error'),0xc8));}]}));}),DOM({'class':'castle-menu-item-button\x20reset-btn','event':[_0xfd8aca(0x6d3),()=>{const _0x57fe39=_0xfd8aca;document[_0x57fe39(0xf2)](_0x57fe39(0x3b1))[_0x57fe39(0x558)]((_0x27c01a,_0x1157af)=>{const _0x4870f5=_0x57fe39;_0x27c01a[_0x4870f5(0x357)]=_0x33bd9e[_0x1157af],_0x399c41[_0x4870f5(0x583)+(_0x1157af+0x1)]=_0x33bd9e[_0x1157af];});const _0x5a6b7f=document[_0x57fe39(0x204)](_0x57fe39(0x19b));_0x5a6b7f[_0x57fe39(0x695)][_0x57fe39(0xed)](_0x57fe39(0x744)),_0x5a6b7f[_0x57fe39(0x523)]=Lang[_0x57fe39(0x605)]('reset_complete','Сброшено!'),setTimeout(()=>{const _0x53aea3=_0x57fe39;_0x5a6b7f[_0x53aea3(0x695)][_0x53aea3(0x1ac)]('action-success'),_0x5a6b7f['textContent']=Lang[_0x53aea3(0x605)](_0x53aea3(0x1d3),_0x53aea3(0x3c9));},0x3e8);}]},Lang[_0xfd8aca(0x605)](_0xfd8aca(0x1d3),_0xfd8aca(0x3c9))),DOM({'class':_0xfd8aca(0x136),'event':[_0xfd8aca(0x6d3),async()=>{const _0x2df081=_0xfd8aca;try{let _0x5a94df='';for(let _0x39c3ee=0x1;_0x39c3ee<=0xa;_0x39c3ee++){const _0x8f32e2=_0x399c41[_0x2df081(0x583)+_0x39c3ee]||_0x33bd9e[_0x39c3ee-0x1];_0x5a94df+=_0x2df081(0x7ad)+_0x39c3ee+'\x20\x27'+_0x8f32e2+'\x27\x0a';}await fs[_0x2df081(0x7e3)](_0x324d72,_0x5a94df);const _0x4fdeaa=document[_0x2df081(0x204)](_0x2df081(0x6f1));_0x4fdeaa[_0x2df081(0x695)]['add'](_0x2df081(0x744)),_0x4fdeaa['textContent']=Lang[_0x2df081(0x605)](_0x2df081(0x4b9),'Сохранено!'),setTimeout(()=>{const _0xe1c0b3=_0x2df081;_0x4fdeaa[_0xe1c0b3(0x695)][_0xe1c0b3(0x1ac)](_0xe1c0b3(0x744)),_0x4fdeaa['textContent']=Lang[_0xe1c0b3(0x605)](_0xe1c0b3(0x83d),_0xe1c0b3(0x49b));},0x3e8);}catch(_0x3630c6){console[_0x2df081(0x498)](_0x2df081(0x67c),_0x3630c6);const _0x1c2e3e=document[_0x2df081(0x204)](_0x2df081(0x6f1));_0x1c2e3e['classList']['add'](_0x2df081(0x165)),_0x1c2e3e[_0x2df081(0x523)]=Lang[_0x2df081(0x605)](_0x2df081(0x6b6),_0x2df081(0x70d)),setTimeout(()=>{const _0x435541=_0x2df081;_0x1c2e3e[_0x435541(0x695)][_0x435541(0x1ac)](_0x435541(0x165)),_0x1c2e3e[_0x435541(0x523)]=Lang[_0x435541(0x605)](_0x435541(0x83d),_0x435541(0x49b));},0x3e8);}}]},Lang[_0xfd8aca(0x605)](_0xfd8aca(0x83d),'Сохранить'))),DOM({'class':_0xfd8aca(0x464),'event':['click',()=>Window['show'](_0xfd8aca(0x57f),'menu')]},Lang[_0xfd8aca(0x605)]('back',_0xfd8aca(0x680))));}static async[_0x4487d4(0x402)](){const _0x3bb189=_0x4487d4;return DOM({'id':_0x3bb189(0x221)},DOM({'style':_0x3bb189(0x5fd)},Lang['text']('support')),DOM({'style':_0x3bb189(0x2ce)},DOM({'style':_0x3bb189(0x27a)},Lang['text']('supportDesk')),DOM({'style':_0x3bb189(0x6aa)},DOM({'tag':'a','href':'https://vk.me/join/HbESO2Fty/Z9sgbWSO0jOhNu_at9J84U7Uk=','target':_0x3bb189(0x3d5),'event':[_0x3bb189(0x6d3),_0x3db364=>NativeAPI['linkHandler'](_0x3db364)]},DOM({'tag':_0x3bb189(0x2b3),'src':_0x3bb189(0x855),'alt':'VK','style':_0x3bb189(0x412)})),DOM({'tag':'a','href':_0x3bb189(0xd5),'target':_0x3bb189(0x3d5),'event':[_0x3bb189(0x6d3),_0x5139e0=>NativeAPI[_0x3bb189(0x491)](_0x5139e0)]},DOM({'tag':_0x3bb189(0x2b3),'src':'content/icons/telegram.webp','alt':'Telegram','style':_0x3bb189(0x412)})),DOM({'tag':'a','href':'https://discord.com/channels/1252164250265325598/1298407885876891691','target':_0x3bb189(0x3d5),'event':[_0x3bb189(0x6d3),_0x54682e=>NativeAPI[_0x3bb189(0x491)](_0x54682e)]},DOM({'tag':_0x3bb189(0x2b3),'src':_0x3bb189(0x5a1),'alt':_0x3bb189(0x5e3),'style':_0x3bb189(0x412)}))),DOM({'style':_0x3bb189(0x464),'event':['click',()=>Window[_0x3bb189(0x19c)](_0x3bb189(0x18e),_0x3bb189(0xc8))]},Lang[_0x3bb189(0x605)](_0x3bb189(0x449)))));}static async[_0x4487d4(0x553)](){const _0x46036e=_0x4487d4;return DOM({'id':_0x46036e(0x221)},DOM({'style':'castle-menu-title'},_0x46036e(0x6cc)),DOM({'style':'castle-menu-item-button','event':[_0x46036e(0x6d3),()=>{const _0x20f64e=_0x46036e;View[_0x20f64e(0x19c)]('talents');}]},_0x46036e(0x576)),DOM({'style':_0x46036e(0x464),'event':[_0x46036e(0x6d3),()=>{const _0x268f8f=_0x46036e;View[_0x268f8f(0x19c)]('talents2');}]},_0x46036e(0x70b)),DOM({'style':_0x46036e(0x464),'event':[_0x46036e(0x6d3),()=>{const _0x5b50dd=_0x46036e;View[_0x5b50dd(0x19c)](_0x5b50dd(0x5c0));}]},_0x46036e(0x373)),DOM({'style':_0x46036e(0x464),'event':[_0x46036e(0x6d3),()=>Window[_0x46036e(0x19c)]('main','menu')]},Lang[_0x46036e(0x605)](_0x46036e(0x449))));}}function handleKeyPress(_0x577a92){const _0x2b8ab8=_0x4487d4;_0x577a92[_0x2b8ab8(0x72f)]===_0x2b8ab8(0x50c)&&(!Window[_0x2b8ab8(0x776)](_0x2b8ab8(0x18e))&&Window['show']('main',_0x2b8ab8(0xc8)));}document[_0x4487d4(0x4e9)](_0x4487d4(0x1a6),handleKeyPress);class Frame{static [_0x4487d4(0x2a2)]=![];static['open'](_0x21ebe9){const _0x4e9222=_0x4487d4;!Frame[_0x4e9222(0x2a2)]&&Frame[_0x4e9222(0x77b)](),_0x21ebe9 in Frame&&Frame[_0x21ebe9]();}static['inject'](){const _0x80fdb5=_0x4487d4;Frame[_0x80fdb5(0x2a2)]=DOM({'style':_0x80fdb5(0x818)}),document['body'][_0x80fdb5(0xca)](DOM({'style':'frame'},Frame[_0x80fdb5(0x2a2)]));let _0x40b072=DOM({'tag':_0x80fdb5(0x51d)},_0x80fdb5(0x686));_0x40b072['setAttribute'](_0x80fdb5(0x11e),_0x80fdb5(0x32e)),Frame[_0x80fdb5(0x2a2)][_0x80fdb5(0x2f2)](_0x40b072);}static[_0x4487d4(0x462)](){}}class Winrate{static[_0x4487d4(0x7f9)](_0x212078){if(_0x212078<=0x19)return 0x3;else return _0x212078<=0x32?0x2:0x1;}}class Rank{static ['name']=['',_0x4487d4(0x559),'Наёмник',_0x4487d4(0x613),_0x4487d4(0x3a0),'Сержант','Лейтенант','Капитан','Майор',_0x4487d4(0x565),_0x4487d4(0x152),_0x4487d4(0x246),'Маршал',_0x4487d4(0x84d)];static[_0x4487d4(0x7f9)](_0x1f96f9){if(_0x1f96f9<=0x4af)return 0x1;else{if(_0x1f96f9<=0x513)return 0x2;else{if(_0x1f96f9<=0x577)return 0x3;else{if(_0x1f96f9<=0x5db)return 0x4;else{if(_0x1f96f9<=0x63f)return 0x5;else{if(_0x1f96f9<=0x6a3)return 0x6;else{if(_0x1f96f9<=0x707)return 0x7;else{if(_0x1f96f9<=0x76b)return 0x8;else{if(_0x1f96f9<=0x7cf)return 0x9;else{if(_0x1f96f9<=0x833)return 0xa;else return _0x1f96f9<=0x897?0xb:0xc;}}}}}}}}}}static[_0x4487d4(0x185)](_0x2a7bbb){const _0x472f78=_0x4487d4;return Rank[_0x472f78(0x20f)][Rank[_0x472f78(0x7f9)](_0x2a7bbb)];}}class Build{static [_0x4487d4(0x5a6)]=![];static ['language']={'sr':_0x4487d4(0x351),'hp':Lang[_0x4487d4(0x605)]('health'),'provorstvo':Lang[_0x4487d4(0x605)](_0x4487d4(0x6cf)),'hitrost':Lang[_0x4487d4(0x605)](_0x4487d4(0x708)),'regenmp':'Регенерация\x20энергии','stoikost':Lang[_0x4487d4(0x605)](_0x4487d4(0x75a)),'volia':Lang[_0x4487d4(0x605)]('will'),'ph':_0x4487d4(0x75d),'sv':_0x4487d4(0x1e1),'razum':Lang['text']('intelligence'),'sila':Lang[_0x4487d4(0x605)](_0x4487d4(0x1e2)),'speedtal':_0x4487d4(0x3f4),'srsv':_0x4487d4(0x158),'hpmp':_0x4487d4(0x65a),'krajahp':_0x4487d4(0x48f),'regenhp':'Регенерация\x20здоровья','mp':Lang['text'](_0x4487d4(0x709)),'krajamp':_0x4487d4(0x5b3),'stoikostrz':_0x4487d4(0x554),'voliarz':_0x4487d4(0x331),'speedtalrz':_0x4487d4(0x159),'speedtalvz':_0x4487d4(0x71e),'hitrostrz':_0x4487d4(0x28e),'provorstvorz':_0x4487d4(0x6b2),'silarz':_0x4487d4(0x7b3),'razumrz':_0x4487d4(0x447),'krajahprz':_0x4487d4(0x6e0),'regenhpvz':_0x4487d4(0x41c),'hitrostvz':_0x4487d4(0x19f),'provorstvovz':'Проворство\x20на\x20вражеской\x20земле','regenmpvz':_0x4487d4(0x46f),'silavz':_0x4487d4(0x440),'razumvz':'Разум\x20на\x20вражеской\x20земле','svvz':'Стойкость/Воля\x20на\x20вражеской\x20земле','krajahpvz':'Кража\x20здоровья\x20на\x20вражеской\x20земле','vs':_0x4487d4(0x7dc),'speed':Lang['text'](_0x4487d4(0x2dc)),'speedrz':_0x4487d4(0x1da),'speedvz':_0x4487d4(0x845),'dopspeed':_0x4487d4(0x5d3),'speedstak':'Стак\x20скорости'};static [_0x4487d4(0x45b)]={0x4:0x5,0x3:0x7,0x2:0x9,0x1:0xc};static async[_0x4487d4(0x1bc)](_0x25c702,_0x4f6fc4,_0xb59f4d='',_0x175700=!![]){const _0x2eab5e=_0x4487d4;let _0x406492=await App[_0x2eab5e(0x3bb)]['request'](_0x2eab5e(0x664),_0x2eab5e(0x2da),{'user':_0x25c702,'hero':_0x4f6fc4}),_0x41f30c=DOM({'event':['click',async()=>{const _0x3fd478=_0x2eab5e;_0x175700&&Build[_0x3fd478(0x1bc)](_0x25c702,_0x4f6fc4,_0xb59f4d,![]);}]});_0x41f30c['style'][_0x2eab5e(0x658)]=_0x2eab5e(0x1b7),_0x41f30c[_0x2eab5e(0x11e)]['height']=_0x2eab5e(0x1b7);let _0x42659c=![],_0x50a31a=DOM({'event':[_0x2eab5e(0x6d3),async()=>{const _0x31eced=_0x2eab5e;if(!_0x42659c){_0x50a31a[_0x31eced(0x12e)]=_0x31eced(0x712),_0x42659c=!![];return;}await App[_0x31eced(0x3bb)][_0x31eced(0x74c)](_0x31eced(0x664),_0x31eced(0x562),{'user':_0x25c702,'hero':_0x4f6fc4}),View[_0x31eced(0x19c)](_0x31eced(0x664),_0x4f6fc4),Splash['hide']();}]},_0x2eab5e(0x1be)),_0x1ed16c=DOM({'style':_0x2eab5e(0x655)},_0x50a31a,DOM({'event':[_0x2eab5e(0x6d3),()=>Splash['hide']()]},_0x2eab5e(0x12b)));_0x175700&&(_0x1ed16c[_0x2eab5e(0x11e)][_0x2eab5e(0x65e)]=0x1),_0x41f30c[_0x2eab5e(0x2f2)](Build['viewModel'](_0x406492,()=>{},_0x175700)),Splash[_0x2eab5e(0x19c)](DOM({'style':_0x2eab5e(0x51d)},DOM({'style':'build-top'},_0xb59f4d),_0x41f30c,_0x1ed16c),![]);}static[_0x4487d4(0x34a)](_0x49c8f4,_0x52678a,_0x46a82e=!![]){const _0x5e273a=_0x4487d4;let _0x46da3f=DOM({'style':_0x5e273a(0x41f)}),_0x1b3dee=0x1,_0x52b885=DOM({'style':_0x5e273a(0x785)}),_0x4d73fd=new Array(),_0x5b8ede=new Array();_0x46da3f[_0x5e273a(0x2f2)](_0x52b885);for(let _0xfdf64d of _0x49c8f4){let _0x2343eb=DOM();_0xfdf64d!=0x0&&(_0x46a82e&&(_0x2343eb[_0x5e273a(0x11e)][_0x5e273a(0x65e)]=0x0,_0x2343eb[_0x5e273a(0x11e)][_0x5e273a(0x207)]=0x270f,_0xfdf64d>0x0?_0x5b8ede[_0x5e273a(0x2db)](_0x2343eb):_0x4d73fd['push'](_0x2343eb)),_0x2343eb[_0x5e273a(0x11e)][_0x5e273a(0x756)]=_0xfdf64d>0x0?_0x5e273a(0xd7)+_0xfdf64d+_0x5e273a(0x634):'url(content/htalents/'+Math[_0x5e273a(0x344)](_0xfdf64d)+_0x5e273a(0x634));if(_0x1b3dee>0x6){_0x1b3dee=0x2,_0x52b885=DOM({'style':'build-body-row'}),_0x52b885[_0x5e273a(0x2f2)](_0x2343eb),_0x46da3f[_0x5e273a(0x2f2)](_0x52b885);continue;}else _0x52b885[_0x5e273a(0x2f2)](_0x2343eb);_0x1b3dee++;}if(!_0x46a82e)return _0x46da3f;_0x4d73fd=Game[_0x5e273a(0x2ef)](_0x4d73fd),_0x5b8ede=Game[_0x5e273a(0x2ef)](_0x5b8ede);let _0x57d3f8=0x0,_0x4c382a=0x1;for(let _0xe3cb51 of _0x4d73fd){_0x57d3f8+=0x96;let _0x3eacd6=_0xe3cb51['animate']({'opacity':[0x0,0x1],'transform':['scale(3)',_0x5e273a(0x13a)]},{'delay':_0x57d3f8,'duration':0x15e,'fill':'both','easing':'ease-out'});_0x4c382a==_0x4d73fd['length']&&(_0x3eacd6[_0x5e273a(0x701)]=()=>{setTimeout(()=>{const _0x48b387=_0x5ecf;let _0x3dacdf=0x1;_0x57d3f8=0x0;for(let _0x1c75c3 of _0x5b8ede){_0x57d3f8+=0x32;let _0x590b9a=_0x1c75c3[_0x48b387(0x33a)]({'opacity':[0x0,0x1],'transform':[_0x48b387(0x81e),_0x48b387(0x13a)]},{'delay':_0x57d3f8,'duration':0x15e,'fill':_0x48b387(0x7c9),'easing':'ease-out'});_0x3dacdf==_0x5b8ede[_0x48b387(0x2ed)]&&(_0x590b9a[_0x48b387(0x701)]=()=>{_0x52678a&&_0x52678a();}),_0x3dacdf++;}},0x64);}),_0x4c382a++;}return _0x46da3f;}static async[_0x4487d4(0x303)](_0x5ccfa4,_0x4bf258,_0x16b529){const _0x6222c7=_0x4487d4;Build[_0x6222c7(0x69c)]=new Object(),Build[_0x6222c7(0x389)]=document[_0x6222c7(0x4af)](_0x6222c7(0x51d)),Build[_0x6222c7(0x1ee)](),Build[_0x6222c7(0x389)]['classList'][_0x6222c7(0xed)](_0x6222c7(0x272)),Build[_0x6222c7(0x389)][_0x6222c7(0x11e)][_0x6222c7(0x601)]=_0x6222c7(0x6c8),Build[_0x6222c7(0x389)][_0x6222c7(0x366)]=()=>{const _0x19b43d=_0x6222c7;Build[_0x19b43d(0x389)][_0x19b43d(0x11e)]['display']=_0x19b43d(0x6c8);},document[_0x6222c7(0x2a2)][_0x6222c7(0x2f2)](Build[_0x6222c7(0x389)]),Build['heroView']=document['createElement'](_0x6222c7(0x51d)),Build[_0x6222c7(0x7a9)][_0x6222c7(0x695)][_0x6222c7(0xed)](_0x6222c7(0x7da)),Build[_0x6222c7(0x38f)]=document[_0x6222c7(0x4af)](_0x6222c7(0x51d)),Build[_0x6222c7(0x38f)]['classList']['add'](_0x6222c7(0x1f9)),Build['fieldView']=document['createElement'](_0x6222c7(0x51d)),Build[_0x6222c7(0x1ca)]['classList']['add']('build-field'),Build['listView']=document[_0x6222c7(0x4af)](_0x6222c7(0x51d)),Build['listView'][_0x6222c7(0x695)][_0x6222c7(0xed)](_0x6222c7(0x5a4)),Build[_0x6222c7(0x5b6)]=document[_0x6222c7(0x4af)](_0x6222c7(0x51d)),Build[_0x6222c7(0x5b6)][_0x6222c7(0x695)]['add']('build-actions-view'),Build[_0x6222c7(0x78a)]=new Object();const _0x12688c=document[_0x6222c7(0x4af)](_0x6222c7(0x561));_0x12688c['innerText']=_0x6222c7(0x483),_0x12688c[_0x6222c7(0x15e)]=_0x6222c7(0x18d),_0x12688c[_0x6222c7(0x695)][_0x6222c7(0xed)](_0x6222c7(0x16b),'btn-hover',_0x6222c7(0x255)),_0x12688c[_0x6222c7(0x15e)]=_0x6222c7(0x1d2);const _0x300cee=document[_0x6222c7(0x4af)](_0x6222c7(0x51d));_0x300cee[_0x6222c7(0x12e)]='|',_0x300cee[_0x6222c7(0x695)][_0x6222c7(0xed)](_0x6222c7(0x49c));const _0x180a73=document[_0x6222c7(0x4af)](_0x6222c7(0x561));_0x180a73[_0x6222c7(0x12e)]=_0x6222c7(0x590),_0x180a73[_0x6222c7(0x15e)]='TODO\x20еще\x20не\x20готово\x20-\x20команда\x20PW\x20Classic\x20работает\x20над\x20этим',_0x180a73[_0x6222c7(0x695)][_0x6222c7(0xed)](_0x6222c7(0x258),_0x6222c7(0x758),'color-1'),_0x180a73['addEventListener'](_0x6222c7(0x6d3),()=>Build[_0x6222c7(0x446)]()),Build['talentsAndSetsView']=document[_0x6222c7(0x4af)]('div'),Build[_0x6222c7(0x6ad)][_0x6222c7(0x695)][_0x6222c7(0xed)](_0x6222c7(0x520)),Build[_0x6222c7(0x6ad)][_0x6222c7(0x2f2)](_0x12688c,_0x300cee,_0x180a73);const _0x12e621=DOM({'style':_0x6222c7(0x7b0)});Build['inventoryView']=document[_0x6222c7(0x4af)]('div'),Build[_0x6222c7(0x287)][_0x6222c7(0x695)][_0x6222c7(0xed)](_0x6222c7(0x790)),Build[_0x6222c7(0x4ba)]=DOM({'tag':_0x6222c7(0x561),'style':[_0x6222c7(0x2a7),_0x6222c7(0x758),'color-3'],'title':_0x6222c7(0x1a0),'event':[_0x6222c7(0x6d3),async()=>Build[_0x6222c7(0x72a)]()]},Lang[_0x6222c7(0x605)](_0x6222c7(0x161))),Build[_0x6222c7(0x33d)]=DOM({'tag':'button','style':[_0x6222c7(0x2a7),_0x6222c7(0x758),_0x6222c7(0x5fe)],'title':_0x6222c7(0x564),'event':[_0x6222c7(0x6d3),async()=>{const _0x324d3a=_0x6222c7;try{NativeAPI[_0x324d3a(0x370)]?(await MM[_0x324d3a(0x611)](),await App[_0x324d3a(0x3bb)][_0x324d3a(0x74c)](CURRENT_MM,'heroParty',{'id':MM[_0x324d3a(0x298)],'hero':Build['heroId']}),await App[_0x324d3a(0x3bb)][_0x324d3a(0x74c)](CURRENT_MM,'start',{'version':PW_VERSION,'mode':0x63})):App[_0x324d3a(0x498)](_0x324d3a(0x1ea));}catch(_0x23105c){return App[_0x324d3a(0x498)](_0x23105c);}}]},'Тренировка'),Build[_0x6222c7(0x287)]['append'](_0x12e621),Build[_0x6222c7(0x79f)]=DOM({'style':_0x6222c7(0x200)}),Build[_0x6222c7(0x6df)]=DOM({'style':_0x6222c7(0x7e1)});let _0x19fd03=await App[_0x6222c7(0x3bb)][_0x6222c7(0x74c)](_0x6222c7(0x664),_0x6222c7(0x43a),{'heroId':_0x5ccfa4,'target':_0x4bf258});Build[_0x6222c7(0x22f)]=_0x19fd03,Build['id']=_0x19fd03['id'],Build[_0x6222c7(0x58a)]=_0x5ccfa4,Build[_0x6222c7(0x415)]=new Object(),Build[_0x6222c7(0x638)]=new Object(),Build[_0x6222c7(0x348)]=new Object(),Build[_0x6222c7(0x549)]=0x0,Build[_0x6222c7(0x418)]={'hp':0x0,'mp':0x0,'sila':0x0,'razum':0x0,'provorstvo':0x0,'hitrost':0x0,'stoikost':0x0,'volia':0x0},Build[_0x6222c7(0x4b0)]=new Array(0x24)['fill'](null),Build[_0x6222c7(0x457)]=new Object(),Build[_0x6222c7(0x169)]=!![],Build['applyVz']=![],Build[_0x6222c7(0x51b)]=!![],Build[_0x6222c7(0x5c6)]=!![],Build['list'](_0x19fd03[_0x6222c7(0x664)],_0x16b529),Build[_0x6222c7(0x7c7)](_0x19fd03['build'],_0x16b529),_0x19fd03['hero']['stats'][_0x6222c7(0x1d0)]=0x0,_0x19fd03[_0x6222c7(0x38c)][_0x6222c7(0x6e9)]['critProb']=0x0,_0x19fd03[_0x6222c7(0x38c)][_0x6222c7(0x6e9)][_0x6222c7(0x6b1)]=0x0,_0x19fd03[_0x6222c7(0x38c)][_0x6222c7(0x6e9)]['punching']=0x0,_0x19fd03[_0x6222c7(0x38c)][_0x6222c7(0x6e9)][_0x6222c7(0x227)]=0x0,_0x19fd03['hero']['stats']['protectionSpirit']=0x0,Build['hero'](_0x19fd03[_0x6222c7(0x38c)]),Build[_0x6222c7(0x13b)](),Build[_0x6222c7(0x83b)](_0x19fd03['body']),Build[_0x6222c7(0x40a)](),Build['rarity'](),Build['activeBar'](_0x19fd03['active']),Build[_0x6222c7(0x5db)]=new Object();}static[_0x4487d4(0x1ee)](){const _0x49afbf=_0x4487d4;let _0x493fa6=document[_0x49afbf(0xbe)](_0x49afbf(0x272));for(let _0x3dc29c in _0x493fa6){_0x493fa6[_0x3dc29c][_0x49afbf(0x599)]&&_0x493fa6[_0x3dc29c][_0x49afbf(0x599)]==_0x49afbf(0x272)&&(console[_0x49afbf(0x1ed)](_0x49afbf(0x4a5)),_0x493fa6[_0x3dc29c]['remove']());}}static async[_0x4487d4(0x446)](){const _0x46d713=_0x4487d4;let _0x15cc12=await App['api'][_0x46d713(0x74c)](_0x46d713(0x664),_0x46d713(0x446));for(let _0x42e4fe of _0x15cc12){console[_0x46d713(0x1ed)](_0x42e4fe);}}static['skinChange'](){const _0x17b9c4=_0x4487d4;let _0x3cd324=DOM({'style':_0x17b9c4(0x6d1)}),_0x31fdf4=new PreloadImages(_0x3cd324);for(let _0x3b23a3=0x0;_0x3b23a3<Build[_0x17b9c4(0x22f)][_0x17b9c4(0x38c)][_0x17b9c4(0x27b)][_0x17b9c4(0x62a)];_0x3b23a3++){let _0x28554b=DOM();_0x28554b[_0x17b9c4(0x67f)][_0x17b9c4(0x646)]=_0x17b9c4(0x7b7)+Build[_0x17b9c4(0x58a)]+'/'+(_0x3b23a3+0x1)+'.webp',_0x28554b[_0x17b9c4(0x67f)][_0x17b9c4(0x27b)]=_0x3b23a3+0x1,_0x28554b[_0x17b9c4(0x4e9)]('click',async()=>{const _0x1fa2bf=_0x17b9c4;await App[_0x1fa2bf(0x3bb)]['request'](_0x1fa2bf(0x664),_0x1fa2bf(0x72a),{'hero':Build[_0x1fa2bf(0x58a)],'skin':_0x28554b['dataset']['skin']}),Build['heroImg'][_0x1fa2bf(0x11e)][_0x1fa2bf(0x756)]=_0x1fa2bf(0x16c)+Build['heroId']+'/'+_0x28554b['dataset']['skin']+_0x1fa2bf(0x634),Splash[_0x1fa2bf(0x61f)]();}),_0x31fdf4[_0x17b9c4(0xed)](_0x28554b);}Splash[_0x17b9c4(0x19c)](_0x3cd324,![]);}static['buildSelectName'](_0x122e21,_0x25870e,_0x5cce06,_0x1a2538){const _0x2aa04d=_0x4487d4,_0x4c8be8=DOM({'tag':'div','style':_0x2aa04d(0x3b2),'event':['click',()=>Splash[_0x2aa04d(0x61f)]()]});_0x4c8be8['style'][_0x2aa04d(0x756)]=_0x2aa04d(0x226);let _0x48d399=document[_0x2aa04d(0x5a2)](),_0x56364b=DOM({'tag':'input','placeholder':_0x2aa04d(0x1a7)}),_0x8d56d=DOM({'style':_0x2aa04d(0x39d),'event':[_0x2aa04d(0x6d3),async()=>{const _0x1e8f81=_0x2aa04d;!_0x56364b[_0x1e8f81(0x357)]&&Splash[_0x1e8f81(0x61f)](),_0x5cce06[_0x1e8f81(0x20f)]=_0x56364b[_0x1e8f81(0x357)],await App[_0x1e8f81(0x3bb)]['request']('build',_0x122e21,_0x5cce06),Splash[_0x1e8f81(0x61f)](),_0x1a2538?Window[_0x1e8f81(0x19c)](_0x1e8f81(0x18e),_0x1e8f81(0x664),Build['heroId'],0x0,!![]):View[_0x1e8f81(0x19c)]('build',Build[_0x1e8f81(0x58a)]);}]},_0x25870e);_0x48d399['append'](_0x56364b,_0x8d56d,_0x4c8be8),Splash['show'](_0x48d399);}static[_0x4487d4(0x7c7)](_0x487dce,_0x593a3b){const _0x42c1e4=_0x4487d4;if(_0x487dce['length']<0x6){const _0x3718f0=DOM({'tag':_0x42c1e4(0x561),'style':[_0x42c1e4(0x151),'btn-hover',_0x42c1e4(0x255)],'title':'Создать\x20новую\x20вкладку\x20билда','event':[_0x42c1e4(0x6d3),()=>Build[_0x42c1e4(0xd4)](_0x42c1e4(0x4e1),'Создать\x20билд',{'heroId':Build['heroId']},_0x593a3b)]});let _0x5ba9dd=DOM({'style':['btn-create',_0x42c1e4(0x6f7)]});_0x5ba9dd[_0x42c1e4(0x11e)][_0x42c1e4(0x756)]=_0x42c1e4(0x6af),_0x3718f0[_0x42c1e4(0x2f2)](_0x5ba9dd),Build['buildActionsView'][_0x42c1e4(0x2f2)](_0x3718f0);}const _0x232adb=DOM({'tag':_0x42c1e4(0x561),'style':[_0x42c1e4(0x151),_0x42c1e4(0x758),_0x42c1e4(0x255)],'title':_0x42c1e4(0x691),'event':['click',async()=>{const _0x287cd0=_0x42c1e4,_0x1e0204=Build['id'],_0x5b93e8=document['createDocumentFragment'](),_0x184b97=DOM({'style':_0x287cd0(0x55d)},_0x487dce[_0x287cd0(0x2ed)]>=0x6?_0x287cd0(0x2ae):_0x287cd0(0x7a4));_0x5b93e8[_0x287cd0(0x2f2)](_0x184b97),_0x487dce[_0x287cd0(0x7ac)](_0x3ff48d=>_0x3ff48d['id']!==_0x1e0204)['forEach'](_0xbe95f=>{const _0x510098=_0x287cd0,_0x221e2b=DOM({'tag':_0x510098(0x561),'style':[_0x510098(0x330),_0x510098(0x758)],'event':['click',async()=>{const _0x9b6c8=_0x510098;await App[_0x9b6c8(0x3bb)]['request'](_0x9b6c8(0x664),_0x9b6c8(0x14e),{'id':_0x1e0204,'target':_0xbe95f['id']}),Splash[_0x9b6c8(0x61f)](),_0x593a3b?Window[_0x9b6c8(0x19c)](_0x9b6c8(0x18e),_0x9b6c8(0x664),Build['heroId'],0x0,!![]):View[_0x9b6c8(0x19c)](_0x9b6c8(0x664),Build[_0x9b6c8(0x58a)]);}]},_0xbe95f[_0x510098(0x20f)]);_0x5b93e8[_0x510098(0x2f2)](_0x221e2b);});if(_0x487dce[_0x287cd0(0x2ed)]<0x6){const _0x3d7a8c=DOM({'tag':_0x287cd0(0x561),'style':[_0x287cd0(0x330),_0x287cd0(0x758),'color-1'],'event':[_0x287cd0(0x6d3),async()=>{const _0x428aa4=_0x287cd0;Splash['hide']();const _0x34445c=DOM({'tag':_0x428aa4(0x51d),'style':_0x428aa4(0x3b2),'event':['click',()=>Splash['hide']()]});_0x34445c['style'][_0x428aa4(0x756)]=_0x428aa4(0x226);let _0x34be27=document[_0x428aa4(0x5a2)](),_0x2ffe5a=DOM({'tag':_0x428aa4(0x3fc),'placeholder':_0x428aa4(0x1a7)}),_0x1e8af2=DOM({'style':_0x428aa4(0x39d),'event':[_0x428aa4(0x6d3),async()=>{const _0x41d718=_0x428aa4;if(!_0x2ffe5a[_0x41d718(0x357)]){Splash[_0x41d718(0x61f)]();return;}const _0x2ac45d={'heroId':Build['heroId'],'name':_0x2ffe5a[_0x41d718(0x357)]},_0x35a690=await App['api']['request'](_0x41d718(0x664),_0x41d718(0x4e1),_0x2ac45d);console[_0x41d718(0x1ed)](_0x1e0204),console[_0x41d718(0x1ed)](_0x35a690),await App[_0x41d718(0x3bb)][_0x41d718(0x74c)](_0x41d718(0x664),'duplicate',{'id':_0x1e0204,'target':_0x35a690}),Splash[_0x41d718(0x61f)](),_0x593a3b?Window['show']('main',_0x41d718(0x664),Build['heroId'],0x0,!![]):View[_0x41d718(0x19c)]('build',Build[_0x41d718(0x58a)]);}]},_0x428aa4(0x837));_0x34be27[_0x428aa4(0x2f2)](_0x2ffe5a,_0x1e8af2,_0x34445c),Splash['show'](_0x34be27);}]},_0x287cd0(0x506));_0x5b93e8['append'](_0x3d7a8c);}const _0x3416b4=DOM({'tag':_0x287cd0(0x51d),'style':'close-button','event':['click',()=>Splash[_0x287cd0(0x61f)]()]});_0x3416b4['style'][_0x287cd0(0x756)]='url(content/icons/close-cropped.svg)',_0x5b93e8['append'](_0x3416b4),Splash[_0x287cd0(0x19c)](_0x5b93e8);}]});let _0x1f18ae=DOM({'style':[_0x42c1e4(0x156)]});_0x1f18ae[_0x42c1e4(0x11e)][_0x42c1e4(0x756)]='url(\x27content/icons/copy.svg\x27)',_0x232adb['append'](_0x1f18ae),Build['buildActionsView'][_0x42c1e4(0x2f2)](_0x232adb);{const _0x513c22=DOM({'tag':_0x42c1e4(0x561),'style':[_0x42c1e4(0x151),_0x42c1e4(0x758),'color-1'],'title':'Сгенерировать\x20случайный\x20билд','event':['click',async()=>{const _0xb44c1=_0x42c1e4;await App[_0xb44c1(0x3bb)][_0xb44c1(0x74c)](_0xb44c1(0x664),'random',{'id':Build['id']}),_0x593a3b?Window[_0xb44c1(0x19c)]('main',_0xb44c1(0x664),Build[_0xb44c1(0x58a)],0x0,!![]):View[_0xb44c1(0x19c)](_0xb44c1(0x664),Build[_0xb44c1(0x58a)]);}]});let _0x1caf0f=DOM({'style':[_0x42c1e4(0x466),_0x42c1e4(0x6f7)]});_0x1caf0f['style'][_0x42c1e4(0x756)]=_0x42c1e4(0x132),_0x513c22[_0x42c1e4(0x2f2)](_0x1caf0f),Build[_0x42c1e4(0x5b6)]['append'](_0x513c22);}{const _0x55e34e=DOM({'tag':_0x42c1e4(0x561),'style':[_0x42c1e4(0x151),'btn-hover',_0x42c1e4(0x255)],'title':_0x42c1e4(0x2bd),'event':[_0x42c1e4(0x6d3),async()=>{const _0x5aa041=_0x42c1e4,_0x13ecaa=document[_0x5aa041(0x5a2)](),_0x112668=DOM({'style':_0x5aa041(0x55d)},'Сбросить\x20таланты\x20в\x20этом\x20билде?');_0x13ecaa['append'](_0x112668);const _0x395a9c=DOM({'tag':'button','style':[_0x5aa041(0x330),_0x5aa041(0x758)],'event':[_0x5aa041(0x6d3),async()=>{const _0x41b487=_0x5aa041;await App[_0x41b487(0x3bb)][_0x41b487(0x74c)](_0x41b487(0x664),_0x41b487(0x474),{'id':Build['id']}),Splash[_0x41b487(0x61f)](),_0x593a3b?Window[_0x41b487(0x19c)](_0x41b487(0x18e),_0x41b487(0x664),Build[_0x41b487(0x58a)],0x0,!![]):View[_0x41b487(0x19c)](_0x41b487(0x664),Build[_0x41b487(0x58a)]);}]},_0x5aa041(0x148));_0x395a9c['style'][_0x5aa041(0x44b)]=_0x5aa041(0x147),_0x395a9c[_0x5aa041(0x11e)][_0x5aa041(0x1cd)]=_0x5aa041(0x4f0),_0x395a9c[_0x5aa041(0x11e)][_0x5aa041(0x5b0)]=_0x5aa041(0x5e7),_0x395a9c[_0x5aa041(0x4e9)]('mouseover',()=>{const _0x3e47b3=_0x5aa041;_0x395a9c[_0x3e47b3(0x11e)]['backgroundColor']='#ff3333';}),_0x395a9c[_0x5aa041(0x4e9)](_0x5aa041(0x764),()=>{const _0x2f93b5=_0x5aa041;_0x395a9c[_0x2f93b5(0x11e)][_0x2f93b5(0x44b)]=_0x2f93b5(0x147);}),_0x13ecaa[_0x5aa041(0x2f2)](_0x395a9c);let _0x4a9a38=DOM({'tag':'div','style':_0x5aa041(0x3b2),'event':['click',()=>Splash['hide']()]});_0x4a9a38[_0x5aa041(0x11e)]['backgroundImage']='url(content/icons/close-cropped.svg)',_0x13ecaa['append'](_0x4a9a38),Splash[_0x5aa041(0x19c)](_0x13ecaa);}]});let _0x573318=DOM({'style':[_0x42c1e4(0x2ee),_0x42c1e4(0x6f7)]});_0x573318[_0x42c1e4(0x11e)]['backgroundImage']=_0x42c1e4(0x6bd),_0x55e34e['append'](_0x573318),Build[_0x42c1e4(0x5b6)][_0x42c1e4(0x2f2)](_0x55e34e);}}static[_0x4487d4(0x843)](_0x1f422f,_0x2262e6){const _0x57b314=_0x4487d4,_0x111486=DOM({'style':_0x57b314(0x5a4)});for(let _0x41c51c of _0x1f422f){const _0x549860=DOM({'tag':_0x57b314(0x561),'style':['build-tab-item',_0x57b314(0x758)],'event':[_0x57b314(0x6d3),()=>{const _0x23afc9=_0x57b314;_0x2262e6?Window[_0x23afc9(0x19c)](_0x23afc9(0x18e),_0x23afc9(0x664),Build[_0x23afc9(0x58a)],_0x41c51c['id'],!![]):View[_0x23afc9(0x19c)](_0x23afc9(0x664),Build['heroId'],_0x41c51c['id']);}]},DOM({},''+_0x41c51c[_0x57b314(0x20f)]));_0x549860[_0x57b314(0x4e9)](_0x57b314(0x7ea),_0x9b81f8=>{const _0x20da00=_0x57b314;_0x9b81f8[_0x20da00(0x43e)](),Build[_0x20da00(0xd4)]('rename',_0x20da00(0x532),{'id':_0x41c51c['id']},_0x2262e6);});const _0xac5a5d=DOM({'tag':_0x57b314(0x51d),'style':'button-build--wrapper'},_0x549860);_0x41c51c[_0x57b314(0x47b)]?_0x549860[_0x57b314(0x695)][_0x57b314(0xed)](_0x57b314(0x434)):_0x549860[_0x57b314(0x695)][_0x57b314(0xed)](_0x57b314(0x18a)),Build['listView'][_0x57b314(0x2f2)](_0xac5a5d);}setTimeout(()=>{const _0x11207e=_0x57b314,_0x470152=document[_0x11207e(0x204)](_0x11207e(0x542));_0x470152&&_0x470152[_0x11207e(0x4e9)](_0x11207e(0x858),function(_0x8dd7d6){const _0x57f4ae=_0x11207e;_0x8dd7d6[_0x57f4ae(0x43e)](),this[_0x57f4ae(0xd9)]+=_0x8dd7d6[_0x57f4ae(0x36f)];});},0x0);}static[_0x4487d4(0x6d9)](_0x2fa443){const _0x23be1b=_0x4487d4;let _0x3a38b5=Build[_0x23be1b(0x348)][_0x2fa443],_0x549f56=Build[_0x23be1b(0x638)][_0x2fa443],_0x33c6aa=0x0;return _0x2fa443 in Build[_0x23be1b(0x418)]&&(_0x33c6aa+=Build[_0x23be1b(0x418)][_0x2fa443]),_0x3a38b5+_0x549f56+_0x33c6aa;}static['hero'](_0x1ca73d){const _0xee6d=_0x4487d4;Build[_0xee6d(0x56b)]=Build['dataRequest'][_0xee6d(0x38c)][_0xee6d(0x10f)],Build[_0xee6d(0x743)]=Build['dataRequest'][_0xee6d(0x38c)]['overallModifier'],Build[_0xee6d(0x54f)]=0x0,Build[_0xee6d(0x3af)]=_0x1ca73d[_0xee6d(0x37f)],Build['heroAttackModifier']=_0x1ca73d[_0xee6d(0x83e)];for(let _0x362d06 in _0x1ca73d[_0xee6d(0x6e9)]){Build[_0xee6d(0x348)][_0x362d06]=parseFloat(_0x1ca73d[_0xee6d(0x6e9)][_0x362d06]),Build['calculationStats'][_0x362d06]=0x0;}let _0x4b92a2=DOM({'style':_0xee6d(0x52a)});const _0x4d2ba3={'hp':Lang[_0xee6d(0x605)](_0xee6d(0x2d7)),'mp':Lang[_0xee6d(0x605)](_0xee6d(0x709)),'speed':Lang[_0xee6d(0x605)](_0xee6d(0x2dc)),'sila':Lang[_0xee6d(0x605)]('strength'),'razum':Lang['text'](_0xee6d(0x622)),'provorstvo':Lang[_0xee6d(0x605)](_0xee6d(0x6cf)),'hitrost':Lang[_0xee6d(0x605)](_0xee6d(0x708)),'stoikost':Lang['text'](_0xee6d(0x75a)),'volia':Lang[_0xee6d(0x605)]('will'),'damage':Lang['text'](_0xee6d(0x1d0)),'critProb':Lang[_0xee6d(0x605)]('criticalHit'),'attackSpeed':Lang[_0xee6d(0x605)](_0xee6d(0x238)),'punching':Lang['text'](_0xee6d(0x7f6)),'protectionBody':Lang[_0xee6d(0x605)](_0xee6d(0x602)),'protectionSpirit':Lang[_0xee6d(0x605)]('defenceMagic')};!(_0xee6d(0x3e3)in Build[_0xee6d(0x22f)])&&(Build['dataRequest']['profile']=[0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0]);let _0x1b06c5=0x0;const _0x46a209=_0x14137b=>[_0xee6d(0x1d0),_0xee6d(0xd0),_0xee6d(0x6b1),_0xee6d(0x5c9),_0xee6d(0x227),_0xee6d(0x3bd),'considerStacks',_0xee6d(0x5d0),'groundType'][_0xee6d(0x618)](_0x14137b);for(const _0x2cbda3 in _0x4d2ba3){const _0x333552=DOM({'style':'build-hero-stats-item','event':[_0xee6d(0x6d3),!_0x46a209(_0x2cbda3)?()=>{const _0x5cf68b=_0xee6d;if(_0x333552['dataset'][_0x5cf68b(0x1d5)]==0x1){_0x333552[_0x5cf68b(0x11e)][_0x5cf68b(0x809)]=_0x5cf68b(0x18f);if(_0x2cbda3=='hp')Build[_0x5cf68b(0x6c3)](_0x5cf68b(0x6e9),'hp'),Build[_0x5cf68b(0x6c3)](_0x5cf68b(0x6e9),'krajahp'),Build[_0x5cf68b(0x6c3)](_0x5cf68b(0x6e9),_0x5cf68b(0x427)),Build['removeSortInventory'](_0x5cf68b(0x6e9),'regenhpvz'),Build[_0x5cf68b(0x6c3)](_0x5cf68b(0x6e9),_0x5cf68b(0x847)),Build[_0x5cf68b(0x6c3)]('stats',_0x5cf68b(0x665)),Build[_0x5cf68b(0x6c3)]('stats',_0x5cf68b(0x31f));else{if(_0x2cbda3=='mp')Build[_0x5cf68b(0x6c3)]('stats','mp'),Build['removeSortInventory']('stats','regenmp'),Build['removeSortInventory'](_0x5cf68b(0x6e9),_0x5cf68b(0x349)),Build[_0x5cf68b(0x6c3)](_0x5cf68b(0x6e9),_0x5cf68b(0x2b8)),Build[_0x5cf68b(0x6c3)]('stats','hpmp');else{if(_0x2cbda3==_0x5cf68b(0x2dc))Build[_0x5cf68b(0x6c3)](_0x5cf68b(0x6e9),_0x5cf68b(0x2dc)),Build[_0x5cf68b(0x6c3)]('stats',_0x5cf68b(0x360)),Build['removeSortInventory'](_0x5cf68b(0x6e9),_0x5cf68b(0x450));else{if(_0x2cbda3==_0x5cf68b(0x368))Build[_0x5cf68b(0x6c3)](_0x5cf68b(0x6e9),_0x5cf68b(0x368)),Build[_0x5cf68b(0x6c3)]('stats','sr'),Build[_0x5cf68b(0x6c3)](_0x5cf68b(0x6e9),'srsv'),Build['removeSortInventory'](_0x5cf68b(0x6e9),_0x5cf68b(0x160)),Build['removeSortInventory'](_0x5cf68b(0x6e9),_0x5cf68b(0x3a3));else{if(_0x2cbda3==_0x5cf68b(0x588))Build['removeSortInventory'](_0x5cf68b(0x6e9),_0x5cf68b(0x588)),Build[_0x5cf68b(0x6c3)](_0x5cf68b(0x6e9),'sr'),Build[_0x5cf68b(0x6c3)]('stats',_0x5cf68b(0x1cc)),Build[_0x5cf68b(0x6c3)](_0x5cf68b(0x6e9),_0x5cf68b(0x7e5)),Build[_0x5cf68b(0x6c3)](_0x5cf68b(0x6e9),_0x5cf68b(0x472));else{if(_0x2cbda3=='provorstvo')Build[_0x5cf68b(0x6c3)]('stats',_0x5cf68b(0x409)),Build['removeSortInventory'](_0x5cf68b(0x6e9),'ph'),Build[_0x5cf68b(0x6c3)](_0x5cf68b(0x6e9),_0x5cf68b(0x7f0)),Build[_0x5cf68b(0x6c3)](_0x5cf68b(0x6e9),_0x5cf68b(0x1b0));else{if(_0x2cbda3==_0x5cf68b(0x149))Build['removeSortInventory'](_0x5cf68b(0x6e9),_0x5cf68b(0x149)),Build[_0x5cf68b(0x6c3)](_0x5cf68b(0x6e9),'ph'),Build[_0x5cf68b(0x6c3)]('stats','hitrostrz'),Build[_0x5cf68b(0x6c3)](_0x5cf68b(0x6e9),_0x5cf68b(0x417));else{if(_0x2cbda3=='stoikost')Build[_0x5cf68b(0x6c3)](_0x5cf68b(0x6e9),'stoikost'),Build[_0x5cf68b(0x6c3)](_0x5cf68b(0x6e9),'sv'),Build[_0x5cf68b(0x6c3)](_0x5cf68b(0x6e9),_0x5cf68b(0x1cc)),Build[_0x5cf68b(0x6c3)](_0x5cf68b(0x6e9),_0x5cf68b(0x84b)),Build[_0x5cf68b(0x6c3)](_0x5cf68b(0x6e9),_0x5cf68b(0x68c)),Build[_0x5cf68b(0x6c3)](_0x5cf68b(0x6e9),'vs');else _0x2cbda3==_0x5cf68b(0x7ae)&&(Build['removeSortInventory'](_0x5cf68b(0x6e9),_0x5cf68b(0x7ae)),Build[_0x5cf68b(0x6c3)](_0x5cf68b(0x6e9),'sv'),Build[_0x5cf68b(0x6c3)](_0x5cf68b(0x6e9),'srsv'),Build['removeSortInventory'](_0x5cf68b(0x6e9),_0x5cf68b(0x625)),Build['removeSortInventory'](_0x5cf68b(0x6e9),'svvz'),Build[_0x5cf68b(0x6c3)](_0x5cf68b(0x6e9),'vs'));}}}}}}}Build[_0x5cf68b(0x740)](),_0x333552[_0x5cf68b(0x67f)][_0x5cf68b(0x1d5)]=0x0;}else{_0x333552[_0x5cf68b(0x11e)][_0x5cf68b(0x809)]=_0x5cf68b(0x668);if(_0x2cbda3=='hp')Build[_0x5cf68b(0x334)](_0x5cf68b(0x6e9),'hp'),Build['setSortInventory'](_0x5cf68b(0x6e9),'krajahp'),Build[_0x5cf68b(0x334)](_0x5cf68b(0x6e9),_0x5cf68b(0x427)),Build[_0x5cf68b(0x334)]('stats',_0x5cf68b(0x1ae)),Build[_0x5cf68b(0x334)](_0x5cf68b(0x6e9),_0x5cf68b(0x847)),Build[_0x5cf68b(0x334)](_0x5cf68b(0x6e9),_0x5cf68b(0x665)),Build[_0x5cf68b(0x334)]('stats','hpmp');else{if(_0x2cbda3=='mp')Build[_0x5cf68b(0x334)](_0x5cf68b(0x6e9),'mp'),Build[_0x5cf68b(0x334)](_0x5cf68b(0x6e9),_0x5cf68b(0x218)),Build[_0x5cf68b(0x334)](_0x5cf68b(0x6e9),'krajamp'),Build[_0x5cf68b(0x334)]('stats',_0x5cf68b(0x2b8)),Build['setSortInventory'](_0x5cf68b(0x6e9),_0x5cf68b(0x31f));else{if(_0x2cbda3==_0x5cf68b(0x2dc))Build['setSortInventory']('stats',_0x5cf68b(0x2dc)),Build[_0x5cf68b(0x334)](_0x5cf68b(0x6e9),_0x5cf68b(0x360)),Build[_0x5cf68b(0x334)](_0x5cf68b(0x6e9),_0x5cf68b(0x450));else{if(_0x2cbda3=='sila')Build[_0x5cf68b(0x334)]('stats',_0x5cf68b(0x368)),Build[_0x5cf68b(0x334)]('stats','sr'),Build['setSortInventory'](_0x5cf68b(0x6e9),_0x5cf68b(0x1cc)),Build[_0x5cf68b(0x334)](_0x5cf68b(0x6e9),_0x5cf68b(0x160)),Build[_0x5cf68b(0x334)](_0x5cf68b(0x6e9),_0x5cf68b(0x3a3));else{if(_0x2cbda3==_0x5cf68b(0x588))Build['setSortInventory']('stats',_0x5cf68b(0x588)),Build[_0x5cf68b(0x334)](_0x5cf68b(0x6e9),'sr'),Build[_0x5cf68b(0x334)]('stats',_0x5cf68b(0x1cc)),Build[_0x5cf68b(0x334)](_0x5cf68b(0x6e9),_0x5cf68b(0x7e5)),Build[_0x5cf68b(0x334)](_0x5cf68b(0x6e9),_0x5cf68b(0x472));else{if(_0x2cbda3==_0x5cf68b(0x409))Build['setSortInventory'](_0x5cf68b(0x6e9),_0x5cf68b(0x409)),Build[_0x5cf68b(0x334)](_0x5cf68b(0x6e9),'ph'),Build[_0x5cf68b(0x334)](_0x5cf68b(0x6e9),'provorstvorz'),Build[_0x5cf68b(0x334)](_0x5cf68b(0x6e9),_0x5cf68b(0x1b0));else{if(_0x2cbda3==_0x5cf68b(0x149))Build[_0x5cf68b(0x334)](_0x5cf68b(0x6e9),_0x5cf68b(0x149)),Build[_0x5cf68b(0x334)](_0x5cf68b(0x6e9),'ph'),Build[_0x5cf68b(0x334)](_0x5cf68b(0x6e9),'hitrostrz'),Build[_0x5cf68b(0x334)]('stats',_0x5cf68b(0x417));else{if(_0x2cbda3=='stoikost')Build[_0x5cf68b(0x334)](_0x5cf68b(0x6e9),_0x5cf68b(0x154)),Build[_0x5cf68b(0x334)](_0x5cf68b(0x6e9),'sv'),Build['setSortInventory'](_0x5cf68b(0x6e9),'srsv'),Build[_0x5cf68b(0x334)](_0x5cf68b(0x6e9),_0x5cf68b(0x84b)),Build[_0x5cf68b(0x334)](_0x5cf68b(0x6e9),_0x5cf68b(0x68c)),Build[_0x5cf68b(0x334)](_0x5cf68b(0x6e9),'vs');else{if(_0x2cbda3==_0x5cf68b(0x7ae))Build[_0x5cf68b(0x334)](_0x5cf68b(0x6e9),_0x5cf68b(0x7ae)),Build[_0x5cf68b(0x334)](_0x5cf68b(0x6e9),'sv'),Build['setSortInventory'](_0x5cf68b(0x6e9),'srsv'),Build[_0x5cf68b(0x334)]('stats',_0x5cf68b(0x625)),Build['setSortInventory'](_0x5cf68b(0x6e9),'svvz'),Build[_0x5cf68b(0x334)](_0x5cf68b(0x6e9),'vs');else _0x2cbda3==_0x5cf68b(0x31f)?Build[_0x5cf68b(0x334)](_0x5cf68b(0x6e9),'hpmp'):Build[_0x5cf68b(0x334)](_0x5cf68b(0x6e9),_0x2cbda3);}}}}}}}}Build[_0x5cf68b(0x740)](),_0x333552[_0x5cf68b(0x67f)][_0x5cf68b(0x1d5)]=0x1;}}:null]},DOM({'tag':_0xee6d(0x51d)},_0x4d2ba3[_0x2cbda3]),DOM({'tag':'div'},_0x1ca73d['stats'][_0x2cbda3]||0x0));if(_0x2cbda3==='groundType'){let _0x205947=![],_0x2f05cd=![];_0x333552[_0xee6d(0x695)][_0xee6d(0xed)](_0xee6d(0x2ec));(Build[_0xee6d(0x169)]||Build[_0xee6d(0x4bd)])&&_0x333552[_0xee6d(0x695)]['add'](_0xee6d(0x4e8));let _0x17bdc5=function(){const _0xecef86=_0xee6d;if(_0x2f05cd||_0x205947)return;let _0xeb95d6=_0x333552['parentNode'][_0xecef86(0x204)](_0xecef86(0x384));_0xeb95d6&&_0xeb95d6['remove']();};_0x333552[_0xee6d(0x513)]=_0x576eac=>{const _0x142764=_0xee6d;_0x333552[_0x142764(0x695)][_0x142764(0x42c)](_0x142764(0x4e8));let _0xc24ca9=_0x333552['parentNode'][_0x142764(0x204)](_0x142764(0x384));if(Build[_0x142764(0x169)]||Build[_0x142764(0x4bd)]){Build[_0x142764(0x169)]=![],Build[_0x142764(0x4bd)]=![];if(_0xc24ca9){if(_0xc24ca9['querySelector']('.home.highlight')){}_0xc24ca9[_0x142764(0x204)](_0x142764(0x189))[_0x142764(0x695)][_0x142764(0x1ac)](_0x142764(0x4e8));if(_0xc24ca9[_0x142764(0x204)](_0x142764(0x81f))){}_0xc24ca9[_0x142764(0x204)](_0x142764(0x6c9))[_0x142764(0x695)][_0x142764(0x1ac)]('highlight');}}else Build[_0x142764(0x169)]=!![],Build['applyVz']=![],_0xc24ca9&&(_0xc24ca9[_0x142764(0x204)](_0x142764(0x189))[_0x142764(0x695)][_0x142764(0xed)](_0x142764(0x4e8)),_0xc24ca9[_0x142764(0x204)](_0x142764(0x81f))&&_0xc24ca9['querySelector'](_0x142764(0x81f))['classList'][_0x142764(0x1ac)](_0x142764(0x4e8)));Build[_0x142764(0x4ab)]();},_0x333552[_0xee6d(0x366)]=_0x1ad85c=>{const _0x19fc5b=_0xee6d;_0x205947=!![];if(_0x333552['parentNode']['querySelector'](_0x19fc5b(0x384)))return;const _0x5521c9=DOM({'style':'home'},_0x19fc5b(0x240)),_0x3f8bc6=DOM({'style':_0x19fc5b(0x27f)},'Вражеская');if(Build[_0x19fc5b(0x169)])_0x5521c9[_0x19fc5b(0x695)]['add']('highlight');else Build[_0x19fc5b(0x4bd)]&&_0x3f8bc6[_0x19fc5b(0x695)][_0x19fc5b(0xed)](_0x19fc5b(0x4e8));_0x5521c9['onclick']=_0x4fcdd7=>{const _0x5bdf74=_0x19fc5b;_0x5521c9['classList'][_0x5bdf74(0x2d0)](_0x5bdf74(0x4e8))?(_0x5521c9[_0x5bdf74(0x695)][_0x5bdf74(0x1ac)](_0x5bdf74(0x4e8)),_0x333552[_0x5bdf74(0x695)][_0x5bdf74(0x1ac)]('highlight'),Build[_0x5bdf74(0x169)]=![]):(!_0x333552[_0x5bdf74(0x695)]['contains']('.build-hero-stats-item.highlight')&&_0x333552[_0x5bdf74(0x695)][_0x5bdf74(0xed)](_0x5bdf74(0x4e8)),_0x5521c9[_0x5bdf74(0x695)][_0x5bdf74(0xed)](_0x5bdf74(0x4e8)),_0x3f8bc6[_0x5bdf74(0x695)][_0x5bdf74(0x1ac)](_0x5bdf74(0x4e8)),Build[_0x5bdf74(0x169)]=!![],Build[_0x5bdf74(0x4bd)]=![]),Build[_0x5bdf74(0x4ab)]();},_0x3f8bc6['onclick']=_0x405b87=>{const _0x2a4d77=_0x19fc5b;_0x3f8bc6[_0x2a4d77(0x695)][_0x2a4d77(0x2d0)]('highlight')?(_0x3f8bc6['classList'][_0x2a4d77(0x1ac)](_0x2a4d77(0x4e8)),_0x333552[_0x2a4d77(0x695)]['remove'](_0x2a4d77(0x4e8)),Build['applyVz']=![]):(!_0x333552[_0x2a4d77(0x695)][_0x2a4d77(0x2d0)]('.build-hero-stats-item.highlight')&&_0x333552[_0x2a4d77(0x695)][_0x2a4d77(0xed)](_0x2a4d77(0x4e8)),_0x3f8bc6[_0x2a4d77(0x695)][_0x2a4d77(0xed)](_0x2a4d77(0x4e8)),_0x5521c9['classList'][_0x2a4d77(0x1ac)](_0x2a4d77(0x4e8)),Build[_0x2a4d77(0x4bd)]=!![],Build['applyRz']=![]),Build['updateHeroStats']();};const _0x44e732=DOM({'style':_0x19fc5b(0x155)},_0x5521c9,_0x3f8bc6);_0x44e732[_0x19fc5b(0x366)]=_0xfa4bcf=>{_0x2f05cd=!![];},_0x44e732[_0x19fc5b(0x644)]=_0x3f9a86=>{_0x2f05cd=![],setTimeout(_0x335584=>{_0x17bdc5();},0x64);},_0x333552[_0x19fc5b(0x27d)][_0x19fc5b(0x2f2)](_0x44e732);},_0x333552[_0xee6d(0x644)]=_0x1eae2a=>{_0x205947=![],setTimeout(_0x2f9106=>{_0x17bdc5();},0x64);};}_0x2cbda3===_0xee6d(0x7f3)&&(_0x333552[_0xee6d(0x15e)]=_0xee6d(0x378));_0x2cbda3==='considerBuff'&&(_0x333552[_0xee6d(0x15e)]=_0xee6d(0x153));_0x2cbda3==='groundType'&&(_0x333552['title']=_0xee6d(0x223));(_0x2cbda3==='considerStacks'||_0x2cbda3==='considerBuff')&&(_0x333552[_0xee6d(0x695)]['add'](_0xee6d(0x2ec)),Build[_0xee6d(0x51b)]&&_0x2cbda3===_0xee6d(0x7f3)&&_0x333552[_0xee6d(0x695)]['add'](_0xee6d(0x4e8)),Build['applyBuffs']&&_0x2cbda3===_0xee6d(0x5d0)&&_0x333552[_0xee6d(0x695)]['add'](_0xee6d(0x4e8)),_0x333552[_0xee6d(0x513)]=_0x159a82=>{const _0x50f20d=_0xee6d;_0x333552['classList'][_0x50f20d(0x42c)](_0x50f20d(0x4e8));if(_0x2cbda3==_0x50f20d(0x7f3))Build[_0x50f20d(0x51b)]=!Build['applyStak'];else _0x2cbda3=='considerBuff'&&(Build[_0x50f20d(0x5c6)]=!Build['applyBuffs']);Build[_0x50f20d(0x4ab)]();});_0x333552['dataset'][_0xee6d(0x1d5)]=0x0;_0x46a209(_0x2cbda3)&&_0x333552['classList'][_0xee6d(0xed)]('passive');Build[_0xee6d(0x415)][_0x2cbda3]=_0x333552;if(!['hp','mp',_0xee6d(0x2dc),_0xee6d(0x1d0),_0xee6d(0xd0),_0xee6d(0x6b1),_0xee6d(0x5c9),'protectionBody','protectionSpirit','considerStacks',_0xee6d(0x5d0),_0xee6d(0x5d4)][_0xee6d(0x618)](_0x2cbda3)){const _0x568b69=DOM({'tag':'img','style':_0xee6d(0x398),'title':_0xee6d(0x3f0),'event':[_0xee6d(0x6d3),async()=>{const _0x3c222a=_0xee6d;_0x568b69[_0x3c222a(0x67f)][_0x3c222a(0x370)]!=0x0?(await App[_0x3c222a(0x3bb)][_0x3c222a(0x74c)](_0x3c222a(0x664),_0x3c222a(0x5cf),{'id':Build['id'],'index':_0x568b69['dataset']['index'],'value':![]}),_0x568b69['dataset'][_0x3c222a(0x370)]=0x0,_0x568b69[_0x3c222a(0x1f2)]='content/icons/circle.webp',Build[_0x3c222a(0x457)][_0x2cbda3]=0x0,Build['updateHeroStats']()):(await App[_0x3c222a(0x3bb)][_0x3c222a(0x74c)](_0x3c222a(0x664),_0x3c222a(0x5cf),{'id':Build['id'],'index':_0x568b69['dataset'][_0x3c222a(0x3bf)],'value':!![]}),_0x568b69[_0x3c222a(0x67f)][_0x3c222a(0x370)]=0x1,_0x568b69[_0x3c222a(0x1f2)]=_0x3c222a(0x28d),Build[_0x3c222a(0x457)][_0x2cbda3]=0x1,Build['updateHeroStats']());}]});_0x568b69['dataset'][_0xee6d(0x3bf)]=_0x1b06c5,_0x568b69['dataset'][_0xee6d(0x370)]=Build[_0xee6d(0x22f)][_0xee6d(0x3e3)][_0x1b06c5],Build[_0xee6d(0x457)][_0x2cbda3]=parseInt(_0x568b69[_0xee6d(0x67f)][_0xee6d(0x370)]),_0x568b69[_0xee6d(0x67f)][_0xee6d(0x370)]==0x1?_0x568b69[_0xee6d(0x1f2)]=_0xee6d(0x28d):_0x568b69[_0xee6d(0x1f2)]='content/icons/circle.webp',_0x4b92a2[_0xee6d(0x2f2)](DOM({'style':_0xee6d(0x827)},_0x568b69,_0x333552));}else _0x4b92a2[_0xee6d(0x2f2)](DOM({'style':_0xee6d(0x827)},_0x333552));_0x1b06c5++;}let _0x140fcf=DOM({'style':[_0xee6d(0x4c2),_0xee6d(0x6b9),_0xee6d(0x124)],'title':_0xee6d(0x53d),'event':['click',async()=>{const _0x375e82=_0xee6d;Build[_0x375e82(0x169)]=!Build['applyRz'],Build[_0x375e82(0x4bd)]=!Build[_0x375e82(0x4bd)],Build[_0x375e82(0x4ab)](),Build['applyRz']?(_0x140fcf[_0x375e82(0x695)][_0x375e82(0x44e)](_0x375e82(0x2a4),_0x375e82(0x124)),_0x140fcf[_0x375e82(0x15e)]=_0x375e82(0x53d)):(_0x140fcf[_0x375e82(0x695)][_0x375e82(0x44e)]('build-hero-stats-setting-land-type-rz','build-hero-stats-setting-land-type-vz'),_0x140fcf[_0x375e82(0x15e)]='Тип\x20земли\x20-\x20с\x20учетом\x20нейтральной/вражеской\x20земли');}]});_0x4b92a2['append'](DOM({'style':_0xee6d(0x47f)},_0x140fcf)),Build[_0xee6d(0x3eb)]=DOM({'tag':'div','style':_0xee6d(0x20f)});MM[_0xee6d(0x38c)]&&(Build[_0xee6d(0x3eb)][_0xee6d(0x12e)]=MM[_0xee6d(0x38c)]['find'](_0x3d3c65=>_0x3d3c65['id']===_0x1ca73d['id'])['name']);Build[_0xee6d(0x2e6)]=DOM({'style':_0xee6d(0x2ca)});App[_0xee6d(0x358)]()&&(Build[_0xee6d(0x2e6)][_0xee6d(0x513)]=async()=>{const _0x174446=_0xee6d;let _0x28c21f=document[_0x174446(0x5a2)](),_0xd388a1=await App[_0x174446(0x3bb)][_0x174446(0x74c)]('build',_0x174446(0x1ad),{'id':_0x1ca73d['id']});for(let _0x219755 in _0xd388a1){_0x28c21f['append'](App[_0x174446(0x3fc)](_0xe4324b=>{const _0x2e9eb7=_0x174446;let _0x5c3e5b=new Object();_0x5c3e5b[_0x219755]=_0xe4324b,App[_0x2e9eb7(0x3bb)][_0x2e9eb7(0x74c)](_0x2e9eb7(0x664),_0x2e9eb7(0x65b),{'id':_0x1ca73d['id'],'object':_0x5c3e5b});},{'value':_0xd388a1[_0x219755]}));}_0x28c21f[_0x174446(0x2f2)](DOM({'style':'splash-content-button','event':['click',()=>Splash['hide']()]},_0x174446(0x1b2))),Splash[_0x174446(0x19c)](_0x28c21f);});Build[_0xee6d(0x2e6)][_0xee6d(0x11e)][_0xee6d(0x756)]='url(content/hero/'+_0x1ca73d['id']+'/'+(Build[_0xee6d(0x22f)][_0xee6d(0x38c)]['skin'][_0xee6d(0x47b)]?Build[_0xee6d(0x22f)][_0xee6d(0x38c)][_0xee6d(0x27b)][_0xee6d(0x47b)]:0x1)+_0xee6d(0x634);let _0x10082d=DOM({'style':_0xee6d(0x1dc)});_0x10082d[_0xee6d(0x11e)][_0xee6d(0x756)]=_0xee6d(0x6a0)+Rank['icon'](_0x1ca73d[_0xee6d(0x676)])+_0xee6d(0x634);let _0xb7e554=DOM({'style':_0xee6d(0x3da)},DOM({'style':_0xee6d(0x282)},_0x1ca73d[_0xee6d(0x676)]),_0x10082d);Build[_0xee6d(0x2e6)][_0xee6d(0x2f2)](_0xb7e554);const _0x5ecb2c=DOM({'style':_0xee6d(0x22a)},Build[_0xee6d(0x2e6)],Build['skinView'],Build[_0xee6d(0x33d)]);Build[_0xee6d(0x7a9)][_0xee6d(0x2f2)](_0x5ecb2c,_0x4b92a2);}static['updateHeroStats'](){const _0x326499=_0x4487d4;Build[_0x326499(0x549)]=0x0;for(let _0x5286e3 in Build[_0x326499(0x638)]){Build[_0x326499(0x638)][_0x5286e3]=0x0;}for(let _0x173edd=0x23;_0x173edd>=0x0;_0x173edd--){let _0x190ebd=Build['installedTalents'][_0x173edd];_0x190ebd&&(Build['calcStatsFromPower'](_0x173edd),Build[_0x326499(0x2b4)](_0x190ebd,!![],![]));}for(let _0x5986ae in Build[_0x326499(0x415)]){Build[_0x326499(0x415)][_0x5986ae]['lastChild'][_0x326499(0x12e)]=Math[_0x326499(0x4f2)](Build['totalStat'](_0x5986ae));}const _0x363569=Build[_0x326499(0x6d9)]('provorstvo'),_0x34a842=Build[_0x326499(0x6d9)](_0x326499(0x149)),_0x58a427=Build[_0x326499(0x6d9)]('stoikost'),_0x411dc2=Build[_0x326499(0x6d9)](_0x326499(0x7ae)),_0x3aea9c=Build[_0x326499(0x6d9)](_0x326499(0x368)),_0x40eb97=Build[_0x326499(0x6d9)](_0x326499(0x588));{let _0x445b5e=Build[_0x326499(0x3af)]==0x1?_0x3aea9c:_0x40eb97,_0x4b7764=Math[_0x326499(0x4f2)](_0x445b5e*Build[_0x326499(0x84c)]*0.9),_0x30ff0c=Math[_0x326499(0x4f2)](_0x445b5e*Build[_0x326499(0x84c)]*1.1),_0x3a3c39=Build['heroMainAttackStat']==0x1?_0x326499(0x72e):_0x326499(0xf5);Build[_0x326499(0x415)][_0x326499(0x1d0)][_0x326499(0x116)][_0x326499(0x66f)]=_0x4b7764+'-'+_0x30ff0c+_0x3a3c39;}{let _0x3c0407=0x0;_0x363569>0x1f4?_0x3c0407+=61.72+0.6876*_0x363569-10.035*Math[_0x326499(0x1ba)](_0x363569):_0x3c0407+=48.45+0.764*_0x363569-11.15*Math[_0x326499(0x1ba)](_0x363569);_0x34a842>0x1f4?_0x3c0407+=85.78+0.43*_0x34a842-15.55*Math[_0x326499(0x1ed)](_0x34a842):_0x3c0407+=59.83+0.57*_0x34a842-20.73*Math[_0x326499(0x1ed)](_0x34a842);Build[_0x326499(0x415)]['punching']['lastChild'][_0x326499(0x12e)]=Math[_0x326499(0x4f2)](_0x3c0407)+'%';;}{let _0x325388=0.5355*(_0x58a427+0.3*_0x411dc2)-0x14,_0x4cf0cb=0.5355*(_0x411dc2+0.3*_0x58a427)-0x14;Build['dataStats'][_0x326499(0x227)][_0x326499(0x116)][_0x326499(0x12e)]=Math[_0x326499(0x4f2)](_0x325388)+'%';;Build['dataStats'][_0x326499(0x3bd)][_0x326499(0x116)][_0x326499(0x12e)]=Math[_0x326499(0x4f2)](_0x4cf0cb)+'%';;}{let _0x7acee0=62.765-0x2d0e/(126.04+_0x34a842);Build[_0x326499(0x415)]['critProb']['lastChild'][_0x326499(0x12e)]=Math[_0x326499(0x6d4)](0x0,Math['round'](_0x7acee0))+'%';}{let _0x5aa428=Math[_0x326499(0x3ac)](0x2,0.00364*_0x363569+0.49);Build[_0x326499(0x415)][_0x326499(0x6b1)]['lastChild']['innerText']=Math[_0x326499(0x4f2)](_0x5aa428*0x64)/0x64;}}static[_0x4487d4(0x29f)](_0x3136fd){const _0x16d9fc=_0x4487d4,_0x8698d7={0x5:0x21/0x258,0x4:0x17/0x258,0x3:0x10/0x258,0x2:0xd/0x258,0x1:0x9/0x258,0x0:0x6/0x258};Build[_0x16d9fc(0x54f)]=0x0;for(let _0x32cc34=0x23;_0x32cc34>=0x0&&_0x32cc34>=_0x3136fd;_0x32cc34--){let _0x4edcaf=Build[_0x16d9fc(0x4b0)][_0x32cc34];if(_0x4edcaf){let _0x5729e3=Math['floor']((0x23-_0x32cc34)/0x6);Build[_0x16d9fc(0x54f)]+=_0x8698d7[_0x5729e3];}}for(let _0xe4cb0d in Build[_0x16d9fc(0x418)]){let _0x417726=Build['heroStatMods'][_0xe4cb0d],_0x206fc9=Build[_0x16d9fc(0x743)],_0x5a1dec=Build['heroPower']*Build[_0x16d9fc(0x54f)];Build[_0x16d9fc(0x418)][_0xe4cb0d]=_0x417726*(0.6*_0x206fc9*(_0x5a1dec/0xa-0x10)+0x24);}}static[_0x4487d4(0x173)](_0x48185d){const _0x2a3e66=_0x4487d4,_0x19a517=0x3e7;let _0x13d649=_0x48185d[0x0],_0x1cafac=Build[_0x2a3e66(0x6d9)](_0x13d649);_0x13d649 in Build['profileStats']&&(_0x1cafac+=Build[_0x2a3e66(0x457)][_0x13d649]*_0x19a517);for(let _0x2a04bd=0x1;_0x2a04bd<_0x48185d[_0x2a3e66(0x2ed)];_0x2a04bd++){let _0x1aaaeb=Build[_0x2a3e66(0x6d9)](_0x48185d[_0x2a04bd]);_0x48185d[_0x2a04bd]in Build['profileStats']&&(_0x1aaaeb+=Build[_0x2a3e66(0x457)][_0x48185d[_0x2a04bd]]*_0x19a517),_0x1aaaeb>_0x1cafac&&(_0x13d649=_0x48185d[_0x2a04bd],_0x1cafac=Build[_0x2a3e66(0x6d9)](_0x13d649),_0x13d649 in Build[_0x2a3e66(0x457)]&&(_0x1cafac+=Build[_0x2a3e66(0x457)][_0x13d649]*_0x19a517));}return _0x13d649;}static[_0x4487d4(0x13f)](_0x53570f){let _0x3b93f5=_0x53570f[0x0];return _0x3b93f5;}static[_0x4487d4(0x306)](_0x1d54c0){const _0x16c9e5=_0x4487d4;return _0x1d54c0?Build[_0x16c9e5(0x45b)][_0x1d54c0]-0x1:0x4;}static[_0x4487d4(0x2b4)](_0x3ae2fa,_0x1a0bb4=!![],_0x579500=!![]){const _0x3615aa=_0x4487d4,_0x2387d7={0x4:68.952,0x3:68.208,0x2:69.12,0x1:64.875,0x0:90.2};let _0x328151=_0x3615aa(0x508)in _0x3ae2fa?_0x2387d7[_0x3ae2fa['rarity']]:_0x2387d7[0x0];Build[_0x3615aa(0x549)]+=_0x1a0bb4?_0x328151:-_0x328151;let _0x14074d=new Object();function _0x40f3ed(_0x3f41d4,_0x225d08){const _0x5f3b2c=_0x3615aa;let _0x369477=parseFloat(_0x3ae2fa['stats'][_0x225d08]);if('statsRefine'in _0x3ae2fa&&_0x5f3b2c(0x508)in _0x3ae2fa){let _0x453fd4=Build[_0x5f3b2c(0x306)](_0x3ae2fa['rarity']),_0x587b08=parseFloat(_0x3ae2fa['statsRefine'][_0x225d08]);_0x369477+=_0x453fd4*_0x587b08;}_0x14074d[_0x3f41d4]=_0x369477;}for(let _0x38b559 in _0x3ae2fa[_0x3615aa(0x6e9)]){if(_0x38b559=='sr')_0x40f3ed(Build[_0x3615aa(0x173)]([_0x3615aa(0x368),_0x3615aa(0x588)]),_0x38b559);else{if(_0x38b559=='ph')_0x40f3ed(Build[_0x3615aa(0x173)](['provorstvo',_0x3615aa(0x149)]),_0x38b559);else{if(_0x38b559=='sv')_0x40f3ed(Build[_0x3615aa(0x173)]([_0x3615aa(0x154),_0x3615aa(0x7ae)]),_0x38b559);else{if(_0x38b559=='srsv')_0x40f3ed(Build['getMaxStat'](['sila',_0x3615aa(0x588),'stoikost',_0x3615aa(0x7ae)]),_0x38b559);else _0x38b559==_0x3615aa(0x31f)?_0x40f3ed(Build['getMaxStat'](['hp','mp']),_0x38b559):_0x40f3ed(_0x38b559,_0x38b559);}}}}function _0x2457ea(_0x10351e,_0x51746a){const _0x41ccc7=_0x3615aa;_0x10351e in Build[_0x41ccc7(0x638)]&&(_0x10351e==_0x41ccc7(0x2dc)?Build[_0x41ccc7(0x638)][_0x10351e]=Math[_0x41ccc7(0x6d4)](Build[_0x41ccc7(0x638)][_0x10351e],_0x51746a):Build[_0x41ccc7(0x638)][_0x10351e]+=_0x1a0bb4?_0x51746a:-_0x51746a);}for(let _0x5c04c5 in _0x14074d){let _0x5628dc=parseFloat(_0x14074d[_0x5c04c5]);if(Build[_0x3615aa(0x51b)]&&_0x5c04c5[_0x3615aa(0x792)](_0x3615aa(0xd6))!=-0x1)_0x2457ea(_0x5c04c5[_0x3615aa(0x44e)](_0x3615aa(0xd6),''),_0x5628dc);else{if(Build[_0x3615aa(0x169)]&&_0x5c04c5[_0x3615aa(0x792)]('rz')!=-0x1)_0x2457ea(_0x5c04c5['replace']('rz',''),_0x5628dc);else{if(Build[_0x3615aa(0x4bd)]&&_0x5c04c5[_0x3615aa(0x792)]('vz')!=-0x1)_0x2457ea(_0x5c04c5[_0x3615aa(0x44e)]('vz',''),_0x5628dc);else{if(_0x5c04c5['indexOf']('dop')!=-0x1)_0x2457ea(_0x5c04c5[_0x3615aa(0x44e)](_0x3615aa(0x443),''),_0x5628dc);else Build[_0x3615aa(0x5c6)]&&_0x5c04c5[_0x3615aa(0x792)](_0x3615aa(0x80c))!=-0x1?_0x2457ea(_0x5c04c5['replace']('buff',''),_0x5628dc):_0x2457ea(_0x5c04c5,_0x5628dc);}}}if(!(_0x5c04c5 in Build[_0x3615aa(0x415)]))continue;_0x579500&&(Build[_0x3615aa(0x415)][_0x5c04c5][_0x3615aa(0x33a)]({'transform':[_0x3615aa(0x13a),_0x3615aa(0x199),_0x3615aa(0x13a)]},{'duration':0xfa,'fill':_0x3615aa(0x7c9),'easing':_0x3615aa(0x1b5)}),Build['heroImg'][_0x3615aa(0x33a)]({'transform':['scale(1)','scale(1.5)',_0x3615aa(0x13a)]},{'duration':0xfa,'fill':_0x3615aa(0x7c9),'easing':_0x3615aa(0x1b5)}));}}static[_0x4487d4(0x13b)](){const _0x32d39c=_0x4487d4;let _0x43b725=0x6;for(const _0x37ffc7 of['VI','V','IV',_0x32d39c(0x5e4),'II','I']){const _0x869029=document[_0x32d39c(0x4af)](_0x32d39c(0x51d));_0x869029[_0x32d39c(0x12e)]=_0x37ffc7,_0x869029[_0x32d39c(0x67f)]['id']=_0x43b725,_0x869029[_0x32d39c(0x67f)][_0x32d39c(0x1d5)]=0x0,_0x869029['id']='bl'+_0x43b725,_0x869029['addEventListener'](_0x32d39c(0x6d3),_0x39e46e=>{const _0xeeb6f8=_0x32d39c;_0x869029[_0xeeb6f8(0x67f)][_0xeeb6f8(0x1d5)]==0x1?(Build[_0xeeb6f8(0x6c3)](_0xeeb6f8(0x13b),_0x869029[_0xeeb6f8(0x67f)]['id']),Build['sortInventory'](),_0x869029[_0xeeb6f8(0x67f)][_0xeeb6f8(0x1d5)]=0x0):(Build[_0xeeb6f8(0x334)]('level',_0x869029['dataset']['id']),Build['sortInventory'](),_0x869029[_0xeeb6f8(0x67f)][_0xeeb6f8(0x1d5)]=0x1),_0x39e46e[_0xeeb6f8(0x47b)][_0xeeb6f8(0x695)][_0xeeb6f8(0x42c)](_0xeeb6f8(0x4e8)),document['querySelector']('[data-level=\x22'+_0x869029[_0xeeb6f8(0x67f)]['id']+'\x22')[_0xeeb6f8(0x695)][_0xeeb6f8(0x42c)](_0xeeb6f8(0x4e8));}),_0x869029[_0x32d39c(0x4e9)]('contextmenu',_0x373aae=>{const _0x111410=_0x32d39c;_0x373aae['preventDefault']();for(const _0x4d474a of['1','2','3','4','5','6']){Build[_0x111410(0x6c3)](_0x111410(0x13b),_0x4d474a);}for(let _0x316369=0x0;_0x316369<0x6;_0x316369++){_0x869029[_0x111410(0x852)]['childNodes'][_0x316369][_0x111410(0x67f)][_0x111410(0x1d5)]=0x0,_0x869029[_0x111410(0x852)][_0x111410(0x2d9)][_0x316369][_0x111410(0x695)]['remove'](_0x111410(0x4e8)),document[_0x111410(0x204)](_0x111410(0x1a8)+_0x869029[_0x111410(0x852)][_0x111410(0x2d9)][_0x316369][_0x111410(0x67f)]['id']+'\x22')[_0x111410(0x695)][_0x111410(0x1ac)](_0x111410(0x4e8));}Build[_0x111410(0x334)]('level',_0x869029[_0x111410(0x67f)]['id']),Build[_0x111410(0x740)](),_0x869029[_0x111410(0x67f)][_0x111410(0x1d5)]=0x1,document[_0x111410(0xf2)](_0x111410(0xce))[_0x111410(0x558)](_0x504577=>_0x504577[_0x111410(0x6d3)]()),_0x869029['classList'][_0x111410(0xed)](_0x111410(0x4e8)),document[_0x111410(0x204)](_0x111410(0x1a8)+_0x869029[_0x111410(0x67f)]['id']+'\x22')[_0x111410(0x695)][_0x111410(0xed)](_0x111410(0x4e8));}),Build['levelView']['append'](_0x869029),_0x43b725--;}}static[_0x4487d4(0x406)](_0x2358b9){const _0x2466ec=_0x4487d4;return _0x2358b9[_0x2466ec(0x792)](_0x2466ec(0xd6))!=-0x1||_0x2358b9[_0x2466ec(0x792)]('rz')!=-0x1||_0x2358b9[_0x2466ec(0x792)]('vz')!=-0x1||_0x2358b9[_0x2466ec(0x792)](_0x2466ec(0xd6))!=-0x1||_0x2358b9[_0x2466ec(0x792)](_0x2466ec(0x443))!=-0x1||_0x2358b9['indexOf'](_0x2466ec(0x80c))!=-0x1||_0x2358b9[_0x2466ec(0x792)](_0x2466ec(0x2dc))!=-0x1&&_0x2358b9[_0x2466ec(0x792)]('speedtal')==-0x1;}static[_0x4487d4(0x83b)](_0x5aa0d4){const _0x1970a6=_0x4487d4;let _0x37d1d7=0x0,_0x4489e6=0x0,_0x473e7e=0x6,_0x48cd19=new PreloadImages();while(_0x37d1d7<0x6){let _0x1575f9=document['createElement'](_0x1970a6(0x51d));_0x1575f9[_0x1970a6(0x695)][_0x1970a6(0xed)](_0x1970a6(0x269)),_0x1575f9['id']=_0x1970a6(0x46b)+_0x473e7e,_0x1575f9[_0x1970a6(0x67f)][_0x1970a6(0x13b)]=_0x473e7e;let _0x40a7df=0x0;while(_0x40a7df<0x6){let _0x1da6e3=document[_0x1970a6(0x4af)](_0x1970a6(0x51d));_0x1da6e3[_0x1970a6(0x67f)][_0x1970a6(0x135)]=_0x4489e6,_0x1da6e3['classList'][_0x1970a6(0xed)](_0x1970a6(0x25a)),_0x5aa0d4[_0x4489e6]&&(_0x5aa0d4[_0x4489e6][_0x1970a6(0x696)]=0x2,_0x48cd19[_0x1970a6(0xed)](Build[_0x1970a6(0x294)](_0x5aa0d4[_0x4489e6]),_0x1da6e3)),_0x1575f9[_0x1970a6(0x2f2)](_0x1da6e3),Build['installedTalents'][_0x4489e6]=_0x5aa0d4[_0x4489e6],_0x5aa0d4[_0x4489e6]&&_0x1970a6(0x5bb)in _0x5aa0d4[_0x4489e6]&&(Build[_0x1970a6(0x78a)][Math['abs'](_0x5aa0d4[_0x4489e6]['id'])]=!![]),_0x40a7df++,_0x4489e6++;}Build[_0x1970a6(0x1ca)][_0x1970a6(0x2f2)](_0x1575f9),_0x473e7e--,_0x37d1d7++;}Build[_0x1970a6(0x4ab)]();}static[_0x4487d4(0x294)](_0x47e20f){const _0x59b857=_0x4487d4,_0x2ea6b3=DOM({'style':_0x59b857(0x1fa)});if(_0x47e20f[_0x59b857(0x7d8)]){let _0xcb48d=_0x47e20f[_0x59b857(0x7d8)][_0x59b857(0x477)](';');!_0x47e20f[_0x59b857(0x6e9)]&&(_0x47e20f[_0x59b857(0x6e9)]=new Object());!_0x47e20f['statsRefine']&&(_0x47e20f[_0x59b857(0x179)]=new Object());for(let _0x4218ea in _0xcb48d){let _0x239a02=_0xcb48d[_0x4218ea][_0x59b857(0x477)](',');if(Build[_0x59b857(0x406)](_0x239a02[0x2]))_0x47e20f[_0x59b857(0x6e9)][_0x239a02[0x2]]=parseFloat(_0x239a02[0x0]),_0x47e20f[_0x59b857(0x179)][_0x239a02[0x2]]=parseFloat(_0x239a02[0x1]);else!(_0x239a02[0x2]in _0x47e20f[_0x59b857(0x6e9)])&&_0x239a02[0x2]in Build['initialStats']&&Build[_0x59b857(0x348)][_0x239a02[0x2]]>0x0&&(_0x47e20f[_0x59b857(0x6e9)][_0x239a02[0x2]+_0x59b857(0x80c)]=parseFloat(_0x239a02[0x0]),_0x47e20f[_0x59b857(0x179)][_0x239a02[0x2]+'buff']=parseFloat(_0x239a02[0x1]));}}_0x47e20f['params']=_0x47e20f[_0x59b857(0x7d8)]?_0x47e20f[_0x59b857(0x7d8)]:_0x47e20f['params'],Build[_0x59b857(0x69c)][_0x47e20f['id']]=_0x47e20f,_0x2ea6b3[_0x59b857(0x67f)]['id']=_0x47e20f['id'],_0x2ea6b3['dataset'][_0x59b857(0x1d5)]=_0x47e20f['active'],_0x2ea6b3[_0x59b857(0x67f)][_0x59b857(0x696)]=_0x47e20f[_0x59b857(0x696)],_0x2ea6b3['dataset'][_0x59b857(0x646)]=_0x47e20f['id']>0x0?'content/talents/'+_0x47e20f['id']+_0x59b857(0x23d):_0x59b857(0x420)+Math[_0x59b857(0x344)](_0x47e20f['id'])+_0x59b857(0x23d),Build[_0x59b857(0x233)](_0x2ea6b3),Build[_0x59b857(0x717)](_0x2ea6b3);_0x47e20f[_0x59b857(0x13b)]==0x0&&(_0x2ea6b3[_0x59b857(0x11e)][_0x59b857(0x601)]=_0x59b857(0x6c8));return _0x2ea6b3;preload[_0x59b857(0xed)](_0x2ea6b3);}static[_0x4487d4(0x40a)](){const _0x4fde75=_0x4487d4;if(Build[_0x4fde75(0x5a6)])return;Build[_0x4fde75(0x5a6)]=!![],App['api'][_0x4fde75(0x67e)](_0x2805da=>{const _0x5e09f8=_0x4fde75;for(let _0x50f245 of _0x2805da){let _0x2ea868=DOM({'style':_0x5e09f8(0x21b)});Build[_0x5e09f8(0x287)]['querySelector'](_0x5e09f8(0x210))['append'](_0x2ea868);let _0xa4685e=new PreloadImages(_0x2ea868);_0x50f245['state']=0x1,_0xa4685e[_0x5e09f8(0xed)](Build[_0x5e09f8(0x294)](_0x50f245));}Build[_0x5e09f8(0x5a6)]=![];},_0x4fde75(0x664),_0x4fde75(0x40a),{'buildId':Build['id']});}static['rarity'](){const _0x5dc451=_0x4487d4,_0xcfde6a=[{'id':'4','name':'Красное','color':_0x5dc451(0x2fc)},{'id':'3','name':_0x5dc451(0x2f4),'color':'237,129,5'},{'id':'2','name':'Фиолетовое','color':'205,0,205'},{'id':'1','name':_0x5dc451(0x535),'color':_0x5dc451(0x64f)}];let _0x168f89=document[_0x5dc451(0x4af)](_0x5dc451(0x51d));_0x168f89[_0x5dc451(0x15e)]=_0x5dc451(0x624),_0x168f89[_0x5dc451(0x695)][_0x5dc451(0xed)](_0x5dc451(0x765)),_0x168f89['innerText']='А',_0x168f89[_0x5dc451(0x67f)][_0x5dc451(0x1d5)]=0x0,_0x168f89['addEventListener']('click',_0x99866b=>{const _0x5f060d=_0x5dc451;_0x168f89[_0x5f060d(0x67f)][_0x5f060d(0x1d5)]==0x1?(_0x168f89['style'][_0x5f060d(0x809)]=_0x5f060d(0x112),Build[_0x5f060d(0x6c3)](_0x5f060d(0x1d5),'1'),Build['sortInventory'](),_0x168f89[_0x5f060d(0x67f)][_0x5f060d(0x1d5)]=0x0):(_0x168f89[_0x5f060d(0x11e)][_0x5f060d(0x809)]=_0x5f060d(0x7db),Build[_0x5f060d(0x334)]('active','1'),Build[_0x5f060d(0x740)](),_0x168f89[_0x5f060d(0x67f)][_0x5f060d(0x1d5)]=0x1);}),_0x168f89[_0x5dc451(0x4e9)](_0x5dc451(0x7ea),_0x14e187=>{const _0xc20332=_0x5dc451;_0x14e187[_0xc20332(0x43e)]();for(let _0x3822b1 of _0xcfde6a){Build['removeSortInventory'](_0xc20332(0x508),_0x3822b1['id']);}for(let _0x3353fb=0x0;_0x3353fb<_0x168f89[_0xc20332(0x852)][_0xc20332(0x2d9)][_0xc20332(0x2ed)];_0x3353fb++){_0x168f89[_0xc20332(0x852)]['childNodes'][_0x3353fb][_0xc20332(0x67f)]['active']=0x0,_0x168f89[_0xc20332(0x852)][_0xc20332(0x2d9)][_0x3353fb][_0xc20332(0x11e)]['border']='none';}_0x168f89['style'][_0xc20332(0x809)]=_0xc20332(0x112),Build['setSortInventory']('active','1'),Build[_0xc20332(0x740)](),_0x168f89['dataset']['active']=0x1,_0x168f89[_0xc20332(0x11e)][_0xc20332(0x809)]=_0xc20332(0x7db);}),Build[_0x5dc451(0x79f)][_0x5dc451(0x2f2)](_0x168f89);for(let _0x346117 of _0xcfde6a){let _0x58ddf1=document[_0x5dc451(0x4af)](_0x5dc451(0x51d));_0x58ddf1[_0x5dc451(0x67f)][_0x5dc451(0x1d5)]=0x0,_0x58ddf1[_0x5dc451(0x11e)][_0x5dc451(0x73b)]=_0x5dc451(0x125),_0x58ddf1[_0x5dc451(0x4e9)](_0x5dc451(0x6d3),_0x5908e8=>{const _0x5b9b08=_0x5dc451;_0x58ddf1[_0x5b9b08(0x67f)]['active']==0x1?(_0x58ddf1['style'][_0x5b9b08(0x5ad)]=_0x5b9b08(0x6c8),Build[_0x5b9b08(0x6c3)](_0x5b9b08(0x508),_0x346117['id']),Build[_0x5b9b08(0x740)](),_0x58ddf1[_0x5b9b08(0x67f)]['active']=0x0):(_0x58ddf1[_0x5b9b08(0x11e)][_0x5b9b08(0x5ad)]=_0x5b9b08(0x321),Build[_0x5b9b08(0x334)](_0x5b9b08(0x508),_0x346117['id']),Build[_0x5b9b08(0x740)](),_0x58ddf1[_0x5b9b08(0x67f)][_0x5b9b08(0x1d5)]=0x1);}),_0x58ddf1['addEventListener']('contextmenu',_0x4f30c9=>{const _0x2371b4=_0x5dc451;_0x4f30c9['preventDefault']();for(let _0x136993 of _0xcfde6a){Build[_0x2371b4(0x6c3)](_0x2371b4(0x508),_0x136993['id']);}Build[_0x2371b4(0x6c3)](_0x2371b4(0x1d5),'1');for(let _0x1b8a58=0x0;_0x1b8a58<_0x58ddf1[_0x2371b4(0x852)][_0x2371b4(0x2d9)][_0x2371b4(0x2ed)];_0x1b8a58++){_0x58ddf1['parentElement'][_0x2371b4(0x2d9)][_0x1b8a58][_0x2371b4(0x67f)][_0x2371b4(0x1d5)]=0x0,_0x58ddf1[_0x2371b4(0x852)]['childNodes'][_0x1b8a58][_0x2371b4(0x11e)]['border']='none';}_0x168f89[_0x2371b4(0x11e)][_0x2371b4(0x809)]='rgba(255,255,255,0.1)',Build[_0x2371b4(0x334)](_0x2371b4(0x508),_0x346117['id']),Build['sortInventory'](),_0x58ddf1['dataset'][_0x2371b4(0x1d5)]=0x1,_0x58ddf1[_0x2371b4(0x11e)][_0x2371b4(0x5ad)]=_0x2371b4(0x321);}),_0x58ddf1[_0x5dc451(0x11e)]['background']=_0x5dc451(0x1f3)+_0x346117[_0x5dc451(0x1cd)]+_0x5dc451(0x566),_0x58ddf1[_0x5dc451(0x15e)]=_0x346117[_0x5dc451(0x20f)]+_0x5dc451(0x35a),Build['rarityView'][_0x5dc451(0x2f2)](_0x58ddf1);}}static async[_0x4487d4(0x587)](_0x458297){const _0x7d32af=_0x4487d4;let _0x31cd0c=Build[_0x7d32af(0x6df)]['childNodes'][_0x458297];Build['disableSmartCast'](_0x31cd0c),_0x31cd0c[_0x7d32af(0x682)]['remove'](),Build[_0x7d32af(0x17c)][_0x458297]=0x0,await App[_0x7d32af(0x3bb)][_0x7d32af(0x74c)](_0x7d32af(0x664),_0x7d32af(0x32f),{'buildId':Build['id'],'index':_0x458297});}static async[_0x4487d4(0x32a)](_0x5730a8){const _0x27e4bd=_0x4487d4;if(_0x5730a8[_0x27e4bd(0x682)]){let _0x581f19=Number(_0x5730a8[_0x27e4bd(0x682)]['dataset']['position'])+0x1;_0x5730a8[_0x27e4bd(0x67f)][_0x27e4bd(0x1d5)]==0x1&&(_0x581f19=-_0x581f19),await App[_0x27e4bd(0x3bb)][_0x27e4bd(0x74c)](_0x27e4bd(0x664),'setActive',{'buildId':Build['id'],'index':_0x5730a8[_0x27e4bd(0x67f)][_0x27e4bd(0x3bf)],'position':_0x581f19});}}static async[_0x4487d4(0x271)](_0x2a751c,_0x123723){const _0x6cca65=_0x4487d4;_0x2a751c[_0x6cca65(0x695)][_0x6cca65(0xed)](_0x6cca65(0x2b2)),_0x2a751c['dataset'][_0x6cca65(0x1d5)]=0x1,_0x2a751c['title']=_0x6cca65(0x3bc),_0x123723&&await Build['requestSmartcast'](_0x2a751c);}static async[_0x4487d4(0x4a1)](_0x507488,_0x2a6683){const _0x25299e=_0x4487d4;_0x507488[_0x25299e(0x695)][_0x25299e(0x1ac)](_0x25299e(0x2b2)),_0x507488[_0x25299e(0x67f)][_0x25299e(0x1d5)]=0x0,_0x507488[_0x25299e(0x15e)]=_0x25299e(0x292),_0x2a6683&&await Build[_0x25299e(0x32a)](_0x507488);}static[_0x4487d4(0x4bf)](_0xb075c6){const _0x11caa1=_0x4487d4;Build[_0x11caa1(0x17c)]=_0xb075c6,console['log'](_0x11caa1(0x4bf),_0xb075c6);let _0x5bd6ad=0x0;for(let _0x3a5d25 of _0xb075c6){const _0x24b842=DOM({'data':{'index':_0x5bd6ad},'style':_0x11caa1(0x119),'event':[_0x11caa1(0x7ea),async _0x506345=>{const _0x3c8c7e=_0x11caa1;_0x506345[_0x3c8c7e(0x43e)]();if(!_0x24b842[_0x3c8c7e(0x682)])return;_0x24b842[_0x3c8c7e(0x67f)]['active']==0x1?await Build[_0x3c8c7e(0x4a1)](_0x24b842,!![]):await Build[_0x3c8c7e(0x271)](_0x24b842,!![]);}]});_0x3a5d25>=0x0?_0x24b842[_0x11caa1(0x67f)][_0x11caa1(0x1d5)]=0x0:Build[_0x11caa1(0x271)](_0x24b842);if(Math['abs'](_0x3a5d25)){let _0x49c049=Math[_0x11caa1(0x344)](_0x3a5d25)-0x1,_0x7211c5=Build[_0x11caa1(0x1ca)][_0x11caa1(0x204)](_0x11caa1(0x734)+_0x49c049+'\x22]');if(_0x7211c5&&_0x7211c5['firstChild']){let _0x414904=_0x7211c5[_0x11caa1(0x682)][_0x11caa1(0x2ab)](!![]);_0x24b842[_0x11caa1(0x2f2)](_0x414904),_0x414904[_0x11caa1(0x67f)][_0x11caa1(0x696)]=0x3,_0x414904[_0x11caa1(0x11e)][_0x11caa1(0x65e)]=0x1,_0x414904[_0x11caa1(0x11e)][_0x11caa1(0x135)]=_0x11caa1(0x311),_0x414904['style'][_0x11caa1(0x756)]=_0x11caa1(0x82c)+_0x414904['dataset']['url']+'\x22)',_0x414904[_0x11caa1(0x67f)][_0x11caa1(0x135)]=_0x49c049,Build[_0x11caa1(0x233)](_0x414904,!![]);}}Build[_0x11caa1(0x6df)][_0x11caa1(0x2f2)](_0x24b842),_0x5bd6ad++;}}static[_0x4487d4(0x334)](_0x5d3e24,_0x208786){const _0x5347e6=_0x4487d4;!(_0x5d3e24 in Build['ruleSortInventory'])?(Build[_0x5347e6(0x5db)][_0x5d3e24]=new Array(),Build[_0x5347e6(0x5db)][_0x5d3e24][_0x5347e6(0x2db)](_0x208786)):!Build[_0x5347e6(0x5db)][_0x5d3e24][_0x5347e6(0x618)](_0x208786)&&Build['ruleSortInventory'][_0x5d3e24][_0x5347e6(0x2db)](_0x208786);}static['removeSortInventory'](_0x158270,_0xac307f){const _0x377122=_0x4487d4;if(_0x158270 in Build[_0x377122(0x5db)]){let _0x5f0563=new Array();for(let _0x24276d of Build[_0x377122(0x5db)][_0x158270]){_0x24276d!=_0xac307f&&_0x5f0563[_0x377122(0x2db)](_0x24276d);}_0x5f0563['length']?Build[_0x377122(0x5db)][_0x158270]=_0x5f0563:delete Build[_0x377122(0x5db)][_0x158270];}}static[_0x4487d4(0x60b)](_0x9bdd8f){const _0x5465a2=_0x4487d4;let _0x1f96de=_0x9bdd8f[_0x5465a2(0x682)],_0x3edc3a=Build[_0x5465a2(0x69c)][_0x1f96de[_0x5465a2(0x67f)]['id']],_0x417953=!![];if(_0x3edc3a[_0x5465a2(0x13b)]==0x0){_0x9bdd8f[_0x5465a2(0x11e)][_0x5465a2(0x601)]='none';return;}for(let _0x258072 in Build[_0x5465a2(0x5db)]){if(!(_0x258072 in _0x3edc3a)){_0x417953=![];break;}if(_0x258072==_0x5465a2(0x6e9)){let _0x1b2352=![];if(!_0x3edc3a[_0x5465a2(0x6e9)]){_0x417953=![];break;}for(let _0x2c05fb of Build[_0x5465a2(0x5db)][_0x5465a2(0x6e9)]){_0x2c05fb in _0x3edc3a['stats']&&(_0x1b2352=!![]);}if(!_0x1b2352){_0x417953=![];break;}}else{if(!Build[_0x5465a2(0x5db)][_0x258072][_0x5465a2(0x618)](''+_0x3edc3a[_0x258072])){_0x417953=![];break;}}}_0x417953?_0x9bdd8f[_0x5465a2(0x11e)]['display']=_0x5465a2(0x547):_0x9bdd8f[_0x5465a2(0x11e)]['display']=_0x5465a2(0x6c8);}static[_0x4487d4(0x740)](){const _0xe459ef=_0x4487d4;for(let _0x4b10ab of Build[_0xe459ef(0x287)][_0xe459ef(0xf2)](_0xe459ef(0x322))){Build[_0xe459ef(0x60b)](_0x4b10ab);}}static[_0x4487d4(0x816)](){const _0xa8ca9d=_0x4487d4;Build['ruleSortInventory']=new Object();for(let _0xe5642b of Build['inventoryView']['children']){_0xe5642b['style'][_0xa8ca9d(0x601)]=_0xa8ca9d(0x547);}}static[_0x4487d4(0x233)](_0x39ea94,_0x211ef7){const _0x1a44b0=_0x4487d4;let _0x1a6098=(_0x43f4bf,_0x248a72)=>{const _0x89a64c=_0x5ecf;let _0x9471a5=document[_0x89a64c(0x545)](_0x43f4bf,_0x248a72);return _0x9471a5[0x0]['className']=='build-level'?_0x9471a5[0x1]:_0x9471a5[0x0];},_0xed2e38=(_0x50dbe1,_0x484d14)=>{const _0x184522=_0x5ecf;_0x50dbe1[_0x184522(0x852)][_0x184522(0x695)]==_0x184522(0x21b)&&(_0x50dbe1[_0x184522(0x852)][_0x184522(0x11e)][_0x184522(0x601)]=_0x484d14),_0x50dbe1[_0x184522(0x11e)][_0x184522(0x601)]=_0x484d14;};_0x39ea94['onmousedown']=_0x27c355=>{const _0x421654=_0x5ecf;if(_0x27c355[_0x421654(0x561)]!=0x0)return;let _0x485afd=Date[_0x421654(0x700)]();Build[_0x421654(0x389)][_0x421654(0x11e)][_0x421654(0x601)]=_0x421654(0x6c8);let _0x495621=Build['talents'][_0x39ea94['dataset']['id']],_0x370f79=document[_0x421654(0x273)]('bfr'+_0x495621['level']);!_0x211ef7&&(_0x370f79[_0x421654(0x11e)]['background']='rgba(255,255,255,0.5)',_0x370f79[_0x421654(0x11e)][_0x421654(0x6e8)]='1cqh');_0x39ea94[_0x421654(0x11e)][_0x421654(0x551)]=_0x421654(0x7de),_0x39ea94[_0x421654(0x11e)][_0x421654(0x277)]='transform',_0x39ea94[_0x421654(0x11e)][_0x421654(0x4c3)](_0x421654(0x7f5),_0x421654(0x619),_0x421654(0x4a9)),_0x39ea94['style'][_0x421654(0x4d5)]=_0x421654(0x757);let _0x411b27=_0x39ea94[_0x421654(0x3b4)](),_0x340f4f=_0x27c355[_0x421654(0x746)]-_0x411b27['left']-0x5,_0x395e8f=_0x27c355['pageY']-_0x411b27[_0x421654(0x783)]-0x5,_0x2ec9a3=_0x39ea94;do{_0x340f4f+=_0x2ec9a3[_0x421654(0x29b)][_0x421654(0x34c)],_0x395e8f+=_0x2ec9a3[_0x421654(0x29b)][_0x421654(0x76d)],_0x2ec9a3=_0x2ec9a3[_0x421654(0x29b)];}while(!(_0x2ec9a3['id']==_0x421654(0x1c4)||_0x2ec9a3['id']==_0x421654(0x113)));_0x39ea94['style'][_0x421654(0x207)]=_0x421654(0x6b7),_0x39ea94[_0x421654(0x11e)][_0x421654(0x135)]=_0x421654(0x497),_0x39ea94[_0x421654(0x11e)][_0x421654(0x725)]=_0x27c355[_0x421654(0x746)]-_0x340f4f-0x1+'px',_0x39ea94[_0x421654(0x11e)][_0x421654(0x783)]=_0x27c355[_0x421654(0xff)]-_0x395e8f-0x1+'px',_0xed2e38(_0x39ea94,_0x421654(0x6c8));let _0x40532e=_0x1a6098(_0x27c355['clientX'],_0x27c355[_0x421654(0x350)]);_0xed2e38(_0x39ea94,'block'),document['onmousemove']=_0x1404c3=>{const _0x5ced24=_0x421654;_0x39ea94[_0x5ced24(0x11e)][_0x5ced24(0x725)]=_0x1404c3[_0x5ced24(0x746)]-_0x340f4f-0x1+'px',_0x39ea94[_0x5ced24(0x11e)]['top']=_0x1404c3['pageY']-_0x395e8f-0x1+'px';},_0x39ea94[_0x421654(0x38e)]=async _0x298620=>{const _0x2931dd=_0x421654;_0x39ea94[_0x2931dd(0x11e)][_0x2931dd(0x4c3)](_0x2931dd(0x7f5),_0x2931dd(0x13a),_0x2931dd(0x4a9));let _0x523662=Date[_0x2931dd(0x700)](),_0x1b926a=_0x523662-_0x485afd<0xc8;document[_0x2931dd(0x4fd)]=null,_0x39ea94[_0x2931dd(0x38e)]=null;let _0x205e5a=Build['fieldView'][_0x2931dd(0x3b4)](),_0x30c304=Build[_0x2931dd(0x287)][_0x2931dd(0x3b4)](),_0x24b447=Build['activeBarView'][_0x2931dd(0x3b4)](),_0x521554=_0x39ea94[_0x2931dd(0x3b4)](),_0x2567f3=parseInt(_0x39ea94[_0x2931dd(0x11e)]['left'])+_0x521554[_0x2931dd(0x658)]/0x2,_0x4b94ac=parseInt(_0x39ea94[_0x2931dd(0x11e)][_0x2931dd(0x783)])+_0x521554[_0x2931dd(0x40c)]/0x2,_0xbc5c31=_0x39ea94;do{_0x2567f3+=_0xbc5c31[_0x2931dd(0x29b)]['offsetLeft'],_0x4b94ac+=_0xbc5c31[_0x2931dd(0x29b)][_0x2931dd(0x76d)],_0xbc5c31=_0xbc5c31[_0x2931dd(0x29b)];}while(!(_0xbc5c31['id']==_0x2931dd(0x1c4)||_0xbc5c31['id']=='viewbuild'));let _0x496c9a=_0x2567f3>_0x205e5a['x']&&_0x2567f3<_0x205e5a['x']+_0x205e5a['width']&&_0x4b94ac>_0x205e5a['y']&&_0x4b94ac<_0x205e5a['y']+_0x205e5a['height'],_0x23d3a4=_0x2567f3>_0x30c304['x']&&_0x2567f3<_0x30c304['x']+_0x30c304[_0x2931dd(0x658)]&&_0x4b94ac>_0x30c304['y']&&_0x4b94ac<_0x30c304['y']+_0x30c304[_0x2931dd(0x40c)],_0x15b0ae=_0x2567f3>_0x24b447['x']&&_0x2567f3<_0x24b447['x']+_0x24b447[_0x2931dd(0x658)]&&_0x4b94ac>_0x24b447['y']&&_0x4b94ac<_0x24b447['y']+_0x24b447[_0x2931dd(0x40c)];if(_0x1b926a&&(_0x496c9a||_0x15b0ae&&_0x211ef7)){_0xed2e38(_0x39ea94,_0x2931dd(0x6c8));let _0x16caa7=_0x1a6098(_0x298620[_0x2931dd(0x6ae)],_0x298620['clientY']);_0xed2e38(_0x39ea94,_0x2931dd(0x547)),_0x1b926a=_0x16caa7==_0x40532e;}if(_0x1b926a){if(_0x39ea94[_0x2931dd(0x67f)]['state']==0x2)_0x496c9a=![],_0x23d3a4=!![],_0x15b0ae=![];else{if(_0x39ea94[_0x2931dd(0x67f)][_0x2931dd(0x696)]==0x1&&_0x495621[_0x2931dd(0x13b)]>0x0){let _0x4a13df=![];for(let _0x50ccc9=(_0x495621[_0x2931dd(0x13b)]-0x1)*0x6;_0x50ccc9<_0x495621[_0x2931dd(0x13b)]*0x6;_0x50ccc9++){if(!Build[_0x2931dd(0x4b0)][0x23-_0x50ccc9]){_0x4a13df=!![];break;}}_0x4a13df&&(_0x496c9a=!![],_0x23d3a4=![],_0x15b0ae=![]);}}}let _0x416bca=async(_0x23d571,_0x9358f9)=>{const _0x14a0c7=_0x2931dd;for(let _0x5a7f35=0x0;_0x5a7f35<Build[_0x14a0c7(0x17c)][_0x14a0c7(0x2ed)];_0x5a7f35++){const _0x51a206=Math['abs'](Build[_0x14a0c7(0x17c)][_0x5a7f35])-0x1;_0x51a206==_0x23d571&&_0x5a7f35!=_0x9358f9&&await Build[_0x14a0c7(0x587)](_0x5a7f35);}},_0x2fb7ba=async(_0x114f3e,_0xabeac3,_0x43f0e2,_0xba9ad4,_0x4d6bf9,_0xc7ead7)=>{const _0x377f9b=_0x2931dd;await App[_0x377f9b(0x3bb)][_0x377f9b(0x74c)](_0x377f9b(0x664),'setActive',{'buildId':Build['id'],'index':_0x114f3e,'position':_0xabeac3}),Build['activeBarItems'][_0x114f3e]=_0xabeac3,_0xba9ad4['append'](_0x4d6bf9),_0x4d6bf9['style'][_0x377f9b(0x135)]=_0x377f9b(0x311),_0x4d6bf9[_0x377f9b(0x11e)][_0x377f9b(0x207)]=0x1,_0x4d6bf9[_0x377f9b(0x67f)][_0x377f9b(0x135)]=_0x43f0e2,_0x4d6bf9[_0x377f9b(0x67f)][_0x377f9b(0x696)]=0x3,_0x4d6bf9['style']['opacity']=0x1,_0x4d6bf9['style'][_0x377f9b(0x207)]=0x1,_0x4d6bf9['style'][_0x377f9b(0x135)]=_0x377f9b(0x311),Build[_0x377f9b(0x233)](_0x4d6bf9,!![]),_0xc7ead7&&await Build[_0x377f9b(0x271)](_0xba9ad4,!![]);},_0xba6d09=async(_0x4935af,_0x34505d,_0x312dfd,_0x420bad)=>{const _0x30af06=_0x2931dd;if(_0x4935af==_0x34505d)return _0x312dfd['remove'](),null;let _0x2894a6=-0x1;for(let _0x48c3f2=0x0;_0x48c3f2<Build[_0x30af06(0x17c)][_0x30af06(0x2ed)];_0x48c3f2++){const _0x4c6eaa=Math[_0x30af06(0x344)](Build[_0x30af06(0x17c)][_0x48c3f2])-0x1;if(_0x4c6eaa==_0x4935af&&_0x48c3f2!=_0x420bad){_0x2894a6=_0x48c3f2;break;}}if(_0x2894a6==-0x1)return _0x312dfd[_0x30af06(0x1ac)](),null;let _0x4055ef=Build[_0x30af06(0x6df)][_0x30af06(0x2d9)][_0x2894a6],_0x1aa0fa=Number(_0x4055ef['dataset'][_0x30af06(0x1d5)]),_0x5853a7=Number(_0x34505d)+0x1,_0x4f92a2=_0x4055ef[_0x30af06(0x682)]['cloneNode'](!![]);return await _0x416bca(_0x4935af,_0x420bad),await _0x2fb7ba(_0x2894a6,_0x5853a7,_0x34505d,_0x4055ef,_0x312dfd,_0x1aa0fa),_0x2894a6;};if(_0x496c9a&&!_0x211ef7){_0xed2e38(_0x39ea94,'none');let _0x2ae36f=_0x1a6098(_0x298620['clientX'],_0x298620[_0x2931dd(0x350)]);_0x2ae36f['childNodes'][0x0]&&_0x2ae36f[_0x2931dd(0x2d9)][0x0][_0x2931dd(0x599)]==_0x2931dd(0x1fa)&&(_0x2ae36f=_0x2ae36f['childNodes'][0x0]);let _0x2f70bb=_0x39ea94[_0x2931dd(0x27d)],_0x3bafef=![],_0x407c84=![];_0x2ae36f[_0x2931dd(0x599)]==_0x2931dd(0x1fa)&&_0x2ae36f[_0x2931dd(0x852)][_0x2931dd(0x599)]==_0x2931dd(0x25a)&&(_0x2ae36f=_0x2ae36f[_0x2931dd(0x852)],_0x3bafef=_0x2f70bb[_0x2931dd(0x67f)][_0x2931dd(0x135)]?!![]:![],_0x407c84=!_0x3bafef);if(_0x1b926a&&_0x495621[_0x2931dd(0x13b)]>0x0){let _0x68826c=document[_0x2931dd(0xbe)](_0x2931dd(0x269))[0x6-_0x495621[_0x2931dd(0x13b)]][_0x2931dd(0x2d9)];for(let _0x2ff755 in _0x68826c){if(_0x68826c[_0x2ff755]['childNodes'][_0x2931dd(0x2ed)]==0x0){_0x2ae36f=_0x68826c[_0x2ff755];break;}}}_0xed2e38(_0x39ea94,_0x2931dd(0x547));if(_0x2ae36f&&_0x2ae36f[_0x2931dd(0x599)]==_0x2931dd(0x25a)){if(_0x495621[_0x2931dd(0x13b)]&&_0x2ae36f['parentNode'][_0x2931dd(0x67f)][_0x2931dd(0x13b)]==_0x495621[_0x2931dd(0x13b)]){let _0x282424=![];if(_0x2931dd(0x5bb)in _0x495621)for(let _0x3858c6 of _0x495621[_0x2931dd(0x5bb)]){_0x3858c6 in Build['fieldConflict']&&(_0x282424=!![]);}if(!_0x282424){_0x2931dd(0x5bb)in _0x495621&&(Build[_0x2931dd(0x78a)][Math[_0x2931dd(0x344)](_0x495621['id'])]=!![]);let _0x456cba=_0x39ea94[_0x2931dd(0x67f)][_0x2931dd(0x696)];_0x39ea94[_0x2931dd(0x67f)][_0x2931dd(0x696)]=0x2;let _0x5a6688=null,_0x5dccb8=![];if(_0x3bafef){_0x5a6688=Build[_0x2931dd(0x4b0)][parseInt(_0x2f70bb['dataset']['position'])];let _0x5aba09=Build[_0x2931dd(0x4b0)][parseInt(_0x2ae36f[_0x2931dd(0x67f)][_0x2931dd(0x135)])];Build['installedTalents'][parseInt(_0x2ae36f[_0x2931dd(0x67f)][_0x2931dd(0x135)])]=_0x5a6688,Build[_0x2931dd(0x4b0)][parseInt(_0x2f70bb[_0x2931dd(0x67f)][_0x2931dd(0x135)])]=_0x5aba09,_0x2f70bb['append'](_0x2ae36f['firstChild']),_0x2ae36f[_0x2931dd(0x2f2)](_0x39ea94);}else _0x407c84&&(_0x5a6688=Build['installedTalents'][parseInt(_0x2ae36f['dataset'][_0x2931dd(0x135)])]),Build[_0x2931dd(0x4b0)][parseInt(_0x2ae36f[_0x2931dd(0x67f)][_0x2931dd(0x135)])]=_0x495621,Build[_0x2931dd(0x4b0)][parseInt(_0x2f70bb[_0x2931dd(0x67f)][_0x2931dd(0x135)])]=null,_0x2ae36f[_0x2931dd(0x2f2)](_0x39ea94),_0x407c84?_0x2f70bb[_0x2931dd(0xca)](_0x2ae36f[_0x2931dd(0x682)]):_0x2f70bb[_0x2931dd(0x695)]==_0x2931dd(0x21b)&&(_0x5dccb8=!![]);try{let _0x34a6e7=null;_0x495621[_0x2931dd(0x1d5)]&&_0x2f70bb['dataset'][_0x2931dd(0x135)]&&(_0x34a6e7=await _0xba6d09(_0x2f70bb[_0x2931dd(0x67f)][_0x2931dd(0x135)],_0x2ae36f['dataset']['position'],_0x39ea94[_0x2931dd(0x2ab)](!![])));if(_0x3bafef){let _0x1326a4=Build['installedTalents'][parseInt(_0x2f70bb['dataset'][_0x2931dd(0x135)])];_0x1326a4[_0x2931dd(0x1d5)]&&await _0xba6d09(_0x2ae36f[_0x2931dd(0x67f)][_0x2931dd(0x135)],_0x2f70bb[_0x2931dd(0x67f)][_0x2931dd(0x135)],_0x2f70bb['firstChild'][_0x2931dd(0x2ab)](!![]),_0x34a6e7),await App[_0x2931dd(0x3bb)][_0x2931dd(0x74c)](_0x2931dd(0x664),_0x2931dd(0x6c7),{'buildId':Build['id'],'index':_0x2f70bb[_0x2931dd(0x67f)][_0x2931dd(0x135)]}),await App[_0x2931dd(0x3bb)]['request'](_0x2931dd(0x664),_0x2931dd(0x80f),{'buildId':Build['id'],'talentId':_0x1326a4['id'],'index':_0x2f70bb[_0x2931dd(0x67f)]['position']}),Build[_0x2931dd(0x2b4)](_0x495621,!![],![]);}else _0x407c84&&(_0x5a6688['active']&&await _0x416bca(_0x2ae36f[_0x2931dd(0x67f)][_0x2931dd(0x135)]),_0x2f70bb[_0x2931dd(0x682)]['dataset']['state']=0x1,await App[_0x2931dd(0x3bb)][_0x2931dd(0x74c)](_0x2931dd(0x664),_0x2931dd(0x6c7),{'buildId':Build['id'],'index':_0x2ae36f[_0x2931dd(0x67f)][_0x2931dd(0x135)]})),Build[_0x2931dd(0x2b4)](_0x495621,!![]);await App[_0x2931dd(0x3bb)][_0x2931dd(0x74c)](_0x2931dd(0x664),'set',{'buildId':Build['id'],'talentId':_0x495621['id'],'index':_0x2ae36f[_0x2931dd(0x67f)]['position']});if(_0x495621[_0x2931dd(0x1d5)]&&_0x456cba!=_0x39ea94[_0x2931dd(0x67f)]['state']){let _0x139258=-0x1;for(let _0x53e2c2=0x0;_0x53e2c2<Build[_0x2931dd(0x17c)][_0x2931dd(0x2ed)];_0x53e2c2++){if(Build[_0x2931dd(0x17c)][_0x53e2c2]==0x0){_0x139258=_0x53e2c2;break;}}if(_0x139258!=-0x1){let _0x2cbfed=Build[_0x2931dd(0x6df)][_0x2931dd(0x2d9)][_0x139258];await _0x2fb7ba(_0x139258,Number(_0x2ae36f[_0x2931dd(0x67f)][_0x2931dd(0x135)])+0x1,_0x2ae36f[_0x2931dd(0x67f)]['position'],_0x2cbfed,_0x39ea94['cloneNode'](!![]));}}}catch(_0xa0453){_0x39ea94[_0x2931dd(0x67f)][_0x2931dd(0x696)]=0x1,Build[_0x2931dd(0x287)][_0x2931dd(0x204)](_0x2931dd(0x7b0))[_0x2931dd(0xca)](_0x39ea94),Build[_0x2931dd(0x4b0)][parseInt(_0x2ae36f['dataset'][_0x2931dd(0x135)])]=null;}_0x5dccb8&&_0x2f70bb[_0x2931dd(0x1ac)]();}}}}else{if(_0x23d3a4&&!_0x211ef7){_0xed2e38(_0x39ea94,_0x2931dd(0x6c8));let _0x8b3b12=_0x1a6098(_0x298620[_0x2931dd(0x6ae)],_0x298620[_0x2931dd(0x350)]);_0x1b926a&&(_0x8b3b12=document[_0x2931dd(0xbe)]('build-talents')[0x0]['firstChild']);_0xed2e38(_0x39ea94,'block');let _0x2ec81b=_0x8b3b12[_0x2931dd(0x27d)];_0x2ec81b[_0x2931dd(0x599)]==_0x2931dd(0x21b)&&(_0x2ec81b=_0x2ec81b[_0x2931dd(0x27d)]);if(_0x8b3b12&&_0x2ec81b[_0x2931dd(0x599)]=='build-talents'&&_0x39ea94[_0x2931dd(0x67f)][_0x2931dd(0x696)]!=0x1){let _0x3f254b=_0x39ea94['parentNode'];_0x39ea94[_0x2931dd(0x67f)][_0x2931dd(0x696)]=0x1;let _0x57f44e=DOM({'style':_0x2931dd(0x21b)},_0x39ea94);Build['applySorting'](_0x57f44e),_0x2ec81b['prepend'](_0x57f44e);try{_0x495621['active']&&_0x3f254b[_0x2931dd(0x67f)][_0x2931dd(0x135)]&&await _0x416bca(_0x3f254b[_0x2931dd(0x67f)][_0x2931dd(0x135)]),await App[_0x2931dd(0x3bb)][_0x2931dd(0x74c)](_0x2931dd(0x664),'setZero',{'buildId':Build['id'],'index':_0x3f254b['dataset'][_0x2931dd(0x135)]}),Build[_0x2931dd(0x4b0)][parseInt(_0x3f254b['dataset'][_0x2931dd(0x135)])]=null,Build['setStat'](_0x495621,!![]),_0x495621['id']<0x0&&delete Build[_0x2931dd(0x78a)][Math[_0x2931dd(0x344)](_0x495621['id'])];}catch(_0x2840f2){_0x39ea94['dataset'][_0x2931dd(0x696)]=0x2,_0x3f254b[_0x2931dd(0x2f2)](_0x39ea94),_0xed2e38(_0x39ea94,_0x2931dd(0x547)),_0x57f44e[_0x2931dd(0x1ac)]();}}}else{if(_0x15b0ae){_0xed2e38(_0x39ea94,_0x2931dd(0x6c8));let _0x1593c1=_0x1a6098(_0x298620[_0x2931dd(0x6ae)],_0x298620['clientY']),_0x547f91=_0x1593c1[_0x2931dd(0x27d)][_0x2931dd(0x695)][_0x2931dd(0x2d0)](_0x2931dd(0x119));_0xed2e38(_0x39ea94,_0x2931dd(0x547));if(_0x1593c1&&(_0x39ea94[_0x2931dd(0x67f)][_0x2931dd(0x696)]==0x2||_0x39ea94['dataset'][_0x2931dd(0x696)]==0x3)&&(_0x1593c1['classList'][_0x2931dd(0x2d0)](_0x2931dd(0x119))||_0x547f91)&&_0x495621[_0x2931dd(0x1d5)]==0x1){let _0x104ae1=_0x1593c1[_0x2931dd(0x67f)]['index'],_0x462cde=Number(_0x39ea94['parentNode'][_0x2931dd(0x67f)][_0x2931dd(0x1d5)]),_0x134ad9=_0x39ea94[_0x2931dd(0x67f)][_0x2931dd(0x135)];!_0x134ad9&&(_0x134ad9=_0x39ea94['parentNode']['dataset'][_0x2931dd(0x135)]);_0x547f91&&(_0x104ae1=_0x1593c1[_0x2931dd(0x27d)][_0x2931dd(0x67f)][_0x2931dd(0x3bf)]);let _0x19651e=Number(_0x134ad9)+0x1;try{if(_0x211ef7){let _0x25fb9e=_0x39ea94['parentNode']['dataset']['index'];if(_0x1b926a)await _0x416bca(_0x134ad9);else{if(_0x104ae1!=_0x25fb9e){let _0x1467a3=_0x39ea94[_0x2931dd(0x27d)],_0x4976ef=_0x547f91?_0x1593c1[_0x2931dd(0x27d)]:_0x1593c1,_0x4dd798=_0x547f91?_0x1593c1[_0x2931dd(0x67f)]['position']:0x0,_0x287102=Number(_0x4dd798)+0x1,_0x251dc4=Number(_0x4976ef[_0x2931dd(0x67f)][_0x2931dd(0x1d5)]),_0xdde485=_0x39ea94['cloneNode'](!![]),_0x72851f=_0x547f91?_0x1593c1[_0x2931dd(0x2ab)](!![]):null;await _0x416bca(_0x134ad9),_0x72851f&&await _0x416bca(_0x4dd798),await _0x2fb7ba(_0x104ae1,_0x19651e,_0x134ad9,_0x4976ef,_0xdde485,_0x462cde),_0x72851f&&await _0x2fb7ba(_0x25fb9e,_0x287102,_0x4dd798,_0x1467a3,_0x72851f,_0x251dc4);}}}else{let _0x4dc36b=_0x547f91?_0x1593c1[_0x2931dd(0x27d)]:_0x1593c1,_0x397d3b=_0x39ea94[_0x2931dd(0x2ab)](!![]);_0x397d3b[_0x2931dd(0x67f)][_0x2931dd(0x135)]=_0x39ea94['parentNode'][_0x2931dd(0x67f)]['position'],_0x397d3b[_0x2931dd(0x67f)][_0x2931dd(0x696)]=0x3,_0x397d3b['style']['opacity']=0x1,_0x397d3b[_0x2931dd(0x11e)][_0x2931dd(0x207)]=0x1,_0x397d3b[_0x2931dd(0x11e)][_0x2931dd(0x135)]=_0x2931dd(0x311),_0x547f91&&await _0x416bca(_0x1593c1['dataset'][_0x2931dd(0x135)]),await _0x416bca(_0x134ad9),await App[_0x2931dd(0x3bb)][_0x2931dd(0x74c)](_0x2931dd(0x664),_0x2931dd(0x541),{'buildId':Build['id'],'index':_0x104ae1,'position':_0x19651e}),Build[_0x2931dd(0x17c)][_0x104ae1]=_0x19651e,Build['move'](_0x397d3b,!![]),_0x4dc36b[_0x2931dd(0x2f2)](_0x397d3b);}}catch(_0x4a880e){App[_0x2931dd(0x498)](_0x2931dd(0x18b));}}}else _0x211ef7&&await _0x416bca(_0x39ea94[_0x2931dd(0x67f)][_0x2931dd(0x135)]);}}Build[_0x2931dd(0x4ab)](),_0x370f79[_0x2931dd(0x11e)][_0x2931dd(0x809)]='',_0x39ea94[_0x2931dd(0x11e)][_0x2931dd(0x135)]=_0x2931dd(0x311),_0x39ea94['style'][_0x2931dd(0x207)]=_0x2931dd(0x3d0);};},_0x39ea94[_0x1a44b0(0x44c)]=()=>{return![];};}static[_0x4487d4(0x717)](_0x7af8ad){const _0x5cb8ec=_0x4487d4;let _0x1317d8=()=>{const _0x53b721=_0x5ecf;let _0x5458f5=_0x7af8ad['getBoundingClientRect'](),_0x5a5245=Build[_0x53b721(0x69c)][_0x7af8ad['dataset']['id']];if(!_0x5a5245){console[_0x53b721(0x1ed)](_0x53b721(0x584)+_0x7af8ad[_0x53b721(0x67f)]['id']),Build[_0x53b721(0x389)][_0x53b721(0x11e)][_0x53b721(0x601)]=_0x53b721(0x6c8);return;}if(!_0x5a5245[_0x53b721(0x20f)]||!_0x5a5245[_0x53b721(0x717)])Build[_0x53b721(0x389)][_0x53b721(0x66f)]=_0x53b721(0x422)+_0x5a5245['id']+_0x53b721(0x34f);else{let _0x36362d='';switch(_0x5a5245[_0x53b721(0x508)]){case 0x1:_0x36362d=_0x53b721(0x64f);break;case 0x2:_0x36362d='205,0,205';break;case 0x3:_0x36362d=_0x53b721(0x2b6);break;case 0x4:_0x36362d=_0x53b721(0x2fc);break;}let _0x495930='';if(_0x53b721(0x6e9)in _0x5a5245&&_0x5a5245['stats'])for(let _0x592b6d in _0x5a5245['stats']){if(Build[_0x53b721(0x406)](_0x592b6d))continue;let _0x2d6e61=parseFloat(_0x5a5245[_0x53b721(0x6e9)][_0x592b6d]);if(_0x53b721(0x179)in _0x5a5245&&_0x53b721(0x508)in _0x5a5245){let _0x1d32ff=Build[_0x53b721(0x306)](_0x5a5245['rarity']),_0x1e0b66=parseFloat(_0x5a5245['statsRefine'][_0x592b6d]);_0x2d6e61+=_0x1d32ff*_0x1e0b66;}let _0x1a195d=_0x592b6d==_0x53b721(0x614)||_0x592b6d=='speedtalrz'||_0x592b6d=='speedtalvz'?'-':'+';_0x495930+=_0x1a195d+(Math['floor'](_0x2d6e61*0xa)/0xa+'\x20'+(Build[_0x53b721(0x2c1)][_0x592b6d]?Build[_0x53b721(0x2c1)][_0x592b6d]:_0x592b6d)+_0x53b721(0x70a));}Build['descriptionView'][_0x53b721(0x66f)]=_0x53b721(0x6d7)+_0x36362d+_0x53b721(0xfa)+_0x5a5245['name']+_0x53b721(0x26f)+_0x5a5245[_0x53b721(0x717)]+'</div><span>'+_0x495930+'</span>';let _0x3ea8a1=Build['descriptionView'][_0x53b721(0x2d9)][0x1][_0x53b721(0x2d9)],_0x55b131=0x0;for(let _0x529b2d of _0x3ea8a1){for(let _0x333ef4 of _0x529b2d[_0x53b721(0x2d9)]){let _0x20a33a=_0x333ef4[_0x53b721(0x66f)]?_0x333ef4[_0x53b721(0x66f)]:_0x333ef4[_0x53b721(0x43a)];if(!_0x20a33a||_0x20a33a[_0x53b721(0x792)]('%s')==-0x1||!_0x5a5245[_0x53b721(0x37b)])continue;let _0x1957d1=_0x5a5245[_0x53b721(0x37b)][_0x53b721(0x477)](';');if(_0x55b131>=_0x1957d1['length'])continue;let _0x3684c3=_0x1957d1[_0x55b131],_0x48c18e=_0x3684c3['split'](','),_0x3e2c41,_0x4aaf58,_0x366dd0;if(_0x48c18e[_0x53b721(0x2ed)]==0x5)_0x4aaf58=parseFloat(_0x48c18e[0x1]),_0x366dd0=parseFloat(_0x48c18e[0x2]),_0x3e2c41=_0x48c18e[0x4];else _0x48c18e['length']==0x3&&(_0x4aaf58=parseFloat(_0x48c18e[0x0]),_0x366dd0=parseFloat(_0x48c18e[0x1]),_0x3e2c41=_0x48c18e[0x2]);let _0x62af67,_0xfc9690,_0x1fdba7;switch(_0x3e2c41){case _0x53b721(0x4cf):_0x62af67=Build[_0x53b721(0x173)]([_0x53b721(0x368),_0x53b721(0x588)]);break;case _0x53b721(0x79b):_0x62af67=Build[_0x53b721(0x173)](['stoikost',_0x53b721(0x7ae)]);break;case'ph_max':_0x62af67=Build[_0x53b721(0x173)]([_0x53b721(0x409),'hitrost']);break;case _0x53b721(0x736):_0x62af67=Build[_0x53b721(0x173)](['hp','mp']);break;case _0x53b721(0x170):_0xfc9690=_0x53b721(0x368),_0x1fdba7=_0x53b721(0x588);break;case'ph_sum':_0xfc9690='provorstvo',_0x1fdba7=_0x53b721(0x149);break;case'sv_sum':_0xfc9690=_0x53b721(0x154),_0x1fdba7='volia';break;case _0x53b721(0x2ea):_0xfc9690='hp',_0x1fdba7='mp';break;default:_0x62af67=_0x3e2c41;break;}function _0x3252a7(_0x405684,_0x56b4bc,_0x23de66){return _0x405684+_0x23de66*(_0x56b4bc-_0x405684);}let _0x4d5ef8;if(_0x3e2c41=='sr_sum'||_0x3e2c41==_0x53b721(0x62c)||_0x3e2c41=='sv_sum'||_0x3e2c41==_0x53b721(0x2ea)){let _0x4068ce=Build['totalStat'](_0xfc9690),_0x4a2892=Build[_0x53b721(0x6d9)](_0x1fdba7);const _0x25ff2c=_0xfc9690=='hp'||_0xfc9690=='mp'||_0x1fdba7=='hp'||_0x1fdba7=='mp',_0x132579=_0x25ff2c?0x258:0x32,_0x1e1cd8=_0x25ff2c?0x186a:0xfa;_0x4d5ef8=_0x3252a7(_0x4aaf58,_0x366dd0,(_0x4068ce+_0x4a2892-_0x132579)/_0x1e1cd8)[_0x53b721(0x42e)](0x1),_0x4d5ef8[_0x53b721(0x405)]('.0')&&(_0x4d5ef8=_0x4d5ef8[_0x53b721(0x44e)]('.0',''));}else{if(_0x62af67 in Build[_0x53b721(0x415)]&&_0x48c18e[_0x53b721(0x2ed)]==0x5){let _0x560dfe=Build[_0x53b721(0x6d9)](_0x62af67);const _0x26b2da=_0x62af67=='hp'||_0x62af67=='mp',_0xf997ad=_0x26b2da?0x258:0x32,_0x26c952=_0x26b2da?0x186a:0xfa;_0x4d5ef8=_0x3252a7(_0x4aaf58,_0x366dd0,(_0x560dfe-_0xf997ad)/_0x26c952)['toFixed'](0x1),_0x4d5ef8[_0x53b721(0x405)]('.0')&&(_0x4d5ef8=_0x4d5ef8['replace']('.0',''));}else{let _0x27d080=Build[_0x53b721(0x306)](_0x5a5245[_0x53b721(0x508)]);_0x4d5ef8=(_0x4aaf58+_0x366dd0*_0x27d080)[_0x53b721(0x42e)](0x1),_0x4d5ef8[_0x53b721(0x405)]('.0')&&(_0x4d5ef8=_0x4d5ef8[_0x53b721(0x44e)]('.0',''));}}_0x333ef4[_0x53b721(0x66f)]?_0x333ef4[_0x53b721(0x66f)]=_0x20a33a[_0x53b721(0x44e)]('%s',_0x4d5ef8):_0x529b2d['innerHTML']=_0x20a33a['replace']('%s',_0x4d5ef8),_0x55b131++;}}}let _0x21422b=Build[_0x53b721(0x389)][_0x53b721(0x3b4)]();Build[_0x53b721(0x389)]['style'][_0x53b721(0x207)]=0x270f,Build[_0x53b721(0x389)][_0x53b721(0x11e)][_0x53b721(0x135)]=_0x53b721(0x497),Build[_0x53b721(0x389)][_0x53b721(0x11e)][_0x53b721(0x725)]=_0x5458f5[_0x53b721(0x725)]+'px',Build[_0x53b721(0x389)][_0x53b721(0x11e)]['top']=_0x5458f5[_0x53b721(0x783)]+_0x5458f5[_0x53b721(0x40c)]+'px',Build[_0x53b721(0x389)][_0x53b721(0x11e)][_0x53b721(0x601)]='block';},_0x32cb4d=()=>{const _0x560f3a=_0x5ecf;Build[_0x560f3a(0x389)]['style']['display']=_0x560f3a(0x6c8);};_0x7af8ad[_0x5cb8ec(0x617)]=_0x3d4f1c=>{_0x1317d8();},_0x7af8ad[_0x5cb8ec(0x366)]=()=>{_0x1317d8();},_0x7af8ad[_0x5cb8ec(0x644)]=()=>{_0x32cb4d();},_0x7af8ad[_0x5cb8ec(0x27c)]=()=>{_0x32cb4d();};}}class Events{static['Message'](_0x38e44b){const _0x270663=_0x4487d4;let _0x36fe48=document[_0x270663(0x5a2)]();_0x36fe48['append'](DOM(''+_0x38e44b[_0x270663(0x242)])),Splash[_0x270663(0x19c)](_0x36fe48),setTimeout(()=>Splash[_0x270663(0x61f)](),0xbb8);}static[_0x4487d4(0x628)](_0x1660fa){const _0xa590bd=_0x4487d4;if(!NativeAPI[_0xa590bd(0x370)])return;MM['ready'](_0x1660fa);}static[_0x4487d4(0x2a3)](_0x475b7a){const _0x50049b=_0x4487d4;if(!NativeAPI[_0x50049b(0x370)])return;let _0xed8f9e=document[_0x50049b(0x273)](_0x50049b(0x628));_0xed8f9e&&(_0xed8f9e['innerText']=_0x475b7a[_0x50049b(0x4ce)]+'/'+_0x475b7a[_0x50049b(0x64a)]);}static[_0x4487d4(0x6ba)](_0x3cad55){const _0x53d1d2=_0x4487d4;if(!NativeAPI[_0x53d1d2(0x370)])return;MM[_0x53d1d2(0x217)](_0x3cad55);}static[_0x4487d4(0x780)](_0x3ac943){const _0x452063=_0x4487d4;if(!NativeAPI[_0x452063(0x370)])return;MM[_0x452063(0x4cc)](_0x3ac943);}static[_0x4487d4(0x796)](_0x585573){const _0x26e41c=_0x4487d4;if(!NativeAPI['status'])return;MM[_0x26e41c(0x60d)](_0x585573);}static[_0x4487d4(0x825)](_0x255415){const _0x130a60=_0x4487d4;if(!NativeAPI['status'])return;if(MM[_0x130a60(0x3c1)])for(let _0x22916e of MM['renderBody'][_0x130a60(0x47a)]){_0x22916e[_0x130a60(0x67f)][_0x130a60(0x2ba)]==_0x255415['id']&&(_0x22916e[_0x130a60(0x67f)][_0x130a60(0x2ba)]=0x0,_0x22916e['style'][_0x130a60(0x756)]='none',_0x22916e['style']['transform']=_0x130a60(0x13a));if(_0x255415[_0x130a60(0x135)]!=0x0){if(_0x22916e[_0x130a60(0x67f)]['position']==_0x255415[_0x130a60(0x135)]){let _0x5c6a1d=document[_0x130a60(0x273)](_0x130a60(0x3c4)+_0x255415['id']);_0x5c6a1d&&(_0x22916e[_0x130a60(0x67f)][_0x130a60(0x2ba)]=_0x255415['id'],_0x22916e[_0x130a60(0x11e)][_0x130a60(0x756)]=_0x5c6a1d[_0x130a60(0x67f)][_0x130a60(0x38c)]!=0x0?_0x130a60(0x16c)+_0x5c6a1d[_0x130a60(0x67f)]['hero']+_0x130a60(0x6bc):_0x130a60(0x45e),_0x22916e[_0x130a60(0x11e)][_0x130a60(0x7f5)]='scale(1.5)');}}}}static['MMHero'](_0x2faf44){const _0x535c87=_0x4487d4;if(!NativeAPI[_0x535c87(0x370)])return;MM[_0x535c87(0x5d7)](_0x2faf44);}static[_0x4487d4(0x186)](_0x477678){const _0x14a14f=_0x4487d4;if(!NativeAPI['status'])return;MM[_0x14a14f(0x58b)](_0x477678);}static['PInvite'](_0x447dad){const _0x36bdc3=_0x4487d4;let _0x3bb272=document[_0x36bdc3(0x5a2)](),_0x12ccef=DOM({'style':_0x36bdc3(0x39d),'event':['click',async()=>{const _0x33cb43=_0x36bdc3;await App['api'][_0x33cb43(0x74c)](CURRENT_MM,_0x33cb43(0x7d1),{'code':_0x447dad[_0x33cb43(0x270)],'version':PW_VERSION}),Splash['hide']();}]},_0x36bdc3(0x2ad)),_0x5838f4=DOM({'style':_0x36bdc3(0x39d),'event':[_0x36bdc3(0x6d3),()=>Splash[_0x36bdc3(0x61f)]()]},'Отмена');_0x3bb272['append'](DOM(_0x447dad['nickname']+_0x36bdc3(0x254)),_0x12ccef,_0x5838f4),Splash['show'](_0x3bb272);}static[_0x4487d4(0x862)](_0x315602){const _0x1b2429=_0x4487d4;View[_0x1b2429(0x19c)](_0x1b2429(0x5a7),_0x315602);}static[_0x4487d4(0x698)](_0x5408ff){const _0x9b9fbe=_0x4487d4;let _0x5d0e8a=document['getElementById']('PP'+_0x5408ff['id']);_0x5d0e8a&&(_0x5d0e8a[_0x9b9fbe(0x47a)][0x1][_0x9b9fbe(0x11e)]['backgroundImage']=_0x5408ff[_0x9b9fbe(0x38c)]?_0x9b9fbe(0x16c)+_0x5408ff[_0x9b9fbe(0x38c)]+'/'+(_0x5408ff[_0x9b9fbe(0x27b)]?_0x5408ff['skin']:0x1)+_0x9b9fbe(0x634):_0x9b9fbe(0x45e),_0x5d0e8a[_0x9b9fbe(0x47a)][0x1][_0x9b9fbe(0x682)][_0x9b9fbe(0x682)]['innerText']=_0x5408ff[_0x9b9fbe(0x676)],_0x5d0e8a[_0x9b9fbe(0x47a)][0x1][_0x9b9fbe(0x682)][_0x9b9fbe(0x682)][_0x9b9fbe(0x11e)][_0x9b9fbe(0x756)]=_0x9b9fbe(0x6a0)+Rank[_0x9b9fbe(0x7f9)](_0x5408ff[_0x9b9fbe(0x676)])+_0x9b9fbe(0x634));}static[_0x4487d4(0x61e)](){const _0x37d035=_0x4487d4;View[_0x37d035(0x19c)](_0x37d035(0x5a7));}static[_0x4487d4(0x80b)](_0x4bfafe){const _0x4c7ce7=_0x4487d4;let _0x56a86c=document['getElementById']('PP'+_0x4bfafe['id']);_0x56a86c&&(_0x56a86c['children'][0x2][_0x4c7ce7(0x682)][_0x4c7ce7(0x12e)]=Lang['text'](_0x4c7ce7(0x5c1)),_0x56a86c[_0x4c7ce7(0x47a)][0x2]['classList'][_0x4c7ce7(0x44e)](_0x4c7ce7(0x793),_0x4c7ce7(0x534)),_0x56a86c[_0x4c7ce7(0x47a)][0x2][_0x4c7ce7(0x695)][_0x4c7ce7(0x44e)](_0x4c7ce7(0x394),'castle-party-middle-item-ready'));}static[_0x4487d4(0x100)](_0x5ea271){const _0x169bb0=_0x4487d4;CastleNAVBAR['setMode'](_0x5ea271[_0x169bb0(0x320)]+0x1),MM[_0x169bb0(0x501)](_0x5ea271[_0x169bb0(0x370)]);}static[_0x4487d4(0x1df)](_0x26bd1e){const _0x2a1d9e=_0x4487d4;let _0x5d6943=document['getElementById'](_0x2a1d9e(0x1df));_0x5d6943&&(_0x5d6943['innerText']=_0x26bd1e);}static[_0x4487d4(0x3fb)](_0x2b6355){const _0x2ec032=_0x4487d4;CastleNAVBAR[_0x2ec032(0x80e)](_0x2b6355);}static[_0x4487d4(0x533)](_0x162298){const _0x3ea747=_0x4487d4;document[_0x3ea747(0x273)]('ADMStat')[_0x3ea747(0x12e)]=''+_0x162298[_0x3ea747(0x34e)];}static[_0x4487d4(0x7a6)](_0x237ae0){const _0x4d84b0=_0x4487d4;setTimeout(()=>{const _0x2cbf24=_0x5ecf;MM[_0x2cbf24(0x501)](![]);},0x3e8);let _0x272c0d=document[_0x4d84b0(0x5a2)](),_0x4d067e=DOM({'style':_0x4d84b0(0x39d),'event':[_0x4d84b0(0x6d3),async()=>Splash[_0x4d84b0(0x61f)]()]},_0x4d84b0(0x662));_0x272c0d[_0x4d84b0(0x2f2)](DOM(''+(_0x237ae0['party']?'Один\x20из\x20участников\x20пати\x20был\x20АФК,\x20поэтому\x20вы\x20исключены\x20из\x20подбора\x20матча':_0x4d84b0(0x19e))),_0x4d067e),Splash[_0x4d84b0(0x19c)](_0x272c0d);}static[_0x4487d4(0x4cb)](_0xd6c99b){Chat['viewMessage'](_0xd6c99b);}}class App{static async[_0x4487d4(0x303)](){const _0x5e3701=_0x4487d4,_0x3430fa='wss://api2.26rus-game.ru:8443',_0x20ba2d=_0x5e3701(0x7b1),_0x40bad8=_0x5e3701(0x620);App[_0x5e3701(0x3bb)]=new Api([_0x20ba2d,_0x3430fa,_0x40bad8],Events),await News[_0x5e3701(0x303)](),await Store[_0x5e3701(0x303)](),App[_0x5e3701(0x3b3)]=new Store('u3'),await App[_0x5e3701(0x3b3)][_0x5e3701(0x303)]({'id':0x0,'token':'','login':''}),await MM['init'](),Chat[_0x5e3701(0x303)]();try{await App[_0x5e3701(0x3bb)]['init']();}catch(_0x2ecc62){}App['ShowCurrentView'](),App[_0x5e3701(0x358)]()&&document[_0x5e3701(0x2a2)][_0x5e3701(0x2f2)](DOM({'id':_0x5e3701(0x533)}));}static[_0x4487d4(0x14a)](){const _0x235ed5=_0x4487d4;App[_0x235ed5(0x3b3)][_0x235ed5(0x43a)][_0x235ed5(0x3ca)]?View[_0x235ed5(0x19c)]('castle'):View[_0x235ed5(0x19c)](_0x235ed5(0x6c1));}static[_0x4487d4(0x539)](_0x5a1ee1){const _0x160355=_0x4487d4;NativeAPI[_0x160355(0x370)]?nw[_0x160355(0x503)][_0x160355(0x3c6)](_0x5a1ee1):window['open'](_0x5a1ee1,_0x5a1ee1,_0x160355(0xe3));}static async[_0x4487d4(0x6c1)](_0xaa452c,_0x3ff3a6){const _0x28127a=_0x4487d4;if(!_0xaa452c[_0x28127a(0x357)])return _0xaa452c[_0x28127a(0x33e)](_0x28127a(0x11e),_0x28127a(0x6a4)),App['error'](_0x28127a(0x42b));if(!_0x3ff3a6['value'])return _0x3ff3a6[_0x28127a(0x33e)](_0x28127a(0x11e),_0x28127a(0x6a4)),App['error'](_0x28127a(0x316));let _0x5c8518,_0x5bfb20;try{_0x5bfb20=NativeAPI[_0x28127a(0x865)]();}catch(_0x4c6461){}try{_0x5c8518=await App[_0x28127a(0x3bb)][_0x28127a(0x74c)](_0x28127a(0x10a),'authorization',{'login':_0xaa452c[_0x28127a(0x357)][_0x28127a(0xe0)](),'password':_0x3ff3a6['value'][_0x28127a(0xe0)](),'analysis':_0x5bfb20});}catch(_0x108e49){return App['error'](_0x108e49);}await App[_0x28127a(0x3b3)]['set']({'id':_0x5c8518['id'],'token':_0x5c8518[_0x28127a(0x85f)],'login':_0xaa452c['value'],'fraction':_0x5c8518[_0x28127a(0x794)]}),View[_0x28127a(0x19c)](_0x28127a(0x5a7));}static async['registration'](_0x1cb95b,_0xf0baad,_0x1d4eda,_0x300d2c,_0x3045dc){const _0x147ccd=_0x4487d4;if(!_0x1cb95b[_0x147ccd(0x357)]||!_0xf0baad[_0x147ccd(0x357)]||!_0x1d4eda[_0x147ccd(0x357)]||!_0x300d2c[_0x147ccd(0x357)]||!_0x3045dc['value'])return App[_0x147ccd(0x498)](_0x147ccd(0x1a5));if(_0x300d2c['value']!=_0x3045dc[_0x147ccd(0x357)])return _0x300d2c[_0x147ccd(0x33e)](_0x147ccd(0x11e),_0x147ccd(0x6a4)),_0x3045dc[_0x147ccd(0x33e)](_0x147ccd(0x11e),_0x147ccd(0x6a4)),App['error'](_0x147ccd(0x3f9));let _0x3582de,_0x345955;try{_0x345955=NativeAPI['analysis']();}catch(_0x667b22){}try{_0x3582de=await App[_0x147ccd(0x3bb)][_0x147ccd(0x74c)]('user',_0x147ccd(0x7e2),{'fraction':_0x1cb95b['value'],'invite':_0xf0baad[_0x147ccd(0x357)]['trim'](),'login':_0x1d4eda[_0x147ccd(0x357)][_0x147ccd(0xe0)](),'password':_0x300d2c[_0x147ccd(0x357)][_0x147ccd(0xe0)](),'analysis':_0x345955});}catch(_0x32ea75){return App[_0x147ccd(0x498)](_0x32ea75);}await App[_0x147ccd(0x3b3)][_0x147ccd(0x80f)]({'id':_0x3582de['id'],'token':_0x3582de[_0x147ccd(0x85f)],'login':_0x1d4eda['value'],'fraction':_0x1cb95b[_0x147ccd(0x357)]}),View[_0x147ccd(0x19c)](_0x147ccd(0x5a7));}static async[_0x4487d4(0x4b7)](){const _0xcbf459=_0x4487d4;await App[_0xcbf459(0x3b3)][_0xcbf459(0x80f)]({'id':0x0,'token':'','login':''}),View['show']('authorization');}static[_0x4487d4(0x3fc)](_0x18c6ed,_0x1f90c7=new Object()){const _0x24ba82=_0x4487d4;!(_0x24ba82(0x5ab)in _0x1f90c7)&&(_0x1f90c7['tag']='input');!(_0x24ba82(0x357)in _0x1f90c7)&&(_0x1f90c7[_0x24ba82(0x357)]='');let _0x5ab3e0=DOM(_0x1f90c7);return _0x5ab3e0[_0x24ba82(0x4e9)](_0x24ba82(0x4dd),async()=>{const _0x22c66a=_0x24ba82;if(_0x5ab3e0[_0x22c66a(0x357)]==_0x1f90c7[_0x22c66a(0x357)])return;if(_0x18c6ed)try{await _0x18c6ed(_0x5ab3e0[_0x22c66a(0x357)]);}catch(_0x29f09f){return;}_0x1f90c7[_0x22c66a(0x357)]=_0x5ab3e0[_0x22c66a(0x357)];}),_0x5ab3e0;}static[_0x4487d4(0x5d9)](_0xca9570,_0x270a66){const _0x82f298=_0x4487d4;return _0xca9570=Math[_0x82f298(0x5f1)](_0xca9570),_0x270a66=Math[_0x82f298(0x6d6)](_0x270a66),Math[_0x82f298(0x6d6)](Math[_0x82f298(0x202)]()*(_0x270a66-_0xca9570+0x1))+_0xca9570;}static[_0x4487d4(0x498)](_0x1b67af,_0x582431=0xbb8){const _0x276b75=_0x4487d4;let _0x6b27ea=document[_0x276b75(0xbe)](_0x276b75(0x704)),_0x87a50c;_0x6b27ea['length']==0x0?(_0x87a50c=DOM({'style':_0x276b75(0x704)}),document[_0x276b75(0x2a2)][_0x276b75(0x2f2)](_0x87a50c)):_0x87a50c=_0x6b27ea[0x0];let _0x1dc075=DOM({'tag':'div'},''+_0x1b67af);setTimeout(()=>{const _0x47a4d4=_0x276b75;_0x1dc075[_0x47a4d4(0x1ac)]();},_0x582431),_0x87a50c['append'](_0x1dc075);}static[_0x4487d4(0x603)](_0x5975e6,_0x5d6d59=0x0){setTimeout(()=>{const _0x4347bb=_0x5ecf;let _0x2d6acc=DOM({'style':_0x4347bb(0x1db)},DOM({'tag':'div'},''+_0x5975e6));setTimeout(()=>{_0x2d6acc['remove']();},0xbb8),document['body'][_0x4347bb(0x2f2)](_0x2d6acc);},_0x5d6d59);}static[_0x4487d4(0x358)](_0x5106a6=0x0){const _0x2268e2=_0x4487d4;return[0x1,0x2,0x18,0x86,0x361,0x8ac,0x124]['includes'](Number(_0x5106a6?_0x5106a6:App[_0x2268e2(0x3b3)]['data']['id']));}static['href'](_0x570b4f){const _0x137f81=_0x4487d4;let _0x4dba5b=DOM({'tag':'a','href':_0x570b4f});_0x4dba5b[_0x137f81(0x6d3)]();}}class Chat{static ['body'];static [_0x4487d4(0x61f)]=![];static ['to']=0x0;static[_0x4487d4(0x303)](){const _0x5eef70=_0x4487d4;let _0x18c710=DOM({'style':'scroll-btn','event':[_0x5eef70(0x6d3),()=>{const _0x4c1c8f=_0x5eef70;Chat[_0x4c1c8f(0x81b)](!![]);}],'title':_0x5eef70(0x3d9)},'▼'),_0x237385=DOM({'tag':_0x5eef70(0x3fc),'style':_0x5eef70(0x42f),'placeholder':Lang[_0x5eef70(0x605)](_0x5eef70(0x54b))});Chat[_0x5eef70(0x3fc)]=DOM({'style':_0x5eef70(0x6fd)},_0x237385,_0x18c710),Chat[_0x5eef70(0x2a2)]=DOM({'style':'chat'},DOM({'style':_0x5eef70(0x6a7)}),Chat[_0x5eef70(0x3fc)]);const _0x1806b0=async _0xfa7c39=>{const _0x921df1=_0x5eef70;(_0xfa7c39['key']==='Enter'||_0xfa7c39[_0x921df1(0x75e)]===0xd||_0xfa7c39[_0x921df1(0x270)]===_0x921df1(0x5dd)||_0xfa7c39['code']===_0x921df1(0x410))&&(_0xfa7c39[_0x921df1(0x43e)](),await Chat['sendMessage']());};_0x237385['addEventListener'](_0x5eef70(0x5e6),_0x1806b0),_0x237385['addEventListener'](_0x5eef70(0x540),_0x1806b0),_0x237385[_0x5eef70(0x4e9)](_0x5eef70(0x1a6),_0x1806b0),_0x237385[_0x5eef70(0x4e9)]('input',()=>{const _0x1d05cb=_0x5eef70;!Chat['input'][_0x1d05cb(0x682)][_0x1d05cb(0x357)]&&(Chat['to']=0x0);}),document['addEventListener'](_0x5eef70(0x1a6),_0x5e83c5=>{const _0x3210ee=_0x5eef70;_0x5e83c5[_0x3210ee(0x270)]==_0x3210ee(0x407)&&(_0x5e83c5[_0x3210ee(0x575)]||_0x5e83c5[_0x3210ee(0x304)])&&(Chat[_0x3210ee(0x61f)]?(Chat['body']['style'][_0x3210ee(0x601)]=_0x3210ee(0x547),Chat[_0x3210ee(0x61f)]=![]):(Chat[_0x3210ee(0x2a2)][_0x3210ee(0x11e)][_0x3210ee(0x601)]=_0x3210ee(0x6c8),Chat[_0x3210ee(0x61f)]=!![]));});}static[_0x4487d4(0x69a)](_0x4e637f){const _0x3f329d=_0x4487d4,_0xf54e2f=/(https:\/\/[^\s]+)/g;return _0x4e637f['replace'](_0xf54e2f,_0x3f329d(0x3ab));}static[_0x4487d4(0x107)](_0xfc1648){const _0x596fc8=_0x4487d4;let _0x47242e=DOM({'tag':'div'},_0xfc1648[_0x596fc8(0x3ed)]+':\x20'),_0x7c3279=DOM({'tag':_0x596fc8(0x51d)});_0xfc1648['id']==0x1?String(_0xfc1648['message'])['slice'](0x0,0x5)=='https'?_0x7c3279[_0x596fc8(0x2f2)](DOM({'tag':_0x596fc8(0x2b3),'src':_0xfc1648[_0x596fc8(0x242)]})):_0x7c3279[_0x596fc8(0x12e)]=''+_0xfc1648[_0x596fc8(0x242)]:_0x7c3279['innerText']=''+_0xfc1648[_0x596fc8(0x242)];App[_0x596fc8(0x358)](_0xfc1648['id'])&&(String(_0xfc1648[_0x596fc8(0x242)])[_0x596fc8(0x618)]('https')&&!String(_0xfc1648[_0x596fc8(0x242)])['includes'](_0x596fc8(0x361))&&(_0x7c3279[_0x596fc8(0x66f)]=this[_0x596fc8(0x69a)](_0x7c3279['innerHTML'])),NativeAPI['status']&&_0x7c3279[_0x596fc8(0x4e9)]('click',_0x58a34d=>NativeAPI['linkHandler'](_0x58a34d)));if(_0xfc1648['to']==-0x1)_0x7c3279[_0x596fc8(0x11e)][_0x596fc8(0x1cd)]='rgb(255,50,0)',_0x7c3279['style'][_0x596fc8(0x7eb)]=0x258,_0x7c3279[_0x596fc8(0x11e)][_0x596fc8(0x616)]=_0x596fc8(0xcf);else _0xfc1648['to']==App[_0x596fc8(0x3b3)][_0x596fc8(0x43a)]['id']&&(_0x7c3279[_0x596fc8(0x11e)]['color']=_0x596fc8(0x7c5));if(_0xfc1648['id']==0x1)_0x47242e['style'][_0x596fc8(0x1cd)]=_0x596fc8(0x428),_0x47242e[_0x596fc8(0x11e)][_0x596fc8(0x7eb)]=0x258,_0x47242e[_0x596fc8(0x695)][_0x596fc8(0xed)](_0x596fc8(0x43c));else App[_0x596fc8(0x358)](_0xfc1648['id'])&&(_0x47242e[_0x596fc8(0x11e)][_0x596fc8(0x1cd)]=_0x596fc8(0x428),_0x47242e['style'][_0x596fc8(0x7eb)]=0x258,_0x47242e[_0x596fc8(0x695)]['add'](_0x596fc8(0x7bd)));let _0x471ec8=DOM({'style':_0x596fc8(0x527),'event':['click',()=>{const _0x5bfdf4=_0x596fc8;Chat['to']=_0xfc1648['id'],Chat[_0x5bfdf4(0x2a2)]['lastChild']['firstChild'][_0x5bfdf4(0x357)]='@'+_0xfc1648[_0x5bfdf4(0x3ed)]+',\x20',Chat[_0x5bfdf4(0x3fc)][_0x5bfdf4(0x682)]['focus']();}]},_0x47242e,_0x7c3279);_0x471ec8['addEventListener'](_0x596fc8(0x7ea),()=>{const _0x1afbac=_0x596fc8;if(App[_0x1afbac(0x358)]()){let _0x1048f7=document[_0x1afbac(0x5a2)]();_0x1048f7[_0x1afbac(0x2f2)](DOM(_0x1afbac(0xf3)+_0xfc1648['nickname']+'?'),DOM({'style':'splash-content-button','event':[_0x1afbac(0x6d3),async()=>{const _0x5a8590=_0x1afbac;await App['api'][_0x5a8590(0x74c)]('user',_0x5a8590(0x7af),{'id':_0xfc1648['id']}),Splash[_0x5a8590(0x61f)]();}]},'Да'),DOM({'style':_0x1afbac(0x39d),'event':[_0x1afbac(0x6d3),async()=>Splash[_0x1afbac(0x61f)]()]},_0x1afbac(0x6ab))),Splash[_0x1afbac(0x19c)](_0x1048f7);}return![];}),Chat['body'][_0x596fc8(0x682)]['prepend'](_0x471ec8),Chat[_0x596fc8(0x81b)]();}static async[_0x4487d4(0x642)](){const _0x531462=_0x4487d4;if(Chat['input'][_0x531462(0x682)][_0x531462(0x357)][_0x531462(0x2ed)]>0x80)return;await App['api'][_0x531462(0x74c)]('user',_0x531462(0x60d),{'message':Chat[_0x531462(0x3fc)][_0x531462(0x682)][_0x531462(0x357)],'to':Chat['to']}),Chat['to']=0x0,Chat['input'][_0x531462(0x682)][_0x531462(0x357)]='';}static[_0x4487d4(0x81b)](_0x1a1cab=![]){const _0x1c1f4f=_0x4487d4;Chat[_0x1c1f4f(0x2a2)]['firstChild'][_0x1c1f4f(0x47a)]['length']&&(_0x1a1cab||Chat[_0x1c1f4f(0x2a2)][_0x1c1f4f(0x682)][_0x1c1f4f(0x682)][_0x1c1f4f(0x76d)]==Chat[_0x1c1f4f(0x2a2)][_0x1c1f4f(0x682)][_0x1c1f4f(0x682)][_0x1c1f4f(0xf8)])&&Chat['body']['firstChild'][_0x1c1f4f(0x682)][_0x1c1f4f(0x3cf)]({'block':_0x1c1f4f(0x264),'behavior':'smooth'});}}class HTTP{static async[_0x4487d4(0x74c)](_0x33c807,_0x59768c=''){const _0x532aec=_0x4487d4;let _0x455545=await fetch(_0x33c807);switch(_0x59768c){case _0x532aec(0x605):return await _0x455545[_0x532aec(0x605)]();break;case'arrayBuffer':return await _0x455545[_0x532aec(0x30f)]();break;default:return await _0x455545[_0x532aec(0x69d)]();break;}}}class PWGame{static [_0x4487d4(0x365)]=_0x4487d4(0x766);static [_0x4487d4(0x78f)]=_0x4487d4(0x51f);static [_0x4487d4(0x1bd)]=_0x4487d4(0x2eb);static [_0x4487d4(0x819)]=_0x4487d4(0x531);static [_0x4487d4(0x831)]=_0x4487d4(0x36a);static [_0x4487d4(0x840)]=_0x4487d4(0x4df);static ['gameServerHasConnection']=![];static [_0x4487d4(0x36b)]=![];static ['radminHasConnection']=![];static [_0x4487d4(0x15a)]=![];static ['gameConnectionTestIsActive']=![];static [_0x4487d4(0x20e)]=![];static ['isValidated']=![];static ['isUpdateFailed']=![];static [_0x4487d4(0x5ae)]=![];static [_0x4487d4(0x35c)]=0x3e8*0x3c*0x64;static [_0x4487d4(0xdc)]=_0x4487d4(0x2b7);static ['protocolServer'];static async[_0x4487d4(0x7cf)](){const _0x46bdb3=_0x4487d4;try{const _0x1ac800=NativeAPI[_0x46bdb3(0x17b)];PWGame[_0x46bdb3(0x1f5)]&&PWGame['protocolServer'][_0x46bdb3(0x776)](()=>{}),PWGame[_0x46bdb3(0x1f5)]=_0x1ac800['createServer']((_0x22d894,_0x5b7c2f)=>{const _0x541219=_0x46bdb3;_0x22d894[_0x541219(0x646)]===_0x541219(0x85d)&&_0x22d894[_0x541219(0x299)]===_0x541219(0x7c4)?(_0x5b7c2f[_0x541219(0x83a)](0xc8,{'Content-Type':'text/plain'}),_0x5b7c2f['end'](JSON['stringify']({'protocol':PWGame['currentPlayPwProtocol']}))):(_0x5b7c2f[_0x541219(0x83a)](0x194,{'Content-Type':'text/plain'}),_0x5b7c2f[_0x541219(0x264)]('Not\x20Found'));}),PWGame[_0x46bdb3(0x1f5)][_0x46bdb3(0x66d)](0x88a4,_0x46bdb3(0x49a),()=>{});}catch(_0x57a883){App[_0x46bdb3(0x498)](_0x57a883,0x7530);}}static[_0x4487d4(0x2ac)](_0x5c86b4){const _0x32a236=_0x4487d4;let _0x227083=PWGame[_0x32a236(0x36b)]?0x0:0x2;return Settings[_0x32a236(0x57f)][_0x32a236(0x810)]&&PWGame['radminHasConnection']&&(_0x227083=0x1),_0x32a236(0x5c7)+_0x5c86b4+'/'+PW_VERSION+'/'+_0x227083;}static async[_0x4487d4(0x337)](_0x2dd876,_0x3f41f5){const _0x290767=_0x4487d4;await PWGame['check'](),PWGame[_0x290767(0xdc)]=PWGame['GetPlayPwProtocol'](_0x2dd876),PWGame[_0x290767(0x7cf)]();if(NativeAPI[_0x290767(0x2de)]==_0x290767(0x386)){let _0xa3ec0a=await NativeAPI[_0x290767(0x53e)][_0x290767(0x140)](PWGame[_0x290767(0x1bd)]);_0xa3ec0a['on'](_0x290767(0x776),async _0x45c115=>{_0x3f41f5();});}else await NativeAPI[_0x290767(0x140)](PWGame[_0x290767(0x365)],PWGame[_0x290767(0x78f)],[_0x290767(0x2e3),PWGame[_0x290767(0xdc)]],_0x3f41f5);}static async[_0x4487d4(0x2e9)](_0x421a02,_0x96e2cb){const _0x4503ef=_0x4487d4;this[_0x4503ef(0x337)](_0x421a02,_0x96e2cb);}static async['check'](){const _0x1cf6b4=_0x4487d4;if(!NativeAPI[_0x1cf6b4(0x370)]){}await NativeAPI[_0x1cf6b4(0x59d)]['promises'][_0x1cf6b4(0x528)](PWGame[_0x1cf6b4(0x365)]);}static async[_0x4487d4(0x7fa)](){const _0x40c767=_0x4487d4;if(PWGame[_0x40c767(0x608)])throw'Не\x20удалось\x20обновить\x20игру!\x20Обратитесь\x20в\x20поддержку\x20PWClassic';if(PWGame[_0x40c767(0x5ae)])throw _0x40c767(0x1e0);if(!PWGame[_0x40c767(0x20e)]){}if(!PWGame[_0x40c767(0x70f)]){}}static ['gameServerIps']=[_0x4487d4(0x72b),'http://26.133.141.83:27302/api',_0x4487d4(0x1d6)];static [_0x4487d4(0x39c)]=0x0;static ['RADMIN_GAME_SERVER_IP']=0x1;static [_0x4487d4(0x6d8)]=0x2;static async[_0x4487d4(0x2f8)](_0x107174){const _0x3bfcf5=_0x4487d4,_0x2616f1={'method':_0x3bfcf5(0x7b2)};try{let _0x52b7a9=await fetch(_0x107174,{'method':'POST','body':JSON['stringify'](_0x2616f1),'headers':{'Content-type':_0x3bfcf5(0x244)}});return!![];}catch(_0x2b1664){}return![];}static async['testGameServerConnection'](){const _0xca73dd=_0x4487d4;if(PWGame[_0xca73dd(0x243)])return;for(let _0x388f7a of PWGame[_0xca73dd(0x3c7)]){if(PWGame[_0xca73dd(0x2f8)](_0x388f7a)){PWGame['gameServerHasConnection']=!![],setTimeout(_0x250f57=>{PWGame['gameServerHasConnection']=![];},PWGame[_0xca73dd(0x35c)]);break;}}if(!PWGame['gameServerHasConnection'])throw _0xca73dd(0x385);}}function _0x5ecf(_0x3dd9cb,_0x5afca9){const _0x47d4ab=_0x72fb();return _0x5ecf=function(_0x2466af,_0x19bc15){_0x2466af=_0x2466af-0xbc;let _0x13a015=_0x47d4ab[_0x2466af];return _0x13a015;},_0x5ecf(_0x3dd9cb,_0x5afca9);}class NativeAPI{static [_0x4487d4(0x370)]=![];static [_0x4487d4(0x2de)];static ['title'];static [_0x4487d4(0x4eb)]=![];static [_0x4487d4(0x416)];static [_0x4487d4(0x77c)]=null;static [_0x4487d4(0x5e5)]={'fileSystem':'fs','childProcess':_0x4487d4(0x42a),'os':'os','path':_0x4487d4(0x4b8),'crypto':_0x4487d4(0x383),'net':_0x4487d4(0x209),'http':_0x4487d4(0x17b)};static[_0x4487d4(0x4f1)](){const _0x4e6c9a=_0x4487d4;NativeAPI[_0x4e6c9a(0x83c)][_0x4e6c9a(0x658)]=0x500,NativeAPI[_0x4e6c9a(0x83c)][_0x4e6c9a(0x40c)]=0x2d0,NativeAPI['window']['setMinimumSize'](0x500,0x2d0),NativeAPI['window'][_0x4e6c9a(0x728)](!![]),NativeAPI[_0x4e6c9a(0x83c)][_0x4e6c9a(0x73c)]('center'),NativeAPI[_0x4e6c9a(0x83c)]['enterFullscreen']();}static['init'](){const _0x3a6889=_0x4487d4;try{if(!nw)return;}catch(_0x39cc29){return;}NativeAPI[_0x3a6889(0x370)]=!![],NativeAPI['window']=nw[_0x3a6889(0x3e6)][_0x3a6889(0x2da)](),NativeAPI[_0x3a6889(0x4f1)](),NativeAPI[_0x3a6889(0x276)]=nw[_0x3a6889(0x191)],NativeAPI['altEnterShortcut']=new nw[(_0x3a6889(0x4fa))]({'key':_0x3a6889(0x585),'active':()=>{const _0x10e346=_0x3a6889;Settings[_0x10e346(0x57f)]['fullscreen']=!Settings[_0x10e346(0x57f)][_0x10e346(0x836)],Settings[_0x10e346(0x526)]();}}),NativeAPI['app']['registerGlobalHotKey'](NativeAPI[_0x3a6889(0x2a9)]),NativeAPI['loadModules'](),NativeAPI[_0x3a6889(0x2de)]=NativeAPI['os'][_0x3a6889(0x2de)](),window['addEventListener'](_0x3a6889(0x498),_0x5ae1de=>NativeAPI[_0x3a6889(0x104)](_0x3a6889(0x4a7),_0x5ae1de['error'][_0x3a6889(0x21d)]())),window[_0x3a6889(0x4e9)](_0x3a6889(0x2cc),_0x3574=>NativeAPI[_0x3a6889(0x104)](_0x3a6889(0x4bc),_0x3574[_0x3a6889(0x266)][_0x3a6889(0x1a1)]));}static[_0x4487d4(0x2e4)](){const _0x15c27d=_0x4487d4;for(let _0x228ea3 in NativeAPI['modules']){NativeAPI[_0x228ea3]=require(NativeAPI[_0x15c27d(0x5e5)][_0x228ea3]);}}static async[_0x4487d4(0x140)](_0x570a9d,_0x4acd81,_0x49c47a,_0x1f5d2f,_0x522fcc=process[_0x4487d4(0x815)]()){return new Promise((_0x2dbd6e,_0x32d24a)=>{const _0x3e63d8=_0x5ecf;!NativeAPI[_0x3e63d8(0x370)]&&_0x32d24a();let _0x51a978=NativeAPI[_0x3e63d8(0x4b8)][_0x3e63d8(0x454)](_0x522fcc,_0x4acd81),_0x373534=NativeAPI[_0x3e63d8(0x4b8)]['join'](_0x522fcc,_0x570a9d);NativeAPI[_0x3e63d8(0x53e)][_0x3e63d8(0x770)](_0x373534,_0x49c47a,{'cwd':_0x51a978},(_0x552f04,_0x5e53cc,_0x4ad9d4)=>{_0x552f04&&_0x32d24a(_0x552f04),_0x2dbd6e(_0x5e53cc),_0x1f5d2f&&_0x1f5d2f();});});}static[_0x4487d4(0x5a5)](){const _0x1a6dd0=_0x4487d4;if(!NativeAPI['status'])return;NativeAPI[_0x1a6dd0(0x276)][_0x1a6dd0(0x347)](),NativeAPI['window'][_0x1a6dd0(0x5bf)]();}static['progress'](_0x233ca0=0x0){const _0xe24a89=_0x4487d4;if(!NativeAPI['status'])return;NativeAPI[_0xe24a89(0x83c)]['setProgressBar'](_0x233ca0);}static['attention'](){const _0x19c515=_0x4487d4;if(!NativeAPI['status'])return;NativeAPI['window'][_0x19c515(0x806)](),NativeAPI[_0x19c515(0x83c)][_0x19c515(0x779)](!![]);}static[_0x4487d4(0x4b7)](){const _0xf3836f=_0x4487d4;if(!NativeAPI[_0xf3836f(0x370)])return![];return NativeAPI[_0xf3836f(0x276)][_0xf3836f(0x7a0)](),!![];}static['testHashes'](){const _0xf38b42=_0x4487d4;if(NativeAPI[_0xf38b42(0x2de)]=='linux'){PWGame[_0xf38b42(0x70f)]=!![];return;}NativeAPI[_0xf38b42(0x59d)][_0xf38b42(0x1d1)][_0xf38b42(0x528)](PWGame[_0xf38b42(0x840)]);let _0xd1453a=NativeAPI[_0xf38b42(0x53e)]['spawn'](PWGame[_0xf38b42(0x840)]);_0xd1453a['on']('close',_0x41603d=>{const _0x41c689=_0xf38b42;_0x41603d==0x0?(PWGame[_0x41c689(0x70f)]=!![],App['notify']('Проверка\x20обновлений\x20и\x20файлов\x20игры\x20завершена')):(PWGame[_0x41c689(0x5ae)]=!![],App[_0x41c689(0x498)]('Проверка\x20файлов\x20не\x20выполнена:\x20'+_0x41603d));});}static['updateLinux'](_0x5d8608,_0xfe867c){const _0x112cbe=_0x4487d4;let _0x40c478=_0x5d8608[_0x112cbe(0x21d)]()[_0x112cbe(0x477)]('\x0a');for(let _0x56e9f9 of _0x40c478){if(_0x56e9f9==_0x112cbe(0x66e)){this[_0x112cbe(0x15e)]=_0x112cbe(0x594),this[_0x112cbe(0x416)]=_0x112cbe(0x5cd);continue;}if(_0x56e9f9==_0x112cbe(0x536)){this[_0x112cbe(0x15e)]='Обновление\x20лаунчера',this[_0x112cbe(0x416)]=_0x112cbe(0x595);continue;}_0x56e9f9[_0x112cbe(0x436)]('*\x20main')&&(this['lastBranchV']==null?this[_0x112cbe(0x77c)]=_0x56e9f9:this[_0x112cbe(0x4eb)]=this[_0x112cbe(0x77c)]!=_0x56e9f9);if(_0x56e9f9[_0x112cbe(0x436)]('Receiving\x20objects:')){let _0x362adc=parseInt(_0x56e9f9[_0x112cbe(0x3dd)](0x13,_0x56e9f9[_0x112cbe(0x792)]('%')));_0xfe867c({'update':!![],'title':this[_0x112cbe(0x15e)],'total':_0x362adc}),NativeAPI[_0x112cbe(0x110)](_0x362adc/0x64);}}}static[_0x4487d4(0x225)](_0x155bcd,_0x46ef56){const _0x489271=_0x4487d4;let _0x14af0d=_0x155bcd['toString']()[_0x489271(0x3dd)](0x1)['split']('#');for(let _0x2c75da of _0x14af0d){let _0x34a8bb=JSON[_0x489271(0x1f1)](_0x2c75da);if(_0x34a8bb['type']){if(_0x34a8bb['type']==_0x489271(0x63c))this[_0x489271(0x416)]==_0x489271(0x595)&&(this[_0x489271(0x4eb)]=!![]),_0x46ef56({'update':!![],'title':this[_0x489271(0x15e)],'total':Number(_0x34a8bb[_0x489271(0x43a)])}),NativeAPI[_0x489271(0x110)](Number(_0x34a8bb['data'])/0x64);else{if(_0x34a8bb['type']==_0x489271(0x62d))switch(_0x34a8bb['data']){case _0x489271(0x5cd):this[_0x489271(0x15e)]=_0x489271(0x594),this['curLabel']=_0x34a8bb['data'];break;case _0x489271(0x595):this['title']=_0x489271(0x61d),this[_0x489271(0x416)]=_0x34a8bb[_0x489271(0x43a)];break;case _0x489271(0x278):this[_0x489271(0x15e)]='Загрузка\x20игровых\x20архивов\x201/8',this[_0x489271(0x416)]=_0x34a8bb[_0x489271(0x43a)];break;case _0x489271(0x144):this['title']=_0x489271(0x1e4),this[_0x489271(0x416)]=_0x34a8bb[_0x489271(0x43a)];break;case _0x489271(0x296):this['title']='Загрузка\x20игровых\x20архивов\x203/8',this[_0x489271(0x416)]=_0x34a8bb[_0x489271(0x43a)];break;case _0x489271(0x45f):this[_0x489271(0x15e)]=_0x489271(0xdf),this[_0x489271(0x416)]=_0x34a8bb[_0x489271(0x43a)];break;case _0x489271(0x1f6):this['title']='Загрузка\x20игровых\x20архивов\x205/8',this[_0x489271(0x416)]=_0x34a8bb[_0x489271(0x43a)];break;case _0x489271(0x7bb):this[_0x489271(0x15e)]=_0x489271(0x687),this[_0x489271(0x416)]=_0x34a8bb[_0x489271(0x43a)];break;case _0x489271(0x80a):this[_0x489271(0x15e)]=_0x489271(0x5ef),this['curLabel']=_0x34a8bb[_0x489271(0x43a)];break;case _0x489271(0x3cc):this[_0x489271(0x15e)]=_0x489271(0x66a),this['curLabel']=_0x34a8bb[_0x489271(0x43a)];break;default:this[_0x489271(0x15e)]=_0x489271(0x68b),this[_0x489271(0x416)]=_0x34a8bb['data'];break;}}}}}static async[_0x4487d4(0x164)](_0x47d56e){const _0x5a326c=_0x4487d4;if(!NativeAPI['status'])return![];const _0x257eff=NativeAPI[_0x5a326c(0x2de)]==_0x5a326c(0x386),_0x3a159d=_0x257eff?PWGame[_0x5a326c(0x831)]:PWGame[_0x5a326c(0x819)];await NativeAPI[_0x5a326c(0x59d)][_0x5a326c(0x1d1)][_0x5a326c(0x528)](_0x3a159d);let _0x21928d=NativeAPI[_0x5a326c(0x53e)][_0x5a326c(0x65c)](_0x3a159d);App[_0x5a326c(0x603)](_0x5a326c(0x524)),_0x21928d[_0x5a326c(0x20a)]['on'](_0x5a326c(0x43a),_0x3d68f0=>{const _0x2dd1a9=_0x5a326c;_0x257eff?this[_0x2dd1a9(0x2ff)](_0x3d68f0,_0x47d56e):this[_0x2dd1a9(0x225)](_0x3d68f0,_0x47d56e);}),_0x21928d['on'](_0x5a326c(0x776),async _0x40d92c=>{const _0x194f25=_0x5a326c;_0x47d56e({'update':![],'title':'','total':0x0}),NativeAPI[_0x194f25(0x110)](-0x1);if(_0x40d92c==0x0||_0x40d92c==null){PWGame[_0x194f25(0x20e)]=!![];try{NativeAPI[_0x194f25(0x79d)]();}catch(_0x727de7){App[_0x194f25(0x498)](_0x194f25(0x4ad)+_0x727de7);}}else PWGame[_0x194f25(0x608)]=!![],App['error']('Ошибка\x20обновления:\x20'+_0x40d92c);this[_0x194f25(0x4eb)]&&NativeAPI['reset']();});}static[_0x4487d4(0x865)](){const _0x5966f6=_0x4487d4;if(!NativeAPI[_0x5966f6(0x370)])return![];let _0x2a6478='',_0x1138d1=NativeAPI['os'][_0x5966f6(0x77d)]();try{let _0x532774=NativeAPI['os'][_0x5966f6(0x249)]();_0x2a6478=_0x532774[_0x5966f6(0x7b6)];}catch(_0x11155c){}return{'hostname':NativeAPI['os'][_0x5966f6(0x731)](),'core':{'model':_0x1138d1[_0x5966f6(0x2ed)]?_0x1138d1[0x0][_0x5966f6(0x5be)]:'','total':_0x1138d1[_0x5966f6(0x2ed)]},'memory':Math[_0x5966f6(0x4f2)](NativeAPI['os'][_0x5966f6(0x4f7)]()/0x400/0x400),'version':NativeAPI['os'][_0x5966f6(0x5eb)](),'release':NativeAPI['os']['release'](),'username':_0x2a6478};}static async[_0x4487d4(0x6c6)](_0x2be8c1,_0x306479=0x50,_0xf219a1=0xbb8){return new Promise(_0x149b49=>{const _0x13a5c0=_0x5ecf,_0x17478f=performance[_0x13a5c0(0x700)](),_0x5118e7=NativeAPI[_0x13a5c0(0x209)]['createConnection'](_0x306479,_0x2be8c1);_0x5118e7[_0x13a5c0(0x550)](_0xf219a1),_0x5118e7['on'](_0x13a5c0(0x68d),()=>{const _0x2c29dd=_0x13a5c0,_0x1de569=performance['now']();_0x5118e7[_0x2c29dd(0x264)](),_0x149b49(_0x1de569-_0x17478f);});function _0x56e54e(){const _0x33717c=_0x13a5c0;_0x5118e7[_0x33717c(0x130)](),_0x149b49(-0x1);}_0x5118e7['on']('timeout',_0x56e54e),_0x5118e7['on'](_0x13a5c0(0x498),_0x56e54e);});}static async[_0x4487d4(0x104)](_0x5ab942,_0x27df10,_0x5bc716=![]){const _0x1912fc=_0x4487d4;_0x5bc716?await NativeAPI['fileSystem'][_0x1912fc(0x1d1)][_0x1912fc(0x82f)](_0x5ab942,_0x27df10):await NativeAPI[_0x1912fc(0x59d)][_0x1912fc(0x1d1)][_0x1912fc(0x7e3)](_0x5ab942,_0x27df10);}static[_0x4487d4(0x491)](_0x41bc2b){const _0x36c3c5=_0x4487d4;if(NativeAPI[_0x36c3c5(0x370)]){_0x41bc2b['preventDefault']();let _0x990388=_0x41bc2b[_0x36c3c5(0x47b)][_0x36c3c5(0x56d)];_0x41bc2b[_0x36c3c5(0x2c0)][_0x36c3c5(0x56d)]&&(_0x990388=_0x41bc2b['currentTarget'][_0x36c3c5(0x56d)]),App[_0x36c3c5(0x539)](_0x990388);}}}class CastleBuildingsEvents{static[_0x4487d4(0x24b)](){const _0x1e35dd=_0x4487d4;Window[_0x1e35dd(0x19c)](_0x1e35dd(0x18e),_0x1e35dd(0x40a));}static[_0x4487d4(0xfe)](){const _0x304190=_0x4487d4;Window[_0x304190(0x19c)](_0x304190(0x18e),_0x304190(0x431));}}class Castle{static [_0x4487d4(0x297)];static ['gl'];static [_0x4487d4(0x469)]=0x0;static ['AUDIO_SOUNDS']=0x1;static[_0x4487d4(0x688)](_0x587fe8){const _0x4e62af=_0x4487d4,_0x915639=Settings[_0x4e62af(0x57f)][_0x4e62af(0x6fa)]??0x1,_0x3cdeed=Settings[_0x4e62af(0x57f)]['musicVolume']??0.5,_0x597309=Settings[_0x4e62af(0x57f)][_0x4e62af(0x2b1)]??0.3;if(_0x587fe8==Castle[_0x4e62af(0x469)])return _0x915639*_0x3cdeed;if(_0x587fe8==Castle[_0x4e62af(0x5ee)])return _0x915639*_0x597309;return 0x1;}static ['testSoundIsPlaying']=![];static [_0x4487d4(0x4aa)]=0x0;static [_0x4487d4(0x57d)]=0x1;static [_0x4487d4(0x4e4)]=0x2;static ['render']=[!![],!![],!![]];static [_0x4487d4(0x263)]=0x0;static [_0x4487d4(0x376)]=0x1;static [_0x4487d4(0x678)]=0x2;static [_0x4487d4(0x101)]=[!![],!![],!![]];static [_0x4487d4(0x34b)];static [_0x4487d4(0x250)];static [_0x4487d4(0x5f0)];static [_0x4487d4(0x5b4)];static [_0x4487d4(0x21e)];static ['viewProjMatr'];static [_0x4487d4(0x569)]=new Float32Array(0x4);static ['cursorDeltaBasis']=new Float32Array(0x4);static ['cursorBasis2']=new Float32Array(0x4);static ['viewProjInv']=new Float32Array(0x10);static [_0x4487d4(0x7e4)];static [_0x4487d4(0x48d)]=![];static [_0x4487d4(0x63e)]=![];static [_0x4487d4(0x782)];static ['depthTexture'];static [_0x4487d4(0x1e6)];static [_0x4487d4(0x68f)];static [_0x4487d4(0x3e9)]=0x2000;static [_0x4487d4(0xc5)]=0xa;static [_0x4487d4(0x1c1)]=0x1194;static [_0x4487d4(0x50a)];static [_0x4487d4(0x6ec)];static [_0x4487d4(0x71d)]=0.1;static [_0x4487d4(0x828)]=0x4b0;static [_0x4487d4(0x261)]=[0x430,0x550];static [_0x4487d4(0x3dc)];static [_0x4487d4(0x61c)]=[0x0,0x0];static ['gridCursorPosX'];static [_0x4487d4(0x741)];static ['minFov']=0x23;static [_0x4487d4(0x421)]=0x37;static [_0x4487d4(0x13c)]=[0x37,0x2d,0x23,0x19,0x37,0x2d,0x23];static ['fixedRotationTiltValues']=[0x0,0x0,0x0,0x0,-0.8,-0.9,-0.8];static [_0x4487d4(0x142)]=[0x0,0x0,0x0,0x0,0x15e,0x15e,0x15e];static [_0x4487d4(0x21f)]=0x1;static [_0x4487d4(0x7cd)]=0x1;static ['targetFixedValue']=0x1;static [_0x4487d4(0x530)]=0x4;static [_0x4487d4(0x486)]=Castle['fixedFovValues'][Math[_0x4487d4(0x6d6)](Castle[_0x4487d4(0x7cd)])];static [_0x4487d4(0x2e5)]=Castle[_0x4487d4(0x73f)][Math[_0x4487d4(0x6d6)](Castle[_0x4487d4(0x7cd)])];static [_0x4487d4(0x4c5)]=Castle[_0x4487d4(0x142)][Math['floor'](Castle[_0x4487d4(0x7cd)])];static [_0x4487d4(0x77e)]=![];static [_0x4487d4(0x71c)]=![];static [_0x4487d4(0x5f8)]=[0x0,0x0];static ['camDeltaPos']=[0x0,0x0];static [_0x4487d4(0x2a1)]=[[-0x32,0xa],[-0x32,0xa]];static [_0x4487d4(0x36c)]=Date[_0x4487d4(0x700)]();static [_0x4487d4(0x6f9)]=Date[_0x4487d4(0x700)]();static [_0x4487d4(0x60a)]=Date[_0x4487d4(0x700)]();static [_0x4487d4(0x1d8)]=0x0;static [_0x4487d4(0x739)];static [_0x4487d4(0x610)];static ['currentSceneName'];static [_0x4487d4(0x7ba)]=[];static [_0x4487d4(0x55f)]=![];static [_0x4487d4(0x1b4)]=[_0x4487d4(0x355),'crystal_farm',_0x4487d4(0x577),_0x4487d4(0x56e),_0x4487d4(0x356),'silver_farm',_0x4487d4(0xfe),'clan_house',_0x4487d4(0x3a6),_0x4487d4(0x175),'library',_0x4487d4(0x3b3),'agility','cunning',_0x4487d4(0x2d7),_0x4487d4(0x622),_0x4487d4(0x1e2),'tavern',_0x4487d4(0x300),_0x4487d4(0x5f7),_0x4487d4(0x5fb),_0x4487d4(0x683),_0x4487d4(0x267),_0x4487d4(0x63a),_0x4487d4(0x671),_0x4487d4(0x7b8),_0x4487d4(0x5f6),_0x4487d4(0x309),'deco_7',_0x4487d4(0x31b),'deco_9','deco_10',_0x4487d4(0x157),_0x4487d4(0x795),_0x4487d4(0x458),'deco_14','deco_15',_0x4487d4(0x74b),_0x4487d4(0x747),'deco_18',_0x4487d4(0x4e7),_0x4487d4(0x6f8),_0x4487d4(0x28c),'deco_22',_0x4487d4(0x85b),_0x4487d4(0x697),_0x4487d4(0x830),_0x4487d4(0x2f0),_0x4487d4(0x4a3),_0x4487d4(0x6da),_0x4487d4(0xbd),'deco_30',_0x4487d4(0x4ef),_0x4487d4(0x22c)];static [_0x4487d4(0x738)]=[{'id':0xa,'rot':0x0,'posX':0x14,'posY':0x12},{'id':0x6,'rot':0x0,'posX':0xa,'posY':0x1b}];static [_0x4487d4(0x480)]=[];static [_0x4487d4(0x3b8)]=new Uint8Array(0x40*0x40*0x4)['fill'](0x0);static ['allowedToBuildGrid']=Array[_0x4487d4(0x5d5)](Array(0x2f),()=>new Array(0x26));static ['phantomBuildingSize']=0x0;static ['phantomBuilding']={'id':0x0,'rot':0x0,'posX':0x0,'posY':0x3e8};static [_0x4487d4(0x7ff)]=[0x28,0x0,0x0,0x2];static [_0x4487d4(0x39e)]=[0x0,0x28,0x0,0x2];static [_0x4487d4(0x377)]=[0x28,0x28,0x0,0x2];static [_0x4487d4(0x492)]=![];static [_0x4487d4(0x15b)]=[['',''],['Жемчужная\x20ферма',_0x4487d4(0x49d)],[_0x4487d4(0x61a),_0x4487d4(0x76b)],[_0x4487d4(0x183),_0x4487d4(0x76f)],[_0x4487d4(0x631),_0x4487d4(0x552)],['Ткацкая\x20мастерская',_0x4487d4(0x679)],['Сад\x20талантов',_0x4487d4(0x6f3)],[_0x4487d4(0x1d9),_0x4487d4(0x1d9)],['Ярмарка','Ярмарка'],['Особняк',_0x4487d4(0x379)],['Библиотека',_0x4487d4(0x478)],[_0x4487d4(0x85e),'Склад'],['Арена',_0x4487d4(0x24c)],['Шпиль','Секретная\x20служба'],[_0x4487d4(0x305),'Бастион'],[_0x4487d4(0x632),_0x4487d4(0x21c)],[_0x4487d4(0x259),_0x4487d4(0x771)],[_0x4487d4(0x438),_0x4487d4(0x352)],['Кошкин\x20дом',_0x4487d4(0x64b)],['Домик\x20щенка',_0x4487d4(0x324)],[_0x4487d4(0x35e),_0x4487d4(0x35e)],[_0x4487d4(0x2b5),_0x4487d4(0x4fb)],[_0x4487d4(0x369),_0x4487d4(0x374)],[_0x4487d4(0x43d),_0x4487d4(0x43d)],['Статуя',_0x4487d4(0x284)],['Барабаны','Подзорная\x20труба'],[_0x4487d4(0xc3),'Глобус'],[_0x4487d4(0x359),_0x4487d4(0x359)],[_0x4487d4(0x318),_0x4487d4(0x318)],[_0x4487d4(0x247),_0x4487d4(0x3ae)],[_0x4487d4(0x57b),_0x4487d4(0x53f)],['Багряное\x20соцветие',_0x4487d4(0x53f)],['Пурпурное\x20соцветие',_0x4487d4(0x53f)],['Живая\x20изгородь',_0x4487d4(0x6d2)],['Живая\x20изгородь',_0x4487d4(0x65f)],[_0x4487d4(0x3d8),'Цветущая\x20стена'],[_0x4487d4(0x754),_0x4487d4(0x65f)],[_0x4487d4(0x239),_0x4487d4(0x239)],[_0x4487d4(0x239),'Клумба'],['Клумба','Клумба'],[_0x4487d4(0x239),_0x4487d4(0x239)],[_0x4487d4(0x162),_0x4487d4(0xd2)],[_0x4487d4(0x7f1),'Круглое\x20дерево'],['Бонсай',_0x4487d4(0xd2)],['Цветущий\x20бонсай',_0x4487d4(0xd2)],[_0x4487d4(0x51e),_0x4487d4(0x7f7)],['Миниатюрный\x20сад','Фигура\x20жирафа'],[_0x4487d4(0x25b),_0x4487d4(0x163)],[_0x4487d4(0x3e7),'Большое\x20дерево'],[_0x4487d4(0x3e2),_0x4487d4(0x289)],[_0x4487d4(0x6f5),'Фигура\x20единорога'],[_0x4487d4(0x78d),_0x4487d4(0x5f4)],[_0x4487d4(0x1e5),_0x4487d4(0x2bb)],[_0x4487d4(0x24f),'Топиарный\x20столб']];static[_0x4487d4(0x5b2)](_0x4e12ec,_0x4fa255){const _0x4d9153=_0x4487d4;Castle['music'][_0x4e12ec]=_0x4fa255?_0x4fa255:!Castle[_0x4d9153(0x101)][_0x4e12ec],Castle['music'][_0x4d9153(0x618)](![])?Sound[_0x4d9153(0x6eb)](_0x4d9153(0x5a7)):(Sound[_0x4d9153(0x397)](_0x4d9153(0x5a7)),Sound[_0x4d9153(0x335)](_0x4d9153(0x5a7),Castle[_0x4d9153(0x688)](Castle['AUDIO_MUSIC'])));}static[_0x4487d4(0x500)](_0x3cf3f7,_0x45e90b){const _0x4957ed=_0x4487d4;Castle[_0x4957ed(0x5d1)][_0x3cf3f7]=_0x45e90b?_0x45e90b:!Castle[_0x4957ed(0x5d1)][_0x3cf3f7];}static['zoom'](_0x223924){const _0x272e19=_0x4487d4;if(Math[_0x272e19(0x344)](Castle['currentFixedValue']-Castle['targetFixedValue'])>0.04)return;Castle['currentFixedValue']=Castle[_0x272e19(0x109)],Castle[_0x272e19(0x21f)]=Castle['currentFixedValue'],Castle[_0x272e19(0x109)]=Castle[_0x272e19(0x7cd)]+(_0x223924[_0x272e19(0x36f)]>0x0?-0x1:+0x1),Castle[_0x272e19(0x109)]=Castle[_0x272e19(0x640)](Castle['targetFixedValue'],0x0,Castle[_0x272e19(0x13c)][_0x272e19(0x2ed)]-0x1);}static[_0x4487d4(0x3a9)](_0x57ca5b){const _0x16eb62=_0x4487d4;Castle['phantomBuilding']['id']==0x0&&(Castle[_0x16eb62(0x77e)]=!![]);}static['stopMove'](_0xca4c16){const _0x3040e9=_0x4487d4;Castle[_0x3040e9(0x77e)]=![],setTimeout(_0x4578f2=>{const _0x239d1a=_0x3040e9;Castle[_0x239d1a(0x71c)]=![];},0x64);}static['moveMouse'](_0x1a866c){const _0x1b9991=_0x4487d4;Castle[_0x1b9991(0x77e)]?(Castle[_0x1b9991(0x5f8)][0x0]=_0x1a866c[_0x1b9991(0x1c3)]*0x2,Castle[_0x1b9991(0x5f8)][0x1]=_0x1a866c[_0x1b9991(0x4b1)]*0x2,Math[_0x1b9991(0x344)](_0x1a866c[_0x1b9991(0x1c3)]+_0x1a866c['movementY'])>0.1&&(Castle[_0x1b9991(0x71c)]=!![])):(Castle[_0x1b9991(0x5f8)][0x0]=0x0,Castle[_0x1b9991(0x5f8)][0x1]=0x0);Castle[_0x1b9991(0x61c)][0x0]=_0x1a866c[_0x1b9991(0x832)],Castle[_0x1b9991(0x61c)][0x1]=_0x1a866c[_0x1b9991(0x2c8)];let _0xab188c=[Castle['gridTranslation'][0x0],Castle[_0x1b9991(0x3dc)][0x1]];if(Castle['phantomBuilding']['id']>0x0&&Castle[_0x1b9991(0x2c3)]&&Castle[_0x1b9991(0x2c3)]){const _0x40ad8f=Castle[_0x1b9991(0x172)][Castle['buildings'][Castle[_0x1b9991(0x511)]['id']]]['size'][0x0];Castle[_0x1b9991(0x511)]['posX']=Math[_0x1b9991(0x6d6)]((_0xab188c[0x0]-Castle[_0x1b9991(0x2c3)])/0x7-_0x40ad8f/0x2),Castle['phantomBuilding'][_0x1b9991(0x560)]=Math[_0x1b9991(0x6d6)]((_0xab188c[0x1]-Castle[_0x1b9991(0x741)])/0x7-_0x40ad8f/0x2)+0x11,Castle[_0x1b9991(0x6c0)]=_0x40ad8f,Castle[_0x1b9991(0x492)]=Castle[_0x1b9991(0x1af)](Castle[_0x1b9991(0x511)][_0x1b9991(0x556)],Castle[_0x1b9991(0x511)]['posY'],_0x40ad8f);}}static[_0x4487d4(0x1af)](_0x1c2826,_0x182494,_0x398847){const _0xbf9acb=_0x4487d4;Castle[_0xbf9acb(0x5c8)]();const _0x46645e=_0x1c2826+_0x398847-0x1,_0x689ce6=_0x182494+_0x398847-0x1;if(_0x1c2826<0x0||_0x182494<0x0)return![];if(_0x46645e>0x2d||_0x689ce6>0x25)return![];if(_0x1c2826<0x1f&&_0x182494<0x3)return![];if(_0x1c2826<0x17&&_0x182494<0x8)return![];if(_0x1c2826<0x16&&_0x182494<0xe)return![];if(_0x1c2826<0x12&&_0x182494<0x11)return![];if(_0x46645e>0x9&&_0x1c2826<0x12&&_0x182494==0x11)return![];if(_0x46645e>0x1c||_0x689ce6>0x14){if(0x2d-_0x689ce6+0x25-_0x46645e<0x11)return![];}if(_0x46645e>0x2b||_0x182494<0x2){if(0x2d-_0x46645e+_0x182494<0x2)return![];}if(_0x1c2826<0x2||_0x689ce6>0x23){if(_0x1c2826+0x25-_0x689ce6<0x2)return![];}for(let _0x428a26=0x0;_0x428a26<_0x398847;++_0x428a26){for(let _0x3e4edb=0x0;_0x3e4edb<_0x398847;++_0x3e4edb){if(Castle['allowedToBuildGrid'][_0x1c2826+_0x428a26][_0x182494+_0x3e4edb])return![];}}return!![];}static[_0x4487d4(0x5c8)](){const _0x36fc30=_0x4487d4;let _0x4ec7de=Castle[_0x36fc30(0x3b8)];for(let _0x161850=0x0;_0x161850<_0x4ec7de[_0x36fc30(0x2ed)]/0x4;++_0x161850){let _0xd86eac=_0x161850%0x40,_0x3f3990=Math[_0x36fc30(0x6d6)](_0x161850/0x40);_0x4ec7de[_0x161850*0x4]=0x0,_0x4ec7de[_0x161850*0x4+0x1]=0x0,_0x4ec7de[_0x161850*0x4+0x2]=0x0,_0x4ec7de[_0x161850*0x4+0x3]=0x0,_0xd86eac<0x2f&&_0x3f3990<0x26&&(Castle[_0x36fc30(0x511)]['id']&&_0xd86eac>=Castle['phantomBuilding'][_0x36fc30(0x556)]&&_0x3f3990>=Castle[_0x36fc30(0x511)][_0x36fc30(0x560)]&&_0xd86eac<Castle[_0x36fc30(0x511)][_0x36fc30(0x556)]+Castle[_0x36fc30(0x6c0)]&&_0x3f3990<Castle[_0x36fc30(0x511)]['posY']+Castle[_0x36fc30(0x6c0)]&&(_0x4ec7de[_0x161850*0x4]=Castle[_0x36fc30(0x492)]?0x0:0xff,_0x4ec7de[_0x161850*0x4+0x1]=Castle['phantomBuildingIsAllowedToBuild']?0xff:0x6a,_0x4ec7de[_0x161850*0x4+0x2]=0x0,_0x4ec7de[_0x161850*0x4+0x3]=0xff),Castle['allowedToBuildGrid'][_0xd86eac][_0x3f3990]&&(_0x4ec7de[_0x161850*0x4]=0xff,_0x4ec7de[_0x161850*0x4+0x1]=0x0,_0x4ec7de[_0x161850*0x4+0x2]=0x0,_0x4ec7de[_0x161850*0x4+0x3]=0xff));}}static[_0x4487d4(0x6a2)](){const _0x2e29ca=_0x4487d4;Castle[_0x2e29ca(0x181)]=Array['from'](Array(0x2f),()=>new Array(0x26));for(const _0x5b51cc of Castle[_0x2e29ca(0x480)]){const _0x250024=Castle[_0x2e29ca(0x172)][Castle[_0x2e29ca(0x1b4)][_0x5b51cc['id']]][_0x2e29ca(0x1d4)][0x0];for(let _0xc8c408=0x0;_0xc8c408<_0x250024;++_0xc8c408){for(let _0x5033fa=0x0;_0x5033fa<_0x250024;++_0x5033fa){Castle[_0x2e29ca(0x181)][_0x5b51cc[_0x2e29ca(0x556)]+_0xc8c408][_0x5b51cc[_0x2e29ca(0x560)]+_0x5033fa]=0x1;}}}}static[_0x4487d4(0x3a1)](){const _0x4dc4d2=_0x4487d4;Castle['phantomBuildingIsAllowedToBuild']&&(Castle[_0x4dc4d2(0x480)][_0x4dc4d2(0x2db)](Object[_0x4dc4d2(0x58e)]({},Castle[_0x4dc4d2(0x511)])),Castle[_0x4dc4d2(0x63e)]=![],Castle['WriteBuildings']());}static['findAndRotateBuilding'](_0x57ad7a,_0x3b32bb){const _0x52d059=_0x4487d4;for(let _0x3cf699=0x0;_0x3cf699<Castle[_0x52d059(0x480)]['length'];++_0x3cf699){let _0x1c4f72=Castle['placedBuildings'][_0x3cf699];if(_0x1c4f72[_0x52d059(0x556)]==_0x57ad7a&&_0x1c4f72[_0x52d059(0x560)]==_0x3b32bb){_0x1c4f72[_0x52d059(0x333)]=(_0x1c4f72[_0x52d059(0x333)]+0x1)%0x4,Castle[_0x52d059(0x63e)]=![],Castle['WriteBuildings']();return;}}}static[_0x4487d4(0x215)](_0x5e70b7,_0x1e5c89){const _0x2662a1=_0x4487d4;for(let _0x41d7b2=0x0;_0x41d7b2<Castle[_0x2662a1(0x480)][_0x2662a1(0x2ed)];++_0x41d7b2){let _0x4c3498=Castle[_0x2662a1(0x480)][_0x41d7b2];if(_0x4c3498['posX']==_0x5e70b7&&_0x4c3498[_0x2662a1(0x560)]==_0x1e5c89){Castle[_0x2662a1(0x480)]['splice'](_0x41d7b2,0x1),Castle[_0x2662a1(0x63e)]=![],Castle[_0x2662a1(0x5cb)]();return;}}}static[_0x4487d4(0x4d3)](_0x2c5c95){const _0x4c3362=_0x4487d4,_0x499be4=NativeAPI['os'][_0x4c3362(0x342)]();let _0x23bef2=NativeAPI[_0x4c3362(0x4b8)][_0x4c3362(0x454)](_0x499be4,_0x4c3362(0x127));return NativeAPI['path'][_0x4c3362(0x454)](_0x23bef2,_0x2c5c95);}static async[_0x4487d4(0x40e)](){const _0x54bd77=_0x4487d4,_0x2a309d=NativeAPI['os']['homedir']();let _0x294719=NativeAPI[_0x54bd77(0x4b8)][_0x54bd77(0x454)](_0x2a309d,_0x54bd77(0x127)),_0x445f84=Castle[_0x54bd77(0x4d3)]('castle.cfg');try{return await NativeAPI[_0x54bd77(0x59d)][_0x54bd77(0x1d1)][_0x54bd77(0x5ac)](_0x294719,{'recursive':!![]}),await NativeAPI[_0x54bd77(0x59d)]['promises']['access'](_0x445f84),!![];}catch(_0x1de7e2){return await Castle[_0x54bd77(0x648)](),![];}}static async[_0x4487d4(0x648)](){const _0x10d476=_0x4487d4;Castle['placedBuildings']=JSON['parse'](JSON['stringify'](Castle['defaultPlacedBuildings'])),await Castle[_0x10d476(0x5cb)]();}static async['ReadBuildings'](){const _0x3a3bac=_0x4487d4;if(!NativeAPI[_0x3a3bac(0x370)]){Castle[_0x3a3bac(0x480)]=Castle[_0x3a3bac(0x738)],Castle['UpdateAllowedToBuildGrid']();return;}let _0xc6ea61=Castle[_0x3a3bac(0x4d3)](_0x3a3bac(0x32b));try{if(await Castle[_0x3a3bac(0x40e)]()){const _0x1314f4=await NativeAPI[_0x3a3bac(0x59d)]['promises'][_0x3a3bac(0x856)](_0xc6ea61,_0x3a3bac(0x60f));Castle[_0x3a3bac(0x480)]=JSON[_0x3a3bac(0x1f1)](_0x1314f4);}}catch(_0x25cce3){Castle[_0x3a3bac(0x480)]=Castle['defaultPlacedBuildings'];}Castle[_0x3a3bac(0x6a2)]();}static async['WriteBuildings'](){const _0x2e5319=_0x4487d4;if(!NativeAPI['status']){Castle[_0x2e5319(0x6a2)]();return;}let _0x1f0476=Castle[_0x2e5319(0x4d3)](_0x2e5319(0x32b));try{await NativeAPI[_0x2e5319(0x59d)][_0x2e5319(0x1d1)][_0x2e5319(0x7e3)](_0x1f0476,JSON[_0x2e5319(0x7fd)](Castle['placedBuildings'],null,0x2),'utf-8');}catch(_0x307cc3){App[_0x2e5319(0x498)](_0x307cc3);}Castle['UpdateAllowedToBuildGrid']();}static async[_0x4487d4(0x45a)](){const _0x350ad3=_0x4487d4;await Castle[_0x350ad3(0x17f)](),Castle[_0x350ad3(0x48d)]=!![],window[_0x350ad3(0x4e9)](_0x350ad3(0x380),()=>{const _0x2fd02c=_0x350ad3;Castle[_0x2fd02c(0x5cb)]();});}static async['initDemo'](_0x89321,_0xe862ae){const _0x325299=_0x4487d4;Castle[_0x325299(0x773)]=_0x89321,window[_0x325299(0x4e9)](_0x325299(0x26a),function(_0xd1e13a){const _0x30ca5a=_0x325299;_0xe862ae[_0x30ca5a(0x658)]=document[_0x30ca5a(0x2a2)]['offsetWidth'],_0xe862ae['height']=document[_0x30ca5a(0x2a2)]['offsetHeight'],Castle['canvasWidth']=_0xe862ae['width'],Castle[_0x30ca5a(0x6ec)]=_0xe862ae[_0x30ca5a(0x40c)],Castle[_0x30ca5a(0x61c)]=[Castle[_0x30ca5a(0x50a)],Castle[_0x30ca5a(0x6ec)]];},!![]),_0xe862ae[_0x325299(0x4e9)]('click',function(_0x1bd902){const _0x3f8eb9=_0x325299;Castle[_0x3f8eb9(0x511)]['id']>0x0?Castle[_0x3f8eb9(0x3a1)]():Castle['outlinedBuilding']&&!Castle[_0x3f8eb9(0x71c)]&&(Castle[_0x3f8eb9(0x55f)]?Castle['findAndRotateBuilding'](Castle[_0x3f8eb9(0x51a)][_0x3f8eb9(0x135)][0x0],Castle[_0x3f8eb9(0x51a)]['position'][0x1]):Castle['outlinedBuilding'][_0x3f8eb9(0x20f)]in CastleBuildingsEvents&&CastleBuildingsEvents[Castle[_0x3f8eb9(0x51a)][_0x3f8eb9(0x20f)]]());}),Castle[_0x325299(0x610)]=_0xe862ae,_0xe862ae[_0x325299(0x4bb)]=Castle[_0x325299(0x67d)],_0xe862ae[_0x325299(0x658)]=document[_0x325299(0x2a2)][_0x325299(0x25c)],_0xe862ae[_0x325299(0x40c)]=document[_0x325299(0x2a2)]['offsetHeight'],_0xe862ae[_0x325299(0x4f9)]=Castle[_0x325299(0x3a9)],_0xe862ae[_0x325299(0x38e)]=Castle[_0x325299(0xf7)],oncontextmenu=_0x2c7678=>{const _0x3cff1b=_0x325299;_0x2c7678[_0x3cff1b(0x43e)](),Castle[_0x3cff1b(0x511)]['id']=0x0,Castle[_0x3cff1b(0x511)][_0x3cff1b(0x556)]=0x0,Castle[_0x3cff1b(0x511)][_0x3cff1b(0x560)]=0x3e8,Castle[_0x3cff1b(0x55f)]&&Castle[_0x3cff1b(0x51a)]&&Castle[_0x3cff1b(0x215)](Castle['outlinedBuilding'][_0x3cff1b(0x135)][0x0],Castle['outlinedBuilding'][_0x3cff1b(0x135)][0x1]);},_0xe862ae[_0x325299(0x4e9)](_0x325299(0x5de),Castle[_0x325299(0x262)]),Castle['gl']=_0xe862ae['getContext']('webgl');!Castle['gl']&&(console[_0x325299(0x1ed)](_0x325299(0x6de)),Castle['gl']=_0xe862ae[_0x325299(0x2cf)](_0x325299(0x538)));if(!Castle['gl'])return console[_0x325299(0x498)](_0x325299(0x6a1)),0x1;Castle['gl'][_0x325299(0x6fb)](Castle['gl'][_0x325299(0x1c9)]),Castle['gl'][_0x325299(0x6fb)](Castle['gl'][_0x325299(0xc4)]),Castle['gl'][_0x325299(0xe5)](Castle['gl'][_0x325299(0x512)]),Castle['gl']['cullFace'](Castle['gl'][_0x325299(0x20c)]),Castle[_0x325299(0x250)]=new Float32Array(0x10),Castle[_0x325299(0x5b4)]=new Float32Array(0x10),Castle[_0x325299(0x21e)]=new Float32Array(0x10),Castle['viewProjMatr']=new Float32Array(0x10),Castle[_0x325299(0x5f0)]=new Float32Array([-0x1,0x0,0x0,0x0,0x0,0x1,0x0,0x0,0x0,0x0,0x1,0x0,0x0,0x0,0x0,0x1]),Castle['canvasWidth']=_0xe862ae[_0x325299(0x658)],Castle[_0x325299(0x6ec)]=_0xe862ae[_0x325299(0x40c)],Castle[_0x325299(0x61c)]=[Castle['canvasWidth'],Castle[_0x325299(0x6ec)]],Castle['isSMEnabled']=!![];const _0x422540=Castle['gl']['getExtension'](_0x325299(0x71f));!_0x422540&&(Castle[_0x325299(0x7e4)]=![]);if(Castle[_0x325299(0x7e4)]){let _0x464eab=new Float32Array(0x10),_0x4ff392=new Float32Array(0x10),_0x5e9b31=new Float32Array(0x10);Castle[_0x325299(0x782)]=new Float32Array(0x10),mat4['ortho'](_0x5e9b31,-0x190,0x190,-0x190,0x190,Castle[_0x325299(0x71d)],Castle[_0x325299(0x828)]);let _0x27f0aa=[{'name':'ad','camPos':[-1239.6,-0x97,-0x599],'camRot':[-2.29,2.813,3.14]},{'name':_0x325299(0x750),'camPos':[-1395.8,-291.7,-1338.5],'camRot':[-2.4,-1.423,3.14]}],_0x2ecaba=quat[_0x325299(0x4e1)]();quat[_0x325299(0x76e)](_0x2ecaba);let _0x2cf8cd=quat['create'](),_0xacbe29=quat['create'](),_0x4741eb=quat[_0x325299(0x4e1)](),_0x24c832=_0x27f0aa[_0x325299(0x488)](_0x5f5d45=>_0x5f5d45['name']===_0x89321);quat[_0x325299(0x67a)](_0x2cf8cd,_0x2ecaba,_0x24c832['camRot'][0x0]),quat[_0x325299(0x54a)](_0xacbe29,_0x2cf8cd,_0x24c832[_0x325299(0x69e)][0x1]),quat[_0x325299(0x31d)](_0x4741eb,_0xacbe29,_0x24c832['camRot'][0x2]),mat4[_0x325299(0x707)](_0x464eab,_0x4741eb,vec3[_0x325299(0x4e1)]()),mat4[_0x325299(0x4f4)](_0x464eab,_0x464eab,_0x24c832['camPos']),mat4[_0x325299(0x12c)](_0x4ff392,Castle[_0x325299(0x5f0)],_0x464eab),mat4['multiply'](Castle['lightViewProjMatrix'],_0x5e9b31,_0x4ff392),Castle[_0x325299(0x1e6)]=Castle['gl'][_0x325299(0x716)](),Castle['gl'][_0x325299(0x426)](Castle['gl'][_0x325299(0x2cd)],Castle[_0x325299(0x1e6)]),Castle['gl']['texImage2D'](Castle['gl'][_0x325299(0x2cd)],0x0,Castle['gl'][_0x325299(0x7e0)],0x40,0x40,0x0,Castle['gl']['RGBA'],Castle['gl']['UNSIGNED_BYTE'],null),Castle['gl'][_0x325299(0x567)](Castle['gl'][_0x325299(0x2cd)],Castle['gl']['TEXTURE_MAG_FILTER'],Castle['gl'][_0x325299(0x367)]),Castle['gl']['texParameteri'](Castle['gl'][_0x325299(0x2cd)],Castle['gl']['TEXTURE_MIN_FILTER'],Castle['gl'][_0x325299(0x367)]),Castle['gl']['texParameteri'](Castle['gl'][_0x325299(0x2cd)],Castle['gl'][_0x325299(0x752)],Castle['gl'][_0x325299(0x7d4)]),Castle['gl'][_0x325299(0x567)](Castle['gl']['TEXTURE_2D'],Castle['gl'][_0x325299(0x285)],Castle['gl'][_0x325299(0x7d4)]),Castle['depthTexture']=Castle['gl'][_0x325299(0x716)](),Castle['gl'][_0x325299(0x426)](Castle['gl'][_0x325299(0x2cd)],Castle[_0x325299(0x62e)]),Castle['gl'][_0x325299(0x800)](Castle['gl'][_0x325299(0x2cd)],0x0,Castle['gl'][_0x325299(0xdd)],Castle['depthTextureSize'],Castle['depthTextureSize'],0x0,Castle['gl'][_0x325299(0xdd)],Castle['gl']['UNSIGNED_INT'],null),Castle['gl'][_0x325299(0x567)](Castle['gl'][_0x325299(0x2cd)],Castle['gl'][_0x325299(0x23a)],Castle['gl']['NEAREST']),Castle['gl'][_0x325299(0x567)](Castle['gl'][_0x325299(0x2cd)],Castle['gl'][_0x325299(0x2f5)],Castle['gl'][_0x325299(0x367)]),Castle['gl'][_0x325299(0x567)](Castle['gl'][_0x325299(0x2cd)],Castle['gl'][_0x325299(0x752)],Castle['gl'][_0x325299(0x3c0)]),Castle['gl'][_0x325299(0x567)](Castle['gl'][_0x325299(0x2cd)],Castle['gl'][_0x325299(0x285)],Castle['gl'][_0x325299(0x3c0)]),Castle[_0x325299(0x68f)]=Castle['gl'][_0x325299(0x582)](),Castle['gl'][_0x325299(0xee)](Castle['gl'][_0x325299(0x7ce)],Castle[_0x325299(0x68f)]),Castle['gl']['framebufferTexture2D'](Castle['gl']['FRAMEBUFFER'],Castle['gl'][_0x325299(0x180)],Castle['gl'][_0x325299(0x2cd)],Castle[_0x325299(0x62e)],0x0);const _0x5a1a99=Castle['gl'][_0x325299(0x716)]();Castle['gl']['bindTexture'](Castle['gl']['TEXTURE_2D'],_0x5a1a99),Castle['gl'][_0x325299(0x800)](Castle['gl'][_0x325299(0x2cd)],0x0,Castle['gl'][_0x325299(0x7e0)],Castle['depthTextureSize'],Castle[_0x325299(0x3e9)],0x0,Castle['gl'][_0x325299(0x7e0)],Castle['gl'][_0x325299(0x6f0)],null),Castle['gl'][_0x325299(0x567)](Castle['gl'][_0x325299(0x2cd)],Castle['gl'][_0x325299(0x23a)],Castle['gl'][_0x325299(0x367)]),Castle['gl'][_0x325299(0x567)](Castle['gl'][_0x325299(0x2cd)],Castle['gl'][_0x325299(0x2f5)],Castle['gl'][_0x325299(0x367)]),Castle['gl'][_0x325299(0x567)](Castle['gl']['TEXTURE_2D'],Castle['gl'][_0x325299(0x752)],Castle['gl'][_0x325299(0x3c0)]),Castle['gl']['texParameteri'](Castle['gl'][_0x325299(0x2cd)],Castle['gl'][_0x325299(0x285)],Castle['gl'][_0x325299(0x3c0)]),Castle['gl'][_0x325299(0x411)](Castle['gl'][_0x325299(0x7ce)],Castle['gl'][_0x325299(0x6dc)],Castle['gl'][_0x325299(0x2cd)],_0x5a1a99,0x0);}let _0x1c4b9f=[],_0x7a39b=[];Castle['sceneBuildings']=new Object();let _0x13f862=-0x1,_0x593748=await HTTP[_0x325299(0x74c)](_0x325299(0x7a5));Castle[_0x325299(0x739)]=_0x593748,Castle[_0x325299(0x7e8)]=_0x593748[_0x325299(0x7aa)][_0x325299(0x488)](_0x1a7b9c=>_0x1a7b9c[_0x325299(0xdb)]===_0x89321),_0x13f862=Castle['currentScene'][_0x325299(0x3de)][_0x325299(0x2ed)]+Castle[_0x325299(0x7e8)][_0x325299(0x1b4)][_0x325299(0x2ed)];let _0x566267=[];_0x566267['push'](Castle[_0x325299(0x7e8)][_0x325299(0x1b4)]);for(let _0x205572 of Castle[_0x325299(0x7e8)][_0x325299(0x3de)]){Castle[_0x325299(0x7ba)][_0x325299(0x2db)]({'meshName':_0x205572[_0x325299(0x643)],'meshData':{},'shader':_0x205572[_0x325299(0x2d4)],'shaderId':{},'blend':_0x205572[_0x325299(0x710)],'tintColor':_0x205572['tintColor'],'uvScale':_0x205572[_0x325299(0x3d4)],'uvScroll':_0x205572[_0x325299(0x281)],'texture':_0x205572['texture'],'texture_2':_0x205572[_0x325299(0x651)],'texture_3':_0x205572['texture_3'],'texture_4':_0x205572[_0x325299(0x314)],'textureId':{},'texture2Id':{},'texture3Id':{},'texture4Id':{},'strip':_0x205572[_0x325299(0x4a0)],'transform':_0x205572[_0x325299(0x7f5)],'indexCount':_0x205572['indexCount']}),Castle[_0x325299(0x2c4)](_0x1c4b9f,_0x7a39b,_0x205572),_0x13f862--;}Castle[_0x325299(0x34b)]=new Float32Array(0x10),mat4['identity'](Castle[_0x325299(0x34b)]);for(let _0x2518c5 of Castle[_0x325299(0x7e8)]['buildings']){let _0x2b6897=_0x2518c5[_0x325299(0x72c)]?_0x2518c5['translation']:[0x0,0x0];for(let _0x320f4f of _0x2518c5[_0x325299(0x3de)]){_0x320f4f[_0x325299(0x7f5)][0x3]-=_0x2b6897[0x0],_0x320f4f[_0x325299(0x7f5)][0xb]-=_0x2b6897[0x1];!(_0x2518c5[_0x325299(0x20f)]in Castle['sceneBuildings'])&&(Castle[_0x325299(0x172)][_0x2518c5[_0x325299(0x20f)]]={'size':_0x2518c5[_0x325299(0x1d4)],'objects':[],'transparentObjects':[]});let _0x165def=_0x320f4f[_0x325299(0x710)]?Castle[_0x325299(0x172)][_0x2518c5['name']][_0x325299(0x65d)]:Castle[_0x325299(0x172)][_0x2518c5[_0x325299(0x20f)]][_0x325299(0x3de)];_0x165def[_0x325299(0x2db)]({'meshName':_0x320f4f[_0x325299(0x643)],'meshData':{},'shader':_0x320f4f['shader'],'shaderId':{},'blend':_0x320f4f[_0x325299(0x710)],'tintColor':_0x320f4f[_0x325299(0x5f3)],'uvScale':_0x320f4f['uvScale'],'uvScroll':_0x320f4f[_0x325299(0x281)],'texture':_0x320f4f['texture'],'texture_2':_0x320f4f[_0x325299(0x651)],'texture_3':_0x320f4f[_0x325299(0x681)],'texture_4':_0x320f4f['texture_4'],'textureId':{},'texture2Id':{},'texture3Id':{},'texture4Id':{},'strip':_0x320f4f[_0x325299(0x4a0)],'transform':_0x320f4f[_0x325299(0x7f5)],'indexCount':_0x320f4f[_0x325299(0x3fa)]}),Castle[_0x325299(0x2c4)](_0x1c4b9f,_0x7a39b,_0x320f4f);}_0x13f862--;}await Castle[_0x325299(0x448)](Castle[_0x325299(0x7ba)],Castle[_0x325299(0x172)],_0x1c4b9f,_0x7a39b),Castle[_0x325299(0x610)][_0x325299(0x695)][_0x325299(0xed)](_0x325299(0x327));if(NativeAPI['fileSystem']&&!('castle'in Sound[_0x325299(0x171)])){var _0x2b0665=NativeAPI[_0x325299(0x59d)]['readdirSync']('content/sounds/'+_0x89321);let _0x2ea78e=function(){const _0x4ec523=_0x325299;let _0x970fb0='content/sounds/'+_0x89321+'/'+_0x2b0665[Math[_0x4ec523(0x6d6)](Math[_0x4ec523(0x202)]()*_0x2b0665['length'])];Sound[_0x4ec523(0x220)](_0x4ec523(0x5a7)),Sound[_0x4ec523(0x612)](_0x970fb0,{'id':_0x4ec523(0x5a7),'volume':Castle[_0x4ec523(0x688)](Castle['AUDIO_MUSIC'])},_0x2ea78e);};_0x2ea78e();}Castle['loadBuildings'](),Castle['MainLoop'](Castle[_0x325299(0x7ba)],Castle[_0x325299(0x172)],Castle[_0x325299(0x507)],Castle[_0x325299(0x75f)]);}static[_0x4487d4(0x2c4)](_0x1c1a6f,_0x904c0a,_0x20df72){const _0x34bde2=_0x4487d4;_0x1c1a6f[_0x34bde2(0x2db)](_0x20df72['shader']),_0x904c0a['push'](_0x20df72[_0x34bde2(0x234)]),_0x20df72['texture_2']&&_0x904c0a[_0x34bde2(0x2db)](_0x20df72[_0x34bde2(0x651)]),_0x20df72['texture_3']&&_0x904c0a[_0x34bde2(0x2db)](_0x20df72[_0x34bde2(0x681)]),_0x20df72[_0x34bde2(0x314)]&&_0x904c0a[_0x34bde2(0x2db)](_0x20df72[_0x34bde2(0x314)]);}static async[_0x4487d4(0x448)](_0x436167,_0x41a4eb,_0x3c2809,_0x58fa59){const _0x52beb6=_0x4487d4;let _0x1eed98=[...new Set(_0x3c2809)],_0x564346=[...new Set(_0x58fa59)];function _0x45d69e(_0x136d29,_0x40c03d){const _0x281f6d=_0x5ecf;_0x136d29[_0x40c03d]['shaderId']=_0x1eed98[_0x281f6d(0x7bc)](_0x478727=>_0x478727===_0x136d29[_0x40c03d][_0x281f6d(0x2d4)]),_0x136d29[_0x40c03d][_0x281f6d(0x3f8)]=_0x564346['findIndex'](_0x188e21=>_0x188e21===_0x136d29[_0x40c03d][_0x281f6d(0x234)]),_0x136d29[_0x40c03d][_0x281f6d(0x703)]=_0x564346[_0x281f6d(0x7bc)](_0x1440f3=>_0x1440f3===_0x136d29[_0x40c03d]['texture_2']),_0x136d29[_0x40c03d]['texture3Id']=_0x564346['findIndex'](_0x281bd1=>_0x281bd1===_0x136d29[_0x40c03d][_0x281f6d(0x681)]),_0x136d29[_0x40c03d]['texture4Id']=_0x564346[_0x281f6d(0x7bc)](_0x3669d0=>_0x3669d0===_0x136d29[_0x40c03d]['texture_4']);}for(var _0x569ce1=0x0;_0x569ce1<_0x436167['length'];_0x569ce1++){_0x45d69e(_0x436167,_0x569ce1);}for(let _0x3c2511 in Castle[_0x52beb6(0x172)]){let _0x219453=Castle['sceneBuildings'][_0x3c2511][_0x52beb6(0x3de)];for(_0x569ce1=0x0;_0x569ce1<_0x219453[_0x52beb6(0x2ed)];++_0x569ce1){_0x45d69e(_0x219453,_0x569ce1);}let _0x5d30bf=Castle[_0x52beb6(0x172)][_0x3c2511]['transparentObjects'];for(_0x569ce1=0x0;_0x569ce1<_0x5d30bf[_0x52beb6(0x2ed)];++_0x569ce1){_0x45d69e(_0x5d30bf,_0x569ce1);}}Castle[_0x52beb6(0x75f)]=new Array(_0x564346[_0x52beb6(0x2ed)]);let _0x50d959={'mesh':0x0,'texture':0x0,'shader':0x0};Castle['sceneShaders']=new Array(_0x1eed98[_0x52beb6(0x2ed)]);let _0x492930=await HTTP['request'](_0x52beb6(0x515),_0x52beb6(0x605)),_0xf13623=await HTTP['request'](_0x52beb6(0x3be),_0x52beb6(0x605));for(let _0x5ae8d0=0x0;_0x5ae8d0<_0x1eed98[_0x52beb6(0x2ed)];++_0x5ae8d0){let _0x57145e=await HTTP[_0x52beb6(0x74c)](_0x52beb6(0x64d)+_0x1eed98[_0x5ae8d0]+'.glsl',_0x52beb6(0x605)),_0x83571f=Castle[_0x52beb6(0x26d)](_0x52beb6(0x39a),_0x57145e,_0x492930,_0xf13623),_0xd95700=Castle[_0x52beb6(0x26d)](_0x52beb6(0xfc),_0x57145e,_0x492930,_0xf13623);Castle['sceneShaders'][_0x5ae8d0]={'PSO':_0x83571f,'PSO_SM':_0xd95700,'attributes':Castle[_0x52beb6(0x739)][_0x52beb6(0x6a8)][_0x52beb6(0x488)](_0x4769c4=>_0x4769c4[_0x52beb6(0x20f)]===_0x1eed98[_0x5ae8d0])[_0x52beb6(0x3f6)],'vertStride':0x0},_0x50d959[_0x52beb6(0x2d4)]++;}for(let _0x17bb8c=0x0;_0x17bb8c<_0x564346[_0x52beb6(0x2ed)];++_0x17bb8c){Castle[_0x52beb6(0x75f)][_0x17bb8c]=Castle[_0x52beb6(0x4e2)](await PreloadImages['loadAsync'](_0x52beb6(0x3fd)+_0x564346[_0x17bb8c]+_0x52beb6(0x23d))),_0x50d959['texture']++;}for(let _0x4f78e5=0x0;_0x4f78e5<_0x436167['length'];++_0x4f78e5){await Castle[_0x52beb6(0x514)](_0x1eed98,_0x436167,_0x4f78e5),_0x50d959[_0x52beb6(0x643)]++;}let _0x4e4a29=Castle[_0x52beb6(0x7ba)][_0x52beb6(0x2ed)];for(let _0xe64585 in Castle[_0x52beb6(0x172)]){let _0x1c9e8c=Castle[_0x52beb6(0x172)][_0xe64585][_0x52beb6(0x3de)];for(let _0x1ae545=0x0;_0x1ae545<_0x1c9e8c[_0x52beb6(0x2ed)];++_0x1ae545){await Castle[_0x52beb6(0x514)](_0x1eed98,_0x1c9e8c,_0x1ae545);}_0x4e4a29+=_0x1c9e8c[_0x52beb6(0x2ed)];let _0x5ba224=Castle[_0x52beb6(0x172)][_0xe64585][_0x52beb6(0x65d)];for(let _0x56b211=0x0;_0x56b211<_0x5ba224['length'];++_0x56b211){await Castle[_0x52beb6(0x514)](_0x1eed98,_0x5ba224,_0x56b211);}_0x4e4a29+=_0x5ba224[_0x52beb6(0x2ed)];}}static['prepareShader'](_0x3c4571,_0x2cf411,_0x5ccaf0,_0x536dbe){const _0x518664=_0x4487d4;let _0x3fa966=Castle['gl']['createShader'](Castle['gl'][_0x518664(0x310)]),_0x3a27a7=Castle['gl'][_0x518664(0x30d)](Castle['gl'][_0x518664(0x2c7)]);Castle['gl'][_0x518664(0x571)](_0x3fa966,_0x2cf411+_0x3c4571+_0x5ccaf0),Castle['gl'][_0x518664(0x571)](_0x3a27a7,_0x2cf411+_0x3c4571+_0x536dbe),Castle['gl']['compileShader'](_0x3fa966);if(!Castle['gl'][_0x518664(0x1f8)](_0x3fa966,Castle['gl'][_0x518664(0x188)]))return console[_0x518664(0x498)](_0x518664(0x615),Castle['gl']['getShaderInfoLog'](_0x3fa966)),0x1;Castle['gl'][_0x518664(0x1a2)](_0x3a27a7);if(!Castle['gl'][_0x518664(0x1f8)](_0x3a27a7,Castle['gl'][_0x518664(0x188)]))return console[_0x518664(0x498)](_0x518664(0x784),Castle['gl'][_0x518664(0x4b5)](_0x3a27a7)),0x1;let _0x6812de=Castle['gl'][_0x518664(0x838)]();Castle['gl'][_0x518664(0x4be)](_0x6812de,_0x3fa966),Castle['gl']['attachShader'](_0x6812de,_0x3a27a7),Castle['gl'][_0x518664(0x6c5)](_0x6812de);if(!Castle['gl'][_0x518664(0x502)](_0x6812de,Castle['gl'][_0x518664(0x118)]))return console[_0x518664(0x498)](_0x518664(0x275),Castle['gl'][_0x518664(0x5e8)](_0x6812de)),0x1;Castle['gl'][_0x518664(0x28b)](_0x6812de);if(!Castle['gl'][_0x518664(0x502)](_0x6812de,Castle['gl'][_0x518664(0x4f3)]))return console[_0x518664(0x498)](_0x518664(0x3a7),Castle['gl'][_0x518664(0x5e8)](_0x6812de)),0x1;return _0x6812de;}static[_0x4487d4(0x6bb)](_0x26f465,_0x443902,_0x451f95){return _0x26f465+_0x451f95*(_0x443902-_0x26f465);}static[_0x4487d4(0x640)](_0x419ac5,_0x54a863,_0x27d6d3){const _0x2a40f9=_0x4487d4;return Math[_0x2a40f9(0x3ac)](Math[_0x2a40f9(0x6d4)](_0x419ac5,_0x54a863),_0x27d6d3);}static[_0x4487d4(0x4e2)](_0x5ad80e){const _0x4a7ed3=_0x4487d4;let _0x23b261=Castle['gl'][_0x4a7ed3(0x716)]();return Castle['gl']['bindTexture'](Castle['gl'][_0x4a7ed3(0x2cd)],_0x23b261),Castle['gl'][_0x4a7ed3(0x567)](Castle['gl']['TEXTURE_2D'],Castle['gl'][_0x4a7ed3(0x752)],Castle['gl'][_0x4a7ed3(0x3c0)]),Castle['gl'][_0x4a7ed3(0x567)](Castle['gl'][_0x4a7ed3(0x2cd)],Castle['gl'][_0x4a7ed3(0x285)],Castle['gl'][_0x4a7ed3(0x3c0)]),Castle['gl'][_0x4a7ed3(0x567)](Castle['gl']['TEXTURE_2D'],Castle['gl'][_0x4a7ed3(0x2f5)],Castle['gl'][_0x4a7ed3(0x496)]),Castle['gl'][_0x4a7ed3(0x567)](Castle['gl'][_0x4a7ed3(0x2cd)],Castle['gl'][_0x4a7ed3(0x23a)],Castle['gl'][_0x4a7ed3(0x496)]),Castle['gl'][_0x4a7ed3(0x800)](Castle['gl'][_0x4a7ed3(0x2cd)],0x0,Castle['gl'][_0x4a7ed3(0x7e0)],Castle['gl'][_0x4a7ed3(0x7e0)],Castle['gl']['UNSIGNED_BYTE'],_0x5ad80e),Castle['gl'][_0x4a7ed3(0x252)](Castle['gl'][_0x4a7ed3(0x2cd)]),_0x23b261;}static async[_0x4487d4(0x514)](_0x2cb3d3,_0x9a19a8,_0xc0fbec){const _0x144b51=_0x4487d4;let _0x2c9823=await HTTP[_0x144b51(0x74c)](_0x144b51(0x413)+_0x9a19a8[_0xc0fbec]['meshName'],_0x144b51(0x30f)),_0x2d46a5=Castle['gl'][_0x144b51(0x672)](),_0x2b2297=new Float32Array(_0x2c9823);Castle['gl'][_0x144b51(0x56f)](Castle['gl'][_0x144b51(0x279)],_0x2d46a5),Castle['gl'][_0x144b51(0x441)](Castle['gl'][_0x144b51(0x279)],_0x2b2297,Castle['gl'][_0x144b51(0x178)]);let _0x3fe744=Castle[_0x144b51(0x739)][_0x144b51(0x6a8)][_0x144b51(0x488)](_0x430c42=>_0x430c42[_0x144b51(0x20f)]===_0x2cb3d3[_0x9a19a8[_0xc0fbec]['shaderId']])[_0x144b51(0x3f6)],_0x2c814a=0x0;for(let _0xd69f98 of _0x3fe744){_0x2c814a+=_0xd69f98[_0x144b51(0x4ce)]*_0xd69f98['sizeElem'];}let _0x380f51=_0x2b2297[_0x144b51(0x2ed)]/(_0x2c814a/0x4);_0x380f51!=_0x9a19a8[_0xc0fbec]['indexCount']&&console[_0x144b51(0x498)](_0x144b51(0x1b9)+meshName+')'),_0x9a19a8[_0xc0fbec][_0x144b51(0x4da)]={'vertices':_0x2d46a5,'vertStride':_0x2c814a,'indexCount':_0x2b2297[_0x144b51(0x2ed)]/(_0x2c814a/0x4)};}static[_0x4487d4(0x1b3)](_0x276e6d,_0x17635d,_0x9ce4c9,_0x5997fc){const _0x2518e5=_0x4487d4;if(Castle[_0x2518e5(0x172)]){var _0x3bc130=Castle[_0x2518e5(0x172)]['grid'],_0x463979=_0x3bc130['transparentObjects'][0x0][_0x2518e5(0x7f5)];Castle[_0x2518e5(0x3dc)]=[_0x463979[0x3],_0x463979[0xb]];}else Castle['gridTranslation']=[0x0,0x0];requestAnimationFrame(Castle[_0x2518e5(0x328)]);}static[_0x4487d4(0x328)](){const _0x218ed2=_0x4487d4;let _0x2c288b=Castle[_0x218ed2(0x5d1)]['includes'](![]);if(_0x2c288b){requestAnimationFrame(Castle[_0x218ed2(0x328)]);return;}Castle[_0x218ed2(0x60a)]=Castle[_0x218ed2(0x6f9)],Castle[_0x218ed2(0x6f9)]=(Date['now']()-Castle['loadTime'])/0x3e8,Castle[_0x218ed2(0x1d8)]=Castle[_0x218ed2(0x6f9)]-Castle[_0x218ed2(0x60a)];let _0x3190b9=Castle['clamp'](Castle[_0x218ed2(0x530)]*Castle['deltaTime'],0x0,0x1);Castle[_0x218ed2(0x7cd)]=Castle[_0x218ed2(0x6bb)](Castle[_0x218ed2(0x7cd)],Castle[_0x218ed2(0x109)],_0x3190b9);let _0x3a33ca=[Castle[_0x218ed2(0x13c)][Math[_0x218ed2(0x4f2)](Castle[_0x218ed2(0x21f)])],Castle[_0x218ed2(0x13c)][Math['round'](Castle[_0x218ed2(0x109)])]],_0x35b0a7=[Castle[_0x218ed2(0x73f)][Math[_0x218ed2(0x4f2)](Castle[_0x218ed2(0x21f)])],Castle['fixedRotationTiltValues'][Math[_0x218ed2(0x4f2)](Castle[_0x218ed2(0x109)])]],_0x30fb62=[Castle[_0x218ed2(0x142)][Math[_0x218ed2(0x4f2)](Castle['initialFixedValue'])],Castle[_0x218ed2(0x142)][Math[_0x218ed2(0x4f2)](Castle[_0x218ed2(0x109)])]],_0x24687e=Math['abs'](Castle[_0x218ed2(0x21f)]-Castle[_0x218ed2(0x7cd)]);Castle['fov']=Castle[_0x218ed2(0x6bb)](_0x3a33ca[0x0],_0x3a33ca[0x1],_0x24687e),Castle[_0x218ed2(0x2e5)]=Castle[_0x218ed2(0x6bb)](_0x35b0a7[0x0],_0x35b0a7[0x1],_0x24687e),Castle['cameraHeight']=Castle[_0x218ed2(0x6bb)](_0x30fb62[0x0],_0x30fb62[0x1],_0x24687e);let _0x57f992=[];for(let _0x879df0 of Castle[_0x218ed2(0x480)]){var _0x543142=Castle['sceneBuildings'][Castle[_0x218ed2(0x1b4)][_0x879df0['id']]];_0x57f992[_0x218ed2(0x2db)]({'mesh':_0x543142,'rotation':_0x879df0['rot']*1.57,'position':[_0x879df0['posX'],_0x879df0[_0x218ed2(0x560)]],'name':Castle[_0x218ed2(0x1b4)][_0x879df0['id']],'translation':[Castle[_0x218ed2(0x261)][0x0]+(_0x879df0['posX']*0x7+_0x543142['size'][0x0]/0x2*0x7),0x1,Castle['zeroTranslation'][0x1]+((_0x879df0['posY']-0x11)*0x7+_0x543142[_0x218ed2(0x1d4)][0x1]/0x2*0x7)]});}if(Castle[_0x218ed2(0x55f)]&&Castle[_0x218ed2(0x511)]['id']>0x0){var _0x543142=Castle[_0x218ed2(0x172)][_0x218ed2(0x355)];_0x57f992[_0x218ed2(0x2db)]({'mesh':_0x543142,'rotation':0x0,'position':[0x0,0x0],'name':_0x218ed2(0x355),'translation':[Castle[_0x218ed2(0x261)][0x0]+_0x543142[_0x218ed2(0x1d4)][0x0]/0x2*0x7,0x1,Castle[_0x218ed2(0x261)][0x1]+_0x543142[_0x218ed2(0x1d4)][0x1]/0x2*0x7]});}Castle['updateMainCam']();let _0x37f477=-0x1;Castle[_0x218ed2(0x51a)]=null;if(Object[_0x218ed2(0x37c)](Window[_0x218ed2(0x388)])[_0x218ed2(0x2ed)]===0x0){if(Castle[_0x218ed2(0x511)]['id']>0x0){let _0x29583f=Castle['phantomBuilding'];var _0x543142=Castle[_0x218ed2(0x172)][Castle[_0x218ed2(0x1b4)][_0x29583f['id']]];_0x57f992[_0x218ed2(0x2db)]({'outlined':!![],'mesh':_0x543142,'rotation':_0x29583f[_0x218ed2(0x333)]*1.57,'position':[_0x29583f[_0x218ed2(0x556)],_0x29583f[_0x218ed2(0x560)]],'name':Castle[_0x218ed2(0x1b4)][_0x29583f['id']],'translation':[Castle[_0x218ed2(0x261)][0x0]+(_0x29583f['posX']*0x7+_0x543142[_0x218ed2(0x1d4)][0x0]/0x2*0x7),0x1,Castle['zeroTranslation'][0x1]+((_0x29583f['posY']-0x11)*0x7+_0x543142['size'][0x1]/0x2*0x7)]}),_0x37f477=_0x57f992[_0x218ed2(0x2ed)]-0x1;}else for(let _0x160aa0=0x0;_0x160aa0<_0x57f992[_0x218ed2(0x2ed)];++_0x160aa0){let _0x11f811=_0x57f992[_0x160aa0],_0x6d29a9=[Castle['zeroTranslation'][0x0]+Castle[_0x218ed2(0x3dc)][0x0],Castle[_0x218ed2(0x261)][0x1]+Castle[_0x218ed2(0x3dc)][0x1]];if(_0x6d29a9[0x0]-Castle['gridCursorPosX']>_0x11f811[_0x218ed2(0x72c)][0x0]-_0x11f811['mesh'][_0x218ed2(0x1d4)][0x0]/0x2*0x7&&_0x6d29a9[0x0]-Castle['gridCursorPosX']<_0x11f811['translation'][0x0]+_0x11f811['mesh'][_0x218ed2(0x1d4)][0x1]/0x2*0x7&&_0x6d29a9[0x1]-Castle['gridCursorPosZ']>_0x11f811[_0x218ed2(0x72c)][0x2]-_0x11f811['mesh']['size'][0x1]/0x2*0x7&&_0x6d29a9[0x1]-Castle[_0x218ed2(0x741)]<_0x11f811[_0x218ed2(0x72c)][0x2]+_0x11f811[_0x218ed2(0x643)][_0x218ed2(0x1d4)][0x1]/0x2*0x7&&(_0x57f992[_0x160aa0][_0x218ed2(0x20f)]in CastleBuildingsEvents||Castle[_0x218ed2(0x55f)])){_0x37f477=_0x160aa0,Castle[_0x218ed2(0x51a)]=_0x57f992[_0x37f477];break;}}}if(Castle[_0x218ed2(0x7e4)]&&!Castle[_0x218ed2(0x63e)]&&Castle[_0x218ed2(0x7ba)]&&Castle[_0x218ed2(0x48d)]){Castle['gl'][_0x218ed2(0xee)](Castle['gl'][_0x218ed2(0x7ce)],Castle['depthFramebuffer']),Castle['gl'][_0x218ed2(0x1f4)](0x0,0x0,Castle['depthTextureSize'],Castle[_0x218ed2(0x3e9)]),Castle['gl'][_0x218ed2(0x474)](Castle['gl'][_0x218ed2(0x5dc)]|Castle['gl'][_0x218ed2(0x4fc)]);for(let _0x3ce083=0x0;_0x3ce083<Castle['sceneObjects'][_0x218ed2(0x2ed)];++_0x3ce083){let _0x56fa3b=Castle['sceneObjects'][_0x3ce083];if(_0x56fa3b['blend'])break;Castle[_0x218ed2(0x64c)](_0x56fa3b,!![]);}for(let _0x25ac3e of _0x57f992){for(let _0x5212bd=0x0;_0x5212bd<_0x25ac3e[_0x218ed2(0x643)][_0x218ed2(0x3de)][_0x218ed2(0x2ed)];++_0x5212bd){!_0x25ac3e[_0x218ed2(0x67b)]&&Castle[_0x218ed2(0x64c)](_0x25ac3e[_0x218ed2(0x643)][_0x218ed2(0x3de)][_0x5212bd],!![],_0x25ac3e[_0x218ed2(0x5bc)],_0x25ac3e[_0x218ed2(0x72c)]);}}Castle[_0x218ed2(0x63e)]=!![];}Castle['gl'][_0x218ed2(0xee)](Castle['gl'][_0x218ed2(0x7ce)],null),Castle['gl'][_0x218ed2(0x1f4)](0x0,0x0,Castle['gl'][_0x218ed2(0x297)][_0x218ed2(0x658)],Castle['gl']['canvas'][_0x218ed2(0x40c)]),Castle['gl'][_0x218ed2(0x7c0)](0.75,0.85,0.8,0x1),Castle['gl'][_0x218ed2(0x474)](Castle['gl'][_0x218ed2(0x5dc)]|Castle['gl'][_0x218ed2(0x4fc)]);if(Castle['sceneObjects']){let _0x2c1e96;for(let _0x412b6c=0x0;_0x412b6c<Castle[_0x218ed2(0x7ba)][_0x218ed2(0x2ed)];++_0x412b6c){if(Castle[_0x218ed2(0x7ba)][_0x412b6c][_0x218ed2(0x710)]){_0x2c1e96=_0x412b6c;break;}Castle[_0x218ed2(0x64c)](Castle[_0x218ed2(0x7ba)][_0x412b6c],![]);}if(_0x37f477>=0x0){Castle['gl'][_0x218ed2(0x77f)](Castle['gl'][_0x218ed2(0x1c9)]),Castle['gl'][_0x218ed2(0x2e1)](![]);let _0x15ca50=_0x57f992[_0x37f477],_0x5de0ec=Castle['BUILDING_OUTLINE_GOOD'];if(Castle[_0x218ed2(0x55f)]){_0x5de0ec=Castle[_0x218ed2(0x377)];if(Castle[_0x218ed2(0x511)]['id']>0x0){_0x5de0ec=Castle[_0x218ed2(0x492)]?Castle['BUILDING_OUTLINE_GOOD']:Castle[_0x218ed2(0x7ff)];;}}for(let _0x5e3559=0x0;_0x5e3559<_0x15ca50[_0x218ed2(0x643)][_0x218ed2(0x3de)][_0x218ed2(0x2ed)];++_0x5e3559){let _0x4a1fc5=[_0x15ca50[_0x218ed2(0x72c)][0x0],_0x15ca50[_0x218ed2(0x72c)][0x1],_0x15ca50[_0x218ed2(0x72c)][0x2]];_0x4a1fc5[0x1]-=0x6/_0x15ca50[_0x218ed2(0x643)][_0x218ed2(0x1d4)][0x0],Castle[_0x218ed2(0x64c)](_0x15ca50[_0x218ed2(0x643)]['objects'][_0x5e3559],![],_0x15ca50[_0x218ed2(0x5bc)],_0x4a1fc5,_0x5de0ec,0x1+0.16/Math['pow'](_0x15ca50[_0x218ed2(0x643)]['size'][0x0],0x3/0x4));}Castle['gl'][_0x218ed2(0x6fb)](Castle['gl'][_0x218ed2(0x1c9)]),Castle['gl']['depthMask'](!![]);}for(let _0x14b736 of _0x57f992){for(let _0x3d61cc=0x0;_0x3d61cc<_0x14b736[_0x218ed2(0x643)]['objects'][_0x218ed2(0x2ed)];++_0x3d61cc){Castle[_0x218ed2(0x64c)](_0x14b736[_0x218ed2(0x643)][_0x218ed2(0x3de)][_0x3d61cc],![],_0x14b736[_0x218ed2(0x5bc)],_0x14b736[_0x218ed2(0x72c)]);}}for(let _0x1460ff=_0x2c1e96;_0x1460ff<Castle['sceneObjects'][_0x218ed2(0x2ed)];++_0x1460ff){Castle[_0x218ed2(0x64c)](Castle[_0x218ed2(0x7ba)][_0x1460ff],![]);}for(let _0x2bab3a of _0x57f992){for(let _0x46e64=0x0;_0x46e64<_0x2bab3a[_0x218ed2(0x643)][_0x218ed2(0x65d)]['length'];++_0x46e64){Castle[_0x218ed2(0x64c)](_0x2bab3a[_0x218ed2(0x643)][_0x218ed2(0x65d)][_0x46e64],![],_0x2bab3a['rotation'],_0x2bab3a[_0x218ed2(0x72c)]);}}}Castle['gl']['disable'](Castle['gl'][_0x218ed2(0x5a0)]),Castle['gl'][_0x218ed2(0x6fb)](Castle['gl']['CULL_FACE']),Castle['gl'][_0x218ed2(0x11b)](!![],!![],!![],!![]),Castle['gl'][_0x218ed2(0x2e1)](!![]),Castle['cursorDeltaPos'][0x0]=0x0,Castle[_0x218ed2(0x5f8)][0x1]=0x0,requestAnimationFrame(Castle[_0x218ed2(0x328)]);}static['prepareAndDrawObject'](_0x4e3209,_0x4fb150,_0x317af6,_0x49b238,_0x584c71,_0x59a28f){const _0x53d987=_0x4487d4;let _0x4086a9=_0x4e3209[_0x53d987(0x4da)],_0x4427c0=_0x4e3209['textureId'],_0xb2fddd=_0x4e3209[_0x53d987(0x703)],_0x27b8a2=_0x4e3209[_0x53d987(0x2b9)],_0x501473=_0x4e3209[_0x53d987(0x775)],_0x28a6c3=Castle[_0x53d987(0x507)][_0x4e3209[_0x53d987(0x235)]],_0x57a05a=[Castle['sceneTextures'][_0x4427c0],_0xb2fddd?Castle[_0x53d987(0x75f)][_0xb2fddd]:{},_0x27b8a2?Castle[_0x53d987(0x75f)][_0x27b8a2]:{},_0x501473?Castle['sceneTextures'][_0x501473]:{}],_0x53bc3c=[0x0,0x0];_0x4e3209[_0x53d987(0x281)]&&(_0x53bc3c[0x0]=_0x4e3209['uvScroll'][0x0]*Castle['currentTime'],_0x53bc3c[0x1]=_0x4e3209[_0x53d987(0x281)][0x1]*Castle['currentTime']),Castle[_0x53d987(0x53c)](_0x4fb150?_0x28a6c3[_0x53d987(0x17d)]:_0x28a6c3[_0x53d987(0x4ea)],_0x57a05a,_0x4086a9[_0x53d987(0x591)],_0x4086a9[_0x53d987(0x3fa)],_0x4086a9[_0x53d987(0x645)],Castle[_0x53d987(0x507)][_0x4e3209['shaderId']][_0x53d987(0x627)],_0x4e3209[_0x53d987(0x4a0)],_0x4e3209[_0x53d987(0x7f5)],_0x4fb150,_0x4e3209['blend'],_0x4e3209[_0x53d987(0x5f3)],_0x4e3209[_0x53d987(0x3d4)],_0x53bc3c,_0x317af6,_0x49b238,_0x584c71,_0x59a28f);}static[_0x4487d4(0x2e0)](){const _0x5c45fd=_0x4487d4;mat4['perspective'](Castle[_0x5c45fd(0x21e)],glMatrix[_0x5c45fd(0x198)](Castle['fov']),Castle[_0x5c45fd(0x50a)]/Castle['canvasHeight'],Castle[_0x5c45fd(0xc5)],Castle[_0x5c45fd(0x1c1)]);var _0x35fc03=[-0x598,-0x1b8,-0x62e],_0x47c938=_0x35fc03[0x0]+Castle[_0x5c45fd(0x69b)][0x0],_0x4b43b2=_0x35fc03[0x2]-Castle[_0x5c45fd(0x69b)][0x1],_0x59a386=_0x35fc03[0x1]+Castle['cameraHeight'],_0xf29041=vec3['fromValues'](_0x47c938,_0x59a386,_0x4b43b2),_0x12de2c=[-2.17,-2.36,3.14],_0x796690=quat['create']();quat['identity'](_0x796690);var _0x32cbf2=quat['create'](),_0x3d5b5d=quat[_0x5c45fd(0x4e1)](),_0x4538a3=quat['create']();quat[_0x5c45fd(0x67a)](_0x32cbf2,_0x796690,_0x12de2c[0x0]+Castle[_0x5c45fd(0x2e5)]),quat[_0x5c45fd(0x54a)](_0x3d5b5d,_0x32cbf2,_0x12de2c[0x1]),quat[_0x5c45fd(0x31d)](_0x4538a3,_0x3d5b5d,_0x12de2c[0x2]),mat4['fromRotationTranslation'](Castle[_0x5c45fd(0x250)],_0x4538a3,vec3[_0x5c45fd(0x4e1)]()),mat4[_0x5c45fd(0x4f4)](Castle[_0x5c45fd(0x250)],Castle[_0x5c45fd(0x250)],_0xf29041),mat4[_0x5c45fd(0x12c)](Castle[_0x5c45fd(0x5b4)],Castle[_0x5c45fd(0x5f0)],Castle[_0x5c45fd(0x250)]),mat4[_0x5c45fd(0x12c)](Castle['viewProjMatr'],Castle[_0x5c45fd(0x21e)],Castle[_0x5c45fd(0x5b4)]);var _0x49c9ec=[Castle[_0x5c45fd(0x5b4)][0x2],Castle[_0x5c45fd(0x5b4)][0x6],Castle[_0x5c45fd(0x5b4)][0xa],0x0],_0x4ee55f=[_0x49c9ec[0x0],_0x49c9ec[0x2]];vec2[_0x5c45fd(0x22b)](_0x4ee55f,_0x4ee55f);var _0x16136b=[Castle['viewMatrix2'][0x0],Castle[_0x5c45fd(0x5b4)][0x4],Castle[_0x5c45fd(0x5b4)][0x8],0x0],_0x4a0cf7=[_0x16136b[0x0],_0x16136b[0x2]];vec2[_0x5c45fd(0x22b)](_0x4a0cf7,_0x4a0cf7),Castle[_0x5c45fd(0x69b)][0x0]-=(_0x4ee55f[0x1]*Castle[_0x5c45fd(0x5f8)][0x0]-_0x4a0cf7[0x1]*Castle['cursorDeltaPos'][0x1])*0.1,Castle[_0x5c45fd(0x69b)][0x1]-=(_0x4ee55f[0x0]*Castle[_0x5c45fd(0x5f8)][0x0]-_0x4a0cf7[0x0]*Castle[_0x5c45fd(0x5f8)][0x1])*0.1,Castle['camDeltaPos'][0x0]=Castle[_0x5c45fd(0x640)](Castle['camDeltaPos'][0x0],Castle['camDeltaPosMinMax'][0x0][0x0],Castle[_0x5c45fd(0x2a1)][0x0][0x1]),Castle['camDeltaPos'][0x1]=Castle['clamp'](Castle['camDeltaPos'][0x1],Castle['camDeltaPosMinMax'][0x1][0x0],Castle[_0x5c45fd(0x2a1)][0x1][0x1]),mat4[_0x5c45fd(0x626)](Castle['viewProjInv'],Castle[_0x5c45fd(0x76c)]),Castle['cursorBasis']=[(Castle[_0x5c45fd(0x61c)][0x0]-Castle[_0x5c45fd(0x50a)]/0x2)/Castle['canvasWidth']*0x2,-((Castle[_0x5c45fd(0x61c)][0x1]-Castle[_0x5c45fd(0x6ec)]/0x2)/Castle[_0x5c45fd(0x6ec)]*0x2),0x1,0x1],vec4[_0x5c45fd(0x1e7)](Castle[_0x5c45fd(0x30e)],Castle[_0x5c45fd(0x569)],Castle[_0x5c45fd(0x129)]),Castle[_0x5c45fd(0x30e)][0x0]/=-Castle['cursorBasis2'][0x3],Castle[_0x5c45fd(0x30e)][0x1]/=-Castle[_0x5c45fd(0x30e)][0x3],Castle['cursorBasis2'][0x2]/=-Castle['cursorBasis2'][0x3];var _0x2a71c8=[Castle['cursorBasis2'][0x0]-_0xf29041[0x0],Castle[_0x5c45fd(0x30e)][0x1]-_0xf29041[0x1],Castle[_0x5c45fd(0x30e)][0x2]-_0xf29041[0x2]];vec3[_0x5c45fd(0x22b)](_0x2a71c8,_0x2a71c8);var _0x3941e6=-(_0xf29041[0x1]+0x1b)/_0x2a71c8[0x1];Castle[_0x5c45fd(0x2c3)]=_0xf29041[0x0]+_0x3941e6*_0x2a71c8[0x0]+(Castle[_0x5c45fd(0x261)][0x0]+Castle['gridTranslation'][0x0]),Castle[_0x5c45fd(0x741)]=_0xf29041[0x2]+_0x3941e6*_0x2a71c8[0x2]+(Castle[_0x5c45fd(0x261)][0x1]+Castle['gridTranslation'][0x1]);}static[_0x4487d4(0x2d8)](_0x3270c4){const _0x378f60=_0x4487d4;let _0x25baa8=Castle['gl'][_0x378f60(0x666)](_0x3270c4,'mViewProj');Castle['gl']['uniformMatrix4fv'](_0x25baa8,Castle['gl'][_0x378f60(0x102)],Castle['viewProjMatr']);let _0x1086ce=Castle['gl'][_0x378f60(0x666)](_0x3270c4,'lightViewProj');Castle['gl'][_0x378f60(0x4f5)](_0x1086ce,Castle['gl'][_0x378f60(0x102)],Castle['lightViewProjMatrix']);let _0x5ad2de=Castle['gl'][_0x378f60(0x666)](_0x3270c4,_0x378f60(0x6e1));Castle['gl'][_0x378f60(0x106)](_0x5ad2de,Castle[_0x378f60(0xc5)],Castle['zFar'],Castle[_0x378f60(0x71d)],Castle[_0x378f60(0x828)]);let _0x3b208f=Castle['gl']['getUniformLocation'](_0x3270c4,_0x378f60(0x7ed));Castle['gl'][_0x378f60(0xf1)](_0x3b208f,-Castle[_0x378f60(0x2c3)],-Castle[_0x378f60(0x741)]);}static[_0x4487d4(0xfd)](_0x5319bf){const _0x212ec7=_0x4487d4;let _0x300ae3=Castle['gl']['getUniformLocation'](_0x5319bf,_0x212ec7(0x821));Castle['gl'][_0x212ec7(0x4f5)](_0x300ae3,Castle['gl'][_0x212ec7(0x102)],Castle[_0x212ec7(0x782)]);}static[_0x4487d4(0x10c)](_0xbc4fe0){const _0x47bc03=_0x4487d4;switch(_0xbc4fe0){case _0x47bc03(0x192):return Castle['gl'][_0x47bc03(0x192)];break;case _0x47bc03(0xcb):return Castle['gl'][_0x47bc03(0xcb)];break;case'SRC_COLOR':return Castle['gl'][_0x47bc03(0x653)];break;case _0x47bc03(0x473):return Castle['gl']['ONE_MINUS_SRC_COLOR'];break;case _0x47bc03(0x7b4):return Castle['gl'][_0x47bc03(0x7b4)];break;case'ONE_MINUS_DST_COLOR':return Castle['gl']['ONE_MINUS_DST_COLOR'];break;case'SRC_ALPHA':return Castle['gl'][_0x47bc03(0x29d)];break;case _0x47bc03(0x3d2):return Castle['gl'][_0x47bc03(0x3d2)];break;case _0x47bc03(0x788):return Castle['gl'][_0x47bc03(0x788)];break;case _0x47bc03(0x4ff):return Castle['gl'][_0x47bc03(0x4ff)];break;case'CONSTANT_COLOR':return Castle['gl'][_0x47bc03(0x32d)];break;case _0x47bc03(0x26b):return Castle['gl'][_0x47bc03(0x26b)];break;case _0x47bc03(0x3ff):return Castle['gl'][_0x47bc03(0x3ff)];break;case _0x47bc03(0x5ff):return Castle['gl'][_0x47bc03(0x5ff)];break;case'SRC_ALPHA_SATURATE':return Castle['gl'][_0x47bc03(0x408)];break;default:return Castle['gl'][_0x47bc03(0xcb)];break;}}static[_0x4487d4(0x53c)](_0x1a6e3f,_0x1ebca4,_0x4ec6bc,_0x7df49,_0x12e4fe,_0x1c0f5e,_0x36441a,_0x551d13,_0x54bcb0,_0x4bfbb2,_0x474d6a,_0x55e4d0,_0x168b6c,_0x3c05f6,_0xaf8774,_0x201238,_0x25e999){const _0x3adf82=_0x4487d4;_0x4bfbb2&&(Castle['gl'][_0x3adf82(0x6fb)](Castle['gl'][_0x3adf82(0x5a0)]),Castle['gl'][_0x3adf82(0x77f)](Castle['gl'][_0x3adf82(0xc4)]),Castle['gl'][_0x3adf82(0x7cb)](Castle['gl'][_0x3adf82(0x724)]),Castle['gl']['colorMask'](!![],!![],!![],![]),Castle['gl'][_0x3adf82(0x2e1)](![]),Castle['gl'][_0x3adf82(0x4c8)](Castle[_0x3adf82(0x10c)](_0x4bfbb2[0x0]),Castle[_0x3adf82(0x10c)](_0x4bfbb2[0x1])));Castle['gl'][_0x3adf82(0x56f)](Castle['gl'][_0x3adf82(0x279)],_0x4ec6bc);let _0x2e08c2=0x0;for(let _0x7a044b of _0x1c0f5e){let _0x53ab63=Castle['gl'][_0x3adf82(0xec)](_0x1a6e3f,_0x7a044b[_0x3adf82(0x20f)]),_0x10dca4=_0x7a044b[_0x3adf82(0x35d)]==0x4?Castle['gl']['FLOAT']:_0x7a044b['sizeElem']==0x2?Castle['gl'][_0x3adf82(0x835)]:Castle['gl']['UNSIGNED_BYTE'];Castle['gl'][_0x3adf82(0x6a9)](_0x53ab63,_0x7a044b[_0x3adf82(0x4ce)],_0x10dca4,Castle['gl'][_0x3adf82(0x4e5)],_0x12e4fe,_0x2e08c2),Castle['gl'][_0x3adf82(0x3d3)](_0x53ab63),_0x2e08c2+=_0x7a044b['count']*_0x7a044b[_0x3adf82(0x35d)];}Castle['gl']['bindTexture'](Castle['gl'][_0x3adf82(0x2cd)],null),Castle['gl'][_0x3adf82(0x52d)](_0x1a6e3f),_0x54bcb0?Castle[_0x3adf82(0xfd)](_0x1a6e3f):Castle['setupMainCam'](_0x1a6e3f);let _0x139bdc=_0x201238?_0x201238:_0x474d6a?_0x474d6a:[0x1,0x1,0x1,0x1],_0x31a76a=Castle['gl'][_0x3adf82(0x666)](_0x1a6e3f,_0x3adf82(0x5f3));Castle['gl'][_0x3adf82(0x715)](_0x31a76a,_0x139bdc);let _0x5d9172=_0x55e4d0?_0x55e4d0:[0x1,0x1,0x1,0x1],_0x31297c=Castle['gl'][_0x3adf82(0x666)](_0x1a6e3f,_0x3adf82(0x3d4));Castle['gl']['uniform4fv'](_0x31297c,_0x5d9172);if(_0x168b6c[0x0]>0x0){let _0x42c371=0x1;}let _0x30c065=_0x168b6c?_0x168b6c:[0x0,0x0],_0x108173=Castle['gl']['getUniformLocation'](_0x1a6e3f,_0x3adf82(0x281));Castle['gl'][_0x3adf82(0x57e)](_0x108173,_0x30c065);let _0x286e22=_0x551d13?_0x551d13:new Float32Array([0x1,0x0,0x0,0x0,0x0,0x0,0x1,0x0,0x0,-0x1,0x0,0x0,0x0,0x0,0x0,0x1]);var _0x328311=new Float32Array(0x10),_0x2cbf1d=new Float32Array(0x10);mat4[_0x3adf82(0x5a3)](_0x328311,_0x286e22);_0x3c05f6&&(mat4[_0x3adf82(0x3c3)](_0x2cbf1d,_0x3c05f6,[0x0,0x1,0x0]),mat4[_0x3adf82(0x74f)](_0x328311,_0x2cbf1d,_0x328311));_0x25e999&&(mat4['fromScaling'](_0x2cbf1d,[_0x25e999,_0x25e999,_0x25e999]),mat4['mul'](_0x328311,_0x2cbf1d,_0x328311));_0xaf8774&&(_0x328311[0xc]+=_0xaf8774[0x0],_0x328311[0xd]+=_0xaf8774[0x1],_0x328311[0xe]+=_0xaf8774[0x2]);let _0xb7500a=Castle['gl'][_0x3adf82(0x666)](_0x1a6e3f,'mWorld');Castle['gl'][_0x3adf82(0x4f5)](_0xb7500a,Castle['gl']['FALSE'],_0x328311);for(let _0x2c0604=0x0;_0x2c0604<_0x1ebca4[_0x3adf82(0x2ed)];++_0x2c0604){if(_0x1ebca4[_0x2c0604]){Castle['gl'][_0x3adf82(0x3ad)](Castle['gl'][_0x3adf82(0x654)]+_0x2c0604),Castle['gl'][_0x3adf82(0x426)](Castle['gl']['TEXTURE_2D'],_0x1ebca4[_0x2c0604]);let _0x53018b=_0x3adf82(0x4fe)+_0x2c0604,_0x3dc5cd=Castle['gl'][_0x3adf82(0x666)](_0x1a6e3f,_0x53018b);Castle['gl'][_0x3adf82(0x4dc)](_0x3dc5cd,_0x2c0604);}}if(!_0x54bcb0){Castle['gl'][_0x3adf82(0x3ad)](Castle['gl'][_0x3adf82(0x654)]+_0x1ebca4[_0x3adf82(0x2ed)]),Castle['gl']['bindTexture'](Castle['gl'][_0x3adf82(0x2cd)],Castle[_0x3adf82(0x62e)]);let _0x31deb6=_0x3adf82(0x260),_0x1a7ab7=Castle['gl']['getUniformLocation'](_0x1a6e3f,_0x31deb6);Castle['gl'][_0x3adf82(0x4dc)](_0x1a7ab7,_0x1ebca4[_0x3adf82(0x2ed)]);}if(!_0x54bcb0){Castle['gl']['activeTexture'](Castle['gl'][_0x3adf82(0x654)]+_0x1ebca4['length']+0x1),Castle['gl'][_0x3adf82(0x426)](Castle['gl'][_0x3adf82(0x2cd)],Castle[_0x3adf82(0x1e6)]),Castle['gl'][_0x3adf82(0x800)](Castle['gl'][_0x3adf82(0x2cd)],0x0,Castle['gl'][_0x3adf82(0x7e0)],0x40,0x40,0x0,Castle['gl'][_0x3adf82(0x7e0)],Castle['gl'][_0x3adf82(0x6f0)],Castle[_0x3adf82(0x3b8)]);let _0x3d3afb=_0x3adf82(0x212),_0x458a8d=Castle['gl']['getUniformLocation'](_0x1a6e3f,_0x3d3afb);Castle['gl']['uniform1i'](_0x458a8d,_0x1ebca4[_0x3adf82(0x2ed)]+0x1);}Castle['gl'][_0x3adf82(0x4f6)](_0x36441a?Castle['gl'][_0x3adf82(0x46a)]:Castle['gl'][_0x3adf82(0x68e)],0x0,_0x7df49);}}class Settings{static [_0x4487d4(0x848)]={'fullscreen':!![],'render':!![],'globalVolume':0.5,'musicVolume':0.7,'soundsVolume':0.7,'radminPriority':![]};static [_0x4487d4(0x57f)]=JSON['parse'](JSON[_0x4487d4(0x7fd)](this['defaultSettings']));static [_0x4487d4(0x18c)];static [_0x4487d4(0x5fa)];static async[_0x4487d4(0x46c)](){const _0x68dd89=_0x4487d4,_0x23e59=NativeAPI['os']['homedir']();this['pwcLauncherSettingsDir']=NativeAPI[_0x68dd89(0x4b8)][_0x68dd89(0x454)](_0x23e59,_0x68dd89(0x127)),this['settingsFilePath']=NativeAPI[_0x68dd89(0x4b8)][_0x68dd89(0x454)](this[_0x68dd89(0x18c)],_0x68dd89(0x15d));try{return await NativeAPI[_0x68dd89(0x59d)][_0x68dd89(0x1d1)][_0x68dd89(0x5ac)](this[_0x68dd89(0x18c)],{'recursive':!![]}),await NativeAPI[_0x68dd89(0x59d)]['promises']['access'](this[_0x68dd89(0x5fa)]),!![];}catch(_0x149488){return App[_0x68dd89(0x498)](_0x68dd89(0x2df)+_0x149488),await this[_0x68dd89(0x38a)](),![];}}static async[_0x4487d4(0x38a)](){const _0x5099ce=_0x4487d4;this[_0x5099ce(0x57f)]=JSON['parse'](JSON[_0x5099ce(0x7fd)](this[_0x5099ce(0x848)])),await this[_0x5099ce(0x4b4)]();}static async[_0x4487d4(0x2f7)](){const _0x24ef62=_0x4487d4;if(!NativeAPI[_0x24ef62(0x370)]){App['error'](_0x24ef62(0x24a)),this[_0x24ef62(0x57f)]={...this[_0x24ef62(0x848)]};return;}try{if(await this[_0x24ef62(0x46c)]()){const _0x100da5=await NativeAPI[_0x24ef62(0x59d)]['promises'][_0x24ef62(0x856)](this[_0x24ef62(0x5fa)],_0x24ef62(0x60f));this['settings']={...this[_0x24ef62(0x848)],...JSON[_0x24ef62(0x1f1)](_0x100da5)};}}catch(_0x591197){App[_0x24ef62(0x498)](_0x24ef62(0x47c)+_0x591197),this[_0x24ef62(0x57f)]={...this[_0x24ef62(0x848)]};}}static async[_0x4487d4(0x4b4)](){const _0x117d9c=_0x4487d4;if(!this['settingsFilePath']||!NativeAPI[_0x117d9c(0x370)]){App['error'](_0x117d9c(0x237));return;}try{await NativeAPI[_0x117d9c(0x59d)][_0x117d9c(0x1d1)][_0x117d9c(0x7e3)](this[_0x117d9c(0x5fa)],JSON['stringify'](this[_0x117d9c(0x57f)],null,0x2),_0x117d9c(0x60f));}catch(_0xea3f35){App[_0x117d9c(0x498)](_0x117d9c(0x826)+_0xea3f35);}}static async['ApplySettings'](_0x28ee10={}){const _0x3fe7da=_0x4487d4;_0x28ee10={'render':!![],'audio':!![],'window':!![],..._0x28ee10};try{_0x28ee10['render']!==![]&&typeof Castle!==_0x3fe7da(0x205)&&Castle[_0x3fe7da(0x500)](Castle[_0x3fe7da(0x4e4)],this['settings'][_0x3fe7da(0x5d1)]);if(_0x28ee10[_0x3fe7da(0x83c)]!==![]&&NativeAPI[_0x3fe7da(0x370)]&&NativeAPI[_0x3fe7da(0x83c)]){const _0xa41a04=await NativeAPI[_0x3fe7da(0x83c)][_0x3fe7da(0x372)];if(this[_0x3fe7da(0x57f)][_0x3fe7da(0x836)]&&!_0xa41a04)await NativeAPI['window'][_0x3fe7da(0x801)]();else!this[_0x3fe7da(0x57f)][_0x3fe7da(0x836)]&&_0xa41a04&&(await NativeAPI[_0x3fe7da(0x83c)][_0x3fe7da(0x111)](),NativeAPI['window'][_0x3fe7da(0x3a5)](0x500,0x2d0),NativeAPI[_0x3fe7da(0x83c)][_0x3fe7da(0x73c)](_0x3fe7da(0x375)));}if(_0x28ee10['audio']!==![]&&typeof Sound!=='undefined'){for(const _0x2a2be8 in Sound[_0x3fe7da(0x171)]){const _0xe3db72=_0x2a2be8===_0x3fe7da(0x5a7)?Castle[_0x3fe7da(0x469)]:Castle['AUDIO_SOUNDS'];Sound[_0x3fe7da(0x335)](_0x2a2be8,Castle['GetVolume'](_0xe3db72));}Castle[_0x3fe7da(0x1fb)]&&Sound[_0x3fe7da(0x171)][_0x3fe7da(0x424)]&&Sound['setVolume'](_0x3fe7da(0x424),Castle['GetVolume'](Castle[_0x3fe7da(0x5ee)]));}}catch(_0x2238a6){App[_0x3fe7da(0x498)](_0x3fe7da(0x663)+_0x2238a6);}}static async['init'](){const _0xcccad=_0x4487d4;await this[_0xcccad(0x2f7)](),await this[_0xcccad(0x526)](),window[_0xcccad(0x4e9)]('beforeunload',()=>{const _0x371153=_0xcccad;this[_0x371153(0x4b4)]();});}}class MM{static ['id']='';static ['hero']=![];static [_0x4487d4(0x1bc)]=document[_0x4487d4(0x4af)](_0x4487d4(0x51d));static [_0x4487d4(0x561)]=DOM({'tag':_0x4487d4(0x51d)},DOM({'tag':'div'}),DOM({'id':_0x4487d4(0x1df)},'0'));static ['renderBody']=![];static [_0x4487d4(0x1d5)]=![];static [_0x4487d4(0x1a3)]=![];static [_0x4487d4(0x4d7)]=0x0;static[_0x4487d4(0x639)](){const _0x1d9691=_0x4487d4;Castle['toggleRender'](Castle[_0x1d9691(0x57d)],![]),Castle[_0x1d9691(0x5b2)](Castle['MUSIC_LAYER_GAME'],![]),document['body']['style'][_0x1d9691(0x601)]=_0x1d9691(0x6c8),NativeAPI[_0x1d9691(0x83c)][_0x1d9691(0x61f)](),NativeAPI[_0x1d9691(0x276)][_0x1d9691(0x286)](NativeAPI[_0x1d9691(0x2a9)]);}static[_0x4487d4(0x392)](){const _0x367955=_0x4487d4;Castle[_0x367955(0x500)](Castle['RENDER_LAYER_GAME'],!![]),Castle['toggleMusic'](Castle[_0x367955(0x376)],!![]),document[_0x367955(0x2a2)][_0x367955(0x11e)][_0x367955(0x601)]=_0x367955(0x547);if(NativeAPI['status'])try{Settings['ApplySettings'](),NativeAPI[_0x367955(0x83c)][_0x367955(0x19c)](),NativeAPI[_0x367955(0x276)]['registerGlobalHotKey'](NativeAPI[_0x367955(0x2a9)]);}catch(_0x585a27){App[_0x367955(0x498)](_0x585a27);}View[_0x367955(0x19c)](_0x367955(0x5a7));}static async[_0x4487d4(0x303)](){const _0x10950f=_0x4487d4;MM[_0x10950f(0x1bc)][_0x10950f(0x695)]['add']('mm'),MM[_0x10950f(0x1bc)][_0x10950f(0x11e)][_0x10950f(0x601)]=_0x10950f(0x6c8),document['body'][_0x10950f(0x2f2)](MM[_0x10950f(0x1bc)]);let _0x22ccef=CastleNAVBAR[_0x10950f(0x303)]();_0x22ccef['onclick']=()=>MM[_0x10950f(0x337)](),Timer[_0x10950f(0x303)](),window[_0x10950f(0x4e9)](_0x10950f(0x380),()=>{const _0x4b7afb=_0x10950f;NativeAPI[_0x4b7afb(0x370)]&&(MM[_0x4b7afb(0x1d5)]&&MM[_0x4b7afb(0x337)]());});}static[_0x4487d4(0x167)](){const _0x5521e6=_0x4487d4;Sound[_0x5521e6(0x612)](_0x5521e6(0x29e),{'id':_0x5521e6(0x52b),'volume':Castle['GetVolume'](Castle['AUDIO_SOUNDS'])});}static[_0x4487d4(0x612)](){const _0x322850=_0x4487d4;return MM[_0x322850(0x561)];}static[_0x4487d4(0x19c)](_0x45dc0e){const _0xe9e595=_0x4487d4;if(MM['view'][_0xe9e595(0x682)])while(MM[_0xe9e595(0x1bc)][_0xe9e595(0x682)]){MM[_0xe9e595(0x1bc)][_0xe9e595(0x682)][_0xe9e595(0x1ac)]();}MM[_0xe9e595(0x1bc)][_0xe9e595(0x2f2)](_0x45dc0e),MM[_0xe9e595(0x1bc)]['style']['display']=_0xe9e595(0x3cd);}static[_0x4487d4(0x776)](){const _0x47f586=_0x4487d4;Sound[_0x47f586(0x220)](_0x47f586(0x35f)),Castle[_0x47f586(0x5b2)](Castle[_0x47f586(0x678)],!![]),MM[_0x47f586(0x1bc)][_0x47f586(0x11e)]['display']=_0x47f586(0x6c8);}static[_0x4487d4(0x501)](_0x49faa7=!![]){const _0x2ac2de=_0x4487d4;_0x49faa7&&!MM['active']&&(MM['active']=!![],CastleNAVBAR[_0x2ac2de(0x612)]()),!_0x49faa7&&MM['active']&&(MM['active']=![],CastleNAVBAR[_0x2ac2de(0x5e1)]());}static async['gameStartCheck'](){const _0x1ff812=_0x4487d4;if(PWGame[_0x1ff812(0x460)])return;(!PWGame[_0x1ff812(0x243)]||!PWGame[_0x1ff812(0x20e)]||!PWGame[_0x1ff812(0x70f)])&&(MM[_0x1ff812(0x561)][_0x1ff812(0x682)]['innerText']='Проверка');try{!MM['active']&&(PWGame[_0x1ff812(0x460)]=!![],await PWGame[_0x1ff812(0x79a)](),await PWGame[_0x1ff812(0x41b)](),await PWGame['checkUpdates'](),PWGame[_0x1ff812(0x460)]=![]);}catch(_0x26a4ab){return PWGame[_0x1ff812(0x460)]=![],(!PWGame[_0x1ff812(0x243)]||!PWGame['isUpToDate']||!PWGame[_0x1ff812(0x70f)])&&(MM[_0x1ff812(0x561)][_0x1ff812(0x682)]['innerText']=Lang[_0x1ff812(0x605)](_0x1ff812(0x505))),App[_0x1ff812(0x498)](_0x26a4ab);}}static async[_0x4487d4(0x337)](){const _0x393feb=_0x4487d4;if(NativeAPI['status'])await MM[_0x393feb(0x611)]();else{const _0x5389c7=DOM({'tag':'p','innerHTML':_0x393feb(0x231)}),_0x76d38a=DOM({'style':'splash-content-window'}),_0x43a28a=DOM({'tag':'h1'},_0x393feb(0x3c5)),_0x4f2d08=DOM({'tag':'p'},_0x393feb(0x854)),_0x5a31cb=DOM({'tag':'p'},'Мы\x20полностью\x20перенесли\x20браузерный\x20лаунчер\x20в\x20полноценное\x20Windows\x20приложение\x20с\x20автоматическим\x20обновлением\x20клиентской\x20части\x20Prime\x20World.'),_0x26861f=DOM({'tag':_0x393feb(0x51d),'style':_0x393feb(0x3b2),'event':[_0x393feb(0x6d3),()=>Splash[_0x393feb(0x61f)]()]});_0x26861f[_0x393feb(0x11e)][_0x393feb(0x756)]=_0x393feb(0x226),_0x76d38a[_0x393feb(0x2f2)](_0x26861f,_0x43a28a,_0x4f2d08,_0x5a31cb,_0x5389c7);const _0x2e68a1=DOM({'tag':_0x393feb(0x11e),'innerHTML':_0x393feb(0x1e3)});document[_0x393feb(0x257)][_0x393feb(0x2f2)](_0x2e68a1),Splash[_0x393feb(0x19c)](_0x76d38a,![]);return;}!MM[_0x393feb(0x38c)]&&(MM[_0x393feb(0x38c)]=await App[_0x393feb(0x3bb)][_0x393feb(0x74c)](_0x393feb(0x664),_0x393feb(0x20d)));if(MM[_0x393feb(0x1d5)]){try{await App['api']['request'](CURRENT_MM,_0x393feb(0x5e1));}catch(_0x4f818b){return App['error'](_0x4f818b);}MM[_0x393feb(0x501)](![]);}else{MM[_0x393feb(0x501)](!![]);try{let _0x3f2eaa=await App[_0x393feb(0x3bb)][_0x393feb(0x74c)](CURRENT_MM,_0x393feb(0x337),{'hero':MM[_0x393feb(0x4d7)],'version':PW_VERSION,'mode':CastleNAVBAR[_0x393feb(0x320)]});if(_0x3f2eaa[_0x393feb(0x7a3)]==_0x393feb(0x2e9)){MM[_0x393feb(0x501)](![]),MM[_0x393feb(0x639)](),PWGame['reconnect'](_0x3f2eaa['id'],MM[_0x393feb(0x392)]);return;}}catch(_0x3d5d49){return MM['searchActive'](![]),App['error'](_0x3d5d49);}}}static async[_0x4487d4(0x5c1)](_0x52d041){const _0x124a1b=_0x4487d4;MM['id']=_0x52d041['id'];let _0x3cbf7a=DOM({'style':_0x124a1b(0x245)},Timer[_0x124a1b(0x2a2)],DOM({'id':_0x124a1b(0x628),'style':'mm-ready-count'},'0/'+_0x52d041[_0x124a1b(0x64a)]));await Timer[_0x124a1b(0x337)](_0x52d041['id'],'Бой\x20найден',()=>{const _0x39f726=_0x124a1b;MM['close'](),MM[_0x39f726(0x501)](!![]);}),MM[_0x124a1b(0x501)](![]),MM['soundEvent']();let _0x4129f0=DOM({'style':_0x124a1b(0x216),'event':['click',async()=>{const _0x1a9118=_0x124a1b;try{await App[_0x1a9118(0x3bb)][_0x1a9118(0x74c)](CURRENT_MM,'ready',{'id':_0x52d041['id']});}catch(_0xb54f69){Timer[_0x1a9118(0x220)](),MM[_0x1a9118(0x776)](),MM[_0x1a9118(0x501)](![]);return;}_0x4129f0[_0x1a9118(0x11e)]['opacity']=0x0;}]},Lang[_0x124a1b(0x605)](_0x124a1b(0x5c1)));_0x4129f0[_0x124a1b(0x11e)][_0x124a1b(0x332)]=_0x124a1b(0x15c),_0x4129f0[_0x124a1b(0x33a)]({'transform':[_0x124a1b(0x13a),_0x124a1b(0x150),_0x124a1b(0x5f9),_0x124a1b(0x13a)]},{'duration':0x1f4,'iterations':Infinity,'easing':_0x124a1b(0x346)}),_0x3cbf7a[_0x124a1b(0x2f2)](_0x4129f0),MM[_0x124a1b(0x19c)](_0x3cbf7a);}static async['lobbyBuildView'](_0x3c6f3a){const _0x4d39ea=_0x4487d4;MM[_0x4d39ea(0x5af)][_0x4d39ea(0x682)]&&MM['lobbyBuildField'][_0x4d39ea(0x682)][_0x4d39ea(0x1ac)]();while(MM[_0x4d39ea(0x4c0)][_0x4d39ea(0x682)]){MM[_0x4d39ea(0x4c0)][_0x4d39ea(0x682)][_0x4d39ea(0x1ac)]();}let _0x44a36a=await App[_0x4d39ea(0x3bb)][_0x4d39ea(0x74c)]('build','my',{'hero':_0x3c6f3a});for(let _0x2d8348 of _0x44a36a){let _0x3b2d55=DOM({'event':[_0x4d39ea(0x6d3),async()=>{const _0x5a430a=_0x4d39ea;await App[_0x5a430a(0x3bb)]['request']('build','target',{'id':_0x2d8348['id']});for(let _0x2867d9 of MM[_0x5a430a(0x4c0)][_0x5a430a(0x47a)]){_0x2867d9[_0x5a430a(0x11e)][_0x5a430a(0x809)]=_0x5a430a(0x537);}_0x3b2d55[_0x5a430a(0x11e)][_0x5a430a(0x809)]=_0x5a430a(0x6b3),MM['lobbyBuildField'][_0x5a430a(0x682)]&&MM['lobbyBuildField'][_0x5a430a(0x682)][_0x5a430a(0x1ac)](),MM[_0x5a430a(0x5af)]['append'](Build[_0x5a430a(0x34a)](_0x2d8348[_0x5a430a(0x2a2)],![],![]));}]},_0x2d8348[_0x4d39ea(0x20f)]);_0x2d8348[_0x4d39ea(0x47b)]&&(_0x3b2d55[_0x4d39ea(0x11e)][_0x4d39ea(0x809)]='rgba(255,255,255,0.3)',MM['lobbyBuildField'][_0x4d39ea(0x682)]&&MM[_0x4d39ea(0x5af)][_0x4d39ea(0x682)][_0x4d39ea(0x1ac)](),MM[_0x4d39ea(0x5af)][_0x4d39ea(0x2f2)](Build[_0x4d39ea(0x34a)](_0x2d8348[_0x4d39ea(0x2a2)],![],![]))),MM[_0x4d39ea(0x4c0)]['append'](_0x3b2d55);}}static async[_0x4487d4(0x217)](_0x491dca){const _0x13f7f4=_0x4487d4;!MM[_0x13f7f4(0x38c)]&&(MM[_0x13f7f4(0x38c)]=await App[_0x13f7f4(0x3bb)][_0x13f7f4(0x74c)](_0x13f7f4(0x664),'heroAll'));!MM['id']&&(MM['id']=_0x491dca['id']);MM['searchActive'](![]),MM[_0x13f7f4(0x5d6)]=_0x491dca[_0x13f7f4(0x5c0)],MM[_0x13f7f4(0x34d)]=_0x491dca[_0x13f7f4(0x5c0)][App[_0x13f7f4(0x3b3)][_0x13f7f4(0x43a)]['id']][_0x13f7f4(0x38c)];let _0x51a4af=DOM({'style':_0x13f7f4(0x489)});MM['lobbyBuildField']=DOM(),MM['lobbyBuildField']['style'][_0x13f7f4(0x451)]=_0x13f7f4(0x518),MM[_0x13f7f4(0x5af)][_0x13f7f4(0x11e)][_0x13f7f4(0x658)]=_0x13f7f4(0x713),MM['lobbyBuildField'][_0x13f7f4(0x11e)][_0x13f7f4(0x40c)]=_0x13f7f4(0x713),MM[_0x13f7f4(0x4c0)]=DOM({'style':_0x13f7f4(0x312)}),MM[_0x13f7f4(0x568)]=DOM({'style':_0x13f7f4(0x216),'event':[_0x13f7f4(0x6d3),async()=>{const _0x1623a6=_0x13f7f4;try{await App[_0x1623a6(0x3bb)]['request'](CURRENT_MM,_0x1623a6(0x38c),{'id':_0x491dca['id'],'heroId':MM['targetHeroId']});}catch(_0x9fd1ab){MM[_0x1623a6(0x568)][_0x1623a6(0x12e)]=_0x9fd1ab,setTimeout(()=>{const _0x4330dc=_0x1623a6;MM[_0x4330dc(0x568)][_0x4330dc(0x12e)]=_0x4330dc(0xf4);},0x5dc);}}]},_0x13f7f4(0xf4)),MM[_0x13f7f4(0x568)]['style']['opacity']=0x0,MM[_0x13f7f4(0x568)]['style'][_0x13f7f4(0x658)]=_0x13f7f4(0x339),MM[_0x13f7f4(0x568)][_0x13f7f4(0x33a)]({'transform':[_0x13f7f4(0x13a),'scale(0.8)',_0x13f7f4(0x5f9),_0x13f7f4(0x13a)]},{'duration':0x7d0,'iterations':Infinity,'easing':_0x13f7f4(0x346)}),_0x51a4af[_0x13f7f4(0x2f2)](MM[_0x13f7f4(0x568)],MM['lobbyBuildField'],MM[_0x13f7f4(0x4c0)]);MM[_0x13f7f4(0x34d)]&&MM[_0x13f7f4(0xe1)](MM['targetHeroId']);let _0x3f310d=DOM({'style':_0x13f7f4(0x600)}),_0x50f51e=DOM({'style':_0x13f7f4(0x600)});for(let _0x2ee1e2 of _0x491dca[_0x13f7f4(0x3d7)]){let _0x3eaaf2=DOM({'id':_0x13f7f4(0x3c4)+_0x2ee1e2,'style':_0x13f7f4(0x623)});_0x3eaaf2[_0x13f7f4(0x67f)]['hero']=_0x491dca['users'][_0x2ee1e2][_0x13f7f4(0x38c)];let _0x4ea5d0=DOM({'style':'mm-lobby-header-team-player-hero'}),_0xec664e=DOM({'style':_0x13f7f4(0x19d)},''+_0x491dca['users'][_0x2ee1e2][_0x13f7f4(0x3ed)]),_0x40e979=DOM({'style':_0x13f7f4(0x1dc)});_0x40e979[_0x13f7f4(0x11e)]['backgroundImage']=_0x13f7f4(0x6a0)+Rank[_0x13f7f4(0x7f9)](_0x491dca['users'][_0x2ee1e2][_0x13f7f4(0x676)])+'.webp)';let _0x3565ec=DOM({'style':_0x13f7f4(0x3da)},DOM({'style':_0x13f7f4(0x282)},_0x491dca[_0x13f7f4(0x5c0)][_0x2ee1e2]['rating']),_0x40e979);_0x4ea5d0[_0x13f7f4(0x2f2)](_0x3565ec),'commander'in _0x491dca['users'][_0x2ee1e2]&&(_0x4ea5d0[_0x13f7f4(0x2f2)](DOM({'style':_0x13f7f4(0x5a8)+Winrate['icon'](_0x491dca['users'][_0x2ee1e2][_0x13f7f4(0x723)])})),_0xec664e['setAttribute'](_0x13f7f4(0x11e),'color:rgba(255,215,0,0.9)')),_0x4ea5d0[_0x13f7f4(0x11e)][_0x13f7f4(0x756)]=_0x491dca['users'][_0x2ee1e2][_0x13f7f4(0x38c)]?_0x13f7f4(0x16c)+_0x491dca[_0x13f7f4(0x5c0)][_0x2ee1e2][_0x13f7f4(0x38c)]+_0x13f7f4(0x6bc):_0x13f7f4(0x45e),_0x3eaaf2[_0x13f7f4(0x2f2)](_0x4ea5d0,_0xec664e),_0x2ee1e2==_0x491dca[_0x13f7f4(0x47b)]&&(MM[_0x13f7f4(0x702)]=_0x3eaaf2[_0x13f7f4(0x33a)]({'transform':[_0x13f7f4(0x13a),_0x13f7f4(0x150),'scale(1.1)',_0x13f7f4(0x13a)]},{'duration':0x7d0,'iterations':Infinity,'easing':_0x13f7f4(0x346)})),_0x491dca[_0x13f7f4(0x5c0)][App[_0x13f7f4(0x3b3)][_0x13f7f4(0x43a)]['id']][_0x13f7f4(0x769)]==_0x491dca['users'][_0x2ee1e2][_0x13f7f4(0x769)]?(_0x3f310d[_0x13f7f4(0x2f2)](_0x3eaaf2),_0x3eaaf2[_0x13f7f4(0x513)]=()=>{const _0x43f8a6=_0x13f7f4;_0x3eaaf2[_0x43f8a6(0x67f)]['hero']&&Build[_0x43f8a6(0x1bc)](_0x2ee1e2,_0x3eaaf2[_0x43f8a6(0x67f)]['hero'],_0x491dca[_0x43f8a6(0x5c0)][_0x2ee1e2][_0x43f8a6(0x3ed)],![]);}):(_0xec664e[_0x13f7f4(0x12e)]=_0x13f7f4(0x10b),_0xec664e[_0x13f7f4(0x11e)][_0x13f7f4(0x65e)]=0x0,_0x40e979[_0x13f7f4(0x11e)][_0x13f7f4(0x756)]=_0x13f7f4(0x6c8),_0x3565ec['firstChild'][_0x13f7f4(0x12e)]=0x44c,_0x3565ec[_0x13f7f4(0x682)][_0x13f7f4(0x11e)][_0x13f7f4(0x65e)]=0x0,_0x50f51e[_0x13f7f4(0x2f2)](_0x3eaaf2));}MM['lobbyHeroes']=DOM({'style':_0x13f7f4(0x732)});let _0xa1a479='';for(let _0x3e3bd6 of MM['hero']){let _0x5f1c2c=Rank[_0x13f7f4(0x185)](_0x3e3bd6[_0x13f7f4(0x676)]);if(_0x5f1c2c!=_0xa1a479){let _0x4ea554=DOM({'style':'mm-lobby-middle-hero-line-icon'});_0x4ea554[_0x13f7f4(0x11e)][_0x13f7f4(0x756)]=_0x13f7f4(0x6a0)+Rank[_0x13f7f4(0x7f9)](_0x3e3bd6['rating'])+'.webp)';let _0x37a71a=DOM({'style':_0x13f7f4(0x4d8)});_0x37a71a['style']['backgroundImage']=_0x13f7f4(0x6a0)+Rank[_0x13f7f4(0x7f9)](_0x3e3bd6[_0x13f7f4(0x676)])+_0x13f7f4(0x634),MM['lobbyHeroes']['append'](DOM({'style':'mm-lobby-middle-hero-line'},_0x4ea554,DOM({'style':_0x13f7f4(0x860)},_0x5f1c2c),_0x37a71a)),_0xa1a479=_0x5f1c2c;}let _0x4ed8db=DOM({'id':_0x13f7f4(0x2cb)+_0x3e3bd6['id'],'data':{'ban':0x0},'style':_0x13f7f4(0x3fe)});_0x4ed8db[_0x13f7f4(0x11e)]['backgroundImage']='url(\x22content/hero/'+_0x3e3bd6['id']+_0x13f7f4(0x30b),_0x4ed8db[_0x13f7f4(0x513)]=async()=>{const _0x157713=_0x13f7f4;MM[_0x157713(0x34d)]=_0x3e3bd6['id'],await App[_0x157713(0x3bb)]['request'](CURRENT_MM,_0x157713(0x4cc),{'id':MM['id'],'heroId':_0x3e3bd6['id']}),MM[_0x157713(0xe1)](MM['targetHeroId']);};let _0x38785f=DOM({'style':_0x13f7f4(0x3da)},DOM({'style':'rank-lvl'},_0x3e3bd6['rating']));_0x4ed8db[_0x13f7f4(0x2f2)](_0x38785f),MM['lobbyHeroes'][_0x13f7f4(0x2f2)](_0x4ed8db);}App['storage'][_0x13f7f4(0x43a)]['id']==_0x491dca['target']&&(MM[_0x13f7f4(0x568)][_0x13f7f4(0x11e)][_0x13f7f4(0x65e)]=0x1);let _0x49ee25=DOM({'style':_0x13f7f4(0x772)});await Timer[_0x13f7f4(0x337)](_0x491dca['id'],'',()=>{const _0x593b3b=_0x13f7f4;MM[_0x593b3b(0x776)](),MM[_0x593b3b(0x501)](!![]);}),_0x49ee25[_0x13f7f4(0x2f2)](Timer[_0x13f7f4(0x2a2)]),MM['chatBody']=DOM({'style':_0x13f7f4(0x1cf)});let _0x533451=DOM({'tag':_0x13f7f4(0x3fc),'style':_0x13f7f4(0x7d0),'placeholder':Lang['text'](_0x13f7f4(0x54b))});_0x533451[_0x13f7f4(0x4e9)](_0x13f7f4(0x5e6),async _0x52e1ec=>{const _0x55784a=_0x13f7f4;if(_0x52e1ec[_0x55784a(0x270)]===_0x55784a(0x5dd)){if(_0x533451[_0x55784a(0x357)][_0x55784a(0x2ed)]<0x2)throw _0x55784a(0x3db);if(_0x533451['value'][_0x55784a(0x2ed)]>0x100)throw _0x55784a(0x122);await App[_0x55784a(0x3bb)][_0x55784a(0x74c)](CURRENT_MM,_0x55784a(0x60d),{'id':MM['id'],'message':_0x533451[_0x55784a(0x357)]}),_0x533451['value']='';}});let _0x5ce51a=DOM({'style':'mm-lobby'},DOM({'style':_0x13f7f4(0x7c1)},_0x3f310d,_0x49ee25,_0x50f51e),DOM({'style':_0x13f7f4(0x401)},DOM({'style':_0x13f7f4(0x16f)},DOM({'style':'mm-lobby-middle-chat-map'},_0x491dca[_0x13f7f4(0x320)]==0x0?MM[_0x13f7f4(0x1c2)]():DOM()),MM[_0x13f7f4(0x5d8)],_0x533451),_0x51a4af,MM[_0x13f7f4(0x461)]));Sound[_0x13f7f4(0x612)]('content/sounds/tambur.ogg',{'id':_0x13f7f4(0x35f),'volume':Castle[_0x13f7f4(0x688)](Castle['AUDIO_MUSIC']),'loop':!![]}),Castle['toggleMusic'](Castle[_0x13f7f4(0x678)],![]),MM[_0x13f7f4(0x19c)](_0x5ce51a);for(let _0x4e2429 in _0x491dca['users']){if(!_0x491dca[_0x13f7f4(0x5c0)][_0x4e2429][_0x13f7f4(0x38c)])continue;let _0x2e2382=document['getElementById']('HERO'+_0x491dca['users'][_0x4e2429]['hero']);_0x2e2382&&(_0x2e2382['style']['filter']=_0x13f7f4(0x301),_0x2e2382[_0x13f7f4(0x11e)]['backgroundColor']=_0x13f7f4(0x7a8),_0x2e2382[_0x13f7f4(0x67f)][_0x13f7f4(0x353)]=_0x4e2429);}}static[_0x4487d4(0x1c2)](){const _0x52a2d3=_0x4487d4;MM[_0x52a2d3(0x3c1)]=DOM({'style':_0x52a2d3(0x3d7)});let _0x5a8526=DOM({'tag':'div'},MM[_0x52a2d3(0x3c1)]);_0x5a8526[_0x52a2d3(0x33e)](_0x52a2d3(0x11e),_0x52a2d3(0x2f1));for(let _0x57f788 of[0x1,0x2,0x3,0x4,0x5,0x6]){let _0x3ffb47=DOM({'style':_0x52a2d3(0xea)+_0x57f788,'data':{'player':0x0,'position':_0x57f788},'event':[_0x52a2d3(0x6d3),async()=>{const _0xa9ae2c=_0x52a2d3;await App[_0xa9ae2c(0x3bb)]['request'](CURRENT_MM,_0xa9ae2c(0x135),{'id':MM['id'],'position':_0x3ffb47[_0xa9ae2c(0x67f)][_0xa9ae2c(0x2ba)]==App[_0xa9ae2c(0x3b3)][_0xa9ae2c(0x43a)]['id']?0x0:_0x3ffb47[_0xa9ae2c(0x67f)][_0xa9ae2c(0x135)]});}]});MM['renderBody'][_0x52a2d3(0x2f2)](_0x3ffb47);}return _0x5a8526;}static async[_0x4487d4(0x5d7)](_0x5b2d74){const _0x58edb6=_0x4487d4;Sound['play'](_0x58edb6(0x7b7)+_0x5b2d74[_0x58edb6(0x58a)]+_0x58edb6(0x381)+_0x5b2d74['sound']+_0x58edb6(0x1b6),{'id':_0x58edb6(0x2e8)+_0x5b2d74['heroId']+'_'+_0x5b2d74[_0x58edb6(0x78c)],'volume':Castle[_0x58edb6(0x688)](Castle[_0x58edb6(0x5ee)])}),MM['lobbyPlayerAnimate'][_0x58edb6(0x5e1)](),await Timer[_0x58edb6(0x337)](_0x5b2d74['id'],'',()=>{const _0x31a2b0=_0x58edb6;MM[_0x31a2b0(0x776)](),MM[_0x31a2b0(0x501)](!![]);});let _0x56ba17=document[_0x58edb6(0x273)](_0x58edb6(0x3c4)+_0x5b2d74[_0x58edb6(0x768)]);_0x56ba17&&(_0x56ba17[_0x58edb6(0x67f)]['hero']=_0x5b2d74[_0x58edb6(0x58a)],_0x56ba17[_0x58edb6(0x682)][_0x58edb6(0x11e)]['backgroundImage']=_0x58edb6(0x16c)+_0x5b2d74[_0x58edb6(0x58a)]+'/1.webp)',_0x56ba17[_0x58edb6(0x682)][_0x58edb6(0x682)][_0x58edb6(0x682)][_0x58edb6(0x12e)]=_0x5b2d74[_0x58edb6(0x676)],_0x56ba17['firstChild'][_0x58edb6(0x682)][_0x58edb6(0x116)][_0x58edb6(0x11e)][_0x58edb6(0x756)]=_0x58edb6(0x6b8));if(_0x5b2d74[_0x58edb6(0x47b)]!=0x0){let _0x69b353=document[_0x58edb6(0x273)](_0x58edb6(0x3c4)+_0x5b2d74[_0x58edb6(0x47b)]);_0x69b353&&(MM[_0x58edb6(0x702)]=_0x69b353[_0x58edb6(0x33a)]({'transform':[_0x58edb6(0x13a),_0x58edb6(0x150),_0x58edb6(0x5f9),_0x58edb6(0x13a)]},{'duration':0x1f4,'iterations':Infinity,'easing':_0x58edb6(0x346)}));}for(let _0xfaefca of MM[_0x58edb6(0x461)]['children']){if(_0xfaefca[_0x58edb6(0x67f)][_0x58edb6(0x353)]==_0x5b2d74[_0x58edb6(0x768)]){_0xfaefca['dataset'][_0x58edb6(0x353)]=0x0,_0xfaefca[_0x58edb6(0x11e)][_0x58edb6(0x7ac)]=_0x58edb6(0x6c8),_0xfaefca[_0x58edb6(0x11e)][_0x58edb6(0x44b)]=_0x58edb6(0x726);break;}}let _0x3ba9d2=document[_0x58edb6(0x273)]('HERO'+_0x5b2d74[_0x58edb6(0x58a)]);_0x3ba9d2&&(_0x3ba9d2['style'][_0x58edb6(0x7ac)]='grayscale(100%)',_0x3ba9d2[_0x58edb6(0x11e)][_0x58edb6(0x44b)]=_0x58edb6(0x7a8),_0x3ba9d2[_0x58edb6(0x513)]=![]),App[_0x58edb6(0x3b3)]['data']['id']==_0x5b2d74['target']?MM['lobbyConfirm']['style'][_0x58edb6(0x65e)]=0x1:MM[_0x58edb6(0x568)][_0x58edb6(0x11e)][_0x58edb6(0x65e)]=0x0;}static[_0x4487d4(0x58b)](_0xc79777){const _0x430ad5=_0x4487d4;Timer[_0x430ad5(0x220)](),MM[_0x430ad5(0x776)]();try{Settings[_0x430ad5(0x526)]();}catch(_0x282a79){App['error'](_0x282a79);}_0xc79777[_0x430ad5(0x320)]==0x3?ARAM[_0x430ad5(0x851)](_0xc79777[_0x430ad5(0x38c)],_0xc79777['role'],()=>{const _0x2719a4=_0x430ad5;MM[_0x2719a4(0x639)](),PWGame['start'](_0xc79777[_0x2719a4(0x72f)],MM['gameStopEvent']);}):(MM['gameRunEvent'](),PWGame[_0x430ad5(0x337)](_0xc79777[_0x430ad5(0x72f)],MM[_0x430ad5(0x392)]));}static[_0x4487d4(0x4cc)](_0xcabc32){const _0x11e7f8=_0x4487d4;let _0x5486ed=document[_0x11e7f8(0x273)]('PLAYER'+_0xcabc32['id']),_0x3f45cc=_0x11e7f8(0x16c)+_0xcabc32['heroId']+'/1.webp)';_0x5486ed&&(_0x5486ed['dataset'][_0x11e7f8(0x38c)]=_0xcabc32[_0x11e7f8(0x58a)],_0x5486ed[_0x11e7f8(0x682)][_0x11e7f8(0x11e)][_0x11e7f8(0x756)]=_0x3f45cc,_0x5486ed[_0x11e7f8(0x682)]['firstChild']['firstChild'][_0x11e7f8(0x12e)]=_0xcabc32[_0x11e7f8(0x676)],_0x5486ed[_0x11e7f8(0x682)][_0x11e7f8(0x682)][_0x11e7f8(0x116)][_0x11e7f8(0x11e)][_0x11e7f8(0x756)]=_0x11e7f8(0x6a0)+Rank['icon'](_0xcabc32['rating'])+_0x11e7f8(0x634));if(MM[_0x11e7f8(0x3c1)])for(let _0x150983 of MM[_0x11e7f8(0x3c1)][_0x11e7f8(0x47a)]){if(_0x150983[_0x11e7f8(0x67f)]['player']==_0xcabc32['id']){_0x150983[_0x11e7f8(0x11e)]['backgroundImage']=_0x3f45cc;break;}}}static['chat'](_0x5939a7){const _0x26505e=_0x4487d4;let _0x370cf0=DOM(''+_0x5939a7[_0x26505e(0x242)]);if(_0x5939a7['id']==0x1)_0x370cf0[_0x26505e(0x11e)]['color']=_0x26505e(0x748);else _0x5939a7['id']&&_0x26505e(0x7a1)in MM[_0x26505e(0x5d6)][_0x5939a7['id']]&&(_0x370cf0[_0x26505e(0x11e)][_0x26505e(0x1cd)]=_0x26505e(0x4ed));let _0x3c4412=DOM({'style':_0x26505e(0x722)});_0x5939a7['id']&&_0x3c4412[_0x26505e(0x2f2)](DOM({'tag':'div'},MM[_0x26505e(0x5d6)][_0x5939a7['id']][_0x26505e(0x3ed)]+':')),_0x3c4412[_0x26505e(0x2f2)](_0x370cf0),MM['chatBody'][_0x26505e(0x2f2)](_0x3c4412),_0x3c4412[_0x26505e(0x3cf)]({'block':'end','behavior':_0x26505e(0x391)});}}class ARAM{static [_0x4487d4(0x3a2)]={0x1:{'name':_0x4487d4(0x371),'description':_0x4487d4(0x7bf)},0x2:{'name':_0x4487d4(0x10e),'description':_0x4487d4(0x706)},0x3:{'name':_0x4487d4(0x177),'description':_0x4487d4(0x2a8)},0x4:{'name':'Младший\x20повелитель','description':_0x4487d4(0x2a8)},0x5:{'name':_0x4487d4(0x3f5),'description':_0x4487d4(0x168)},0x6:{'name':_0x4487d4(0x50e),'description':_0x4487d4(0xc7)},0x7:{'name':_0x4487d4(0x3df),'description':_0x4487d4(0x1fc)}};static[_0x4487d4(0x851)](_0x18951d,_0x492f18,_0x37e8da){const _0x47d0ea=_0x4487d4;let _0x920e11=DOM({'style':_0x47d0ea(0x71b)},DOM({'style':_0x47d0ea(0x657)}));_0x920e11[_0x47d0ea(0x11e)][_0x47d0ea(0x756)]='url(content/hero/empty.webp)';let _0x21f5d8=0x0,_0x291d95=0x11,_0x9fc09=DOM({'style':_0x47d0ea(0x336)},_0x47d0ea(0x82b)),_0x28e0e3=setInterval(()=>{const _0x56035c=_0x47d0ea;if(_0x291d95<=0x5){clearInterval(_0x28e0e3),_0x920e11[_0x56035c(0x11e)][_0x56035c(0x756)]='url(content/hero/'+_0x18951d+'/1.webp)',Sound['play'](_0x56035c(0x7b7)+_0x18951d+'/revive/'+App['getRandomInt'](0x1,0x4)+_0x56035c(0x1b6),{'volume':Castle[_0x56035c(0x688)](Castle[_0x56035c(0x5ee)])}),_0x920e11['firstChild'][_0x56035c(0x33a)]({'opacity':[0x1,0x0]},{'duration':0x1388,'fill':_0x56035c(0x1bf),'easing':_0x56035c(0x1b5)});return;}let _0x5cf76d=0x0;while(!![]){_0x5cf76d=App[_0x56035c(0x5d9)](0x1,0x41);if(_0x5cf76d!=_0x21f5d8){_0x21f5d8=_0x5cf76d;break;}}_0x920e11[_0x56035c(0x11e)][_0x56035c(0x756)]=_0x56035c(0x16c)+_0x5cf76d+_0x56035c(0x6bc);},0x96),_0x428f90=setInterval(()=>{const _0x44f2c6=_0x47d0ea;if(_0x291d95==0x0){clearInterval(_0x428f90);return;}_0x291d95--,_0x9fc09['innerText']=_0x291d95==0x0?Lang['text'](_0x44f2c6(0x505)):'Начало\x20боя\x20через\x20'+_0x291d95+_0x44f2c6(0x30a);},0x3e8),_0x5f53d9=DOM({'style':_0x47d0ea(0x435)});_0x5f53d9[_0x47d0ea(0x11e)][_0x47d0ea(0x756)]='url(content/img/aram/part.png)',_0x5f53d9[_0x47d0ea(0x11e)][_0x47d0ea(0x11d)]='blur(5vmax)';let _0x519888=DOM({'tag':'h1'},_0x47d0ea(0x6ac)),_0x1c593d=DOM({'tag':'div'},_0x47d0ea(0x4ac)),_0x333cfe=DOM({'style':_0x47d0ea(0xf0)},DOM({'style':'aram-text-center'},_0x519888,_0x1c593d));setTimeout(()=>{const _0x387570=_0x47d0ea;let _0x3a4f1c=_0x333cfe[_0x387570(0x33a)]({'opacity':[0x0,0x1]},{'duration':0x672,'fill':_0x387570(0x1bf),'easing':_0x387570(0x1b5)});_0x3a4f1c[_0x387570(0x701)]=()=>{setTimeout(()=>{const _0x326e44=_0x5ecf;_0x3a4f1c[_0x326e44(0xeb)](),_0x3a4f1c['onfinish']=()=>{const _0x48e3d1=_0x326e44;_0x519888[_0x48e3d1(0x12e)]='Ваша\x20роль\x0a\x09\x09\x09\x09\x09\x09'+ARAM[_0x48e3d1(0x3a2)][_0x492f18]['name'],_0x1c593d['innerText']='',_0x3a4f1c[_0x48e3d1(0x701)]=()=>{const _0x2634c6=_0x48e3d1;_0x3a4f1c[_0x2634c6(0x701)]=()=>{const _0x2aa523=_0x2634c6;_0x519888['innerText']=_0x2aa523(0x280),_0x1c593d[_0x2aa523(0x12e)]=ARAM[_0x2aa523(0x3a2)][_0x492f18]['description'],_0x3a4f1c[_0x2aa523(0xeb)](),_0x3a4f1c[_0x2aa523(0x701)]=()=>{const _0x2ee835=_0x2aa523;_0x3a4f1c[_0x2ee835(0xeb)](),_0x3a4f1c[_0x2ee835(0x701)]=null;};},_0x3a4f1c[_0x2634c6(0xeb)]();},_0x3a4f1c[_0x48e3d1(0xeb)]();};},0x3e8);};},0x3e8);let _0x166e4d=DOM({'style':_0x47d0ea(0x56a)},_0x5f53d9,_0x920e11,_0x333cfe);_0x166e4d['style'][_0x47d0ea(0x756)]='url(content/img/aram/bg.png)',setTimeout(()=>{const _0x241b15=_0x47d0ea;let _0x1292df=_0x5f53d9[_0x241b15(0x33a)]({'backdropFilter':[_0x241b15(0x649),_0x241b15(0x137)]},{'duration':0x1388,'fill':_0x241b15(0x1bf),'easing':'ease-in-out'});_0x1292df[_0x241b15(0x701)]=()=>{const _0x523f2e=_0x241b15;_0x5f53d9['style'][_0x523f2e(0x601)]=_0x523f2e(0x6c8),setTimeout(()=>{const _0x3e8a4b=_0x523f2e;_0x166e4d['animate']({'transform':[_0x3e8a4b(0x13a),'scale(1.9)']},{'duration':0x3e8,'easing':_0x3e8a4b(0x1b5),'fill':_0x3e8a4b(0x1bf)}),setTimeout(()=>{const _0x1c2790=_0x3e8a4b;Castle[_0x1c2790(0x5b2)](Castle['MUSIC_LAYER_TAMBUR'],!![]),_0x37e8da(),Splash[_0x1c2790(0x61f)]();},0xfa0);},0x1f4);};},0x1d4c),Castle[_0x47d0ea(0x5b2)](Castle[_0x47d0ea(0x678)],![]),Sound[_0x47d0ea(0x612)](_0x47d0ea(0x35b),{'id':'backgroundAram','volume':Castle[_0x47d0ea(0x688)](Castle[_0x47d0ea(0x469)])}),Splash[_0x47d0ea(0x19c)](_0x166e4d,![]);}}class Sound{static [_0x4487d4(0x171)]=new Object();static[_0x4487d4(0x612)](_0x5b144d,_0x25a83d=new Object(),_0x1c1cb6){const _0x4b5db5=_0x4487d4;'id'in _0x25a83d&&_0x25a83d['id']&&(_0x25a83d['id']in Sound[_0x4b5db5(0x171)]&&Sound[_0x4b5db5(0x220)](_0x25a83d['id']));let _0x4b9473=new Audio();_0x4b5db5(0x328)in _0x25a83d&&(_0x4b9473[_0x4b5db5(0x328)]=_0x25a83d[_0x4b5db5(0x328)]?!![]:![]),_0x4b9473['preload']=_0x4b5db5(0x3d0),_0x4b9473[_0x4b5db5(0x1f2)]=_0x5b144d,_0x4b9473[_0x4b5db5(0x612)](),_0x1c1cb6&&_0x4b9473[_0x4b5db5(0x4e9)](_0x4b5db5(0x41d),_0x93b598=>{_0x1c1cb6();}),'id'in _0x25a83d&&_0x25a83d['id']&&(!(_0x25a83d['id']in Sound['all'])&&(Sound[_0x4b5db5(0x171)][_0x25a83d['id']]=_0x4b9473),_0x4b5db5(0x81c)in _0x25a83d&&Sound[_0x4b5db5(0x335)](_0x25a83d['id'],_0x25a83d[_0x4b5db5(0x81c)]));}static[_0x4487d4(0x220)](_0x5a5414){const _0x1ac659=_0x4487d4;_0x5a5414 in Sound['all']&&(Sound['all'][_0x5a5414]['pause'](),delete Sound[_0x1ac659(0x171)][_0x5a5414]);}static[_0x4487d4(0x335)](_0x2d651c,_0xd38c22){const _0x503b87=_0x4487d4;_0x2d651c in Sound[_0x503b87(0x171)]&&(Sound[_0x503b87(0x171)][_0x2d651c][_0x503b87(0x81c)]=_0xd38c22);}static[_0x4487d4(0x6eb)](_0x2e5139){const _0xf751c5=_0x4487d4;_0x2e5139 in Sound['all']&&Sound['all'][_0x2e5139][_0xf751c5(0x6eb)]();}static[_0x4487d4(0x397)](_0x22295e){const _0x91177b=_0x4487d4;_0x22295e in Sound['all']&&Sound[_0x91177b(0x171)][_0x22295e][_0x91177b(0x612)]();}}class Timer{static [_0x4487d4(0x485)]=![];static[_0x4487d4(0x303)](){const _0x3c57c0=_0x4487d4;Timer['sb']=DOM(name+_0x3c57c0(0xe9)),Timer[_0x3c57c0(0x2a2)]=DOM({'style':'mm-timer'},Timer['sb']);}static async['start'](_0x1a1c91,_0x2b3077,_0x30cbf8){const _0x20ed9b=_0x4487d4;Timer[_0x20ed9b(0x220)](),Timer['callback']=_0x30cbf8,Timer[_0x20ed9b(0x242)]=_0x2b3077,Timer[_0x20ed9b(0x6c4)]=await App['api'][_0x20ed9b(0x74c)](CURRENT_MM,'getTimer',{'id':_0x1a1c91,'time':Date[_0x20ed9b(0x700)]()});if(Timer[_0x20ed9b(0x264)]())return;Timer[_0x20ed9b(0x485)]=setInterval(()=>Timer[_0x20ed9b(0x164)](),0xfa),Timer[_0x20ed9b(0x164)]();}static[_0x4487d4(0x164)](){const _0x14e637=_0x4487d4;if(Timer[_0x14e637(0x264)]())return;let _0x5c5b42=Math[_0x14e637(0x4f2)](Math[_0x14e637(0x344)](Date[_0x14e637(0x700)]()-Timer[_0x14e637(0x6c4)])/0x3e8);Timer['sb'][_0x14e637(0x12e)]=Timer[_0x14e637(0x242)]+_0x14e637(0x4c4)+(_0x5c5b42<0xa?'0':'')+_0x5c5b42;}static[_0x4487d4(0x264)](){const _0x5beaf8=_0x4487d4;if(Date[_0x5beaf8(0x700)]()-Timer[_0x5beaf8(0x6c4)]>=0x0)return Timer[_0x5beaf8(0x220)](),Timer[_0x5beaf8(0x63f)](),!![];return![];}static[_0x4487d4(0x220)](){const _0x3642b4=_0x4487d4;Timer['intervalId']&&(clearInterval(Timer[_0x3642b4(0x485)]),Timer[_0x3642b4(0x485)]=![]);}}class PreloadImages{static[_0x4487d4(0x6dd)](_0x5ff307,_0x5ca47e){const _0xde4381=_0x4487d4;let _0x1648a1=new Image();_0x1648a1[_0xde4381(0x1f2)]=_0x5ca47e,_0x1648a1[_0xde4381(0x4e9)]('load',()=>{_0x5ff307();});}static async[_0x4487d4(0xf6)](_0x2cfe9a){let _0x113f58=new Image();return _0x113f58['src']=_0x2cfe9a,new Promise((_0x46ba65,_0x1180ad)=>{const _0x36d281=_0x5ecf;_0x113f58['addEventListener'](_0x36d281(0x6dd),()=>{_0x46ba65(_0x113f58);}),_0x113f58[_0x36d281(0x4e9)](_0x36d281(0x498),_0x3a7423=>_0x1180ad(_0x3a7423));});}constructor(_0x5b21a2,_0x4f85a0){const _0x18dae1=_0x4487d4;this['target']=_0x5b21a2,this[_0x18dae1(0x63f)]=_0x4f85a0,this[_0x18dae1(0x2f6)]=new IntersectionObserver(_0x2ddd97=>this[_0x18dae1(0x80d)](_0x2ddd97));}[_0x4487d4(0xed)](_0x1d7346,_0x12855a){const _0x18cf56=_0x4487d4;_0x1d7346['style'][_0x18cf56(0x65e)]=0x0,this[_0x18cf56(0x2f6)][_0x18cf56(0x103)](_0x1d7346),_0x12855a?_0x12855a[_0x18cf56(0x2f2)](_0x1d7346):this['target'][_0x18cf56(0x2f2)](_0x1d7346);}['preload'](_0x5817e3){const _0x46ca6f=_0x4487d4;for(let _0x12dacc of _0x5817e3){if(_0x12dacc['isIntersecting']){let _0x267ca1=new Image();_0x267ca1['src']=_0x12dacc[_0x46ca6f(0x47b)][_0x46ca6f(0x67f)][_0x46ca6f(0x646)],_0x267ca1[_0x46ca6f(0x4e9)](_0x46ca6f(0x6dd),()=>{const _0x21632b=_0x46ca6f;_0x12dacc[_0x21632b(0x47b)][_0x21632b(0x11e)][_0x21632b(0x756)]=_0x21632b(0x82c)+_0x12dacc['target'][_0x21632b(0x67f)][_0x21632b(0x646)]+'\x22)';let _0x3bcd7e=_0x12dacc['target']['animate']({'opacity':[0x0,0x1],'transform':[_0x21632b(0x525),_0x21632b(0x13a)]},{'duration':0x1f4,'easing':'ease-out','fill':_0x21632b(0x1bf)});this['callback']&&(_0x3bcd7e[_0x21632b(0x701)]=()=>{const _0x52afc9=_0x21632b;this[_0x52afc9(0x63f)](_0x12dacc[_0x52afc9(0x47b)]),_0x3bcd7e[_0x52afc9(0x701)]=null;});}),this['observer'][_0x46ca6f(0x7a7)](_0x12dacc[_0x46ca6f(0x47b)]);}}}}class Game{static [_0x4487d4(0x3a8)]=0xa;static [_0x4487d4(0x230)]=0xf;static [_0x4487d4(0x47b)]=![];static [_0x4487d4(0x83f)]=![];static [_0x4487d4(0x4d9)]=![];static [_0x4487d4(0x105)]=![];static ['eventFinish']=![];static [_0x4487d4(0x403)]=![];static[_0x4487d4(0x303)](_0x202706,_0x28ab89,_0x39964d){const _0x159f64=_0x4487d4;_0x28ab89&&(_0x159f64(0x449)in _0x28ab89&&(Game[_0x159f64(0x105)]=_0x28ab89[_0x159f64(0x449)]),_0x159f64(0x58b)in _0x28ab89&&(Game[_0x159f64(0x51c)]=_0x28ab89['finish']),_0x159f64(0x4b7)in _0x28ab89&&(Game[_0x159f64(0x403)]=_0x28ab89[_0x159f64(0x4b7)]));Game[_0x159f64(0x5c2)]=new Array(),Game[_0x159f64(0x6ce)]=DOM({'style':_0x159f64(0x1c7),'event':[_0x159f64(0x6d3),_0x5c0322=>Game['click'](_0x5c0322)]}),Game[_0x159f64(0x12a)]=DOM({'style':'game-scoring','event':[_0x159f64(0x6d3),_0x4ec5ce=>Game[_0x159f64(0x6d3)](_0x4ec5ce)]}),Game[_0x159f64(0x83b)]=DOM({'style':_0x159f64(0x4de),'event':[_0x159f64(0x6d3),_0x23df3f=>Game[_0x159f64(0x6d3)](_0x23df3f)]}),Game[_0x159f64(0x465)]=DOM({'style':_0x159f64(0x62f),'event':[_0x159f64(0x6d3),_0x2a22e6=>Game['click'](_0x2a22e6)]},Game[_0x159f64(0x12a)],Game[_0x159f64(0x83b)]),Game[_0x159f64(0x38b)]=DOM({'style':_0x159f64(0x387)}),Game[_0x159f64(0x786)]=DOM({'style':_0x159f64(0x13d)}),Game[_0x159f64(0x5e0)]=DOM();;Game[_0x159f64(0x455)]=DOM(),Game['map']=_0x28ab89[_0x159f64(0x3d7)],Game[_0x159f64(0x809)]=_0x28ab89[_0x159f64(0x809)],Game[_0x159f64(0x5c2)]=_0x28ab89[_0x159f64(0x308)],Game[_0x159f64(0x508)]=_0x28ab89[_0x159f64(0x508)],Game[_0x159f64(0x509)]=_0x28ab89[_0x159f64(0x233)],Game[_0x159f64(0x733)]=new Object(),Game[_0x159f64(0x14b)]=0x0;if(_0x159f64(0x660)in _0x28ab89)for(let _0x179ed3 in _0x28ab89['score']){Game[_0x159f64(0x660)](_0x179ed3,_0x28ab89[_0x159f64(0x660)][_0x179ed3]);}Game[_0x159f64(0x5e0)][_0x159f64(0x12e)]=_0x159f64(0x1ef)+_0x28ab89[_0x159f64(0x233)]+'\x20('+_0x28ab89[_0x159f64(0x25f)]+')',Game['viewTotalScore']['innerText']='Оcколки:\x20'+Game[_0x159f64(0x14b)]+'\x20|\x20',!_0x39964d&&Game[_0x159f64(0x786)][_0x159f64(0x2f2)](DOM({'event':['click',()=>Game['eventBack']()]},_0x159f64(0x85c)),DOM({},_0x159f64(0x669))),Game[_0x159f64(0x786)][_0x159f64(0x2f2)](Game[_0x159f64(0x455)],Game[_0x159f64(0x5e0)],DOM({},_0x159f64(0x669)),DOM({'event':[_0x159f64(0x6d3),()=>Game[_0x159f64(0x51c)]()]},_0x159f64(0x36d))),Game[_0x159f64(0x12a)][_0x159f64(0x2f2)](Game[_0x159f64(0x38b)]),Game[_0x159f64(0x6ce)][_0x159f64(0x2f2)](Game[_0x159f64(0x786)]),_0x202706?_0x202706[_0x159f64(0x2f2)](Game[_0x159f64(0x6ce)],Game[_0x159f64(0x465)]):document[_0x159f64(0x2a2)][_0x159f64(0x2f2)](Game['info'],Game['field']),Game[_0x159f64(0x1bc)]();}static[_0x4487d4(0x660)](_0x674f74,_0x6fd04c){const _0x3d6f62=_0x4487d4;if(!_0x674f74||_0x674f74=='0')return;if(!(_0x674f74 in Game[_0x3d6f62(0x733)])){let _0x3f4822=DOM({'style':['rarity'+Game[_0x3d6f62(0x508)][_0x674f74],'game-rarity-general']}),_0x1096f0=DOM({'style':_0x3d6f62(0x399)});_0x3f4822[_0x3d6f62(0x11e)][_0x3d6f62(0x756)]=_0x3d6f62(0xd7)+_0x674f74+_0x3d6f62(0x634),_0x3f4822['append'](_0x1096f0),Game['dataScore'][_0x674f74]=_0x3f4822,Game['viewScore'][_0x3d6f62(0x2f2)](_0x3f4822);}Game[_0x3d6f62(0x14b)]+=_0x6fd04c,Game['viewTotalScore'][_0x3d6f62(0x12e)]=_0x3d6f62(0x59c)+Game[_0x3d6f62(0x14b)]+'\x20|\x20',Game[_0x3d6f62(0x733)][_0x674f74]['firstChild'][_0x3d6f62(0x12e)]=Number(Game['dataScore'][_0x674f74][_0x3d6f62(0x12e)])+_0x6fd04c,Game[_0x3d6f62(0x733)][_0x674f74][_0x3d6f62(0x33a)]({'transform':['scale(1)',_0x3d6f62(0x199),_0x3d6f62(0x13a)]},{'duration':0xfa,'fill':'both','easing':_0x3d6f62(0x1b5)});}static[_0x4487d4(0x135)](_0x2e4542){const _0x1245aa=_0x4487d4;return _0x2e4542?_0x2e4542*0x64+_0x1245aa(0x650):'0';}static[_0x4487d4(0x329)](_0x417916,_0x498e79,_0x257016){const _0x45b162=_0x4487d4;let _0x5dcd83=DOM({'style':_0x45b162(0x735),'id':_0x498e79+':'+_0x257016}),_0x21717c='';switch(Game['rarity'][_0x417916]){case 0x2:_0x21717c=_0x45b162(0x593);break;case 0x3:_0x21717c='0\x200\x2020cqh\x20rgba(255,156,32,0.8),\x20inset\x2010cqh\x2010cqh\x2015cqh\x20rgba(255,156,32,0.5)';break;case 0x4:_0x21717c=_0x45b162(0x609);break;}return _0x21717c&&(_0x5dcd83[_0x45b162(0x11e)]['boxShadow']=_0x21717c),_0x5dcd83[_0x45b162(0x11e)][_0x45b162(0x756)]='url(content/talents/'+_0x417916+_0x45b162(0x634),_0x5dcd83[_0x45b162(0x11e)][_0x45b162(0x783)]=''+Game['position'](_0x498e79),_0x5dcd83['style']['left']=''+Game[_0x45b162(0x135)](_0x257016),Game[_0x45b162(0x83b)][_0x45b162(0x2f2)](DOM({'style':_0x45b162(0x315),'event':[_0x45b162(0x6d3),_0x1418c8=>Game[_0x45b162(0x6d3)](_0x1418c8)]},_0x5dcd83)),_0x5dcd83;}static[_0x4487d4(0x5d2)](_0x4dd122,_0x2bfc7f){const _0x51e1a7=_0x4487d4;let _0x928142=DOM({'style':_0x51e1a7(0x6ea),'id':_0x4dd122+':'+_0x2bfc7f});return _0x928142['id']=_0x51e1a7(0x5f5)+_0x4dd122+':'+_0x2bfc7f,_0x928142['style'][_0x51e1a7(0x756)]=_0x51e1a7(0x5ed),_0x928142['style'][_0x51e1a7(0x783)]=''+Game[_0x51e1a7(0x135)](_0x4dd122),_0x928142[_0x51e1a7(0x11e)][_0x51e1a7(0x725)]=''+Game[_0x51e1a7(0x135)](_0x2bfc7f),Game['field'][_0x51e1a7(0x2f2)](DOM({'style':'unit-container','event':[_0x51e1a7(0x6d3),_0x2ad19d=>Game[_0x51e1a7(0x6d3)](_0x2ad19d)]},_0x928142)),_0x928142;}static['shuffle'](_0x820953){const _0x2cdfac=_0x4487d4;let _0x53e978,_0x1d0304;for(let _0x58e5d1=_0x820953[_0x2cdfac(0x2ed)]-0x1;_0x58e5d1>0x0;_0x58e5d1--){_0x53e978=Math[_0x2cdfac(0x6d6)](Math[_0x2cdfac(0x202)]()*(_0x58e5d1+0x1)),_0x1d0304=_0x820953[_0x53e978],_0x820953[_0x53e978]=_0x820953[_0x58e5d1],_0x820953[_0x58e5d1]=_0x1d0304;}return _0x820953;}static[_0x4487d4(0x5d9)](_0x1d891a,_0x499c39){const _0xedfe20=_0x4487d4;return _0x1d891a=Math['ceil'](_0x1d891a),_0x499c39=Math[_0xedfe20(0x6d6)](_0x499c39),Math['floor'](Math[_0xedfe20(0x202)]()*(_0x499c39-_0x1d891a+0x1))+_0x1d891a;}static['view'](){const _0xe294e6=_0x4487d4;Game[_0xe294e6(0x4d9)]=!![];let _0x11ea7f=new Array(),_0x37dd67=new Array();for(let _0x44232e=0x0;_0x44232e<Game['sizeX'];_0x44232e++){for(let _0x4d372c=0x0;_0x4d372c<Game['sizeY'];_0x4d372c++){Game[_0xe294e6(0x809)][_0x44232e][_0x4d372c]&&_0x37dd67[_0xe294e6(0x2db)]({'x':_0x44232e,'y':_0x4d372c,'body':Game[_0xe294e6(0x5d2)](_0x44232e,_0x4d372c)}),_0x11ea7f[_0xe294e6(0x2db)](Game[_0xe294e6(0x329)](Game[_0xe294e6(0x3d7)][_0x44232e][_0x4d372c],_0x44232e,_0x4d372c));}}_0x11ea7f=Game['shuffle'](_0x11ea7f);let _0x10e807=0x0,_0x5bbe5a=0x0;for(let _0x4f9426 of _0x11ea7f){_0x5bbe5a++;let _0x41b4f6=_0x4f9426['offsetTop']+Game['getRandomInt'](-0x32,0x32)+_0xe294e6(0x650),_0x695218=_0x4f9426[_0xe294e6(0x34c)]+Game[_0xe294e6(0x5d9)](-0x32,0x32)+_0xe294e6(0x650),_0x2ed01e=_0x4f9426[_0xe294e6(0x33a)]({'top':[_0x41b4f6,_0x4f9426[_0xe294e6(0x11e)][_0xe294e6(0x783)]],'left':[_0x695218,_0x4f9426[_0xe294e6(0x11e)][_0xe294e6(0x725)]],'opacity':[0x0,0x1],'transform':['scale(2.5)','scale(0.9)']},{'delay':_0x10e807,'duration':0xfa,'fill':_0xe294e6(0x7c9),'easing':_0xe294e6(0x1b5)});_0x10e807+=0x5,_0x5bbe5a==_0x11ea7f['length']&&(_0x2ed01e[_0xe294e6(0x701)]=()=>{const _0x28f4d5=_0xe294e6;for(let _0x1c42cb of _0x37dd67){let _0x1fe1ec=Game[_0x28f4d5(0x809)][_0x1c42cb['x']][_0x1c42cb['y']];switch(_0x1fe1ec){case 0x1:_0x1fe1ec=0.9;break;case 0x2:_0x1fe1ec=0.6;break;case 0x3:_0x1fe1ec=0.3;break;}_0x1c42cb['body']['animate']({'opacity':[0x0,_0x1fe1ec],'transform':['scale(0.3)',_0x28f4d5(0x13a),'scale(0.9)']},{'duration':0x1f4,'fill':_0x28f4d5(0x7c9),'easing':_0x28f4d5(0x48a)});}Game[_0x28f4d5(0x4d9)]=![],_0x2ed01e[_0x28f4d5(0x701)]=null;});}}static async[_0x4487d4(0x6d3)](_0x24b46f){const _0x17565d=_0x4487d4;if(Game[_0x17565d(0x4d9)])return;if(!_0x24b46f['target']['id'])return;let _0x2cf5d2=_0x24b46f['target']['id']['split'](':');if(!Game['map'][_0x2cf5d2[0x0]][_0x2cf5d2[0x1]])return;if(Game['target']){if(Game['target']['id']==_0x24b46f['target']['id']){Game[_0x17565d(0x47b)]=![],Game['targetAnimate'][_0x17565d(0x5e1)]();return;}Game[_0x17565d(0x83f)][_0x17565d(0x5e1)]();try{await Game[_0x17565d(0x233)](Game[_0x17565d(0x47b)],_0x24b46f['target']);}catch(_0x56e9cb){return console[_0x17565d(0x1ed)](_0x56e9cb),Game[_0x17565d(0x4b7)]();}Game[_0x17565d(0x47b)]=![];}else Game[_0x17565d(0x47b)]=_0x24b46f[_0x17565d(0x47b)],Game['targetAnimate']=Game[_0x17565d(0x47b)][_0x17565d(0x33a)]({'transform':['scale(0.9)',_0x17565d(0x619),'scale(0.9)']},{'duration':0x1f4,'iterations':Infinity});}static async[_0x4487d4(0x233)](_0x2390d2,_0x249d2d){const _0x2a13cf=_0x4487d4;Game['blocked']=!![];let _0x30d47b=_0x2390d2['id']['split'](':'),_0x228605=_0x249d2d['id']['split'](':'),_0x42f4d0=![];(Number(_0x30d47b[0x0])-0x1==_0x228605[0x0]&&_0x30d47b[0x1]==_0x228605[0x1]||Number(_0x30d47b[0x0])+0x1==_0x228605[0x0]&&_0x30d47b[0x1]==_0x228605[0x1]||Number(_0x30d47b[0x1])-0x1==_0x228605[0x1]&&_0x30d47b[0x0]==_0x228605[0x0]||Number(_0x30d47b[0x1])+0x1==_0x228605[0x1]&&_0x30d47b[0x0]==_0x228605[0x0])&&(_0x42f4d0=!![]);if(!_0x42f4d0){Game['blocked']=![];return;}let _0x477fe9=await App[_0x2a13cf(0x3bb)][_0x2a13cf(0x74c)]('gamev2',_0x2a13cf(0xda),{'x1':_0x30d47b[0x0],'y1':_0x30d47b[0x1],'x2':_0x228605[0x0],'y2':_0x228605[0x1]});_0x477fe9[_0x2a13cf(0x5d1)][_0x2a13cf(0x2ed)]&&(_0x2390d2['id']=_0x228605[0x0]+':'+_0x228605[0x1],_0x249d2d['id']=_0x30d47b[0x0]+':'+_0x30d47b[0x1],Game['moves']++,Game[_0x2a13cf(0x5e0)][_0x2a13cf(0x12e)]=_0x2a13cf(0x84e)+_0x477fe9[_0x2a13cf(0x233)]+'\x20('+_0x477fe9[_0x2a13cf(0x25f)]+')');let _0x31edff=_0x2390d2['animate']({'top':[''+Game[_0x2a13cf(0x135)](_0x30d47b[0x0]),''+Game['position'](_0x228605[0x0])],'left':[''+Game[_0x2a13cf(0x135)](_0x30d47b[0x1]),''+Game[_0x2a13cf(0x135)](_0x228605[0x1])]},{'duration':0xfa,'fill':'both'}),_0x1bceda=_0x249d2d[_0x2a13cf(0x33a)]({'top':[''+Game[_0x2a13cf(0x135)](_0x228605[0x0]),''+Game[_0x2a13cf(0x135)](_0x30d47b[0x0])],'left':[''+Game[_0x2a13cf(0x135)](_0x228605[0x1]),''+Game[_0x2a13cf(0x135)](_0x30d47b[0x1])]},{'duration':0xfa,'fill':_0x2a13cf(0x7c9)});_0x31edff[_0x2a13cf(0x701)]=async()=>{const _0x48cf52=_0x2a13cf;if(_0x477fe9[_0x48cf52(0x5d1)][_0x48cf52(0x2ed)]){for(let _0x19bbd1 of _0x477fe9[_0x48cf52(0x5d1)]){switch(_0x19bbd1[_0x48cf52(0x6e2)]){case'hide':await Game[_0x48cf52(0x59b)](_0x19bbd1[_0x48cf52(0x43a)]),await Game[_0x48cf52(0xe7)](_0x19bbd1[_0x48cf52(0x43a)]);break;case _0x48cf52(0x233):await Game['moveAnimate'](_0x19bbd1[_0x48cf52(0x43a)]);break;case _0x48cf52(0xed):await Game[_0x48cf52(0x490)](_0x19bbd1[_0x48cf52(0x43a)]);break;}}_0x477fe9[_0x48cf52(0x233)]!=_0x477fe9[_0x48cf52(0x25f)]&&(Game[_0x48cf52(0x4d9)]=![]);}else _0x31edff[_0x48cf52(0xeb)](),_0x477fe9[_0x48cf52(0x233)]!=_0x477fe9['moveTotal']&&(Game[_0x48cf52(0x4d9)]=![]);_0x31edff['onfinish']=null;},_0x1bceda['onfinish']=()=>{const _0x1c5cd2=_0x2a13cf;!_0x477fe9['render'][_0x1c5cd2(0x2ed)]&&_0x1bceda['reverse'](),_0x1bceda[_0x1c5cd2(0x701)]=null;};}static async[_0x4487d4(0x59b)](_0x1dcd0b){return new Promise((_0x4fea5b,_0x226ed2)=>{const _0x55b579=_0x5ecf;!_0x1dcd0b[_0x55b579(0x61f)][_0x55b579(0x2ed)]&&_0x4fea5b(![]);let _0x509d06=0x1;for(let _0x444fe2 of _0x1dcd0b[_0x55b579(0x61f)]){let _0x194f3d=document['getElementById'](_0x444fe2['x']+':'+_0x444fe2['y']);if(!_0x194f3d)continue;let _0x3a34ce=_0x194f3d[_0x55b579(0x33a)]({'opacity':[0x1,0x0],'transform':['scale(0.9)','scale(3)']},{'duration':0xfa,'fill':_0x55b579(0x7c9),'easing':_0x55b579(0x1b5)});_0x509d06==_0x1dcd0b[_0x55b579(0x61f)][_0x55b579(0x2ed)]?_0x3a34ce[_0x55b579(0x701)]=()=>{const _0x49b863=_0x55b579;for(let _0x496fb8 in _0x1dcd0b[_0x49b863(0x660)]){Game[_0x49b863(0x660)](_0x496fb8,_0x1dcd0b[_0x49b863(0x660)][_0x496fb8]);}_0x194f3d[_0x49b863(0x1ac)](),_0x4fea5b(!![]);}:_0x3a34ce['onfinish']=()=>{_0x194f3d['remove']();},_0x509d06++;}});}static async[_0x4487d4(0xe7)](_0x3f6f78){return new Promise((_0x596703,_0xaef41d)=>{const _0x487bca=_0x5ecf;!_0x3f6f78[_0x487bca(0x61f)]['length']&&_0x596703(![]);let _0x4628bf=new Array();for(let _0x37193e of _0x3f6f78['hide']){if(!Game['background'][_0x37193e['x']][_0x37193e['y']])continue;_0x4628bf[_0x487bca(0x2db)]({'x':_0x37193e['x'],'y':_0x37193e['y'],'body':document[_0x487bca(0x273)]('BG:'+_0x37193e['x']+':'+_0x37193e['y'])});}!_0x4628bf['length']&&_0x596703(!![]);let _0x573c5e=0x0,_0x11f8e1=[0x0,0.9,0.6,0.3];for(let _0x32d27d of _0x4628bf){_0x573c5e++;if(!_0x32d27d[_0x487bca(0x2a2)])continue;let _0x3d9c06=Game[_0x487bca(0x809)][_0x32d27d['x']][_0x32d27d['y']];Game[_0x487bca(0x809)][_0x32d27d['x']][_0x32d27d['y']]--;let _0x51a7c9=_0x32d27d[_0x487bca(0x2a2)][_0x487bca(0x33a)]({'opacity':[_0x3d9c06,Game[_0x487bca(0x809)][_0x32d27d['x']][_0x32d27d['y']]],'transform':['scale(0.9)',_0x487bca(0x72d),_0x487bca(0x525)]},{'duration':0x1f4,'fill':_0x487bca(0x7c9),'easing':_0x487bca(0x1b5)});_0x573c5e==_0x4628bf[_0x487bca(0x2ed)]?_0x51a7c9[_0x487bca(0x701)]=()=>{const _0x1610f3=_0x487bca;!Game[_0x1610f3(0x809)][_0x32d27d['x']][_0x32d27d['y']]&&_0x32d27d[_0x1610f3(0x2a2)][_0x1610f3(0x1ac)](),_0x596703(!![]);}:_0x51a7c9['onfinish']=()=>{const _0x1529b7=_0x487bca;!Game['background'][_0x32d27d['x']][_0x32d27d['y']]&&_0x32d27d['body'][_0x1529b7(0x1ac)]();};}});}static async[_0x4487d4(0x33c)](_0x612f6e){return new Promise((_0x41a510,_0xf649d8)=>{const _0x26c515=_0x5ecf;!_0x612f6e[_0x26c515(0x2ed)]&&_0x41a510(![]);let _0x43163c=0x1;for(let _0xc2860e of _0x612f6e){let _0x5601d6=document[_0x26c515(0x273)](_0xc2860e['x1']+':'+_0xc2860e['y1']);_0x5601d6['id']=_0xc2860e['x2']+':'+_0xc2860e['y2'];let _0x456c7e=_0x5601d6['animate']({'top':[''+Game[_0x26c515(0x135)](_0xc2860e['x1']),''+Game[_0x26c515(0x135)](_0xc2860e['x2'])],'transform':[_0x26c515(0x1bb),_0x26c515(0x517)+Game['getRandomInt'](-0xb4,0xb4)+_0x26c515(0x213),_0x26c515(0x1bb)]},{'duration':0xfa,'fill':'both','easing':_0x26c515(0x48a)});_0x43163c==_0x612f6e['length']&&(_0x456c7e[_0x26c515(0x701)]=()=>{const _0x49451e=_0x26c515;_0x456c7e[_0x49451e(0x701)]=null,_0x41a510(!![]);}),_0x43163c++;}});}static async[_0x4487d4(0x490)](_0x2729ca){return new Promise((_0x558045,_0x46143b)=>{const _0x42d225=_0x5ecf;!_0x2729ca[_0x42d225(0x2ed)]&&_0x558045(![]);let _0x5e482e=0x1;for(let _0x450826 of _0x2729ca){let _0x3199c6=Game[_0x42d225(0x329)](_0x450826['id'],_0x450826['x'],_0x450826['y']),_0x2b5cba=_0x3199c6[_0x42d225(0x33a)]({'opacity':[0x0,0x1],'transform':[_0x42d225(0x1bb),_0x42d225(0x3e0)]},{'duration':0xfa,'fill':_0x42d225(0x7c9),'easing':_0x42d225(0x48a)});_0x5e482e==_0x2729ca[_0x42d225(0x2ed)]&&(_0x2b5cba[_0x42d225(0x701)]=()=>{_0x2b5cba['onfinish']=null,_0x558045(!![]);}),_0x5e482e++;}});}static[_0x4487d4(0x4b7)](){const _0x2c7615=_0x4487d4;Game[_0x2c7615(0x403)]&&Game[_0x2c7615(0x403)]();}}class Splash{static[_0x4487d4(0x303)](){const _0x1ad47b=_0x4487d4;Splash[_0x1ad47b(0x2a2)]=document[_0x1ad47b(0x4af)](_0x1ad47b(0x51d)),Splash[_0x1ad47b(0x2a2)][_0x1ad47b(0x11e)][_0x1ad47b(0x601)]=_0x1ad47b(0x6c8),Splash[_0x1ad47b(0x2a2)][_0x1ad47b(0x695)][_0x1ad47b(0xed)](_0x1ad47b(0x393)),document[_0x1ad47b(0x2a2)][_0x1ad47b(0x2f2)](Splash[_0x1ad47b(0x2a2)]);}static[_0x4487d4(0x19c)](_0x141a48,_0xbe006f=!![]){const _0x15be40=_0x4487d4;if(Splash[_0x15be40(0x2a2)][_0x15be40(0x682)])while(Splash[_0x15be40(0x2a2)][_0x15be40(0x682)]){Splash[_0x15be40(0x2a2)][_0x15be40(0x682)][_0x15be40(0x1ac)]();}if(_0xbe006f){let _0x25f950=document[_0x15be40(0x4af)]('div');_0x25f950[_0x15be40(0x695)][_0x15be40(0xed)](_0x15be40(0x7d7)),_0x25f950[_0x15be40(0x2f2)](_0x141a48),Splash[_0x15be40(0x2a2)][_0x15be40(0x2f2)](_0x25f950);}else Splash[_0x15be40(0x2a2)]['append'](_0x141a48);Splash['body'][_0x15be40(0x11e)][_0x15be40(0x601)]=_0x15be40(0x3cd);}static[_0x4487d4(0x61f)](){const _0x53f2ee=_0x4487d4;Splash[_0x53f2ee(0x2a2)][_0x53f2ee(0x11e)][_0x53f2ee(0x601)]='none';}}function DOM(_0x24a5a9){const _0x4eaf19=_0x4487d4;let _0x4918aa=document[_0x4eaf19(0x4af)](typeof _0x24a5a9==_0x4eaf19(0x630)&&_0x4eaf19(0x5ab)in _0x24a5a9?_0x24a5a9[_0x4eaf19(0x5ab)]:_0x4eaf19(0x51d));if(typeof _0x24a5a9=='string')_0x4918aa[_0x4eaf19(0x2f2)](_0x24a5a9);else for(let _0x391a5b in _0x24a5a9){if(_0x391a5b==_0x4eaf19(0x5ab))continue;switch(_0x391a5b){case _0x4eaf19(0x11e):typeof _0x24a5a9[_0x4eaf19(0x11e)]==='string'?_0x4918aa[_0x4eaf19(0x695)]['add'](_0x24a5a9[_0x4eaf19(0x11e)]):_0x4918aa[_0x4eaf19(0x695)][_0x4eaf19(0xed)](..._0x24a5a9[_0x4eaf19(0x11e)]);break;case _0x4eaf19(0x43a):for(let _0x429677 in _0x24a5a9[_0x4eaf19(0x43a)]){_0x4918aa['dataset'][_0x429677]=_0x24a5a9[_0x4eaf19(0x43a)][_0x429677];}break;case _0x4eaf19(0x5c4):_0x4918aa[_0x4eaf19(0x4e9)](_0x24a5a9[_0x4eaf19(0x5c4)][0x0],_0x24a5a9[_0x4eaf19(0x5c4)][0x1]);break;default:_0x4918aa[_0x391a5b]=_0x24a5a9[_0x391a5b];break;}}if(arguments[_0x4eaf19(0x2ed)]>0x1){let _0x3b756d,_0x30a908=document[_0x4eaf19(0x5a2)]();for(_0x3b756d=0x1;_0x3b756d<arguments[_0x4eaf19(0x2ed)];_0x3b756d++){_0x30a908['append'](arguments[_0x3b756d]);}_0x4918aa[_0x4eaf19(0x2f2)](_0x30a908);}return _0x4918aa;}{(function webpackUniversalModuleDefinition(_0x41458f,_0x458535){const _0x2f0fd4=_0x4487d4;if(typeof exports===_0x2f0fd4(0x630)&&typeof module===_0x2f0fd4(0x630))module['exports']=_0x458535();else{if(typeof define===_0x2f0fd4(0x283)&&define['amd'])define(_0x458535);else{var _0x4eb7ad=_0x458535();for(var _0x3535f6 in _0x4eb7ad)(typeof exports===_0x2f0fd4(0x630)?exports:_0x41458f)[_0x3535f6]=_0x4eb7ad[_0x3535f6];}}}(this,function(){return function(_0x4457d7){var _0x1457f5={};function _0x5111e5(_0x37713e){const _0x2dc257=_0x5ecf;if(_0x1457f5[_0x37713e])return _0x1457f5[_0x37713e][_0x2dc257(0x78b)];var _0x46c270=_0x1457f5[_0x37713e]={'exports':{},'id':_0x37713e,'loaded':![]};return _0x4457d7[_0x37713e]['call'](_0x46c270['exports'],_0x46c270,_0x46c270[_0x2dc257(0x78b)],_0x5111e5),_0x46c270[_0x2dc257(0x6bf)]=!![],_0x46c270['exports'];}return _0x5111e5['m']=_0x4457d7,_0x5111e5['c']=_0x1457f5,_0x5111e5['p']='',_0x5111e5(0x0);}([function(_0x45c08a,_0x5bd823,_0x2802c7){const _0x5e7eba=_0x5ecf;_0x5bd823[_0x5e7eba(0x3aa)]=_0x2802c7(0x1),_0x5bd823[_0x5e7eba(0x7ab)]=_0x2802c7(0x2),_0x5bd823[_0x5e7eba(0x767)]=_0x2802c7(0x3),_0x5bd823['mat3']=_0x2802c7(0x4),_0x5bd823['mat4']=_0x2802c7(0x5),_0x5bd823['quat']=_0x2802c7(0x6),_0x5bd823[_0x5e7eba(0x808)]=_0x2802c7(0x9),_0x5bd823[_0x5e7eba(0x419)]=_0x2802c7(0x7),_0x5bd823['vec4']=_0x2802c7(0x8);},function(_0x161155,_0x167db5){const _0x1e915b=_0x5ecf;var _0x160445={};_0x160445[_0x1e915b(0x805)]=0.000001,_0x160445[_0x1e915b(0x2aa)]=typeof Float32Array!==_0x1e915b(0x205)?Float32Array:Array,_0x160445[_0x1e915b(0x193)]=Math['random'],_0x160445['ENABLE_SIMD']=![],_0x160445[_0x1e915b(0x3ec)]=_0x160445['ARRAY_TYPE']===Float32Array&&'SIMD'in this,_0x160445[_0x1e915b(0x57c)]=_0x160445[_0x1e915b(0x5e9)]&&_0x160445[_0x1e915b(0x3ec)],_0x160445[_0x1e915b(0x6ee)]=function(_0x3a2b85){const _0x513087=_0x1e915b;_0x160445[_0x513087(0x2aa)]=_0x3a2b85;};var _0x5c9c24=Math['PI']/0xb4;_0x160445['toRadian']=function(_0x562e2b){return _0x562e2b*_0x5c9c24;},_0x161155[_0x1e915b(0x78b)]=_0x160445;},function(_0x495db1,_0x3173c2,_0xbf15af){const _0x5b0a39=_0x5ecf;var _0x451201=_0xbf15af(0x1),_0x165735={};_0x165735[_0x5b0a39(0x4e1)]=function(){const _0x5d2af2=_0x5b0a39;var _0x2c2f54=new _0x451201[(_0x5d2af2(0x2aa))](0x4);return _0x2c2f54[0x0]=0x1,_0x2c2f54[0x1]=0x0,_0x2c2f54[0x2]=0x0,_0x2c2f54[0x3]=0x1,_0x2c2f54;},_0x165735[_0x5b0a39(0x43f)]=function(_0x59c0de){const _0x48609e=_0x5b0a39;var _0x51338d=new _0x451201[(_0x48609e(0x2aa))](0x4);return _0x51338d[0x0]=_0x59c0de[0x0],_0x51338d[0x1]=_0x59c0de[0x1],_0x51338d[0x2]=_0x59c0de[0x2],_0x51338d[0x3]=_0x59c0de[0x3],_0x51338d;},_0x165735['copy']=function(_0x22c33d,_0x57fbc1){return _0x22c33d[0x0]=_0x57fbc1[0x0],_0x22c33d[0x1]=_0x57fbc1[0x1],_0x22c33d[0x2]=_0x57fbc1[0x2],_0x22c33d[0x3]=_0x57fbc1[0x3],_0x22c33d;},_0x165735[_0x5b0a39(0x76e)]=function(_0x1221b3){return _0x1221b3[0x0]=0x1,_0x1221b3[0x1]=0x0,_0x1221b3[0x2]=0x0,_0x1221b3[0x3]=0x1,_0x1221b3;},_0x165735['transpose']=function(_0x322a0a,_0x5e0df5){if(_0x322a0a===_0x5e0df5){var _0x2b6dbe=_0x5e0df5[0x1];_0x322a0a[0x1]=_0x5e0df5[0x2],_0x322a0a[0x2]=_0x2b6dbe;}else _0x322a0a[0x0]=_0x5e0df5[0x0],_0x322a0a[0x1]=_0x5e0df5[0x2],_0x322a0a[0x2]=_0x5e0df5[0x1],_0x322a0a[0x3]=_0x5e0df5[0x3];return _0x322a0a;},_0x165735['invert']=function(_0x50c4da,_0x2b79ff){var _0x390ec7=_0x2b79ff[0x0],_0x5c55b2=_0x2b79ff[0x1],_0x3fc454=_0x2b79ff[0x2],_0x59a13c=_0x2b79ff[0x3],_0x506ced=_0x390ec7*_0x59a13c-_0x3fc454*_0x5c55b2;if(!_0x506ced)return null;return _0x506ced=0x1/_0x506ced,_0x50c4da[0x0]=_0x59a13c*_0x506ced,_0x50c4da[0x1]=-_0x5c55b2*_0x506ced,_0x50c4da[0x2]=-_0x3fc454*_0x506ced,_0x50c4da[0x3]=_0x390ec7*_0x506ced,_0x50c4da;},_0x165735[_0x5b0a39(0x721)]=function(_0xbd99af,_0x1c394b){var _0x495df7=_0x1c394b[0x0];return _0xbd99af[0x0]=_0x1c394b[0x3],_0xbd99af[0x1]=-_0x1c394b[0x1],_0xbd99af[0x2]=-_0x1c394b[0x2],_0xbd99af[0x3]=_0x495df7,_0xbd99af;},_0x165735[_0x5b0a39(0x3c8)]=function(_0x34d2f8){return _0x34d2f8[0x0]*_0x34d2f8[0x3]-_0x34d2f8[0x2]*_0x34d2f8[0x1];},_0x165735[_0x5b0a39(0x12c)]=function(_0x3bdb58,_0x197ea4,_0x567679){var _0x55f73d=_0x197ea4[0x0],_0x51086d=_0x197ea4[0x1],_0x23b5d3=_0x197ea4[0x2],_0x37ad23=_0x197ea4[0x3],_0x4a4d6e=_0x567679[0x0],_0x1e292f=_0x567679[0x1],_0x5ee35b=_0x567679[0x2],_0x37ea90=_0x567679[0x3];return _0x3bdb58[0x0]=_0x55f73d*_0x4a4d6e+_0x23b5d3*_0x1e292f,_0x3bdb58[0x1]=_0x51086d*_0x4a4d6e+_0x37ad23*_0x1e292f,_0x3bdb58[0x2]=_0x55f73d*_0x5ee35b+_0x23b5d3*_0x37ea90,_0x3bdb58[0x3]=_0x51086d*_0x5ee35b+_0x37ad23*_0x37ea90,_0x3bdb58;},_0x165735[_0x5b0a39(0x74f)]=_0x165735['multiply'],_0x165735['rotate']=function(_0x3a6936,_0x3d113e,_0x37f3a7){const _0x251e9c=_0x5b0a39;var _0x2bc496=_0x3d113e[0x0],_0x24b5d5=_0x3d113e[0x1],_0x5453cc=_0x3d113e[0x2],_0x5541af=_0x3d113e[0x3],_0x112468=Math['sin'](_0x37f3a7),_0x4ef07e=Math[_0x251e9c(0x586)](_0x37f3a7);return _0x3a6936[0x0]=_0x2bc496*_0x4ef07e+_0x5453cc*_0x112468,_0x3a6936[0x1]=_0x24b5d5*_0x4ef07e+_0x5541af*_0x112468,_0x3a6936[0x2]=_0x2bc496*-_0x112468+_0x5453cc*_0x4ef07e,_0x3a6936[0x3]=_0x24b5d5*-_0x112468+_0x5541af*_0x4ef07e,_0x3a6936;},_0x165735[_0x5b0a39(0x7ef)]=function(_0x484814,_0x1b265a,_0x2a98c4){var _0xf41315=_0x1b265a[0x0],_0x3c8c98=_0x1b265a[0x1],_0x3f0a10=_0x1b265a[0x2],_0x4b51a8=_0x1b265a[0x3],_0x426dd3=_0x2a98c4[0x0],_0x52eb0d=_0x2a98c4[0x1];return _0x484814[0x0]=_0xf41315*_0x426dd3,_0x484814[0x1]=_0x3c8c98*_0x426dd3,_0x484814[0x2]=_0x3f0a10*_0x52eb0d,_0x484814[0x3]=_0x4b51a8*_0x52eb0d,_0x484814;},_0x165735[_0x5b0a39(0x3c3)]=function(_0x46095e,_0x4905d8){var _0x1ed7d6=Math['sin'](_0x4905d8),_0x56c49e=Math['cos'](_0x4905d8);return _0x46095e[0x0]=_0x56c49e,_0x46095e[0x1]=_0x1ed7d6,_0x46095e[0x2]=-_0x1ed7d6,_0x46095e[0x3]=_0x56c49e,_0x46095e;},_0x165735[_0x5b0a39(0x138)]=function(_0x2dca47,_0x5898cb){return _0x2dca47[0x0]=_0x5898cb[0x0],_0x2dca47[0x1]=0x0,_0x2dca47[0x2]=0x0,_0x2dca47[0x3]=_0x5898cb[0x1],_0x2dca47;},_0x165735[_0x5b0a39(0x471)]=function(_0x43b435){const _0x33ddd3=_0x5b0a39;return _0x33ddd3(0x798)+_0x43b435[0x0]+',\x20'+_0x43b435[0x1]+',\x20'+_0x43b435[0x2]+',\x20'+_0x43b435[0x3]+')';},_0x165735['frob']=function(_0x746765){const _0x114050=_0x5b0a39;return Math[_0x114050(0x1ba)](Math[_0x114050(0x48b)](_0x746765[0x0],0x2)+Math[_0x114050(0x48b)](_0x746765[0x1],0x2)+Math['pow'](_0x746765[0x2],0x2)+Math[_0x114050(0x48b)](_0x746765[0x3],0x2));},_0x165735[_0x5b0a39(0x256)]=function(_0x3eef64,_0x44ac08,_0x3c35ca,_0x1a08c1){return _0x3eef64[0x2]=_0x1a08c1[0x2]/_0x1a08c1[0x0],_0x3c35ca[0x0]=_0x1a08c1[0x0],_0x3c35ca[0x1]=_0x1a08c1[0x1],_0x3c35ca[0x3]=_0x1a08c1[0x3]-_0x3eef64[0x2]*_0x3c35ca[0x1],[_0x3eef64,_0x44ac08,_0x3c35ca];},_0x495db1[_0x5b0a39(0x78b)]=_0x165735;},function(_0x44d73b,_0x1aa7fe,_0x18011a){const _0x4fdef0=_0x5ecf;var _0x51a53a=_0x18011a(0x1),_0x5c397b={};_0x5c397b[_0x4fdef0(0x4e1)]=function(){var _0x43962a=new _0x51a53a['ARRAY_TYPE'](0x6);return _0x43962a[0x0]=0x1,_0x43962a[0x1]=0x0,_0x43962a[0x2]=0x0,_0x43962a[0x3]=0x1,_0x43962a[0x4]=0x0,_0x43962a[0x5]=0x0,_0x43962a;},_0x5c397b[_0x4fdef0(0x43f)]=function(_0x3222db){const _0x26c5e7=_0x4fdef0;var _0x51458a=new _0x51a53a[(_0x26c5e7(0x2aa))](0x6);return _0x51458a[0x0]=_0x3222db[0x0],_0x51458a[0x1]=_0x3222db[0x1],_0x51458a[0x2]=_0x3222db[0x2],_0x51458a[0x3]=_0x3222db[0x3],_0x51458a[0x4]=_0x3222db[0x4],_0x51458a[0x5]=_0x3222db[0x5],_0x51458a;},_0x5c397b['copy']=function(_0x5ecf62,_0x1b9d7c){return _0x5ecf62[0x0]=_0x1b9d7c[0x0],_0x5ecf62[0x1]=_0x1b9d7c[0x1],_0x5ecf62[0x2]=_0x1b9d7c[0x2],_0x5ecf62[0x3]=_0x1b9d7c[0x3],_0x5ecf62[0x4]=_0x1b9d7c[0x4],_0x5ecf62[0x5]=_0x1b9d7c[0x5],_0x5ecf62;},_0x5c397b['identity']=function(_0x2b2f35){return _0x2b2f35[0x0]=0x1,_0x2b2f35[0x1]=0x0,_0x2b2f35[0x2]=0x0,_0x2b2f35[0x3]=0x1,_0x2b2f35[0x4]=0x0,_0x2b2f35[0x5]=0x0,_0x2b2f35;},_0x5c397b[_0x4fdef0(0x626)]=function(_0x55d46e,_0xed0af9){var _0x413a1b=_0xed0af9[0x0],_0x1f69a0=_0xed0af9[0x1],_0xbda943=_0xed0af9[0x2],_0x2edefc=_0xed0af9[0x3],_0xae2481=_0xed0af9[0x4],_0x2bc754=_0xed0af9[0x5],_0x55a16f=_0x413a1b*_0x2edefc-_0x1f69a0*_0xbda943;if(!_0x55a16f)return null;return _0x55a16f=0x1/_0x55a16f,_0x55d46e[0x0]=_0x2edefc*_0x55a16f,_0x55d46e[0x1]=-_0x1f69a0*_0x55a16f,_0x55d46e[0x2]=-_0xbda943*_0x55a16f,_0x55d46e[0x3]=_0x413a1b*_0x55a16f,_0x55d46e[0x4]=(_0xbda943*_0x2bc754-_0x2edefc*_0xae2481)*_0x55a16f,_0x55d46e[0x5]=(_0x1f69a0*_0xae2481-_0x413a1b*_0x2bc754)*_0x55a16f,_0x55d46e;},_0x5c397b['determinant']=function(_0x771b02){return _0x771b02[0x0]*_0x771b02[0x3]-_0x771b02[0x1]*_0x771b02[0x2];},_0x5c397b[_0x4fdef0(0x12c)]=function(_0x5199d3,_0x5dbcf9,_0x2dfc92){var _0x4c5c50=_0x5dbcf9[0x0],_0x1bf84d=_0x5dbcf9[0x1],_0x170c77=_0x5dbcf9[0x2],_0x53864c=_0x5dbcf9[0x3],_0x1a54a0=_0x5dbcf9[0x4],_0xfd969c=_0x5dbcf9[0x5],_0x433c6c=_0x2dfc92[0x0],_0x469148=_0x2dfc92[0x1],_0x50d861=_0x2dfc92[0x2],_0x53b77f=_0x2dfc92[0x3],_0xb5cd77=_0x2dfc92[0x4],_0x514197=_0x2dfc92[0x5];return _0x5199d3[0x0]=_0x4c5c50*_0x433c6c+_0x170c77*_0x469148,_0x5199d3[0x1]=_0x1bf84d*_0x433c6c+_0x53864c*_0x469148,_0x5199d3[0x2]=_0x4c5c50*_0x50d861+_0x170c77*_0x53b77f,_0x5199d3[0x3]=_0x1bf84d*_0x50d861+_0x53864c*_0x53b77f,_0x5199d3[0x4]=_0x4c5c50*_0xb5cd77+_0x170c77*_0x514197+_0x1a54a0,_0x5199d3[0x5]=_0x1bf84d*_0xb5cd77+_0x53864c*_0x514197+_0xfd969c,_0x5199d3;},_0x5c397b[_0x4fdef0(0x74f)]=_0x5c397b[_0x4fdef0(0x12c)],_0x5c397b['rotate']=function(_0x55b6a4,_0x206536,_0x29991e){const _0x5e4c2b=_0x4fdef0;var _0x1a7aca=_0x206536[0x0],_0x4d398b=_0x206536[0x1],_0x3e609c=_0x206536[0x2],_0x1505ef=_0x206536[0x3],_0x376a87=_0x206536[0x4],_0x18fb37=_0x206536[0x5],_0xa0ce1c=Math['sin'](_0x29991e),_0x123061=Math[_0x5e4c2b(0x586)](_0x29991e);return _0x55b6a4[0x0]=_0x1a7aca*_0x123061+_0x3e609c*_0xa0ce1c,_0x55b6a4[0x1]=_0x4d398b*_0x123061+_0x1505ef*_0xa0ce1c,_0x55b6a4[0x2]=_0x1a7aca*-_0xa0ce1c+_0x3e609c*_0x123061,_0x55b6a4[0x3]=_0x4d398b*-_0xa0ce1c+_0x1505ef*_0x123061,_0x55b6a4[0x4]=_0x376a87,_0x55b6a4[0x5]=_0x18fb37,_0x55b6a4;},_0x5c397b[_0x4fdef0(0x7ef)]=function(_0x41d1aa,_0x49691f,_0x1b278e){var _0x1e377d=_0x49691f[0x0],_0x2dae36=_0x49691f[0x1],_0x1eef01=_0x49691f[0x2],_0x56559c=_0x49691f[0x3],_0x29f0b0=_0x49691f[0x4],_0x5e281f=_0x49691f[0x5],_0x8e4756=_0x1b278e[0x0],_0x465dc5=_0x1b278e[0x1];return _0x41d1aa[0x0]=_0x1e377d*_0x8e4756,_0x41d1aa[0x1]=_0x2dae36*_0x8e4756,_0x41d1aa[0x2]=_0x1eef01*_0x465dc5,_0x41d1aa[0x3]=_0x56559c*_0x465dc5,_0x41d1aa[0x4]=_0x29f0b0,_0x41d1aa[0x5]=_0x5e281f,_0x41d1aa;},_0x5c397b[_0x4fdef0(0x4f4)]=function(_0x3820a5,_0x31ac1a,_0x215664){var _0x1e46c0=_0x31ac1a[0x0],_0x5c9e22=_0x31ac1a[0x1],_0x5da7be=_0x31ac1a[0x2],_0x532862=_0x31ac1a[0x3],_0x4a7410=_0x31ac1a[0x4],_0x28dfa3=_0x31ac1a[0x5],_0x15a005=_0x215664[0x0],_0x4d7d6b=_0x215664[0x1];return _0x3820a5[0x0]=_0x1e46c0,_0x3820a5[0x1]=_0x5c9e22,_0x3820a5[0x2]=_0x5da7be,_0x3820a5[0x3]=_0x532862,_0x3820a5[0x4]=_0x1e46c0*_0x15a005+_0x5da7be*_0x4d7d6b+_0x4a7410,_0x3820a5[0x5]=_0x5c9e22*_0x15a005+_0x532862*_0x4d7d6b+_0x28dfa3,_0x3820a5;},_0x5c397b[_0x4fdef0(0x3c3)]=function(_0x2685d2,_0x2f7596){const _0x3e4f98=_0x4fdef0;var _0x20c3ea=Math[_0x3e4f98(0x1c0)](_0x2f7596),_0x5f37a8=Math[_0x3e4f98(0x586)](_0x2f7596);return _0x2685d2[0x0]=_0x5f37a8,_0x2685d2[0x1]=_0x20c3ea,_0x2685d2[0x2]=-_0x20c3ea,_0x2685d2[0x3]=_0x5f37a8,_0x2685d2[0x4]=0x0,_0x2685d2[0x5]=0x0,_0x2685d2;},_0x5c397b['fromScaling']=function(_0x4deb1b,_0x297ad1){return _0x4deb1b[0x0]=_0x297ad1[0x0],_0x4deb1b[0x1]=0x0,_0x4deb1b[0x2]=0x0,_0x4deb1b[0x3]=_0x297ad1[0x1],_0x4deb1b[0x4]=0x0,_0x4deb1b[0x5]=0x0,_0x4deb1b;},_0x5c397b[_0x4fdef0(0x690)]=function(_0x2384b1,_0xcfb069){return _0x2384b1[0x0]=0x1,_0x2384b1[0x1]=0x0,_0x2384b1[0x2]=0x0,_0x2384b1[0x3]=0x1,_0x2384b1[0x4]=_0xcfb069[0x0],_0x2384b1[0x5]=_0xcfb069[0x1],_0x2384b1;},_0x5c397b[_0x4fdef0(0x471)]=function(_0x323215){const _0x1fbf05=_0x4fdef0;return _0x1fbf05(0x3f7)+_0x323215[0x0]+',\x20'+_0x323215[0x1]+',\x20'+_0x323215[0x2]+',\x20'+_0x323215[0x3]+',\x20'+_0x323215[0x4]+',\x20'+_0x323215[0x5]+')';},_0x5c397b[_0x4fdef0(0x604)]=function(_0x14799d){const _0xb18f7e=_0x4fdef0;return Math[_0xb18f7e(0x1ba)](Math[_0xb18f7e(0x48b)](_0x14799d[0x0],0x2)+Math[_0xb18f7e(0x48b)](_0x14799d[0x1],0x2)+Math['pow'](_0x14799d[0x2],0x2)+Math[_0xb18f7e(0x48b)](_0x14799d[0x3],0x2)+Math['pow'](_0x14799d[0x4],0x2)+Math[_0xb18f7e(0x48b)](_0x14799d[0x5],0x2)+0x1);},_0x44d73b[_0x4fdef0(0x78b)]=_0x5c397b;},function(_0x212cb6,_0x400b3c,_0x1c6592){const _0x4b2c2c=_0x5ecf;var _0x19ef88=_0x1c6592(0x1),_0x74f3a={};_0x74f3a['create']=function(){const _0x1023bb=_0x5ecf;var _0x357c59=new _0x19ef88[(_0x1023bb(0x2aa))](0x9);return _0x357c59[0x0]=0x1,_0x357c59[0x1]=0x0,_0x357c59[0x2]=0x0,_0x357c59[0x3]=0x0,_0x357c59[0x4]=0x1,_0x357c59[0x5]=0x0,_0x357c59[0x6]=0x0,_0x357c59[0x7]=0x0,_0x357c59[0x8]=0x1,_0x357c59;},_0x74f3a[_0x4b2c2c(0x4ee)]=function(_0x69af24,_0x51cd5b){return _0x69af24[0x0]=_0x51cd5b[0x0],_0x69af24[0x1]=_0x51cd5b[0x1],_0x69af24[0x2]=_0x51cd5b[0x2],_0x69af24[0x3]=_0x51cd5b[0x4],_0x69af24[0x4]=_0x51cd5b[0x5],_0x69af24[0x5]=_0x51cd5b[0x6],_0x69af24[0x6]=_0x51cd5b[0x8],_0x69af24[0x7]=_0x51cd5b[0x9],_0x69af24[0x8]=_0x51cd5b[0xa],_0x69af24;},_0x74f3a[_0x4b2c2c(0x43f)]=function(_0x2262ef){const _0x40a030=_0x4b2c2c;var _0x4322fc=new _0x19ef88[(_0x40a030(0x2aa))](0x9);return _0x4322fc[0x0]=_0x2262ef[0x0],_0x4322fc[0x1]=_0x2262ef[0x1],_0x4322fc[0x2]=_0x2262ef[0x2],_0x4322fc[0x3]=_0x2262ef[0x3],_0x4322fc[0x4]=_0x2262ef[0x4],_0x4322fc[0x5]=_0x2262ef[0x5],_0x4322fc[0x6]=_0x2262ef[0x6],_0x4322fc[0x7]=_0x2262ef[0x7],_0x4322fc[0x8]=_0x2262ef[0x8],_0x4322fc;},_0x74f3a[_0x4b2c2c(0x3e5)]=function(_0x22395d,_0x58f22f){return _0x22395d[0x0]=_0x58f22f[0x0],_0x22395d[0x1]=_0x58f22f[0x1],_0x22395d[0x2]=_0x58f22f[0x2],_0x22395d[0x3]=_0x58f22f[0x3],_0x22395d[0x4]=_0x58f22f[0x4],_0x22395d[0x5]=_0x58f22f[0x5],_0x22395d[0x6]=_0x58f22f[0x6],_0x22395d[0x7]=_0x58f22f[0x7],_0x22395d[0x8]=_0x58f22f[0x8],_0x22395d;},_0x74f3a[_0x4b2c2c(0x76e)]=function(_0x5990a1){return _0x5990a1[0x0]=0x1,_0x5990a1[0x1]=0x0,_0x5990a1[0x2]=0x0,_0x5990a1[0x3]=0x0,_0x5990a1[0x4]=0x1,_0x5990a1[0x5]=0x0,_0x5990a1[0x6]=0x0,_0x5990a1[0x7]=0x0,_0x5990a1[0x8]=0x1,_0x5990a1;},_0x74f3a['transpose']=function(_0x5edb5c,_0x5c3a75){if(_0x5edb5c===_0x5c3a75){var _0xd0ac20=_0x5c3a75[0x1],_0x38c301=_0x5c3a75[0x2],_0x37b056=_0x5c3a75[0x5];_0x5edb5c[0x1]=_0x5c3a75[0x3],_0x5edb5c[0x2]=_0x5c3a75[0x6],_0x5edb5c[0x3]=_0xd0ac20,_0x5edb5c[0x5]=_0x5c3a75[0x7],_0x5edb5c[0x6]=_0x38c301,_0x5edb5c[0x7]=_0x37b056;}else _0x5edb5c[0x0]=_0x5c3a75[0x0],_0x5edb5c[0x1]=_0x5c3a75[0x3],_0x5edb5c[0x2]=_0x5c3a75[0x6],_0x5edb5c[0x3]=_0x5c3a75[0x1],_0x5edb5c[0x4]=_0x5c3a75[0x4],_0x5edb5c[0x5]=_0x5c3a75[0x7],_0x5edb5c[0x6]=_0x5c3a75[0x2],_0x5edb5c[0x7]=_0x5c3a75[0x5],_0x5edb5c[0x8]=_0x5c3a75[0x8];return _0x5edb5c;},_0x74f3a['invert']=function(_0x21b753,_0x3597ef){var _0x2d07a2=_0x3597ef[0x0],_0x343916=_0x3597ef[0x1],_0x49e6fc=_0x3597ef[0x2],_0x399937=_0x3597ef[0x3],_0x465832=_0x3597ef[0x4],_0x15e103=_0x3597ef[0x5],_0x37b44c=_0x3597ef[0x6],_0x18e995=_0x3597ef[0x7],_0x187660=_0x3597ef[0x8],_0x3879cc=_0x187660*_0x465832-_0x15e103*_0x18e995,_0x57d762=-_0x187660*_0x399937+_0x15e103*_0x37b44c,_0x25ded7=_0x18e995*_0x399937-_0x465832*_0x37b44c,_0xa4dec6=_0x2d07a2*_0x3879cc+_0x343916*_0x57d762+_0x49e6fc*_0x25ded7;if(!_0xa4dec6)return null;return _0xa4dec6=0x1/_0xa4dec6,_0x21b753[0x0]=_0x3879cc*_0xa4dec6,_0x21b753[0x1]=(-_0x187660*_0x343916+_0x49e6fc*_0x18e995)*_0xa4dec6,_0x21b753[0x2]=(_0x15e103*_0x343916-_0x49e6fc*_0x465832)*_0xa4dec6,_0x21b753[0x3]=_0x57d762*_0xa4dec6,_0x21b753[0x4]=(_0x187660*_0x2d07a2-_0x49e6fc*_0x37b44c)*_0xa4dec6,_0x21b753[0x5]=(-_0x15e103*_0x2d07a2+_0x49e6fc*_0x399937)*_0xa4dec6,_0x21b753[0x6]=_0x25ded7*_0xa4dec6,_0x21b753[0x7]=(-_0x18e995*_0x2d07a2+_0x343916*_0x37b44c)*_0xa4dec6,_0x21b753[0x8]=(_0x465832*_0x2d07a2-_0x343916*_0x399937)*_0xa4dec6,_0x21b753;},_0x74f3a[_0x4b2c2c(0x721)]=function(_0x3ada0c,_0x13cc38){var _0x41c1d4=_0x13cc38[0x0],_0xf2c913=_0x13cc38[0x1],_0x92d1a7=_0x13cc38[0x2],_0x422092=_0x13cc38[0x3],_0x558b03=_0x13cc38[0x4],_0x574da6=_0x13cc38[0x5],_0x583acd=_0x13cc38[0x6],_0x45d45d=_0x13cc38[0x7],_0x333493=_0x13cc38[0x8];return _0x3ada0c[0x0]=_0x558b03*_0x333493-_0x574da6*_0x45d45d,_0x3ada0c[0x1]=_0x92d1a7*_0x45d45d-_0xf2c913*_0x333493,_0x3ada0c[0x2]=_0xf2c913*_0x574da6-_0x92d1a7*_0x558b03,_0x3ada0c[0x3]=_0x574da6*_0x583acd-_0x422092*_0x333493,_0x3ada0c[0x4]=_0x41c1d4*_0x333493-_0x92d1a7*_0x583acd,_0x3ada0c[0x5]=_0x92d1a7*_0x422092-_0x41c1d4*_0x574da6,_0x3ada0c[0x6]=_0x422092*_0x45d45d-_0x558b03*_0x583acd,_0x3ada0c[0x7]=_0xf2c913*_0x583acd-_0x41c1d4*_0x45d45d,_0x3ada0c[0x8]=_0x41c1d4*_0x558b03-_0xf2c913*_0x422092,_0x3ada0c;},_0x74f3a['determinant']=function(_0x3511b5){var _0x2bde97=_0x3511b5[0x0],_0x220e15=_0x3511b5[0x1],_0x1abe00=_0x3511b5[0x2],_0x43cd17=_0x3511b5[0x3],_0x26628f=_0x3511b5[0x4],_0x94915f=_0x3511b5[0x5],_0x1b2183=_0x3511b5[0x6],_0x9421d2=_0x3511b5[0x7],_0x4b3832=_0x3511b5[0x8];return _0x2bde97*(_0x4b3832*_0x26628f-_0x94915f*_0x9421d2)+_0x220e15*(-_0x4b3832*_0x43cd17+_0x94915f*_0x1b2183)+_0x1abe00*(_0x9421d2*_0x43cd17-_0x26628f*_0x1b2183);},_0x74f3a[_0x4b2c2c(0x12c)]=function(_0x2ed371,_0x301ade,_0x44b36a){var _0x295701=_0x301ade[0x0],_0x34aa1e=_0x301ade[0x1],_0x4e7f24=_0x301ade[0x2],_0x2e2a81=_0x301ade[0x3],_0x548266=_0x301ade[0x4],_0x50f133=_0x301ade[0x5],_0x1935b8=_0x301ade[0x6],_0x19b586=_0x301ade[0x7],_0x14c807=_0x301ade[0x8],_0x3d1f8d=_0x44b36a[0x0],_0x2cd24f=_0x44b36a[0x1],_0x5f3824=_0x44b36a[0x2],_0x3ff2b2=_0x44b36a[0x3],_0x3596e2=_0x44b36a[0x4],_0x2433b9=_0x44b36a[0x5],_0xe3df09=_0x44b36a[0x6],_0x55da12=_0x44b36a[0x7],_0x4d785d=_0x44b36a[0x8];return _0x2ed371[0x0]=_0x3d1f8d*_0x295701+_0x2cd24f*_0x2e2a81+_0x5f3824*_0x1935b8,_0x2ed371[0x1]=_0x3d1f8d*_0x34aa1e+_0x2cd24f*_0x548266+_0x5f3824*_0x19b586,_0x2ed371[0x2]=_0x3d1f8d*_0x4e7f24+_0x2cd24f*_0x50f133+_0x5f3824*_0x14c807,_0x2ed371[0x3]=_0x3ff2b2*_0x295701+_0x3596e2*_0x2e2a81+_0x2433b9*_0x1935b8,_0x2ed371[0x4]=_0x3ff2b2*_0x34aa1e+_0x3596e2*_0x548266+_0x2433b9*_0x19b586,_0x2ed371[0x5]=_0x3ff2b2*_0x4e7f24+_0x3596e2*_0x50f133+_0x2433b9*_0x14c807,_0x2ed371[0x6]=_0xe3df09*_0x295701+_0x55da12*_0x2e2a81+_0x4d785d*_0x1935b8,_0x2ed371[0x7]=_0xe3df09*_0x34aa1e+_0x55da12*_0x548266+_0x4d785d*_0x19b586,_0x2ed371[0x8]=_0xe3df09*_0x4e7f24+_0x55da12*_0x50f133+_0x4d785d*_0x14c807,_0x2ed371;},_0x74f3a[_0x4b2c2c(0x74f)]=_0x74f3a['multiply'],_0x74f3a[_0x4b2c2c(0x4f4)]=function(_0xc2adc4,_0x388916,_0x5ec664){var _0x1b6c60=_0x388916[0x0],_0x6e589f=_0x388916[0x1],_0x21051f=_0x388916[0x2],_0x59cb4c=_0x388916[0x3],_0x14e3f3=_0x388916[0x4],_0xe28cd9=_0x388916[0x5],_0x38d7df=_0x388916[0x6],_0x31c718=_0x388916[0x7],_0x2e4f54=_0x388916[0x8],_0x2e78b3=_0x5ec664[0x0],_0x67a56d=_0x5ec664[0x1];return _0xc2adc4[0x0]=_0x1b6c60,_0xc2adc4[0x1]=_0x6e589f,_0xc2adc4[0x2]=_0x21051f,_0xc2adc4[0x3]=_0x59cb4c,_0xc2adc4[0x4]=_0x14e3f3,_0xc2adc4[0x5]=_0xe28cd9,_0xc2adc4[0x6]=_0x2e78b3*_0x1b6c60+_0x67a56d*_0x59cb4c+_0x38d7df,_0xc2adc4[0x7]=_0x2e78b3*_0x6e589f+_0x67a56d*_0x14e3f3+_0x31c718,_0xc2adc4[0x8]=_0x2e78b3*_0x21051f+_0x67a56d*_0xe28cd9+_0x2e4f54,_0xc2adc4;},_0x74f3a[_0x4b2c2c(0x6e4)]=function(_0x5e2a3c,_0x30e335,_0x4bccd8){const _0xed9959=_0x4b2c2c;var _0x397e91=_0x30e335[0x0],_0x36ac02=_0x30e335[0x1],_0x1b29c2=_0x30e335[0x2],_0xb93f79=_0x30e335[0x3],_0x5cb7bb=_0x30e335[0x4],_0x33fe1e=_0x30e335[0x5],_0x50e5e1=_0x30e335[0x6],_0x439885=_0x30e335[0x7],_0x136b37=_0x30e335[0x8],_0x1b76c0=Math[_0xed9959(0x1c0)](_0x4bccd8),_0x4aff58=Math[_0xed9959(0x586)](_0x4bccd8);return _0x5e2a3c[0x0]=_0x4aff58*_0x397e91+_0x1b76c0*_0xb93f79,_0x5e2a3c[0x1]=_0x4aff58*_0x36ac02+_0x1b76c0*_0x5cb7bb,_0x5e2a3c[0x2]=_0x4aff58*_0x1b29c2+_0x1b76c0*_0x33fe1e,_0x5e2a3c[0x3]=_0x4aff58*_0xb93f79-_0x1b76c0*_0x397e91,_0x5e2a3c[0x4]=_0x4aff58*_0x5cb7bb-_0x1b76c0*_0x36ac02,_0x5e2a3c[0x5]=_0x4aff58*_0x33fe1e-_0x1b76c0*_0x1b29c2,_0x5e2a3c[0x6]=_0x50e5e1,_0x5e2a3c[0x7]=_0x439885,_0x5e2a3c[0x8]=_0x136b37,_0x5e2a3c;},_0x74f3a[_0x4b2c2c(0x7ef)]=function(_0x5e2ea9,_0x58d711,_0x13544c){var _0x4ddd9a=_0x13544c[0x0],_0x4983a5=_0x13544c[0x1];return _0x5e2ea9[0x0]=_0x4ddd9a*_0x58d711[0x0],_0x5e2ea9[0x1]=_0x4ddd9a*_0x58d711[0x1],_0x5e2ea9[0x2]=_0x4ddd9a*_0x58d711[0x2],_0x5e2ea9[0x3]=_0x4983a5*_0x58d711[0x3],_0x5e2ea9[0x4]=_0x4983a5*_0x58d711[0x4],_0x5e2ea9[0x5]=_0x4983a5*_0x58d711[0x5],_0x5e2ea9[0x6]=_0x58d711[0x6],_0x5e2ea9[0x7]=_0x58d711[0x7],_0x5e2ea9[0x8]=_0x58d711[0x8],_0x5e2ea9;},_0x74f3a[_0x4b2c2c(0x690)]=function(_0x1bcc28,_0x546bfb){return _0x1bcc28[0x0]=0x1,_0x1bcc28[0x1]=0x0,_0x1bcc28[0x2]=0x0,_0x1bcc28[0x3]=0x0,_0x1bcc28[0x4]=0x1,_0x1bcc28[0x5]=0x0,_0x1bcc28[0x6]=_0x546bfb[0x0],_0x1bcc28[0x7]=_0x546bfb[0x1],_0x1bcc28[0x8]=0x1,_0x1bcc28;},_0x74f3a[_0x4b2c2c(0x3c3)]=function(_0x25f46b,_0x5e7a16){const _0x2156ed=_0x4b2c2c;var _0x4f22e6=Math[_0x2156ed(0x1c0)](_0x5e7a16),_0x8dc57=Math[_0x2156ed(0x586)](_0x5e7a16);return _0x25f46b[0x0]=_0x8dc57,_0x25f46b[0x1]=_0x4f22e6,_0x25f46b[0x2]=0x0,_0x25f46b[0x3]=-_0x4f22e6,_0x25f46b[0x4]=_0x8dc57,_0x25f46b[0x5]=0x0,_0x25f46b[0x6]=0x0,_0x25f46b[0x7]=0x0,_0x25f46b[0x8]=0x1,_0x25f46b;},_0x74f3a[_0x4b2c2c(0x138)]=function(_0x452770,_0x12079d){return _0x452770[0x0]=_0x12079d[0x0],_0x452770[0x1]=0x0,_0x452770[0x2]=0x0,_0x452770[0x3]=0x0,_0x452770[0x4]=_0x12079d[0x1],_0x452770[0x5]=0x0,_0x452770[0x6]=0x0,_0x452770[0x7]=0x0,_0x452770[0x8]=0x1,_0x452770;},_0x74f3a[_0x4b2c2c(0x3cb)]=function(_0x210dda,_0x3f4409){return _0x210dda[0x0]=_0x3f4409[0x0],_0x210dda[0x1]=_0x3f4409[0x1],_0x210dda[0x2]=0x0,_0x210dda[0x3]=_0x3f4409[0x2],_0x210dda[0x4]=_0x3f4409[0x3],_0x210dda[0x5]=0x0,_0x210dda[0x6]=_0x3f4409[0x4],_0x210dda[0x7]=_0x3f4409[0x5],_0x210dda[0x8]=0x1,_0x210dda;},_0x74f3a[_0x4b2c2c(0x64e)]=function(_0x4363a9,_0x3ae1ea){var _0x101ea5=_0x3ae1ea[0x0],_0x17a91a=_0x3ae1ea[0x1],_0x8f15d4=_0x3ae1ea[0x2],_0x5600e0=_0x3ae1ea[0x3],_0x5aee98=_0x101ea5+_0x101ea5,_0x45cd62=_0x17a91a+_0x17a91a,_0x14b775=_0x8f15d4+_0x8f15d4,_0x229863=_0x101ea5*_0x5aee98,_0x5acf93=_0x17a91a*_0x5aee98,_0x4231fd=_0x17a91a*_0x45cd62,_0x3f2ede=_0x8f15d4*_0x5aee98,_0x2b58e0=_0x8f15d4*_0x45cd62,_0x3753d5=_0x8f15d4*_0x14b775,_0x101285=_0x5600e0*_0x5aee98,_0x1e2bed=_0x5600e0*_0x45cd62,_0x13f08d=_0x5600e0*_0x14b775;return _0x4363a9[0x0]=0x1-_0x4231fd-_0x3753d5,_0x4363a9[0x3]=_0x5acf93-_0x13f08d,_0x4363a9[0x6]=_0x3f2ede+_0x1e2bed,_0x4363a9[0x1]=_0x5acf93+_0x13f08d,_0x4363a9[0x4]=0x1-_0x229863-_0x3753d5,_0x4363a9[0x7]=_0x2b58e0-_0x101285,_0x4363a9[0x2]=_0x3f2ede-_0x1e2bed,_0x4363a9[0x5]=_0x2b58e0+_0x101285,_0x4363a9[0x8]=0x1-_0x229863-_0x4231fd,_0x4363a9;},_0x74f3a['normalFromMat4']=function(_0x40ed00,_0x4e9405){var _0x1aaf26=_0x4e9405[0x0],_0x4d746c=_0x4e9405[0x1],_0x26e221=_0x4e9405[0x2],_0x31f06d=_0x4e9405[0x3],_0x33575e=_0x4e9405[0x4],_0x4f529c=_0x4e9405[0x5],_0x417f21=_0x4e9405[0x6],_0x2f9457=_0x4e9405[0x7],_0x14e9fe=_0x4e9405[0x8],_0x2f8b5b=_0x4e9405[0x9],_0x5bbb33=_0x4e9405[0xa],_0x538625=_0x4e9405[0xb],_0x41f008=_0x4e9405[0xc],_0x47d98b=_0x4e9405[0xd],_0x56cb5e=_0x4e9405[0xe],_0x390e8c=_0x4e9405[0xf],_0x5366d9=_0x1aaf26*_0x4f529c-_0x4d746c*_0x33575e,_0x3e7d34=_0x1aaf26*_0x417f21-_0x26e221*_0x33575e,_0x5126d7=_0x1aaf26*_0x2f9457-_0x31f06d*_0x33575e,_0x4548da=_0x4d746c*_0x417f21-_0x26e221*_0x4f529c,_0x13127d=_0x4d746c*_0x2f9457-_0x31f06d*_0x4f529c,_0x3b00d6=_0x26e221*_0x2f9457-_0x31f06d*_0x417f21,_0x28d9f5=_0x14e9fe*_0x47d98b-_0x2f8b5b*_0x41f008,_0x18b315=_0x14e9fe*_0x56cb5e-_0x5bbb33*_0x41f008,_0x673227=_0x14e9fe*_0x390e8c-_0x538625*_0x41f008,_0x4809bf=_0x2f8b5b*_0x56cb5e-_0x5bbb33*_0x47d98b,_0x17810e=_0x2f8b5b*_0x390e8c-_0x538625*_0x47d98b,_0x638bb9=_0x5bbb33*_0x390e8c-_0x538625*_0x56cb5e,_0xf1fc5f=_0x5366d9*_0x638bb9-_0x3e7d34*_0x17810e+_0x5126d7*_0x4809bf+_0x4548da*_0x673227-_0x13127d*_0x18b315+_0x3b00d6*_0x28d9f5;if(!_0xf1fc5f)return null;return _0xf1fc5f=0x1/_0xf1fc5f,_0x40ed00[0x0]=(_0x4f529c*_0x638bb9-_0x417f21*_0x17810e+_0x2f9457*_0x4809bf)*_0xf1fc5f,_0x40ed00[0x1]=(_0x417f21*_0x673227-_0x33575e*_0x638bb9-_0x2f9457*_0x18b315)*_0xf1fc5f,_0x40ed00[0x2]=(_0x33575e*_0x17810e-_0x4f529c*_0x673227+_0x2f9457*_0x28d9f5)*_0xf1fc5f,_0x40ed00[0x3]=(_0x26e221*_0x17810e-_0x4d746c*_0x638bb9-_0x31f06d*_0x4809bf)*_0xf1fc5f,_0x40ed00[0x4]=(_0x1aaf26*_0x638bb9-_0x26e221*_0x673227+_0x31f06d*_0x18b315)*_0xf1fc5f,_0x40ed00[0x5]=(_0x4d746c*_0x673227-_0x1aaf26*_0x17810e-_0x31f06d*_0x28d9f5)*_0xf1fc5f,_0x40ed00[0x6]=(_0x47d98b*_0x3b00d6-_0x56cb5e*_0x13127d+_0x390e8c*_0x4548da)*_0xf1fc5f,_0x40ed00[0x7]=(_0x56cb5e*_0x5126d7-_0x41f008*_0x3b00d6-_0x390e8c*_0x3e7d34)*_0xf1fc5f,_0x40ed00[0x8]=(_0x41f008*_0x13127d-_0x47d98b*_0x5126d7+_0x390e8c*_0x5366d9)*_0xf1fc5f,_0x40ed00;},_0x74f3a[_0x4b2c2c(0x471)]=function(_0x1d7732){const _0x175a1d=_0x4b2c2c;return _0x175a1d(0x804)+_0x1d7732[0x0]+',\x20'+_0x1d7732[0x1]+',\x20'+_0x1d7732[0x2]+',\x20'+_0x1d7732[0x3]+',\x20'+_0x1d7732[0x4]+',\x20'+_0x1d7732[0x5]+',\x20'+_0x1d7732[0x6]+',\x20'+_0x1d7732[0x7]+',\x20'+_0x1d7732[0x8]+')';},_0x74f3a[_0x4b2c2c(0x604)]=function(_0x190bde){const _0x52b303=_0x4b2c2c;return Math[_0x52b303(0x1ba)](Math[_0x52b303(0x48b)](_0x190bde[0x0],0x2)+Math[_0x52b303(0x48b)](_0x190bde[0x1],0x2)+Math[_0x52b303(0x48b)](_0x190bde[0x2],0x2)+Math['pow'](_0x190bde[0x3],0x2)+Math['pow'](_0x190bde[0x4],0x2)+Math[_0x52b303(0x48b)](_0x190bde[0x5],0x2)+Math[_0x52b303(0x48b)](_0x190bde[0x6],0x2)+Math[_0x52b303(0x48b)](_0x190bde[0x7],0x2)+Math[_0x52b303(0x48b)](_0x190bde[0x8],0x2));},_0x212cb6[_0x4b2c2c(0x78b)]=_0x74f3a;},function(_0x18ab4a,_0x3321d5,_0x51cb36){const _0x273331=_0x5ecf;var _0x58dd4f=_0x51cb36(0x1),_0x1b342a={'scalar':{},'SIMD':{}};_0x1b342a[_0x273331(0x4e1)]=function(){const _0x1be22e=_0x273331;var _0x140f15=new _0x58dd4f[(_0x1be22e(0x2aa))](0x10);return _0x140f15[0x0]=0x1,_0x140f15[0x1]=0x0,_0x140f15[0x2]=0x0,_0x140f15[0x3]=0x0,_0x140f15[0x4]=0x0,_0x140f15[0x5]=0x1,_0x140f15[0x6]=0x0,_0x140f15[0x7]=0x0,_0x140f15[0x8]=0x0,_0x140f15[0x9]=0x0,_0x140f15[0xa]=0x1,_0x140f15[0xb]=0x0,_0x140f15[0xc]=0x0,_0x140f15[0xd]=0x0,_0x140f15[0xe]=0x0,_0x140f15[0xf]=0x1,_0x140f15;},_0x1b342a[_0x273331(0x43f)]=function(_0x109ff5){var _0x55e39d=new _0x58dd4f['ARRAY_TYPE'](0x10);return _0x55e39d[0x0]=_0x109ff5[0x0],_0x55e39d[0x1]=_0x109ff5[0x1],_0x55e39d[0x2]=_0x109ff5[0x2],_0x55e39d[0x3]=_0x109ff5[0x3],_0x55e39d[0x4]=_0x109ff5[0x4],_0x55e39d[0x5]=_0x109ff5[0x5],_0x55e39d[0x6]=_0x109ff5[0x6],_0x55e39d[0x7]=_0x109ff5[0x7],_0x55e39d[0x8]=_0x109ff5[0x8],_0x55e39d[0x9]=_0x109ff5[0x9],_0x55e39d[0xa]=_0x109ff5[0xa],_0x55e39d[0xb]=_0x109ff5[0xb],_0x55e39d[0xc]=_0x109ff5[0xc],_0x55e39d[0xd]=_0x109ff5[0xd],_0x55e39d[0xe]=_0x109ff5[0xe],_0x55e39d[0xf]=_0x109ff5[0xf],_0x55e39d;},_0x1b342a[_0x273331(0x3e5)]=function(_0x35c265,_0x8554d6){return _0x35c265[0x0]=_0x8554d6[0x0],_0x35c265[0x1]=_0x8554d6[0x1],_0x35c265[0x2]=_0x8554d6[0x2],_0x35c265[0x3]=_0x8554d6[0x3],_0x35c265[0x4]=_0x8554d6[0x4],_0x35c265[0x5]=_0x8554d6[0x5],_0x35c265[0x6]=_0x8554d6[0x6],_0x35c265[0x7]=_0x8554d6[0x7],_0x35c265[0x8]=_0x8554d6[0x8],_0x35c265[0x9]=_0x8554d6[0x9],_0x35c265[0xa]=_0x8554d6[0xa],_0x35c265[0xb]=_0x8554d6[0xb],_0x35c265[0xc]=_0x8554d6[0xc],_0x35c265[0xd]=_0x8554d6[0xd],_0x35c265[0xe]=_0x8554d6[0xe],_0x35c265[0xf]=_0x8554d6[0xf],_0x35c265;},_0x1b342a['identity']=function(_0x199ac8){return _0x199ac8[0x0]=0x1,_0x199ac8[0x1]=0x0,_0x199ac8[0x2]=0x0,_0x199ac8[0x3]=0x0,_0x199ac8[0x4]=0x0,_0x199ac8[0x5]=0x1,_0x199ac8[0x6]=0x0,_0x199ac8[0x7]=0x0,_0x199ac8[0x8]=0x0,_0x199ac8[0x9]=0x0,_0x199ac8[0xa]=0x1,_0x199ac8[0xb]=0x0,_0x199ac8[0xc]=0x0,_0x199ac8[0xd]=0x0,_0x199ac8[0xe]=0x0,_0x199ac8[0xf]=0x1,_0x199ac8;},_0x1b342a[_0x273331(0x1c6)][_0x273331(0x5a3)]=function(_0x4ee7b5,_0x8aba4){if(_0x4ee7b5===_0x8aba4){var _0x49eb0c=_0x8aba4[0x1],_0x334326=_0x8aba4[0x2],_0x38dad2=_0x8aba4[0x3],_0x52d812=_0x8aba4[0x6],_0x4f8407=_0x8aba4[0x7],_0x346f15=_0x8aba4[0xb];_0x4ee7b5[0x1]=_0x8aba4[0x4],_0x4ee7b5[0x2]=_0x8aba4[0x8],_0x4ee7b5[0x3]=_0x8aba4[0xc],_0x4ee7b5[0x4]=_0x49eb0c,_0x4ee7b5[0x6]=_0x8aba4[0x9],_0x4ee7b5[0x7]=_0x8aba4[0xd],_0x4ee7b5[0x8]=_0x334326,_0x4ee7b5[0x9]=_0x52d812,_0x4ee7b5[0xb]=_0x8aba4[0xe],_0x4ee7b5[0xc]=_0x38dad2,_0x4ee7b5[0xd]=_0x4f8407,_0x4ee7b5[0xe]=_0x346f15;}else _0x4ee7b5[0x0]=_0x8aba4[0x0],_0x4ee7b5[0x1]=_0x8aba4[0x4],_0x4ee7b5[0x2]=_0x8aba4[0x8],_0x4ee7b5[0x3]=_0x8aba4[0xc],_0x4ee7b5[0x4]=_0x8aba4[0x1],_0x4ee7b5[0x5]=_0x8aba4[0x5],_0x4ee7b5[0x6]=_0x8aba4[0x9],_0x4ee7b5[0x7]=_0x8aba4[0xd],_0x4ee7b5[0x8]=_0x8aba4[0x2],_0x4ee7b5[0x9]=_0x8aba4[0x6],_0x4ee7b5[0xa]=_0x8aba4[0xa],_0x4ee7b5[0xb]=_0x8aba4[0xe],_0x4ee7b5[0xc]=_0x8aba4[0x3],_0x4ee7b5[0xd]=_0x8aba4[0x7],_0x4ee7b5[0xe]=_0x8aba4[0xb],_0x4ee7b5[0xf]=_0x8aba4[0xf];return _0x4ee7b5;},_0x1b342a[_0x273331(0x7f2)][_0x273331(0x5a3)]=function(_0x430308,_0x384959){const _0x5a2bce=_0x273331;var _0x24c984,_0x6c81f0,_0x57d7e3,_0x2fc264,_0x6f9db0,_0x471eda,_0x197ec8,_0x20146e,_0x11d619,_0x13b4bb;return _0x24c984=SIMD[_0x5a2bce(0x2d2)][_0x5a2bce(0x6dd)](_0x384959,0x0),_0x6c81f0=SIMD['Float32x4'][_0x5a2bce(0x6dd)](_0x384959,0x4),_0x57d7e3=SIMD[_0x5a2bce(0x2d2)][_0x5a2bce(0x6dd)](_0x384959,0x8),_0x2fc264=SIMD[_0x5a2bce(0x2d2)][_0x5a2bce(0x6dd)](_0x384959,0xc),_0x6f9db0=SIMD[_0x5a2bce(0x2d2)][_0x5a2bce(0x2ef)](_0x24c984,_0x6c81f0,0x0,0x1,0x4,0x5),_0x471eda=SIMD[_0x5a2bce(0x2d2)][_0x5a2bce(0x2ef)](_0x57d7e3,_0x2fc264,0x0,0x1,0x4,0x5),_0x197ec8=SIMD[_0x5a2bce(0x2d2)][_0x5a2bce(0x2ef)](_0x6f9db0,_0x471eda,0x0,0x2,0x4,0x6),_0x20146e=SIMD[_0x5a2bce(0x2d2)][_0x5a2bce(0x2ef)](_0x6f9db0,_0x471eda,0x1,0x3,0x5,0x7),SIMD['Float32x4'][_0x5a2bce(0x705)](_0x430308,0x0,_0x197ec8),SIMD[_0x5a2bce(0x2d2)][_0x5a2bce(0x705)](_0x430308,0x4,_0x20146e),_0x6f9db0=SIMD[_0x5a2bce(0x2d2)][_0x5a2bce(0x2ef)](_0x24c984,_0x6c81f0,0x2,0x3,0x6,0x7),_0x471eda=SIMD[_0x5a2bce(0x2d2)][_0x5a2bce(0x2ef)](_0x57d7e3,_0x2fc264,0x2,0x3,0x6,0x7),_0x11d619=SIMD[_0x5a2bce(0x2d2)][_0x5a2bce(0x2ef)](_0x6f9db0,_0x471eda,0x0,0x2,0x4,0x6),_0x13b4bb=SIMD[_0x5a2bce(0x2d2)]['shuffle'](_0x6f9db0,_0x471eda,0x1,0x3,0x5,0x7),SIMD[_0x5a2bce(0x2d2)][_0x5a2bce(0x705)](_0x430308,0x8,_0x11d619),SIMD[_0x5a2bce(0x2d2)][_0x5a2bce(0x705)](_0x430308,0xc,_0x13b4bb),_0x430308;},_0x1b342a['transpose']=_0x58dd4f[_0x273331(0x57c)]?_0x1b342a[_0x273331(0x7f2)][_0x273331(0x5a3)]:_0x1b342a[_0x273331(0x1c6)][_0x273331(0x5a3)],_0x1b342a[_0x273331(0x1c6)]['invert']=function(_0x2270da,_0x4405ac){var _0x16306e=_0x4405ac[0x0],_0x2b93e1=_0x4405ac[0x1],_0xf884ec=_0x4405ac[0x2],_0x4cf7c2=_0x4405ac[0x3],_0x4e7cba=_0x4405ac[0x4],_0x4a4764=_0x4405ac[0x5],_0x3f6d56=_0x4405ac[0x6],_0x172357=_0x4405ac[0x7],_0x4db19f=_0x4405ac[0x8],_0x3e6c63=_0x4405ac[0x9],_0x5b5d36=_0x4405ac[0xa],_0x407c11=_0x4405ac[0xb],_0x44bc34=_0x4405ac[0xc],_0x3993eb=_0x4405ac[0xd],_0x1332d1=_0x4405ac[0xe],_0x4fa1b3=_0x4405ac[0xf],_0x1b6d10=_0x16306e*_0x4a4764-_0x2b93e1*_0x4e7cba,_0x2a8a31=_0x16306e*_0x3f6d56-_0xf884ec*_0x4e7cba,_0x44c9a8=_0x16306e*_0x172357-_0x4cf7c2*_0x4e7cba,_0x437687=_0x2b93e1*_0x3f6d56-_0xf884ec*_0x4a4764,_0x3f0c50=_0x2b93e1*_0x172357-_0x4cf7c2*_0x4a4764,_0x298df9=_0xf884ec*_0x172357-_0x4cf7c2*_0x3f6d56,_0x4859db=_0x4db19f*_0x3993eb-_0x3e6c63*_0x44bc34,_0x2df86b=_0x4db19f*_0x1332d1-_0x5b5d36*_0x44bc34,_0x41d3ba=_0x4db19f*_0x4fa1b3-_0x407c11*_0x44bc34,_0x55684c=_0x3e6c63*_0x1332d1-_0x5b5d36*_0x3993eb,_0x333a00=_0x3e6c63*_0x4fa1b3-_0x407c11*_0x3993eb,_0x47331b=_0x5b5d36*_0x4fa1b3-_0x407c11*_0x1332d1,_0x442a8c=_0x1b6d10*_0x47331b-_0x2a8a31*_0x333a00+_0x44c9a8*_0x55684c+_0x437687*_0x41d3ba-_0x3f0c50*_0x2df86b+_0x298df9*_0x4859db;if(!_0x442a8c)return null;return _0x442a8c=0x1/_0x442a8c,_0x2270da[0x0]=(_0x4a4764*_0x47331b-_0x3f6d56*_0x333a00+_0x172357*_0x55684c)*_0x442a8c,_0x2270da[0x1]=(_0xf884ec*_0x333a00-_0x2b93e1*_0x47331b-_0x4cf7c2*_0x55684c)*_0x442a8c,_0x2270da[0x2]=(_0x3993eb*_0x298df9-_0x1332d1*_0x3f0c50+_0x4fa1b3*_0x437687)*_0x442a8c,_0x2270da[0x3]=(_0x5b5d36*_0x3f0c50-_0x3e6c63*_0x298df9-_0x407c11*_0x437687)*_0x442a8c,_0x2270da[0x4]=(_0x3f6d56*_0x41d3ba-_0x4e7cba*_0x47331b-_0x172357*_0x2df86b)*_0x442a8c,_0x2270da[0x5]=(_0x16306e*_0x47331b-_0xf884ec*_0x41d3ba+_0x4cf7c2*_0x2df86b)*_0x442a8c,_0x2270da[0x6]=(_0x1332d1*_0x44c9a8-_0x44bc34*_0x298df9-_0x4fa1b3*_0x2a8a31)*_0x442a8c,_0x2270da[0x7]=(_0x4db19f*_0x298df9-_0x5b5d36*_0x44c9a8+_0x407c11*_0x2a8a31)*_0x442a8c,_0x2270da[0x8]=(_0x4e7cba*_0x333a00-_0x4a4764*_0x41d3ba+_0x172357*_0x4859db)*_0x442a8c,_0x2270da[0x9]=(_0x2b93e1*_0x41d3ba-_0x16306e*_0x333a00-_0x4cf7c2*_0x4859db)*_0x442a8c,_0x2270da[0xa]=(_0x44bc34*_0x3f0c50-_0x3993eb*_0x44c9a8+_0x4fa1b3*_0x1b6d10)*_0x442a8c,_0x2270da[0xb]=(_0x3e6c63*_0x44c9a8-_0x4db19f*_0x3f0c50-_0x407c11*_0x1b6d10)*_0x442a8c,_0x2270da[0xc]=(_0x4a4764*_0x2df86b-_0x4e7cba*_0x55684c-_0x3f6d56*_0x4859db)*_0x442a8c,_0x2270da[0xd]=(_0x16306e*_0x55684c-_0x2b93e1*_0x2df86b+_0xf884ec*_0x4859db)*_0x442a8c,_0x2270da[0xe]=(_0x3993eb*_0x2a8a31-_0x44bc34*_0x437687-_0x1332d1*_0x1b6d10)*_0x442a8c,_0x2270da[0xf]=(_0x4db19f*_0x437687-_0x3e6c63*_0x2a8a31+_0x5b5d36*_0x1b6d10)*_0x442a8c,_0x2270da;},_0x1b342a['SIMD'][_0x273331(0x626)]=function(_0x286a41,_0x403b89){const _0x3a9ed1=_0x273331;var _0x485408,_0x44c669,_0x3e7a9a,_0x2f7546,_0x3ec09e,_0x9ac498,_0xe72bfc,_0x5bba77,_0x14b7ed,_0x11000b,_0x4af782=SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x6dd)](_0x403b89,0x0),_0x774057=SIMD[_0x3a9ed1(0x2d2)]['load'](_0x403b89,0x4),_0x3c10a7=SIMD['Float32x4'][_0x3a9ed1(0x6dd)](_0x403b89,0x8),_0x367a5e=SIMD['Float32x4']['load'](_0x403b89,0xc);_0x3ec09e=SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x2ef)](_0x4af782,_0x774057,0x0,0x1,0x4,0x5),_0x44c669=SIMD['Float32x4']['shuffle'](_0x3c10a7,_0x367a5e,0x0,0x1,0x4,0x5),_0x485408=SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x2ef)](_0x3ec09e,_0x44c669,0x0,0x2,0x4,0x6),_0x44c669=SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x2ef)](_0x44c669,_0x3ec09e,0x1,0x3,0x5,0x7),_0x3ec09e=SIMD[_0x3a9ed1(0x2d2)]['shuffle'](_0x4af782,_0x774057,0x2,0x3,0x6,0x7),_0x2f7546=SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x2ef)](_0x3c10a7,_0x367a5e,0x2,0x3,0x6,0x7),_0x3e7a9a=SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x2ef)](_0x3ec09e,_0x2f7546,0x0,0x2,0x4,0x6),_0x2f7546=SIMD['Float32x4'][_0x3a9ed1(0x2ef)](_0x2f7546,_0x3ec09e,0x1,0x3,0x5,0x7),_0x3ec09e=SIMD['Float32x4'][_0x3a9ed1(0x74f)](_0x3e7a9a,_0x2f7546),_0x3ec09e=SIMD[_0x3a9ed1(0x2d2)]['swizzle'](_0x3ec09e,0x1,0x0,0x3,0x2),_0x9ac498=SIMD[_0x3a9ed1(0x2d2)]['mul'](_0x44c669,_0x3ec09e),_0xe72bfc=SIMD['Float32x4'][_0x3a9ed1(0x74f)](_0x485408,_0x3ec09e),_0x3ec09e=SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x692)](_0x3ec09e,0x2,0x3,0x0,0x1),_0x9ac498=SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x295)](SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x74f)](_0x44c669,_0x3ec09e),_0x9ac498),_0xe72bfc=SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x295)](SIMD[_0x3a9ed1(0x2d2)]['mul'](_0x485408,_0x3ec09e),_0xe72bfc),_0xe72bfc=SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x692)](_0xe72bfc,0x2,0x3,0x0,0x1),_0x3ec09e=SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x74f)](_0x44c669,_0x3e7a9a),_0x3ec09e=SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x692)](_0x3ec09e,0x1,0x0,0x3,0x2),_0x9ac498=SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0xed)](SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x74f)](_0x2f7546,_0x3ec09e),_0x9ac498),_0x14b7ed=SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x74f)](_0x485408,_0x3ec09e),_0x3ec09e=SIMD[_0x3a9ed1(0x2d2)]['swizzle'](_0x3ec09e,0x2,0x3,0x0,0x1),_0x9ac498=SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x295)](_0x9ac498,SIMD[_0x3a9ed1(0x2d2)]['mul'](_0x2f7546,_0x3ec09e)),_0x14b7ed=SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x295)](SIMD['Float32x4'][_0x3a9ed1(0x74f)](_0x485408,_0x3ec09e),_0x14b7ed),_0x14b7ed=SIMD[_0x3a9ed1(0x2d2)]['swizzle'](_0x14b7ed,0x2,0x3,0x0,0x1),_0x3ec09e=SIMD[_0x3a9ed1(0x2d2)]['mul'](SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x692)](_0x44c669,0x2,0x3,0x0,0x1),_0x2f7546),_0x3ec09e=SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x692)](_0x3ec09e,0x1,0x0,0x3,0x2),_0x3e7a9a=SIMD[_0x3a9ed1(0x2d2)]['swizzle'](_0x3e7a9a,0x2,0x3,0x0,0x1),_0x9ac498=SIMD[_0x3a9ed1(0x2d2)]['add'](SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x74f)](_0x3e7a9a,_0x3ec09e),_0x9ac498),_0x5bba77=SIMD[_0x3a9ed1(0x2d2)]['mul'](_0x485408,_0x3ec09e),_0x3ec09e=SIMD[_0x3a9ed1(0x2d2)]['swizzle'](_0x3ec09e,0x2,0x3,0x0,0x1),_0x9ac498=SIMD['Float32x4'][_0x3a9ed1(0x295)](_0x9ac498,SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x74f)](_0x3e7a9a,_0x3ec09e)),_0x5bba77=SIMD['Float32x4'][_0x3a9ed1(0x295)](SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x74f)](_0x485408,_0x3ec09e),_0x5bba77),_0x5bba77=SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x692)](_0x5bba77,0x2,0x3,0x0,0x1),_0x3ec09e=SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x74f)](_0x485408,_0x44c669),_0x3ec09e=SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x692)](_0x3ec09e,0x1,0x0,0x3,0x2),_0x5bba77=SIMD['Float32x4'][_0x3a9ed1(0xed)](SIMD[_0x3a9ed1(0x2d2)]['mul'](_0x2f7546,_0x3ec09e),_0x5bba77),_0x14b7ed=SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x295)](SIMD['Float32x4'][_0x3a9ed1(0x74f)](_0x3e7a9a,_0x3ec09e),_0x14b7ed),_0x3ec09e=SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x692)](_0x3ec09e,0x2,0x3,0x0,0x1),_0x5bba77=SIMD['Float32x4'][_0x3a9ed1(0x295)](SIMD[_0x3a9ed1(0x2d2)]['mul'](_0x2f7546,_0x3ec09e),_0x5bba77),_0x14b7ed=SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x295)](_0x14b7ed,SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x74f)](_0x3e7a9a,_0x3ec09e)),_0x3ec09e=SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x74f)](_0x485408,_0x2f7546),_0x3ec09e=SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x692)](_0x3ec09e,0x1,0x0,0x3,0x2),_0xe72bfc=SIMD['Float32x4'][_0x3a9ed1(0x295)](_0xe72bfc,SIMD['Float32x4']['mul'](_0x3e7a9a,_0x3ec09e)),_0x5bba77=SIMD['Float32x4'][_0x3a9ed1(0xed)](SIMD['Float32x4'][_0x3a9ed1(0x74f)](_0x44c669,_0x3ec09e),_0x5bba77),_0x3ec09e=SIMD['Float32x4']['swizzle'](_0x3ec09e,0x2,0x3,0x0,0x1),_0xe72bfc=SIMD[_0x3a9ed1(0x2d2)]['add'](SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x74f)](_0x3e7a9a,_0x3ec09e),_0xe72bfc),_0x5bba77=SIMD[_0x3a9ed1(0x2d2)]['sub'](_0x5bba77,SIMD[_0x3a9ed1(0x2d2)]['mul'](_0x44c669,_0x3ec09e)),_0x3ec09e=SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x74f)](_0x485408,_0x3e7a9a),_0x3ec09e=SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x692)](_0x3ec09e,0x1,0x0,0x3,0x2),_0xe72bfc=SIMD['Float32x4']['add'](SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x74f)](_0x2f7546,_0x3ec09e),_0xe72bfc),_0x14b7ed=SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x295)](_0x14b7ed,SIMD[_0x3a9ed1(0x2d2)]['mul'](_0x44c669,_0x3ec09e)),_0x3ec09e=SIMD[_0x3a9ed1(0x2d2)]['swizzle'](_0x3ec09e,0x2,0x3,0x0,0x1),_0xe72bfc=SIMD['Float32x4']['sub'](_0xe72bfc,SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x74f)](_0x2f7546,_0x3ec09e)),_0x14b7ed=SIMD['Float32x4'][_0x3a9ed1(0xed)](SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x74f)](_0x44c669,_0x3ec09e),_0x14b7ed),_0x11000b=SIMD[_0x3a9ed1(0x2d2)]['mul'](_0x485408,_0x9ac498),_0x11000b=SIMD[_0x3a9ed1(0x2d2)]['add'](SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x692)](_0x11000b,0x2,0x3,0x0,0x1),_0x11000b),_0x11000b=SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0xed)](SIMD[_0x3a9ed1(0x2d2)]['swizzle'](_0x11000b,0x1,0x0,0x3,0x2),_0x11000b),_0x3ec09e=SIMD['Float32x4'][_0x3a9ed1(0x37e)](_0x11000b),_0x11000b=SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x295)](SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0xed)](_0x3ec09e,_0x3ec09e),SIMD['Float32x4'][_0x3a9ed1(0x74f)](_0x11000b,SIMD['Float32x4'][_0x3a9ed1(0x74f)](_0x3ec09e,_0x3ec09e))),_0x11000b=SIMD['Float32x4'][_0x3a9ed1(0x692)](_0x11000b,0x0,0x0,0x0,0x0);if(!_0x11000b)return null;return SIMD[_0x3a9ed1(0x2d2)]['store'](_0x286a41,0x0,SIMD['Float32x4'][_0x3a9ed1(0x74f)](_0x11000b,_0x9ac498)),SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x705)](_0x286a41,0x4,SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x74f)](_0x11000b,_0xe72bfc)),SIMD[_0x3a9ed1(0x2d2)]['store'](_0x286a41,0x8,SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x74f)](_0x11000b,_0x5bba77)),SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x705)](_0x286a41,0xc,SIMD[_0x3a9ed1(0x2d2)][_0x3a9ed1(0x74f)](_0x11000b,_0x14b7ed)),_0x286a41;},_0x1b342a['invert']=_0x58dd4f[_0x273331(0x57c)]?_0x1b342a['SIMD'][_0x273331(0x626)]:_0x1b342a[_0x273331(0x1c6)]['invert'],_0x1b342a[_0x273331(0x1c6)][_0x273331(0x721)]=function(_0x3e8e18,_0x1843bf){var _0x7c98c3=_0x1843bf[0x0],_0x4ffa4a=_0x1843bf[0x1],_0x1e8dd7=_0x1843bf[0x2],_0x42a62a=_0x1843bf[0x3],_0x18742a=_0x1843bf[0x4],_0x34f175=_0x1843bf[0x5],_0x25d300=_0x1843bf[0x6],_0x3ee49a=_0x1843bf[0x7],_0x1cdf1e=_0x1843bf[0x8],_0x63c50=_0x1843bf[0x9],_0xcde3fc=_0x1843bf[0xa],_0x401d0b=_0x1843bf[0xb],_0x3081c9=_0x1843bf[0xc],_0x2f8d2d=_0x1843bf[0xd],_0x1e867e=_0x1843bf[0xe],_0x52808b=_0x1843bf[0xf];return _0x3e8e18[0x0]=_0x34f175*(_0xcde3fc*_0x52808b-_0x401d0b*_0x1e867e)-_0x63c50*(_0x25d300*_0x52808b-_0x3ee49a*_0x1e867e)+_0x2f8d2d*(_0x25d300*_0x401d0b-_0x3ee49a*_0xcde3fc),_0x3e8e18[0x1]=-(_0x4ffa4a*(_0xcde3fc*_0x52808b-_0x401d0b*_0x1e867e)-_0x63c50*(_0x1e8dd7*_0x52808b-_0x42a62a*_0x1e867e)+_0x2f8d2d*(_0x1e8dd7*_0x401d0b-_0x42a62a*_0xcde3fc)),_0x3e8e18[0x2]=_0x4ffa4a*(_0x25d300*_0x52808b-_0x3ee49a*_0x1e867e)-_0x34f175*(_0x1e8dd7*_0x52808b-_0x42a62a*_0x1e867e)+_0x2f8d2d*(_0x1e8dd7*_0x3ee49a-_0x42a62a*_0x25d300),_0x3e8e18[0x3]=-(_0x4ffa4a*(_0x25d300*_0x401d0b-_0x3ee49a*_0xcde3fc)-_0x34f175*(_0x1e8dd7*_0x401d0b-_0x42a62a*_0xcde3fc)+_0x63c50*(_0x1e8dd7*_0x3ee49a-_0x42a62a*_0x25d300)),_0x3e8e18[0x4]=-(_0x18742a*(_0xcde3fc*_0x52808b-_0x401d0b*_0x1e867e)-_0x1cdf1e*(_0x25d300*_0x52808b-_0x3ee49a*_0x1e867e)+_0x3081c9*(_0x25d300*_0x401d0b-_0x3ee49a*_0xcde3fc)),_0x3e8e18[0x5]=_0x7c98c3*(_0xcde3fc*_0x52808b-_0x401d0b*_0x1e867e)-_0x1cdf1e*(_0x1e8dd7*_0x52808b-_0x42a62a*_0x1e867e)+_0x3081c9*(_0x1e8dd7*_0x401d0b-_0x42a62a*_0xcde3fc),_0x3e8e18[0x6]=-(_0x7c98c3*(_0x25d300*_0x52808b-_0x3ee49a*_0x1e867e)-_0x18742a*(_0x1e8dd7*_0x52808b-_0x42a62a*_0x1e867e)+_0x3081c9*(_0x1e8dd7*_0x3ee49a-_0x42a62a*_0x25d300)),_0x3e8e18[0x7]=_0x7c98c3*(_0x25d300*_0x401d0b-_0x3ee49a*_0xcde3fc)-_0x18742a*(_0x1e8dd7*_0x401d0b-_0x42a62a*_0xcde3fc)+_0x1cdf1e*(_0x1e8dd7*_0x3ee49a-_0x42a62a*_0x25d300),_0x3e8e18[0x8]=_0x18742a*(_0x63c50*_0x52808b-_0x401d0b*_0x2f8d2d)-_0x1cdf1e*(_0x34f175*_0x52808b-_0x3ee49a*_0x2f8d2d)+_0x3081c9*(_0x34f175*_0x401d0b-_0x3ee49a*_0x63c50),_0x3e8e18[0x9]=-(_0x7c98c3*(_0x63c50*_0x52808b-_0x401d0b*_0x2f8d2d)-_0x1cdf1e*(_0x4ffa4a*_0x52808b-_0x42a62a*_0x2f8d2d)+_0x3081c9*(_0x4ffa4a*_0x401d0b-_0x42a62a*_0x63c50)),_0x3e8e18[0xa]=_0x7c98c3*(_0x34f175*_0x52808b-_0x3ee49a*_0x2f8d2d)-_0x18742a*(_0x4ffa4a*_0x52808b-_0x42a62a*_0x2f8d2d)+_0x3081c9*(_0x4ffa4a*_0x3ee49a-_0x42a62a*_0x34f175),_0x3e8e18[0xb]=-(_0x7c98c3*(_0x34f175*_0x401d0b-_0x3ee49a*_0x63c50)-_0x18742a*(_0x4ffa4a*_0x401d0b-_0x42a62a*_0x63c50)+_0x1cdf1e*(_0x4ffa4a*_0x3ee49a-_0x42a62a*_0x34f175)),_0x3e8e18[0xc]=-(_0x18742a*(_0x63c50*_0x1e867e-_0xcde3fc*_0x2f8d2d)-_0x1cdf1e*(_0x34f175*_0x1e867e-_0x25d300*_0x2f8d2d)+_0x3081c9*(_0x34f175*_0xcde3fc-_0x25d300*_0x63c50)),_0x3e8e18[0xd]=_0x7c98c3*(_0x63c50*_0x1e867e-_0xcde3fc*_0x2f8d2d)-_0x1cdf1e*(_0x4ffa4a*_0x1e867e-_0x1e8dd7*_0x2f8d2d)+_0x3081c9*(_0x4ffa4a*_0xcde3fc-_0x1e8dd7*_0x63c50),_0x3e8e18[0xe]=-(_0x7c98c3*(_0x34f175*_0x1e867e-_0x25d300*_0x2f8d2d)-_0x18742a*(_0x4ffa4a*_0x1e867e-_0x1e8dd7*_0x2f8d2d)+_0x3081c9*(_0x4ffa4a*_0x25d300-_0x1e8dd7*_0x34f175)),_0x3e8e18[0xf]=_0x7c98c3*(_0x34f175*_0xcde3fc-_0x25d300*_0x63c50)-_0x18742a*(_0x4ffa4a*_0xcde3fc-_0x1e8dd7*_0x63c50)+_0x1cdf1e*(_0x4ffa4a*_0x25d300-_0x1e8dd7*_0x34f175),_0x3e8e18;},_0x1b342a[_0x273331(0x7f2)][_0x273331(0x721)]=function(_0xb6761d,_0x59172d){const _0x1d8b50=_0x273331;var _0x209df1,_0x2899ed,_0x364ead,_0x56784e,_0x5df0bc,_0x40f257,_0x3f0f8e,_0x3a9336,_0x2b77f7,_0x1e7e3d,_0xd236d8,_0x256709,_0x52a631,_0x209df1=SIMD[_0x1d8b50(0x2d2)]['load'](_0x59172d,0x0),_0x2899ed=SIMD['Float32x4'][_0x1d8b50(0x6dd)](_0x59172d,0x4),_0x364ead=SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x6dd)](_0x59172d,0x8),_0x56784e=SIMD[_0x1d8b50(0x2d2)]['load'](_0x59172d,0xc);return _0x2b77f7=SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x2ef)](_0x209df1,_0x2899ed,0x0,0x1,0x4,0x5),_0x40f257=SIMD[_0x1d8b50(0x2d2)]['shuffle'](_0x364ead,_0x56784e,0x0,0x1,0x4,0x5),_0x5df0bc=SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x2ef)](_0x2b77f7,_0x40f257,0x0,0x2,0x4,0x6),_0x40f257=SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x2ef)](_0x40f257,_0x2b77f7,0x1,0x3,0x5,0x7),_0x2b77f7=SIMD[_0x1d8b50(0x2d2)]['shuffle'](_0x209df1,_0x2899ed,0x2,0x3,0x6,0x7),_0x3a9336=SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x2ef)](_0x364ead,_0x56784e,0x2,0x3,0x6,0x7),_0x3f0f8e=SIMD['Float32x4']['shuffle'](_0x2b77f7,_0x3a9336,0x0,0x2,0x4,0x6),_0x3a9336=SIMD['Float32x4'][_0x1d8b50(0x2ef)](_0x3a9336,_0x2b77f7,0x1,0x3,0x5,0x7),_0x2b77f7=SIMD['Float32x4'][_0x1d8b50(0x74f)](_0x3f0f8e,_0x3a9336),_0x2b77f7=SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x692)](_0x2b77f7,0x1,0x0,0x3,0x2),_0x1e7e3d=SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x74f)](_0x40f257,_0x2b77f7),_0xd236d8=SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x74f)](_0x5df0bc,_0x2b77f7),_0x2b77f7=SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x692)](_0x2b77f7,0x2,0x3,0x0,0x1),_0x1e7e3d=SIMD['Float32x4'][_0x1d8b50(0x295)](SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x74f)](_0x40f257,_0x2b77f7),_0x1e7e3d),_0xd236d8=SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x295)](SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x74f)](_0x5df0bc,_0x2b77f7),_0xd236d8),_0xd236d8=SIMD['Float32x4'][_0x1d8b50(0x692)](_0xd236d8,0x2,0x3,0x0,0x1),_0x2b77f7=SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x74f)](_0x40f257,_0x3f0f8e),_0x2b77f7=SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x692)](_0x2b77f7,0x1,0x0,0x3,0x2),_0x1e7e3d=SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0xed)](SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x74f)](_0x3a9336,_0x2b77f7),_0x1e7e3d),_0x52a631=SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x74f)](_0x5df0bc,_0x2b77f7),_0x2b77f7=SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x692)](_0x2b77f7,0x2,0x3,0x0,0x1),_0x1e7e3d=SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x295)](_0x1e7e3d,SIMD['Float32x4'][_0x1d8b50(0x74f)](_0x3a9336,_0x2b77f7)),_0x52a631=SIMD['Float32x4'][_0x1d8b50(0x295)](SIMD[_0x1d8b50(0x2d2)]['mul'](_0x5df0bc,_0x2b77f7),_0x52a631),_0x52a631=SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x692)](_0x52a631,0x2,0x3,0x0,0x1),_0x2b77f7=SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x74f)](SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x692)](_0x40f257,0x2,0x3,0x0,0x1),_0x3a9336),_0x2b77f7=SIMD['Float32x4']['swizzle'](_0x2b77f7,0x1,0x0,0x3,0x2),_0x3f0f8e=SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x692)](_0x3f0f8e,0x2,0x3,0x0,0x1),_0x1e7e3d=SIMD['Float32x4']['add'](SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x74f)](_0x3f0f8e,_0x2b77f7),_0x1e7e3d),_0x256709=SIMD[_0x1d8b50(0x2d2)]['mul'](_0x5df0bc,_0x2b77f7),_0x2b77f7=SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x692)](_0x2b77f7,0x2,0x3,0x0,0x1),_0x1e7e3d=SIMD['Float32x4'][_0x1d8b50(0x295)](_0x1e7e3d,SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x74f)](_0x3f0f8e,_0x2b77f7)),_0x256709=SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x295)](SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x74f)](_0x5df0bc,_0x2b77f7),_0x256709),_0x256709=SIMD['Float32x4']['swizzle'](_0x256709,0x2,0x3,0x0,0x1),_0x2b77f7=SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x74f)](_0x5df0bc,_0x40f257),_0x2b77f7=SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x692)](_0x2b77f7,0x1,0x0,0x3,0x2),_0x256709=SIMD['Float32x4'][_0x1d8b50(0xed)](SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x74f)](_0x3a9336,_0x2b77f7),_0x256709),_0x52a631=SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x295)](SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x74f)](_0x3f0f8e,_0x2b77f7),_0x52a631),_0x2b77f7=SIMD[_0x1d8b50(0x2d2)]['swizzle'](_0x2b77f7,0x2,0x3,0x0,0x1),_0x256709=SIMD['Float32x4'][_0x1d8b50(0x295)](SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x74f)](_0x3a9336,_0x2b77f7),_0x256709),_0x52a631=SIMD[_0x1d8b50(0x2d2)]['sub'](_0x52a631,SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x74f)](_0x3f0f8e,_0x2b77f7)),_0x2b77f7=SIMD['Float32x4']['mul'](_0x5df0bc,_0x3a9336),_0x2b77f7=SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x692)](_0x2b77f7,0x1,0x0,0x3,0x2),_0xd236d8=SIMD['Float32x4'][_0x1d8b50(0x295)](_0xd236d8,SIMD[_0x1d8b50(0x2d2)]['mul'](_0x3f0f8e,_0x2b77f7)),_0x256709=SIMD['Float32x4'][_0x1d8b50(0xed)](SIMD[_0x1d8b50(0x2d2)]['mul'](_0x40f257,_0x2b77f7),_0x256709),_0x2b77f7=SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x692)](_0x2b77f7,0x2,0x3,0x0,0x1),_0xd236d8=SIMD['Float32x4'][_0x1d8b50(0xed)](SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x74f)](_0x3f0f8e,_0x2b77f7),_0xd236d8),_0x256709=SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x295)](_0x256709,SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x74f)](_0x40f257,_0x2b77f7)),_0x2b77f7=SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x74f)](_0x5df0bc,_0x3f0f8e),_0x2b77f7=SIMD[_0x1d8b50(0x2d2)]['swizzle'](_0x2b77f7,0x1,0x0,0x3,0x2),_0xd236d8=SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0xed)](SIMD[_0x1d8b50(0x2d2)]['mul'](_0x3a9336,_0x2b77f7),_0xd236d8),_0x52a631=SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x295)](_0x52a631,SIMD['Float32x4'][_0x1d8b50(0x74f)](_0x40f257,_0x2b77f7)),_0x2b77f7=SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x692)](_0x2b77f7,0x2,0x3,0x0,0x1),_0xd236d8=SIMD['Float32x4']['sub'](_0xd236d8,SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x74f)](_0x3a9336,_0x2b77f7)),_0x52a631=SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0xed)](SIMD['Float32x4'][_0x1d8b50(0x74f)](_0x40f257,_0x2b77f7),_0x52a631),SIMD[_0x1d8b50(0x2d2)]['store'](_0xb6761d,0x0,_0x1e7e3d),SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x705)](_0xb6761d,0x4,_0xd236d8),SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x705)](_0xb6761d,0x8,_0x256709),SIMD[_0x1d8b50(0x2d2)][_0x1d8b50(0x705)](_0xb6761d,0xc,_0x52a631),_0xb6761d;},_0x1b342a['adjoint']=_0x58dd4f[_0x273331(0x57c)]?_0x1b342a[_0x273331(0x7f2)]['adjoint']:_0x1b342a[_0x273331(0x1c6)]['adjoint'],_0x1b342a[_0x273331(0x3c8)]=function(_0x222319){var _0x378680=_0x222319[0x0],_0x36a92f=_0x222319[0x1],_0x4c83a6=_0x222319[0x2],_0x211d63=_0x222319[0x3],_0x21ffbb=_0x222319[0x4],_0x58e0d4=_0x222319[0x5],_0x4c63e3=_0x222319[0x6],_0x7a2e48=_0x222319[0x7],_0x26f72d=_0x222319[0x8],_0x18d278=_0x222319[0x9],_0x34c0d6=_0x222319[0xa],_0x2cfe93=_0x222319[0xb],_0x313d89=_0x222319[0xc],_0x3de5ff=_0x222319[0xd],_0x3225b7=_0x222319[0xe],_0x49ba77=_0x222319[0xf],_0xb30dba=_0x378680*_0x58e0d4-_0x36a92f*_0x21ffbb,_0x357950=_0x378680*_0x4c63e3-_0x4c83a6*_0x21ffbb,_0x5666a4=_0x378680*_0x7a2e48-_0x211d63*_0x21ffbb,_0x5af6b1=_0x36a92f*_0x4c63e3-_0x4c83a6*_0x58e0d4,_0x23e548=_0x36a92f*_0x7a2e48-_0x211d63*_0x58e0d4,_0x26d6f5=_0x4c83a6*_0x7a2e48-_0x211d63*_0x4c63e3,_0x82942f=_0x26f72d*_0x3de5ff-_0x18d278*_0x313d89,_0x4637ce=_0x26f72d*_0x3225b7-_0x34c0d6*_0x313d89,_0x3261ef=_0x26f72d*_0x49ba77-_0x2cfe93*_0x313d89,_0x210ad0=_0x18d278*_0x3225b7-_0x34c0d6*_0x3de5ff,_0x550c74=_0x18d278*_0x49ba77-_0x2cfe93*_0x3de5ff,_0x5d6977=_0x34c0d6*_0x49ba77-_0x2cfe93*_0x3225b7;return _0xb30dba*_0x5d6977-_0x357950*_0x550c74+_0x5666a4*_0x210ad0+_0x5af6b1*_0x3261ef-_0x23e548*_0x4637ce+_0x26d6f5*_0x82942f;},_0x1b342a[_0x273331(0x7f2)][_0x273331(0x12c)]=function(_0x2636b1,_0x1f8eb5,_0x2bb9ac){const _0x5f3e28=_0x273331;var _0x56cfb7=SIMD['Float32x4'][_0x5f3e28(0x6dd)](_0x1f8eb5,0x0),_0x1245c9=SIMD[_0x5f3e28(0x2d2)]['load'](_0x1f8eb5,0x4),_0x3ed635=SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0x6dd)](_0x1f8eb5,0x8),_0x1e1684=SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0x6dd)](_0x1f8eb5,0xc),_0x5eba81=SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0x6dd)](_0x2bb9ac,0x0),_0x2e805b=SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0xed)](SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0x74f)](SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0x692)](_0x5eba81,0x0,0x0,0x0,0x0),_0x56cfb7),SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0xed)](SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0x74f)](SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0x692)](_0x5eba81,0x1,0x1,0x1,0x1),_0x1245c9),SIMD['Float32x4'][_0x5f3e28(0xed)](SIMD[_0x5f3e28(0x2d2)]['mul'](SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0x692)](_0x5eba81,0x2,0x2,0x2,0x2),_0x3ed635),SIMD[_0x5f3e28(0x2d2)]['mul'](SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0x692)](_0x5eba81,0x3,0x3,0x3,0x3),_0x1e1684))));SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0x705)](_0x2636b1,0x0,_0x2e805b);var _0xe289db=SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0x6dd)](_0x2bb9ac,0x4),_0x597853=SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0xed)](SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0x74f)](SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0x692)](_0xe289db,0x0,0x0,0x0,0x0),_0x56cfb7),SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0xed)](SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0x74f)](SIMD['Float32x4']['swizzle'](_0xe289db,0x1,0x1,0x1,0x1),_0x1245c9),SIMD['Float32x4'][_0x5f3e28(0xed)](SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0x74f)](SIMD[_0x5f3e28(0x2d2)]['swizzle'](_0xe289db,0x2,0x2,0x2,0x2),_0x3ed635),SIMD['Float32x4'][_0x5f3e28(0x74f)](SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0x692)](_0xe289db,0x3,0x3,0x3,0x3),_0x1e1684))));SIMD['Float32x4'][_0x5f3e28(0x705)](_0x2636b1,0x4,_0x597853);var _0x102a45=SIMD[_0x5f3e28(0x2d2)]['load'](_0x2bb9ac,0x8),_0x56dd62=SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0xed)](SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0x74f)](SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0x692)](_0x102a45,0x0,0x0,0x0,0x0),_0x56cfb7),SIMD['Float32x4']['add'](SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0x74f)](SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0x692)](_0x102a45,0x1,0x1,0x1,0x1),_0x1245c9),SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0xed)](SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0x74f)](SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0x692)](_0x102a45,0x2,0x2,0x2,0x2),_0x3ed635),SIMD['Float32x4'][_0x5f3e28(0x74f)](SIMD['Float32x4'][_0x5f3e28(0x692)](_0x102a45,0x3,0x3,0x3,0x3),_0x1e1684))));SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0x705)](_0x2636b1,0x8,_0x56dd62);var _0x3c9c0f=SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0x6dd)](_0x2bb9ac,0xc),_0x5b1eec=SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0xed)](SIMD['Float32x4'][_0x5f3e28(0x74f)](SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0x692)](_0x3c9c0f,0x0,0x0,0x0,0x0),_0x56cfb7),SIMD['Float32x4']['add'](SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0x74f)](SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0x692)](_0x3c9c0f,0x1,0x1,0x1,0x1),_0x1245c9),SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0xed)](SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0x74f)](SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0x692)](_0x3c9c0f,0x2,0x2,0x2,0x2),_0x3ed635),SIMD[_0x5f3e28(0x2d2)][_0x5f3e28(0x74f)](SIMD['Float32x4'][_0x5f3e28(0x692)](_0x3c9c0f,0x3,0x3,0x3,0x3),_0x1e1684))));return SIMD[_0x5f3e28(0x2d2)]['store'](_0x2636b1,0xc,_0x5b1eec),_0x2636b1;},_0x1b342a[_0x273331(0x1c6)][_0x273331(0x12c)]=function(_0xfe68fc,_0x10e377,_0x51b2ab){var _0x5e0691=_0x10e377[0x0],_0x2b97d3=_0x10e377[0x1],_0x2c3292=_0x10e377[0x2],_0x15a7b2=_0x10e377[0x3],_0x4fff2a=_0x10e377[0x4],_0x138de0=_0x10e377[0x5],_0x4517f4=_0x10e377[0x6],_0x57f633=_0x10e377[0x7],_0x134ab0=_0x10e377[0x8],_0x52b5f7=_0x10e377[0x9],_0x447b50=_0x10e377[0xa],_0x25e966=_0x10e377[0xb],_0x5de8ea=_0x10e377[0xc],_0x121a53=_0x10e377[0xd],_0x3c119d=_0x10e377[0xe],_0x1a5461=_0x10e377[0xf],_0x184d5f=_0x51b2ab[0x0],_0x2d0426=_0x51b2ab[0x1],_0x514613=_0x51b2ab[0x2],_0x1f13c2=_0x51b2ab[0x3];return _0xfe68fc[0x0]=_0x184d5f*_0x5e0691+_0x2d0426*_0x4fff2a+_0x514613*_0x134ab0+_0x1f13c2*_0x5de8ea,_0xfe68fc[0x1]=_0x184d5f*_0x2b97d3+_0x2d0426*_0x138de0+_0x514613*_0x52b5f7+_0x1f13c2*_0x121a53,_0xfe68fc[0x2]=_0x184d5f*_0x2c3292+_0x2d0426*_0x4517f4+_0x514613*_0x447b50+_0x1f13c2*_0x3c119d,_0xfe68fc[0x3]=_0x184d5f*_0x15a7b2+_0x2d0426*_0x57f633+_0x514613*_0x25e966+_0x1f13c2*_0x1a5461,_0x184d5f=_0x51b2ab[0x4],_0x2d0426=_0x51b2ab[0x5],_0x514613=_0x51b2ab[0x6],_0x1f13c2=_0x51b2ab[0x7],_0xfe68fc[0x4]=_0x184d5f*_0x5e0691+_0x2d0426*_0x4fff2a+_0x514613*_0x134ab0+_0x1f13c2*_0x5de8ea,_0xfe68fc[0x5]=_0x184d5f*_0x2b97d3+_0x2d0426*_0x138de0+_0x514613*_0x52b5f7+_0x1f13c2*_0x121a53,_0xfe68fc[0x6]=_0x184d5f*_0x2c3292+_0x2d0426*_0x4517f4+_0x514613*_0x447b50+_0x1f13c2*_0x3c119d,_0xfe68fc[0x7]=_0x184d5f*_0x15a7b2+_0x2d0426*_0x57f633+_0x514613*_0x25e966+_0x1f13c2*_0x1a5461,_0x184d5f=_0x51b2ab[0x8],_0x2d0426=_0x51b2ab[0x9],_0x514613=_0x51b2ab[0xa],_0x1f13c2=_0x51b2ab[0xb],_0xfe68fc[0x8]=_0x184d5f*_0x5e0691+_0x2d0426*_0x4fff2a+_0x514613*_0x134ab0+_0x1f13c2*_0x5de8ea,_0xfe68fc[0x9]=_0x184d5f*_0x2b97d3+_0x2d0426*_0x138de0+_0x514613*_0x52b5f7+_0x1f13c2*_0x121a53,_0xfe68fc[0xa]=_0x184d5f*_0x2c3292+_0x2d0426*_0x4517f4+_0x514613*_0x447b50+_0x1f13c2*_0x3c119d,_0xfe68fc[0xb]=_0x184d5f*_0x15a7b2+_0x2d0426*_0x57f633+_0x514613*_0x25e966+_0x1f13c2*_0x1a5461,_0x184d5f=_0x51b2ab[0xc],_0x2d0426=_0x51b2ab[0xd],_0x514613=_0x51b2ab[0xe],_0x1f13c2=_0x51b2ab[0xf],_0xfe68fc[0xc]=_0x184d5f*_0x5e0691+_0x2d0426*_0x4fff2a+_0x514613*_0x134ab0+_0x1f13c2*_0x5de8ea,_0xfe68fc[0xd]=_0x184d5f*_0x2b97d3+_0x2d0426*_0x138de0+_0x514613*_0x52b5f7+_0x1f13c2*_0x121a53,_0xfe68fc[0xe]=_0x184d5f*_0x2c3292+_0x2d0426*_0x4517f4+_0x514613*_0x447b50+_0x1f13c2*_0x3c119d,_0xfe68fc[0xf]=_0x184d5f*_0x15a7b2+_0x2d0426*_0x57f633+_0x514613*_0x25e966+_0x1f13c2*_0x1a5461,_0xfe68fc;},_0x1b342a[_0x273331(0x12c)]=_0x58dd4f[_0x273331(0x57c)]?_0x1b342a[_0x273331(0x7f2)]['multiply']:_0x1b342a[_0x273331(0x1c6)][_0x273331(0x12c)],_0x1b342a[_0x273331(0x74f)]=_0x1b342a[_0x273331(0x12c)],_0x1b342a[_0x273331(0x1c6)]['translate']=function(_0x2e5a05,_0x17f848,_0x172fb1){var _0x356d14=_0x172fb1[0x0],_0x93077b=_0x172fb1[0x1],_0x252ec2=_0x172fb1[0x2],_0x3f172b,_0x60ddc3,_0x39a14d,_0x4974c6,_0x54a2bc,_0x469882,_0x14a033,_0x441f77,_0x34cc33,_0xe5ef71,_0x563c97,_0xd9654e;return _0x17f848===_0x2e5a05?(_0x2e5a05[0xc]=_0x17f848[0x0]*_0x356d14+_0x17f848[0x4]*_0x93077b+_0x17f848[0x8]*_0x252ec2+_0x17f848[0xc],_0x2e5a05[0xd]=_0x17f848[0x1]*_0x356d14+_0x17f848[0x5]*_0x93077b+_0x17f848[0x9]*_0x252ec2+_0x17f848[0xd],_0x2e5a05[0xe]=_0x17f848[0x2]*_0x356d14+_0x17f848[0x6]*_0x93077b+_0x17f848[0xa]*_0x252ec2+_0x17f848[0xe],_0x2e5a05[0xf]=_0x17f848[0x3]*_0x356d14+_0x17f848[0x7]*_0x93077b+_0x17f848[0xb]*_0x252ec2+_0x17f848[0xf]):(_0x3f172b=_0x17f848[0x0],_0x60ddc3=_0x17f848[0x1],_0x39a14d=_0x17f848[0x2],_0x4974c6=_0x17f848[0x3],_0x54a2bc=_0x17f848[0x4],_0x469882=_0x17f848[0x5],_0x14a033=_0x17f848[0x6],_0x441f77=_0x17f848[0x7],_0x34cc33=_0x17f848[0x8],_0xe5ef71=_0x17f848[0x9],_0x563c97=_0x17f848[0xa],_0xd9654e=_0x17f848[0xb],_0x2e5a05[0x0]=_0x3f172b,_0x2e5a05[0x1]=_0x60ddc3,_0x2e5a05[0x2]=_0x39a14d,_0x2e5a05[0x3]=_0x4974c6,_0x2e5a05[0x4]=_0x54a2bc,_0x2e5a05[0x5]=_0x469882,_0x2e5a05[0x6]=_0x14a033,_0x2e5a05[0x7]=_0x441f77,_0x2e5a05[0x8]=_0x34cc33,_0x2e5a05[0x9]=_0xe5ef71,_0x2e5a05[0xa]=_0x563c97,_0x2e5a05[0xb]=_0xd9654e,_0x2e5a05[0xc]=_0x3f172b*_0x356d14+_0x54a2bc*_0x93077b+_0x34cc33*_0x252ec2+_0x17f848[0xc],_0x2e5a05[0xd]=_0x60ddc3*_0x356d14+_0x469882*_0x93077b+_0xe5ef71*_0x252ec2+_0x17f848[0xd],_0x2e5a05[0xe]=_0x39a14d*_0x356d14+_0x14a033*_0x93077b+_0x563c97*_0x252ec2+_0x17f848[0xe],_0x2e5a05[0xf]=_0x4974c6*_0x356d14+_0x441f77*_0x93077b+_0xd9654e*_0x252ec2+_0x17f848[0xf]),_0x2e5a05;},_0x1b342a[_0x273331(0x7f2)]['translate']=function(_0x41f07f,_0x54b187,_0x519dcc){const _0x2d95d7=_0x273331;var _0x4de00d=SIMD['Float32x4']['load'](_0x54b187,0x0),_0x3f2b28=SIMD['Float32x4'][_0x2d95d7(0x6dd)](_0x54b187,0x4),_0xa92deb=SIMD[_0x2d95d7(0x2d2)][_0x2d95d7(0x6dd)](_0x54b187,0x8),_0x2a5a8a=SIMD[_0x2d95d7(0x2d2)][_0x2d95d7(0x6dd)](_0x54b187,0xc),_0x5d1654=SIMD[_0x2d95d7(0x2d2)](_0x519dcc[0x0],_0x519dcc[0x1],_0x519dcc[0x2],0x0);_0x54b187!==_0x41f07f&&(_0x41f07f[0x0]=_0x54b187[0x0],_0x41f07f[0x1]=_0x54b187[0x1],_0x41f07f[0x2]=_0x54b187[0x2],_0x41f07f[0x3]=_0x54b187[0x3],_0x41f07f[0x4]=_0x54b187[0x4],_0x41f07f[0x5]=_0x54b187[0x5],_0x41f07f[0x6]=_0x54b187[0x6],_0x41f07f[0x7]=_0x54b187[0x7],_0x41f07f[0x8]=_0x54b187[0x8],_0x41f07f[0x9]=_0x54b187[0x9],_0x41f07f[0xa]=_0x54b187[0xa],_0x41f07f[0xb]=_0x54b187[0xb]);_0x4de00d=SIMD[_0x2d95d7(0x2d2)][_0x2d95d7(0x74f)](_0x4de00d,SIMD[_0x2d95d7(0x2d2)][_0x2d95d7(0x692)](_0x5d1654,0x0,0x0,0x0,0x0)),_0x3f2b28=SIMD['Float32x4'][_0x2d95d7(0x74f)](_0x3f2b28,SIMD[_0x2d95d7(0x2d2)][_0x2d95d7(0x692)](_0x5d1654,0x1,0x1,0x1,0x1)),_0xa92deb=SIMD[_0x2d95d7(0x2d2)]['mul'](_0xa92deb,SIMD[_0x2d95d7(0x2d2)]['swizzle'](_0x5d1654,0x2,0x2,0x2,0x2));var _0x51ac82=SIMD[_0x2d95d7(0x2d2)][_0x2d95d7(0xed)](_0x4de00d,SIMD[_0x2d95d7(0x2d2)][_0x2d95d7(0xed)](_0x3f2b28,SIMD[_0x2d95d7(0x2d2)][_0x2d95d7(0xed)](_0xa92deb,_0x2a5a8a)));return SIMD[_0x2d95d7(0x2d2)]['store'](_0x41f07f,0xc,_0x51ac82),_0x41f07f;},_0x1b342a['translate']=_0x58dd4f[_0x273331(0x57c)]?_0x1b342a[_0x273331(0x7f2)][_0x273331(0x4f4)]:_0x1b342a[_0x273331(0x1c6)]['translate'],_0x1b342a[_0x273331(0x1c6)]['scale']=function(_0x330902,_0x3fa0a0,_0x514e37){var _0x272d11=_0x514e37[0x0],_0x23f083=_0x514e37[0x1],_0x512626=_0x514e37[0x2];return _0x330902[0x0]=_0x3fa0a0[0x0]*_0x272d11,_0x330902[0x1]=_0x3fa0a0[0x1]*_0x272d11,_0x330902[0x2]=_0x3fa0a0[0x2]*_0x272d11,_0x330902[0x3]=_0x3fa0a0[0x3]*_0x272d11,_0x330902[0x4]=_0x3fa0a0[0x4]*_0x23f083,_0x330902[0x5]=_0x3fa0a0[0x5]*_0x23f083,_0x330902[0x6]=_0x3fa0a0[0x6]*_0x23f083,_0x330902[0x7]=_0x3fa0a0[0x7]*_0x23f083,_0x330902[0x8]=_0x3fa0a0[0x8]*_0x512626,_0x330902[0x9]=_0x3fa0a0[0x9]*_0x512626,_0x330902[0xa]=_0x3fa0a0[0xa]*_0x512626,_0x330902[0xb]=_0x3fa0a0[0xb]*_0x512626,_0x330902[0xc]=_0x3fa0a0[0xc],_0x330902[0xd]=_0x3fa0a0[0xd],_0x330902[0xe]=_0x3fa0a0[0xe],_0x330902[0xf]=_0x3fa0a0[0xf],_0x330902;},_0x1b342a[_0x273331(0x7f2)][_0x273331(0x7ef)]=function(_0x305fc8,_0x3e005d,_0xd2314){const _0x4f15f1=_0x273331;var _0x488071,_0x2b331d,_0x3eaa3e,_0x3deb06=SIMD[_0x4f15f1(0x2d2)](_0xd2314[0x0],_0xd2314[0x1],_0xd2314[0x2],0x0);return _0x488071=SIMD[_0x4f15f1(0x2d2)]['load'](_0x3e005d,0x0),SIMD[_0x4f15f1(0x2d2)][_0x4f15f1(0x705)](_0x305fc8,0x0,SIMD[_0x4f15f1(0x2d2)]['mul'](_0x488071,SIMD['Float32x4']['swizzle'](_0x3deb06,0x0,0x0,0x0,0x0))),_0x2b331d=SIMD[_0x4f15f1(0x2d2)]['load'](_0x3e005d,0x4),SIMD[_0x4f15f1(0x2d2)][_0x4f15f1(0x705)](_0x305fc8,0x4,SIMD[_0x4f15f1(0x2d2)]['mul'](_0x2b331d,SIMD[_0x4f15f1(0x2d2)][_0x4f15f1(0x692)](_0x3deb06,0x1,0x1,0x1,0x1))),_0x3eaa3e=SIMD[_0x4f15f1(0x2d2)]['load'](_0x3e005d,0x8),SIMD[_0x4f15f1(0x2d2)][_0x4f15f1(0x705)](_0x305fc8,0x8,SIMD[_0x4f15f1(0x2d2)][_0x4f15f1(0x74f)](_0x3eaa3e,SIMD['Float32x4'][_0x4f15f1(0x692)](_0x3deb06,0x2,0x2,0x2,0x2))),_0x305fc8[0xc]=_0x3e005d[0xc],_0x305fc8[0xd]=_0x3e005d[0xd],_0x305fc8[0xe]=_0x3e005d[0xe],_0x305fc8[0xf]=_0x3e005d[0xf],_0x305fc8;},_0x1b342a[_0x273331(0x7ef)]=_0x58dd4f[_0x273331(0x57c)]?_0x1b342a[_0x273331(0x7f2)][_0x273331(0x7ef)]:_0x1b342a[_0x273331(0x1c6)]['scale'],_0x1b342a[_0x273331(0x6e4)]=function(_0x30d1d0,_0x37b6e0,_0x4d5695,_0x3bcdde){const _0xbf5e2d=_0x273331;var _0xabf68d=_0x3bcdde[0x0],_0x2e46df=_0x3bcdde[0x1],_0x28ddc9=_0x3bcdde[0x2],_0x58ecb3=Math['sqrt'](_0xabf68d*_0xabf68d+_0x2e46df*_0x2e46df+_0x28ddc9*_0x28ddc9),_0x2e68b5,_0x385019,_0x1927a4,_0x30eb47,_0x338a93,_0x5b672f,_0x545eea,_0x1c6a98,_0x55e343,_0x48cea4,_0x59cbb8,_0x281875,_0x1b9f91,_0x38ca83,_0x5371e1,_0x54023e,_0x4b5098,_0x2ea9f4,_0x2ea1a9,_0x4fc121,_0x1bc0a8,_0x967ac7,_0x138c71,_0x3062bb;if(Math[_0xbf5e2d(0x344)](_0x58ecb3)<_0x58dd4f[_0xbf5e2d(0x805)])return null;return _0x58ecb3=0x1/_0x58ecb3,_0xabf68d*=_0x58ecb3,_0x2e46df*=_0x58ecb3,_0x28ddc9*=_0x58ecb3,_0x2e68b5=Math[_0xbf5e2d(0x1c0)](_0x4d5695),_0x385019=Math[_0xbf5e2d(0x586)](_0x4d5695),_0x1927a4=0x1-_0x385019,_0x30eb47=_0x37b6e0[0x0],_0x338a93=_0x37b6e0[0x1],_0x5b672f=_0x37b6e0[0x2],_0x545eea=_0x37b6e0[0x3],_0x1c6a98=_0x37b6e0[0x4],_0x55e343=_0x37b6e0[0x5],_0x48cea4=_0x37b6e0[0x6],_0x59cbb8=_0x37b6e0[0x7],_0x281875=_0x37b6e0[0x8],_0x1b9f91=_0x37b6e0[0x9],_0x38ca83=_0x37b6e0[0xa],_0x5371e1=_0x37b6e0[0xb],_0x54023e=_0xabf68d*_0xabf68d*_0x1927a4+_0x385019,_0x4b5098=_0x2e46df*_0xabf68d*_0x1927a4+_0x28ddc9*_0x2e68b5,_0x2ea9f4=_0x28ddc9*_0xabf68d*_0x1927a4-_0x2e46df*_0x2e68b5,_0x2ea1a9=_0xabf68d*_0x2e46df*_0x1927a4-_0x28ddc9*_0x2e68b5,_0x4fc121=_0x2e46df*_0x2e46df*_0x1927a4+_0x385019,_0x1bc0a8=_0x28ddc9*_0x2e46df*_0x1927a4+_0xabf68d*_0x2e68b5,_0x967ac7=_0xabf68d*_0x28ddc9*_0x1927a4+_0x2e46df*_0x2e68b5,_0x138c71=_0x2e46df*_0x28ddc9*_0x1927a4-_0xabf68d*_0x2e68b5,_0x3062bb=_0x28ddc9*_0x28ddc9*_0x1927a4+_0x385019,_0x30d1d0[0x0]=_0x30eb47*_0x54023e+_0x1c6a98*_0x4b5098+_0x281875*_0x2ea9f4,_0x30d1d0[0x1]=_0x338a93*_0x54023e+_0x55e343*_0x4b5098+_0x1b9f91*_0x2ea9f4,_0x30d1d0[0x2]=_0x5b672f*_0x54023e+_0x48cea4*_0x4b5098+_0x38ca83*_0x2ea9f4,_0x30d1d0[0x3]=_0x545eea*_0x54023e+_0x59cbb8*_0x4b5098+_0x5371e1*_0x2ea9f4,_0x30d1d0[0x4]=_0x30eb47*_0x2ea1a9+_0x1c6a98*_0x4fc121+_0x281875*_0x1bc0a8,_0x30d1d0[0x5]=_0x338a93*_0x2ea1a9+_0x55e343*_0x4fc121+_0x1b9f91*_0x1bc0a8,_0x30d1d0[0x6]=_0x5b672f*_0x2ea1a9+_0x48cea4*_0x4fc121+_0x38ca83*_0x1bc0a8,_0x30d1d0[0x7]=_0x545eea*_0x2ea1a9+_0x59cbb8*_0x4fc121+_0x5371e1*_0x1bc0a8,_0x30d1d0[0x8]=_0x30eb47*_0x967ac7+_0x1c6a98*_0x138c71+_0x281875*_0x3062bb,_0x30d1d0[0x9]=_0x338a93*_0x967ac7+_0x55e343*_0x138c71+_0x1b9f91*_0x3062bb,_0x30d1d0[0xa]=_0x5b672f*_0x967ac7+_0x48cea4*_0x138c71+_0x38ca83*_0x3062bb,_0x30d1d0[0xb]=_0x545eea*_0x967ac7+_0x59cbb8*_0x138c71+_0x5371e1*_0x3062bb,_0x37b6e0!==_0x30d1d0&&(_0x30d1d0[0xc]=_0x37b6e0[0xc],_0x30d1d0[0xd]=_0x37b6e0[0xd],_0x30d1d0[0xe]=_0x37b6e0[0xe],_0x30d1d0[0xf]=_0x37b6e0[0xf]),_0x30d1d0;},_0x1b342a[_0x273331(0x1c6)][_0x273331(0x67a)]=function(_0x41bfbf,_0x496da1,_0x12ab1f){const _0x535d66=_0x273331;var _0x246f46=Math[_0x535d66(0x1c0)](_0x12ab1f),_0x56a90a=Math[_0x535d66(0x586)](_0x12ab1f),_0x2567a6=_0x496da1[0x4],_0xf9e6a8=_0x496da1[0x5],_0x5e3127=_0x496da1[0x6],_0x2fe199=_0x496da1[0x7],_0x5bb05b=_0x496da1[0x8],_0x2f15c6=_0x496da1[0x9],_0x1e1a8c=_0x496da1[0xa],_0x2533c6=_0x496da1[0xb];return _0x496da1!==_0x41bfbf&&(_0x41bfbf[0x0]=_0x496da1[0x0],_0x41bfbf[0x1]=_0x496da1[0x1],_0x41bfbf[0x2]=_0x496da1[0x2],_0x41bfbf[0x3]=_0x496da1[0x3],_0x41bfbf[0xc]=_0x496da1[0xc],_0x41bfbf[0xd]=_0x496da1[0xd],_0x41bfbf[0xe]=_0x496da1[0xe],_0x41bfbf[0xf]=_0x496da1[0xf]),_0x41bfbf[0x4]=_0x2567a6*_0x56a90a+_0x5bb05b*_0x246f46,_0x41bfbf[0x5]=_0xf9e6a8*_0x56a90a+_0x2f15c6*_0x246f46,_0x41bfbf[0x6]=_0x5e3127*_0x56a90a+_0x1e1a8c*_0x246f46,_0x41bfbf[0x7]=_0x2fe199*_0x56a90a+_0x2533c6*_0x246f46,_0x41bfbf[0x8]=_0x5bb05b*_0x56a90a-_0x2567a6*_0x246f46,_0x41bfbf[0x9]=_0x2f15c6*_0x56a90a-_0xf9e6a8*_0x246f46,_0x41bfbf[0xa]=_0x1e1a8c*_0x56a90a-_0x5e3127*_0x246f46,_0x41bfbf[0xb]=_0x2533c6*_0x56a90a-_0x2fe199*_0x246f46,_0x41bfbf;},_0x1b342a[_0x273331(0x7f2)]['rotateX']=function(_0x451ae5,_0x55755d,_0x4cdbbd){const _0x52a768=_0x273331;var _0x4baaaf=SIMD[_0x52a768(0x2d2)][_0x52a768(0x68a)](Math['sin'](_0x4cdbbd)),_0xe28f04=SIMD[_0x52a768(0x2d2)]['splat'](Math[_0x52a768(0x586)](_0x4cdbbd));_0x55755d!==_0x451ae5&&(_0x451ae5[0x0]=_0x55755d[0x0],_0x451ae5[0x1]=_0x55755d[0x1],_0x451ae5[0x2]=_0x55755d[0x2],_0x451ae5[0x3]=_0x55755d[0x3],_0x451ae5[0xc]=_0x55755d[0xc],_0x451ae5[0xd]=_0x55755d[0xd],_0x451ae5[0xe]=_0x55755d[0xe],_0x451ae5[0xf]=_0x55755d[0xf]);var _0x23f68a=SIMD[_0x52a768(0x2d2)][_0x52a768(0x6dd)](_0x55755d,0x4),_0xa4f9c7=SIMD[_0x52a768(0x2d2)][_0x52a768(0x6dd)](_0x55755d,0x8);return SIMD[_0x52a768(0x2d2)]['store'](_0x451ae5,0x4,SIMD[_0x52a768(0x2d2)][_0x52a768(0xed)](SIMD[_0x52a768(0x2d2)][_0x52a768(0x74f)](_0x23f68a,_0xe28f04),SIMD[_0x52a768(0x2d2)][_0x52a768(0x74f)](_0xa4f9c7,_0x4baaaf))),SIMD[_0x52a768(0x2d2)]['store'](_0x451ae5,0x8,SIMD['Float32x4'][_0x52a768(0x295)](SIMD[_0x52a768(0x2d2)][_0x52a768(0x74f)](_0xa4f9c7,_0xe28f04),SIMD['Float32x4'][_0x52a768(0x74f)](_0x23f68a,_0x4baaaf))),_0x451ae5;},_0x1b342a['rotateX']=_0x58dd4f['USE_SIMD']?_0x1b342a[_0x273331(0x7f2)][_0x273331(0x67a)]:_0x1b342a['scalar']['rotateX'],_0x1b342a[_0x273331(0x1c6)][_0x273331(0x54a)]=function(_0x3cd27c,_0xde406a,_0x55ff49){const _0x343261=_0x273331;var _0x394e5e=Math[_0x343261(0x1c0)](_0x55ff49),_0x596f9d=Math[_0x343261(0x586)](_0x55ff49),_0x5f2c94=_0xde406a[0x0],_0x142f8a=_0xde406a[0x1],_0x53ad8a=_0xde406a[0x2],_0x5d2a27=_0xde406a[0x3],_0x2ca450=_0xde406a[0x8],_0x7943ee=_0xde406a[0x9],_0x51c7f7=_0xde406a[0xa],_0x2d631c=_0xde406a[0xb];return _0xde406a!==_0x3cd27c&&(_0x3cd27c[0x4]=_0xde406a[0x4],_0x3cd27c[0x5]=_0xde406a[0x5],_0x3cd27c[0x6]=_0xde406a[0x6],_0x3cd27c[0x7]=_0xde406a[0x7],_0x3cd27c[0xc]=_0xde406a[0xc],_0x3cd27c[0xd]=_0xde406a[0xd],_0x3cd27c[0xe]=_0xde406a[0xe],_0x3cd27c[0xf]=_0xde406a[0xf]),_0x3cd27c[0x0]=_0x5f2c94*_0x596f9d-_0x2ca450*_0x394e5e,_0x3cd27c[0x1]=_0x142f8a*_0x596f9d-_0x7943ee*_0x394e5e,_0x3cd27c[0x2]=_0x53ad8a*_0x596f9d-_0x51c7f7*_0x394e5e,_0x3cd27c[0x3]=_0x5d2a27*_0x596f9d-_0x2d631c*_0x394e5e,_0x3cd27c[0x8]=_0x5f2c94*_0x394e5e+_0x2ca450*_0x596f9d,_0x3cd27c[0x9]=_0x142f8a*_0x394e5e+_0x7943ee*_0x596f9d,_0x3cd27c[0xa]=_0x53ad8a*_0x394e5e+_0x51c7f7*_0x596f9d,_0x3cd27c[0xb]=_0x5d2a27*_0x394e5e+_0x2d631c*_0x596f9d,_0x3cd27c;},_0x1b342a[_0x273331(0x7f2)][_0x273331(0x54a)]=function(_0x2c0382,_0x370257,_0x89b5ce){const _0x36df79=_0x273331;var _0xc62956=SIMD[_0x36df79(0x2d2)][_0x36df79(0x68a)](Math[_0x36df79(0x1c0)](_0x89b5ce)),_0x43178e=SIMD[_0x36df79(0x2d2)][_0x36df79(0x68a)](Math['cos'](_0x89b5ce));_0x370257!==_0x2c0382&&(_0x2c0382[0x4]=_0x370257[0x4],_0x2c0382[0x5]=_0x370257[0x5],_0x2c0382[0x6]=_0x370257[0x6],_0x2c0382[0x7]=_0x370257[0x7],_0x2c0382[0xc]=_0x370257[0xc],_0x2c0382[0xd]=_0x370257[0xd],_0x2c0382[0xe]=_0x370257[0xe],_0x2c0382[0xf]=_0x370257[0xf]);var _0x182eec=SIMD['Float32x4']['load'](_0x370257,0x0),_0x318590=SIMD[_0x36df79(0x2d2)]['load'](_0x370257,0x8);return SIMD['Float32x4']['store'](_0x2c0382,0x0,SIMD[_0x36df79(0x2d2)]['sub'](SIMD[_0x36df79(0x2d2)][_0x36df79(0x74f)](_0x182eec,_0x43178e),SIMD[_0x36df79(0x2d2)][_0x36df79(0x74f)](_0x318590,_0xc62956))),SIMD[_0x36df79(0x2d2)]['store'](_0x2c0382,0x8,SIMD[_0x36df79(0x2d2)][_0x36df79(0xed)](SIMD[_0x36df79(0x2d2)]['mul'](_0x182eec,_0xc62956),SIMD[_0x36df79(0x2d2)][_0x36df79(0x74f)](_0x318590,_0x43178e))),_0x2c0382;},_0x1b342a[_0x273331(0x54a)]=_0x58dd4f[_0x273331(0x57c)]?_0x1b342a[_0x273331(0x7f2)][_0x273331(0x54a)]:_0x1b342a[_0x273331(0x1c6)][_0x273331(0x54a)],_0x1b342a[_0x273331(0x1c6)][_0x273331(0x31d)]=function(_0x3d786f,_0x495f1f,_0x81be24){const _0xd51f25=_0x273331;var _0x577f1c=Math[_0xd51f25(0x1c0)](_0x81be24),_0x183818=Math[_0xd51f25(0x586)](_0x81be24),_0x134b69=_0x495f1f[0x0],_0x1a3bee=_0x495f1f[0x1],_0x4fccc1=_0x495f1f[0x2],_0x3ab3eb=_0x495f1f[0x3],_0x2fadd7=_0x495f1f[0x4],_0xefdbde=_0x495f1f[0x5],_0x12a32a=_0x495f1f[0x6],_0x2bf3dd=_0x495f1f[0x7];return _0x495f1f!==_0x3d786f&&(_0x3d786f[0x8]=_0x495f1f[0x8],_0x3d786f[0x9]=_0x495f1f[0x9],_0x3d786f[0xa]=_0x495f1f[0xa],_0x3d786f[0xb]=_0x495f1f[0xb],_0x3d786f[0xc]=_0x495f1f[0xc],_0x3d786f[0xd]=_0x495f1f[0xd],_0x3d786f[0xe]=_0x495f1f[0xe],_0x3d786f[0xf]=_0x495f1f[0xf]),_0x3d786f[0x0]=_0x134b69*_0x183818+_0x2fadd7*_0x577f1c,_0x3d786f[0x1]=_0x1a3bee*_0x183818+_0xefdbde*_0x577f1c,_0x3d786f[0x2]=_0x4fccc1*_0x183818+_0x12a32a*_0x577f1c,_0x3d786f[0x3]=_0x3ab3eb*_0x183818+_0x2bf3dd*_0x577f1c,_0x3d786f[0x4]=_0x2fadd7*_0x183818-_0x134b69*_0x577f1c,_0x3d786f[0x5]=_0xefdbde*_0x183818-_0x1a3bee*_0x577f1c,_0x3d786f[0x6]=_0x12a32a*_0x183818-_0x4fccc1*_0x577f1c,_0x3d786f[0x7]=_0x2bf3dd*_0x183818-_0x3ab3eb*_0x577f1c,_0x3d786f;},_0x1b342a[_0x273331(0x7f2)]['rotateZ']=function(_0x3626b7,_0x4b0a53,_0x462796){const _0x2f3def=_0x273331;var _0x31b10e=SIMD[_0x2f3def(0x2d2)][_0x2f3def(0x68a)](Math[_0x2f3def(0x1c0)](_0x462796)),_0x5502a7=SIMD[_0x2f3def(0x2d2)][_0x2f3def(0x68a)](Math[_0x2f3def(0x586)](_0x462796));_0x4b0a53!==_0x3626b7&&(_0x3626b7[0x8]=_0x4b0a53[0x8],_0x3626b7[0x9]=_0x4b0a53[0x9],_0x3626b7[0xa]=_0x4b0a53[0xa],_0x3626b7[0xb]=_0x4b0a53[0xb],_0x3626b7[0xc]=_0x4b0a53[0xc],_0x3626b7[0xd]=_0x4b0a53[0xd],_0x3626b7[0xe]=_0x4b0a53[0xe],_0x3626b7[0xf]=_0x4b0a53[0xf]);var _0x32aa1b=SIMD[_0x2f3def(0x2d2)][_0x2f3def(0x6dd)](_0x4b0a53,0x0),_0x35ead9=SIMD[_0x2f3def(0x2d2)][_0x2f3def(0x6dd)](_0x4b0a53,0x4);return SIMD['Float32x4'][_0x2f3def(0x705)](_0x3626b7,0x0,SIMD[_0x2f3def(0x2d2)]['add'](SIMD[_0x2f3def(0x2d2)][_0x2f3def(0x74f)](_0x32aa1b,_0x5502a7),SIMD[_0x2f3def(0x2d2)][_0x2f3def(0x74f)](_0x35ead9,_0x31b10e))),SIMD['Float32x4'][_0x2f3def(0x705)](_0x3626b7,0x4,SIMD[_0x2f3def(0x2d2)][_0x2f3def(0x295)](SIMD['Float32x4'][_0x2f3def(0x74f)](_0x35ead9,_0x5502a7),SIMD['Float32x4']['mul'](_0x32aa1b,_0x31b10e))),_0x3626b7;},_0x1b342a['rotateZ']=_0x58dd4f['USE_SIMD']?_0x1b342a[_0x273331(0x7f2)][_0x273331(0x31d)]:_0x1b342a['scalar'][_0x273331(0x31d)],_0x1b342a[_0x273331(0x690)]=function(_0x49fdb1,_0x5175dc){return _0x49fdb1[0x0]=0x1,_0x49fdb1[0x1]=0x0,_0x49fdb1[0x2]=0x0,_0x49fdb1[0x3]=0x0,_0x49fdb1[0x4]=0x0,_0x49fdb1[0x5]=0x1,_0x49fdb1[0x6]=0x0,_0x49fdb1[0x7]=0x0,_0x49fdb1[0x8]=0x0,_0x49fdb1[0x9]=0x0,_0x49fdb1[0xa]=0x1,_0x49fdb1[0xb]=0x0,_0x49fdb1[0xc]=_0x5175dc[0x0],_0x49fdb1[0xd]=_0x5175dc[0x1],_0x49fdb1[0xe]=_0x5175dc[0x2],_0x49fdb1[0xf]=0x1,_0x49fdb1;},_0x1b342a['fromScaling']=function(_0x5507a3,_0x3a8a7f){return _0x5507a3[0x0]=_0x3a8a7f[0x0],_0x5507a3[0x1]=0x0,_0x5507a3[0x2]=0x0,_0x5507a3[0x3]=0x0,_0x5507a3[0x4]=0x0,_0x5507a3[0x5]=_0x3a8a7f[0x1],_0x5507a3[0x6]=0x0,_0x5507a3[0x7]=0x0,_0x5507a3[0x8]=0x0,_0x5507a3[0x9]=0x0,_0x5507a3[0xa]=_0x3a8a7f[0x2],_0x5507a3[0xb]=0x0,_0x5507a3[0xc]=0x0,_0x5507a3[0xd]=0x0,_0x5507a3[0xe]=0x0,_0x5507a3[0xf]=0x1,_0x5507a3;},_0x1b342a['fromRotation']=function(_0x3dbc01,_0x5814a4,_0x397e68){const _0x3a4e2b=_0x273331;var _0x160183=_0x397e68[0x0],_0x5f5594=_0x397e68[0x1],_0x19ac08=_0x397e68[0x2],_0x2224d8=Math['sqrt'](_0x160183*_0x160183+_0x5f5594*_0x5f5594+_0x19ac08*_0x19ac08),_0x42317c,_0x20bc7f,_0x1b4457;if(Math[_0x3a4e2b(0x344)](_0x2224d8)<_0x58dd4f['EPSILON'])return null;return _0x2224d8=0x1/_0x2224d8,_0x160183*=_0x2224d8,_0x5f5594*=_0x2224d8,_0x19ac08*=_0x2224d8,_0x42317c=Math['sin'](_0x5814a4),_0x20bc7f=Math[_0x3a4e2b(0x586)](_0x5814a4),_0x1b4457=0x1-_0x20bc7f,_0x3dbc01[0x0]=_0x160183*_0x160183*_0x1b4457+_0x20bc7f,_0x3dbc01[0x1]=_0x5f5594*_0x160183*_0x1b4457+_0x19ac08*_0x42317c,_0x3dbc01[0x2]=_0x19ac08*_0x160183*_0x1b4457-_0x5f5594*_0x42317c,_0x3dbc01[0x3]=0x0,_0x3dbc01[0x4]=_0x160183*_0x5f5594*_0x1b4457-_0x19ac08*_0x42317c,_0x3dbc01[0x5]=_0x5f5594*_0x5f5594*_0x1b4457+_0x20bc7f,_0x3dbc01[0x6]=_0x19ac08*_0x5f5594*_0x1b4457+_0x160183*_0x42317c,_0x3dbc01[0x7]=0x0,_0x3dbc01[0x8]=_0x160183*_0x19ac08*_0x1b4457+_0x5f5594*_0x42317c,_0x3dbc01[0x9]=_0x5f5594*_0x19ac08*_0x1b4457-_0x160183*_0x42317c,_0x3dbc01[0xa]=_0x19ac08*_0x19ac08*_0x1b4457+_0x20bc7f,_0x3dbc01[0xb]=0x0,_0x3dbc01[0xc]=0x0,_0x3dbc01[0xd]=0x0,_0x3dbc01[0xe]=0x0,_0x3dbc01[0xf]=0x1,_0x3dbc01;},_0x1b342a[_0x273331(0x841)]=function(_0x501ccb,_0x58caa5){const _0x4cf79b=_0x273331;var _0x65e6a3=Math[_0x4cf79b(0x1c0)](_0x58caa5),_0x3aad4a=Math[_0x4cf79b(0x586)](_0x58caa5);return _0x501ccb[0x0]=0x1,_0x501ccb[0x1]=0x0,_0x501ccb[0x2]=0x0,_0x501ccb[0x3]=0x0,_0x501ccb[0x4]=0x0,_0x501ccb[0x5]=_0x3aad4a,_0x501ccb[0x6]=_0x65e6a3,_0x501ccb[0x7]=0x0,_0x501ccb[0x8]=0x0,_0x501ccb[0x9]=-_0x65e6a3,_0x501ccb[0xa]=_0x3aad4a,_0x501ccb[0xb]=0x0,_0x501ccb[0xc]=0x0,_0x501ccb[0xd]=0x0,_0x501ccb[0xe]=0x0,_0x501ccb[0xf]=0x1,_0x501ccb;},_0x1b342a[_0x273331(0x1d7)]=function(_0x37720d,_0x39987b){const _0x4f3ad4=_0x273331;var _0x490404=Math[_0x4f3ad4(0x1c0)](_0x39987b),_0xe03c78=Math[_0x4f3ad4(0x586)](_0x39987b);return _0x37720d[0x0]=_0xe03c78,_0x37720d[0x1]=0x0,_0x37720d[0x2]=-_0x490404,_0x37720d[0x3]=0x0,_0x37720d[0x4]=0x0,_0x37720d[0x5]=0x1,_0x37720d[0x6]=0x0,_0x37720d[0x7]=0x0,_0x37720d[0x8]=_0x490404,_0x37720d[0x9]=0x0,_0x37720d[0xa]=_0xe03c78,_0x37720d[0xb]=0x0,_0x37720d[0xc]=0x0,_0x37720d[0xd]=0x0,_0x37720d[0xe]=0x0,_0x37720d[0xf]=0x1,_0x37720d;},_0x1b342a[_0x273331(0x4a8)]=function(_0x199567,_0xfd8724){const _0x528754=_0x273331;var _0x1cacbd=Math[_0x528754(0x1c0)](_0xfd8724),_0x4ee953=Math['cos'](_0xfd8724);return _0x199567[0x0]=_0x4ee953,_0x199567[0x1]=_0x1cacbd,_0x199567[0x2]=0x0,_0x199567[0x3]=0x0,_0x199567[0x4]=-_0x1cacbd,_0x199567[0x5]=_0x4ee953,_0x199567[0x6]=0x0,_0x199567[0x7]=0x0,_0x199567[0x8]=0x0,_0x199567[0x9]=0x0,_0x199567[0xa]=0x1,_0x199567[0xb]=0x0,_0x199567[0xc]=0x0,_0x199567[0xd]=0x0,_0x199567[0xe]=0x0,_0x199567[0xf]=0x1,_0x199567;},_0x1b342a[_0x273331(0x707)]=function(_0x4cfd3f,_0x1b84fe,_0x348ee5){var _0x4061f4=_0x1b84fe[0x0],_0xe16388=_0x1b84fe[0x1],_0x1b62c9=_0x1b84fe[0x2],_0x206183=_0x1b84fe[0x3],_0xff1445=_0x4061f4+_0x4061f4,_0x1d1fb2=_0xe16388+_0xe16388,_0xeeb16b=_0x1b62c9+_0x1b62c9,_0x4932b4=_0x4061f4*_0xff1445,_0x3f781f=_0x4061f4*_0x1d1fb2,_0x438318=_0x4061f4*_0xeeb16b,_0xc1699e=_0xe16388*_0x1d1fb2,_0x34cda0=_0xe16388*_0xeeb16b,_0x10f105=_0x1b62c9*_0xeeb16b,_0x45ebc0=_0x206183*_0xff1445,_0x476b74=_0x206183*_0x1d1fb2,_0x3b6102=_0x206183*_0xeeb16b;return _0x4cfd3f[0x0]=0x1-(_0xc1699e+_0x10f105),_0x4cfd3f[0x1]=_0x3f781f+_0x3b6102,_0x4cfd3f[0x2]=_0x438318-_0x476b74,_0x4cfd3f[0x3]=0x0,_0x4cfd3f[0x4]=_0x3f781f-_0x3b6102,_0x4cfd3f[0x5]=0x1-(_0x4932b4+_0x10f105),_0x4cfd3f[0x6]=_0x34cda0+_0x45ebc0,_0x4cfd3f[0x7]=0x0,_0x4cfd3f[0x8]=_0x438318+_0x476b74,_0x4cfd3f[0x9]=_0x34cda0-_0x45ebc0,_0x4cfd3f[0xa]=0x1-(_0x4932b4+_0xc1699e),_0x4cfd3f[0xb]=0x0,_0x4cfd3f[0xc]=_0x348ee5[0x0],_0x4cfd3f[0xd]=_0x348ee5[0x1],_0x4cfd3f[0xe]=_0x348ee5[0x2],_0x4cfd3f[0xf]=0x1,_0x4cfd3f;},_0x1b342a[_0x273331(0x4a6)]=function(_0x10ce71,_0x4d05b6,_0x3fb2d4,_0x771a64){var _0x128527=_0x4d05b6[0x0],_0x44fd56=_0x4d05b6[0x1],_0x324b11=_0x4d05b6[0x2],_0x12038e=_0x4d05b6[0x3],_0xa9bb0e=_0x128527+_0x128527,_0x1e6e43=_0x44fd56+_0x44fd56,_0x3877e=_0x324b11+_0x324b11,_0x3c43f8=_0x128527*_0xa9bb0e,_0xbb4d8b=_0x128527*_0x1e6e43,_0xcc7941=_0x128527*_0x3877e,_0x5206ea=_0x44fd56*_0x1e6e43,_0x41e128=_0x44fd56*_0x3877e,_0x281eca=_0x324b11*_0x3877e,_0x5834c6=_0x12038e*_0xa9bb0e,_0x3f16dc=_0x12038e*_0x1e6e43,_0x5ef1c7=_0x12038e*_0x3877e,_0x478053=_0x771a64[0x0],_0x265f52=_0x771a64[0x1],_0x4df1da=_0x771a64[0x2];return _0x10ce71[0x0]=(0x1-(_0x5206ea+_0x281eca))*_0x478053,_0x10ce71[0x1]=(_0xbb4d8b+_0x5ef1c7)*_0x478053,_0x10ce71[0x2]=(_0xcc7941-_0x3f16dc)*_0x478053,_0x10ce71[0x3]=0x0,_0x10ce71[0x4]=(_0xbb4d8b-_0x5ef1c7)*_0x265f52,_0x10ce71[0x5]=(0x1-(_0x3c43f8+_0x281eca))*_0x265f52,_0x10ce71[0x6]=(_0x41e128+_0x5834c6)*_0x265f52,_0x10ce71[0x7]=0x0,_0x10ce71[0x8]=(_0xcc7941+_0x3f16dc)*_0x4df1da,_0x10ce71[0x9]=(_0x41e128-_0x5834c6)*_0x4df1da,_0x10ce71[0xa]=(0x1-(_0x3c43f8+_0x5206ea))*_0x4df1da,_0x10ce71[0xb]=0x0,_0x10ce71[0xc]=_0x3fb2d4[0x0],_0x10ce71[0xd]=_0x3fb2d4[0x1],_0x10ce71[0xe]=_0x3fb2d4[0x2],_0x10ce71[0xf]=0x1,_0x10ce71;},_0x1b342a[_0x273331(0x190)]=function(_0x311431,_0x5da3c7,_0x3a189f,_0x1aabe1,_0x16639e){var _0x3398d0=_0x5da3c7[0x0],_0x4b981f=_0x5da3c7[0x1],_0x31a727=_0x5da3c7[0x2],_0x31ce5f=_0x5da3c7[0x3],_0x37dc3e=_0x3398d0+_0x3398d0,_0xcade75=_0x4b981f+_0x4b981f,_0x484567=_0x31a727+_0x31a727,_0x1cbefc=_0x3398d0*_0x37dc3e,_0xb4e02e=_0x3398d0*_0xcade75,_0x2f3f98=_0x3398d0*_0x484567,_0x868187=_0x4b981f*_0xcade75,_0x30c1ff=_0x4b981f*_0x484567,_0x8608a3=_0x31a727*_0x484567,_0x1d83d5=_0x31ce5f*_0x37dc3e,_0x5524bd=_0x31ce5f*_0xcade75,_0x52a0de=_0x31ce5f*_0x484567,_0x4e6a9c=_0x1aabe1[0x0],_0x39ba88=_0x1aabe1[0x1],_0x11eb35=_0x1aabe1[0x2],_0x41eafe=_0x16639e[0x0],_0xf81175=_0x16639e[0x1],_0x205e1e=_0x16639e[0x2];return _0x311431[0x0]=(0x1-(_0x868187+_0x8608a3))*_0x4e6a9c,_0x311431[0x1]=(_0xb4e02e+_0x52a0de)*_0x4e6a9c,_0x311431[0x2]=(_0x2f3f98-_0x5524bd)*_0x4e6a9c,_0x311431[0x3]=0x0,_0x311431[0x4]=(_0xb4e02e-_0x52a0de)*_0x39ba88,_0x311431[0x5]=(0x1-(_0x1cbefc+_0x8608a3))*_0x39ba88,_0x311431[0x6]=(_0x30c1ff+_0x1d83d5)*_0x39ba88,_0x311431[0x7]=0x0,_0x311431[0x8]=(_0x2f3f98+_0x5524bd)*_0x11eb35,_0x311431[0x9]=(_0x30c1ff-_0x1d83d5)*_0x11eb35,_0x311431[0xa]=(0x1-(_0x1cbefc+_0x868187))*_0x11eb35,_0x311431[0xb]=0x0,_0x311431[0xc]=_0x3a189f[0x0]+_0x41eafe-(_0x311431[0x0]*_0x41eafe+_0x311431[0x4]*_0xf81175+_0x311431[0x8]*_0x205e1e),_0x311431[0xd]=_0x3a189f[0x1]+_0xf81175-(_0x311431[0x1]*_0x41eafe+_0x311431[0x5]*_0xf81175+_0x311431[0x9]*_0x205e1e),_0x311431[0xe]=_0x3a189f[0x2]+_0x205e1e-(_0x311431[0x2]*_0x41eafe+_0x311431[0x6]*_0xf81175+_0x311431[0xa]*_0x205e1e),_0x311431[0xf]=0x1,_0x311431;},_0x1b342a[_0x273331(0x64e)]=function(_0xc84d09,_0x45c632){var _0x4d0c35=_0x45c632[0x0],_0x440d5b=_0x45c632[0x1],_0x1f44c2=_0x45c632[0x2],_0x2447e7=_0x45c632[0x3],_0x31c7b4=_0x4d0c35+_0x4d0c35,_0x50cc59=_0x440d5b+_0x440d5b,_0x96b130=_0x1f44c2+_0x1f44c2,_0x3e1220=_0x4d0c35*_0x31c7b4,_0x31457b=_0x440d5b*_0x31c7b4,_0x3cbec7=_0x440d5b*_0x50cc59,_0x313252=_0x1f44c2*_0x31c7b4,_0x46a9b7=_0x1f44c2*_0x50cc59,_0x32910d=_0x1f44c2*_0x96b130,_0x98a4ad=_0x2447e7*_0x31c7b4,_0xa52ed6=_0x2447e7*_0x50cc59,_0x42ca0d=_0x2447e7*_0x96b130;return _0xc84d09[0x0]=0x1-_0x3cbec7-_0x32910d,_0xc84d09[0x1]=_0x31457b+_0x42ca0d,_0xc84d09[0x2]=_0x313252-_0xa52ed6,_0xc84d09[0x3]=0x0,_0xc84d09[0x4]=_0x31457b-_0x42ca0d,_0xc84d09[0x5]=0x1-_0x3e1220-_0x32910d,_0xc84d09[0x6]=_0x46a9b7+_0x98a4ad,_0xc84d09[0x7]=0x0,_0xc84d09[0x8]=_0x313252+_0xa52ed6,_0xc84d09[0x9]=_0x46a9b7-_0x98a4ad,_0xc84d09[0xa]=0x1-_0x3e1220-_0x3cbec7,_0xc84d09[0xb]=0x0,_0xc84d09[0xc]=0x0,_0xc84d09[0xd]=0x0,_0xc84d09[0xe]=0x0,_0xc84d09[0xf]=0x1,_0xc84d09;},_0x1b342a['frustum']=function(_0x3a66b2,_0x409e95,_0x2eacf2,_0x512352,_0x55b336,_0x1cb1ac,_0x5bb060){var _0x4684c1=0x1/(_0x2eacf2-_0x409e95),_0x47d4e0=0x1/(_0x55b336-_0x512352),_0x20d8f5=0x1/(_0x1cb1ac-_0x5bb060);return _0x3a66b2[0x0]=_0x1cb1ac*0x2*_0x4684c1,_0x3a66b2[0x1]=0x0,_0x3a66b2[0x2]=0x0,_0x3a66b2[0x3]=0x0,_0x3a66b2[0x4]=0x0,_0x3a66b2[0x5]=_0x1cb1ac*0x2*_0x47d4e0,_0x3a66b2[0x6]=0x0,_0x3a66b2[0x7]=0x0,_0x3a66b2[0x8]=(_0x2eacf2+_0x409e95)*_0x4684c1,_0x3a66b2[0x9]=(_0x55b336+_0x512352)*_0x47d4e0,_0x3a66b2[0xa]=(_0x5bb060+_0x1cb1ac)*_0x20d8f5,_0x3a66b2[0xb]=-0x1,_0x3a66b2[0xc]=0x0,_0x3a66b2[0xd]=0x0,_0x3a66b2[0xe]=_0x5bb060*_0x1cb1ac*0x2*_0x20d8f5,_0x3a66b2[0xf]=0x0,_0x3a66b2;},_0x1b342a['perspective']=function(_0x35bbe1,_0x1547f8,_0x348abc,_0x3882fc,_0x1433e2){const _0x31baef=_0x273331;var _0x11ff41=0x1/Math[_0x31baef(0x1e8)](_0x1547f8/0x2),_0x501d3d=0x1/(_0x3882fc-_0x1433e2);return _0x35bbe1[0x0]=_0x11ff41/_0x348abc,_0x35bbe1[0x1]=0x0,_0x35bbe1[0x2]=0x0,_0x35bbe1[0x3]=0x0,_0x35bbe1[0x4]=0x0,_0x35bbe1[0x5]=_0x11ff41,_0x35bbe1[0x6]=0x0,_0x35bbe1[0x7]=0x0,_0x35bbe1[0x8]=0x0,_0x35bbe1[0x9]=0x0,_0x35bbe1[0xa]=(_0x1433e2+_0x3882fc)*_0x501d3d,_0x35bbe1[0xb]=-0x1,_0x35bbe1[0xc]=0x0,_0x35bbe1[0xd]=0x0,_0x35bbe1[0xe]=0x2*_0x1433e2*_0x3882fc*_0x501d3d,_0x35bbe1[0xf]=0x0,_0x35bbe1;},_0x1b342a[_0x273331(0x24d)]=function(_0x26db98,_0x445be2,_0x19abbf,_0x53dd26){const _0x396fde=_0x273331;var _0x3d7da5=Math['tan'](_0x445be2[_0x396fde(0x31c)]*Math['PI']/0xb4),_0x645f26=Math['tan'](_0x445be2[_0x396fde(0x2f3)]*Math['PI']/0xb4),_0x5cf9c7=Math[_0x396fde(0x1e8)](_0x445be2[_0x396fde(0x187)]*Math['PI']/0xb4),_0x79904e=Math[_0x396fde(0x1e8)](_0x445be2['rightDegrees']*Math['PI']/0xb4),_0x23f961=0x2/(_0x5cf9c7+_0x79904e),_0x153137=0x2/(_0x3d7da5+_0x645f26);return _0x26db98[0x0]=_0x23f961,_0x26db98[0x1]=0x0,_0x26db98[0x2]=0x0,_0x26db98[0x3]=0x0,_0x26db98[0x4]=0x0,_0x26db98[0x5]=_0x153137,_0x26db98[0x6]=0x0,_0x26db98[0x7]=0x0,_0x26db98[0x8]=-((_0x5cf9c7-_0x79904e)*_0x23f961*0.5),_0x26db98[0x9]=(_0x3d7da5-_0x645f26)*_0x153137*0.5,_0x26db98[0xa]=_0x53dd26/(_0x19abbf-_0x53dd26),_0x26db98[0xb]=-0x1,_0x26db98[0xc]=0x0,_0x26db98[0xd]=0x0,_0x26db98[0xe]=_0x53dd26*_0x19abbf/(_0x19abbf-_0x53dd26),_0x26db98[0xf]=0x0,_0x26db98;},_0x1b342a['ortho']=function(_0x189320,_0x4c8291,_0x45e8a4,_0x5dbda9,_0x3d50d6,_0x3ca053,_0x1b85ca){var _0x2fcf0d=0x1/(_0x4c8291-_0x45e8a4),_0x5e6776=0x1/(_0x5dbda9-_0x3d50d6),_0x369763=0x1/(_0x3ca053-_0x1b85ca);return _0x189320[0x0]=-0x2*_0x2fcf0d,_0x189320[0x1]=0x0,_0x189320[0x2]=0x0,_0x189320[0x3]=0x0,_0x189320[0x4]=0x0,_0x189320[0x5]=-0x2*_0x5e6776,_0x189320[0x6]=0x0,_0x189320[0x7]=0x0,_0x189320[0x8]=0x0,_0x189320[0x9]=0x0,_0x189320[0xa]=0x2*_0x369763,_0x189320[0xb]=0x0,_0x189320[0xc]=(_0x4c8291+_0x45e8a4)*_0x2fcf0d,_0x189320[0xd]=(_0x3d50d6+_0x5dbda9)*_0x5e6776,_0x189320[0xe]=(_0x1b85ca+_0x3ca053)*_0x369763,_0x189320[0xf]=0x1,_0x189320;},_0x1b342a[_0x273331(0x31a)]=function(_0x5824ec,_0x5496aa,_0x2c9159,_0x96da36){const _0x25ed07=_0x273331;var _0x130fa4,_0x103b9b,_0x17baed,_0x32aba2,_0x1fcb4c,_0x50ff54,_0x45d9e7,_0x567f9a,_0x597385,_0x142aab,_0x26df1f=_0x5496aa[0x0],_0x7c9fe4=_0x5496aa[0x1],_0x277c95=_0x5496aa[0x2],_0x39b9d4=_0x96da36[0x0],_0x44baf4=_0x96da36[0x1],_0x11e765=_0x96da36[0x2],_0x1c3022=_0x2c9159[0x0],_0x1973b7=_0x2c9159[0x1],_0x56bc5c=_0x2c9159[0x2];if(Math[_0x25ed07(0x344)](_0x26df1f-_0x1c3022)<_0x58dd4f[_0x25ed07(0x805)]&&Math[_0x25ed07(0x344)](_0x7c9fe4-_0x1973b7)<_0x58dd4f[_0x25ed07(0x805)]&&Math['abs'](_0x277c95-_0x56bc5c)<_0x58dd4f[_0x25ed07(0x805)])return _0x1b342a[_0x25ed07(0x76e)](_0x5824ec);return _0x45d9e7=_0x26df1f-_0x1c3022,_0x567f9a=_0x7c9fe4-_0x1973b7,_0x597385=_0x277c95-_0x56bc5c,_0x142aab=0x1/Math['sqrt'](_0x45d9e7*_0x45d9e7+_0x567f9a*_0x567f9a+_0x597385*_0x597385),_0x45d9e7*=_0x142aab,_0x567f9a*=_0x142aab,_0x597385*=_0x142aab,_0x130fa4=_0x44baf4*_0x597385-_0x11e765*_0x567f9a,_0x103b9b=_0x11e765*_0x45d9e7-_0x39b9d4*_0x597385,_0x17baed=_0x39b9d4*_0x567f9a-_0x44baf4*_0x45d9e7,_0x142aab=Math['sqrt'](_0x130fa4*_0x130fa4+_0x103b9b*_0x103b9b+_0x17baed*_0x17baed),!_0x142aab?(_0x130fa4=0x0,_0x103b9b=0x0,_0x17baed=0x0):(_0x142aab=0x1/_0x142aab,_0x130fa4*=_0x142aab,_0x103b9b*=_0x142aab,_0x17baed*=_0x142aab),_0x32aba2=_0x567f9a*_0x17baed-_0x597385*_0x103b9b,_0x1fcb4c=_0x597385*_0x130fa4-_0x45d9e7*_0x17baed,_0x50ff54=_0x45d9e7*_0x103b9b-_0x567f9a*_0x130fa4,_0x142aab=Math[_0x25ed07(0x1ba)](_0x32aba2*_0x32aba2+_0x1fcb4c*_0x1fcb4c+_0x50ff54*_0x50ff54),!_0x142aab?(_0x32aba2=0x0,_0x1fcb4c=0x0,_0x50ff54=0x0):(_0x142aab=0x1/_0x142aab,_0x32aba2*=_0x142aab,_0x1fcb4c*=_0x142aab,_0x50ff54*=_0x142aab),_0x5824ec[0x0]=_0x130fa4,_0x5824ec[0x1]=_0x32aba2,_0x5824ec[0x2]=_0x45d9e7,_0x5824ec[0x3]=0x0,_0x5824ec[0x4]=_0x103b9b,_0x5824ec[0x5]=_0x1fcb4c,_0x5824ec[0x6]=_0x567f9a,_0x5824ec[0x7]=0x0,_0x5824ec[0x8]=_0x17baed,_0x5824ec[0x9]=_0x50ff54,_0x5824ec[0xa]=_0x597385,_0x5824ec[0xb]=0x0,_0x5824ec[0xc]=-(_0x130fa4*_0x26df1f+_0x103b9b*_0x7c9fe4+_0x17baed*_0x277c95),_0x5824ec[0xd]=-(_0x32aba2*_0x26df1f+_0x1fcb4c*_0x7c9fe4+_0x50ff54*_0x277c95),_0x5824ec[0xe]=-(_0x45d9e7*_0x26df1f+_0x567f9a*_0x7c9fe4+_0x597385*_0x277c95),_0x5824ec[0xf]=0x1,_0x5824ec;},_0x1b342a[_0x273331(0x471)]=function(_0x24ea97){const _0x4eef70=_0x273331;return _0x4eef70(0x823)+_0x24ea97[0x0]+',\x20'+_0x24ea97[0x1]+',\x20'+_0x24ea97[0x2]+',\x20'+_0x24ea97[0x3]+',\x20'+_0x24ea97[0x4]+',\x20'+_0x24ea97[0x5]+',\x20'+_0x24ea97[0x6]+',\x20'+_0x24ea97[0x7]+',\x20'+_0x24ea97[0x8]+',\x20'+_0x24ea97[0x9]+',\x20'+_0x24ea97[0xa]+',\x20'+_0x24ea97[0xb]+',\x20'+_0x24ea97[0xc]+',\x20'+_0x24ea97[0xd]+',\x20'+_0x24ea97[0xe]+',\x20'+_0x24ea97[0xf]+')';},_0x1b342a['frob']=function(_0x4b4202){const _0x5b0f9f=_0x273331;return Math[_0x5b0f9f(0x1ba)](Math[_0x5b0f9f(0x48b)](_0x4b4202[0x0],0x2)+Math[_0x5b0f9f(0x48b)](_0x4b4202[0x1],0x2)+Math['pow'](_0x4b4202[0x2],0x2)+Math[_0x5b0f9f(0x48b)](_0x4b4202[0x3],0x2)+Math[_0x5b0f9f(0x48b)](_0x4b4202[0x4],0x2)+Math['pow'](_0x4b4202[0x5],0x2)+Math[_0x5b0f9f(0x48b)](_0x4b4202[0x6],0x2)+Math[_0x5b0f9f(0x48b)](_0x4b4202[0x7],0x2)+Math['pow'](_0x4b4202[0x8],0x2)+Math[_0x5b0f9f(0x48b)](_0x4b4202[0x9],0x2)+Math[_0x5b0f9f(0x48b)](_0x4b4202[0xa],0x2)+Math[_0x5b0f9f(0x48b)](_0x4b4202[0xb],0x2)+Math[_0x5b0f9f(0x48b)](_0x4b4202[0xc],0x2)+Math[_0x5b0f9f(0x48b)](_0x4b4202[0xd],0x2)+Math[_0x5b0f9f(0x48b)](_0x4b4202[0xe],0x2)+Math[_0x5b0f9f(0x48b)](_0x4b4202[0xf],0x2));},_0x18ab4a[_0x273331(0x78b)]=_0x1b342a;},function(_0x1ede1f,_0x3b12e4,_0x3f8245){const _0x284d62=_0x5ecf;var _0x40d8e9=_0x3f8245(0x1),_0x574961=_0x3f8245(0x4),_0xba542=_0x3f8245(0x7),_0x3ea263=_0x3f8245(0x8),_0x3ade68={};_0x3ade68[_0x284d62(0x4e1)]=function(){const _0x2d9427=_0x284d62;var _0x54866f=new _0x40d8e9[(_0x2d9427(0x2aa))](0x4);return _0x54866f[0x0]=0x0,_0x54866f[0x1]=0x0,_0x54866f[0x2]=0x0,_0x54866f[0x3]=0x1,_0x54866f;},_0x3ade68[_0x284d62(0x580)]=(function(){const _0x17e7d2=_0x284d62;var _0x42b406=_0xba542[_0x17e7d2(0x4e1)](),_0x1a1ae5=_0xba542['fromValues'](0x1,0x0,0x0),_0x392847=_0xba542[_0x17e7d2(0x84f)](0x0,0x1,0x0);return function(_0x35c794,_0x369085,_0x33eb58){const _0x25e0a1=_0x17e7d2;var _0x1bd8cd=_0xba542[_0x25e0a1(0x50b)](_0x369085,_0x33eb58);if(_0x1bd8cd<-0.999999){_0xba542[_0x25e0a1(0x844)](_0x42b406,_0x1a1ae5,_0x369085);if(_0xba542[_0x25e0a1(0x2ed)](_0x42b406)<0.000001)_0xba542['cross'](_0x42b406,_0x392847,_0x369085);return _0xba542['normalize'](_0x42b406,_0x42b406),_0x3ade68[_0x25e0a1(0x7d6)](_0x35c794,_0x42b406,Math['PI']),_0x35c794;}else return _0x1bd8cd>0.999999?(_0x35c794[0x0]=0x0,_0x35c794[0x1]=0x0,_0x35c794[0x2]=0x0,_0x35c794[0x3]=0x1,_0x35c794):(_0xba542[_0x25e0a1(0x844)](_0x42b406,_0x369085,_0x33eb58),_0x35c794[0x0]=_0x42b406[0x0],_0x35c794[0x1]=_0x42b406[0x1],_0x35c794[0x2]=_0x42b406[0x2],_0x35c794[0x3]=0x1+_0x1bd8cd,_0x3ade68['normalize'](_0x35c794,_0x35c794));};}()),_0x3ade68[_0x284d62(0x714)]=(function(){const _0x512efc=_0x284d62;var _0x159aec=_0x574961[_0x512efc(0x4e1)]();return function(_0x50aa9e,_0x9ce2a1,_0x1b2ed7,_0x1d0173){const _0x2417ad=_0x512efc;return _0x159aec[0x0]=_0x1b2ed7[0x0],_0x159aec[0x3]=_0x1b2ed7[0x1],_0x159aec[0x6]=_0x1b2ed7[0x2],_0x159aec[0x1]=_0x1d0173[0x0],_0x159aec[0x4]=_0x1d0173[0x1],_0x159aec[0x7]=_0x1d0173[0x2],_0x159aec[0x2]=-_0x9ce2a1[0x0],_0x159aec[0x5]=-_0x9ce2a1[0x1],_0x159aec[0x8]=-_0x9ce2a1[0x2],_0x3ade68[_0x2417ad(0x22b)](_0x50aa9e,_0x3ade68[_0x2417ad(0x850)](_0x50aa9e,_0x159aec));};}()),_0x3ade68['clone']=_0x3ea263[_0x284d62(0x43f)],_0x3ade68['fromValues']=_0x3ea263[_0x284d62(0x84f)],_0x3ade68[_0x284d62(0x3e5)]=_0x3ea263['copy'],_0x3ade68[_0x284d62(0x80f)]=_0x3ea263[_0x284d62(0x80f)],_0x3ade68['identity']=function(_0x3dc428){return _0x3dc428[0x0]=0x0,_0x3dc428[0x1]=0x0,_0x3dc428[0x2]=0x0,_0x3dc428[0x3]=0x1,_0x3dc428;},_0x3ade68[_0x284d62(0x7d6)]=function(_0x1a1b7f,_0xdb86ed,_0x2f39e8){const _0x219229=_0x284d62;_0x2f39e8=_0x2f39e8*0.5;var _0x18034d=Math[_0x219229(0x1c0)](_0x2f39e8);return _0x1a1b7f[0x0]=_0x18034d*_0xdb86ed[0x0],_0x1a1b7f[0x1]=_0x18034d*_0xdb86ed[0x1],_0x1a1b7f[0x2]=_0x18034d*_0xdb86ed[0x2],_0x1a1b7f[0x3]=Math[_0x219229(0x586)](_0x2f39e8),_0x1a1b7f;},_0x3ade68[_0x284d62(0xed)]=_0x3ea263[_0x284d62(0xed)],_0x3ade68[_0x284d62(0x12c)]=function(_0x2b5d7f,_0xef574a,_0x1f24c3){var _0x118f3f=_0xef574a[0x0],_0xb618a0=_0xef574a[0x1],_0x29b126=_0xef574a[0x2],_0x1d3e88=_0xef574a[0x3],_0x462140=_0x1f24c3[0x0],_0x1af989=_0x1f24c3[0x1],_0x40f3bd=_0x1f24c3[0x2],_0x254b9b=_0x1f24c3[0x3];return _0x2b5d7f[0x0]=_0x118f3f*_0x254b9b+_0x1d3e88*_0x462140+_0xb618a0*_0x40f3bd-_0x29b126*_0x1af989,_0x2b5d7f[0x1]=_0xb618a0*_0x254b9b+_0x1d3e88*_0x1af989+_0x29b126*_0x462140-_0x118f3f*_0x40f3bd,_0x2b5d7f[0x2]=_0x29b126*_0x254b9b+_0x1d3e88*_0x40f3bd+_0x118f3f*_0x1af989-_0xb618a0*_0x462140,_0x2b5d7f[0x3]=_0x1d3e88*_0x254b9b-_0x118f3f*_0x462140-_0xb618a0*_0x1af989-_0x29b126*_0x40f3bd,_0x2b5d7f;},_0x3ade68[_0x284d62(0x74f)]=_0x3ade68['multiply'],_0x3ade68[_0x284d62(0x7ef)]=_0x3ea263['scale'],_0x3ade68[_0x284d62(0x67a)]=function(_0x35706f,_0x5d4199,_0xe14a48){const _0x281eb1=_0x284d62;_0xe14a48*=0.5;var _0xc3376c=_0x5d4199[0x0],_0x2759f1=_0x5d4199[0x1],_0x103a21=_0x5d4199[0x2],_0x2be567=_0x5d4199[0x3],_0x28dbc6=Math[_0x281eb1(0x1c0)](_0xe14a48),_0xae4b46=Math['cos'](_0xe14a48);return _0x35706f[0x0]=_0xc3376c*_0xae4b46+_0x2be567*_0x28dbc6,_0x35706f[0x1]=_0x2759f1*_0xae4b46+_0x103a21*_0x28dbc6,_0x35706f[0x2]=_0x103a21*_0xae4b46-_0x2759f1*_0x28dbc6,_0x35706f[0x3]=_0x2be567*_0xae4b46-_0xc3376c*_0x28dbc6,_0x35706f;},_0x3ade68['rotateY']=function(_0x62004e,_0x52b058,_0x121b7b){const _0x155d60=_0x284d62;_0x121b7b*=0.5;var _0x24851c=_0x52b058[0x0],_0x5ba131=_0x52b058[0x1],_0x35fbab=_0x52b058[0x2],_0x16d2a2=_0x52b058[0x3],_0x51b863=Math[_0x155d60(0x1c0)](_0x121b7b),_0x3e4ca3=Math[_0x155d60(0x586)](_0x121b7b);return _0x62004e[0x0]=_0x24851c*_0x3e4ca3-_0x35fbab*_0x51b863,_0x62004e[0x1]=_0x5ba131*_0x3e4ca3+_0x16d2a2*_0x51b863,_0x62004e[0x2]=_0x35fbab*_0x3e4ca3+_0x24851c*_0x51b863,_0x62004e[0x3]=_0x16d2a2*_0x3e4ca3-_0x5ba131*_0x51b863,_0x62004e;},_0x3ade68[_0x284d62(0x31d)]=function(_0x25fbe9,_0x4ccbe8,_0x54c8c4){const _0x272e01=_0x284d62;_0x54c8c4*=0.5;var _0x305aaf=_0x4ccbe8[0x0],_0x6f054e=_0x4ccbe8[0x1],_0x1eb319=_0x4ccbe8[0x2],_0x1f3739=_0x4ccbe8[0x3],_0xbe904=Math[_0x272e01(0x1c0)](_0x54c8c4),_0xbf9b11=Math[_0x272e01(0x586)](_0x54c8c4);return _0x25fbe9[0x0]=_0x305aaf*_0xbf9b11+_0x6f054e*_0xbe904,_0x25fbe9[0x1]=_0x6f054e*_0xbf9b11-_0x305aaf*_0xbe904,_0x25fbe9[0x2]=_0x1eb319*_0xbf9b11+_0x1f3739*_0xbe904,_0x25fbe9[0x3]=_0x1f3739*_0xbf9b11-_0x1eb319*_0xbe904,_0x25fbe9;},_0x3ade68[_0x284d62(0x39f)]=function(_0x1b5f86,_0x12c618){const _0x2a71ea=_0x284d62;var _0xb98db4=_0x12c618[0x0],_0x23f18d=_0x12c618[0x1],_0x2cc76d=_0x12c618[0x2];return _0x1b5f86[0x0]=_0xb98db4,_0x1b5f86[0x1]=_0x23f18d,_0x1b5f86[0x2]=_0x2cc76d,_0x1b5f86[0x3]=Math[_0x2a71ea(0x1ba)](Math[_0x2a71ea(0x344)](0x1-_0xb98db4*_0xb98db4-_0x23f18d*_0x23f18d-_0x2cc76d*_0x2cc76d)),_0x1b5f86;},_0x3ade68['dot']=_0x3ea263['dot'],_0x3ade68[_0x284d62(0x6bb)]=_0x3ea263[_0x284d62(0x6bb)],_0x3ade68[_0x284d62(0x5e2)]=function(_0x178a71,_0x128f93,_0x569009,_0x2e01d5){const _0x26ee85=_0x284d62;var _0x129b22=_0x128f93[0x0],_0x1a1d48=_0x128f93[0x1],_0x60858=_0x128f93[0x2],_0x1ca332=_0x128f93[0x3],_0x5a85e8=_0x569009[0x0],_0x5c1753=_0x569009[0x1],_0x4bedf1=_0x569009[0x2],_0x2adc5d=_0x569009[0x3],_0x2922d5,_0x3cfd65,_0x4a8bc9,_0x372675,_0x462506;return _0x3cfd65=_0x129b22*_0x5a85e8+_0x1a1d48*_0x5c1753+_0x60858*_0x4bedf1+_0x1ca332*_0x2adc5d,_0x3cfd65<0x0&&(_0x3cfd65=-_0x3cfd65,_0x5a85e8=-_0x5a85e8,_0x5c1753=-_0x5c1753,_0x4bedf1=-_0x4bedf1,_0x2adc5d=-_0x2adc5d),0x1-_0x3cfd65>0.000001?(_0x2922d5=Math['acos'](_0x3cfd65),_0x4a8bc9=Math[_0x26ee85(0x1c0)](_0x2922d5),_0x372675=Math[_0x26ee85(0x1c0)]((0x1-_0x2e01d5)*_0x2922d5)/_0x4a8bc9,_0x462506=Math['sin'](_0x2e01d5*_0x2922d5)/_0x4a8bc9):(_0x372675=0x1-_0x2e01d5,_0x462506=_0x2e01d5),_0x178a71[0x0]=_0x372675*_0x129b22+_0x462506*_0x5a85e8,_0x178a71[0x1]=_0x372675*_0x1a1d48+_0x462506*_0x5c1753,_0x178a71[0x2]=_0x372675*_0x60858+_0x462506*_0x4bedf1,_0x178a71[0x3]=_0x372675*_0x1ca332+_0x462506*_0x2adc5d,_0x178a71;},_0x3ade68['sqlerp']=(function(){const _0x1a8067=_0x284d62;var _0x58c47c=_0x3ade68[_0x1a8067(0x4e1)](),_0x11729c=_0x3ade68[_0x1a8067(0x4e1)]();return function(_0x40be74,_0x25900c,_0x160e1d,_0x3f342f,_0x32889c,_0x2175c7){const _0x428bd7=_0x1a8067;return _0x3ade68['slerp'](_0x58c47c,_0x25900c,_0x32889c,_0x2175c7),_0x3ade68[_0x428bd7(0x5e2)](_0x11729c,_0x160e1d,_0x3f342f,_0x2175c7),_0x3ade68[_0x428bd7(0x5e2)](_0x40be74,_0x58c47c,_0x11729c,0x2*_0x2175c7*(0x1-_0x2175c7)),_0x40be74;};}()),_0x3ade68[_0x284d62(0x626)]=function(_0x451cad,_0x2cdf5c){var _0x1249ea=_0x2cdf5c[0x0],_0x5a312e=_0x2cdf5c[0x1],_0x2e6989=_0x2cdf5c[0x2],_0xdea187=_0x2cdf5c[0x3],_0x40bda2=_0x1249ea*_0x1249ea+_0x5a312e*_0x5a312e+_0x2e6989*_0x2e6989+_0xdea187*_0xdea187,_0x5ca5a1=_0x40bda2?0x1/_0x40bda2:0x0;return _0x451cad[0x0]=-_0x1249ea*_0x5ca5a1,_0x451cad[0x1]=-_0x5a312e*_0x5ca5a1,_0x451cad[0x2]=-_0x2e6989*_0x5ca5a1,_0x451cad[0x3]=_0xdea187*_0x5ca5a1,_0x451cad;},_0x3ade68['conjugate']=function(_0x13f396,_0x45c6b1){return _0x13f396[0x0]=-_0x45c6b1[0x0],_0x13f396[0x1]=-_0x45c6b1[0x1],_0x13f396[0x2]=-_0x45c6b1[0x2],_0x13f396[0x3]=_0x45c6b1[0x3],_0x13f396;},_0x3ade68[_0x284d62(0x2ed)]=_0x3ea263[_0x284d62(0x2ed)],_0x3ade68[_0x284d62(0xde)]=_0x3ade68[_0x284d62(0x2ed)],_0x3ade68[_0x284d62(0x23b)]=_0x3ea263[_0x284d62(0x23b)],_0x3ade68[_0x284d62(0x6f2)]=_0x3ade68[_0x284d62(0x23b)],_0x3ade68[_0x284d62(0x22b)]=_0x3ea263[_0x284d62(0x22b)],_0x3ade68[_0x284d62(0x850)]=function(_0xd14df1,_0x46ea2c){const _0x16c874=_0x284d62;var _0x2dabea=_0x46ea2c[0x0]+_0x46ea2c[0x4]+_0x46ea2c[0x8],_0x311748;if(_0x2dabea>0x0)_0x311748=Math[_0x16c874(0x1ba)](_0x2dabea+0x1),_0xd14df1[0x3]=0.5*_0x311748,_0x311748=0.5/_0x311748,_0xd14df1[0x0]=(_0x46ea2c[0x5]-_0x46ea2c[0x7])*_0x311748,_0xd14df1[0x1]=(_0x46ea2c[0x6]-_0x46ea2c[0x2])*_0x311748,_0xd14df1[0x2]=(_0x46ea2c[0x1]-_0x46ea2c[0x3])*_0x311748;else{var _0x56b797=0x0;if(_0x46ea2c[0x4]>_0x46ea2c[0x0])_0x56b797=0x1;if(_0x46ea2c[0x8]>_0x46ea2c[_0x56b797*0x3+_0x56b797])_0x56b797=0x2;var _0x5f47b8=(_0x56b797+0x1)%0x3,_0x559cf3=(_0x56b797+0x2)%0x3;_0x311748=Math['sqrt'](_0x46ea2c[_0x56b797*0x3+_0x56b797]-_0x46ea2c[_0x5f47b8*0x3+_0x5f47b8]-_0x46ea2c[_0x559cf3*0x3+_0x559cf3]+0x1),_0xd14df1[_0x56b797]=0.5*_0x311748,_0x311748=0.5/_0x311748,_0xd14df1[0x3]=(_0x46ea2c[_0x5f47b8*0x3+_0x559cf3]-_0x46ea2c[_0x559cf3*0x3+_0x5f47b8])*_0x311748,_0xd14df1[_0x5f47b8]=(_0x46ea2c[_0x5f47b8*0x3+_0x56b797]+_0x46ea2c[_0x56b797*0x3+_0x5f47b8])*_0x311748,_0xd14df1[_0x559cf3]=(_0x46ea2c[_0x559cf3*0x3+_0x56b797]+_0x46ea2c[_0x56b797*0x3+_0x559cf3])*_0x311748;}return _0xd14df1;},_0x3ade68['str']=function(_0x12ba87){return'quat('+_0x12ba87[0x0]+',\x20'+_0x12ba87[0x1]+',\x20'+_0x12ba87[0x2]+',\x20'+_0x12ba87[0x3]+')';},_0x1ede1f[_0x284d62(0x78b)]=_0x3ade68;},function(_0x64ce5,_0x21dc56,_0x4b112a){const _0x21619c=_0x5ecf;var _0x2fd20e=_0x4b112a(0x1),_0x4c4207={};_0x4c4207[_0x21619c(0x4e1)]=function(){const _0x92b916=_0x21619c;var _0x5e6848=new _0x2fd20e[(_0x92b916(0x2aa))](0x3);return _0x5e6848[0x0]=0x0,_0x5e6848[0x1]=0x0,_0x5e6848[0x2]=0x0,_0x5e6848;},_0x4c4207[_0x21619c(0x43f)]=function(_0x35d74e){var _0x3be8dc=new _0x2fd20e['ARRAY_TYPE'](0x3);return _0x3be8dc[0x0]=_0x35d74e[0x0],_0x3be8dc[0x1]=_0x35d74e[0x1],_0x3be8dc[0x2]=_0x35d74e[0x2],_0x3be8dc;},_0x4c4207['fromValues']=function(_0x1ffc17,_0x3dd142,_0x1f2dc5){const _0x51610a=_0x21619c;var _0x11ecc6=new _0x2fd20e[(_0x51610a(0x2aa))](0x3);return _0x11ecc6[0x0]=_0x1ffc17,_0x11ecc6[0x1]=_0x3dd142,_0x11ecc6[0x2]=_0x1f2dc5,_0x11ecc6;},_0x4c4207['copy']=function(_0x4aa461,_0x1b1fbd){return _0x4aa461[0x0]=_0x1b1fbd[0x0],_0x4aa461[0x1]=_0x1b1fbd[0x1],_0x4aa461[0x2]=_0x1b1fbd[0x2],_0x4aa461;},_0x4c4207['set']=function(_0x45cc10,_0x2d8a2f,_0x3fd070,_0x5ee1bb){return _0x45cc10[0x0]=_0x2d8a2f,_0x45cc10[0x1]=_0x3fd070,_0x45cc10[0x2]=_0x5ee1bb,_0x45cc10;},_0x4c4207[_0x21619c(0xed)]=function(_0x28724f,_0x5d37a5,_0x4c5dc2){return _0x28724f[0x0]=_0x5d37a5[0x0]+_0x4c5dc2[0x0],_0x28724f[0x1]=_0x5d37a5[0x1]+_0x4c5dc2[0x1],_0x28724f[0x2]=_0x5d37a5[0x2]+_0x4c5dc2[0x2],_0x28724f;},_0x4c4207[_0x21619c(0x176)]=function(_0x4c9dce,_0x44f1d9,_0xaf2d03){return _0x4c9dce[0x0]=_0x44f1d9[0x0]-_0xaf2d03[0x0],_0x4c9dce[0x1]=_0x44f1d9[0x1]-_0xaf2d03[0x1],_0x4c9dce[0x2]=_0x44f1d9[0x2]-_0xaf2d03[0x2],_0x4c9dce;},_0x4c4207['sub']=_0x4c4207[_0x21619c(0x176)],_0x4c4207[_0x21619c(0x12c)]=function(_0x649cf7,_0xd15391,_0x3afd78){return _0x649cf7[0x0]=_0xd15391[0x0]*_0x3afd78[0x0],_0x649cf7[0x1]=_0xd15391[0x1]*_0x3afd78[0x1],_0x649cf7[0x2]=_0xd15391[0x2]*_0x3afd78[0x2],_0x649cf7;},_0x4c4207['mul']=_0x4c4207['multiply'],_0x4c4207[_0x21619c(0x307)]=function(_0x1aa4f9,_0x4f088c,_0x32efbe){return _0x1aa4f9[0x0]=_0x4f088c[0x0]/_0x32efbe[0x0],_0x1aa4f9[0x1]=_0x4f088c[0x1]/_0x32efbe[0x1],_0x1aa4f9[0x2]=_0x4f088c[0x2]/_0x32efbe[0x2],_0x1aa4f9;},_0x4c4207[_0x21619c(0x51d)]=_0x4c4207['divide'],_0x4c4207[_0x21619c(0x3ac)]=function(_0x52322f,_0x491069,_0x3a2116){const _0x58b336=_0x21619c;return _0x52322f[0x0]=Math[_0x58b336(0x3ac)](_0x491069[0x0],_0x3a2116[0x0]),_0x52322f[0x1]=Math[_0x58b336(0x3ac)](_0x491069[0x1],_0x3a2116[0x1]),_0x52322f[0x2]=Math['min'](_0x491069[0x2],_0x3a2116[0x2]),_0x52322f;},_0x4c4207[_0x21619c(0x6d4)]=function(_0x60f778,_0x952cc8,_0x5735db){const _0x1abe72=_0x21619c;return _0x60f778[0x0]=Math[_0x1abe72(0x6d4)](_0x952cc8[0x0],_0x5735db[0x0]),_0x60f778[0x1]=Math[_0x1abe72(0x6d4)](_0x952cc8[0x1],_0x5735db[0x1]),_0x60f778[0x2]=Math[_0x1abe72(0x6d4)](_0x952cc8[0x2],_0x5735db[0x2]),_0x60f778;},_0x4c4207[_0x21619c(0x7ef)]=function(_0x30422e,_0x27719e,_0x2f678d){return _0x30422e[0x0]=_0x27719e[0x0]*_0x2f678d,_0x30422e[0x1]=_0x27719e[0x1]*_0x2f678d,_0x30422e[0x2]=_0x27719e[0x2]*_0x2f678d,_0x30422e;},_0x4c4207[_0x21619c(0x128)]=function(_0x3ea6c4,_0x115542,_0x421247,_0x525f1d){return _0x3ea6c4[0x0]=_0x115542[0x0]+_0x421247[0x0]*_0x525f1d,_0x3ea6c4[0x1]=_0x115542[0x1]+_0x421247[0x1]*_0x525f1d,_0x3ea6c4[0x2]=_0x115542[0x2]+_0x421247[0x2]*_0x525f1d,_0x3ea6c4;},_0x4c4207[_0x21619c(0x6cb)]=function(_0x16a9db,_0x263e54){const _0x5c76f0=_0x21619c;var _0x270e85=_0x263e54[0x0]-_0x16a9db[0x0],_0x2643b9=_0x263e54[0x1]-_0x16a9db[0x1],_0x38ed1d=_0x263e54[0x2]-_0x16a9db[0x2];return Math[_0x5c76f0(0x1ba)](_0x270e85*_0x270e85+_0x2643b9*_0x2643b9+_0x38ed1d*_0x38ed1d);},_0x4c4207[_0x21619c(0x570)]=_0x4c4207[_0x21619c(0x6cb)],_0x4c4207['squaredDistance']=function(_0x580fa7,_0x59600d){var _0x49142f=_0x59600d[0x0]-_0x580fa7[0x0],_0x31e5ac=_0x59600d[0x1]-_0x580fa7[0x1],_0x241582=_0x59600d[0x2]-_0x580fa7[0x2];return _0x49142f*_0x49142f+_0x31e5ac*_0x31e5ac+_0x241582*_0x241582;},_0x4c4207[_0x21619c(0x519)]=_0x4c4207['squaredDistance'],_0x4c4207['length']=function(_0x249fa1){const _0x3f5560=_0x21619c;var _0x49812e=_0x249fa1[0x0],_0x3c7ea1=_0x249fa1[0x1],_0x58b9b1=_0x249fa1[0x2];return Math[_0x3f5560(0x1ba)](_0x49812e*_0x49812e+_0x3c7ea1*_0x3c7ea1+_0x58b9b1*_0x58b9b1);},_0x4c4207['len']=_0x4c4207['length'],_0x4c4207[_0x21619c(0x23b)]=function(_0x58c68f){var _0x188484=_0x58c68f[0x0],_0x28b2e6=_0x58c68f[0x1],_0x1c9ec1=_0x58c68f[0x2];return _0x188484*_0x188484+_0x28b2e6*_0x28b2e6+_0x1c9ec1*_0x1c9ec1;},_0x4c4207[_0x21619c(0x6f2)]=_0x4c4207[_0x21619c(0x23b)],_0x4c4207[_0x21619c(0x196)]=function(_0x24854c,_0x451a76){return _0x24854c[0x0]=-_0x451a76[0x0],_0x24854c[0x1]=-_0x451a76[0x1],_0x24854c[0x2]=-_0x451a76[0x2],_0x24854c;},_0x4c4207[_0x21619c(0x14d)]=function(_0x2d90cf,_0x12739c){return _0x2d90cf[0x0]=0x1/_0x12739c[0x0],_0x2d90cf[0x1]=0x1/_0x12739c[0x1],_0x2d90cf[0x2]=0x1/_0x12739c[0x2],_0x2d90cf;},_0x4c4207['normalize']=function(_0x3d10fd,_0x1b1313){const _0x198eb7=_0x21619c;var _0x1d61bb=_0x1b1313[0x0],_0x4deacb=_0x1b1313[0x1],_0x1de551=_0x1b1313[0x2],_0x3db4d1=_0x1d61bb*_0x1d61bb+_0x4deacb*_0x4deacb+_0x1de551*_0x1de551;return _0x3db4d1>0x0&&(_0x3db4d1=0x1/Math[_0x198eb7(0x1ba)](_0x3db4d1),_0x3d10fd[0x0]=_0x1b1313[0x0]*_0x3db4d1,_0x3d10fd[0x1]=_0x1b1313[0x1]*_0x3db4d1,_0x3d10fd[0x2]=_0x1b1313[0x2]*_0x3db4d1),_0x3d10fd;},_0x4c4207[_0x21619c(0x50b)]=function(_0x4c1e05,_0x20ca49){return _0x4c1e05[0x0]*_0x20ca49[0x0]+_0x4c1e05[0x1]*_0x20ca49[0x1]+_0x4c1e05[0x2]*_0x20ca49[0x2];},_0x4c4207[_0x21619c(0x844)]=function(_0x4e80f8,_0x57d61a,_0xaee152){var _0x9eb16b=_0x57d61a[0x0],_0x1d96ed=_0x57d61a[0x1],_0xd47358=_0x57d61a[0x2],_0x1aec27=_0xaee152[0x0],_0x5f053a=_0xaee152[0x1],_0x1d7b97=_0xaee152[0x2];return _0x4e80f8[0x0]=_0x1d96ed*_0x1d7b97-_0xd47358*_0x5f053a,_0x4e80f8[0x1]=_0xd47358*_0x1aec27-_0x9eb16b*_0x1d7b97,_0x4e80f8[0x2]=_0x9eb16b*_0x5f053a-_0x1d96ed*_0x1aec27,_0x4e80f8;},_0x4c4207[_0x21619c(0x6bb)]=function(_0x1208f9,_0x54cd63,_0x2b0793,_0x282797){var _0x3e23cf=_0x54cd63[0x0],_0x33ccb5=_0x54cd63[0x1],_0x23bd4a=_0x54cd63[0x2];return _0x1208f9[0x0]=_0x3e23cf+_0x282797*(_0x2b0793[0x0]-_0x3e23cf),_0x1208f9[0x1]=_0x33ccb5+_0x282797*(_0x2b0793[0x1]-_0x33ccb5),_0x1208f9[0x2]=_0x23bd4a+_0x282797*(_0x2b0793[0x2]-_0x23bd4a),_0x1208f9;},_0x4c4207[_0x21619c(0x2a6)]=function(_0x85471,_0x1a8d0a,_0x331733,_0x1554b3,_0x2443e7,_0x6f2d52){var _0x10a1a2=_0x6f2d52*_0x6f2d52,_0xf6f8a9=_0x10a1a2*(0x2*_0x6f2d52-0x3)+0x1,_0x384ef3=_0x10a1a2*(_0x6f2d52-0x2)+_0x6f2d52,_0x2ec53b=_0x10a1a2*(_0x6f2d52-0x1),_0x5b900e=_0x10a1a2*(0x3-0x2*_0x6f2d52);return _0x85471[0x0]=_0x1a8d0a[0x0]*_0xf6f8a9+_0x331733[0x0]*_0x384ef3+_0x1554b3[0x0]*_0x2ec53b+_0x2443e7[0x0]*_0x5b900e,_0x85471[0x1]=_0x1a8d0a[0x1]*_0xf6f8a9+_0x331733[0x1]*_0x384ef3+_0x1554b3[0x1]*_0x2ec53b+_0x2443e7[0x1]*_0x5b900e,_0x85471[0x2]=_0x1a8d0a[0x2]*_0xf6f8a9+_0x331733[0x2]*_0x384ef3+_0x1554b3[0x2]*_0x2ec53b+_0x2443e7[0x2]*_0x5b900e,_0x85471;},_0x4c4207[_0x21619c(0x596)]=function(_0x5ae7c1,_0x38430d,_0x32f9bc,_0x1dc38c,_0x24e9c2,_0x199fa6){var _0x4dc1c4=0x1-_0x199fa6,_0x2bae7b=_0x4dc1c4*_0x4dc1c4,_0x4290cb=_0x199fa6*_0x199fa6,_0x208e2c=_0x2bae7b*_0x4dc1c4,_0x422e96=0x3*_0x199fa6*_0x2bae7b,_0x50ebcb=0x3*_0x4290cb*_0x4dc1c4,_0x75f4f0=_0x4290cb*_0x199fa6;return _0x5ae7c1[0x0]=_0x38430d[0x0]*_0x208e2c+_0x32f9bc[0x0]*_0x422e96+_0x1dc38c[0x0]*_0x50ebcb+_0x24e9c2[0x0]*_0x75f4f0,_0x5ae7c1[0x1]=_0x38430d[0x1]*_0x208e2c+_0x32f9bc[0x1]*_0x422e96+_0x1dc38c[0x1]*_0x50ebcb+_0x24e9c2[0x1]*_0x75f4f0,_0x5ae7c1[0x2]=_0x38430d[0x2]*_0x208e2c+_0x32f9bc[0x2]*_0x422e96+_0x1dc38c[0x2]*_0x50ebcb+_0x24e9c2[0x2]*_0x75f4f0,_0x5ae7c1;},_0x4c4207[_0x21619c(0x202)]=function(_0x1f3f0a,_0x20a1e2){const _0x34465d=_0x21619c;_0x20a1e2=_0x20a1e2||0x1;var _0x447c43=_0x2fd20e['RANDOM']()*0x2*Math['PI'],_0x1eb882=_0x2fd20e['RANDOM']()*0x2-0x1,_0x17ea4d=Math[_0x34465d(0x1ba)](0x1-_0x1eb882*_0x1eb882)*_0x20a1e2;return _0x1f3f0a[0x0]=Math[_0x34465d(0x586)](_0x447c43)*_0x17ea4d,_0x1f3f0a[0x1]=Math[_0x34465d(0x1c0)](_0x447c43)*_0x17ea4d,_0x1f3f0a[0x2]=_0x1eb882*_0x20a1e2,_0x1f3f0a;},_0x4c4207[_0x21619c(0x1e7)]=function(_0x54cf97,_0x50a71b,_0x3e9731){var _0x482c39=_0x50a71b[0x0],_0x5594aa=_0x50a71b[0x1],_0x5075af=_0x50a71b[0x2],_0x56c777=_0x3e9731[0x3]*_0x482c39+_0x3e9731[0x7]*_0x5594aa+_0x3e9731[0xb]*_0x5075af+_0x3e9731[0xf];return _0x56c777=_0x56c777||0x1,_0x54cf97[0x0]=(_0x3e9731[0x0]*_0x482c39+_0x3e9731[0x4]*_0x5594aa+_0x3e9731[0x8]*_0x5075af+_0x3e9731[0xc])/_0x56c777,_0x54cf97[0x1]=(_0x3e9731[0x1]*_0x482c39+_0x3e9731[0x5]*_0x5594aa+_0x3e9731[0x9]*_0x5075af+_0x3e9731[0xd])/_0x56c777,_0x54cf97[0x2]=(_0x3e9731[0x2]*_0x482c39+_0x3e9731[0x6]*_0x5594aa+_0x3e9731[0xa]*_0x5075af+_0x3e9731[0xe])/_0x56c777,_0x54cf97;},_0x4c4207[_0x21619c(0x635)]=function(_0x4b31b8,_0x2448ab,_0x1cd789){var _0x2ac29f=_0x2448ab[0x0],_0x4cf4a8=_0x2448ab[0x1],_0x521a01=_0x2448ab[0x2];return _0x4b31b8[0x0]=_0x2ac29f*_0x1cd789[0x0]+_0x4cf4a8*_0x1cd789[0x3]+_0x521a01*_0x1cd789[0x6],_0x4b31b8[0x1]=_0x2ac29f*_0x1cd789[0x1]+_0x4cf4a8*_0x1cd789[0x4]+_0x521a01*_0x1cd789[0x7],_0x4b31b8[0x2]=_0x2ac29f*_0x1cd789[0x2]+_0x4cf4a8*_0x1cd789[0x5]+_0x521a01*_0x1cd789[0x8],_0x4b31b8;},_0x4c4207[_0x21619c(0x799)]=function(_0x5160b6,_0x155101,_0x519506){var _0x2cb28d=_0x155101[0x0],_0x4edb8f=_0x155101[0x1],_0x10f25c=_0x155101[0x2],_0x4fb3a2=_0x519506[0x0],_0x2f90a2=_0x519506[0x1],_0x26fa3b=_0x519506[0x2],_0x59a4d3=_0x519506[0x3],_0x54ee98=_0x59a4d3*_0x2cb28d+_0x2f90a2*_0x10f25c-_0x26fa3b*_0x4edb8f,_0x28dbbe=_0x59a4d3*_0x4edb8f+_0x26fa3b*_0x2cb28d-_0x4fb3a2*_0x10f25c,_0x145ee3=_0x59a4d3*_0x10f25c+_0x4fb3a2*_0x4edb8f-_0x2f90a2*_0x2cb28d,_0x213b8e=-_0x4fb3a2*_0x2cb28d-_0x2f90a2*_0x4edb8f-_0x26fa3b*_0x10f25c;return _0x5160b6[0x0]=_0x54ee98*_0x59a4d3+_0x213b8e*-_0x4fb3a2+_0x28dbbe*-_0x26fa3b-_0x145ee3*-_0x2f90a2,_0x5160b6[0x1]=_0x28dbbe*_0x59a4d3+_0x213b8e*-_0x2f90a2+_0x145ee3*-_0x4fb3a2-_0x54ee98*-_0x26fa3b,_0x5160b6[0x2]=_0x145ee3*_0x59a4d3+_0x213b8e*-_0x26fa3b+_0x54ee98*-_0x2f90a2-_0x28dbbe*-_0x4fb3a2,_0x5160b6;},_0x4c4207['rotateX']=function(_0x32c13e,_0x51b390,_0x5141f5,_0x3deca4){const _0x3dddfe=_0x21619c;var _0xbe7230=[],_0xd071a5=[];return _0xbe7230[0x0]=_0x51b390[0x0]-_0x5141f5[0x0],_0xbe7230[0x1]=_0x51b390[0x1]-_0x5141f5[0x1],_0xbe7230[0x2]=_0x51b390[0x2]-_0x5141f5[0x2],_0xd071a5[0x0]=_0xbe7230[0x0],_0xd071a5[0x1]=_0xbe7230[0x1]*Math[_0x3dddfe(0x586)](_0x3deca4)-_0xbe7230[0x2]*Math[_0x3dddfe(0x1c0)](_0x3deca4),_0xd071a5[0x2]=_0xbe7230[0x1]*Math[_0x3dddfe(0x1c0)](_0x3deca4)+_0xbe7230[0x2]*Math[_0x3dddfe(0x586)](_0x3deca4),_0x32c13e[0x0]=_0xd071a5[0x0]+_0x5141f5[0x0],_0x32c13e[0x1]=_0xd071a5[0x1]+_0x5141f5[0x1],_0x32c13e[0x2]=_0xd071a5[0x2]+_0x5141f5[0x2],_0x32c13e;},_0x4c4207[_0x21619c(0x54a)]=function(_0xcc109c,_0x4dd2f3,_0x12a543,_0x413643){const _0x2f867e=_0x21619c;var _0x230328=[],_0x5913a7=[];return _0x230328[0x0]=_0x4dd2f3[0x0]-_0x12a543[0x0],_0x230328[0x1]=_0x4dd2f3[0x1]-_0x12a543[0x1],_0x230328[0x2]=_0x4dd2f3[0x2]-_0x12a543[0x2],_0x5913a7[0x0]=_0x230328[0x2]*Math[_0x2f867e(0x1c0)](_0x413643)+_0x230328[0x0]*Math[_0x2f867e(0x586)](_0x413643),_0x5913a7[0x1]=_0x230328[0x1],_0x5913a7[0x2]=_0x230328[0x2]*Math[_0x2f867e(0x586)](_0x413643)-_0x230328[0x0]*Math['sin'](_0x413643),_0xcc109c[0x0]=_0x5913a7[0x0]+_0x12a543[0x0],_0xcc109c[0x1]=_0x5913a7[0x1]+_0x12a543[0x1],_0xcc109c[0x2]=_0x5913a7[0x2]+_0x12a543[0x2],_0xcc109c;},_0x4c4207[_0x21619c(0x31d)]=function(_0x14647c,_0xf8ab49,_0x4f08fd,_0x3667bf){const _0x61b279=_0x21619c;var _0x54c4da=[],_0x4a6708=[];return _0x54c4da[0x0]=_0xf8ab49[0x0]-_0x4f08fd[0x0],_0x54c4da[0x1]=_0xf8ab49[0x1]-_0x4f08fd[0x1],_0x54c4da[0x2]=_0xf8ab49[0x2]-_0x4f08fd[0x2],_0x4a6708[0x0]=_0x54c4da[0x0]*Math[_0x61b279(0x586)](_0x3667bf)-_0x54c4da[0x1]*Math[_0x61b279(0x1c0)](_0x3667bf),_0x4a6708[0x1]=_0x54c4da[0x0]*Math[_0x61b279(0x1c0)](_0x3667bf)+_0x54c4da[0x1]*Math[_0x61b279(0x586)](_0x3667bf),_0x4a6708[0x2]=_0x54c4da[0x2],_0x14647c[0x0]=_0x4a6708[0x0]+_0x4f08fd[0x0],_0x14647c[0x1]=_0x4a6708[0x1]+_0x4f08fd[0x1],_0x14647c[0x2]=_0x4a6708[0x2]+_0x4f08fd[0x2],_0x14647c;},_0x4c4207['forEach']=(function(){var _0xc85904=_0x4c4207['create']();return function(_0x39a93c,_0x5d98a6,_0x27ce19,_0x26d191,_0x5a2727,_0x476b1f){const _0x1b37b3=_0x5ecf;var _0x534c31,_0x541e43;!_0x5d98a6&&(_0x5d98a6=0x3);!_0x27ce19&&(_0x27ce19=0x0);_0x26d191?_0x541e43=Math['min'](_0x26d191*_0x5d98a6+_0x27ce19,_0x39a93c[_0x1b37b3(0x2ed)]):_0x541e43=_0x39a93c['length'];for(_0x534c31=_0x27ce19;_0x534c31<_0x541e43;_0x534c31+=_0x5d98a6){_0xc85904[0x0]=_0x39a93c[_0x534c31],_0xc85904[0x1]=_0x39a93c[_0x534c31+0x1],_0xc85904[0x2]=_0x39a93c[_0x534c31+0x2],_0x5a2727(_0xc85904,_0xc85904,_0x476b1f),_0x39a93c[_0x534c31]=_0xc85904[0x0],_0x39a93c[_0x534c31+0x1]=_0xc85904[0x1],_0x39a93c[_0x534c31+0x2]=_0xc85904[0x2];}return _0x39a93c;};}()),_0x4c4207[_0x21619c(0x544)]=function(_0x588a92,_0x35d63f){const _0x5773c8=_0x21619c;var _0x2d0b74=_0x4c4207['fromValues'](_0x588a92[0x0],_0x588a92[0x1],_0x588a92[0x2]),_0x2ec31b=_0x4c4207['fromValues'](_0x35d63f[0x0],_0x35d63f[0x1],_0x35d63f[0x2]);_0x4c4207[_0x5773c8(0x22b)](_0x2d0b74,_0x2d0b74),_0x4c4207[_0x5773c8(0x22b)](_0x2ec31b,_0x2ec31b);var _0x1fbd54=_0x4c4207[_0x5773c8(0x50b)](_0x2d0b74,_0x2ec31b);return _0x1fbd54>0x1?0x0:Math[_0x5773c8(0x737)](_0x1fbd54);},_0x4c4207[_0x21619c(0x471)]=function(_0x10772d){const _0x3e3f76=_0x21619c;return _0x3e3f76(0x762)+_0x10772d[0x0]+',\x20'+_0x10772d[0x1]+',\x20'+_0x10772d[0x2]+')';},_0x64ce5[_0x21619c(0x78b)]=_0x4c4207;},function(_0x2fd888,_0x6c8d1e,_0x2df5c9){const _0x377efd=_0x5ecf;var _0x3046e=_0x2df5c9(0x1),_0x4c197a={};_0x4c197a['create']=function(){const _0x38e622=_0x5ecf;var _0x5f38a7=new _0x3046e[(_0x38e622(0x2aa))](0x4);return _0x5f38a7[0x0]=0x0,_0x5f38a7[0x1]=0x0,_0x5f38a7[0x2]=0x0,_0x5f38a7[0x3]=0x0,_0x5f38a7;},_0x4c197a[_0x377efd(0x43f)]=function(_0x207383){var _0x557dc0=new _0x3046e['ARRAY_TYPE'](0x4);return _0x557dc0[0x0]=_0x207383[0x0],_0x557dc0[0x1]=_0x207383[0x1],_0x557dc0[0x2]=_0x207383[0x2],_0x557dc0[0x3]=_0x207383[0x3],_0x557dc0;},_0x4c197a[_0x377efd(0x84f)]=function(_0x40aa3a,_0x3c867d,_0x1cbc37,_0x121acd){const _0x41d164=_0x377efd;var _0x4dd814=new _0x3046e[(_0x41d164(0x2aa))](0x4);return _0x4dd814[0x0]=_0x40aa3a,_0x4dd814[0x1]=_0x3c867d,_0x4dd814[0x2]=_0x1cbc37,_0x4dd814[0x3]=_0x121acd,_0x4dd814;},_0x4c197a[_0x377efd(0x3e5)]=function(_0x548fb7,_0x5b919e){return _0x548fb7[0x0]=_0x5b919e[0x0],_0x548fb7[0x1]=_0x5b919e[0x1],_0x548fb7[0x2]=_0x5b919e[0x2],_0x548fb7[0x3]=_0x5b919e[0x3],_0x548fb7;},_0x4c197a[_0x377efd(0x80f)]=function(_0x732c0a,_0x15a5d7,_0x311899,_0x84dd22,_0x2f6d17){return _0x732c0a[0x0]=_0x15a5d7,_0x732c0a[0x1]=_0x311899,_0x732c0a[0x2]=_0x84dd22,_0x732c0a[0x3]=_0x2f6d17,_0x732c0a;},_0x4c197a[_0x377efd(0xed)]=function(_0x165ec6,_0x2ae140,_0x579339){return _0x165ec6[0x0]=_0x2ae140[0x0]+_0x579339[0x0],_0x165ec6[0x1]=_0x2ae140[0x1]+_0x579339[0x1],_0x165ec6[0x2]=_0x2ae140[0x2]+_0x579339[0x2],_0x165ec6[0x3]=_0x2ae140[0x3]+_0x579339[0x3],_0x165ec6;},_0x4c197a[_0x377efd(0x176)]=function(_0x1ac7c7,_0x212b22,_0x4c663d){return _0x1ac7c7[0x0]=_0x212b22[0x0]-_0x4c663d[0x0],_0x1ac7c7[0x1]=_0x212b22[0x1]-_0x4c663d[0x1],_0x1ac7c7[0x2]=_0x212b22[0x2]-_0x4c663d[0x2],_0x1ac7c7[0x3]=_0x212b22[0x3]-_0x4c663d[0x3],_0x1ac7c7;},_0x4c197a[_0x377efd(0x295)]=_0x4c197a[_0x377efd(0x176)],_0x4c197a['multiply']=function(_0x2353a8,_0x37e350,_0x290517){return _0x2353a8[0x0]=_0x37e350[0x0]*_0x290517[0x0],_0x2353a8[0x1]=_0x37e350[0x1]*_0x290517[0x1],_0x2353a8[0x2]=_0x37e350[0x2]*_0x290517[0x2],_0x2353a8[0x3]=_0x37e350[0x3]*_0x290517[0x3],_0x2353a8;},_0x4c197a[_0x377efd(0x74f)]=_0x4c197a[_0x377efd(0x12c)],_0x4c197a[_0x377efd(0x307)]=function(_0x3b781a,_0x4f2976,_0x584991){return _0x3b781a[0x0]=_0x4f2976[0x0]/_0x584991[0x0],_0x3b781a[0x1]=_0x4f2976[0x1]/_0x584991[0x1],_0x3b781a[0x2]=_0x4f2976[0x2]/_0x584991[0x2],_0x3b781a[0x3]=_0x4f2976[0x3]/_0x584991[0x3],_0x3b781a;},_0x4c197a[_0x377efd(0x51d)]=_0x4c197a[_0x377efd(0x307)],_0x4c197a[_0x377efd(0x3ac)]=function(_0x1cc03a,_0x5f4e50,_0x2d44ca){const _0x3be990=_0x377efd;return _0x1cc03a[0x0]=Math[_0x3be990(0x3ac)](_0x5f4e50[0x0],_0x2d44ca[0x0]),_0x1cc03a[0x1]=Math[_0x3be990(0x3ac)](_0x5f4e50[0x1],_0x2d44ca[0x1]),_0x1cc03a[0x2]=Math[_0x3be990(0x3ac)](_0x5f4e50[0x2],_0x2d44ca[0x2]),_0x1cc03a[0x3]=Math[_0x3be990(0x3ac)](_0x5f4e50[0x3],_0x2d44ca[0x3]),_0x1cc03a;},_0x4c197a['max']=function(_0x4210e1,_0x4b05d2,_0x4d415a){const _0x3c0f52=_0x377efd;return _0x4210e1[0x0]=Math['max'](_0x4b05d2[0x0],_0x4d415a[0x0]),_0x4210e1[0x1]=Math[_0x3c0f52(0x6d4)](_0x4b05d2[0x1],_0x4d415a[0x1]),_0x4210e1[0x2]=Math[_0x3c0f52(0x6d4)](_0x4b05d2[0x2],_0x4d415a[0x2]),_0x4210e1[0x3]=Math[_0x3c0f52(0x6d4)](_0x4b05d2[0x3],_0x4d415a[0x3]),_0x4210e1;},_0x4c197a[_0x377efd(0x7ef)]=function(_0xa7a509,_0x4a1ea9,_0x16f209){return _0xa7a509[0x0]=_0x4a1ea9[0x0]*_0x16f209,_0xa7a509[0x1]=_0x4a1ea9[0x1]*_0x16f209,_0xa7a509[0x2]=_0x4a1ea9[0x2]*_0x16f209,_0xa7a509[0x3]=_0x4a1ea9[0x3]*_0x16f209,_0xa7a509;},_0x4c197a['scaleAndAdd']=function(_0x504916,_0xcd8480,_0x5a8127,_0x321093){return _0x504916[0x0]=_0xcd8480[0x0]+_0x5a8127[0x0]*_0x321093,_0x504916[0x1]=_0xcd8480[0x1]+_0x5a8127[0x1]*_0x321093,_0x504916[0x2]=_0xcd8480[0x2]+_0x5a8127[0x2]*_0x321093,_0x504916[0x3]=_0xcd8480[0x3]+_0x5a8127[0x3]*_0x321093,_0x504916;},_0x4c197a[_0x377efd(0x6cb)]=function(_0xb97739,_0x13292b){const _0x68ac4f=_0x377efd;var _0xd90e53=_0x13292b[0x0]-_0xb97739[0x0],_0xc4dfe=_0x13292b[0x1]-_0xb97739[0x1],_0x598821=_0x13292b[0x2]-_0xb97739[0x2],_0xca1cd6=_0x13292b[0x3]-_0xb97739[0x3];return Math[_0x68ac4f(0x1ba)](_0xd90e53*_0xd90e53+_0xc4dfe*_0xc4dfe+_0x598821*_0x598821+_0xca1cd6*_0xca1cd6);},_0x4c197a[_0x377efd(0x570)]=_0x4c197a[_0x377efd(0x6cb)],_0x4c197a[_0x377efd(0x323)]=function(_0x1ee66a,_0x151fe7){var _0xb0a893=_0x151fe7[0x0]-_0x1ee66a[0x0],_0x675fd8=_0x151fe7[0x1]-_0x1ee66a[0x1],_0x25079c=_0x151fe7[0x2]-_0x1ee66a[0x2],_0x865f34=_0x151fe7[0x3]-_0x1ee66a[0x3];return _0xb0a893*_0xb0a893+_0x675fd8*_0x675fd8+_0x25079c*_0x25079c+_0x865f34*_0x865f34;},_0x4c197a[_0x377efd(0x519)]=_0x4c197a[_0x377efd(0x323)],_0x4c197a['length']=function(_0x23c603){const _0x5d82cd=_0x377efd;var _0x3286ee=_0x23c603[0x0],_0x32378c=_0x23c603[0x1],_0x5df749=_0x23c603[0x2],_0x4f54fa=_0x23c603[0x3];return Math[_0x5d82cd(0x1ba)](_0x3286ee*_0x3286ee+_0x32378c*_0x32378c+_0x5df749*_0x5df749+_0x4f54fa*_0x4f54fa);},_0x4c197a['len']=_0x4c197a[_0x377efd(0x2ed)],_0x4c197a[_0x377efd(0x23b)]=function(_0x3fa6fc){var _0x265889=_0x3fa6fc[0x0],_0x3da861=_0x3fa6fc[0x1],_0xab16b1=_0x3fa6fc[0x2],_0x20c9f9=_0x3fa6fc[0x3];return _0x265889*_0x265889+_0x3da861*_0x3da861+_0xab16b1*_0xab16b1+_0x20c9f9*_0x20c9f9;},_0x4c197a['sqrLen']=_0x4c197a[_0x377efd(0x23b)],_0x4c197a[_0x377efd(0x196)]=function(_0x36646f,_0x477b7d){return _0x36646f[0x0]=-_0x477b7d[0x0],_0x36646f[0x1]=-_0x477b7d[0x1],_0x36646f[0x2]=-_0x477b7d[0x2],_0x36646f[0x3]=-_0x477b7d[0x3],_0x36646f;},_0x4c197a[_0x377efd(0x14d)]=function(_0x2cd56c,_0x47ae3c){return _0x2cd56c[0x0]=0x1/_0x47ae3c[0x0],_0x2cd56c[0x1]=0x1/_0x47ae3c[0x1],_0x2cd56c[0x2]=0x1/_0x47ae3c[0x2],_0x2cd56c[0x3]=0x1/_0x47ae3c[0x3],_0x2cd56c;},_0x4c197a[_0x377efd(0x22b)]=function(_0x483f7d,_0x501250){const _0x27f6bd=_0x377efd;var _0x2d64a4=_0x501250[0x0],_0x3b8f10=_0x501250[0x1],_0x2eef0d=_0x501250[0x2],_0x27b004=_0x501250[0x3],_0x5c37e3=_0x2d64a4*_0x2d64a4+_0x3b8f10*_0x3b8f10+_0x2eef0d*_0x2eef0d+_0x27b004*_0x27b004;return _0x5c37e3>0x0&&(_0x5c37e3=0x1/Math[_0x27f6bd(0x1ba)](_0x5c37e3),_0x483f7d[0x0]=_0x2d64a4*_0x5c37e3,_0x483f7d[0x1]=_0x3b8f10*_0x5c37e3,_0x483f7d[0x2]=_0x2eef0d*_0x5c37e3,_0x483f7d[0x3]=_0x27b004*_0x5c37e3),_0x483f7d;},_0x4c197a[_0x377efd(0x50b)]=function(_0x2bf9ed,_0x1849fd){return _0x2bf9ed[0x0]*_0x1849fd[0x0]+_0x2bf9ed[0x1]*_0x1849fd[0x1]+_0x2bf9ed[0x2]*_0x1849fd[0x2]+_0x2bf9ed[0x3]*_0x1849fd[0x3];},_0x4c197a[_0x377efd(0x6bb)]=function(_0x69c65d,_0x3ffb01,_0x5702f1,_0x45cce7){var _0x12e763=_0x3ffb01[0x0],_0xd89e0e=_0x3ffb01[0x1],_0xde20d3=_0x3ffb01[0x2],_0x27ebc1=_0x3ffb01[0x3];return _0x69c65d[0x0]=_0x12e763+_0x45cce7*(_0x5702f1[0x0]-_0x12e763),_0x69c65d[0x1]=_0xd89e0e+_0x45cce7*(_0x5702f1[0x1]-_0xd89e0e),_0x69c65d[0x2]=_0xde20d3+_0x45cce7*(_0x5702f1[0x2]-_0xde20d3),_0x69c65d[0x3]=_0x27ebc1+_0x45cce7*(_0x5702f1[0x3]-_0x27ebc1),_0x69c65d;},_0x4c197a[_0x377efd(0x202)]=function(_0x25b734,_0x52fc5d){const _0x4f8271=_0x377efd;return _0x52fc5d=_0x52fc5d||0x1,_0x25b734[0x0]=_0x3046e[_0x4f8271(0x193)](),_0x25b734[0x1]=_0x3046e[_0x4f8271(0x193)](),_0x25b734[0x2]=_0x3046e[_0x4f8271(0x193)](),_0x25b734[0x3]=_0x3046e[_0x4f8271(0x193)](),_0x4c197a['normalize'](_0x25b734,_0x25b734),_0x4c197a[_0x4f8271(0x7ef)](_0x25b734,_0x25b734,_0x52fc5d),_0x25b734;},_0x4c197a[_0x377efd(0x1e7)]=function(_0x417b73,_0x23b13c,_0x39e5d0){var _0x51c1a7=_0x23b13c[0x0],_0xced996=_0x23b13c[0x1],_0x3a5b65=_0x23b13c[0x2],_0x51e5d1=_0x23b13c[0x3];return _0x417b73[0x0]=_0x39e5d0[0x0]*_0x51c1a7+_0x39e5d0[0x4]*_0xced996+_0x39e5d0[0x8]*_0x3a5b65+_0x39e5d0[0xc]*_0x51e5d1,_0x417b73[0x1]=_0x39e5d0[0x1]*_0x51c1a7+_0x39e5d0[0x5]*_0xced996+_0x39e5d0[0x9]*_0x3a5b65+_0x39e5d0[0xd]*_0x51e5d1,_0x417b73[0x2]=_0x39e5d0[0x2]*_0x51c1a7+_0x39e5d0[0x6]*_0xced996+_0x39e5d0[0xa]*_0x3a5b65+_0x39e5d0[0xe]*_0x51e5d1,_0x417b73[0x3]=_0x39e5d0[0x3]*_0x51c1a7+_0x39e5d0[0x7]*_0xced996+_0x39e5d0[0xb]*_0x3a5b65+_0x39e5d0[0xf]*_0x51e5d1,_0x417b73;},_0x4c197a[_0x377efd(0x799)]=function(_0x3c0d55,_0x530b44,_0x2fcb67){var _0xf244e8=_0x530b44[0x0],_0x3cb0b1=_0x530b44[0x1],_0x38730d=_0x530b44[0x2],_0x2521c6=_0x2fcb67[0x0],_0x411edc=_0x2fcb67[0x1],_0xa60455=_0x2fcb67[0x2],_0x52cf72=_0x2fcb67[0x3],_0x37868d=_0x52cf72*_0xf244e8+_0x411edc*_0x38730d-_0xa60455*_0x3cb0b1,_0x2f6d6b=_0x52cf72*_0x3cb0b1+_0xa60455*_0xf244e8-_0x2521c6*_0x38730d,_0x54dc38=_0x52cf72*_0x38730d+_0x2521c6*_0x3cb0b1-_0x411edc*_0xf244e8,_0x4fe99b=-_0x2521c6*_0xf244e8-_0x411edc*_0x3cb0b1-_0xa60455*_0x38730d;return _0x3c0d55[0x0]=_0x37868d*_0x52cf72+_0x4fe99b*-_0x2521c6+_0x2f6d6b*-_0xa60455-_0x54dc38*-_0x411edc,_0x3c0d55[0x1]=_0x2f6d6b*_0x52cf72+_0x4fe99b*-_0x411edc+_0x54dc38*-_0x2521c6-_0x37868d*-_0xa60455,_0x3c0d55[0x2]=_0x54dc38*_0x52cf72+_0x4fe99b*-_0xa60455+_0x37868d*-_0x411edc-_0x2f6d6b*-_0x2521c6,_0x3c0d55[0x3]=_0x530b44[0x3],_0x3c0d55;},_0x4c197a[_0x377efd(0x558)]=(function(){const _0x371133=_0x377efd;var _0x15e417=_0x4c197a[_0x371133(0x4e1)]();return function(_0x4fff07,_0x7f91af,_0x441562,_0x25ba3f,_0x29fc51,_0x2588a5){const _0x593a2d=_0x371133;var _0x3d8ee7,_0x594c94;!_0x7f91af&&(_0x7f91af=0x4);!_0x441562&&(_0x441562=0x0);_0x25ba3f?_0x594c94=Math[_0x593a2d(0x3ac)](_0x25ba3f*_0x7f91af+_0x441562,_0x4fff07[_0x593a2d(0x2ed)]):_0x594c94=_0x4fff07['length'];for(_0x3d8ee7=_0x441562;_0x3d8ee7<_0x594c94;_0x3d8ee7+=_0x7f91af){_0x15e417[0x0]=_0x4fff07[_0x3d8ee7],_0x15e417[0x1]=_0x4fff07[_0x3d8ee7+0x1],_0x15e417[0x2]=_0x4fff07[_0x3d8ee7+0x2],_0x15e417[0x3]=_0x4fff07[_0x3d8ee7+0x3],_0x29fc51(_0x15e417,_0x15e417,_0x2588a5),_0x4fff07[_0x3d8ee7]=_0x15e417[0x0],_0x4fff07[_0x3d8ee7+0x1]=_0x15e417[0x1],_0x4fff07[_0x3d8ee7+0x2]=_0x15e417[0x2],_0x4fff07[_0x3d8ee7+0x3]=_0x15e417[0x3];}return _0x4fff07;};}()),_0x4c197a[_0x377efd(0x471)]=function(_0x26eaf6){return'vec4('+_0x26eaf6[0x0]+',\x20'+_0x26eaf6[0x1]+',\x20'+_0x26eaf6[0x2]+',\x20'+_0x26eaf6[0x3]+')';},_0x2fd888['exports']=_0x4c197a;},function(_0x4f91a0,_0x231a6b,_0x6d633d){const _0x222baa=_0x5ecf;var _0xc4d914=_0x6d633d(0x1),_0x56e85c={};_0x56e85c[_0x222baa(0x4e1)]=function(){const _0x51646b=_0x222baa;var _0x716807=new _0xc4d914[(_0x51646b(0x2aa))](0x2);return _0x716807[0x0]=0x0,_0x716807[0x1]=0x0,_0x716807;},_0x56e85c[_0x222baa(0x43f)]=function(_0x402f27){const _0x479321=_0x222baa;var _0x3bd7c3=new _0xc4d914[(_0x479321(0x2aa))](0x2);return _0x3bd7c3[0x0]=_0x402f27[0x0],_0x3bd7c3[0x1]=_0x402f27[0x1],_0x3bd7c3;},_0x56e85c[_0x222baa(0x84f)]=function(_0x2a42ac,_0x599143){const _0x280e02=_0x222baa;var _0x20713f=new _0xc4d914[(_0x280e02(0x2aa))](0x2);return _0x20713f[0x0]=_0x2a42ac,_0x20713f[0x1]=_0x599143,_0x20713f;},_0x56e85c[_0x222baa(0x3e5)]=function(_0x374be8,_0x582e22){return _0x374be8[0x0]=_0x582e22[0x0],_0x374be8[0x1]=_0x582e22[0x1],_0x374be8;},_0x56e85c[_0x222baa(0x80f)]=function(_0x369e10,_0x2a6635,_0x583c1d){return _0x369e10[0x0]=_0x2a6635,_0x369e10[0x1]=_0x583c1d,_0x369e10;},_0x56e85c[_0x222baa(0xed)]=function(_0x215ce9,_0x320822,_0x3bd234){return _0x215ce9[0x0]=_0x320822[0x0]+_0x3bd234[0x0],_0x215ce9[0x1]=_0x320822[0x1]+_0x3bd234[0x1],_0x215ce9;},_0x56e85c[_0x222baa(0x176)]=function(_0x38d7e1,_0x58f4f8,_0x44f829){return _0x38d7e1[0x0]=_0x58f4f8[0x0]-_0x44f829[0x0],_0x38d7e1[0x1]=_0x58f4f8[0x1]-_0x44f829[0x1],_0x38d7e1;},_0x56e85c[_0x222baa(0x295)]=_0x56e85c[_0x222baa(0x176)],_0x56e85c['multiply']=function(_0x39c309,_0x384e33,_0x296b2c){return _0x39c309[0x0]=_0x384e33[0x0]*_0x296b2c[0x0],_0x39c309[0x1]=_0x384e33[0x1]*_0x296b2c[0x1],_0x39c309;},_0x56e85c[_0x222baa(0x74f)]=_0x56e85c[_0x222baa(0x12c)],_0x56e85c[_0x222baa(0x307)]=function(_0x4e1469,_0x2f6fab,_0x1d8e41){return _0x4e1469[0x0]=_0x2f6fab[0x0]/_0x1d8e41[0x0],_0x4e1469[0x1]=_0x2f6fab[0x1]/_0x1d8e41[0x1],_0x4e1469;},_0x56e85c[_0x222baa(0x51d)]=_0x56e85c[_0x222baa(0x307)],_0x56e85c[_0x222baa(0x3ac)]=function(_0xaf5349,_0x401443,_0x19ee1e){const _0x2ebc08=_0x222baa;return _0xaf5349[0x0]=Math[_0x2ebc08(0x3ac)](_0x401443[0x0],_0x19ee1e[0x0]),_0xaf5349[0x1]=Math['min'](_0x401443[0x1],_0x19ee1e[0x1]),_0xaf5349;},_0x56e85c['max']=function(_0x503545,_0x55162d,_0x3c6e5f){const _0x76a90=_0x222baa;return _0x503545[0x0]=Math['max'](_0x55162d[0x0],_0x3c6e5f[0x0]),_0x503545[0x1]=Math[_0x76a90(0x6d4)](_0x55162d[0x1],_0x3c6e5f[0x1]),_0x503545;},_0x56e85c['scale']=function(_0x4635ea,_0x1bf528,_0x4b6970){return _0x4635ea[0x0]=_0x1bf528[0x0]*_0x4b6970,_0x4635ea[0x1]=_0x1bf528[0x1]*_0x4b6970,_0x4635ea;},_0x56e85c[_0x222baa(0x128)]=function(_0xbf3d53,_0x43b55b,_0x8181b5,_0x224b12){return _0xbf3d53[0x0]=_0x43b55b[0x0]+_0x8181b5[0x0]*_0x224b12,_0xbf3d53[0x1]=_0x43b55b[0x1]+_0x8181b5[0x1]*_0x224b12,_0xbf3d53;},_0x56e85c[_0x222baa(0x6cb)]=function(_0x1f7ec6,_0x3b5e1a){const _0x4850b1=_0x222baa;var _0x451e67=_0x3b5e1a[0x0]-_0x1f7ec6[0x0],_0x2911f=_0x3b5e1a[0x1]-_0x1f7ec6[0x1];return Math[_0x4850b1(0x1ba)](_0x451e67*_0x451e67+_0x2911f*_0x2911f);},_0x56e85c[_0x222baa(0x570)]=_0x56e85c[_0x222baa(0x6cb)],_0x56e85c[_0x222baa(0x323)]=function(_0x50b370,_0x7e8c63){var _0x337891=_0x7e8c63[0x0]-_0x50b370[0x0],_0x499c47=_0x7e8c63[0x1]-_0x50b370[0x1];return _0x337891*_0x337891+_0x499c47*_0x499c47;},_0x56e85c['sqrDist']=_0x56e85c[_0x222baa(0x323)],_0x56e85c['length']=function(_0x4b5c5b){var _0x90231=_0x4b5c5b[0x0],_0x584179=_0x4b5c5b[0x1];return Math['sqrt'](_0x90231*_0x90231+_0x584179*_0x584179);},_0x56e85c['len']=_0x56e85c[_0x222baa(0x2ed)],_0x56e85c['squaredLength']=function(_0x4f8b2d){var _0x5af8e4=_0x4f8b2d[0x0],_0x58a8d3=_0x4f8b2d[0x1];return _0x5af8e4*_0x5af8e4+_0x58a8d3*_0x58a8d3;},_0x56e85c[_0x222baa(0x6f2)]=_0x56e85c[_0x222baa(0x23b)],_0x56e85c[_0x222baa(0x196)]=function(_0x33ebf5,_0x13512e){return _0x33ebf5[0x0]=-_0x13512e[0x0],_0x33ebf5[0x1]=-_0x13512e[0x1],_0x33ebf5;},_0x56e85c['inverse']=function(_0x50e98d,_0x4a9436){return _0x50e98d[0x0]=0x1/_0x4a9436[0x0],_0x50e98d[0x1]=0x1/_0x4a9436[0x1],_0x50e98d;},_0x56e85c[_0x222baa(0x22b)]=function(_0x4b24ab,_0x2907e4){var _0x54b78b=_0x2907e4[0x0],_0x57abd3=_0x2907e4[0x1],_0x3d1f3b=_0x54b78b*_0x54b78b+_0x57abd3*_0x57abd3;return _0x3d1f3b>0x0&&(_0x3d1f3b=0x1/Math['sqrt'](_0x3d1f3b),_0x4b24ab[0x0]=_0x2907e4[0x0]*_0x3d1f3b,_0x4b24ab[0x1]=_0x2907e4[0x1]*_0x3d1f3b),_0x4b24ab;},_0x56e85c['dot']=function(_0x2846ea,_0x1c3ef7){return _0x2846ea[0x0]*_0x1c3ef7[0x0]+_0x2846ea[0x1]*_0x1c3ef7[0x1];},_0x56e85c[_0x222baa(0x844)]=function(_0x276fc0,_0x704d23,_0x5525d3){var _0x183de0=_0x704d23[0x0]*_0x5525d3[0x1]-_0x704d23[0x1]*_0x5525d3[0x0];return _0x276fc0[0x0]=_0x276fc0[0x1]=0x0,_0x276fc0[0x2]=_0x183de0,_0x276fc0;},_0x56e85c[_0x222baa(0x6bb)]=function(_0x17ca9e,_0x11aceb,_0x56fc0f,_0x39ec85){var _0x3627af=_0x11aceb[0x0],_0x4729bf=_0x11aceb[0x1];return _0x17ca9e[0x0]=_0x3627af+_0x39ec85*(_0x56fc0f[0x0]-_0x3627af),_0x17ca9e[0x1]=_0x4729bf+_0x39ec85*(_0x56fc0f[0x1]-_0x4729bf),_0x17ca9e;},_0x56e85c[_0x222baa(0x202)]=function(_0x52ac59,_0x24acd8){const _0x20f325=_0x222baa;_0x24acd8=_0x24acd8||0x1;var _0x1c3ec6=_0xc4d914[_0x20f325(0x193)]()*0x2*Math['PI'];return _0x52ac59[0x0]=Math[_0x20f325(0x586)](_0x1c3ec6)*_0x24acd8,_0x52ac59[0x1]=Math[_0x20f325(0x1c0)](_0x1c3ec6)*_0x24acd8,_0x52ac59;},_0x56e85c[_0x222baa(0x206)]=function(_0x15fe14,_0x60521c,_0x44195a){var _0x2610d8=_0x60521c[0x0],_0x3668b5=_0x60521c[0x1];return _0x15fe14[0x0]=_0x44195a[0x0]*_0x2610d8+_0x44195a[0x2]*_0x3668b5,_0x15fe14[0x1]=_0x44195a[0x1]*_0x2610d8+_0x44195a[0x3]*_0x3668b5,_0x15fe14;},_0x56e85c[_0x222baa(0x846)]=function(_0xf49dd8,_0x55823b,_0x180cbe){var _0x436bb1=_0x55823b[0x0],_0x15733f=_0x55823b[0x1];return _0xf49dd8[0x0]=_0x180cbe[0x0]*_0x436bb1+_0x180cbe[0x2]*_0x15733f+_0x180cbe[0x4],_0xf49dd8[0x1]=_0x180cbe[0x1]*_0x436bb1+_0x180cbe[0x3]*_0x15733f+_0x180cbe[0x5],_0xf49dd8;},_0x56e85c[_0x222baa(0x635)]=function(_0x39ad71,_0x297617,_0x4592d4){var _0x5dae91=_0x297617[0x0],_0x381512=_0x297617[0x1];return _0x39ad71[0x0]=_0x4592d4[0x0]*_0x5dae91+_0x4592d4[0x3]*_0x381512+_0x4592d4[0x6],_0x39ad71[0x1]=_0x4592d4[0x1]*_0x5dae91+_0x4592d4[0x4]*_0x381512+_0x4592d4[0x7],_0x39ad71;},_0x56e85c[_0x222baa(0x1e7)]=function(_0x14dc69,_0x56de5d,_0x47800e){var _0x36ca3d=_0x56de5d[0x0],_0x26c9cd=_0x56de5d[0x1];return _0x14dc69[0x0]=_0x47800e[0x0]*_0x36ca3d+_0x47800e[0x4]*_0x26c9cd+_0x47800e[0xc],_0x14dc69[0x1]=_0x47800e[0x1]*_0x36ca3d+_0x47800e[0x5]*_0x26c9cd+_0x47800e[0xd],_0x14dc69;},_0x56e85c[_0x222baa(0x558)]=(function(){const _0x58dda0=_0x222baa;var _0x5791c2=_0x56e85c[_0x58dda0(0x4e1)]();return function(_0x561bcc,_0x4335d6,_0x1973b6,_0x4c1f9c,_0x3dc530,_0x2c6c81){const _0x3d43b0=_0x58dda0;var _0x26799a,_0x4d2a8a;!_0x4335d6&&(_0x4335d6=0x2);!_0x1973b6&&(_0x1973b6=0x0);_0x4c1f9c?_0x4d2a8a=Math[_0x3d43b0(0x3ac)](_0x4c1f9c*_0x4335d6+_0x1973b6,_0x561bcc[_0x3d43b0(0x2ed)]):_0x4d2a8a=_0x561bcc[_0x3d43b0(0x2ed)];for(_0x26799a=_0x1973b6;_0x26799a<_0x4d2a8a;_0x26799a+=_0x4335d6){_0x5791c2[0x0]=_0x561bcc[_0x26799a],_0x5791c2[0x1]=_0x561bcc[_0x26799a+0x1],_0x3dc530(_0x5791c2,_0x5791c2,_0x2c6c81),_0x561bcc[_0x26799a]=_0x5791c2[0x0],_0x561bcc[_0x26799a+0x1]=_0x5791c2[0x1];}return _0x561bcc;};}()),_0x56e85c['str']=function(_0x535e3c){const _0x254544=_0x222baa;return _0x254544(0x661)+_0x535e3c[0x0]+',\x20'+_0x535e3c[0x1]+')';},_0x4f91a0[_0x222baa(0x78b)]=_0x56e85c;}]);}));;}
+APP_VERSION = '0';
+
+PW_VERSION = '2.5.4';
+
+CURRENT_MM = 'mm'
+
+class ParentEvent {
+	
+	static children;
+	
+	static async authorization(body){
+		
+		if(!body.id){
+			
+			if(ParentEvent.children){
+				
+				ParentEvent.children.close();
+				
+			}
+			
+		}
+		
+		await App.storage.set({ id: body.id, token: body.token, login: body.login, fraction: body.fraction });
+		
+		if(ParentEvent.children){
+			
+			ParentEvent.children.close();
+			
+		}
+		
+		View.show('castle');
+		
+	}
+
+	static async bind(body){
+		
+		if(ParentEvent.children){
+			
+			ParentEvent.children.close();
+			
+		}
+		
+		App.error(body);
+		
+	}
+	
+}
+
+class Lang {
+
+	static target = 'ru'; // TODO get from the system
+	// TODO add UI dropdown?
+
+	static default = 'ru';
+
+	static list = {
+		en: {
+			fight: 'Fight!',
+			enterTextAndPressEnter: 'Enter the text and press Enter',
+			ready: 'Ready',
+			library: 'Library',
+			menu: 'Меню',
+			preferences: 'Preferences',
+			windowMode: 'Window mode',
+			radminPriority: 'RadminVPN Priority',
+			threeD: '3D',
+			volume: 'Volume',
+			volumeMusic: 'Volume of music',
+			volumeSound: 'Volume of sounds',
+			back: 'Back',
+			soundHelp: 'If the sound settings are lost, you can adjust the volume in the mixer: right-click on the sound icon on the Taskbar -> Volume Mixer -> Game icon -> make it quieter',
+			support: 'Support',
+			supportDesk: 'Questions? Feel free to contact us:',
+			accountSwitch: 'Switch account',
+			exit: 'Exit from Prime World',
+			version: 'Version',
+			health: 'Health',
+			energy: 'Energy',
+			speed: 'Speed',
+			strength: 'Strength',
+			intelligence: 'Intelligence',
+			agility: 'Agility',
+			dexterity: 'Dexterity',
+			stamina: 'Stamina',
+			will: 'Will',
+			damage: 'Damage',
+			criticalHit: 'Critical Hit',
+			attacksPerSecond: 'Attacks per second',
+			penetration: 'Penetration',
+			defencePsys: 'Defence Psysical',
+			defenceMagic: 'Defence Magic',
+			skins: 'Skins',
+			steamauthTitle: 'Login with Steam',
+			steamauth: 'By clicking Continue, you will register a new account! If you want to log in to your current PW Classic account, you must first link your Steam account from the settings menu.',
+		},
+		ru: {
+			fight: 'В бой!',
+			enterTextAndPressEnter: 'Введите текст и нажмите Enter',
+			ready: 'Готов',
+			library: 'Библиотека',
+			menu: 'Меню',
+			preferences: 'Настройки',
+			windowMode: 'Оконный режим',
+			radminPriority: 'Приоритет RadminVPN',
+			threeD: '3D графика',
+			volume: 'Общая громкость',
+			volumeMusic: 'Громкость музыки',
+			volumeSound: 'Громкость звуков',
+			back: 'Назад',
+			soundHelp: 'Если сбиваются настройки звука, то можно отрегулировать в микшере громкости: ПКМ на значок звука на Панели задач -> Микшер громкости -> Значок игры -> делаете тише',
+			support: 'Поддержка',
+			supportDesk: 'Если у Вас есть вопросы, Вы можете связаться с нами через:',
+			accountSwitch: 'Сменить аккаунт',
+			exit: 'Выйти из Prime World',
+			version: 'Версия',
+			health: 'Здоровье',
+			energy: 'Энергия',
+			speed: 'Скорость',
+			strength: 'Сила',
+			intelligence: 'Разум',
+			agility: 'Проворство',
+			dexterity: 'Хитрость',
+			stamina: 'Стойкость',
+			will: 'Воля',
+			damage: 'Урон',
+			criticalHit: 'Шанс крита',
+			attacksPerSecond: 'Скорость атаки',
+			penetration: 'Пробивание',
+			defencePsys: 'Защита тела',
+			defenceMagic: 'Защита духа',
+			skins: 'Скины',
+			steamauthTitle: 'Вход через Steam',
+			steamauth: 'Нажимая кнопку Продолжить, произойдёт регистрация нового аккаунта! Если Вы хотите осуществить вход в свой текущий аккаунт PW Classic, Вам необхоидмо сначала привязать свой Steam аккаунт из меню настроек.',
+		},
+		be: {
+			fight: 'У бой!',
+			enterTextAndPressEnter: 'Увядзіце тэкст і націсніце Enter',
+			ready: 'Гатоў',
+			library: 'Бібліятэка',
+			menu: 'Мяню',
+			preferences: 'Прылады',
+			windowMode: 'Аконны рэжым',
+			radminPriority: 'Прыярытэт RadminVPN',
+			threeD: '3D графіка',
+			volume: 'Агульная гучнасць',
+			volumeMusic: 'Гучнасць музыкі',
+			volumeSound: 'Гучнасць гукаў',
+			back: 'Назад',
+			soundHelp: 'Калі збіваюцца налады гуку, то можна адрэгуляваць ў мікшар гучнасці: правы пстрык мышы на значок гуку на панэлі задач -> Мікшар гучнасці -> Значок гульні -> рабіце цішэй',
+			support: 'Падтрымка',
+			supportDesk: 'Калі ў вас ёсць пытанні, вы можаце звязацца з намі праз:',
+			accountSwitch: 'Змяніць улiковы запiс',
+			exit: 'Выйсці з Prime World',
+			version: 'Версія',
+			health: 'Здароўе',
+			energy: 'Энергія',
+			speed: 'Хуткасць',
+			strength: 'Сіла',
+			intelligence: 'Розум',
+			agility: 'Шпаркасць',
+			dexterity: 'Хітрасць',
+			stamina: 'Цягавітасьць',
+			will: 'Воля',
+			damage: 'Шкода',
+			criticalHit: 'Шанец крытычнага траплення',
+			attacksPerSecond: 'Хуткасць атакі',
+			penetration: 'Прабіванне',
+			defencePsys: 'Абарона цела',
+			defenceMagic: 'Абарона духу',
+			skins: 'Абалонкі',
+			steamauthTitle: 'Увайсці праз steam',
+			steamauth: 'Націскаючы кнопку Працягнуць, адбудзецца рэгістрацыя новага акаўнта! Калі Вы жадаеце ажыццявіць уваход у свой бягучы акаўнт PW Classic, Вам неабходна спачатку прывязаць свой Steam акаўнт з меню налад.',
+		},
+
+	};
+
+	static text(word) {
+		if (word in Lang.list[Lang.target]) {
+			return Lang.list[Lang.target][word];
+		}
+
+		return Lang.list[Lang.default][word];
+	}
+
+}
+
+class News {
+	// создаем локальную базу данных
+	static async init(){
+		
+		News.db = new DataBase('list',[{name:'list',options:{keyPath:'id'}}],1);
+		
+		await News.db.init();
+		
+	}
+	
+	static async create(text, id = 0){
+		
+		if(!id){
+			// локальная новость с отрицательным идентификатором
+			id = -Date.now();
+			
+		}
+		
+		id = Number(id);
+		
+		if(await News.db.get('list',id)){
+			
+			return;
+			
+		}
+		// id - угикальный ключ, text - текст, status - прочитано да/нет, иначе уведомление? 
+		await News.db.add('list',{id:id,text:text,status:0});
+		
+	}
+	
+	static async update(){
+		
+		//let request = await App.api.request('user','news');
+		let request = [{id:'Привет мир!',text:'Тестовая новость с сервера'}]; // демо данные
+		
+		for(let item of request){
+			
+			News.create(item.id,item.text);
+			
+		}
+		
+	}
+	// выводим все новости
+	static async view(){
+		
+		let list = await News.db.getAll('list'), notifications = 0;
+		
+		for(let item of list){
+			
+			if(!item.status){
+				
+				notifications++;
+				
+			}
+			
+		}
+		// list - список новостей, notifications - количество не прочитанных новостей (уведомления)
+		return {list:list,notifications:notifications};
+		
+	}
+	// вешаем событие на мышь или любой другой способ, чтобы убедиться, что пользователь прочитал новость
+	static async onStatus(id){
+		
+		await News.set(id,{status:1});
+		
+	}
+	
+	static async set(id,object){
+		
+		if('id' in object){
+			
+			throw 'Нельзя перезаписать идентификатор';
+			
+		}
+		
+		id = Number(id);
+		
+		let item = await News.db.get('list',id);
+		
+		if(!item){
+			
+			throw 'Новость не найдена';
+			
+		}
+		
+		await News.db.add('list',Object.assign(item,object));
+		
+	}
+	
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+	
+	window.addEventListener('message',(event) => {
+		
+		if( !('action' in event.data) ){
+			
+			return;
+			
+		}
+		
+		if(event.data.action in ParentEvent){
+			
+			ParentEvent[event.data.action](event.data.body);
+			
+		}
+		
+		console.log('event.data',event.data);
+		
+	});
+
+	Splash.init();
+
+	NativeAPI.init();
+
+	NativeAPI.update((data) => {
+
+		if (View.updateProgress) {
+
+			Splash.hide();
+
+		}
+
+		if (data.update) {
+
+			View.updateProgress = View.progress();
+
+			View.updateProgress.firstChild.style.width = data.total + '%';
+
+			View.updateProgress.lastChild.innerText = `${data.title} ${data.total}%...`;
+
+		}
+
+	});
+
+	App.init();
+
+	Settings.init();
+
+	let testRadminConnection = async () => {
+		let hasConnection = await PWGame.testServerConnection(PWGame.gameServerIps[PWGame.RADMIN_GAME_SERVER_IP]);
+		if (hasConnection) {
+			PWGame.radminHasConnection = true;
+		}
+	}
+	let testMainConnection = async () => {
+		let hasConnection = await PWGame.testServerConnection(PWGame.gameServerIps[PWGame.MAIN_GAME_SERVER_IP]);
+		if (hasConnection) {
+			PWGame.mainServerHasConnection = true;
+		}
+	}
+	setTimeout(_ => {
+		testRadminConnection();
+		testMainConnection();
+	}, 3000);
+});
+
+class DataBase {
+
+	constructor(name, structure, version = 1) {
+
+		if (!('indexedDB' in window)) {
+
+			throw 'Отсутствует поддержка IndexedDB!';
+
+		}
+
+		this.name = name;
+
+		this.structure = structure;
+
+		this.version = version;
+
+	}
+
+	async init() {
+
+		let request = indexedDB.open(this.name, this.version);
+
+		request.addEventListener('upgradeneeded', async (event) => await this.upgrade(event));
+
+		return new Promise((resolve, reject) => {
+
+			request.addEventListener('success', event => {
+
+				this.link = event.target.result;
+
+				resolve();
+
+			});
+
+			request.addEventListener('error', reject);
+
+		});
+
+	}
+
+	async add(name, value, key) {
+
+		let transaction, table, result;
+
+		transaction = this.link.transaction(name, 'readwrite');
+
+		table = transaction.objectStore(name);
+
+		result = table.put(value, key);
+
+		return new Promise((resolve, reject) => {
+
+			result.addEventListener('success', event => {
+
+				resolve(event.target.result);
+
+			});
+
+			//transaction.addEventListener('complete',resolve);
+
+			transaction.addEventListener('error', reject);
+
+		});
+
+	}
+
+	async get(name, key) {
+
+		let transaction, table, result;
+
+		transaction = this.link.transaction(name, 'readonly');
+
+		table = transaction.objectStore(name);
+
+		result = table.get(key);
+
+		return await new Promise((resolve, reject) => {
+
+			result.addEventListener('success', event => {
+
+				resolve(event.target.result);
+
+			});
+
+			result.addEventListener('error', reject);
+
+		});
+
+	}
+
+	async getAll(name, key) {
+
+		let transaction, table, result;
+
+		transaction = this.link.transaction(name, 'readonly');
+
+		table = transaction.objectStore(name);
+
+		result = table.getAll(key);
+
+		return new Promise((resolve, reject) => {
+
+			result.addEventListener('success', event => {
+
+				resolve(event.target.result);
+
+			});
+
+			result.addEventListener('error', reject);
+
+		});
+
+	}
+
+	async getIndexAllSync(name, nameIndex, nameKey, callback) {
+
+		let transaction, table, index, result;
+
+		transaction = this.link.transaction(name, 'readonly');
+
+		table = transaction.objectStore(name);
+
+		index = table.index(nameIndex);
+
+		result = index.getAll(nameKey);
+
+		result.addEventListener('success', event => {
+
+			callback(event.target.result);
+
+		});
+
+		result.addEventListener('error', (error) => {
+
+			throw error;
+
+		});
+
+		// нужно работать с курсором для экономии памяти!!!, иначе при большом количестве информации её будет невозможно вытащить... будет ошибка при попытке получения большого массива
+		//let request = books.openCursor(); // курсору нужно передать инфу о количестве штук, как я понимаю, по умолчанию он по 1 записи выдает
+		// вызывается для каждой найденной курсором книги
+		//request.onsuccess = function() {
+
+		//let cursor = request.result;
+
+		//if (cursor) {
+
+		//let key = cursor.key; // ключ книги (поле id)
+
+		//let value = cursor.value; // объект книги
+
+		//console.log(key, value);
+
+		//cursor.continue();
+
+		//} else {
+
+		//console.log("Книг больше нет");
+
+		//}};
+
+	}
+
+	async getIndexAll(name, nameIndex, nameKey) {
+
+		let transaction, table, index, result;
+
+		transaction = this.link.transaction(name, 'readonly');
+
+		table = transaction.objectStore(name);
+
+		index = table.index(nameIndex);
+
+		result = index.getAll(nameKey);
+
+		return new Promise((resolve, reject) => {
+
+			result.addEventListener('success', event => {
+
+				resolve(event.target.result);
+
+			});
+
+			result.addEventListener('error', reject);
+
+		});
+
+	}
+
+	async multi(object) {
+
+		let requests = new Array();
+
+		for (let table in object) {
+
+			switch (object[table].method) {
+
+				case 'get': requests.push(this.get(table, object[table].id)); break;
+
+				case 'getIndexAll': requests.push(this.getIndexAll(table, object[table].key, object[table].id)); break;
+
+				default: throw `Неизвестный метод ${object[table].method}`; break;
+
+			}
+
+		}
+
+		let i = 0, result = await Promise.all(requests);
+
+		for (let table in object) {
+
+			object[table] = result[i];
+
+			i++;
+
+		}
+
+		return object;
+
+	}
+
+	async deleteIndexAll(name, nameIndex, nameKey) {
+
+		let keys = await this.getIndexAll(name, nameIndex, nameKey);
+
+		if (!keys) {
+
+			return;
+
+		}
+
+		for (let item of keys) {
+
+			await this.delete(name, 'id');
+
+		}
+
+		return true;
+
+	}
+
+	async delete(name, key) {
+
+		let transaction, table, result;
+
+		transaction = this.link.transaction(name, 'readwrite');
+
+		table = transaction.objectStore(name);
+
+		result = table.delete(key);
+
+		return new Promise((resolve, reject) => {
+
+			result.addEventListener('success', event => {
+
+				resolve(event);
+
+			});
+
+			result.addEventListener('error', reject);
+
+		});
+
+	}
+
+	async clear(name) {
+
+		let transaction = this.link.transaction(name, 'readwrite');
+
+		return transaction.objectStore(name).clear();
+
+	}
+
+	async upgrade(event) {
+
+		let db = event.target.result;
+
+		if (!this.structure) {
+
+			throw `Для создания базы-данных, необходима разметка структуры`;
+
+		}
+
+		let objectStore, table, index;
+
+		for (objectStore of this.structure) {
+
+			let find = false;
+
+			try {
+
+				for (let value of db.objectStoreNames) { // DOMStringList метод contains нельзя использовать, устарело.
+
+					if (value == objectStore.name) {
+
+						find = true;
+
+						break;
+
+					}
+
+				}
+
+				if (find) {
+
+					if ('clear' in objectStore) {
+
+						db.deleteObjectStore(objectStore.name);
+
+					}
+					else {
+
+						continue;
+
+					}
+
+				}
+
+				table = db.createObjectStore(objectStore.name, objectStore.options);
+
+				if (objectStore.indexes) {
+
+					for (index of objectStore.indexes) {
+
+						table.createIndex(index.name, index.path);
+
+					}
+
+				}
+
+			}
+			catch (e) {
+
+				console.log(`Ошибочка, которую мы скрыли: ${e} :ибо как проверить на наличие таблицы? ;>`);
+
+			}
+
+		}
+
+	}
+
+}
+
+class Store {
+
+	static async init() {
+
+		Store.db = new DataBase('Storage', [{ name: 'keys', options: { keyPath: 'identify' }, indexes: [{ name: 'objects', path: 'object' }] }], 5);
+
+		return await Store.db.init();
+
+	}
+
+	static async get(object, key) {
+
+		let result = await Store.db.get('keys', `${object}.${key}`);
+
+		return (result) ? result.value : false;
+
+	}
+
+	static async getAll(object) {
+
+		let keys = await Store.db.getIndexAll('keys', 'objects', object);
+
+		if (!keys.length) {
+
+			return keys;
+
+		}
+
+		let result = new Object();
+
+		for (let item of keys) {
+
+			result[item.key] = item.value;
+
+		}
+
+		return result;
+
+	}
+
+	constructor(object) {
+
+		this.object = object;
+
+		this.local = new Object();
+
+	}
+
+	async init(defaultObject) {
+
+		let result, object;
+
+		result = await Store.db.getIndexAll('keys', 'objects', this.object);
+
+		if (result.length) {
+
+			for (object of result) {
+
+				this.local[object.key] = object.value;
+
+			}
+
+		}
+		else {
+
+			await this.set(defaultObject);
+
+		}
+
+	}
+
+	get data() {
+
+		return this.local;
+
+	}
+
+	async set(object) {
+
+		for (let key in object) {
+
+			await Store.db.add('keys', { identify: `${this.object}.${key}`, object: this.object, key: key, value: object[key] });
+
+			this.local[key] = object[key];
+
+		}
+
+	}
+
+	async getAll(object) {
+
+		let keys = await Store.db.getIndexAll('keys', 'objects', object);
+
+		if (!keys.length) {
+
+			return false;
+
+		}
+
+		let result = new Object();
+
+		for (let item of keys) {
+
+			result[item.key] = item.value;
+
+		}
+
+		return result;
+
+	}
+
+	static async delete(object) {
+
+		let keys = await Store.db.getIndexAll('keys', 'objects', object);
+
+		if (!keys) {
+
+			return;
+
+		}
+
+		for (let item of keys) {
+
+			await Store.db.delete('keys', item.identify);
+
+		}
+
+	}
+
+}
+
+class Api {
+
+	constructor(host, events) {
+
+		if( !('WebSocket' in window) ) {
+
+			throw 'Отсутствует поддержка WebSocket';
+			
+		}
+		
+		if(!Array.isArray(host)){
+			
+			throw 'Необходим массив хостов';
+			
+		}
+		
+		if(!host.length){
+			
+			throw 'Не указан хост';
+			
+		}
+		
+		this.WebSocket;
+
+		this.host = host;
+
+		this.MAIN_HOST = this.host[0];
+		
+		this.DISCONNECT_LAST_DATE_LIMIT_MS = 30000; // плюсуем неудачное соединение в указанном диапазоне времени
+		
+		this.DISCONNECT_LAST_DATE = Date.now(); // метка времени с последнего неудачного соединения 
+
+		this.DISCONNECT_TOTAL = 0; // количество неудачных соединений
+		
+		this.DISCONNECT_LIMIT = 3; // лимит неудачных соединений, чтобы перейти на другой хост (DISCONNECT_LIMIT * RECONNECT_TIME)
+		
+		this.RECONNECT_TIME = 1000; // через сколько делаем повторное соединение (1000 = 1 секунда)
+
+		this.awaiting = new Object();
+
+		this.events = (events) ? events : new Object();
+
+	}
+
+	async init(){
+		
+		await this.connect();
+		
+	}
+
+	async connect(delay = 0){
+		
+		return new Promise((resolve,reject) => {
+			
+			setTimeout( async () => {
+				
+				console.log(`Попытка соединения ${this.MAIN_HOST} (${this.DISCONNECT_TOTAL})...`);
+				
+				if(this.WebSocket){
+					
+					if(this.WebSocket.readyState == 1){
+						
+						return resolve();
+						
+					}
+					
+					await this.disconnect();
+					
+				}
+				
+				if(this.DISCONNECT_TOTAL >= this.DISCONNECT_LIMIT){
+					
+					this.hostChange();
+					
+				}
+				
+				this.WebSocket = new WebSocket(`${this.MAIN_HOST}/${App.storage.data.token}`);
+				
+				this.WebSocket.onmessage = (event) => this.message(event.data);
+				
+				this.WebSocket.onerror = (event) => {
+					console.log(`Разрыв соединения ${this.MAIN_HOST}...`,event);
+					App.error(`Разрыв соединения, подождите... [${this.DISCONNECT_TOTAL}]`,event);
+				};
+				
+				this.WebSocket.onclose = () => {
+					
+					this.connect(this.RECONNECT_TIME);
+					
+					reject();
+					
+				};
+				
+				this.WebSocket.onopen = () => {
+					
+					this.WebSocket.onclose = () => this.connect(this.RECONNECT_TIME);
+					
+					console.log(`Успешно подключились к ${this.MAIN_HOST}...`);
+					
+					if (this.MAIN_HOST != this.host[0]) {
+						App.ShowCurrentView();
+					}
+					
+					resolve();
+					
+				};
+				
+				// this.WebSocket.onerror = reject;
+				
+			},delay);
+			
+		});
+		
+	}
+	
+	async disconnect(){
+		console.log(`Закрываем соединение ${this.MAIN_HOST}...`);
+		App.error(`Закрыто соедниение... Выполняется переподключение, подождите... [${this.DISCONNECT_TOTAL}]`);
+		if(!this.WebSocket){
+			
+			return;
+			
+		}
+		
+		if( (Date.now() - this.DISCONNECT_LAST_DATE) < this.DISCONNECT_LAST_DATE_LIMIT_MS){
+			
+			this.DISCONNECT_TOTAL++;
+			
+		}
+		
+		this.DISCONNECT_LAST_DATE = Date.now();
+		
+		return new Promise((resolve,reject) => {
+			
+			if(this.WebSocket.readyState == 3){
+				
+				return resolve();
+				
+			}
+			
+			this.WebSocket.onclose = resolve;
+			
+			// this.WebSocket.onerror = reject;
+			
+			this.WebSocket.close();
+			
+		});
+		
+	}
+	
+	hostChange(){
+		
+		this.DISCONNECT_TOTAL = 0;
+		
+		if(this.host.length == 1){
+			
+			return;
+			
+		}
+		
+		let currentHost = 0;
+		for (let i = 0; i < this.host.length; ++i) {
+			if(this.MAIN_HOST == this.host[i]){
+				currentHost = i;
+				break;
+			}
+			}
+		App.error(`Подождите, подключение восстанавливается [${currentHost}]`);
+			
+		this.MAIN_HOST = this.host[(currentHost + 1) % this.host.length];
+		
+	}
+
+	async message(body) {
+
+		let json = JSON.parse(body);
+
+		console.log('Сообщение API', json);
+
+		if (!json) {
+
+			return;
+
+		}
+
+		if ('response' in json) {
+
+			let { request, data, error } = json.response;
+
+			if (!(request in this.awaiting)) {
+
+				return;
+
+			}
+
+			if (error) {
+
+				this.awaiting[request].reject(error);
+
+			}
+			else {
+
+				this.awaiting[request].resolve(data);
+
+			}
+
+			delete this.awaiting[request];
+
+		}
+		else if ('from' in json) { // request
+
+			let { action, data } = json.from;
+
+			if ('queue' in json) {
+
+				try {
+
+					this.WebSocket.send(JSON.stringify({ queue: json.queue }));
+
+				}
+				catch (error) {
+
+					console.log('API (queue)', error);
+
+				}
+
+			}
+
+			if (action in this.events) {
+				console.log('Событие API', json.from);
+				try {
+
+					this.events[action](data);
+
+				}
+				catch (error) {
+
+					console.log('API (events/action)', error);
+
+				}
+
+			}
+
+		}
+		else {
+
+			throw `Неизвестная структура сообщения -> ${JSON.stringify(json)}`;
+
+		}
+
+	}
+
+	async request(object, method, data) {
+
+		for (let key in this.awaiting) {
+
+			if ((this.awaiting[key].object == object) && (this.awaiting[key].method == method)) {
+
+				throw `Запрос уже выполнен, пожалуйста дождитесь ответа от сервера (15 секунд)... | ${method} -> ${object}`;
+
+			}
+
+		}
+
+		let identify = Date.now();
+
+		try {
+
+			await this.say(identify, object, method, data);
+
+		}
+		catch (error) {
+
+			throw `Запрос не выполнен, ошибка интернет соединения`;
+
+		}
+
+		return await new Promise((resolve, reject) => {
+
+			let rejectTimerId = setTimeout(() => {
+
+				delete this.awaiting[identify];
+
+				reject(`Ошибка интернет соединения, время ожидания ответа на запрос ${object} -> ${method} истекло`);
+
+			}, 15000);
+
+			this.awaiting[identify] = {
+				object: object, method: method, resolve: data => {
+
+					clearTimeout(rejectTimerId);
+
+					resolve(data);
+
+				}, reject: error => {
+
+					clearTimeout(rejectTimerId);
+
+					reject(error);
+
+				}
+			};
+
+		});
+
+	}
+
+	async silent(callback, object, method, data, infinity = false) {
+
+		let identify = `${method}${Date.now()}`; // если у нас более одного silent, то они перебивают друг друга так как это не async
+
+		try {
+
+			await this.say(identify, object, method, data);
+
+		}
+		catch (error) {
+
+			if (infinity) {
+
+				setTimeout(() => this.silent(callback, object, method, data, true), 3000);
+
+			}
+
+			return;
+
+		}
+
+		let timerId = setTimeout(() => {
+
+			delete this.awaiting[identify];
+
+			if (infinity) {
+
+				this.silent(callback, object, method, data, true);
+
+			}
+
+		}, 15000);
+
+		this.awaiting[identify] = {
+			object: object, method: method, resolve: (data) => {
+
+				clearTimeout(timerId);
+
+				callback(data, false);
+
+			}, reject: (error) => {
+
+				clearTimeout(timerId);
+
+				callback(false, error);
+
+			}
+		};
+
+		return;
+
+	}
+
+	async ghost(object, method, data) {
+
+		try {
+
+			await this.say(0, object, method, data);
+
+		}
+		catch (error) {
+
+
+		}
+
+		return;
+
+	}
+
+	async say(request, object, method, data = '', retryCount = 0) {
+
+		if (this.WebSocket.readyState === this.WebSocket.OPEN) {
+
+			this.WebSocket.send(JSON.stringify({ token: App.storage.data.token, request: request, object: object, method: method, data: data, version: `${PW_VERSION}.${APP_VERSION}` }));
+
+		} else {
+
+			if (retryCount < 5) {
+				setTimeout(() => this.say(request, object, method, data, retryCount + 1), 3000);
+			}
+
+		}
+	}
+
+}
+
+class CastleNAVBAR {
+
+	static state = false;
+
+	static mode = 0;
+
+	static init() {
+
+		let items = [
+			'castle-button-play-l1',
+			'castle-button-play-4',
+			'castle-button-play-5',
+			'castle-button-play-6',
+			'castle-button-play-7',
+			'castle-button-play-3',
+			'castle-button-play-mode',
+			'castle-button-play-1',
+			'castle-button-play-2',
+			'castle-button-play-8',
+			'castle-button-play-9',
+			'castle-button-play-m1',
+			'castle-button-play-m2',
+			'castle-button-play-m3',
+			'castle-button-play-m4',
+			'castle-button-play-m5',
+			'castle-button-play-m6'
+		];
+
+		CastleNAVBAR.body = DOM({ style: 'castle-button-play' });
+
+		for (let item of items) {
+
+			CastleNAVBAR.body.append(DOM({ style: item }));
+
+		}
+
+		CastleNAVBAR.body.children[3].onclick = () => {
+
+			App.error('Привет от ifst 😎');
+
+		}
+
+		CastleNAVBAR.body.children[4].onclick = () => {
+
+			App.error('Товарищеские матчи в процессе разработки...');
+
+		}
+
+		CastleNAVBAR.body.children[5].innerText = Lang.text('fight');
+		/*
+		CastleNAVBAR.body.children[5].onclick = () => {
+			
+			if(CastleNAVBAR.state){
+				
+				CastleNAVBAR.cancel();
+				
+			}
+			else{
+				
+				CastleNAVBAR.play();
+				
+			}
+			
+		}
+		*/
+		CastleNAVBAR.body.children[9].onclick = () => {
+
+			CastleNAVBAR.viewMode();
+
+		}
+
+		CastleNAVBAR.body.children[9].append(DOM({ title: 'Очередь игроков матчмейкинга на данный режим игры' }));
+
+		CastleNAVBAR.body.children[11].onclick = () => {
+
+			CastleNAVBAR.setMode(1);
+
+		};
+
+		CastleNAVBAR.body.children[12].onclick = () => {
+
+			CastleNAVBAR.setMode(2);
+
+		};
+
+		CastleNAVBAR.body.children[13].onclick = () => {
+
+			CastleNAVBAR.setMode(3);
+
+		};
+
+		CastleNAVBAR.body.children[14].onclick = () => {
+
+			CastleNAVBAR.setMode(4);
+			
+		};
+		
+		CastleNAVBAR.body.children[15].onclick = () => {
+
+			CastleNAVBAR.setMode(5);
+			
+		};
+		
+		CastleNAVBAR.body.children[16].onclick = () => {
+
+			CastleNAVBAR.setMode(6);
+			
+		};
+		
+		return CastleNAVBAR.body.children[5];
+
+	}
+
+	static play() {
+
+		if (CastleNAVBAR.state) {
+
+			return;
+
+		}
+
+		CastleNAVBAR.state = true;
+
+		CastleNAVBAR.body.children[0].style.display = 'block';
+
+		CastleNAVBAR.body.children[5].innerText = 'Отменить';
+
+		//CastleNAVBAR.body.children[5].style.fontSize = '1.1vw';
+
+		CastleNAVBAR.body.children[1].style.filter = 'grayscale(80%)';
+
+		CastleNAVBAR.body.children[2].style.filter = 'grayscale(80%)';
+
+		CastleNAVBAR.body.children[3].style.filter = 'grayscale(70%)';
+
+		CastleNAVBAR.body.children[4].style.filter = 'grayscale(70%)';
+
+	}
+
+	static cancel() {
+
+		if (!CastleNAVBAR.state) {
+
+			return;
+
+		}
+
+		CastleNAVBAR.state = false;
+
+		CastleNAVBAR.body.children[0].style.display = 'none';
+
+		CastleNAVBAR.body.children[5].innerText = Lang.text('fight');
+
+		//CastleNAVBAR.body.children[5].style.fontSize = '1.4vw';
+
+		CastleNAVBAR.body.children[1].style.filter = 'grayscale(0)';
+
+		CastleNAVBAR.body.children[2].style.filter = 'grayscale(0)';
+
+		CastleNAVBAR.body.children[3].style.filter = 'grayscale(0)';
+
+		CastleNAVBAR.body.children[4].style.filter = 'grayscale(0)';
+
+	}
+
+	static viewMode() {
+
+		CastleNAVBAR.body.children[5].style.display = 'none';
+
+		CastleNAVBAR.body.children[10].style.display = 'block';
+
+		CastleNAVBAR.body.children[11].style.display = 'block';
+
+		CastleNAVBAR.body.children[12].style.display = 'block';
+
+		CastleNAVBAR.body.children[13].style.display = 'block';
+
+		CastleNAVBAR.body.children[14].style.display = 'block';
+		
+		CastleNAVBAR.body.children[15].style.display = 'block';
+		
+		CastleNAVBAR.body.children[16].style.display = 'block';
+		
+	}
+
+	static setMode(type) {
+
+		CastleNAVBAR.body.children[9].firstChild.innerText = '';
+
+		CastleNAVBAR.mode = (type - 1);
+
+		CastleNAVBAR.body.children[5].style.display = 'block';
+
+		let background = window.getComputedStyle(CastleNAVBAR.body.children[`1${type}`], null).getPropertyValue('background-image');
+
+		CastleNAVBAR.body.children[6].style.backgroundImage = background;
+
+		CastleNAVBAR.body.children[10].style.display = 'none';
+
+		CastleNAVBAR.body.children[11].style.display = 'none';
+
+		CastleNAVBAR.body.children[12].style.display = 'none';
+
+		CastleNAVBAR.body.children[13].style.display = 'none';
+		
+		CastleNAVBAR.body.children[14].style.display = 'none';
+		
+		CastleNAVBAR.body.children[15].style.display = 'none';
+		
+		CastleNAVBAR.body.children[16].style.display = 'none';
+		
+	}
+
+	static queue(data) {
+
+		let queue = 0;
+
+		if (CastleNAVBAR.mode in data.mode) {
+
+			if (data.mode[CastleNAVBAR.mode]) {
+
+				queue = data.mode[CastleNAVBAR.mode];
+
+			}
+
+		}
+
+		CastleNAVBAR.body.children[9].firstChild.innerText = ((queue) ? queue : '');
+
+	}
+
+}
+
+class View {
+
+	static activeTemplate = false;
+
+	static activeAnimation = false;
+
+	static defaultAnimation = { transform: ['scale(1.1)', 'scale(1)'], opacity: [0, 1], backdropFilter: ['blur(0)', 'blur(1cqh)'] };
+
+	static defaultOptionAnimation = { duration: 150, fill: 'both', easing: 'ease-out' };
+
+	static updateProgress = false;
+
+	static setCss(name = 'content/style.css') {
+
+		let css = DOM({ tag: 'link', rel: 'stylesheet', href: name });
+
+		document.head.appendChild(css);
+
+	}
+
+	static async show(method, value, value2, value3) {
+
+		if (!(method in View)) {
+
+			return;
+
+		}
+
+		Window.close('main');
+
+		Castle.toggleRender(Castle.RENDER_LAYER_LAUNCHER, method == 'castle');
+
+		try {
+
+			var template = await View[method](value, value2, value3);
+
+		}
+		catch (error) { // session is not valid (когда выдали бан), при любой ошибке рендера выкидываем с учетки
+
+			App.error(error);
+
+			if (String(error).search(new RegExp(`session is not valid`, 'i')) != -1) {
+
+				App.exit();
+
+			}
+
+			return;
+
+		}
+
+		if (View.active) {
+
+			View.activeAnimation.reverse();
+
+			View.activeAnimation.addEventListener('finish', () => {
+
+				View.active.remove();
+
+				View.active = template;
+
+				View.activeAnimation = template.animate(View.defaultAnimation, View.defaultOptionAnimation);
+
+				document.body.append(template);
+
+			});
+
+		}
+		else {
+
+			View.active = template;
+
+			View.activeAnimation = template.animate(View.defaultAnimation, View.defaultOptionAnimation);
+
+			document.body.append(template);
+
+		}
+
+	}
+	
+	static authorization() {
+		let numEnterEvent = ['keyup', async (event) => {
+			if (event.code === 'Enter' || event.code === 'NumpadEnter') {
+				App.authorization(login, password);
+			}
+		}];
+
+		let login = DOM({ tag: 'input', placeholder: 'Никнейм', event: numEnterEvent }), password = DOM({ tag: 'input', placeholder: 'Пароль', type: 'password', event: numEnterEvent });
+
+		let authorizationForm = DOM({ style: 'login_box' }, DOM({ style: 'login-box-forma' }, DOM({ tag: 'div' }, DOM({ tag: 'img', style: 'login-box-forma-logo', src: 'content/img/logo_classic.webp' })),
+
+			DOM({ style: 'login-box-forma-inputs' },
+				login,
+				password,
+				DOM({ style: 'login-box-forma-buttons' }, 
+					DOM({ style: 'login-box-forma-button', event: ['click', () => App.authorization(login, password)] }, 'Войти'), 
+					DOM({ style: 'login-box-forma-button', event: ['click', () => View.show('registration')]}, 'Регистрация')
+				),
+				DOM({ style: 'login-box-forma-buttons' }, 
+					DOM({style: ['login-box-forma-button', 'steamauth'], event:['click',() => Window.show('main', 'steamauth')]},'Вход через Steam')
+				),
+			)), DOM({ style: 'author' }, `Prime World: Classic v.${PW_VERSION}.${APP_VERSION}`));
+
+		return authorizationForm;
+	}
+
+	static registration() {
+		let numEnterEvent = ['keyup', async (event) => {
+			if (event.code === 'Enter' || event.code === 'NumpadEnter') {
+				App.registration(fraction, invite, login, password, password2);
+			}
+		}];
+
+		let fraction = DOM({ tag: 'select' },
+			DOM({ tag: 'option', value: 0, disabled: true, selected: true }, 'Сторона'),
+			DOM({ tag: 'option', value: 1 }, 'Адорнийцы'),
+			DOM({ tag: 'option', value: 2 }, 'Докты')
+		);
+
+		let tgBotUrl = 'https://t.me/primeworldclassic_bot';
+
+		let telegramBotLink = DOM({ style: 'telegram-bot' , tag: 'a', target: '_blank', href: tgBotUrl, event: ['click', (e) => NativeAPI.linkHandler(e)]});
+
+		let invite = DOM({ tag: 'input', placeholder: 'Инвайт-код', event: numEnterEvent });
+
+		let inviteContainer = DOM({ style: 'invite-input' }, invite, telegramBotLink)
+
+		let login = DOM({ tag: 'input', placeholder: 'Никнейм', event: numEnterEvent });
+
+		let password = DOM({ tag: 'input', placeholder: 'Пароль', type: 'password', event: numEnterEvent });
+
+		let password2 = DOM({ tag: 'input', placeholder: 'Еще раз пароль', type: 'password', event: numEnterEvent });
+
+		return DOM({ style: 'login_box' }, DOM({ style: 'login-box-forma' },
+
+			DOM({ style: 'login-box-forma-inputs' },
+				fraction,
+				inviteContainer,
+				login,
+				password,
+				password2,
+				DOM({ style: 'login-box-forma-buttons' },
+					DOM({ style: 'login-box-forma-button', event: ['click', () => App.registration(fraction, invite, login, password, password2)] }, 'Зарегистрироваться'),
+					DOM({ style: 'login-box-forma-button', event: ['click', () => View.show('authorization')] }, Lang.text('back'))
+				)
+			),
+			DOM({ style: 'login-box-forma-right' }, DOM({ tag: 'img', style: 'login-box-forma-logo', src: 'content/img/logo_classic.webp' }),DOM({style:'login-box-form-invite-text'},`Получить инвайт-код через QR-код`), DOM({ tag: 'img', style: 'login-box-forma-logo', src: 'content/img/pwclassicbot.png' }))
+
+		), DOM({ style: 'author' }, `Prime World: Classic v.${PW_VERSION}.${APP_VERSION}`));
+
+	}
+
+	static progress() {
+
+		let body = DOM({ style: 'progress' }, DOM({ style: 'animation1' }), DOM());
+
+		Splash.show(body, false);
+
+		return body;
+
+	}
+
+	static async castle() {
+		
+		document.body.classList.add('noselect');
+
+		View.setCss('content/castle.css');
+
+		let body = DOM({ tag: 'div', id: 'castle-body' });
+		let backgroundImage = DOM({ tag: 'div', id: 'castle-background-img' });
+
+		if (!Castle.canvas) {
+			Castle.canvas = DOM({ tag: 'canvas', id: 'castle-game-surface' });
+		}
+
+		try {
+
+			if (!Castle.gl) {
+				await Castle.initDemo(App.storage.data.fraction == 1 ? 'ad' : 'doct', Castle.canvas);
+			}
+
+		}
+		catch (error) { // если замок не работает на устройстве, тогда рендерим старую версию главной страницы
+
+			App.error(error);
+
+		}
+		
+		body.append(backgroundImage,Castle.canvas);
+		
+		try{
+			
+			let castlePlay = await View.castlePlay();
+			
+			body.append(castlePlay);
+			
+		}
+		catch(e){
+			
+			console.log(e);
+			
+		}
+		
+		body.append(View.castleChat());
+		
+		try{
+			
+			let castleHeroes = await View.castleHeroes();
+			
+			body.append(castleHeroes);
+			
+		}
+		catch(e){
+			
+			console.log(e);
+			
+		}
+		
+		body.append(View.castleSettings());
+		
+		setTimeout(() => {
+
+			Chat.scroll();
+
+		}, 1500);
+		
+		return body;
+
+	}
+
+	static async castlePlay() {
+
+		let body = DOM({ style: 'castle-play' });
+
+		let play = MM.play();
+
+		play.classList.remove('main-header-item');
+
+		play.classList.remove('button-play');
+
+		play.classList.add('castle-button-play');
+		/*
+		if(!play.children.length){
+			
+			play.append(DOM({id:'MMQueue'},'0'));
+			
+		}
+		*/
+		let lobby = DOM({ style: 'castle-play-lobby' });
+
+		let data = await App.api.request(CURRENT_MM, 'loadParty'), players = new Array();
+
+		MM.partyId = data.id;
+
+		MM.activeSelectHero = data.users[App.storage.data.id].hero;
+
+		MM.searchActive(data.users[MM.partyId].ready);
+
+		for (let key in data.users) {
+
+			players.push({ id: key, hero: data.users[key].hero, nickname: data.users[key].nickname, ready: data.users[key].ready, rating: data.users[key].rating, skin: data.users[key].skin });
+
+		}
+		/*
+		if(players.length < 5){
+			
+			while(players.length < 5){
+				
+				players.push({id:0,hero:0,nickname:'',ready:0});
+				
+			}
+			
+		}
+		*/
+		for (let p in players) {
+			let player = players[p];
+
+			let item = DOM({ style: 'castle-play-lobby-player', data: { id: player.id } });
+
+			const rankIcon = DOM({ style: 'rank-icon' });
+			rankIcon.style.backgroundImage = `url(content/ranks/${Rank.icon(player.rating)}.webp)`;
+
+			item.style.backgroundImage = (player.hero) ? `url(content/hero/${player.hero}/${player.skin ? player.skin : 1}.webp)` : '';
+
+			let rank = DOM({ style: 'rank' }, DOM({ style: 'rank-lvl' }, player.rating), rankIcon);
+
+			if (player.rating) {
+				item.append(rank);
+			}
+
+			let status = DOM({ style: ['castle-party-middle-item-ready-notready', 'castle-party-middle-item-not-ready'] }, DOM({}, 'Не готов'));
+
+			if (player.id) {
+
+				if (player.ready) {
+
+					status.firstChild.innerText = Lang.text('ready');
+
+					status.classList.replace('castle-party-middle-item-not-ready', 'castle-party-middle-item-ready');
+
+				}
+				else if (MM.partyId == player.id) {
+
+					status.firstChild.innerText = Lang.text('ready');
+
+					status.classList.replace('castle-party-middle-item-not-ready', 'castle-party-middle-item-ready');
+
+
+				}
+				else if (player.id == App.storage.data.id) {
+
+					status.onclick = async () => {
+
+						if (NativeAPI.status) {
+							if (PWGame.gameConnectionTestIsActive) {
+								return;
+							}
+
+							PWGame.gameConnectionTestIsActive = true;
+
+							try {
+								await PWGame.check();
+
+								await PWGame.testGameServerConnection();
+
+								await PWGame.checkUpdates();
+							} catch (e) {
+								PWGame.gameConnectionTestIsActive = false;
+								throw e;
+							}
+
+							PWGame.gameConnectionTestIsActive = false;
+
+						}
+
+						await App.api.request(CURRENT_MM, 'readyParty', { id: MM.partyId });
+
+						status.onclick = false;
+
+					}
+
+					status.firstChild.innerText = 'Подтвердить';
+
+				}
+
+				item.style.backgroundImage = (player.hero) ? `url(content/hero/${player.hero}/${player.skin ? player.skin : 1}.webp)` : `url(content/hero/empty.webp)`;
+
+
+			}
+			else {
+
+				item.innerHTML = '<div class="castle-play-lobby-empty"><div>+</div></div>';
+
+				status.style.opacity = 0;
+
+				// lvl.style.opacity = 0;
+
+				//rank.style.opacity = 0;
+
+			}
+
+			let removeButton = DOM({ style: 'castle-party-remove' });
+
+			removeButton.style.backgroundImage = `url(content/icons/close-cropped.svg)`;
+
+			let nicknameText = DOM({}, `${player.nickname ? player.nickname : 'Добавить'}`);
+
+			let nicknameHideOverflowContainer = DOM({ style: 'castle-party-middle-item-nickname-hidden-overflow' }, nicknameText);
+
+			let nickname = DOM({ style: 'castle-party-middle-item-nickname' }, nicknameHideOverflowContainer);
+
+			let playerX = DOM({ id: `PP${player.id}`, style: 'castle-party-middle-item', title: nickname.innerText }, nickname, item, status);
+
+			if (p > 0 && !players[p - 1].id) {
+				playerX.style.display = 'none';
+			}
+
+			if (player.nickname.length > 20) {
+				nickname.firstChild.firstChild.classList.add('castle-name-autoscroll');
+			}
+
+			playerX.dataset.id = player.id;
+
+			nickname.firstChild.firstChild.classList.add('castle-player-nickname');
+
+			if ((MM.partyId == App.storage.data.id) && (playerX.dataset.id != App.storage.data.id) && (playerX.dataset.id != 0)) {
+				removeButton.addEventListener('click', async () => {
+
+					await App.api.request(CURRENT_MM, 'leaderKickParty', { id: playerX.dataset.id });
+
+				})
+
+				if (player.nickname.length > 15) {
+					nickname.firstChild.firstChild.classList.add('castle-name-autoscroll');
+				}
+
+				nickname.append(removeButton);
+			}
+
+			if ((MM.partyId != App.storage.data.id) && (playerX.dataset.id == App.storage.data.id)) {
+				removeButton.addEventListener('click', async () => {
+
+					await App.api.request(CURRENT_MM, 'leaveParty', { id: MM.partyId });
+
+					View.show('castle');
+
+				})
+
+				if (player.nickname.length > 15) {
+					nickname.firstChild.firstChild.classList.add('castle-name-autoscroll');
+				}
+
+				nickname.append(removeButton);
+
+			}
+
+			item.addEventListener('click', async () => {
+
+				if (item.dataset.id == App.storage.data.id) {
+
+					if (MM.active) {
+
+						return;
+
+					}
+
+					let request = await App.api.request('build', 'heroAll');
+
+					// request.sort((a, b) => b.rating - a.rating);
+
+					MM.hero = request;
+
+					request.push({ id: 0 });
+
+					let bodyHero = DOM({ style: 'party-hero' });
+
+					let preload = new PreloadImages(bodyHero);
+
+					for (let item2 of request) {
+
+						let hero = DOM();
+
+						hero.addEventListener('click', async () => {
+
+							try {
+
+								await App.api.request(CURRENT_MM, 'heroParty', { id: MM.partyId, hero: item2.id });
+
+							}
+							catch (error) {
+
+								return App.error(error);
+
+							}
+
+							item.style.backgroundImage = (item2.id) ? `url(content/hero/${item2.id}/${item2.skin ? item2.skin : 1}.webp)` : `url(content/hero/empty.webp)`;
+
+							MM.activeSelectHero = item2.id;
+
+							Splash.hide();
+
+						});
+
+						if (item2.id) {
+
+							hero.dataset.url = `content/hero/${item2.id}/${item2.skin ? item2.skin : 1}.webp`;
+
+						}
+						else {
+
+							hero.dataset.url = `content/hero/empty.webp`;
+
+						}
+
+						preload.add(hero);
+
+					}
+
+					Splash.show(bodyHero, false);
+
+				}
+				/*
+				if( ( (item.dataset.id == 0) && ( (!MM.partyId ) || (MM.partyId == App.storage.data.id) ) ) ){
+					
+					let input = DOM({tag:'input',style:'search-input'});
+					
+					let body = DOM({style:'search-body'});
+					
+					let search = DOM({style:'search'},input,body,DOM({style:'search-bottom',event:['click',() => {
+						
+						Splash.hide();
+						
+					}]},`[Назад]`));
+					
+					input.addEventListener('input', async () => {
+						
+						let request = await App.api.request(CURRENT_MM,'findUser',{name:input.value});
+						
+						if(body.firstChild){
+							
+							while(body.firstChild){
+								
+								body.firstChild.remove();
+								
+							}
+							
+						}
+						
+						for(let item of request){
+							
+							body.append(DOM({event:['click', async () => {
+								
+								await App.api.request(CURRENT_MM,'inviteParty',{id:item.id});
+								
+								App.notify(`Приглашение отправлено игроку ${item.nickname}`,1000);
+								
+								// Splash.hide();
+								
+							}]},item.nickname));
+							
+						}
+						
+					});
+					
+					Splash.show(search,false);
+					
+					input.focus();
+					
+				}
+				*/
+			})
+
+			lobby.append(playerX);
+
+		}
+
+		body.append(CastleNAVBAR.body, lobby);
+
+		return body;
+
+	}
+
+	static castleSettings() {
+
+		let builds = DOM({ style: ['castle-builds', 'button-outline'], title: "Рейтинг", event: ['click', () => View.show('top')] });
+
+		let ratings = DOM({ style: ['castle-top', 'button-outline'], title: "Рейтинг", event: ['click', () => Window.show('main', 'top')] });
+
+		let settings = DOM({
+			style: ['castle-settings-btn', 'button-outline'], title: "Вкл/Выкл графики замка", event: ['click', () => {
+				let wrapper = DOM({ style: ['castle-settings-window'] })
+				settings.append(wrapper);
+			}]
+		});
+
+		let clan = DOM({ style: ['castle-clans', 'button-outline'], title: 'Кланы', event: ['click', () => Frame.open('clan')] });
+
+		let menu = DOM({ style: ['castle-menu', 'button-outline'], title: Lang.text('menu'), event: ['click', () => Window.show('main', 'menu')] });
+
+		let history = DOM({ style: ['castle-history', 'button-outline'], title: 'История', event: ['click', () => Window.show('main', 'history')] });
+
+		let farm = DOM({ style: ['castle-farm', 'button-outline'], title: 'Фарм', event: ['click', () => Window.show('main', 'farm')] });
+
+
+		let input = DOM({ style: 'castle-input', tag: 'input' });
+
+		input.type = 'range';
+
+		input.min = '0';
+		input.max = '1';
+		input.step = '0.01';
+
+		let body = DOM({ style: ['castle-settings'] }, menu, ratings, history);
+
+		return body;
+
+	}
+
+	static castleChat() {
+
+		let body = DOM({ style: 'castle-chat' }, Chat.body);
+
+		return body;
+
+	}
+
+	static castleHeroes() {
+
+		let tab = 1;
+
+		let body = DOM({ style: 'castle-bottom' });
+
+		View.castleBottom = DOM({ style: 'castle-bottom-content' });
+
+		View.castleBottom.addEventListener('wheel', function (event) {
+
+			let modifier = 0;
+
+			if (event.deltaMode == event.DOM_DELTA_PIXEL) {
+
+				modifier = 1;
+
+			} else if (event.deltaMode == event.DOM_DELTA_LINE) {
+
+				modifier = parseInt(getComputedStyle(this).lineHeight);
+
+			} else if (event.deltaMode == event.DOM_DELTA_PAGE) {
+
+				modifier = this.clientHeight;
+
+			}
+
+			if (event.deltaY != 0) {
+
+				this.scrollLeft += modifier * event.deltaY;
+
+				event.preventDefault();
+
+			}
+
+		});
+
+		View.bodyCastleHeroes();
+
+		let heroesMenuItem = DOM({
+			event: ['click', () => {
+
+				View.bodyCastleHeroes();
+				Castle.buildMode = false;
+
+			}], title: 'Герои'
+			});
+		let friendsMenuItem = DOM({
+			event: ['click', () => {
+
+				View.bodyCastleFriends();
+				Castle.buildMode = false;
+
+			}], title: 'Друзья'
+			});
+		let buildingsMenuItem = DOM({
+			event: ['click', () => {
+
+				View.bodyCastleBuildings();
+				Castle.buildMode = true;
+
+			}], title: 'Строительство'
+			});
+		heroesMenuItem.style.backgroundImage = `url(content/htalents/270.webp)`;
+		friendsMenuItem.style.backgroundImage = `url(content/htalents/456.webp)`;
+		buildingsMenuItem.style.backgroundImage = `url(content/icons/buildings.webp)`;
+
+		body.append(DOM({ style: 'castle-bottom-menu' }, heroesMenuItem , friendsMenuItem, buildingsMenuItem), View.castleBottom);
+
+		return body;
+
+	}
+
+	static bodyCastleBuildings() {
+
+		while (View.castleBottom.firstChild) {
+
+			View.castleBottom.firstChild.remove();
+
+		}
+
+
+		let selectedFaction = -1;
+		if (Castle.currentSceneName == 'ad') {
+			selectedFaction = 0;
+		}
+		if (Castle.currentSceneName == 'doct') {
+			selectedFaction = 1;
+		}
+		if (selectedFaction == -1) {
+			return;
+		}
+
+		let preload = new PreloadImages(View.castleBottom);
+
+		for (let i = 1; i < Castle.buildings.length; ++i) {
+			let item = Castle.buildings[i];
+			let itemName = Castle.buildingsNames[i][selectedFaction];
+			
+			const buildingName = DOM({ style: 'castle-hero-name' }, DOM({}, itemName));
+
+			if (itemName.length > 10) {
+				buildingName.firstChild.classList.add('castle-name-autoscroll');
+			}
+
+			let buildingNameBase = DOM({ style: 'castle-item-hero-name' }, buildingName);
+
+			let building = DOM({ style: 'castle-hero-item' }, buildingNameBase);
+
+			building.dataset.url = `content/img/buildings/${Castle.currentSceneName}/${item}.png`;
+
+			building.dataset.buildingId = i;
+
+			building.addEventListener('click', async () => {
+				Castle.phantomBuilding.id = building.dataset.buildingId;
+			});
+
+			preload.add(building);
+
+		}
+
+	}
+
+	static bodyCastleHeroes() {
+
+		let preload = new PreloadImages(View.castleBottom);
+
+		App.api.silent((result) => {
+
+			MM.hero = result;
+
+			while (View.castleBottom.firstChild) {
+
+				View.castleBottom.firstChild.remove();
+
+			}
+
+			for (let item of result) {
+
+				const heroName = DOM({ style: 'castle-hero-name' }, DOM({}, item.name));
+
+				if (item.name.length > 10) {
+					heroName.firstChild.classList.add('castle-name-autoscroll');
+				}
+
+				let heroNameBase = DOM({ style: 'castle-item-hero-name' }, heroName);
+
+				let rankIcon = DOM({ style: 'rank-icon' });
+
+				rankIcon.style.backgroundImage = `url(content/ranks/${Rank.icon(item.rating)}.webp)`;
+
+				let rank = DOM({ style: 'rank' }, DOM({ style: 'rank-lvl' }, item.rating), rankIcon);
+
+				let hero = DOM({ style: 'castle-hero-item' }, rank, heroNameBase);
+
+				hero.addEventListener('click', async () => Window.show('main', 'build', item.id, 0, true));
+
+				hero.dataset.url = `content/hero/${item.id}/${item.skin ? item.skin : 1}.webp`;
+
+				preload.add(hero);
+
+			}
+
+		}, 'build', 'heroAll');
+
+	}
+
+	static bodyCastleFriends() {
+
+		let preload = new PreloadImages(View.castleBottom);
+
+		App.api.silent((result) => {
+
+			while (View.castleBottom.firstChild) {
+
+				View.castleBottom.firstChild.remove();
+
+			}
+			// status 1 - друг, 2 - запрос дружбы, 3 - дружбу отправил, игрок еще не подтвердил
+			console.log('ДРУЗЬЯ', result);
+
+			let buttonAdd = DOM({
+			style: 'castle-friend-item',
+			onclick: () => {
+				let input = DOM({ tag: 'input', style: 'search-input', placeholder: 'Ник игрока' });
+				let body = DOM({ style: 'search-body' });
+
+				// Создаём крестик для закрытия (как в buildSelectName)
+				let closeButton = DOM({
+					tag: 'div',
+					style: 'close-button',
+					event: ['click', () => Splash.hide()]
+				});
+				closeButton.style.backgroundImage = 'url(content/icons/close-cropped.svg)';
+
+				let search = DOM({ style: 'search' }, input, body, closeButton);
+
+				input.addEventListener('input', async () => {
+					let request = await App.api.request('user', 'find', { nickname: input.value });
+
+					if (body.firstChild) {
+						while (body.firstChild) {
+							body.firstChild.remove();
+						}
+					}
+
+						for (let item of request) {
+
+							let template = DOM({
+								event: ['click', async () => {
+
+									await App.api.request('friend', 'request', { id: item.id });
+
+									View.bodyCastleFriends();
+
+									App.notify(`Заявка в друзья ${item.nickname} отправлена`, 1000);
+
+									Splash.hide();
+
+								}]
+							}, item.nickname);
+
+							if ('blocked' in item) {
+
+								template.oncontextmenu = () => {
+								let body = document.createDocumentFragment();
+								
+								// Создаём крестик для закрытия
+								const closeButton = DOM({
+									tag: 'div',
+									style: 'close-button',
+									event: ['click', () => Splash.hide()]
+								});
+								closeButton.style.backgroundImage = 'url(content/icons/close-cropped.svg)';
+
+								body.append(
+									DOM({}, item.nickname),
+									DOM({
+										style: 'splash-content-button',
+										event: ['click', async () => {
+											await App.api.request('user', 'blocked', { id: item.id });
+											Splash.hide();
+										}]
+									}, (item.blocked ? 'Разблокировать' : 'Заблокировать')),
+									DOM({
+										style: 'splash-content-button',
+										event: ['click', async () => {
+											await App.api.request('user', 'mute', { id: item.id });
+											Splash.hide();
+										}]
+									}, (item.mute ? 'Убрать мут' : 'Мут чата')),
+									DOM({
+										style: 'splash-content-button',
+										event: ['click', async () => {
+											let password = await App.api.request('user', 'restore', { id: item.id });
+											App.notify(`Скопировано в буфер обмена! Пароль: ${password}`);
+											navigator.clipboard.writeText(password);
+										}]
+									}, 'Сброс пароля'),
+									closeButton // Добавляем крестик вместо кнопки "Назад"
+								);
+
+								Splash.show(body);
+								return false;
+							}
+
+								if (item.mute) {
+
+									template.style.color = 'yellow';
+
+								}
+
+								if (item.blocked) {
+
+									template.style.color = 'red';
+
+								}
+
+							}
+
+							body.append(template);
+
+						}
+
+					});
+
+					Splash.show(search, false);
+
+					input.focus();
+
+				}
+			}, DOM({ style: 'castle-friend-item-middle' }, DOM({ style: 'castle-friend-add' }, '+')));
+
+			preload.add(buttonAdd);
+
+			buttonAdd.dataset.url = `content/hero/empty.webp`;
+
+			for (let item of result) {
+
+				const heroName = DOM({ style: 'castle-hero-name' }, DOM({}, item.nickname));
+
+				if (item.nickname.length > 10) {
+					heroName.firstChild.classList.add('castle-name-autoscroll');
+				}
+
+				let heroNameBase = DOM({ style: 'castle-item-hero-name' }, heroName);
+
+				let bottom = DOM({ style: 'castle-friend-item-bottom' });
+
+				let friend = DOM({ style: 'castle-friend-item' }, heroNameBase, bottom);
+
+				if (item.status == 1) {
+
+					let group = DOM({ style: 'castle-friend-add-group' }, (item.online) ? 'Группа' : 'Не в сети');
+
+					if (!item.online) {
+
+						group.style.filter = 'grayscale(1)';
+
+					}
+					else {
+
+						group.onclick = async () => {
+
+							await App.api.request(CURRENT_MM, 'inviteParty', { id: item.id });
+
+							App.notify(`Приглашение отправлено игроку ${item.nickname}`);
+
+						}
+
+					}
+
+					friend.oncontextmenu = () => {
+
+						let body = document.createDocumentFragment();
+
+						let b1 = DOM({
+							style: 'splash-content-button', event: ['click', async () => {
+
+								await App.api.request('friend', 'remove', { id: item.id });
+
+								friend.remove();
+
+								Splash.hide();
+
+							}]
+						}, 'Удалить');
+
+						let b2 = DOM({ style: 'splash-content-button', event: ['click', () => Splash.hide()] }, 'Отмена');
+
+						body.append(DOM(`Удалить ${item.nickname} из друзей?`), b1, b2);
+
+						Splash.show(body);
+
+						return false;
+
+					}
+
+					bottom.append(group);
+
+				}
+				else if (item.status == 2) {
+
+					bottom.append(DOM({
+						style: 'castle-friend-confirm', event: ['click', async () => {
+
+							await App.api.request('friend', 'accept', { id: item.id });
+
+							while (bottom.firstChild) {
+
+								bottom.firstChild.remove();
+
+							}
+
+							bottom.append(DOM({
+								style: 'castle-friend-add-group', event: ['click', async () => {
+
+									await App.api.request(CURRENT_MM, 'inviteParty', { id: item.id });
+
+									App.notify(`Приглашение отправлено игроку ${item.nickname}`);
+
+								}]
+							}, 'Группа'));
+
+						}]
+					}, 'Принять'), DOM({
+						style: 'castle-friend-cancel', event: ['click', async () => {
+
+							await App.api.request('friend', 'remove', { id: item.id });
+
+							friend.remove();
+
+						}]
+					}, 'Отклонить'));
+
+				}
+				else if (item.status == 3) {
+
+					friend.append(DOM({ style: 'castle-friend-item-middle' }, DOM({ style: 'castle-friend-request' }, 'Ожидание')));
+
+					friend.style.filter = 'grayscale(1)';
+
+					bottom.append(DOM({
+						style: 'castle-friend-cancel', event: ['click', async () => {
+
+							await App.api.request('friend', 'remove', { id: item.id });
+
+							friend.remove();
+
+						}]
+					}, 'Отменить'));
+
+				}
+
+				friend.dataset.url = `content/hero/empty.webp`;
+
+				preload.add(friend);
+
+			}
+
+		}, 'friend', 'list');
+
+	}
+
+	static exitOrLogout() {
+		let logout = DOM({
+			event: ['click', async () => {
+
+				App.exit();
+
+				Splash.hide();
+
+			}]
+		}, 'Выйти из аккаунта');
+
+		let close = DOM({ event: ['click', () => Splash.hide()] }, 'Отмена');
+
+		let wrap = DOM({ style: 'wrap' }, logout, close);
+
+		if (NativeAPI.status) {
+
+			let exit = DOM({ event: ['click', () => NativeAPI.exit()] }, Lang.text('exit'));
+
+			wrap = DOM({ style: 'wrap' }, logout, exit, close);
+
+		}
+
+		let dom = DOM({ style: 'div' }, '', wrap);
+
+		Splash.show(dom);
+	}
+
+	static header() {
+
+		let play = MM.play();
+
+		play.classList.add('main-header-item');
+
+		play.classList.add('button-play');
+
+		play.classList.remove('castle-button-play');
+
+		let playButton = DOM({ style: 'menu-button-play' }, play)
+
+		let menu = DOM({ style: 'main-header' }, DOM({ tag: 'img', src: 'content/img/logo.webp', event: ['click', () => View.show('castle')] }), playButton);
+
+		if (App.isAdmin()) {
+
+			let adm = DOM({
+				style: 'main-header-item', event: ['click', () => {
+
+					let body = document.createDocumentFragment();
+
+					body.append(DOM({
+						style: 'splash-content-button', event: ['click', () => {
+
+							View.show('talents');
+
+							Splash.hide();
+
+						}]
+					}, 'Таланты (обычные)'), DOM({
+						style: 'splash-content-button', event: ['click', () => {
+
+							View.show('talents2');
+
+							Splash.hide();
+
+						}]
+					}, 'Таланты (классовые)'), DOM({
+						style: 'splash-content-button', event: ['click', () => {
+
+							View.show('users');
+
+							Splash.hide();
+
+						}]
+					}, 'Пользователи'), DOM({ style: 'splash-content-button', event: ['click', () => Splash.hide()] }, '[X]'));
+
+					Splash.show(body);
+
+				}]
+			}, 'Админ');
+
+			adm.classList.add('animation1');
+
+			adm.style.color = 'rgba(255,255,255,1)';
+
+			menu.append(adm);
+
+		}
+
+		menu.append(
+			DOM({ style: 'main-header-item', event: ['click', () => View.show('castle')] }, Castle.gl ? 'Замок' : 'Лобби'),
+			DOM({ style: 'main-header-item', event: ['click', () => View.show('builds')] }, 'Билды'),
+			DOM({ style: 'main-header-item', event: ['click', () => View.show('history')] }, 'История'),
+			DOM({ style: 'main-header-item', event: ['click', () => View.show('top')] }, 'Рейтинг'),
+			DOM({ style: 'main-header-item', event: ['click', () => View.show('game')] }, 'Фарм'),
+			DOM({ style: 'main-header-item', event: ['click', () => View.exitOrLogout()] }, 'Выйти')
+		);
+
+		return menu;
+
+	}
+
+	static async main(data) {
+
+		let body = DOM({ style: 'main' });
+
+		let middle = DOM({ style: 'party-middle' });
+
+		// const chatInput = DOM({tag: 'input', placeholder: 'Enter your message here', style: 'chat-input'});
+		// const chatMessages = DOM({style: 'chat-input'});
+		// const chat = DOM({style: 'chat'}, chatMessages, chatInput);
+
+		// let party = DOM({style:'party'},middle, chat);
+
+		let top = DOM({ style: 'top' });
+
+		App.api.silent((result) => {
+
+			let number = 1;
+
+			for (let player of result) {
+
+				let rank = DOM({ style: 'top-item-hero-rank' });
+
+				rank.style.backgroundImage = `url(content/ranks/${Rank.icon(player.rating)}.webp)`;
+
+				let hero = DOM({ style: 'top-item-hero' }, rank);
+
+				hero.style.backgroundImage = `url(content/hero/${player.hero}/${player.skin ? player.skin : 1}.webp)`;
+
+				let item = DOM({ style: 'top-item', event: ['click', () => Build.view(player.id, player.hero, player.nickname)] }, hero, DOM({ style: 'top-item-player' }, DOM(`#${number}. ${player.nickname}`), DOM(`${player.rating}`)));
+
+				if (number == 1) {
+
+					//item.style.background = 'rgba(255,50,0,0.9)';
+
+					item.classList.add('animation1');
+
+				}
+				/*
+				else if(number == 2){
+					
+					item.style.background = 'rgba(255,100,0,0.9)';
+					
+				}
+				else if(number == 3){
+					
+					item.style.background = 'rgba(150,50,255,0.9)';
+					
+				}
+				else if(number == 4){
+					
+					item.style.background = 'rgba(50,100,200,0.9)';
+					
+				}
+				*/
+				top.append(item);
+
+				number++;
+
+			}
+
+		}, CURRENT_MM, 'top');
+
+		let party = DOM({ style: 'party' }, middle);
+
+		let players = new Array();
+
+		data = (data) ? data : await App.api.request(CURRENT_MM, 'loadParty');
+
+		MM.partyId = data.id;
+
+		MM.activeSelectHero = data.users[App.storage.data.id].hero;
+
+		MM.searchActive(data.users[MM.partyId].ready);
+
+		for (let key in data.users) {
+
+			players.push({ id: key, hero: data.users[key].hero, nickname: data.users[key].nickname, ready: data.users[key].ready, rating: data.users[key].rating, skin: data.users[key].skin });
+
+		}
+
+		if (players.length < 5) {
+
+			while (players.length < 5) {
+
+				players.push({ id: 0, hero: 0, nickname: '', ready: 0 });
+
+			}
+
+		}
+
+		for (let item of players) {
+
+			let img = DOM({ style: 'party-middle-item-middle' });
+
+			let rankIcon = DOM({ style: 'rank-icon' });
+
+			rankIcon.style.backgroundImage = `url(content/ranks/${Rank.icon(item.rating)}.webp)`;
+
+			let rank = DOM({ style: 'rank' }, DOM({ style: 'rank-lvl' }, item.rating), rankIcon);
+
+			img.append(rank);
+
+			let status = DOM({ style: 'party-middle-item-not-ready' }, DOM({}, 'Не готов'));
+
+			if (item.id) {
+
+				if (item.ready) {
+
+					status.firstChild.innerText = Lang.text('ready');
+
+					status.classList.replace('party-middle-item-not-ready', 'party-middle-item-ready');
+
+				}
+				else if (MM.partyId == item.id) {
+
+					status.firstChild.innerText = Lang.text('ready');
+
+					status.classList.replace('party-middle-item-not-ready', 'party-middle-item-ready');
+
+
+				}
+				else if (item.id == App.storage.data.id) {
+
+					status.onclick = async () => {
+
+						if (NativeAPI.status) {
+							if (PWGame.gameConnectionTestIsActive) {
+								return;
+							}
+
+							PWGame.gameConnectionTestIsActive = true;
+
+							try {
+								await PWGame.check();
+
+								await PWGame.testGameServerConnection();
+
+								await PWGame.checkUpdates();
+							} catch (e) {
+								PWGame.gameConnectionTestIsActive = false;
+								throw e;
+							}
+
+							PWGame.gameConnectionTestIsActive = false;
+
+						}
+						else {
+
+							return;
+
+						}
+
+						await App.api.request(CURRENT_MM, 'readyParty', { id: MM.partyId });
+
+						status.onclick = false;
+
+					}
+
+					status.innerText = 'Подтвердить';
+
+				}
+
+				img.style.backgroundImage = (item.hero) ? `url(content/hero/${item.hero}/${item.skin ? item.skin : 1}.webp)` : `url(content/hero/empty.webp)`;
+
+			}
+			else {
+
+				img.innerText = '+';
+
+				status.style.opacity = 0;
+
+				// lvl.style.opacity = 0;
+
+				//rank.style.opacity = 0;
+
+			}
+
+			let nickname = DOM({ style: 'party-middle-item-nickname' }, `${item.nickname ? item.nickname : 'Добавить'}`);
+
+			let player = DOM({ id: `PP${item.id}`, style: 'party-middle-item' }, nickname, img, status); // TODO use this for lvl and rank
+			// let player = DOM({id:`PP${item.id}`,style:'party-middle-item'},nickname,img,status);
+
+			player.dataset.id = item.id;
+
+			if ((MM.partyId == App.storage.data.id) && (player.dataset.id != App.storage.data.id) && (player.dataset.id != 0)) {
+
+				nickname.append(DOM({
+					tag: 'span', event: ['click', async () => {
+
+						await App.api.request(CURRENT_MM, 'leaderKickParty', { id: player.dataset.id });
+
+					}]
+				}, '[X]'));
+
+			}
+
+			if ((MM.partyId != App.storage.data.id) && (player.dataset.id == App.storage.data.id)) {
+
+				nickname.append(DOM({
+					tag: 'span', event: ['click', async () => {
+
+						await App.api.request(CURRENT_MM, 'leaveParty', { id: MM.partyId });
+
+						View.show('castle');
+
+					}]
+				}, '[X]'));
+
+			}
+
+			img.addEventListener('click', async () => {
+
+				if (player.dataset.id == App.storage.data.id) {
+
+					if (MM.active) {
+
+						return;
+
+					}
+
+					let request = await App.api.request('build', 'heroAll');
+
+					MM.hero = request;
+
+					request.push({ id: 0 });
+
+					let bodyHero = DOM({ style: 'party-hero' });
+
+					let preload = new PreloadImages(bodyHero);
+
+					for (let item of request) {
+
+						let hero = DOM();
+
+						hero.addEventListener('click', async () => {
+
+							try {
+
+								await App.api.request(CURRENT_MM, 'heroParty', { id: MM.partyId, hero: item.id });
+
+							}
+							catch (error) {
+
+								return App.error(error);
+
+							}
+
+							MM.activeSelectHero = item.id;
+
+							Splash.hide();
+
+						});
+
+						if (item.id) {
+
+							hero.dataset.url = `content/hero/${item.id}/${item.skin ? item.skin : 1}.webp`;
+
+						}
+						else {
+
+							hero.dataset.url = `content/hero/empty.webp`;
+
+						}
+
+						preload.add(hero);
+
+					}
+
+					Splash.show(bodyHero, false);
+
+				}
+
+				if (((player.dataset.id == 0) && ((!MM.partyId) || (MM.partyId == App.storage.data.id)))) {
+
+					let input = DOM({ tag: 'input', style: 'search-input' });
+
+					let body = DOM({ style: 'search-body' });
+
+					let search = DOM({ style: 'search' }, input, body, DOM({
+						style: 'search-bottom', event: ['click', () => {
+
+							Splash.hide();
+
+						}]
+					}, Lang.text('back')));
+
+					input.addEventListener('input', async () => {
+
+						let request = await App.api.request(CURRENT_MM, 'findUser', { name: input.value });
+
+						if (body.firstChild) {
+
+							while (body.firstChild) {
+
+								body.firstChild.remove();
+
+							}
+
+						}
+
+						for (let item of request) {
+
+							body.append(DOM({
+								event: ['click', async () => {
+
+									await App.api.request(CURRENT_MM, 'inviteParty', { id: item.id });
+
+									App.notify(`Приглашение отправлено игроку ${item.nickname}`, 1000);
+
+									// Splash.hide();
+
+								}]
+							}, item.nickname));
+
+						}
+
+					});
+
+					Splash.show(search, false);
+
+					input.focus();
+
+				}
+
+			})
+
+			middle.append(player);
+
+		}
+
+		body.append(View.header(), DOM({ style: 'main-body-column' }, top, party));
+
+		return body;
+
+	}
+
+	static async history(isWindow) {
+
+		let body = DOM({ style: 'main' }), history = DOM({ style: isWindow ? 'whistory' : 'history' });
+
+		let result = await App.api.request(CURRENT_MM, 'history');
+
+		for (let item of result) {
+
+			let hero = DOM();
+
+			hero.style.backgroundImage = `url(content/hero/${item.hero}/${item.skin ? item.skin : 1}.webp)`;
+
+			let game = DOM({ style: 'history-item' }, hero, DOM({ style: 'history-text-box', tag: 'div' }, (item.team == 1) ? 'Докты' : 'Адорния'), DOM({ style: 'history-text-box', tag: 'div' }, Math.round(((item.team == item.win) ? +item.rating : -item.rating) * 10.0) / 10.0), DOM({ style: 'history-text-box', tag: 'div' }, new Date(item.added).toLocaleString()));
+
+			if (item.team == item.win) {
+
+				game.style.background = 'rgba(51,255,51,0.5)';
+
+			}
+
+			history.append(game);
+
+		}
+
+		if (!isWindow) {
+			body.append(View.header());
+		}
+		body.append(history);
+
+		return body;
+
+	}
+
+	static async top(hero = 0, isSplah = false) {
+
+		let body = DOM({ style: 'main' });
+
+		let result = await App.api.request(CURRENT_MM, 'top', { limit: 100, hero: hero });
+
+		if (!result) {
+
+			throw 'Рейтинг отсутствует';
+
+		}
+
+		let top = DOM({ style: isSplah ? 'wtop-scroll' : 'top-scroll' },
+			DOM({
+				style: 'top-filter', title: 'Выберите героя, чтобы отсортировать игроков зала славы', event: ['click', async () => {
+
+					let request = await App.api.request('build', 'heroAll');
+
+					request.push({ id: 0 });
+
+					let bodyHero = DOM({ style: 'party-hero' });
+
+					let preload = new PreloadImages(bodyHero);
+
+					for (let item of request) {
+
+						let hero = DOM();
+
+						if (item.id) {
+
+							hero.dataset.url = `content/hero/${item.id}/${item.skin ? item.skin : 1}.webp`;
+
+						}
+						else {
+
+							hero.dataset.url = `content/hero/empty.webp`;
+
+						}
+
+						hero.addEventListener('click', async () => {
+
+							if (isSplah) {
+								Window.show('main', 'top', item.id);
+							} else {
+								View.show('top', item.id);
+							}
+
+							Splash.hide();
+
+						});
+
+						preload.add(hero);
+
+					}
+
+					Splash.show(bodyHero, false);
+
+				}]
+			}, DOM({ tag: 'div' }), DOM({ tag: 'div' })));
+
+		top.firstChild.classList.add('animation1');
+
+		top.firstChild.firstChild.style.backgroundImage = `url(content/hero/${result[0].hero}/${result[0].skin ? result[0].skin : 1}.webp)`;
+
+		top.firstChild.lastChild.innerText = `#1. ${result[0].nickname}`;
+
+		let number = 1;
+
+		for (let player of result) {
+
+			let rank = DOM({ style: 'top-item-hero-rank' });
+
+			rank.style.backgroundImage = `url(content/ranks/${Rank.icon(player.rating)}.webp)`;
+
+			let hero = DOM({ style: 'top-item-hero' }, rank);
+
+			hero.style.backgroundImage = `url(content/hero/${player.hero}/${player.skin ? player.skin : 1}.webp)`;
+
+			let item = DOM({ style: 'top-item', event: ['click', () => Build.view(player.id, player.hero, player.nickname)] }, hero, DOM({ style: 'top-item-player' }, DOM(`#${number}. ${player.nickname}`), DOM(`${player.rating}`)));
+
+			top.append(item);
+
+			number++;
+
+		}
+
+		if (!isSplah) {
+			body.append(View.header());
+		}
+		body.append(top);
+
+		return body;
+
+	}
+
+	static builds() {
+
+		let body = DOM({ style: 'main' });
+
+		let hero = DOM({ style: 'hero' });
+
+		let preload = new PreloadImages(hero, (element) => {
+			/*
+			let test = () => {
+				
+				element.dataset.slide = ( ( ( Number(element.dataset.slide) + 1 ) > element.dataset.total ) ? 1 : ( Number(element.dataset.slide) + 1 ));
+				
+				PreloadImages.load(() => {
+					
+					let firstSlide = DOM(), twoSlide = DOM();
+					
+					firstSlide.style.backgroundImage = element.style.backgroundImage;
+					
+					element.append(firstSlide);
+					
+					element.style.backgroundImage = 'none';
+					
+					twoSlide.style.opacity = 0;
+					
+					element.append(twoSlide);
+					
+					twoSlide.style.backgroundImage = `url("content/hero/${element.dataset.id}/${element.dataset.slide}.webp")`;
+					
+					firstSlide.animate({opacity:[1,0]},{duration:500,easing:'ease-out',fill:'forwards'});
+					
+					let animation = twoSlide.animate({opacity:[0,1]},{duration:500,easing:'ease-in',fill:'forwards'});
+					
+					animation.onfinish = () => {
+						
+						element.style.backgroundImage = twoSlide.style.backgroundImage;
+						
+						firstSlide.remove();
+						
+						twoSlide.remove();
+						
+						setTimeout(() => {
+							
+							test();
+							
+						},App.getRandomInt(5000,15000));
+						
+					}
+					
+				},`content/hero/${element.dataset.id}/${element.dataset.slide}.webp`);
+				
+			}
+			
+			if(element.dataset.total > 1){
+				
+				setTimeout(() => {
+					
+					test();
+					
+				},App.getRandomInt(2500,5000));
+				
+			}
+			*/
+		});
+
+		App.api.silent((result) => {
+
+			MM.hero = result;
+
+			for (const item of result) {
+				//item.rating = App.getRandomInt(1100,3000);
+				let rankIcon = DOM({ style: 'rank-icon' });
+
+				rankIcon.style.backgroundImage = `url(content/ranks/${Rank.icon(item.rating)}.webp)`;
+
+				let rank = DOM({ style: 'rank' }, DOM({ style: 'rank-lvl' }, item.rating), rankIcon);
+
+				const hero = DOM({ style: 'hero-item' }, DOM({ tag: 'span', style: 'name' }, item.name), rank);
+
+				hero.addEventListener('click', () => View.show('build', item.id));
+
+				hero.dataset.id = item.id;
+
+				hero.dataset.slide = 1;
+
+				hero.dataset.total = item.total;
+
+				hero.dataset.url = `content/hero/${item.id}/${item.skin ? item.skin : 1}.webp`;
+
+				preload.add(hero);
+
+			}
+
+		}, 'build', 'heroAll');
+
+		body.append(View.header(), DOM({ style: 'main-body-full' }, hero));
+
+		return body;
+
+	}
+
+	static inventory(isWindow) {
+
+		let body = DOM({ style: 'main' });
+
+		let inventory = DOM({ style: 'inventory' });
+
+		App.api.silent((result) => {
+
+			for (let item of result) {
+
+				let unit = DOM({ style: [`rarity${item.rarity}`] });
+
+				unit.style.backgroundImage = `url(content/talents/${item.id}.webp)`;
+
+				unit.append(DOM({ tag: 'span' }, item.score));
+
+				inventory.append(unit);
+
+			}
+
+		}, 'gamev2', 'inventory');
+
+
+		if (!isWindow) {
+			body.append(DOM({ style: 'main-header' },
+				DOM({ tag: 'img', src: 'content/img/logo.webp' }),
+				DOM({ style: 'main-header-item', event: ['click', () => View.show('castle')] }, App.storage.data.login),
+				DOM({ style: 'main-header-item', event: ['click', () => View.show('inventory')] }, 'Осколки'),
+				DOM({ style: 'main-header-item', event: ['click', () => View.show('game')] }, 'Фарм'),
+				DOM({ style: 'main-header-item', event: ['click', () => View.exitOrLogout()] }, 'Выйти')
+			))
+		} else {
+			body.append(DOM({ style: 'inventory-header' }, Lang.text('library')))
+		}
+		body.append(
+			DOM({ style: 'main-body-full' }, inventory)
+		);
+
+		return body;
+
+	}
+
+	static game(isWindow) {
+
+		let body = DOM({ style: 'game' });
+
+		let button = DOM({
+			style: 'game-button', event: ['click', async () => {
+
+				let request = await App.api.request('gamev2', 'start');
+
+				if ('error' in request) {
+
+					button.innerText = `Начать фарм можно будет через ${request.error} мин.`;
+
+					return;
+
+				}
+
+				dscription.remove();
+
+				request.back = () => {
+
+					View.show('castle');
+
+				}
+
+				request.finish = async () => {
+
+					await App.api.request('gamev2', 'finish');
+
+					isWindow ? Window.close('main') : View.show('castle');
+
+				}
+
+				request.exit = () => {
+
+					View.show('castle');
+
+				}
+
+				Game.init(body, request, isWindow);
+
+			}]
+		}, 'Начать фарм');
+
+		let dscription = DOM({ style: 'game-description' },
+			DOM({ tag: 'h1' }, 'Лорды и леди!'),
+			DOM({ tag: 'p' }, '— необходимо собрать 1000 осколков одного и того же таланта, чтобы получить 1 талант для билда;'),
+			DOM({ tag: 'p' }, '— на одну карту рассчитано 100 ходов;'),
+			//DOM({tag:'p'},'— кулдаун между играми 60 минут;'),
+			DOM({ tag: 'p' }, '— чтобы сделать ход, переставляйте два соседних таланта местами. Если такая перестановка приводит к образованию комбинации, то «выстроившиеся»‎ таланты исчезают, и на их место падают таланты верхних рядов;'),
+			DOM({ tag: 'p' }, '— засчитывается комбинация минимум из трёх одинаковых талантов;'),
+			DOM({ tag: 'p' }, '— если за 100 ходов серебряных монет будет 150, даётся +100 дополнительных ходов;'),
+			//DOM({tag:'p'},'— в рейтинге на главной страничке отображается сумма всех очков на одного игрока за всё время.'),
+			button,
+			isWindow ? DOM() : DOM({ style: 'game-button', event: ['click', () => View.show('castle')] }, Lang.text('back'))
+		);
+
+		body.append(dscription);
+
+		return body;
+
+	}
+
+	static async build(heroId, targetId = 0, isWindow = false) {
+
+		const body = DOM({ style: 'build-horizontal' });
+
+		await Build.init(heroId, targetId, isWindow);
+
+		body.append(
+			DOM({ style: 'build-left' },
+				Build.heroView
+			),
+			DOM({ style: 'build-center' },
+				Build.buildActionsView,
+				DOM({ style: 'build-field-with-tabs' },
+					Build.listView,
+					DOM({ style: 'build-field-container' },
+						Build.levelView,
+						Build.fieldView)
+				),
+				DOM({ style: 'build-active-bar-container' },
+					Build.activeBarView,
+					DOM({ style: 'build-active-bar-hint' }, 'Нажмите правой кнопкой мыши на талант в этой полосе чтобы включить/выключить смарткаст (применение навыка без подтверждения)')
+				)
+			),
+			DOM({ style: 'build-right' },
+				Build.talentsAndSetsView,
+				Build.rarityView,
+				Build.inventoryView
+			)
+		);
+
+		if (!isWindow) {
+			body.append(DOM({
+				style: ['build-list-close', 'close-button'],
+				title: 'Закрыть',
+				event: ['click', () => {
+					Build.CleanInvalidDescriptions();
+					if (isWindow) {
+						View.show('castle');
+					} else {
+						View.show('builds');
+					}
+				}]
+			}, DOM({ tag: 'img', src: 'content/icons/close-cropped.svg', alt: 'Закрыть', style: 'close-image-style' }))); // Замените путь к изображению
+		}
+
+		return isWindow ? body : DOM({ id: 'viewbuild' }, body);
+
+	}
+
+
+	static async talents() {
+    let body = DOM({ style: 'main' });
+    
+    // Создаем контейнер для заголовка (кнопка закрытия + поиск)
+    let header = DOM({ style: 'adm-header' });
+    
+    // Кнопка закрытия
+    let closeBtn = DOM({ 
+        style: 'close-btn',
+        event: ['click', () => View.show('castle')] 
+    }, '[X]');
+    
+    // Строка поиска
+    let searchInput = DOM({
+        tag: 'input',
+        placeholder: 'Поиск талантов...',
+        style: 'search-input'
+    });
+    
+    header.append(closeBtn, searchInput);
+    
+    let adm = DOM({ style: 'adm' }, header);
+    let result = await App.api.request('build', 'talentAll');
+    let talentContainers = [];
+    let talentsContainer = DOM({ style: 'talents-container' });
+
+    for (let item of result) {
+        let div = DOM({ tag: 'div', class: 'talent-item' });
+        div.append(DOM(`id${item.id}`), DOM({ tag: 'img', src: `content/talents/${item.id}.webp` }));
+
+        for (let key in item) {
+            if (key == 'id') continue;
+            div.append(
+                DOM({ tag: 'div' }, key),
+                App.input(async (value) => {
+                    let object = new Object();
+                    object[key] = value;
+                    await App.api.request('build', 'talentEdit', { id: item.id, object: object });
+                }, { value: item[key] })
+            );
+        }
+        
+        talentContainers.push({ element: div, data: item });
+        talentsContainer.append(div);
+    }
+    
+    const filterTalents = (searchText) => {
+        searchText = searchText.toLowerCase();
+        talentContainers.forEach(({ element, data }) => {
+            let matches = false;
+            for (let key in data) {
+                if (String(data[key]).toLowerCase().includes(searchText)) {
+                    matches = true;
+                    break;
+                }
+            }
+            element.style.display = matches ? 'flex' : 'none';
+        });
+    };
+    
+    searchInput.addEventListener('input', (e) => {
+        filterTalents(e.target.value);
+    });
+    
+    adm.append(talentsContainer);
+    body.append(adm);
+    return body;
+}
+
+static async talents2() {
+    let body = DOM({ style: 'main' });
+    
+    // Создаем контейнер для заголовка (кнопка закрытия + поиск)
+    let header = DOM({ style: 'adm-header' });
+    
+    // Кнопка закрытия
+    let closeBtn = DOM({ 
+        style: 'close-btn',
+        event: ['click', () => View.show('castle')] 
+    }, '[X]');
+    
+    // Строка поиска
+    let searchInput = DOM({
+        tag: 'input',
+        placeholder: 'Поиск геройских талантов...',
+        style: 'search-input'
+    });
+    
+    header.append(closeBtn, searchInput);
+    
+    let adm = DOM({ style: 'adm' }, header);
+    let result = await App.api.request('build', 'talentHeroAll');
+    let talentContainers = [];
+    let talentsContainer = DOM({ style: 'talents-container' });
+
+    for (let item of result) {
+        let div = DOM({ tag: 'div', class: 'talent-item' });
+        div.append(DOM(`id${item.id}`), DOM({ tag: 'img', src: `content/htalents/${item.id}.webp` }));
+
+        for (let key in item) {
+            if (key == 'id') continue;
+            div.append(
+                DOM({ tag: 'div' }, key),
+                App.input(async (value) => {
+                    let object = new Object();
+                    object[key] = value;
+                    await App.api.request('build', 'talentHeroEdit', { id: item.id, object: object });
+                }, { value: item[key] })
+            );
+        }
+        
+        talentContainers.push({ element: div, data: item });
+        talentsContainer.append(div);
+    }
+    
+    const filterTalents = (searchText) => {
+        searchText = searchText.toLowerCase();
+        talentContainers.forEach(({ element, data }) => {
+            let matches = false;
+            for (let key in data) {
+                if (String(data[key]).toLowerCase().includes(searchText)) {
+                    matches = true;
+                    break;
+                }
+            }
+            element.style.display = matches ? 'flex' : 'none';
+        });
+    };
+    
+    searchInput.addEventListener('input', (e) => {
+        filterTalents(e.target.value);
+    });
+    
+    adm.append(talentsContainer);
+    body.append(adm);
+    return body;
+}
+
+	static async users() {
+
+		let filter = DOM({
+			event: ['click', () => {
+				let users = document.getElementsByClassName('user-item');
+				for (let user in users) {
+					if (users[user].className && users[user].className == 'user-item') {
+						let isBlocked = users[user].getElementsByClassName('userParam-blocked')[0].nextSibling.value != '0';
+						if (!isBlocked) {
+							users[user].style.display = users[user].style.display == 'none' ? 'inherit' : 'none';
+						}
+					}
+				}
+			}]
+		}, 'Filter only banned');
+
+		let userMute = DOM({
+			tag: 'input', placeholder: 'mute', event: ['contextmenu', (e) => {
+				e.preventDefault();
+				if (App.isAdmin()) {
+
+					let userId = parseInt(userMute.value);
+
+					if (!userId) {
+						return;
+					}
+
+					let users = document.getElementsByClassName('user-item');
+
+					let userTag = Array.from(users).findIndex(x => x.firstChild.innerText === 'id' + userId);
+
+					let userNickname = users[userTag].children[3].value;
+
+					let body = document.createDocumentFragment();
+
+					body.append(DOM(`Выдать мут чата ${userNickname}?`), DOM({
+						style: 'splash-content-button', event: ['click', async () => {
+
+							await App.api.request('user', 'mute', { id: userId });
+
+							App.notify('Выдан мут игроку ' + userNickname + '; id: ' + userId);
+
+							Splash.hide();
+
+						}]
+					}, 'Да'), DOM({ style: 'splash-content-button', event: ['click', async () => Splash.hide()] }, 'Нет'));
+
+					Splash.show(body);
+
+				}
+			}]
+		}, '');
+
+
+		let body = DOM({ style: 'main' }), adm = DOM({ style: 'adm' }, DOM({ event: ['click', () => View.show('castle')] }, '[X]'), filter, userMute);
+
+		let result = await App.api.request('user', 'all');
+
+		for (let item of result) {
+
+			let div = DOM({ tag: 'div', className: 'user-item' });
+
+			div.append(DOM(`id${item.id}`), DOM(`inv ${item.invite}`));
+
+			for (let key in item) {
+
+				if (['id', 'invite'].includes(key)) {
+
+					continue;
+
+				}
+
+				if (key == 'added') {
+
+					div.append(DOM(`${new Date(item.added).toLocaleString('ru-RU')}`));
+
+					continue;
+
+				}
+
+				div.append(DOM({ tag: 'div', className: 'userParam-' + key }, key), App.input(async (value) => {
+
+					let object = new Object();
+
+					object[key] = value;
+
+					await App.api.request('user', 'edit', { id: item.id, object: object });
+
+				}, { value: item[key] }));
+
+			}
+
+			div.append(DOM({
+				event: ['click', async () => {
+
+					if (!confirm(`Сброс пароля «${item.nickname}»?`)) {
+
+						return;
+
+					}
+
+					let password = await App.api.request('user', 'restore', { id: item.id });
+
+					prompt('Сброс пароля произведен успешно', `Пароль: ${password}`);
+
+				}]
+			}, `RESTORE`));
+
+			adm.append(div);
+
+		}
+
+		body.append(adm);
+
+		return body;
+
+	}
+
+}
+
+class Window {
+	static windows = {}
+	static async show(category, method, value, value2, value3) {
+		if (!(method in Window)) {
+			return;
+		}
+		let template = await Window[method](value, value2, value3);
+		let closeButton = DOM({
+			style: 'close-button',
+			title: 'Закрыть',
+			event: ['click', () => {
+				Window.close(category);
+			}]
+		},
+			DOM({ tag: 'img', src: 'content/icons/close-cropped.svg', alt: 'Закрыть', style: 'close-image-style' }));
+		template.append(closeButton);
+		if (category in Window.windows) {
+			Window.windows[category].remove();
+		}
+		Window.windows[category] = template;
+		View.active.append(template);
+	}
+
+	static close(category) {
+		if (category in Window.windows) {
+			Window.windows[category].remove();
+			delete Window.windows[category];
+			return true;
+		}
+		return false;
+	}
+	static async steamauth() {
+		return DOM({ id: 'wsteamauth' },
+			DOM({ style: 'castle-menu-title' }, Lang.text('steamauthTitle')),
+			DOM({ style: 'castle-menu-items'},
+			DOM({ style: 'castle-menu-text' }, Lang.text('steamauth')),
+			DOM({ style: 'castle-menu-item-button', event: ['click', () => window.open('https://api2.26rus-game.ru:2087', 'SteamAuth', 'width=1280, height=720, top='+((screen.height-720)/2)+', left='+((screen.width-1280)/2)+', toolbar=no, menubar=no, location=no, scrollbars=no, resizable=no, status=no')]}, "Продолжить")			
+			)
+		);
+	}
+	static async build(heroId, targetId = 0, isWindow = false) {
+		let viewBuild = await View.build(heroId, targetId, isWindow);
+		return DOM({ id: 'wbuild' }, viewBuild);
+	}
+	static async top(hero = 0) {
+		let viewTop = await View.top(hero, true);
+		return DOM({ id: 'wtop' }, viewTop);
+	}
+	static async farm() {
+		let view = await View.game(true);
+		return DOM({ id: 'wgame' }, view);
+	}
+	static async history() {
+		let view = await View.history(true);
+		return DOM({ id: 'whistory' }, view);
+	}
+	static async inventory() {
+		let view = await View.inventory(true);
+		return DOM({ id: 'winventory' }, view);
+	}
+	static async menu() {
+		return DOM({ id: 'wcastle-menu' },
+			DOM({ style: 'castle-menu-title' }, Lang.text('menu')),
+			DOM({style: 'castle-menu-items'},
+			App.isAdmin() ? DOM({ style: 'castle-menu-item-button' },
+				DOM({ event: ['click', () => Window.show('main', 'adminPanel')] }, 'Админ')) : DOM(),
+			DOM({ style: 'castle-menu-item-button' },
+				DOM({ event: ['click', () => Window.show('main', 'settings')] }, Lang.text('preferences'))),
+			DOM({ style: 'castle-menu-item-button' },
+				DOM({ event: ['click', () => Window.show('main', 'support')] }, Lang.text('support'))),
+			DOM({ style: ['castle-menu-item-button'] },
+				DOM({ event: ['click', () => {
+					
+					ParentEvent.children = window.open(`https://api2.26rus-game.ru:2087/connect/${App.storage.data.token}`, `SteamAuth`, 'width=1280, height=720, top='+((screen.height-720)/2)+', left='+((screen.width-1280)/2)+', toolbar=no, menubar=no, location=no, scrollbars=no, resizable=no, status=no');
+					
+				}] }, 'Привязать Steam')),
+			DOM({
+				style: 'castle-menu-item-button', event: ['click', async () => {
+					App.exit();
+					Splash.hide();
+				}]
+			}, Lang.text('accountSwitch')),
+			DOM({
+				style: 'castle-menu-item-button', event: ['click', () => {
+					if (NativeAPI.status) {
+						NativeAPI.exit();
+					}
+				}]
+			}, Lang.text('exit')),
+			DOM({ style: 'castle-menu-label' }, `${Lang.text('version')}: v.${PW_VERSION}`),
+			DOM({ style: 'menu-icons' },
+				DOM({ tag: 'a', href: 'https://vk.com/primeworldclassic', target: '_blank', event: ['click', (e) => NativeAPI.linkHandler(e)] },
+					DOM({ tag: 'img', src: 'content/icons/vk.webp', alt: 'VK', style: 'menu-icons' })
+				),
+				DOM({ tag: 'a', href: 'https://t.me/primeworldclassic', target: '_blank', event: ['click', (e) => NativeAPI.linkHandler(e)] },
+					DOM({ tag: 'img', src: 'content/icons/telegram.webp', alt: 'Telegram', style: 'menu-icons' })
+				),
+				DOM({ tag: 'a', href: 'https://discord.gg/MueeP3aAzh', target: '_blank', event: ['click', (e) => NativeAPI.linkHandler(e)] },
+					DOM({ tag: 'img', src: 'content/icons/discord.webp', alt: 'Discord', style: 'menu-icons' })
+				),
+				DOM({ tag: 'a', href: 'https://store.steampowered.com/app/3684820/Prime_World_Classic', target: '_blank', event: ['click', (e) => NativeAPI.linkHandler(e)] },
+					DOM({ tag: 'img', src: 'content/icons/steam2.webp', alt: 'Steam', style: 'menu-icons' })
+				)
+			)
+		)
+		)
+	}
+
+	static async settings() {
+		let soundTestId = 'sound_test';
+	
+		return DOM({ id: 'wcastle-menu' },
+			DOM({ style: 'castle-menu-title' }, Lang.text('preferences')),
+			DOM({style: 'castle-menu-items'},
+			DOM({ style: 'castle-menu-item-checkbox' },
+				DOM({
+					tag: 'input', type: 'checkbox', id: 'fullscreen-toggle', checked: !Settings.settings.fullscreen, event: ['change', (e) => {
+						Settings.settings.fullscreen = !e.target.checked;
+						Settings.ApplySettings({render: false, audio: false});
+					}]
+				},
+					{ checked: Settings.settings.fullscreen }),
+				DOM({ tag: 'label', for: 'fullscreen-toggle' }, Lang.text('windowMode'))
+			),
+			DOM({ style: 'castle-menu-item-checkbox' },
+            	DOM({
+                	tag: 'input',
+                	type: 'checkbox',
+                	id: 'render-toggle',
+                	checked: Settings.settings.render,
+                	event: ['change', (e) => {
+                    	Settings.settings.render = e.target.checked;
+                    	Settings.ApplySettings({audio: false, window: false});
+                	}]
+            	}),
+            	DOM({ tag: 'label', for: 'render-toggle' }, Lang.text('threeD'))
+        	),
+			DOM({ style: 'castle-menu-item-checkbox' },
+				DOM({
+					tag: 'input', type: 'checkbox', id: 'radmin-priority', checked: Settings.settings.radminPriority, event: ['change', (e) => {
+						Settings.settings.radminPriority = e.target.checked;
+					}]
+				},
+					{ checked: Settings.settings.radminPriority }),
+				DOM({ tag: 'label', for: 'radmin-priority' }, Lang.text('radminPriority'))
+			),
+			DOM({ style: 'castle-menu-label' }, Lang.text('volume'),
+            	DOM({
+                	tag: 'input',
+                	type: 'range',
+                	value: Settings.settings.globalVolume * 100,
+                	min: '0',
+                	max: '100',
+                	step: '1',
+                	style: 'castle-menu-slider',
+                	event: ['input', (e) => {
+                    	Settings.settings.globalVolume = parseFloat(e.target.value) / 100;
+                    	Settings.ApplySettings({render: false, window: false});
+																	  
+																		  
+                    	document.getElementById('global-volume-percentage').textContent = 
+                        	`${Math.round(Settings.settings.globalVolume * 100)}%`;
+                	}]
+            	}),
+				DOM({ 
+					tag: 'span', 
+					id: 'global-volume-percentage', 
+					style: 'volume-percentage' 
+				}, `${Math.round(Settings.settings.globalVolume * 100)}%`)
+			),
+			DOM({ style: 'castle-menu-label' }, Lang.text('volumeMusic'),
+				DOM({
+					tag: 'input', 
+					type: 'range', 
+					value: Settings.settings.musicVolume * 100, 
+					min: '0', 
+					max: '100', 
+					step: '1',
+					style: 'castle-menu-slider', 
+					event: ['input', (e) => {
+						Settings.settings.musicVolume = parseFloat(e.target.value) / 100;
+						Settings.ApplySettings({render: false, window: false});
+																	  
+						document.getElementById('music-volume-percentage').textContent = 
+							`${Math.round(Settings.settings.musicVolume * 100)}%`;
+					}]
+				}),
+				DOM({ 
+					tag: 'span', 
+					id: 'music-volume-percentage', 
+					style: 'volume-percentage' 
+				}, `${Math.round(Settings.settings.musicVolume * 100)}%`)
+			),
+			DOM({ style: 'castle-menu-label' }, Lang.text('volumeSound'),
+				DOM({
+					tag: 'input', 
+					type: 'range', 
+					value: Settings.settings.soundsVolume * 100, 
+					min: '0', 
+					max: '100', 
+					step: '1',
+					style: 'castle-menu-slider', 
+					event: ['input', (e) => {
+						Settings.settings.soundsVolume = parseFloat(e.target.value) / 100;
+						Settings.ApplySettings({render: false, window: false});
+						
+						if (!Castle.testSoundIsPlaying) {
+							Castle.testSoundIsPlaying = true;
+							Sound.play('content/sounds/found.ogg', { 
+								id: soundTestId, 
+								volume: Castle.GetVolume(Castle.AUDIO_SOUNDS) 
+							}, () => { 
+								Castle.testSoundIsPlaying = false 
+							});
+						}
+																		  
+						document.getElementById('sounds-volume-percentage').textContent = 
+							`${Math.round(Settings.settings.soundsVolume * 100)}%`;
+					}]
+				}),
+				DOM({ 
+					tag: 'span', 
+					id: 'sounds-volume-percentage', 
+					style: 'volume-percentage' 
+				}, `${Math.round(Settings.settings.soundsVolume * 100)}%`)
+			),
+			// Добавленная кнопка "Клавиши"
+			/*DOM({ 
+				style: 'castle-menu-item-button',
+				event: ['click', () => {
+					console.log("Клавиши clicked"); // Для отладки
+					Window.show('main','keybindings'); 
+				}]
+			}, Lang.text('keys') || 'Клавиши'), // Fallback на текст, если перевод отсутствует
+			*/
+			// Кнопка "Назад"
+			DOM({ 
+				style: 'castle-menu-item-button', 
+				event: ['click', () => Window.show('main', 'menu')] 
+			}, Lang.text('back'))/*,
+			
+			DOM({ style: 'castle-menu-label-description' }, Lang.text('soundHelp'))
+			*/
+		)
+		);
+	}
+
+	static async keybindings() {
+    async function findConfigFile() {
+        const possiblePaths = [
+            `${nw.App.getDataPath('documents')}/My Games/Prime World Classic/input_new.cfg`,
+            `${process.env.USERPROFILE}/Documents/My Games/Prime World Classic/input_new.cfg`,
+            `${process.env.USERPROFILE}/OneDrive/Documents/My Games/Prime World Classic/input_new.cfg`
+        ];
+        
+        for (const path of possiblePaths) {
+            try {
+                await fs.access(path);
+                return path;
+            } catch (e) {
+                continue;
+            }
+        }
+        return null;
+    }
+
+    const configPath = await findConfigFile();
+    
+    if (!configPath) {
+        console.error("Не удалось найти файл конфигурации ни по одному из путей");
+        return DOM({ id: 'wcastle-keybindings' },
+            DOM({ style: 'castle-menu-error' }, 
+                Lang.text('keybindings_error', 'Не удалось найти файл конфигурации клавиш')
+            ),
+            DOM({ 
+                class: 'castle-menu-item-button',
+                event: ['click', () => Window.show('settings', 'menu')]
+            }, Lang.text('back', 'Назад'))
+        );
+    }
+
+    const defaultKeys = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
+    
+    let currentBinds = {};
+    let configReadError = false;
+    
+    try {
+        const configContent = await fs.readFile(configPath, 'utf-8');
+        const bindRegex = /bind cmd_action_bar_slot(\d+) '(.+?)'/g;
+        let match;
+        
+        while ((match = bindRegex.exec(configContent)) !== null) {
+            currentBinds[`slot${match[1]}`] = match[2];
+        }
+    } catch (e) {
+        console.error("Ошибка чтения конфига:", e);
+        configReadError = true;
+    }
+
+    return DOM({ id: 'wcastle-keybindings' },
+        DOM({ style: 'castle-menu-title' }, Lang.text('keybindings_title', 'Настройка клавиш')),
+        
+        configReadError 
+            ? DOM({ style: 'castle-menu-error' }, 
+                Lang.text('keybindings_error', 'Не удалось прочитать файл конфигурации клавиш. Проверьте путь:') + ' ' + configPath
+              )
+            : DOM({},
+                ...Array.from({ length: 10 }, (_, i) => {
+                    const slotNum = i + 1;
+                    const slotKey = `slot${slotNum}`;
+                    const currentKey = currentBinds[slotKey] || defaultKeys[i];
+                    
+                    return DOM({ style: 'castle-menu-label keybinding-row' }, 
+                        DOM({ style: 'keybinding-label' }, 
+                            Lang.text(`talent_slot_${slotNum}`, `Талант ${slotNum}`)
+                        ),
+                        DOM({
+                            tag: 'input',
+                            type: 'text',
+                            value: currentKey,
+                            class: 'castle-keybinding-input',
+                            maxLength: 1,
+                            event: [
+                                'keydown',
+                                (e) => {
+                                    if (e.key === 'Backspace' || e.key === 'Delete') {
+                                        e.target.value = '';
+                                        currentBinds[slotKey] = '';
+                                        return;
+                                    }
+                                    
+                                    if (e.ctrlKey || e.altKey || e.metaKey || e.key.length > 1) {
+                                        return;
+                                    }
+                                    
+                                    e.preventDefault();
+                                    const key = e.key.toUpperCase();
+                                    
+                                    if (/^[0-9A-Z]$/.test(key)) {
+                                        e.target.value = key;
+                                        currentBinds[slotKey] = key;
+                                        e.target.classList.add('input-success');
+                                        setTimeout(() => e.target.classList.remove('input-success'), 200);
+                                    } else {
+                                        e.target.classList.add('input-error');
+                                        setTimeout(() => e.target.classList.remove('input-error'), 200);
+                                    }
+                                }
+                            ]
+                        })
+                    );
+                }),
+                
+                DOM({ 
+                    class: 'castle-menu-item-button reset-btn',
+                    event: ['click', () => {
+                        document.querySelectorAll('.castle-keybinding-input').forEach((input, i) => {
+                            input.value = defaultKeys[i];
+                            currentBinds[`slot${i+1}`] = defaultKeys[i];
+                        });
+                        
+                        const btn = document.querySelector('.reset-btn');
+                        btn.classList.add('action-success');
+                        btn.textContent = Lang.text('reset_complete', 'Сброшено!');
+                        setTimeout(() => {
+                            btn.classList.remove('action-success');
+                            btn.textContent = Lang.text('reset_defaults', 'Сбросить на 1-0');
+                        }, 1000);
+                    }]
+                }, Lang.text('reset_defaults', 'Сбросить на 1-0')),
+                
+                DOM({ 
+                    class: 'castle-menu-item-button save-btn',
+                    event: ['click', async () => {
+                        try {
+                            let newConfig = '';
+                            for (let i = 1; i <= 10; i++) {
+                                const key = currentBinds[`slot${i}`] || defaultKeys[i-1];
+                                newConfig += `bind cmd_action_bar_slot${i} '${key}'\n`;
+                            }
+                            
+                            await fs.writeFile(configPath, newConfig);
+                            
+                            const btn = document.querySelector('.save-btn');
+                            btn.classList.add('action-success');
+                            btn.textContent = Lang.text('saved', 'Сохранено!');
+                            setTimeout(() => {
+                                btn.classList.remove('action-success');
+                                btn.textContent = Lang.text('save', 'Сохранить');
+                            }, 1000);
+                            
+                        } catch (e) {
+                            console.error("Ошибка сохранения:", e);
+                            const btn = document.querySelector('.save-btn');
+                            btn.classList.add('action-error');
+                            btn.textContent = Lang.text('save_error', 'Ошибка!');
+                            setTimeout(() => {
+                                btn.classList.remove('action-error');
+                                btn.textContent = Lang.text('save', 'Сохранить');
+                            }, 1000);
+                        }
+                    }]
+                }, Lang.text('save', 'Сохранить'))
+            ),
+        
+        DOM({ 
+            class: 'castle-menu-item-button',
+            event: ['click', () => Window.show('settings', 'menu')]
+        }, Lang.text('back', 'Назад'))
+    );
+}
+	
+	static async support() {
+		return DOM({ id: 'wcastle-menu' },
+			DOM({ style: 'castle-menu-title' }, Lang.text('support')),
+			DOM({style: 'castle-menu-items'},
+			DOM({ style: 'castle-menu-text' }, Lang.text('supportDesk')),
+			DOM({ style: 'menu-icons' },
+				DOM({ tag: 'a', href: 'https://vk.me/join/HbESO2Fty/Z9sgbWSO0jOhNu_at9J84U7Uk=', target: '_blank', event: ['click', (e) => NativeAPI.linkHandler(e)] },
+					DOM({ tag: 'img', src: 'content/icons/vk.webp', alt: 'VK', style: 'support-icon' })
+				),
+				DOM({ tag: 'a', href: 'https://t.me/primeworldclassic/8232', target: '_blank', event: ['click', (e) => NativeAPI.linkHandler(e)] },
+					DOM({ tag: 'img', src: 'content/icons/telegram.webp', alt: 'Telegram', style: 'support-icon' })
+				),
+				DOM({ tag: 'a', href: 'https://discord.com/channels/1252164250265325598/1298407885876891691', target: '_blank', event: ['click', (e) => NativeAPI.linkHandler(e)] },
+					DOM({ tag: 'img', src: 'content/icons/discord.webp', alt: 'Discord', style: 'support-icon' })
+				)
+			),
+			DOM({ style: 'castle-menu-item-button', event: ['click', () => Window.show('main', 'menu')] }, Lang.text('back'))
+		)
+		);
+	}
+	static async adminPanel() {
+		return DOM({ id: 'wcastle-menu' },
+			DOM({ style: 'castle-menu-title' }, 'Админ Панель'),
+			DOM({
+				style: 'castle-menu-item-button', event: ['click', () => {
+					View.show('talents'); // Логика для отображения обычных талантов
+				}]
+			}, 'Таланты (обычные)'),
+			DOM({
+				style: 'castle-menu-item-button', event: ['click', () => {
+					View.show('talents2'); // Логика для отображения классовых талантов
+				}]
+			}, 'Таланты (классовые)'),
+			DOM({
+				style: 'castle-menu-item-button', event: ['click', () => {
+					View.show('users'); // Логика для управления пользователями
+				}]
+			}, 'Пользователи'),
+			DOM({ style: 'castle-menu-item-button', event: ['click', () => Window.show('main', 'menu')] }, Lang.text('back'))
+		);
+	}
+}
+
+// Функция для обработки нажатия клавиш
+function handleKeyPress(event) {
+	if (event.key === "Escape") {
+		// Вызываем метод show для открытия меню
+		if (!Window.close('main')) {
+			Window.show('main', 'menu');
+		}
+	}
+}
+
+// Добавляем обработчик события нажатия клавиш
+document.addEventListener('keydown', handleKeyPress);
+
+class Frame {
+
+	static body = false;
+
+	static open(method) {
+
+		if (!Frame.body) {
+
+			Frame.inject();
+
+		}
+
+		if (method in Frame) {
+
+			Frame[method]();
+
+		}
+
+	}
+
+	static inject() {
+
+		Frame.body = DOM({ style: 'frame-body' });
+
+		document.body.prepend(DOM({ style: 'frame' }, Frame.body));
+		let test = DOM({ tag: 'div' }, 'width:100%');
+
+		test.setAttribute('style', 'width:100%;background:green;text-align:center;font-size:5cqw');
+		Frame.body.append(test);
+
+	}
+
+	static clan() {
+
+
+
+	}
+
+
+
+}
+
+class Winrate {
+
+	static icon(number) {
+
+		if (number <= 25) {
+
+			return 3;
+
+		}
+		else if (number <= 50) {
+
+			return 2;
+
+		}
+		else {
+
+			return 1;
+
+		}
+
+	}
+
+}
+
+class Rank {
+
+	static name = ['', 'Рекрут', 'Наёмник', 'Рядовой', 'Капрал', 'Сержант', 'Лейтенант', 'Капитан', 'Майор', 'Подполковник', 'Полковник', 'Генерал', 'Маршал', 'Бог'];
+
+	static icon(rating) {
+
+		if (rating <= 1199) {
+
+			return 1;
+
+		}
+		else if (rating <= 1299) {
+
+			return 2;
+
+		}
+		else if (rating <= 1399) {
+
+			return 3;
+
+		}
+		else if (rating <= 1499) {
+
+			return 4;
+
+		}
+		else if (rating <= 1599) {
+
+			return 5;
+
+		}
+		else if (rating <= 1699) {
+
+			return 6;
+
+		}
+		else if (rating <= 1799) {
+
+			return 7;
+
+		}
+		else if (rating <= 1899) {
+
+			return 8;
+
+		}
+		else if (rating <= 1999) {
+
+			return 9;
+
+		}
+		else if (rating <= 2099) {
+
+			return 10;
+
+		}
+		else if (rating <= 2199) {
+
+			return 11;
+
+		}
+		else {
+
+			return 12;
+
+		}
+
+	}
+
+	static getName(rating) {
+
+		return Rank.name[Rank.icon(rating)];
+
+	}
+
+}
+
+class Build {
+
+	static loading = false;
+
+	static language = {
+		sr: 'Сила/Разум',
+		hp: Lang.text('health'),
+		provorstvo: Lang.text('agility'),
+		hitrost: Lang.text('dexterity'),
+		regenmp: 'Регенерация энергии',
+		stoikost: Lang.text('stamina'),
+		volia: Lang.text('will'),
+		ph: 'Проворство/Хитрость',
+		sv: 'Стойкость/Воля',
+		razum: Lang.text('intelligence'),
+		sila: Lang.text('strength'),
+		speedtal: '%<speedtal></speedtal>',
+		srsv: 'Сила/Разум/Стойкость/Воля',
+		hpmp: 'Здоровье/Энергия',
+		krajahp: 'Кража здоровья',
+		regenhp: 'Регенерация здоровья',
+		mp: Lang.text('energy'),
+		krajamp: 'Кража энергии',
+		stoikostrz: 'Стойкость на родной земле',
+		voliarz: 'Воля на родной земле',
+		speedtalrz: '%<speedtal></speedtal> на родной земле',
+		speedtalvz: '%<speedtal></speedtal> на вражеской земле',
+		hitrostrz: 'Хитрость на родной земле',
+		provorstvorz: 'Проворство на родной земле',
+		silarz: 'Сила на родной земле',
+		razumrz: 'Разум на родной земле',
+		krajahprz: 'Кража здоровья на родной земле',
+		regenhpvz: 'Регенерация здоровья на вражеской земле',
+		hitrostvz: 'Хитрость на вражеской земле',
+		provorstvovz: 'Проворство на вражеской земле',
+		regenmpvz: 'Регенерация энергии на вражеской земле',
+		silavz: 'Сила на вражеской земле',
+		razumvz: 'Разум на вражеской земле',
+		svvz: 'Стойкость/Воля на вражеской земле',
+		krajahpvz: 'Кража здоровья на вражеской земле',
+		vs: 'Воля/Стойкость',
+		speed: Lang.text('speed'),
+		speedrz: 'Скорость на родной земле',
+		speedvz: 'Скорость на вражеской или нейтральной земле',
+		dopspeed: 'Дополнительный бонус к скорости',
+		speedstak: 'Стак скорости',
+	};
+
+	static talentRefineByRarity = {
+		4: 5.0,
+		3: 7.0,
+		2: 9.0,
+		1: 12.0
+	}
+
+	static async view(user, hero, nickname = '', animate = true) {
+
+		let request = await App.api.request('build', 'get', { user: user, hero: hero });
+
+		let container = DOM({
+			event: ['click', async () => {
+
+				if (animate) {
+					Build.view(user, hero, nickname, false);
+				}
+
+			}]
+		});
+
+		container.style.width = '60cqmin';
+
+		container.style.height = '60cqmin';
+
+		let state = false;
+		let get = DOM({
+			event: ['click', async () => {
+
+				if (!state) {
+
+					get.innerText = 'Перезаписать текущий билд?';
+
+					state = true;
+
+					return;
+
+				}
+
+				await App.api.request('build', 'steal', { user: user, hero: hero });
+
+				View.show('build', hero);
+
+				Splash.hide();
+
+			}]
+		}, `Украсть билд?`);
+
+		let bottom = DOM({ style: 'build-bottom' }, get, DOM({ event: ['click', () => Splash.hide()] }, `[Х]`));
+
+		if (animate) {
+
+			bottom.style.opacity = 1;
+
+		}
+
+		container.append(Build.viewModel(request, () => { }, animate));
+
+		Splash.show(DOM({ style: 'div' }, DOM({ style: 'build-top' }, nickname), container, bottom), false);
+
+	}
+
+	static viewModel(data, callback, animate = true) {
+
+		let body = DOM({ style: 'build-body' }), i = 1, row = DOM({ style: 'build-body-row' }), elements1 = new Array(), elements2 = new Array();
+
+		body.append(row);
+
+		for (let item of data) {
+
+			let talent = DOM();
+
+			if (item != 0) {
+
+				if (animate) {
+
+					talent.style.opacity = 0;
+
+					talent.style.zIndex = 9999;
+
+					if (item > 0) {
+
+						elements2.push(talent);
+
+					}
+					else {
+
+						elements1.push(talent);
+
+					}
+
+				}
+
+				talent.style.backgroundImage = (item > 0) ? `url(content/talents/${item}.webp)` : `url(content/htalents/${Math.abs(item)}.webp)`;
+
+			}
+
+			if (i > 6) {
+
+				i = 2;
+
+				row = DOM({ style: 'build-body-row' });
+
+				row.append(talent);
+
+				body.append(row);
+
+				continue;
+
+			}
+			else {
+
+				row.append(talent);
+
+			}
+
+			i++;
+
+		}
+
+		if (!animate) {
+
+			return body;
+
+		}
+
+		elements1 = Game.shuffle(elements1);
+
+		elements2 = Game.shuffle(elements2);
+
+		let delay = 0, number = 1;
+
+		for (let element of elements1) {
+
+			delay += 150;
+
+			let animate = element.animate({ opacity: [0, 1], transform: ['scale(3)', 'scale(1)'] }, { delay: delay, duration: 350, fill: 'both', easing: 'ease-out' });
+
+			if (number == elements1.length) {
+
+				animate.onfinish = () => {
+
+					setTimeout(() => {
+
+						let number = 1;
+
+						delay = 0;
+
+						for (let element of elements2) {
+
+							delay += 50;
+
+							let animate = element.animate({ opacity: [0, 1], transform: ['scale(3)', 'scale(1)'] }, { delay: delay, duration: 350, fill: 'both', easing: 'ease-out' });
+
+							if (number == elements2.length) {
+
+								animate.onfinish = () => {
+
+									if (callback) {
+
+										callback();
+
+									}
+
+								}
+
+							}
+
+							number++;
+
+						}
+
+					}, 100);
+
+				}
+
+			}
+
+			number++;
+
+		}
+
+		return body;
+
+	}
+
+	static async init(heroId, targetId, isWindow) {
+
+		Build.talents = new Object();
+
+		Build.descriptionView = document.createElement('div');
+
+		Build.CleanInvalidDescriptions();
+
+		Build.descriptionView.classList.add('build-description');
+
+		Build.descriptionView.style.display = 'none';
+
+		Build.descriptionView.onmouseover = () => {
+
+			Build.descriptionView.style.display = 'none';
+
+		}
+
+		document.body.append(Build.descriptionView);
+
+		Build.heroView = document.createElement('div');
+		Build.heroView.classList.add('build-hero');
+
+		Build.levelView = document.createElement('div');
+		Build.levelView.classList.add('build-level');
+
+		Build.fieldView = document.createElement('div');
+		Build.fieldView.classList.add('build-field');
+
+		Build.listView = document.createElement('div');
+		Build.listView.classList.add('build-list');
+
+		Build.buildActionsView = document.createElement('div');
+		Build.buildActionsView.classList.add('build-actions-view');
+
+		Build.fieldConflict = new Object();
+
+		// ================================================
+
+		const buttonTalents = document.createElement('button');
+		buttonTalents.innerText = 'Таланты';
+		buttonTalents.title = 'TODO еще не готово - команда PW Classic работает над этим';
+		buttonTalents.classList.add('btn-talents', 'btn-hover', 'color-1');
+		buttonTalents.title = 'Библиотека талантов';
+
+		const separator = document.createElement('div');
+		separator.innerText = '|';
+		separator.classList.add('btn-separator');
+
+
+		const buttonSets = document.createElement('button');
+		buttonSets.innerText = 'Сеты';
+		buttonSets.title = 'TODO еще не готово - команда PW Classic работает над этим';
+		buttonSets.classList.add('btn-sets', 'btn-hover', 'color-1');
+
+		buttonSets.addEventListener('click', () => Build.sets());
+
+		Build.talentsAndSetsView = document.createElement('div');
+		Build.talentsAndSetsView.classList.add('buttons-talents-and-sets');
+		Build.talentsAndSetsView.append(buttonTalents, separator, buttonSets);
+
+		const buildTalents = DOM({ style: 'build-talents' });
+
+		Build.inventoryView = document.createElement('div');
+		Build.inventoryView.classList.add('build-talent-view');
+
+		Build.skinView = DOM({
+			tag: 'button',
+			style: ['btn-skins', 'btn-hover', 'color-3'],
+			title: 'Образы на героя',
+			event: ['click', async () => Build.skinChange()]
+		},
+			Lang.text('skins')
+		);
+
+		Build.training = DOM({
+			tag: 'button',
+			style: ['btn-skins', 'btn-hover', 'color-3'],
+			title: 'Режим тренировки',
+			event: ['click', async () => {
+
+				try {
+
+					if (NativeAPI.status) {
+
+						await MM.gameStartCheck();
+
+						await App.api.request(CURRENT_MM, 'heroParty', { id: MM.partyId, hero: Build.heroId });
+
+						await App.api.request(CURRENT_MM, 'start', { version: PW_VERSION, mode: 99 });
+
+					}
+					else {
+
+						App.error('Необходима Windows версия лаунчера');
+
+					}
+
+				}
+				catch (error) {
+
+					return App.error(error);
+
+				}
+
+			}]
+		},
+			'Тренировка'
+		);
+
+		Build.inventoryView.append(buildTalents);
+
+
+		// ================================================
+
+		Build.rarityView = DOM({ style: 'build-rarity' });
+
+		Build.activeBarView = DOM({ style: 'build-active-bar' });
+
+		let request = await App.api.request('build', 'data', { heroId: heroId, target: targetId });
+
+		Build.dataRequest = request;
+
+		Build.id = request.id;
+
+		Build.heroId = heroId;
+
+		Build.dataStats = new Object();
+		Build.calculationStats = new Object();
+		Build.initialStats = new Object();
+		Build.heroPower = 0.0;
+		Build.heroStatsFromPower = {
+			hp: 0.0,
+			mp: 0.0,
+			sila: 0.0,
+			razum: 0.0,
+			provorstvo: 0.0,
+			hitrost: 0.0,
+			stoikost: 0.0,
+			volia: 0.0
+		}
+		Build.installedTalents = new Array(36).fill(null);
+		Build.profileStats = new Object();
+
+		Build.applyRz = true;
+		Build.applyVz = false;
+		Build.applyStak = true;
+		Build.applyBuffs = true;
+
+		Build.list(request.build, isWindow);
+		Build.buildActions(request.build, isWindow);
+
+		request.hero.stats['damage'] = 0;
+		request.hero.stats['critProb'] = 0;
+		request.hero.stats['attackSpeed'] = 0;
+		request.hero.stats['punching'] = 0;
+		request.hero.stats['protectionBody'] = 0;
+		request.hero.stats['protectionSpirit'] = 0;
+		Build.hero(request.hero);
+
+		Build.level();
+
+		Build.field(request.body);
+
+		Build.inventory();
+
+		Build.rarity();
+
+		Build.activeBar(request.active);
+
+		Build.ruleSortInventory = new Object();
+
+	}
+
+	static CleanInvalidDescriptions() {
+		let invalidDescriptions = document.getElementsByClassName('build-description');
+		for (let descElement in invalidDescriptions) {
+			if (invalidDescriptions[descElement].className && invalidDescriptions[descElement].className == 'build-description') {
+				console.log('Удалено протухшее описание');
+				invalidDescriptions[descElement].remove();
+			}
+		}
+	}
+
+	static async sets() {
+
+		let sets = await App.api.request('build', 'sets');
+
+		for (let set of sets) {
+
+			console.log(set);
+
+		}
+
+	}
+
+	static skinChange() {
+
+		let bodyHero = DOM({ style: 'skin-change' });
+
+		let preload = new PreloadImages(bodyHero);
+
+		for (let i = 0; i < Build.dataRequest.hero.skin.total; i++) {
+
+			let hero = DOM();
+
+			hero.dataset.url = `content/hero/${Build.heroId}/${(i + 1)}.webp`;
+
+			hero.dataset.skin = (i + 1);
+
+			hero.addEventListener('click', async () => {
+
+				await App.api.request('build', 'skinChange', { hero: Build.heroId, skin: hero.dataset.skin });
+
+				Build.heroImg.style.backgroundImage = `url(content/hero/${Build.heroId}/${hero.dataset.skin}.webp)`;
+
+				Splash.hide();
+
+			});
+
+			preload.add(hero);
+
+		}
+
+		Splash.show(bodyHero, false);
+
+	}
+
+	static buildSelectName(method, btnName, data, isWindow) {
+
+		const close = DOM({
+			tag: 'div', style: 'close-button', event: ['click', () => Splash.hide()]
+		});
+		
+		close.style.backgroundImage = 'url(content/icons/close-cropped.svg)';
+		
+		let template = document.createDocumentFragment();
+
+		let name = DOM({ tag: 'input', placeholder: 'Наименование билда' });
+
+		let button = DOM({
+			style: 'splash-content-button', event: ['click', async () => {
+
+				if (!name.value) {
+
+					Splash.hide();
+
+				}
+
+				data['name'] = name.value;
+
+				await App.api.request('build', method, data);
+
+				Splash.hide();
+
+				isWindow ? Window.show('main', 'build', Build.heroId, 0, true) : View.show('build', Build.heroId);
+
+			}]
+		}, btnName);
+
+		template.append(name, button, close);
+
+		Splash.show(template);
+
+	}
+	
+
+
+	static buildActions(builds, isWindow) {
+		if (builds.length < 6) {
+			const create = DOM({
+				tag: 'button', style: ['build-action-item', 'btn-hover', 'color-1'],
+				title: 'Создать новую вкладку билда',
+				event: ['click', () => Build.buildSelectName('create', 'Создать билд', { heroId: Build.heroId }, isWindow)]
+			});
+
+			let createBg = DOM({ style: ['btn-create', 'build-action-item-background'] });
+			createBg.style.backgroundImage = `url('content/icons/plus.svg')`;
+			create.append(createBg);
+			Build.buildActionsView.append(create);
+		}
+
+		// Кнопка дублирования
+		
+		const duplicate = DOM({
+		tag: 'button', 
+		style: ['build-action-item', 'btn-hover', 'color-1'],
+		title: 'Дублировать текущий билд',
+		event: ['click', async () => {
+			// Сохраняем ID текущего билда до любых действий
+			const currentBuildId = Build.id;
+			
+			const fragment = document.createDocumentFragment();
+			const title = DOM({ style: 'splash-text' }, builds.length >= 6 
+				? 'Достигнут лимит билдов (6). Выберите билд для замены:' 
+				: 'Выберите билд для замены или создайте новый:');
+			fragment.append(title);
+			
+			// Показываем все билды кроме текущего
+			builds.filter(build => build.id !== currentBuildId).forEach(build => {
+				const btn = DOM({
+					tag: 'button',
+					style: ['build-replace-btn', 'btn-hover'],
+					event: ['click', async () => {
+						await App.api.request('build', 'duplicate', {
+							id: currentBuildId,
+							target: build.id
+						});
+						Splash.hide();
+				
+						isWindow ? Window.show('main', 'build', Build.heroId, 0, true) : View.show('build', Build.heroId);
+					}]
+				}, build.name);
+				fragment.append(btn);
+			});
+			
+			// Если билдов меньше 6, добавляем кнопку создания нового
+			if (builds.length < 6) {
+				const createNewBtn = DOM({
+					tag: 'button',
+					style: ['build-replace-btn', 'btn-hover', 'color-1'],
+					event: ['click', async () => {
+						Splash.hide();
+						
+						// Создаем форму для имени нового билда
+						const close = DOM({
+							tag: 'div', style: 'close-button', event: ['click', () => Splash.hide()]
+						});
+						close.style.backgroundImage = 'url(content/icons/close-cropped.svg)';
+						
+						let template = document.createDocumentFragment();
+						let name = DOM({ tag: 'input', placeholder: 'Наименование билда' });
+
+						let button = DOM({
+							style: 'splash-content-button', 
+							event: ['click', async () => {
+								if (!name.value) {
+									Splash.hide();
+									return;
+								}
+
+								// Сначала создаем новый билд
+								const createData = { heroId: Build.heroId, name: name.value };
+								const createResponse = await App.api.request('build', 'create', createData);
+								console.log(currentBuildId);
+								console.log(createResponse);
+								// Затем дублируем сохраненный билд в новый
+								
+								await App.api.request('build', 'duplicate', 
+								{
+									id: currentBuildId,
+									target: createResponse
+								});
+								
+
+								Splash.hide();
+								isWindow ? Window.show('main', 'build', Build.heroId, 0, true) : View.show('build', Build.heroId);
+							}]
+						}, 'Создать и дублировать');
+
+						template.append(name, button, close);
+						Splash.show(template);
+					}]
+				}, 'Дублировать в новый билд');
+				fragment.append(createNewBtn);
+			}
+			
+			// Добавляем крестик для закрытия вместо кнопки "Отмена"
+			const closeButton = DOM({
+				tag: 'div',
+				style: 'close-button',
+				event: ['click', () => Splash.hide()]
+			});
+			closeButton.style.backgroundImage = 'url(content/icons/close-cropped.svg)';
+			fragment.append(closeButton);
+			
+			Splash.show(fragment);
+		}]
+	});
+
+	let duplicateBg = DOM({ style: ['btn-duplicate'] });
+	duplicateBg.style.backgroundImage = `url('content/icons/copy.svg')`;
+	duplicate.append(duplicateBg);
+	Build.buildActionsView.append(duplicate);
+
+	
+
+		// Кнопка случайного билда
+		{
+			const random = DOM({
+				tag: 'button', style: ['build-action-item', 'btn-hover', 'color-1'],
+				title: 'Сгенерировать случайный билд',
+				event: ['click', async () => {
+					await App.api.request('build', 'random', { id: Build.id });
+					isWindow ? Window.show('main', 'build', Build.heroId, 0, true) : View.show('build', Build.heroId);
+				}]
+			});
+
+			let randomBg = DOM({ style: ['btn-random', 'build-action-item-background'] });
+			randomBg.style.backgroundImage = `url('content/icons/dice.svg')`;
+			random.append(randomBg);
+			Build.buildActionsView.append(random);
+		}
+
+		// Кнопка сброса билда
+		{
+			const resetBuild = DOM({
+				tag: 'button', 
+				style: ['build-action-item', 'btn-hover', 'color-1'],
+				title: 'Сбросить таланты в этом билде',
+				event: ['click', async () => {
+					const fragment = document.createDocumentFragment();
+					const title = DOM({ style: 'splash-text' }, 'Сбросить таланты в этом билде?');
+					fragment.append(title);
+					
+					// Красная кнопка сброса
+					const reset = DOM({
+						tag: 'button',
+						style: ['build-replace-btn', 'btn-hover'],
+						event: ['click', async () => {
+							await App.api.request('build', 'clear', { id: Build.id });
+							Splash.hide();
+							isWindow ? Window.show('main', 'build', Build.heroId, 0, true) : View.show('build', Build.heroId);
+						}]
+					}, 'Сбросить');
+					
+					// Явно задаём красный цвет
+					reset.style.backgroundColor = '#7b001c';
+					reset.style.color = 'white';
+					reset.style.borderColor = '#ff3333';
+					reset.addEventListener('mouseover', () => {
+						reset.style.backgroundColor = '#ff3333';
+					});
+					reset.addEventListener('mouseout', () => {
+						reset.style.backgroundColor = '#7b001c';
+					});
+					
+					fragment.append(reset);
+					
+					let closeButton = DOM({
+						tag: 'div',
+						style: 'close-button',
+						event: ['click', () => Splash.hide()]
+					});
+					closeButton.style.backgroundImage = 'url(content/icons/close-cropped.svg)';
+					fragment.append(closeButton);
+					Splash.show(fragment);
+				}]
+			});
+
+			let resetBg = DOM({ style: ['btn-trash', 'build-action-item-background'] });
+			resetBg.style.backgroundImage = `url('content/icons/trash.svg')`;
+			resetBuild.append(resetBg);
+			Build.buildActionsView.append(resetBuild);
+		}
+	}
+	
+	static list(builds, isWindow) {
+    const buildButtonsWrapper = DOM({ style: 'build-list' });
+
+    for (let build of builds) {
+        const item = DOM(
+            {
+                tag: 'button', style: ['build-tab-item', 'btn-hover'], event: [
+                    'click', () => {
+                        isWindow ? Window.show('main', 'build', Build.heroId, build.id, true) : View.show('build', Build.heroId, build.id);
+                    }]
+            },
+            DOM({}, `${build.name}`),
+        );
+        item.addEventListener('contextmenu', (e) => {
+            e.preventDefault();
+            Build.buildSelectName('rename', 'Переименовать билд', { id: build.id }, isWindow);
+        });
+
+        const div = DOM({ tag: 'div', style: 'button-build--wrapper' }, item);
+
+        if (build.target) {
+            item.classList.add('list-highlight');
+        } else {
+            item.classList.add('list-not-highlight');
+        }
+
+        Build.listView.append(div);
+    }
+
+    // Добавляем обработчик колесика мыши после создания списка
+    setTimeout(() => {
+        const buildList = document.querySelector('.build-list');
+        if (buildList) {
+            buildList.addEventListener('wheel', function(e) {
+                e.preventDefault();
+                this.scrollLeft += e.deltaY;
+                
+                // Опционально: можно добавить множитель для скорости прокрутки
+                // this.scrollLeft += e.deltaY * 2;
+            });
+        }
+    }, 0);
+
+    /*
+    setTimeout(_ => {
+        if (!document.querySelector('.build-list.list-highlight')) {
+            document.querySelector('.build-list').classList.add('list-highlight');
+        }
+    }, 300);
+    */
+}
+
+	static totalStat(stat) {
+
+		let initialStat = Build.initialStats[stat];
+		let talentsStat = Build.calculationStats[stat];
+		let powerStat = 0.0;
+		if (stat in Build.heroStatsFromPower) {
+			powerStat += Build.heroStatsFromPower[stat];
+		}
+		return initialStat + talentsStat + powerStat;
+	}
+
+	static hero(data) {
+
+		Build.heroStatMods = Build.dataRequest.hero.statModifiers;
+
+		Build.heroPowerModifier = Build.dataRequest.hero.overallModifier;
+
+		Build.heroPowerFromInstalledTalents = 0.0;
+
+		Build.heroMainAttackStat = data.param; // osn_param
+		Build.heroAttackModifier = data.koef; // aa_koef 
+
+		for (let stat in data.stats) {
+			Build.initialStats[stat] = parseFloat(data.stats[stat]);
+			Build.calculationStats[stat] = 0.0;
+		}
+
+		let stats = DOM({ style: 'build-hero-stats-view' });
+
+		const template = {
+
+			hp: Lang.text('health'),
+			mp: Lang.text('energy'),
+			speed: Lang.text('speed'),
+			sila: Lang.text('strength'),
+			razum: Lang.text('intelligence'),
+			provorstvo: Lang.text('agility'),
+			hitrost: Lang.text('dexterity'),
+			stoikost: Lang.text('stamina'),
+			volia: Lang.text('will'),
+			damage: Lang.text('damage'),
+			critProb: Lang.text('criticalHit'),
+			attackSpeed: Lang.text('attacksPerSecond'),
+			punching: Lang.text('penetration'),
+			protectionBody: Lang.text('defencePsys'),
+			protectionSpirit: Lang.text('defenceMagic'),
+		};
+
+		if (!('profile' in Build.dataRequest)) {
+
+			Build.dataRequest.profile = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+
+		}
+
+		let i = 0;
+
+		const cond = key =>
+			['damage', 'critProb', 'attackSpeed', 'punching', 'protectionBody', 'protectionSpirit', 'considerStacks', 'considerBuff', 'groundType'].includes(key);
+
+		for (const key in template) {
+
+			const item = DOM({
+				style: 'build-hero-stats-item', event: ['click', !cond(key) ? () => {
+
+					if (item.dataset.active == 1) {
+
+						item.style.background = 'rgba(0,0,0,0)';
+
+						if (key == 'hp') {
+							Build.removeSortInventory('stats', 'hp');
+							Build.removeSortInventory('stats', 'krajahp');
+							Build.removeSortInventory('stats', 'krajahprz');
+							Build.removeSortInventory('stats', 'regenhpvz');
+							Build.removeSortInventory('stats', 'krajahpvz');
+							Build.removeSortInventory('stats', 'regenhp');
+							Build.removeSortInventory('stats', 'hpmp');
+						}
+						else if (key == 'mp') {
+							Build.removeSortInventory('stats', 'mp');
+							Build.removeSortInventory('stats', 'regenmp');
+							Build.removeSortInventory('stats', 'krajamp');
+							Build.removeSortInventory('stats', 'regenmpvz');
+							Build.removeSortInventory('stats', 'hpmp');
+						}
+						else if (key == 'speed') {
+							Build.removeSortInventory('stats', 'speed');
+							Build.removeSortInventory('stats', 'speedrz');
+							Build.removeSortInventory('stats', 'speedvz');
+						}
+						else if (key == 'sila') {
+							Build.removeSortInventory('stats', 'sila');
+							Build.removeSortInventory('stats', 'sr');
+							Build.removeSortInventory('stats', 'srsv');
+							Build.removeSortInventory('stats', 'silarz');
+							Build.removeSortInventory('stats', 'silavz');
+						}
+						else if (key == 'razum') {
+							Build.removeSortInventory('stats', 'razum');
+							Build.removeSortInventory('stats', 'sr');
+							Build.removeSortInventory('stats', 'srsv');
+							Build.removeSortInventory('stats', 'razumrz');
+							Build.removeSortInventory('stats', 'razumvz');
+						}
+						else if (key == 'provorstvo') {
+							Build.removeSortInventory('stats', 'provorstvo');
+							Build.removeSortInventory('stats', 'ph');
+							Build.removeSortInventory('stats', 'provorstvorz');
+							Build.removeSortInventory('stats', 'provorstvovz');
+
+						}
+						else if (key == 'hitrost') {
+							Build.removeSortInventory('stats', 'hitrost');
+							Build.removeSortInventory('stats', 'ph');
+							Build.removeSortInventory('stats', 'hitrostrz');
+							Build.removeSortInventory('stats', 'hitrostvz');
+
+						}
+						else if (key == 'stoikost') {
+							Build.removeSortInventory('stats', 'stoikost');
+							Build.removeSortInventory('stats', 'sv');
+							Build.removeSortInventory('stats', 'srsv');
+							Build.removeSortInventory('stats', 'stoikostrz');
+							Build.removeSortInventory('stats', 'svvz');
+							Build.removeSortInventory('stats', 'vs');
+						}
+						else if (key == 'volia') {
+							Build.removeSortInventory('stats', 'volia');
+							Build.removeSortInventory('stats', 'sv');
+							Build.removeSortInventory('stats', 'srsv');
+							Build.removeSortInventory('stats', 'voliarz');
+							Build.removeSortInventory('stats', 'svvz');
+							Build.removeSortInventory('stats', 'vs');
+						}
+						Build.sortInventory();
+						item.dataset.active = 0;
+					} else {
+						item.style.background = '#5899';
+						if (key == 'hp') {
+							Build.setSortInventory('stats', 'hp');
+							Build.setSortInventory('stats', 'krajahp');
+							Build.setSortInventory('stats', 'krajahprz');
+							Build.setSortInventory('stats', 'regenhpvz');
+							Build.setSortInventory('stats', 'krajahpvz');
+							Build.setSortInventory('stats', 'regenhp');
+							Build.setSortInventory('stats', 'hpmp');
+						}
+						else if (key == 'mp') {
+							Build.setSortInventory('stats', 'mp');
+							Build.setSortInventory('stats', 'regenmp');
+							Build.setSortInventory('stats', 'krajamp');
+							Build.setSortInventory('stats', 'regenmpvz');
+							Build.setSortInventory('stats', 'hpmp');
+						}
+						else if (key == 'speed') {
+							Build.setSortInventory('stats', 'speed');
+							Build.setSortInventory('stats', 'speedrz');
+							Build.setSortInventory('stats', 'speedvz');
+						}
+						else if (key == 'sila') {
+							Build.setSortInventory('stats', 'sila');
+							Build.setSortInventory('stats', 'sr');
+							Build.setSortInventory('stats', 'srsv');
+							Build.setSortInventory('stats', 'silarz');
+							Build.setSortInventory('stats', 'silavz');
+						}
+						else if (key == 'razum') {
+							Build.setSortInventory('stats', 'razum');
+							Build.setSortInventory('stats', 'sr');
+							Build.setSortInventory('stats', 'srsv');
+							Build.setSortInventory('stats', 'razumrz');
+							Build.setSortInventory('stats', 'razumvz');
+						}
+						else if (key == 'provorstvo') {
+							Build.setSortInventory('stats', 'provorstvo');
+							Build.setSortInventory('stats', 'ph');
+							Build.setSortInventory('stats', 'provorstvorz');
+							Build.setSortInventory('stats', 'provorstvovz');
+						}
+						else if (key == 'hitrost') {
+							Build.setSortInventory('stats', 'hitrost');
+							Build.setSortInventory('stats', 'ph');
+							Build.setSortInventory('stats', 'hitrostrz');
+							Build.setSortInventory('stats', 'hitrostvz');
+						}
+						else if (key == 'stoikost') {
+							Build.setSortInventory('stats', 'stoikost');
+							Build.setSortInventory('stats', 'sv');
+							Build.setSortInventory('stats', 'srsv');
+							Build.setSortInventory('stats', 'stoikostrz');
+							Build.setSortInventory('stats', 'svvz');
+							Build.setSortInventory('stats', 'vs');
+						}
+						else if (key == 'volia') {
+							Build.setSortInventory('stats', 'volia');
+							Build.setSortInventory('stats', 'sv');
+							Build.setSortInventory('stats', 'srsv');
+							Build.setSortInventory('stats', 'voliarz');
+							Build.setSortInventory('stats', 'svvz');
+							Build.setSortInventory('stats', 'vs');
+						}else if (key == 'hpmp') {
+							Build.setSortInventory('stats', 'hpmp');
+						} else {
+							Build.setSortInventory('stats', key);
+						}
+						// Build.setSortInventory('stats','hp');
+
+						Build.sortInventory();
+						item.dataset.active = 1;
+
+					}
+
+				} : null]
+			},
+				DOM({ tag: 'div' }, template[key]),
+				DOM({ tag: 'div' }, data.stats[key] || 0)
+			);
+
+			if (key === 'groundType') {
+				let isMouseOverItem = false;
+				let isMouseOverWrapper = false;
+				item.classList.add('noNumber');
+				if (Build.applyRz || Build.applyVz) {
+					item.classList.add('highlight');
+				}
+				let mouseOutEvent = function () {
+					if (isMouseOverWrapper || isMouseOverItem) {
+						return;
+					}
+					let wrapper = item.parentNode.querySelector('.wrapper');
+					if (wrapper) {
+						wrapper.remove();
+					}
+				}
+				item.onclick = _ => {
+					item.classList.toggle('highlight');
+					let wrapper = item.parentNode.querySelector('.wrapper');
+					if (Build.applyRz || Build.applyVz) {
+						// Disable
+						Build.applyRz = false;
+						Build.applyVz = false;
+						if (wrapper) {
+							if (wrapper.querySelector('.home.highlight')) {
+							}
+							wrapper.querySelector('.home').classList.remove('highlight');
+							if (wrapper.querySelector('.enemy.highlight')) {
+							}
+							wrapper.querySelector('.enemy').classList.remove('highlight');
+						}
+					} else {
+						// Enable home
+						Build.applyRz = true;
+						Build.applyVz = false;
+						if (wrapper) {
+							wrapper.querySelector('.home').classList.add('highlight');
+							if (wrapper.querySelector('.enemy.highlight')) {
+								wrapper.querySelector('.enemy.highlight').classList.remove('highlight');
+							}
+						}
+					}
+					Build.updateHeroStats();
+				}
+				item.onmouseover = _ => {
+					isMouseOverItem = true;
+					if (item.parentNode.querySelector('.wrapper')) {
+						// Node already here
+						return;
+					}
+					const home = DOM({ style: 'home' }, 'Родная');
+					const enemy = DOM({ style: 'enemy' }, 'Вражеская');
+					if (Build.applyRz) {
+						home.classList.add('highlight');
+					} else if (Build.applyVz) {
+						enemy.classList.add('highlight');
+					}
+					home.onclick = _ => {
+						// Remove applicator if already selected
+						if (home.classList.contains('highlight')) {
+							home.classList.remove('highlight');
+							item.classList.remove('highlight');
+							Build.applyRz = false;
+						} else {
+							if (!item.classList.contains('.build-hero-stats-item.highlight')) {
+								item.classList.add('highlight');
+							}
+							home.classList.add('highlight');
+							enemy.classList.remove('highlight');
+							Build.applyRz = true;
+							Build.applyVz = false;
+						}
+						Build.updateHeroStats();
+					}
+					enemy.onclick = _ => {
+						// Remove applicator if already selected
+						if (enemy.classList.contains('highlight')) {
+							enemy.classList.remove('highlight');
+							item.classList.remove('highlight');
+							Build.applyVz = false;
+						} else {
+							if (!item.classList.contains('.build-hero-stats-item.highlight')) {
+								item.classList.add('highlight');
+							}
+							enemy.classList.add('highlight');
+							home.classList.remove('highlight');
+							Build.applyVz = true;
+							Build.applyRz = false;
+						}
+						Build.updateHeroStats();
+					}
+					const wrapper = DOM({ style: 'wrapper' }, home, enemy);
+					wrapper.onmouseover = _ => {
+						isMouseOverWrapper = true;
+					}
+					wrapper.onmouseout = _ => {
+						isMouseOverWrapper = false;
+						setTimeout(_ => {
+							mouseOutEvent();
+						}, 100)
+					}
+					item.parentNode.append(wrapper)
+
+				}
+				item.onmouseout = _ => {
+					isMouseOverItem = false;
+					setTimeout(_ => {
+						mouseOutEvent();
+					}, 100)
+				}
+			}
+
+			if (key === 'considerStacks') {
+				item.title = `Учитывание талантов, которые дают постепенную прибавку к определенному параметру Ваших характеристик
+(например таланты оранжевого качества "Убийственная логика", Неудержимая сила")`
+			}
+			if (key === 'considerBuff') {
+				item.title = `Учитывание талантов, которые действуют "на всех союзников/врагов" кратковременно или постоянно, активно или пассивно
+(например таланты красного качества "Гимн решительности", Воодушевляющий гимн")`
+			}
+			if (key === 'groundType') {
+				item.title = `Учитывание талантов, которые дают дополнительный баф от типа территории (земли) - родная, вражеская/нейтральная 
+(например таланты красного качества "Оберег жизни", "Сияние естества")`
+			}
+
+			if (key === 'considerStacks' || key === 'considerBuff') {
+				item.classList.add('noNumber');
+				if (Build.applyStak && key === 'considerStacks') {
+					item.classList.add('highlight');
+				}
+				if (Build.applyBuffs && key === 'considerBuff') {
+					item.classList.add('highlight');
+				}
+				item.onclick = _ => {
+					item.classList.toggle('highlight');
+					if (key == 'considerStacks') {
+						Build.applyStak = !Build.applyStak;
+					} else if (key == 'considerBuff') {
+						Build.applyBuffs = !Build.applyBuffs;
+					}
+					Build.updateHeroStats();
+				}
+			}
+
+			item.dataset.active = 0;
+			if (cond(key)) {
+				item.classList.add('passive');
+			}
+
+			Build.dataStats[key] = item;
+
+			if (!['hp', 'mp', 'speed', 'damage', 'critProb', 'attackSpeed', 'punching', 'protectionBody', 'protectionSpirit', 'considerStacks', 'considerBuff', 'groundType'].includes(key)) {
+				const daw = DOM({
+					tag: 'img', style: 'build-hero-stats-daw', title: 'Сделать характеристику приоритетной', event: ['click', async () => {
+
+						if (daw.dataset.status != 0) {
+
+							await App.api.request('build', 'setProfile', { id: Build.id, index: daw.dataset.index, value: false });
+
+							daw.dataset.status = 0;
+							daw.src = 'content/icons/circle.webp';
+
+							Build.profileStats[key] = 0;
+
+							Build.updateHeroStats();
+						}
+						else {
+
+							await App.api.request('build', 'setProfile', { id: Build.id, index: daw.dataset.index, value: true });
+
+							daw.dataset.status = 1;
+							daw.src = 'content/icons/checkbox.webp';
+
+							Build.profileStats[key] = 1;
+
+							Build.updateHeroStats();
+						}
+					}]
+				});
+
+				daw.dataset.index = i;
+
+				daw.dataset.status = Build.dataRequest.profile[i];
+
+				Build.profileStats[key] = parseInt(daw.dataset.status);
+
+				if (daw.dataset.status == 1) {
+					daw.src = 'content/icons/checkbox.webp';
+				} else {
+					daw.src = 'content/icons/circle.webp';
+				}
+
+				stats.append(DOM({ style: 'build-hero-stats-line' }, daw, item));
+			} else {
+				stats.append(DOM({ style: 'build-hero-stats-line' }, item));
+			}
+			i++;
+
+		}
+
+		let landTypeSetting = DOM({
+			style: ['build-hero-stats-setting-land-type', 'button-outline', 'build-hero-stats-setting-land-type-rz'],
+			title: 'Тип земли - с учетом родной земли',
+			event: ['click', async () => {
+				Build.applyRz = !Build.applyRz;
+				Build.applyVz = !Build.applyVz;
+				Build.updateHeroStats();
+				if (Build.applyRz) {
+					landTypeSetting.classList.replace('build-hero-stats-setting-land-type-vz', 'build-hero-stats-setting-land-type-rz');
+					landTypeSetting.title = 'Тип земли - с учетом родной земли';
+				} else {
+					landTypeSetting.classList.replace('build-hero-stats-setting-land-type-rz', 'build-hero-stats-setting-land-type-vz');
+					landTypeSetting.title = 'Тип земли - с учетом нейтральной/вражеской земли';
+				}
+			}]
+		});
+
+		stats.append(DOM({ style: 'build-hero-stats-settings' }, landTypeSetting));
+
+		Build.heroName = DOM({ tag: 'div', style: 'name' });
+
+		if (MM.hero) {
+
+			Build.heroName.innerText = MM.hero.find(h => h.id === data.id).name;
+
+		}
+
+		Build.heroImg = DOM({ style: 'avatar' });
+
+		if (App.isAdmin()) {
+
+			Build.heroImg.onclick = async () => {
+
+				let body = document.createDocumentFragment(), request = await App.api.request('build', 'heroData', { id: data.id });
+
+				for (let key in request) {
+
+					body.append(App.input((value) => {
+
+						let object = new Object();
+
+						object[key] = value;
+
+						App.api.request('build', 'heroEdit', { id: data.id, object: object });
+
+					}, { value: request[key] }));
+
+				}
+
+				body.append(DOM({ style: 'splash-content-button', event: ['click', () => Splash.hide()] }, 'Закрыть'));
+
+				Splash.show(body);
+
+			}
+
+		}
+
+		Build.heroImg.style.backgroundImage = `url(content/hero/${data.id}/${Build.dataRequest.hero.skin.target ? Build.dataRequest.hero.skin.target : 1}.webp)`;
+
+		let rankIcon = DOM({ style: 'rank-icon' });
+
+		rankIcon.style.backgroundImage = `url(content/ranks/${Rank.icon(data.rating)}.webp)`;
+
+		let rank = DOM({ style: 'rank' }, DOM({ style: 'rank-lvl' }, data.rating), rankIcon);
+
+		Build.heroImg.append(rank);
+		// Build.training
+		const wrapper = DOM({ style: 'build-hero-avatar-and-name' }, Build.heroImg, Build.skinView, Build.training);
+
+		Build.heroView.append(
+			wrapper,
+			stats
+		);
+
+	}
+
+	static updateHeroStats() {
+		Build.heroPower = 0.0;
+		for (let key in Build.calculationStats) {
+			Build.calculationStats[key] = 0.0;
+		}
+
+		for (let i = 35; i >= 0; i--) {
+			let talent = Build.installedTalents[i];
+			if (talent) {
+				Build.calcStatsFromPower(i);
+				Build.setStat(talent, true, false);
+			}
+		}
+
+		for (let key2 in Build.dataStats) {
+
+			Build.dataStats[key2].lastChild.innerText = Math.round(Build.totalStat(key2));
+
+		}
+
+		const statAg = Build.totalStat('provorstvo')
+		const statCun = Build.totalStat('hitrost')
+		const statStamina = Build.totalStat('stoikost');
+		const statWill = Build.totalStat('volia');
+		const statStrength = Build.totalStat('sila');
+		const statInt = Build.totalStat('razum');
+
+		{
+			// TODO: make hero damage calculation
+			let damage = Build.heroMainAttackStat == 1 ? statStrength : statInt;
+			let dmgMin = Math.round(damage * Build.heroAttackModifier * 0.9);
+			let dmgMax = Math.round(damage * Build.heroAttackModifier * 1.1);
+			let dmgTag = Build.heroMainAttackStat == 1 ? '<fiz> </fiz>' : '<mag> </mag>';
+			Build.dataStats['damage'].lastChild.innerHTML = dmgMin + '-' + dmgMax + dmgTag;
+		}
+
+		{
+			let penetration = 0.0;
+			if (statAg > 500.0) {
+				penetration += 61.72 + 0.6876 * statAg - 10.035 * Math.sqrt(statAg);
+			} else {
+				penetration += 48.45 + 0.764 * statAg - 11.15 * Math.sqrt(statAg);
+			}
+			if (statCun > 500.0) {
+				penetration += 85.78 + 0.43 * statCun - 15.55 * Math.log(statCun);
+			} else {
+				penetration += 59.83 + 0.57 * statCun - 20.73 * Math.log(statCun);
+			}
+			Build.dataStats['punching'].lastChild.innerText = Math.round(penetration) + '%';;
+		}
+
+		{
+			let defStamina = 0.5355 * (statStamina + 0.3 * statWill) - 20;
+			let defWill = 0.5355 * (statWill + 0.3 * statStamina) - 20;
+
+			Build.dataStats['protectionBody'].lastChild.innerText = Math.round(defStamina) + '%';;
+			Build.dataStats['protectionSpirit'].lastChild.innerText = Math.round(defWill) + '%';;
+		}
+
+		{
+			let crit = 62.765 - 11534.0 / (126.04 + statCun);
+			Build.dataStats['critProb'].lastChild.innerText = Math.max(0.0, Math.round(crit)) + '%';
+		}
+
+		{
+			let attackSpeed = Math.min(2.0, 0.00364 * statAg + 0.49);
+			Build.dataStats['attackSpeed'].lastChild.innerText = Math.round(attackSpeed * 100.0) / 100.0;
+		}
+	}
+
+	static calcStatsFromPower(maxTalentId) {
+		const talentPowerByLine = {
+			5: (33.0 / 600.0),
+			4: (23.0 / 600.0),
+			3: (16.0 / 600.0),
+			2: (13.0 / 600.0),
+			1: (9.0 / 600.0),
+			0: (6.0 / 600.0)
+		}
+
+		Build.heroPowerFromInstalledTalents = 0.0;
+
+		for (let i = 35; i >= 0 && i >= maxTalentId; i--) {
+			let talent = Build.installedTalents[i];
+			if (talent) {
+				let line = Math.floor((35 - i) / 6);
+				Build.heroPowerFromInstalledTalents += talentPowerByLine[line];
+			}
+		}
+
+		for (let stat in Build.heroStatsFromPower) {
+			let Lvl = Build.heroStatMods[stat];
+			let q = Build.heroPowerModifier;
+			let m = Build.heroPower * Build.heroPowerFromInstalledTalents;
+			Build.heroStatsFromPower[stat] = Lvl * (0.6 * q * (m / 10.0 - 16.0) + 36.0);
+		}
+	}
+
+	static getMaxStat(stats) {
+		const fakeStat = 999;
+		let maxStat = stats[0];
+		let maxValue = Build.totalStat(maxStat);
+		if (maxStat in Build.profileStats) {
+			maxValue += Build.profileStats[maxStat] * fakeStat;
+		}
+
+		for (let s = 1; s < stats.length; s++) {
+			let possibleMaxStat = Build.totalStat(stats[s]);
+			if (stats[s] in Build.profileStats) {
+				possibleMaxStat += Build.profileStats[stats[s]] * fakeStat;
+			}
+			if (possibleMaxStat > maxValue) {
+				maxStat = stats[s];
+				maxValue = Build.totalStat(maxStat);
+				if (maxStat in Build.profileStats) {
+					maxValue += Build.profileStats[maxStat] * fakeStat;
+				}
+			}
+		}
+
+		return maxStat;
+	}
+	
+	static getSumStat(stats){
+		let sumStat = stats[0];
+		return sumStat;
+	}
+
+	static getTalentRefineByRarity(rarity) {
+		return rarity ? Build.talentRefineByRarity[rarity] - 1.0 : 4.0;
+	}
+
+	static setStat(talent, fold = true, animation = true) {
+
+		// Calculate overall power bonus
+		const talentPowerByRarity = {
+			4: 68.952,
+			3: 68.208,
+			2: 69.12,
+			1: 64.875,
+			0: 90.2
+		}
+
+		let talentPower = 'rarity' in talent ? talentPowerByRarity[talent.rarity] : talentPowerByRarity[0];
+		Build.heroPower += fold ? talentPower : -talentPower;
+
+		let add = new Object();
+
+		function registerStat(stat, key) {
+			let statValue = parseFloat(talent.stats[key]);
+			if ('statsRefine' in talent && 'rarity' in talent) {
+				let refineBonus = Build.getTalentRefineByRarity(talent.rarity);
+				let refineMul = parseFloat(talent.statsRefine[key]);
+				statValue += refineBonus * refineMul;
+			}
+			add[stat] = statValue;
+		}
+
+		for (let key in talent.stats) {
+
+			if (key == 'sr') {
+				registerStat(Build.getMaxStat(['sila', 'razum']), key)
+			}
+			else if (key == 'ph') {
+				registerStat(Build.getMaxStat(['provorstvo', 'hitrost']), key)
+			}
+			else if (key == 'sv') {
+				registerStat(Build.getMaxStat(['stoikost', 'volia']), key)
+			}
+			else if (key == 'srsv') {
+				registerStat(Build.getMaxStat(['sila', 'razum', 'stoikost', 'volia']), key)
+			}
+			else if (key == 'hpmp') {
+				registerStat(Build.getMaxStat(['hp', 'mp']), key)
+			}
+			else {
+				registerStat(key, key);
+			}
+
+		}
+
+		function calcualteSpecialStats(keyStat, statChange) {
+			if (keyStat in Build.calculationStats) {
+				if (keyStat == 'speed') {
+					Build.calculationStats[keyStat] = Math.max(Build.calculationStats[keyStat], statChange);
+				} else {
+					Build.calculationStats[keyStat] += fold ? statChange : -statChange;
+				}
+			}
+		}
+
+		// Apply animation and change stats in Build.calculationStats
+		for (let key2 in add) {
+
+			let statChange = parseFloat(add[key2]);
+			if (Build.applyStak && key2.indexOf('stak') != -1) {
+				calcualteSpecialStats(key2.replace('stak', ''), statChange);
+			} else
+				if (Build.applyRz && key2.indexOf('rz') != -1) {
+					calcualteSpecialStats(key2.replace('rz', ''), statChange);
+				} else
+					if (Build.applyVz && key2.indexOf('vz') != -1) {
+						calcualteSpecialStats(key2.replace('vz', ''), statChange);
+					} else
+						if (key2.indexOf('dop') != -1) {
+							calcualteSpecialStats(key2.replace('dop', ''), statChange);
+						} else
+							if (Build.applyBuffs && key2.indexOf('buff') != -1) {
+								calcualteSpecialStats(key2.replace('buff', ''), statChange);
+							} else {
+								calcualteSpecialStats(key2, statChange);
+							}
+
+			if (!(key2 in Build.dataStats)) {
+
+				continue;
+
+			}
+
+			if (animation) {
+
+				Build.dataStats[key2].animate({ transform: ['scale(1)', 'scale(1.5)', 'scale(1)'] }, { duration: 250, fill: 'both', easing: 'ease-out' });
+
+				Build.heroImg.animate({ transform: ['scale(1)', 'scale(1.5)', 'scale(1)'] }, { duration: 250, fill: 'both', easing: 'ease-out' });
+
+			}
+
+		}
+
+	}
+
+	static level() {
+
+		let i = 6;
+		for (const number of ['VI', 'V', 'IV', 'III', 'II', 'I']) {
+
+			const item = document.createElement('div');
+
+			item.innerText = number
+
+			item.dataset.id = i;
+
+			item.dataset.active = 0;
+
+			item.id = `bl${i}`
+
+			item.addEventListener('click', e => {
+
+				if (item.dataset.active == 1) {
+
+					Build.removeSortInventory('level', item.dataset.id);
+
+					Build.sortInventory();
+
+					item.dataset.active = 0;
+
+				} else {
+
+					Build.setSortInventory('level', item.dataset.id);
+
+					Build.sortInventory();
+
+					item.dataset.active = 1;
+
+				}
+
+				e.target.classList.toggle('highlight');
+
+				document.querySelector(`[data-level="${item.dataset['id']}"`).classList.toggle('highlight');
+
+			});
+
+			item.addEventListener('contextmenu', e => {
+				e.preventDefault();
+
+				for (const level of ["1", "2", "3", "4", "5", "6"]) {
+					Build.removeSortInventory('level', level);
+				}
+				for (let l = 0; l < 6; l++) {
+					item.parentElement.childNodes[l].dataset.active = 0;
+
+					item.parentElement.childNodes[l].classList.remove('highlight');
+					document.querySelector(`[data-level="${item.parentElement.childNodes[l].dataset['id']}"`).classList.remove('highlight');
+				}
+				Build.setSortInventory('level', item.dataset.id);
+
+				Build.sortInventory();
+
+				item.dataset.active = 1;
+
+				document.querySelectorAll('.build-level div.highlight').forEach(n => n.click());
+				item.classList.add('highlight');
+				document.querySelector(`[data-level="${item.dataset['id']}"`).classList.add('highlight');
+			});
+
+			Build.levelView.append(item);
+
+			i--;
+
+		}
+
+	}
+
+	static talentStatFilter(stat) {
+		return (
+			stat.indexOf('stak') != -1 ||
+			stat.indexOf('rz') != -1 ||
+			stat.indexOf('vz') != -1 ||
+			stat.indexOf('stak') != -1 ||
+			stat.indexOf('dop') != -1 ||
+			stat.indexOf('buff') != -1 ||
+			(stat.indexOf('speed') != -1 && stat.indexOf('speedtal') == -1)
+		);
+	}
+
+	static field(data) {
+		/*
+
+		*/
+		let y = 0, index = 0, level = 6, preload = new PreloadImages();
+
+		while (y < 6) {
+
+			let row = document.createElement('div');
+
+			row.classList.add('build-field-row');
+
+			row.id = `bfr${level}`;
+
+			row.dataset.level = level;
+
+			let x = 0;
+
+			while (x < 6) {
+
+				let item = document.createElement('div');
+
+				item.dataset.position = index;
+
+				item.classList.add('build-hero-grid-item');
+
+				if (data[index]) {
+
+					data[index].state = 2;
+
+					preload.add(Build.templateViewTalent(data[index]), item);
+
+				}
+
+				row.append(item);
+
+
+				Build.installedTalents[index] = data[index];
+
+				if (data[index] && 'conflict' in data[index]) {
+					Build.fieldConflict[Math.abs(data[index].id)] = true;
+				}
+
+				x++;
+
+				index++;
+
+			}
+
+			Build.fieldView.append(row);
+
+			level--;
+
+			y++;
+		}
+
+		Build.updateHeroStats();
+
+	}
+
+	static templateViewTalent(data) {
+
+		const talent = DOM({ style: 'build-talent-item' });
+
+		if (data.txtNum) {
+			let params = data.txtNum.split(';');
+			if (!data.stats) {
+				data.stats = new Object();
+			}
+			if (!data.statsRefine) {
+				data.statsRefine = new Object();
+			}
+			for (let param in params) {
+				let paramValues = params[param].split(',');
+				if (Build.talentStatFilter(paramValues[2])) {
+					data.stats[paramValues[2]] = parseFloat(paramValues[0]);
+					data.statsRefine[paramValues[2]] = parseFloat(paramValues[1]);
+				} else if (!(paramValues[2] in data.stats) && (paramValues[2] in Build.initialStats) && (Build.initialStats[paramValues[2]] > 0)) {
+					data.stats[paramValues[2] + 'buff'] = parseFloat(paramValues[0]);
+					data.statsRefine[paramValues[2] + 'buff'] = parseFloat(paramValues[1]);
+				}
+			}
+		}
+
+		data.params = data.txtNum ? data.txtNum : data.params; //"all,8,74,num,razum";
+
+		Build.talents[data.id] = data;
+
+		talent.dataset.id = data.id;
+
+		talent.dataset.active = data.active;
+
+		talent.dataset.state = data.state;
+
+		talent.dataset.url = (data.id > 0) ? `content/talents/${data.id}.webp` : `content/htalents/${Math.abs(data.id)}.webp`;
+
+		Build.move(talent);
+
+		Build.description(talent);
+
+		if (data.level == 0) {
+			talent.style.display = 'none';
+		}
+
+		return talent;
+
+		preload.add(talent);
+	}
+
+	static inventory() {
+
+		if (Build.loading) {
+			return;
+		}
+
+		Build.loading = true;
+
+		App.api.silent((data) => {
+
+			for (let item of data) {
+
+				let talentContainer = DOM({ style: 'build-talent-item-container' });
+
+				Build.inventoryView.querySelector('.build-talents').append(talentContainer);
+
+				let preload = new PreloadImages(talentContainer);
+
+				item.state = 1;
+
+				preload.add(Build.templateViewTalent(item));
+
+			}
+
+			Build.loading = false;
+
+		}, 'build', 'inventory', { buildId: Build.id });
+
+	}
+
+	static rarity() {
+
+		const element = [
+			{ id: '4', name: 'Красное', color: '170,20,44' },
+			{ id: '3', name: 'Оранжевое', color: '237,129,5' },
+			{ id: '2', name: 'Фиолетовое', color: '205,0,205' },
+			{ id: '1', name: 'Синее', color: '17,105,237' }
+		];
+
+		let a = document.createElement('div');
+		a.title = 'Активные таланты';
+
+		a.classList.add('build-rarity-other');
+
+		a.innerText = 'А';
+
+		a.dataset.active = 0;
+
+		a.addEventListener('click', e => {
+
+			if (a.dataset.active == 1) {
+
+				a.style.background = 'rgba(255,255,255,0.1)';
+
+				Build.removeSortInventory('active', '1');
+
+				Build.sortInventory();
+
+				a.dataset.active = 0;
+
+			}
+			else {
+
+				a.style.background = 'rgba(153,255,51,0.7)';
+
+				Build.setSortInventory('active', '1');
+
+				Build.sortInventory();
+
+				a.dataset.active = 1;
+
+			}
+
+		});
+
+		a.addEventListener('contextmenu', e => {
+			e.preventDefault();
+
+			for (let itemEl of element) {
+				Build.removeSortInventory('rarity', itemEl.id);
+			}
+
+			for (let l = 0; l < a.parentElement.childNodes.length; l++) {
+				a.parentElement.childNodes[l].dataset.active = 0;
+				a.parentElement.childNodes[l].style.border = 'none';
+			}
+			a.style.background = 'rgba(255,255,255,0.1)';
+
+			Build.setSortInventory('active', '1');
+
+			Build.sortInventory();
+
+			a.dataset.active = 1;
+
+			a.style.background = 'rgba(153,255,51,0.7)';
+		});
+
+		Build.rarityView.append(a);
+
+		for (let item of element) {
+
+			let button = document.createElement('div');
+
+			button.dataset.active = 0;
+
+			button.style.boxSizing = 'border-box';
+
+			button.addEventListener('click', e => {
+
+				if (button.dataset.active == 1) {
+
+					button.style.border = 'none';
+
+					Build.removeSortInventory('rarity', item.id);
+
+					Build.sortInventory();
+
+					button.dataset.active = 0;
+
+				}
+				else {
+
+					button.style.border = 'solid calc(min(0.5cqh, 1cqw)) rgb(153,255,51)';
+
+					Build.setSortInventory('rarity', item.id);
+
+					Build.sortInventory();
+
+					button.dataset.active = 1;
+
+				}
+
+			});
+
+
+			button.addEventListener('contextmenu', e => {
+				e.preventDefault();
+
+				for (let itemEl of element) {
+					Build.removeSortInventory('rarity', itemEl.id);
+				}
+				Build.removeSortInventory('active', '1');
+
+				for (let l = 0; l < button.parentElement.childNodes.length; l++) {
+					button.parentElement.childNodes[l].dataset.active = 0;
+					button.parentElement.childNodes[l].style.border = 'none';
+				}
+				a.style.background = 'rgba(255,255,255,0.1)';
+
+				Build.setSortInventory('rarity', item.id);
+
+				Build.sortInventory();
+
+				button.dataset.active = 1;
+
+				button.style.border = 'solid calc(min(0.5cqh, 1cqw)) rgb(153,255,51)';
+			});
+
+			button.style.background = `rgba(${item.color},0.6)`;
+
+			button.title = `${item.name} качество талантов`;
+
+			Build.rarityView.append(button);
+
+		}
+
+	}
+
+	static async removeTalentFromActive(activeId) {
+		let container = Build.activeBarView.childNodes[activeId];
+
+		Build.disableSmartCast(container);
+		container.firstChild.remove();
+
+		Build.activeBarItems[activeId] = 0;
+		await App.api.request('build', 'setZeroActive', { buildId: Build.id, index: activeId });
+	}
+
+	static async requestSmartcast(element) {
+		if (element.firstChild) {
+			let position = Number(element.firstChild.dataset.position) + 1;
+			if (element.dataset.active == 1) {
+				position = -position;
+			}
+
+			await App.api.request('build', 'setActive', { buildId: Build.id, index: element.dataset.index, position: position });
+		}
+	}
+
+	static async enableSmartCast(element, sendRequest) {
+		element.classList.add('smartcast');
+		element.dataset.active = 1;
+		element.title = 'Смарткаст включён';
+		if (sendRequest) {
+			await Build.requestSmartcast(element);
+		}
+	}
+
+	static async disableSmartCast(element, sendRequest) {
+		element.classList.remove('smartcast');
+		element.dataset.active = 0;
+		element.title = 'Смарткаст выключён';
+		if (sendRequest) {
+			await Build.requestSmartcast(element);
+		}
+	}
+
+	static activeBar(data) {
+
+		Build.activeBarItems = data;
+
+		console.log('activeBar', data)
+		let index = 0;
+
+		for (let item of data) {
+
+			const element = DOM({
+				data: { index: index }, style: 'build-active-bar-item', event: ['contextmenu', async (e) => {
+					e.preventDefault();
+					if (!element.firstChild) {
+						return;
+					}
+
+					if (element.dataset.active == 1) {
+						await Build.disableSmartCast(element, true);
+					}
+					else {
+						await Build.enableSmartCast(element, true);
+					}
+
+				}]
+			});
+
+			if (item >= 0) {
+
+				element.dataset.active = 0;
+
+			}
+			else {
+
+				Build.enableSmartCast(element);
+
+			}
+
+			if (Math.abs(item)) {
+
+				let position = (Math.abs(item) - 1);
+
+				let findTalent = Build.fieldView.querySelector(`[data-position = "${position}"]`);
+
+				if ((findTalent) && (findTalent.firstChild)) {
+
+					let clone = findTalent.firstChild.cloneNode(true);
+
+					element.append(clone);
+
+					clone.dataset.state = 3;
+
+					clone.style.opacity = 1;
+
+					clone.style.position = 'static';
+
+					clone.style.backgroundImage = `url("${clone.dataset.url}")`;
+
+					clone.dataset.position = position;
+
+					Build.move(clone, true);
+
+
+				}
+
+
+
+			}
+
+			Build.activeBarView.append(element);
+
+			index++;
+
+		}
+
+	}
+
+	static setSortInventory(key, value) {
+
+		if (!(key in Build.ruleSortInventory)) {
+
+			Build.ruleSortInventory[key] = new Array();
+
+			Build.ruleSortInventory[key].push(value);
+
+		}
+		else {
+
+			if (!Build.ruleSortInventory[key].includes(value)) {
+
+				Build.ruleSortInventory[key].push(value);
+
+			}
+
+		}
+
+		// Build.sortInventory();
+
+	}
+
+	static removeSortInventory(key, value) {
+
+		if (key in Build.ruleSortInventory) {
+
+			let newArray = new Array();
+
+			for (let item of Build.ruleSortInventory[key]) {
+
+				if (item != value) {
+
+					newArray.push(item);
+
+				}
+
+			}
+
+			if (newArray.length) {
+
+				Build.ruleSortInventory[key] = newArray;
+
+			}
+			else {
+
+				delete Build.ruleSortInventory[key];
+
+			}
+
+			// Build.sortInventory();
+
+		}
+
+	}
+
+	static applySorting(itemContainer) {
+
+		let item = itemContainer.firstChild;
+
+		let data = Build.talents[item.dataset.id], flag = true;
+
+		if (data.level == 0) {
+			itemContainer.style.display = 'none';
+			return;
+		}
+
+		for (let key in Build.ruleSortInventory) {
+
+			if (!(key in data)) {
+
+				flag = false;
+
+				break;
+
+			}
+
+			if (key == 'stats') {
+
+				let foundStat = false;
+
+				if (!data.stats) {
+
+					flag = false;
+
+					break;
+
+				}
+
+				for (let stat of Build.ruleSortInventory.stats) {
+
+					if ((stat in data.stats)) {
+
+						foundStat = true;
+
+					}
+
+				}
+
+				if (!foundStat) {
+
+					flag = false;
+
+					break;
+
+				}
+
+			}
+			else {
+
+				if (!Build.ruleSortInventory[key].includes(`${data[key]}`)) {
+
+					flag = false;
+
+					break;
+
+				}
+
+			}
+
+		}
+
+		if (flag) {
+
+			itemContainer.style.display = 'block';
+
+		}
+		else {
+
+			itemContainer.style.display = 'none';
+
+		}
+	}
+
+	static sortInventory() {
+
+		for (let itemContainer of Build.inventoryView.querySelectorAll('.build-talent-item-container')) {
+			Build.applySorting(itemContainer);
+		}
+
+	}
+
+	static cancelSortInventory() {
+
+		Build.ruleSortInventory = new Object();
+
+		for (let item of Build.inventoryView.children) {
+
+			item.style.display = 'block';
+
+		}
+
+	}
+
+	static move(element, fromActiveBar) {
+    let elementFromPoint = (x, y) => {
+        let elems = document.elementsFromPoint(x, y);
+        return elems[0].className == 'build-level' ? elems[1] : elems[0];
+    };
+
+    let elementSetDisplay = (element, display) => {
+        if (element.parentElement.classList == 'build-talent-item-container') {
+            element.parentElement.style.display = display;
+        }
+        element.style.display = display;
+    };
+
+    element.onmousedown = (event) => {
+        if (event.button != 0) return;
+
+        let moveStart = Date.now();
+        Build.descriptionView.style.display = 'none';
+
+        let data = Build.talents[element.dataset.id];
+        let fieldRow = document.getElementById(`bfr${data.level}`);
+
+        if (!fromActiveBar) {
+            fieldRow.style.background = 'rgba(255,255,255,0.5)';
+            fieldRow.style.borderRadius = '1cqh';
+        }
+
+        // Фикс для transform
+        element.style.transformOrigin = 'center center';
+        element.style.willChange = 'transform';
+        element.style.setProperty('transform', 'scale(1.1)', 'important');
+        element.style.transition = 'transform 0.1s ease';
+
+        let rect = element.getBoundingClientRect();
+        let shiftX = event.pageX - rect.left-5;
+        let shiftY = event.pageY - rect.top-5;
+
+        let offsetParent = element;
+        do {
+            shiftX += offsetParent.offsetParent.offsetLeft;
+            shiftY += offsetParent.offsetParent.offsetTop;
+            offsetParent = offsetParent.offsetParent;
+        } while (!(offsetParent.id == 'wbuild' || offsetParent.id == 'viewbuild'));
+
+        element.style.zIndex = '9999';
+        element.style.position = 'absolute';
+        element.style.left = event.pageX - shiftX - 1 + 'px';
+        element.style.top = event.pageY - shiftY - 1 + 'px';
+
+        elementSetDisplay(element, 'none');
+        let startingElementBelow = elementFromPoint(event.clientX, event.clientY);
+        elementSetDisplay(element, 'block');
+
+        document.onmousemove = (e) => {
+            element.style.left = e.pageX - shiftX - 1 + 'px';
+            element.style.top = e.pageY - shiftY - 1 + 'px';
+        };
+
+        element.onmouseup = async (event) => {
+            // Возвращаем исходный размер
+            element.style.setProperty('transform', 'scale(1)', 'important');
+
+            let moveEnd = Date.now();
+            let isClick = moveEnd - moveStart < 200;
+
+            document.onmousemove = null;
+            element.onmouseup = null;
+
+            let field = Build.fieldView.getBoundingClientRect();
+            let inventory = Build.inventoryView.getBoundingClientRect();
+            let bar = Build.activeBarView.getBoundingClientRect();
+            let target = element.getBoundingClientRect();
+
+            let left = parseInt(element.style.left) + target.width / 2;
+            let top = parseInt(element.style.top) + target.height / 2;
+
+            let offsetParent = element;
+            do {
+                left += offsetParent.offsetParent.offsetLeft;
+                top += offsetParent.offsetParent.offsetTop;
+                offsetParent = offsetParent.offsetParent;
+            } while (!(offsetParent.id == 'wbuild' || offsetParent.id == 'viewbuild'));
+
+            let isFieldTarget = left > field.x && left < field.x + field.width && top > field.y && top < field.y + field.height;
+            let isInventoryTarget = left > inventory.x && left < inventory.x + inventory.width && top > inventory.y && top < inventory.y + inventory.height;
+            let isActiveBarTarget = left > bar.x && left < bar.x + bar.width && top > bar.y && top < bar.y + bar.height;
+
+            if (isClick && (isFieldTarget || (isActiveBarTarget && fromActiveBar))) {
+                elementSetDisplay(element, 'none');
+                let elemBelow = elementFromPoint(event.clientX, event.clientY);
+                elementSetDisplay(element, 'block');
+                isClick = elemBelow == startingElementBelow;
+            }
+				if (isClick) {
+					if (element.dataset.state == 2) {
+						isFieldTarget = false;
+						isInventoryTarget = true;
+						isActiveBarTarget = false;
+					}
+					else if (element.dataset.state == 1 && data.level > 0) {
+						let hasEmptySpace = false;
+						for (let t = (data.level - 1) * 6; t < data.level * 6; t++) {
+							if (!Build.installedTalents[35 - t]) {
+								hasEmptySpace = true;
+								break;
+							}
+						}
+						if (hasEmptySpace) {
+							isFieldTarget = true;
+							isInventoryTarget = false;
+							isActiveBarTarget = false;
+						}
+					}
+				}
+
+				let removeFromActive = async (position, skipActiveId) => {
+					for (let i = 0; i < Build.activeBarItems.length; i++) {
+						const talPos = Math.abs(Build.activeBarItems[i]) - 1;
+						if (talPos == position && i != skipActiveId) {
+							await Build.removeTalentFromActive(i);
+						}
+					}
+				}
+
+				let addToActive = async (index, position, datasetPosition, targetElem, clone, smartCast) => {
+					await App.api.request('build', 'setActive', { buildId: Build.id, index: index, position: position });
+					Build.activeBarItems[index] = position;
+					targetElem.append(clone);
+					clone.style.position = 'static';
+					clone.style.zIndex = 1;
+
+					clone.dataset.position = datasetPosition;
+					clone.dataset.state = 3;
+					clone.style.opacity = 1;
+					clone.style.zIndex = 1;
+					clone.style.position = 'static';
+
+
+					Build.move(clone, true);
+					if (smartCast) {
+						await Build.enableSmartCast(targetElem, true);
+					}
+				}
+
+				let editActive = async (position, newPosition, clone, skipActiveId) => {
+					if (position == newPosition) {
+						clone.remove();
+						return null;
+					}
+
+					let activeBarPosition = -1;
+					for (let i = 0; i < Build.activeBarItems.length; i++) {
+						const talPos = Math.abs(Build.activeBarItems[i]) - 1;
+						if (talPos == position && i != skipActiveId) {
+							activeBarPosition = i;
+							break;
+						}
+					}
+					if (activeBarPosition == -1) {
+						clone.remove();
+						return null;
+					}
+
+					let container = Build.activeBarView.childNodes[activeBarPosition];
+
+					let isSmartCast = Number(container.dataset.active);
+
+					let activePosition = Number(newPosition) + 1;
+
+					let glone = container.firstChild.cloneNode(true);
+
+					await removeFromActive(position, skipActiveId);
+
+					await addToActive(activeBarPosition, activePosition, newPosition, container, clone, isSmartCast);
+
+					return activeBarPosition;
+				}
+
+				if (isFieldTarget && !fromActiveBar) {
+
+					elementSetDisplay(element, 'none');
+
+					let elemBelow = elementFromPoint(event.clientX, event.clientY);
+
+					if (elemBelow.childNodes[0] && elemBelow.childNodes[0].className == 'build-talent-item') {
+						// Select 'build-talent-item' if selected its parent
+						elemBelow = elemBelow.childNodes[0];
+					}
+
+					let swapParentNode = element.parentNode;
+					let performSwap = false;
+					let performSwapFromLibrary = false;
+
+					if (elemBelow.className == 'build-talent-item' && elemBelow.parentElement.className == 'build-hero-grid-item') {
+						elemBelow = elemBelow.parentElement;
+						performSwap = swapParentNode.dataset.position ? true : false;
+						performSwapFromLibrary = !performSwap;
+					}
+
+					if (isClick && data.level > 0) {
+						let talentsInRow = document.getElementsByClassName('build-field-row')[6 - data.level].childNodes;
+						for (let tal in talentsInRow) {
+							if (talentsInRow[tal].childNodes.length == 0) {
+								elemBelow = talentsInRow[tal];
+								break;
+							}
+						}
+					}
+
+					elementSetDisplay(element, 'block');
+
+					if (elemBelow && (elemBelow.className == 'build-hero-grid-item')) {
+
+						if ((data.level) && (elemBelow.parentNode.dataset.level == data.level)) {
+
+							let conflictState = false;
+
+							if ('conflict' in data) {
+								for (let item of data.conflict) {
+
+									if (item in Build.fieldConflict) {
+
+										conflictState = true;
+
+									}
+
+								}
+							}
+
+							if (!conflictState) {
+
+								if ('conflict' in data) {
+									Build.fieldConflict[Math.abs(data.id)] = true;
+								}
+
+								let prevState = element.dataset.state;
+								element.dataset.state = 2;
+
+								let swappingTal = null;
+								let removeContainerAfterMove = false;
+								if (performSwap) {
+									swappingTal = Build.installedTalents[parseInt(swapParentNode.dataset.position)];
+									let swappedTal = Build.installedTalents[parseInt(elemBelow.dataset.position)];
+									Build.installedTalents[parseInt(elemBelow.dataset.position)] = swappingTal;
+									Build.installedTalents[parseInt(swapParentNode.dataset.position)] = swappedTal;
+
+									swapParentNode.append(elemBelow.firstChild);
+									elemBelow.append(element);
+								} else {
+									if (performSwapFromLibrary) {
+										swappingTal = Build.installedTalents[parseInt(elemBelow.dataset.position)];
+									}
+									Build.installedTalents[parseInt(elemBelow.dataset.position)] = data;
+									Build.installedTalents[parseInt(swapParentNode.dataset.position)] = null;
+
+									elemBelow.append(element);
+									if (performSwapFromLibrary) {
+										swapParentNode.prepend(elemBelow.firstChild);
+									} else {
+										if (swapParentNode.classList == 'build-talent-item-container') {
+											removeContainerAfterMove = true;
+										}
+									}
+								}
+
+								try {
+									let activeBarPosition = null;
+									if (data.active && swapParentNode.dataset.position) {
+										activeBarPosition = await editActive(swapParentNode.dataset.position, elemBelow.dataset.position, element.cloneNode(true));
+									}
+									if (performSwap) {
+										let swappedTalent = Build.installedTalents[parseInt(swapParentNode.dataset.position)];
+
+										if (swappedTalent.active) {
+											await editActive(elemBelow.dataset.position, swapParentNode.dataset.position, swapParentNode.firstChild.cloneNode(true), activeBarPosition);
+										}
+										await App.api.request('build', 'setZero', { buildId: Build.id, index: swapParentNode.dataset.position });
+										await App.api.request('build', 'set', { buildId: Build.id, talentId: swappedTalent.id, index: swapParentNode.dataset.position });
+
+										Build.setStat(data, true, false);
+									} else {
+										if (performSwapFromLibrary) {
+											if (swappingTal.active) {
+												await removeFromActive(elemBelow.dataset.position);
+											}
+											swapParentNode.firstChild.dataset.state = 1;
+											await App.api.request('build', 'setZero', { buildId: Build.id, index: elemBelow.dataset.position });
+										}
+										Build.setStat(data, true);
+									}
+
+									await App.api.request('build', 'set', { buildId: Build.id, talentId: data.id, index: elemBelow.dataset.position });
+
+									if (data.active && prevState != element.dataset.state) {
+										let index = -1;
+										for (let i = 0; i < Build.activeBarItems.length; i++) {
+											if (Build.activeBarItems[i] == 0) {
+												index = i;
+												break;
+											}
+										}
+										if (index != -1) {
+											let targetActiveContainer = Build.activeBarView.childNodes[index];
+											await addToActive(index, Number(elemBelow.dataset.position) + 1, elemBelow.dataset.position, targetActiveContainer, element.cloneNode(true));
+										}
+									}
+
+
+
+								} catch (e) {
+
+									element.dataset.state = 1;
+
+									Build.inventoryView.querySelector('build-talents').prepend(element);
+
+									Build.installedTalents[parseInt(elemBelow.dataset.position)] = null;
+
+								}
+
+								if (removeContainerAfterMove) {
+									swapParentNode.remove();
+								}
+
+							}
+
+						}
+
+					}
+
+				}
+				else if (isInventoryTarget && !fromActiveBar) {
+
+					elementSetDisplay(element, 'none');
+
+					let elemBelow = elementFromPoint(event.clientX, event.clientY);
+
+					if (isClick) {
+						elemBelow = document.getElementsByClassName('build-talents')[0].firstChild;
+					}
+
+					elementSetDisplay(element, 'block');
+
+					let targetElement = elemBelow.parentNode;
+
+					if (targetElement.className == 'build-talent-item-container') {
+						targetElement = targetElement.parentNode;
+					}
+
+					if (elemBelow && (targetElement.className == 'build-talents') && (element.dataset.state != 1)) {
+
+						let oldParentNode = element.parentNode;
+
+						element.dataset.state = 1;
+
+						let containedTalent = DOM({ style: 'build-talent-item-container' }, element);
+
+						Build.applySorting(containedTalent);
+
+						targetElement.prepend(containedTalent);
+
+
+						try {
+							if (data.active && oldParentNode.dataset.position) {
+								await removeFromActive(oldParentNode.dataset.position);
+							}
+
+							await App.api.request('build', 'setZero', { buildId: Build.id, index: oldParentNode.dataset.position });
+
+							Build.installedTalents[parseInt(oldParentNode.dataset.position)] = null;
+
+							Build.setStat(data, true);
+
+							if (data.id < 0) {
+
+								delete Build.fieldConflict[Math.abs(data.id)];
+
+							}
+
+						}
+						catch (e) {
+
+							element.dataset.state = 2;
+
+							oldParentNode.append(element);
+
+							elementSetDisplay(element, 'block');
+
+							containedTalent.remove();
+
+						}
+
+					}
+
+				}
+				else if (isActiveBarTarget) {
+
+					elementSetDisplay(element, 'none');
+
+					let elemBelow = elementFromPoint(event.clientX, event.clientY);
+
+					let isSwap = elemBelow.parentNode.classList.contains('build-active-bar-item');
+
+					elementSetDisplay(element, 'block');
+
+					if (
+						(elemBelow) &&
+						(element.dataset.state == 2 || element.dataset.state == 3) &&
+						(elemBelow.classList.contains('build-active-bar-item') || isSwap) &&
+						(data.active == 1)
+					) {
+
+						let index = elemBelow.dataset.index;
+						let smartCast = Number(element.parentNode.dataset.active);
+						let positionRaw = element.dataset.position;
+
+						if (!positionRaw) {
+							positionRaw = element.parentNode.dataset.position;
+						}
+
+						if (isSwap) {
+							index = elemBelow.parentNode.dataset.index;
+						}
+
+						let position = Number(positionRaw) + 1;
+
+
+						try {
+
+
+							if (fromActiveBar) {
+								let startingIndex = element.parentNode.dataset.index;
+								if (isClick) {
+									await removeFromActive(positionRaw);
+								} else if (index != startingIndex) { // moved to other position
+									let swapElemParent = element.parentNode;
+									let targetElem = isSwap ? elemBelow.parentNode : elemBelow;
+									let swapPositionRaw = isSwap ? elemBelow.dataset.position : 0;
+									let swapPosition = Number(swapPositionRaw) + 1;
+									let swapSmartCast = Number(targetElem.dataset.active);
+
+									let clone = element.cloneNode(true);
+									let swapClone = isSwap ? elemBelow.cloneNode(true) : null;
+									await removeFromActive(positionRaw);
+									if (swapClone) {
+										await removeFromActive(swapPositionRaw);
+									}
+
+									await addToActive(index, position, positionRaw, targetElem, clone, smartCast);
+
+									if (swapClone) {
+										await addToActive(startingIndex, swapPosition, swapPositionRaw, swapElemParent, swapClone, swapSmartCast);
+									}
+								}
+							} else {
+								let targetElem = isSwap ? elemBelow.parentNode : elemBelow;
+								let clone = element.cloneNode(true);
+								clone.dataset.position = element.parentNode.dataset.position;
+								clone.dataset.state = 3;
+								clone.style.opacity = 1;
+								clone.style.zIndex = 1;
+								clone.style.position = 'static';
+
+								if (isSwap) {
+									await removeFromActive(elemBelow.dataset.position);
+								}
+								await removeFromActive(positionRaw);
+								await App.api.request('build', 'setActive', { buildId: Build.id, index: index, position: position });
+								Build.activeBarItems[index] = position;
+
+								Build.move(clone, true);
+
+								targetElem.append(clone);
+							}
+
+						}
+						catch (e) {
+
+							App.error('Failed to swap activebar')
+
+						}
+
+					}
+
+				} else if (fromActiveBar) {
+					await removeFromActive(element.dataset.position);
+				}
+
+
+				Build.updateHeroStats();
+
+				fieldRow.style.background = '';
+
+				element.style.position = 'static';
+
+				element.style.zIndex = 'auto';
+
+			}
+
+		}
+
+		element.ondragstart = () => {
+
+			return false;
+
+		};
+
+	}
+
+	static description(element) {
+		let descEvent = () => {
+
+			let positionElement = element.getBoundingClientRect();
+
+			let data = Build.talents[element.dataset.id];
+
+			if (!data) {
+				console.log("Не найден талант в билде: " + element.dataset.id)
+				Build.descriptionView.style.display = 'none';
+				return;
+			}
+
+			if ((!data.name) || (!data.description)) {
+
+				Build.descriptionView.innerHTML = `<b>Талант #${data.id}</b><div>Информация отсутствует. Сообщите пожалуйста об этом в отдельную тему Telegram сообщества Prime World Classic.</div><span>+1000 Уважение</span>`;
+
+			}
+			else {
+
+				let rgb = '';
+
+				switch (data.rarity) {
+
+					case 1: rgb = '17,105,237'; break;
+
+					case 2: rgb = '205,0,205'; break;
+
+					case 3: rgb = '237,129,5'; break;
+
+					case 4: rgb = '170,20,44'; break;
+
+				}
+
+				let stats = '';
+
+				if (('stats' in data) && (data.stats)) {
+
+					for (let key in data.stats) {
+						if (Build.talentStatFilter(key)) {
+							continue;
+						}
+
+						let statValue = parseFloat(data.stats[key]);
+
+						if ('statsRefine' in data && 'rarity' in data) {
+							let refineBonus = Build.getTalentRefineByRarity(data.rarity);
+							let refineMul = parseFloat(data.statsRefine[key]);
+							statValue += refineBonus * refineMul;
+						}
+
+						let sign = key == 'speedtal' || key == 'speedtalrz' || key == 'speedtalvz' ? '-' : '+';
+						stats += sign + `${Math.floor(statValue * 10.0) / 10.0} ${(Build.language[key]) ? Build.language[key] : key}<br>`;
+
+					}
+
+				}
+				Build.descriptionView.innerHTML = `<b style="color:rgb(${rgb})">${data.name}</b><div>${data.description}</div><span>${stats}</span>`;
+
+				let innerChilds = Build.descriptionView.childNodes[1].childNodes;
+				let paramIterator = 0;
+				for (let outerTag of innerChilds) {
+					for (let specialTag of outerTag.childNodes) {
+						let tagString = specialTag.innerHTML ? specialTag.innerHTML : specialTag.data;
+						if (!tagString || tagString.indexOf('%s') == -1 || !data.params) {
+							continue;
+						}
+						let params = data.params.split(';');
+						if (paramIterator >= params.length) {
+							continue;
+						}
+						let param = params[paramIterator];
+						let paramValues = param.split(',');
+
+						let statAffection, minValue, maxValue;
+
+						if (paramValues.length == 5) {
+							//let applyTo = paramValues[0];
+							minValue = parseFloat(paramValues[1]);
+							maxValue = parseFloat(paramValues[2]);
+							//let applicator = paramValues[3];
+							statAffection = paramValues[4];
+						}
+						else if (paramValues.length == 3) {
+							minValue = parseFloat(paramValues[0]);
+							maxValue = parseFloat(paramValues[1]);
+							statAffection = paramValues[2];
+						}
+
+						let resolvedStatAffection;
+						let resolvedStatAffection1;
+						let resolvedStatAffection2;
+						switch (statAffection) {
+							case 'sr_max':
+								resolvedStatAffection = Build.getMaxStat(['sila', 'razum']);
+								break;
+							case 'sv_max':
+								resolvedStatAffection = Build.getMaxStat(['stoikost', 'volia']);
+								break;
+							case 'ph_max':
+								resolvedStatAffection = Build.getMaxStat(['provorstvo', 'hitrost']);
+								break;
+							case 'hpmp_max':
+								resolvedStatAffection = Build.getMaxStat(['hp', 'mp']);
+								break;
+							case 'sr_sum':	
+								resolvedStatAffection1 = 'sila';
+								resolvedStatAffection2 = 'razum';						
+								break;
+							case 'ph_sum':	
+								resolvedStatAffection1 = 'provorstvo';
+								resolvedStatAffection2 = 'hitrost';						
+								break;
+							case 'sv_sum':	
+								resolvedStatAffection1 = 'stoikost';
+								resolvedStatAffection2 = 'volia';						
+								break;	
+							case 'hpmp_sum':	
+								resolvedStatAffection1 = 'hp';
+								resolvedStatAffection2 = 'mp';						
+								break;	
+							default:
+								resolvedStatAffection = statAffection;
+								break;
+						}
+
+						function lerp(a, b, alpha) {
+							return a + alpha * (b - a);
+						}
+						
+						let outputString;
+						if (statAffection == 'sr_sum'||statAffection == 'ph_sum'||statAffection == 'sv_sum'||statAffection == 'hpmp_sum'){
+							let resolvedTotalStat1 = Build.totalStat(resolvedStatAffection1);
+							let resolvedTotalStat2 = Build.totalStat(resolvedStatAffection2);
+								const isHpOrEnergy = resolvedStatAffection1 == 'hp' || resolvedStatAffection1 == 'mp'|| resolvedStatAffection2 == 'hp' || resolvedStatAffection2 == 'mp';
+								const param1 = isHpOrEnergy ? 600.0 : 50.0;
+								const param2 = isHpOrEnergy ? 6250.0 : 250.0;
+								outputString = (lerp(minValue, maxValue, (resolvedTotalStat1 + resolvedTotalStat2 - param1) / param2)).toFixed(1);
+								if (outputString.endsWith(('.0'))) {
+									outputString = outputString.replace('.0', '')
+								}
+						} else {
+							if (resolvedStatAffection in Build.dataStats && paramValues.length == 5) {
+								let resolvedTotalStat = Build.totalStat(resolvedStatAffection);
+								const isHpOrEnergy = resolvedStatAffection == 'hp' || resolvedStatAffection == 'mp';
+								const param1 = isHpOrEnergy ? 600.0 : 50.0;
+								const param2 = isHpOrEnergy ? 6250.0 : 250.0;
+								outputString = (lerp(minValue, maxValue, (resolvedTotalStat - param1) / param2)).toFixed(1);
+								if (outputString.endsWith(('.0'))) {
+									outputString = outputString.replace('.0', '')
+								}
+							} else {
+								let refineBonus = Build.getTalentRefineByRarity(data.rarity);
+								outputString = (minValue + maxValue * refineBonus).toFixed(1);
+								if (outputString.endsWith(('.0'))) {
+									outputString = outputString.replace('.0', '');
+								}
+							}
+						}
+						if (specialTag.innerHTML) {
+							specialTag.innerHTML = tagString.replace('%s', outputString);
+						} else {
+							outerTag.innerHTML = tagString.replace('%s', outputString);
+						}
+						paramIterator++;
+					}
+				}
+			}
+
+			let positionDescription = Build.descriptionView.getBoundingClientRect();
+
+			Build.descriptionView.style.zIndex = 9999;
+
+			Build.descriptionView.style.position = 'absolute';
+
+			Build.descriptionView.style.left = positionElement.left + 'px';
+
+			Build.descriptionView.style.top = (positionElement.top + positionElement.height) + 'px';
+
+			Build.descriptionView.style.display = 'block';
+
+		}
+
+		let descEventEnd = () => {
+
+			Build.descriptionView.style.display = 'none';
+
+		}
+
+		element.ontouchstart = (e) => {
+			//e.preventDefault();
+			descEvent();
+		};
+
+		element.onmouseover = () => { descEvent() };
+
+		element.onmouseout = () => { descEventEnd() };
+
+		element.ontouchend = () => {
+			//e.preventDefault();
+			descEventEnd();
+		};
+
+	}
+
+}
+
+class Events {
+
+	static Message(data) {
+
+		let body = document.createDocumentFragment();
+
+		body.append(DOM(`${data.message}`))
+
+		Splash.show(body);
+
+		setTimeout(() => Splash.hide(), 3000);
+
+	}
+
+	static MMReady(data) {
+
+		if (!NativeAPI.status) {
+
+			return;
+
+		}
+
+		// NativeAPI.attention();
+
+		MM.ready(data);
+
+	}
+
+	static MMReadyCount(data) {
+
+		if (!NativeAPI.status) {
+
+			return;
+
+		}
+
+		let find = document.getElementById('MMReady');
+
+		if (find) {
+
+			find.innerText = `${data.count}/${data.limit}`
+
+		}
+
+	}
+
+	static MMStart(data) {
+
+		if (!NativeAPI.status) {
+
+			return;
+
+		}
+
+		// NativeAPI.attention();
+
+		MM.lobby(data);
+
+	}
+
+	static MMChangeHero(data) {
+
+		if (!NativeAPI.status) {
+
+			return;
+
+		}
+
+		MM.eventChangeHero(data);
+
+	}
+
+	static MMChat(data) {
+
+		if (!NativeAPI.status) {
+
+			return;
+
+		}
+
+		MM.chat(data);
+
+	}
+
+	static MMPosition(data) {
+
+		if (!NativeAPI.status) {
+
+			return;
+
+		}
+
+		if (MM.renderBody) {
+
+			for (let item of MM.renderBody.children) {
+
+				if (item.dataset.player == data.id) {
+
+					item.dataset.player = 0;
+
+					item.style.backgroundImage = 'none';
+
+					item.style.transform = 'scale(1)';
+
+				}
+
+				if (data.position != 0) {
+
+					if (item.dataset.position == data.position) {
+
+						let findPlayer = document.getElementById(`PLAYER${data.id}`);
+
+						if (findPlayer) {
+
+							item.dataset.player = data.id;
+
+							item.style.backgroundImage = (findPlayer.dataset.hero != 0) ? `url(content/hero/${findPlayer.dataset.hero}/1.webp)` : `url(content/hero/empty.webp)`;
+
+							item.style.transform = 'scale(1.5)';
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	static MMHero(data) {
+
+		if (!NativeAPI.status) {
+
+			return;
+
+		}
+
+		MM.select(data);
+
+	}
+
+	static MMEnd(data) {
+
+		if (!NativeAPI.status) {
+
+			return;
+
+		}
+
+		MM.finish(data);
+
+	}
+
+	static PInvite(data) {
+
+		let body = document.createDocumentFragment();
+
+		let b1 = DOM({
+			style: 'splash-content-button', event: ['click', async () => {
+
+				await App.api.request(CURRENT_MM, 'joinParty', { code: data.code, version: PW_VERSION });
+
+				Splash.hide();
+
+			}]
+		}, 'Принять');
+
+		let b2 = DOM({ style: 'splash-content-button', event: ['click', () => Splash.hide()] }, 'Отмена');
+
+		body.append(DOM(`${data.nickname} приглашает вас в лобби`), b1, b2)
+
+		Splash.show(body);
+
+	}
+
+	static PUpdate(data) {
+
+		View.show('castle', data);
+
+	}
+
+	static PHero(data) {
+
+		let find = document.getElementById(`PP${data.id}`);
+
+		if (find) {
+
+			find.children[1].style.backgroundImage = (data.hero) ? `url(content/hero/${data.hero}/${data.skin ? data.skin : 1}.webp)` : `url(content/hero/empty.webp)`;
+
+			find.children[1].firstChild.firstChild.innerText = data.rating;
+
+			find.children[1].firstChild.firstChild.style.backgroundImage = `url(content/ranks/${Rank.icon(data.rating)}.webp)`;
+
+		}
+
+	}
+
+	static PExit() {
+
+		View.show('castle');
+
+	}
+
+	static PReady(data) {
+
+		let find = document.getElementById(`PP${data.id}`);
+
+		if (find) {
+
+			find.children[2].firstChild.innerText = Lang.text('ready');
+
+			find.children[2].classList.replace('party-middle-item-not-ready', 'party-middle-item-ready');
+
+			find.children[2].classList.replace('castle-party-middle-item-not-ready', 'castle-party-middle-item-ready');
+
+		}
+
+	}
+
+	static PMMActive(data) {
+		
+		CastleNAVBAR.setMode(data.mode + 1);
+		
+		MM.searchActive(data.status);
+		
+	}
+
+	static MMQueue(value) {
+
+		let find = document.getElementById('MMQueue');
+
+		if (find) {
+
+			find.innerText = value;
+
+		}
+
+	}
+
+	static MMQueueV2(data) {
+
+		CastleNAVBAR.queue(data);
+
+	}
+
+	static ADMStat(data) {
+
+		document.getElementById('ADMStat').innerText = `${data.online}`;
+
+	}
+
+	static MMKick(data) {
+
+		setTimeout(() => {
+
+			MM.searchActive(false);
+
+		}, 1000);
+
+		let body = document.createDocumentFragment();
+
+		let button = DOM({ style: 'splash-content-button', event: ['click', async () => Splash.hide()] }, 'Больше так не буду');
+
+		body.append(DOM(`${data.party ? 'Один из участников пати был АФК, поэтому вы исключены из подбора матча' : 'Вы были исключены из матчмейкинга за АФК!'}`), button);
+
+		Splash.show(body);
+
+	}
+
+	static UChat(data) {
+
+		Chat.viewMessage(data);
+
+	}
+
+}
+
+class App {
+
+	static async init() {
+		const MOSCOW = 'wss://api2.26rus-game.ru:8443';
+		const RIGA = 'wss://relay.26rus-game.ru:8443';
+		const CLOUDFLARE = 'wss://api.26rus-game.ru:8443';
+		// wss://api2.26rus-game.ru:8443 - Москва (основа)
+		// wss://relay.26rus-game.ru:8443 - Рига (Прокси)
+		// wss://api.26rus-game.ru:8443 - США (прокси)
+		App.api = new Api([RIGA, MOSCOW, CLOUDFLARE ], Events);
+		
+		await News.init();
+		
+		await Store.init();
+
+		App.storage = new Store('u3');
+
+		await App.storage.init({ id: 0, token: '', login: '' });
+
+		await MM.init();
+		/*
+		setTimeout(() => {
+			let obj = {id:1, users:{
+				10:{nickname:'Nesh',hero:15,ready:1,rating:1300,select:false,team:1},
+				1858:{nickname:'vitaly-zdanevich',hero:3,ready:1,rating:1100,select:false,team:1},
+				2:{nickname:'Коао',hero:12,ready:1,rating:1100,select:false,team:1},
+				4:{nickname:'Lantarm',hero:24,ready:1,rating:1100,select:false,team:1},
+				5:{nickname:'123',hero:8,ready:1,rating:1100,select:false,team:2},
+				6:{nickname:'123',hero:2,ready:1,rating:1100,select:false,team:2},
+				7:{nickname:'Farfania',hero:9,ready:1,rating:1100,select:false,team:2},
+				8:{nickname:'Rekongstor',hero:25,ready:1,rating:1100,select:false,team:2},
+				9:{nickname:'Hatem',hero:0,ready:1,rating:2200,select:false,team:2}
+				},target:7,map:[4,2,App.storage.data.id,5,6,7,8,9,10,1858]};
+
+			obj.users[App.storage.data.id] = {winrate:51,nickname:App.storage.data.login,hero:49,ready:0,rating:1284,select:true,team:1,mode:0,commander:true};
+				
+			  MM.lobby(obj);
+			
+		 }, 1000);
+		setTimeout(() => {
+			
+			MM.chat({id:0,message:'тестовое сообщение'});
+			MM.chat({id:2,message:'тестовое сообщение'});
+			MM.chat({id:7,message:'тестовое сообщение'});
+			
+		},2000);
+		*/
+		/*
+		setTimeout(() => {
+			
+			ARAM.briefing(6,1,() => alert(1));
+			
+		},3000);
+		*/
+		Chat.init();
+		
+		try{
+			
+			await App.api.init();
+			
+		}
+		catch(error){
+			
+			
+			
+		}
+
+		App.ShowCurrentView();
+
+		// App.backgroundAnimate = document.body.animate({backgroundSize:['150%','100%','150%']},{duration:30000,iterations:Infinity,easing:'ease-out'});
+
+		if (App.isAdmin()) {
+
+			document.body.append(DOM({ id: 'ADMStat' }));
+
+		}
+
+	}
+
+	static ShowCurrentView() {
+		if (App.storage.data.login) {
+			
+			View.show('castle');
+			
+		}
+		else {
+
+			View.show('authorization');
+
+		}
+	}
+
+	static OpenExternalLink(url) {
+		if (NativeAPI.status) {
+			nw.Shell.openExternal(url);
+		} else {
+			window.open(url, url, 'popup');
+		}
+	}
+
+	static async authorization(login, password) {
+
+		if (!login.value) {
+
+			login.setAttribute('style', 'background:rgba(255,0,0,0.3)');
+
+			return App.error('Необходимо указать логин');
+
+		}
+
+		if (!password.value) {
+
+			password.setAttribute('style', 'background:rgba(255,0,0,0.3)');
+
+			return App.error('Необходимо указать пароль');
+
+		}
+
+		let request, analysis;
+
+		try {
+
+			analysis = NativeAPI.analysis();
+
+		}
+		catch (e) {
+
+
+
+		}
+
+		try {
+
+			request = await App.api.request('user', 'authorization', { login: login.value.trim(), password: password.value.trim(), analysis: analysis });
+
+		}
+		catch (error) {
+
+			return App.error(error);
+
+		}
+
+		await App.storage.set({ id: request.id, token: request.token, login: login.value, fraction: request.fraction });
+
+		View.show('castle');
+
+	}
+
+	static async registration(fraction, invite, login, password, password2) {
+
+		if ((!fraction.value) || (!invite.value) || (!login.value) || (!password.value) || (!password2.value)) {
+
+			return App.error('Не все значения указаны');
+
+		}
+
+		if (password.value != password2.value) {
+
+			password.setAttribute('style', 'background:rgba(255,0,0,0.3)');
+
+			password2.setAttribute('style', 'background:rgba(255,0,0,0.3)');
+
+			return App.error('Пароли не совпадают');
+
+		}
+
+		let request,analysis;
+		
+		try {
+
+			analysis = NativeAPI.analysis();
+			
+		}
+		catch (e) {
+
+
+
+		}
+
+		try {
+
+			request = await App.api.request('user', 'registration', { fraction: fraction.value, invite: invite.value.trim(), login: login.value.trim(), password: password.value.trim(), analysis: analysis});
+
+		}
+		catch (error) {
+
+			return App.error(error);
+
+		}
+
+		await App.storage.set({ id: request.id, token: request.token, login: login.value, fraction: fraction.value });
+
+		View.show('castle');
+
+	}
+
+	static async exit() {
+
+		await App.storage.set({ id: 0, token: '', login: '' });
+
+		View.show('authorization');
+
+	}
+
+	static input(callback, object = new Object()) {
+
+		if (!('tag' in object)) {
+
+			object.tag = 'input';
+
+		}
+
+		if (!('value' in object)) {
+
+			object.value = '';
+
+		}
+
+		let body = DOM(object);
+
+		body.addEventListener('blur', async () => {
+
+			if (body.value == object.value) {
+
+				return;
+
+			}
+
+			if (callback) {
+
+				try {
+
+					await callback(body.value);
+
+				}
+				catch (e) {
+
+					return;
+
+				}
+
+			}
+
+			object.value = body.value;
+
+		});
+
+		return body;
+
+	}
+
+	static getRandomInt(min, max) {
+
+		min = Math.ceil(min);
+
+		max = Math.floor(max);
+
+		return Math.floor(Math.random() * (max - min + 1)) + min;
+
+	}
+
+	static error(message, timeout = 3000) {
+
+		let previousErrors = document.getElementsByClassName('error-message');
+		let body;
+		if (previousErrors.length == 0) {
+			body = DOM({ style: 'error-message' });
+			document.body.append(body);
+		} else {
+			body = previousErrors[0];
+		}
+
+		let msg = DOM({ tag: 'div' }, `${message}`);
+
+		setTimeout(() => {
+
+			msg.remove();
+
+		}, timeout);
+
+		body.append(msg);
+
+	}
+
+	static notify(message, delay = 0) {
+
+		setTimeout(() => {
+
+			let body = DOM({ style: 'notify-message' }, DOM({ tag: 'div' }, `${message}`));
+
+			setTimeout(() => {
+
+				body.remove();
+
+			}, 3000);
+
+			document.body.append(body);
+
+		}, delay);
+
+	}
+
+	static isAdmin(id = 0) {
+
+		return [1, 2, 24, 134, 865, 2220, 292].includes(Number((id ? id : App.storage.data.id)));
+
+	}
+
+	static href(url) {
+
+		let a = DOM({ tag: 'a', href: url });
+
+		a.click();
+
+	}
+
+}
+
+class Chat {
+
+	static body;
+
+	static hide = false;
+
+	static to = 0;
+
+	static init() {
+		let scrollBtn = DOM({
+			style: 'scroll-btn',
+			event: ['click', () => {
+				Chat.scroll(true);
+			}],
+			title: 'Прокрутить чат вниз' // Добавляем описание при наведении
+		}, '▼'); // Замените '▼' на нужный вам текст или символ для кнопки прокрутки
+
+		let input = DOM({
+			tag: 'input',
+			style: 'chat-input',
+			placeholder: Lang.text('enterTextAndPressEnter')
+		});
+
+		Chat.input = DOM({ style: 'chat-input-container' }, input, scrollBtn);
+
+		Chat.body = DOM({ style: 'chat' }, DOM({ style: 'chat-body' }), Chat.input);
+
+		const handleSend = async (event) => {
+			if (event.key === 'Enter' || event.keyCode === 13 || event.code === 'Enter' || event.code === 'NumpadEnter') {
+				event.preventDefault();
+				await Chat.sendMessage();
+			}
+		};
+
+		input.addEventListener('keyup', handleSend);
+		input.addEventListener('keypress', handleSend);
+		input.addEventListener('keydown', handleSend);
+
+
+		input.addEventListener('input', () => {
+
+			if (!Chat.input.firstChild.value) {
+
+				Chat.to = 0;
+
+			}
+
+		});
+
+		document.addEventListener('keydown', (event) => {
+
+			if (event.code == 'KeyM' && (event.ctrlKey || event.metaKey)) {
+
+				if (Chat.hide) {
+
+					Chat.body.style.display = 'block';
+
+					Chat.hide = false;
+
+				}
+				else {
+
+					Chat.body.style.display = 'none';
+
+					Chat.hide = true;
+
+				}
+
+			}
+
+		});
+
+	}
+
+	static wrapLinksInATag(message) {
+		const urlRegex = /(https:\/\/[^\s]+)/g;
+		return message.replace(urlRegex, '<a href="$1">$1</a>');
+	}
+
+	static viewMessage(data) {
+
+		let nickname = DOM({ tag: 'div' }, data.nickname + ": ");
+
+		let message = DOM({ tag: 'div' });
+
+		if (data.id == 1) {
+
+			if (String(data.message).slice(0, 5) == 'https') {
+
+				message.append(DOM({ tag: 'img', src: data.message }));
+
+			}
+			else {
+
+				message.innerText = `${data.message}`;
+
+			}
+
+		}
+		else {
+
+			message.innerText = `${data.message}`;
+
+		}
+
+		if (App.isAdmin(data.id)) {
+			
+			if ((String(data.message).includes('https')) && (!String(data.message).includes('.gif'))) {
+				message.innerHTML = this.wrapLinksInATag(message.innerHTML);
+			}
+			if (NativeAPI.status) {
+				message.addEventListener('click', (e) => NativeAPI.linkHandler(e));
+			}
+		}
+
+		if (data.to == -1) {
+
+			message.style.color = 'rgb(255,50,0)';
+
+			message.style.fontWeight = 600;
+
+			message.style.fontStyle = 'italic';
+
+		}
+		else if (data.to == App.storage.data.id) {
+
+			message.style.color = 'rgba(51,255,0,0.9)';
+
+		}
+
+		if (data.id == 1) {
+
+			nickname.style.color = 'transparent';
+
+			nickname.style.fontWeight = 600;
+
+			nickname.classList.add('owner-text');
+
+		}
+		else if (App.isAdmin(data.id)) {
+
+			nickname.style.color = 'transparent';
+
+			nickname.style.fontWeight = 600;
+
+			nickname.classList.add('administration-text');
+
+		}
+
+		let item = DOM({
+			style: 'chat-body-item', event: ['click', () => {
+
+				Chat.to = data.id;
+
+				Chat.body.lastChild.firstChild.value = `@${data.nickname}, `;
+
+				Chat.input.firstChild.focus();
+
+			}]
+		}, nickname, message);
+
+		item.addEventListener('contextmenu', () => {
+
+			if (App.isAdmin()) {
+
+				let body = document.createDocumentFragment();
+
+				body.append(DOM(`Выдать мут чата ${data.nickname}?`), DOM({
+					style: 'splash-content-button', event: ['click', async () => {
+
+						await App.api.request('user', 'mute', { id: data.id });
+
+						Splash.hide();
+
+					}]
+				}, 'Да'), DOM({ style: 'splash-content-button', event: ['click', async () => Splash.hide()] }, 'Нет'));
+
+				Splash.show(body);
+
+			}
+
+			return false;
+
+		});
+
+		Chat.body.firstChild.prepend(item);
+
+		Chat.scroll();
+
+	}
+
+	static async sendMessage() {
+
+		if (Chat.input.firstChild.value.length > 128) {
+
+			return;
+
+		}
+
+		await App.api.request('user', 'chat', { message: Chat.input.firstChild.value, to: Chat.to });
+
+		Chat.to = 0;
+
+		Chat.input.firstChild.value = '';
+
+	}
+
+	static scroll(forceScroll = false) {
+
+		if (Chat.body.firstChild.children.length && (forceScroll || Chat.body.firstChild.firstChild.offsetTop == Chat.body.firstChild.firstChild.offsetHeight)) {
+
+			Chat.body.firstChild.firstChild.scrollIntoView({ block: 'end', behavior: 'smooth' });
+
+		}
+
+	}
+
+}
+
+class HTTP {
+
+	static async request(url, type = '') {
+
+		let response = await fetch(url);
+
+		switch (type) {
+
+			case 'text': return await response.text(); break;
+
+			case 'arrayBuffer': return await response.arrayBuffer(); break;
+
+			default: return await response.json(); break;
+
+		}
+
+	}
+
+}
+
+class PWGame {
+
+	static PATH = '../Game/Bin/PW_Game.exe';
+
+	static WORKING_DIR_PATH = '../Game/Bin/';
+
+	static LUTRIS_EXEC = 'lutris lutris:rungame/prime-world';
+
+	static PATH_UPDATE = '../Tools/PW_NanoUpdater.exe';
+
+	static PATH_UPDATE_LINUX = '../update.sh';
+
+	static PATH_TEST_HASHES = './content/PW_HashTest.exe';
+
+	static gameServerHasConnection = false;
+
+	static mainServerHasConnection = false;
+
+	static radminHasConnection = false;
+
+	static proxyHasConnection = false;
+
+	static gameConnectionTestIsActive = false;
+
+	static isUpToDate = false;
+
+	static isValidated = false;
+
+	static isUpdateFailed = false;
+
+	static isTestHashesFailed = false;
+
+	static gameServerConnectionCheckTimeout = 1000 * 60 * 100; // 100 minutes
+
+	static currentPlayPwProtocol = 'pwclassic://runGame/Tester00Tester00Tester00Tester004c8fa55b5ee54d6ddbaab2373f8a6a74d7f9c5d739bdd79da12f3beda73c7115/2.0.0/0';
+
+	static protocolServer;
+
+	static async openProtocolSocket() {
+		try {
+			const http = NativeAPI.http;
+
+			if (PWGame.protocolServer) {
+				PWGame.protocolServer.close(() => { });
+			}
+
+			PWGame.protocolServer = http.createServer((req, res) => {
+				if (req.url === '/getConnectionData' && req.method === 'POST') {
+					res.writeHead(200, { 'Content-Type': 'text/plain' });
+					res.end(JSON.stringify({ protocol: PWGame.currentPlayPwProtocol }));
+
+					//PWGame.protocolServer.close(() => {});
+				} else {
+					res.writeHead(404, { 'Content-Type': 'text/plain' });
+					res.end('Not Found');
+				}
+			});
+
+			PWGame.protocolServer.listen(34980, '127.0.0.1', () => { });
+		} catch (e) {
+			App.error(e, 30000);
+		}
+	}
+
+	static GetPlayPwProtocol(id) {
+		let chosenServer = PWGame.mainServerHasConnection ? 0 : 2;
+		if (Settings.settings.radminPriority && PWGame.radminHasConnection) {
+			chosenServer = 1;
+		}
+		return `pwclassic://runGame/${id}/${PW_VERSION}/${chosenServer}`;
+	}
+
+	static async start(id, callback) {
+
+		await PWGame.check();
+
+		PWGame.currentPlayPwProtocol = PWGame.GetPlayPwProtocol(id);
+
+		PWGame.openProtocolSocket();
+
+		if (NativeAPI.platform == 'linux') {
+			let spawn = await NativeAPI.childProcess.exec(PWGame.LUTRIS_EXEC);
+			spawn.on('close', async (code) => {
+				callback();
+			});
+
+		} else {
+			await NativeAPI.exec(PWGame.PATH, PWGame.WORKING_DIR_PATH, ['protocol', PWGame.currentPlayPwProtocol], callback);
+		}
+
+	}
+
+	static async reconnect(id, callback) {
+
+		this.start(id, callback);
+
+	}
+
+	static async check() {
+
+		if (!NativeAPI.status) {
+
+			//throw 'Необходима Windows версия лаунчера';
+
+		}
+
+		await NativeAPI.fileSystem.promises.access(PWGame.PATH);
+
+	}
+
+	static async checkUpdates() {
+		if (PWGame.isUpdateFailed) {
+			throw 'Не удалось обновить игру! Обратитесь в поддержку PWClassic';
+		}
+		if (PWGame.isTestHashesFailed) {
+			throw 'Файлы игры повреждены! Обратитесь в поддержку PWClassic';
+		}
+		if (!PWGame.isUpToDate) {
+			//throw 'Проверка обновления не завершена! Подождите';
+		}
+		if (!PWGame.isValidated) {
+			//throw 'Проверка файлов не завершена! Подождите';
+		}
+	}
+
+
+	static gameServerIps = [
+		'http://81.88.210.30:27302/api',
+		'http://26.133.141.83:27302/api', // test connection to Radmin IP
+		'http://95.164.91.124:27302/api',
+	];
+	static MAIN_GAME_SERVER_IP = 0
+	static RADMIN_GAME_SERVER_IP = 1;
+	static PROXY_GAME_SERVER_IP = 2;
+
+	static async testServerConnection(serverIp) {
+		const data = {
+			method: 'checkConnection'
+		};
+		try {
+			let response = await fetch(serverIp, {
+				method: "POST",
+				body: JSON.stringify(data),
+				headers: {
+					"Content-type": "application/json; charset=UTF-8"
+				}
+			});
+			return true;
+		} catch (e) {
+			// No connection
+		}
+		return false;
+	}
+
+	static async testGameServerConnection() {
+		if (PWGame.gameServerHasConnection) {
+			return;
+		}
+
+		for (let ip of PWGame.gameServerIps) {
+			if (PWGame.testServerConnection(ip)) {
+				PWGame.gameServerHasConnection = true;
+
+				setTimeout(_ => {
+					PWGame.gameServerHasConnection = false;
+				}, PWGame.gameServerConnectionCheckTimeout);
+
+				break;
+			}
+		}
+		if (!PWGame.gameServerHasConnection) {
+			throw 'Игровой сервер недоступен!';
+		}
+	}
+
+}
+
+class NativeAPI {
+
+	static status = false;
+
+	static platform;
+
+	static title;
+	static updated = false;
+	static curLabel;
+	static lastBranchV = null;
+
+	static modules = {
+
+		fileSystem: 'fs',
+		childProcess: 'child_process',
+		os: 'os',
+		path: 'path',
+		crypto: 'crypto',
+		net: 'net',
+		http: 'http'
+
+	};
+
+	static setDefaultWindow() {
+
+		NativeAPI.window.width = 1280;
+
+		NativeAPI.window.height = 720;
+
+		NativeAPI.window.setMinimumSize(1280, 720);
+
+		NativeAPI.window.setResizable(true);
+
+		NativeAPI.window.setPosition('center');
+
+		NativeAPI.window.enterFullscreen();
+
+	}
+
+	static init() {
+
+		try {
+
+			if (!nw) {
+
+				return;
+
+			}
+
+		}
+		catch (e) {
+
+			return;
+
+		}
+
+		NativeAPI.status = true;
+
+		NativeAPI.window = nw.Window.get();
+
+		NativeAPI.setDefaultWindow();
+
+		NativeAPI.app = nw.App;
+
+		NativeAPI.altEnterShortcut = new nw.Shortcut({
+			key: 'Alt+Enter', active: () => {
+				Settings.settings.fullscreen = !Settings.settings.fullscreen;
+				Settings.ApplySettings();
+			}
+		});
+
+		NativeAPI.app.registerGlobalHotKey(NativeAPI.altEnterShortcut);
+
+		NativeAPI.loadModules();
+
+		NativeAPI.platform = NativeAPI.os.platform();
+
+		window.addEventListener('error', (event) => NativeAPI.write('error.txt', event.error.toString()));
+
+		window.addEventListener('unhandledrejection', (event) => NativeAPI.write('unhandledrejection.txt', event.reason.stack));
+
+	}
+
+	static loadModules() {
+
+		for (let module in NativeAPI.modules) {
+
+			NativeAPI[module] = require(NativeAPI.modules[module]);
+
+		}
+
+	}
+
+	static async exec(exeFile, workingDir, args, callback, cwd = process.cwd()) {
+
+		return new Promise((resolve, reject) => {
+
+			if (!NativeAPI.status) {
+
+				reject();
+
+			}
+
+			let workingDirPath = NativeAPI.path.join(cwd, workingDir);
+			let executablePath = NativeAPI.path.join(cwd, exeFile);
+			NativeAPI.childProcess.execFile(executablePath, args, { cwd: workingDirPath }, (error, stdout, stderr) => {
+
+				if (error) {
+
+					reject(error);
+
+				}
+
+				resolve(stdout);
+
+				if (callback) {
+
+					callback();
+
+				}
+
+			});
+
+		});
+
+	}
+
+	static reset() {
+
+		if (!NativeAPI.status) {
+
+			return;
+
+		}
+
+		NativeAPI.app.clearCache();
+
+		NativeAPI.window.reload();
+
+	}
+
+	static progress(value = 0.0) {
+
+		if (!NativeAPI.status) {
+
+			return;
+
+		}
+
+		NativeAPI.window.setProgressBar(value);
+
+	}
+
+	static attention() {
+
+		if (!NativeAPI.status) {
+
+			return;
+
+		}
+
+		NativeAPI.window.focus();
+
+		NativeAPI.window.requestAttention(true);
+
+	}
+
+	static exit() {
+
+		if (!NativeAPI.status) {
+
+			return false;
+
+		}
+
+		NativeAPI.app.quit();
+
+		return true;
+
+	}
+
+	static testHashes() {
+		if (NativeAPI.platform == 'linux') {
+			PWGame.isValidated = true;
+			return; // No hash check for linux
+		}
+		NativeAPI.fileSystem.promises.access(PWGame.PATH_TEST_HASHES);
+
+		let spawn = NativeAPI.childProcess.spawn(PWGame.PATH_TEST_HASHES);
+
+		spawn.on('close', (code) => {
+			if ((code == 0)) {
+				PWGame.isValidated = true;
+				App.notify('Проверка обновлений и файлов игры завершена');
+			} else {
+				PWGame.isTestHashesFailed = true;
+				App.error('Проверка файлов не выполнена: ' + code);
+			}
+		});
+	}
+
+	static updateLinux(data, callback) {
+		let outputs = data.toString().split('\n');  // I have used space, you can use any thing.
+		for (let o of outputs) {
+			if (o == 'Updating game files') {
+				this.title = 'Обновление игры';
+				this.curLabel = 'game';
+				continue;
+			}
+			if (o == 'Updating launcher') {
+				this.title = 'Обновление лаунчера';
+				this.curLabel = 'content';
+				continue;
+			}
+
+			if (o.startsWith('* main')) {
+				if (this.lastBranchV == null) {
+					this.lastBranchV = o;
+				} else {
+					this.updated = this.lastBranchV != o;
+				}
+			}
+            
+            if (o.startsWith('Receiving objects:')) {
+                let percent = parseInt(o.substring(19, o.indexOf('%')));
+					
+				callback({update:true,title:this.title,total:percent});
+				
+				NativeAPI.progress(percent / 100);
+            }
+		}
+
+	}
+
+	static updateWindows(data, callback) {
+
+		let progressDataElements = data.toString().substring(1).split('#');
+
+		for (let progressDataElement of progressDataElements) {
+
+			let json = JSON.parse(progressDataElement);
+
+			if (json.type) {
+
+				if (json.type == 'bar') {
+
+					if (this.curLabel == 'content') {
+						this.updated = true;
+					}
+
+					callback({ update: true, title: this.title, total: Number(json.data) });
+
+					NativeAPI.progress(Number(json.data) / 100);
+
+				}
+				else if (json.type == 'label') {
+
+					switch (json.data) {
+
+						case 'game': this.title = 'Обновление игры'; this.curLabel = json.data; break;
+
+						case 'content': this.title = 'Обновление лаунчера'; this.curLabel = json.data; break;
+
+						case 'game_data0': this.title = 'Загрузка игровых архивов 1/8'; this.curLabel = json.data; break;
+						case 'game_data1': this.title = 'Загрузка игровых архивов 2/8'; this.curLabel = json.data; break;
+						case 'game_data2': this.title = 'Загрузка игровых архивов 3/8'; this.curLabel = json.data; break;
+						case 'game_data3': this.title = 'Загрузка игровых архивов 4/8'; this.curLabel = json.data; break;
+						case 'game_data4': this.title = 'Загрузка игровых архивов 5/8'; this.curLabel = json.data; break;
+						case 'game_data5': this.title = 'Загрузка игровых архивов 6/8'; this.curLabel = json.data; break;
+						case 'game_data6': this.title = 'Загрузка игровых архивов 7/8'; this.curLabel = json.data; break;
+						case 'game_data7': this.title = 'Загрузка игровых архивов 8/8'; this.curLabel = json.data; break;
+
+						default: this.title = 'Загрузка игровых архивов'; this.curLabel = json.data; break;
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	static async update(callback) {
+
+		if (!NativeAPI.status) {
+
+			return false;
+
+		}
+
+		const isLinuxUpdate = NativeAPI.platform == 'linux';
+
+		const updaterPath = isLinuxUpdate ? PWGame.PATH_UPDATE_LINUX : PWGame.PATH_UPDATE;
+
+		await NativeAPI.fileSystem.promises.access(updaterPath);
+
+		let spawn = NativeAPI.childProcess.spawn(updaterPath);
+
+		App.notify('Проверка обновлений и файлов игры... Подождите');
+
+		spawn.stdout.on('data', (data) => {
+			if (isLinuxUpdate) {
+				this.updateLinux(data, callback)
+			} else {
+				this.updateWindows(data, callback)
+			}
+		});
+
+		spawn.on('close', async (code) => {
+
+			callback({ update: false, title: '', total: 0 });
+
+			NativeAPI.progress(-1);
+
+			if ((code == 0 || code == null)) {
+				PWGame.isUpToDate = true;
+				try {
+					NativeAPI.testHashes();
+				}
+				catch (e) {
+					App.error('Неисправна проверка файлов: ' + e);
+				}
+			} else {
+				PWGame.isUpdateFailed = true;
+				App.error('Ошибка обновления: ' + code);
+
+			}
+
+			if (this.updated) {
+				NativeAPI.reset();
+			}
+
+		});
+
+	}
+
+	static analysis() {
+
+		if (!NativeAPI.status) {
+
+			return false;
+
+		}
+
+		let username = '', cpus = NativeAPI.os.cpus();
+
+		try {
+
+			let userInfo = NativeAPI.os.userInfo();
+
+			username = userInfo.username;
+
+		}
+		catch (error) {
+
+
+
+		}
+
+		return {
+
+			hostname: NativeAPI.os.hostname(),
+			core: { model: (cpus.length ? cpus[0].model : ''), total: cpus.length },
+			memory: Math.round((NativeAPI.os.totalmem() / 1024) / 1024),
+			version: NativeAPI.os.version(),
+			release: NativeAPI.os.release(),
+			username: username
+
+		};
+
+	}
+
+	static async ping(hostname, port = 80, timeout = 3000) {
+
+		return new Promise((resolve) => {
+
+			const start = performance.now();
+
+			const socket = NativeAPI.net.createConnection(port, hostname);
+
+			socket.setTimeout(timeout);
+
+			socket.on('connect', () => {
+
+				const end = performance.now();
+
+				socket.end();
+
+				resolve(end - start);
+
+			});
+
+			function handleError() {
+
+				socket.destroy();
+
+				resolve(-1);
+
+			}
+
+			socket.on('timeout', handleError);
+
+			socket.on('error', handleError);
+
+		});
+
+	}
+
+	static async write(file, body, append = false) {
+		if (append) {
+			await NativeAPI.fileSystem.promises.appendFile(file, body);
+		} else {
+			await NativeAPI.fileSystem.promises.writeFile(file, body);
+		}
+
+	}
+
+	static linkHandler(evt) {
+		if (NativeAPI.status) {
+			evt.preventDefault();
+			let url = evt.target.href;
+			if (evt.currentTarget.href) {
+				url = evt.currentTarget.href;
+			}
+			App.OpenExternalLink(url);
+		}
+	}
+
+}
+
+class CastleBuildingsEvents {
+	static library() {
+		Window.show('main', 'inventory');
+	}
+	static talent_farm() {
+		Window.show('main', 'farm');
+	}
+}
+
+class Castle {
+
+	static canvas;
+
+	static gl;
+
+	static AUDIO_MUSIC = 0;
+	static AUDIO_SOUNDS = 1;
+	static GetVolume(type) {
+		// Используем настройки из Settings вместо внутренних переменных
+		const global = Settings.settings.globalVolume ?? 1.0;
+		const music = Settings.settings.musicVolume ?? 0.5;
+		const sounds = Settings.settings.soundsVolume ?? 0.3;
+	
+		if (type == Castle.AUDIO_MUSIC) {
+			return global * music;
+		}
+		if (type == Castle.AUDIO_SOUNDS) {
+			return global * sounds;
+		}
+		return 1.0; // Значение по умолчанию
+	}
+	static testSoundIsPlaying = false;
+
+	static RENDER_LAYER_LAUNCHER = 0;
+	static RENDER_LAYER_GAME = 1;
+	static RENDER_LAYER_PLAYER = 2;
+
+	static render = [true, true, true];
+
+	static MUSIC_LAYER_PLAYER = 0;
+	static MUSIC_LAYER_GAME = 1;
+	static MUSIC_LAYER_TAMBUR = 2;
+
+	static music = [true, true, true];
+
+	static identityMatrix;
+
+	static viewMatrix;
+
+	static flipMatr;
+
+	static viewMatrix2;
+
+	static projMatrix;
+
+	static viewProjMatr;
+
+	static cursorBasis = new Float32Array(4);
+
+	static cursorDeltaBasis = new Float32Array(4);
+
+	static cursorBasis2 = new Float32Array(4);
+
+	static viewProjInv = new Float32Array(16);
+
+	static isSMEnabled;
+
+	static isBuildingsLoaded = false;
+	static isStaticSMCached = false;
+
+	static lightViewProjMatrix;
+
+	static depthTexture;
+
+	static gridTexture;
+
+	static depthFramebuffer;
+
+	static depthTextureSize = 8192;
+
+	static zNear = 10.0;
+
+	static zFar = 4500.0;
+
+	static canvasWidth;
+
+	static canvasHeight;
+
+	static zNearSM = 0.1;
+
+	static zFarSM = 1200.0;
+
+	static zeroTranslation = [1072, 1360];
+
+	static gridTranslation;
+
+	static cursorPosition = [0, 0];
+
+	static gridCursorPosX;
+
+	static gridCursorPosZ;
+
+	static minFov = 35;
+
+	static maxFov = 55;
+
+	static fixedFovValues = [55, 45, 35, 25, 55, 45, 35];
+
+	static fixedRotationTiltValues = [0, 0, 0, 0, -0.8, -0.9, -0.8];
+
+	static fixedCameraHeightValues = [0, 0, 0, 0, 350, 350, 350];
+
+	static initialFixedValue = 1.0;
+
+	static currentFixedValue = 1.0;
+
+	static targetFixedValue = 1.0;
+
+	static cameraAnimationSpeed = 4.0;
+
+	static fov = Castle.fixedFovValues[Math.floor(Castle.currentFixedValue)];
+
+	static rotationTilt = Castle.fixedRotationTiltValues[Math.floor(Castle.currentFixedValue)];
+
+	static cameraHeight = Castle.fixedCameraHeightValues[Math.floor(Castle.currentFixedValue)];
+
+	static doMove = false;
+	static wasMoved = false;
+
+	static cursorDeltaPos = [0.0, 0.0];
+
+	static camDeltaPos = [0.0, 0.0];
+
+	static camDeltaPosMinMax = [[-50, 10], [-50, 10]];
+
+	static loadTime = Date.now();
+
+	static currentTime = Date.now();
+
+	static prevTime = Date.now();
+
+	static deltaTime = 0;
+
+	static scenesJson;
+
+	static globalCanvas;
+
+	static currentSceneName;
+
+	static sceneObjects = [];
+
+	static buildMode = false;
+
+	static buildings = [
+		"grid",
+
+		"crystal_farm",
+		"food_farm",
+		"heavy_farm",
+		"light_farm",
+		"silver_farm",
+		"talent_farm",
+
+		"clan_house",
+		"fair",
+		"house",
+		"library",
+		"storage",
+
+		"agility",
+		"cunning",
+		"health",
+		"intelligence",
+		"strength",
+		"tavern",
+
+		"cat",
+		"dog",
+		"unicorn",
+
+		"deco_0",
+		"deco_1",
+		"deco_2",
+		"deco_3",
+		"deco_4",
+		"deco_5",
+		"deco_6",
+		"deco_7",
+		"deco_8",
+		"deco_9",
+		"deco_10",
+		"deco_11",
+		"deco_12",
+		"deco_13",
+		"deco_14",
+		"deco_15",
+		"deco_16",
+		"deco_17",
+		"deco_18",
+		"deco_19",
+		"deco_20",
+		"deco_21",
+		"deco_22",
+		"deco_23",
+		"deco_24",
+		"deco_25",
+		"deco_26",
+		"deco_27",
+		"deco_28",
+		"deco_29",
+		"deco_30",
+		"deco_31",
+		"deco_32",
+	];
+
+	static defaultPlacedBuildings = [
+		{
+			id: 10,
+			rot: 0,
+			posX: 20,
+			posY: 18
+		},
+		{
+			id: 6,
+			rot: 0,
+			posX: 10,
+			posY: 27
+		}
+	];
+
+	static placedBuildings = [];
+
+	static allowedToBuildGridTex = new Uint8Array(64 * 64 * 4).fill(0);
+	static allowedToBuildGrid = Array.from(Array(47), () => new Array(38));
+
+	static phantomBuildingSize = 0;
+	static phantomBuilding = {
+			id: 0,
+			rot: 0,
+			posX: 0,
+			posY: 1000
+	};
+	static BUILDING_OUTLINE_BAD = [40, 0, 0, 2];
+	static BUILDING_OUTLINE_GOOD = [0, 40, 0, 2];
+	static BUILDING_OUTLINE_SELECTION = [40, 40, 0, 2];
+	static phantomBuildingIsAllowedToBuild = false;
+
+	static buildingsNames = [
+		["",""],
+
+		["Жемчужная ферма","Дистиллятор прайма"],
+		["Грибница","Ферма"],
+		["Каучуковое дерево","Штольня"],
+		["Прядильня","Лесопилка"],
+		["Ткацкая мастерская","Мануфактура"],
+		["Сад талантов","Кузница талантов"],
+
+		["Дом клана","Дом клана"],
+		["Ярмарка","Ярмарка"],
+		["Особняк", "Терем"],
+		["Библиотека", "Библиотека"],
+		["Склад","Склад"],
+
+		["Арена", "Арена"],
+		["Шпиль","Секретная служба"],
+		["Альков жизни", "Бастион"],
+		["Храм чистоты","Дом милосердия"],
+		["Монумент","Таран"],
+		["Чайный домик","Таверна"],
+
+		["Кошкин дом","Кошкин дом"],
+		["Домик щенка","Домик щенка"],
+		["Домик единорожка","Домик единорожка"],
+
+		["Алый цветок","Фонарь"],
+		["Янтарный цветок","Большой фонарь"],
+		["Указатель","Указатель"],
+		["Статуя","Флагшток"],
+		["Барабаны","Подзорная труба"],
+		["Пальма с птицей","Глобус"],
+		["Фонтан","Фонтан"],
+		["Лавка с фонарями","Лавка с фонарями"],
+		["Багряный куст","Куст"],
+		["Лазурный куст","Цветущий куст"],
+		["Багряное соцветие","Цветущий куст"],
+		["Пурпурное соцветие","Цветущий куст"],
+		["Живая изгородь","Живая стена"],
+		["Живая изгородь","Цветущая стена"],
+		["Живая изгородь","Цветущая стена"],
+		["Колонна","Цветущая стена"],
+		["Клумба","Клумба"],
+		["Клумба","Клумба"],
+		["Клумба","Клумба"],
+		["Клумба","Клумба"],
+		["Маленькое дерево","Круглое дерево"],
+		["Цветущая сакура","Круглое дерево"],
+		["Бонсай","Круглое дерево"],
+		["Цветущий бонсай","Круглое дерево"],
+		["Тростниковая башня","Топиарный конус"],
+		["Миниатюрный сад","Фигура жирафа"],
+		["Большая сакура","Топиарный куб"],
+		["Огромный кактус","Большое дерево"],
+		["Раффлезия","Фигура слона"],
+		["Мухоловка","Фигура единорога"],
+		["Фигурный тростник","Малый топиарный конус"],
+		["Банановая пальма","Топиарная башня"],
+		["Кокосовая пальма","Топиарный столб"],
+	];
+
+	static toggleMusic(layer, value) {
+		Castle.music[layer] = value ? value : !Castle.music[layer];
+		if (Castle.music.includes(false)) {
+			Sound.pause('castle');
+		} else {
+			Sound.unpause('castle');
+			Sound.setVolume('castle', Castle.GetVolume(Castle.AUDIO_MUSIC));
+		}
+	}
+
+	static toggleRender(layer, value) {
+		Castle.render[layer] = value ? value : !Castle.render[layer];
+	}
+
+	static zoom(event) {
+
+		if (Math.abs(Castle.currentFixedValue - Castle.targetFixedValue) > 0.04) {
+			// camera animation is not finished
+			return;
+
+		}
+		// Reset
+		Castle.currentFixedValue = Castle.targetFixedValue;
+
+		Castle.initialFixedValue = Castle.currentFixedValue;
+		// Setup new target
+		Castle.targetFixedValue = Castle.currentFixedValue + (event.deltaY > 0 ? -1 : +1);
+
+		Castle.targetFixedValue = Castle.clamp(Castle.targetFixedValue, 0, Castle.fixedFovValues.length - 1);
+
+	}
+
+	static prepareMove(event) {
+
+		if (Castle.phantomBuilding.id == 0) {
+			Castle.doMove = true;
+		}
+
+	}
+
+	static stopMove(event) {
+		Castle.doMove = false
+		setTimeout(_ => { Castle.wasMoved = false }, 100);
+
+	}
+
+	static moveMouse(event) {
+
+		if (Castle.doMove) {
+
+			Castle.cursorDeltaPos[0] = event.movementX * 2.0;
+
+			Castle.cursorDeltaPos[1] = event.movementY * 2.0;
+
+			if (Math.abs(event.movementX + event.movementY) > 0.1) {
+				Castle.wasMoved = true;
+			}
+
+		} else {
+
+			Castle.cursorDeltaPos[0] = 0;
+
+			Castle.cursorDeltaPos[1] = 0;
+
+		}
+
+		Castle.cursorPosition[0] = event.offsetX;
+
+		Castle.cursorPosition[1] = event.offsetY;
+
+		let shift = [Castle.gridTranslation[0], Castle.gridTranslation[1]];
+		if (Castle.phantomBuilding.id > 0 && Castle.gridCursorPosX && Castle.gridCursorPosX) {
+			const size = Castle.sceneBuildings[Castle.buildings[Castle.phantomBuilding.id]].size[0];
+			Castle.phantomBuilding.posX = Math.floor((shift[0]-Castle.gridCursorPosX) / 7.0 - size / 2.0);
+			Castle.phantomBuilding.posY = Math.floor((shift[1]-Castle.gridCursorPosZ) / 7.0 - size / 2.0) + 17;
+			Castle.phantomBuildingSize = size;
+
+			Castle.phantomBuildingIsAllowedToBuild = Castle.isBuildingAllowed(Castle.phantomBuilding.posX, Castle.phantomBuilding.posY, size);
+		}
+
+	}
+
+	static isBuildingAllowed(posX, posY, size) {
+		Castle.UpdateGridImage();
+		const posXMax = posX + size - 1;
+		const posYMax = posY + size - 1;
+		if (posX < 0 || posY < 0) {
+			return false;
+		}
+		if (posXMax > 45 || posYMax > 37) {
+			return false;
+		}
+		// Castle zone
+		if (posX < 31 && posY < 3) {
+			return false;
+		}
+		if (posX < 23 && posY < 8) {
+			return false;
+		}
+		if (posX < 22 && posY < 14) {
+			return false;
+		}
+		if (posX < 18 && posY < 17) {
+			return false;
+		}
+		if (posXMax > 9 && posX < 18 && posY == 17) {
+			return false;
+		}
+		// Bottom corner
+		if (posXMax > 28 || posYMax > 20) {
+			if (45 - posYMax + 37 - posXMax < 17) {
+				return false;
+			}
+		}
+		// Left corner
+		if (posXMax > 43 || posY < 2) {
+			if (45 - posXMax + posY < 2) {
+				return false;
+			}
+		}
+		// Right corner
+		if (posX < 2 || posYMax > 35) {
+			if (posX + 37 - posYMax < 2) {
+				return false;
+			}
+		}
+		for (let i = 0; i < size; ++i) {
+			for (let j = 0; j < size; ++j) {
+				if (Castle.allowedToBuildGrid[posX + i][posY + j]) {
+					return false;
+				}
+			}
+		}
+		return true;
+	}
+
+	static UpdateGridImage() {
+		let data = Castle.allowedToBuildGridTex;
+		for (let i = 0; i < data.length / 4; ++i) {
+			let posX = i % 64;
+			let posY = Math.floor(i / 64);
+			data[i * 4] = 0;     // R (красный)
+			data[i * 4 + 1] = 0;   // G (зеленый)
+			data[i * 4 + 2] = 0;   // B (синий)
+			data[i * 4 + 3] = 0; // A (альфа, непрозрачность)
+			if (posX < 47 && posY < 38) {
+				if (Castle.phantomBuilding.id && 
+					posX >= Castle.phantomBuilding.posX && posY >= Castle.phantomBuilding.posY &&
+					posX < Castle.phantomBuilding.posX + Castle.phantomBuildingSize && posY < Castle.phantomBuilding.posY + Castle.phantomBuildingSize
+				) {
+					data[i * 4] = Castle.phantomBuildingIsAllowedToBuild ? 0 : 255;     // R (красный)
+					data[i * 4 + 1] = Castle.phantomBuildingIsAllowedToBuild ? 255 : 106;   // G (зеленый)
+					data[i * 4 + 2] = 0;   // B (синий)
+					data[i * 4 + 3] = 255; // A (альфа, непрозрачность)
+				}
+				if (Castle.allowedToBuildGrid[posX][posY]) {
+					data[i * 4] = 255;     // R (красный)
+					data[i * 4 + 1] = 0;   // G (зеленый)
+					data[i * 4 + 2] = 0;   // B (синий)
+					data[i * 4 + 3] = 255; // A (альфа, непрозрачность)
+				}
+			}
+		}
+	}
+
+	static UpdateAllowedToBuildGrid() {
+		Castle.allowedToBuildGrid = Array.from(Array(47), () => new Array(38));
+		for (const placedBuilding of Castle.placedBuildings) {
+			const pbSize = Castle.sceneBuildings[Castle.buildings[placedBuilding.id]].size[0];
+			for (let i = 0; i < pbSize; ++i) {
+				for (let j = 0; j < pbSize; ++j) {
+					Castle.allowedToBuildGrid[placedBuilding.posX + i][placedBuilding.posY + j] = 1;
+				}
+			}
+		}
+		}
+
+
+	static placePhantomBuilding() {
+		if (Castle.phantomBuildingIsAllowedToBuild) {
+			Castle.placedBuildings.push(Object.assign({}, Castle.phantomBuilding));
+			Castle.isStaticSMCached = false;
+			Castle.WriteBuildings();
+		}
+	}
+
+	static findAndRotateBuilding(posX, posY) {
+		for (let b = 0; b < Castle.placedBuildings.length; ++b) {
+			let building = Castle.placedBuildings[b];
+			if (building.posX == posX && building.posY == posY) {
+				building.rot = (building.rot + 1) % 4;
+				Castle.isStaticSMCached = false;
+				Castle.WriteBuildings();
+				return;
+			}
+		}
+	}
+
+	static findAndDeleteBuilding(posX, posY) {
+		for (let b = 0; b < Castle.placedBuildings.length; ++b) {
+			let building = Castle.placedBuildings[b];
+			if (building.posX == posX && building.posY == posY) {
+				Castle.placedBuildings.splice(b, 1);
+				Castle.isStaticSMCached = false;
+				Castle.WriteBuildings();
+				return;
+			}
+		}
+	}
+
+	static GetLauncherFilePath(fileName) {
+		const homeDir = NativeAPI.os.homedir();
+		let pwcLauncherDir = NativeAPI.path.join(homeDir, 'Prime World Classic');
+		return NativeAPI.path.join(pwcLauncherDir, fileName);
+	}
+
+	static async ensureCastleFile() {
+		const homeDir = NativeAPI.os.homedir();
+		let pwcLauncherDir = NativeAPI.path.join(homeDir, 'Prime World Classic');
+		let castleFilePath = Castle.GetLauncherFilePath('castle.cfg');
+		try {
+			await NativeAPI.fileSystem.promises.mkdir(pwcLauncherDir, { recursive: true });
+			await NativeAPI.fileSystem.promises.access(castleFilePath);
+			return true;
+		} catch (e) {
+			await Castle.WriteDefaultBuildings();
+			return false;
+		}
+	}
+
+	static async WriteDefaultBuildings() {
+		Castle.placedBuildings = JSON.parse(JSON.stringify(Castle.defaultPlacedBuildings));
+		await Castle.WriteBuildings();
+	}
+
+	static async ReadBuildings() {
+		if (!NativeAPI.status) {
+			Castle.placedBuildings = Castle.defaultPlacedBuildings;
+			Castle.UpdateAllowedToBuildGrid();
+			return;
+		}
+
+		let castleFilePath = Castle.GetLauncherFilePath('castle.cfg');
+		try {
+			if (await Castle.ensureCastleFile()) {
+				const data = await NativeAPI.fileSystem.promises.readFile(castleFilePath, 'utf-8');
+				Castle.placedBuildings = JSON.parse(data);
+			}
+		} catch (e) {
+			Castle.placedBuildings = Castle.defaultPlacedBuildings;
+		}
+		Castle.UpdateAllowedToBuildGrid();
+	}
+
+    static async WriteBuildings() {
+        if (!NativeAPI.status) {
+			Castle.UpdateAllowedToBuildGrid();
+            return;
+        }
+
+		let castleFilePath = Castle.GetLauncherFilePath('castle.cfg');
+        try {
+            await NativeAPI.fileSystem.promises.writeFile(
+                castleFilePath,
+                JSON.stringify(Castle.placedBuildings, null, 2),
+                'utf-8'
+            );
+        } catch (e) {
+            App.error(e);
+        }
+		Castle.UpdateAllowedToBuildGrid();
+    }
+
+	static async loadBuildings() {
+        await Castle.ReadBuildings();
+		Castle.isBuildingsLoaded = true;
+		
+        window.addEventListener('beforeunload', () => {
+            Castle.WriteBuildings();
+        });
+	}
+
+	static async initDemo(sceneName, canvas) {
+
+		Castle.currentSceneName = sceneName;
+
+		window.addEventListener('resize', function (event) {
+
+			canvas.width = document.body.offsetWidth;
+
+			canvas.height = document.body.offsetHeight;
+
+			Castle.canvasWidth = canvas.width;
+
+			Castle.canvasHeight = canvas.height;
+
+			Castle.cursorPosition = [Castle.canvasWidth, Castle.canvasHeight];
+
+		}, true);
+
+		canvas.addEventListener('click', function (event) {
+			if (Castle.phantomBuilding.id > 0) {
+				Castle.placePhantomBuilding();
+			} else {
+				if (Castle.outlinedBuilding && !Castle.wasMoved) {
+					if (Castle.buildMode) {
+						Castle.findAndRotateBuilding(Castle.outlinedBuilding.position[0], Castle.outlinedBuilding.position[1]);
+					} else {
+						if (Castle.outlinedBuilding.name in CastleBuildingsEvents) {
+							CastleBuildingsEvents[Castle.outlinedBuilding.name]();
+						}
+					}
+				}
+			}
+		});
+
+		Castle.globalCanvas = canvas;
+
+		canvas.onwheel = Castle.zoom;
+
+		//var canvas = document.getElementById('game-surface');
+
+		canvas.width = document.body.offsetWidth;
+
+		canvas.height = document.body.offsetHeight;
+
+		canvas.onmousedown = Castle.prepareMove;
+
+		canvas.onmouseup = Castle.stopMove;
+
+		oncontextmenu = (event) => { 
+			event.preventDefault();
+			Castle.phantomBuilding.id = 0; 
+			Castle.phantomBuilding.posX = 0; 
+			Castle.phantomBuilding.posY = 1000; 
+			if (Castle.buildMode && Castle.outlinedBuilding) {
+				Castle.findAndDeleteBuilding(Castle.outlinedBuilding.position[0], Castle.outlinedBuilding.position[1])
+			}
+		}
+
+		canvas.addEventListener('mousemove', Castle.moveMouse);
+
+		Castle.gl = canvas.getContext('webgl');
+
+		if (!Castle.gl) {
+			console.log('WebGL not supported, falling back on experimental-webgl');
+			Castle.gl = canvas.getContext('experimental-webgl');
+		}
+
+		if (!Castle.gl) {
+			console.error('Your browser does not support WebGL');
+			return 1;
+		}
+
+		Castle.gl.enable(Castle.gl.DEPTH_TEST);
+		Castle.gl.enable(Castle.gl.CULL_FACE);
+		Castle.gl.frontFace(Castle.gl.CCW);
+		Castle.gl.cullFace(Castle.gl.FRONT);
+
+		Castle.viewMatrix = new Float32Array(16);
+		Castle.viewMatrix2 = new Float32Array(16);
+		Castle.projMatrix = new Float32Array(16);
+		Castle.viewProjMatr = new Float32Array(16);
+		Castle.flipMatr = new Float32Array([
+			-1, 0, 0, 0,
+			0, 1, 0, 0,
+			0, 0, 1, 0,
+			0, 0, 0, 1
+		]);
+		Castle.canvasWidth = canvas.width;
+		Castle.canvasHeight = canvas.height;
+		Castle.cursorPosition = [Castle.canvasWidth, Castle.canvasHeight];
+
+
+		Castle.isSMEnabled = true;
+
+		const ext = Castle.gl.getExtension('WEBGL_depth_texture');
+
+		if (!ext) {
+
+			Castle.isSMEnabled = false;
+
+		}
+
+		if (Castle.isSMEnabled) {
+			// Setup matrix. Only one viewProj is needed
+			let lightViewMatrix = new Float32Array(16);
+			let lightViewMatrix2 = new Float32Array(16);
+			let lightProjMatrix = new Float32Array(16);
+			Castle.lightViewProjMatrix = new Float32Array(16);
+			mat4.ortho(lightProjMatrix, -400, 400, -400, 400, Castle.zNearSM, Castle.zFarSM);
+
+			let smCamParams = [
+				{
+					name: 'ad',
+					camPos: [-1239.6, -151, -1433],
+					camRot: [-2.29, 2.813, 3.14]
+				},
+				{
+					name: 'doct',
+					camPos: [-1395.8, -291.7, -1338.5],
+					camRot: [-2.4, -1.423, 3.14]
+				}
+			];
+
+			let quatStart = quat.create();
+			quat.identity(quatStart);
+			let quatX = quat.create();
+			let quatY = quat.create();
+			let quatZ = quat.create();
+
+			let smCam = smCamParams.find(value => value.name === sceneName);
+			quat.rotateX(quatX, quatStart, smCam.camRot[0]);
+			quat.rotateY(quatY, quatX, smCam.camRot[1]);
+			quat.rotateZ(quatZ, quatY, smCam.camRot[2]);
+
+			mat4.fromRotationTranslation(lightViewMatrix, quatZ, vec3.create());
+			mat4.translate(lightViewMatrix, lightViewMatrix, smCam.camPos);
+			mat4.multiply(lightViewMatrix2, Castle.flipMatr, lightViewMatrix);
+			mat4.multiply(Castle.lightViewProjMatrix, lightProjMatrix, lightViewMatrix2);
+			
+			Castle.gridTexture = Castle.gl.createTexture();
+			Castle.gl.bindTexture(Castle.gl.TEXTURE_2D, Castle.gridTexture);
+			Castle.gl.texImage2D(
+				Castle.gl.TEXTURE_2D,      // target
+				0,                  // mip level
+				Castle.gl.RGBA, // internal format
+				64,   // width
+				64,   // height
+				0,                  // border
+				Castle.gl.RGBA,
+				Castle.gl.UNSIGNED_BYTE,
+				null);              // data
+			Castle.gl.texParameteri(Castle.gl.TEXTURE_2D, Castle.gl.TEXTURE_MAG_FILTER, Castle.gl.NEAREST);
+			Castle.gl.texParameteri(Castle.gl.TEXTURE_2D, Castle.gl.TEXTURE_MIN_FILTER, Castle.gl.NEAREST);
+			Castle.gl.texParameteri(Castle.gl.TEXTURE_2D, Castle.gl.TEXTURE_WRAP_S, Castle.gl.CLAMP_TO_EDGE);
+			Castle.gl.texParameteri(Castle.gl.TEXTURE_2D, Castle.gl.TEXTURE_WRAP_T, Castle.gl.CLAMP_TO_EDGE);
+
+			// Setup textures
+			Castle.depthTexture = Castle.gl.createTexture();
+			Castle.gl.bindTexture(Castle.gl.TEXTURE_2D, Castle.depthTexture);
+			Castle.gl.texImage2D(
+				Castle.gl.TEXTURE_2D,      // target
+				0,                  // mip level
+				Castle.gl.DEPTH_COMPONENT, // internal format
+				Castle.depthTextureSize,   // width
+				Castle.depthTextureSize,   // height
+				0,                  // border
+				Castle.gl.DEPTH_COMPONENT, // format
+				Castle.gl.UNSIGNED_INT,    // type
+				null);              // data
+			Castle.gl.texParameteri(Castle.gl.TEXTURE_2D, Castle.gl.TEXTURE_MAG_FILTER, Castle.gl.NEAREST);
+			Castle.gl.texParameteri(Castle.gl.TEXTURE_2D, Castle.gl.TEXTURE_MIN_FILTER, Castle.gl.NEAREST);
+			Castle.gl.texParameteri(Castle.gl.TEXTURE_2D, Castle.gl.TEXTURE_WRAP_S, Castle.gl.REPEAT);
+			Castle.gl.texParameteri(Castle.gl.TEXTURE_2D, Castle.gl.TEXTURE_WRAP_T, Castle.gl.REPEAT);
+
+			Castle.depthFramebuffer = Castle.gl.createFramebuffer();
+			Castle.gl.bindFramebuffer(Castle.gl.FRAMEBUFFER, Castle.depthFramebuffer);
+			Castle.gl.framebufferTexture2D(
+				Castle.gl.FRAMEBUFFER,       // target
+				Castle.gl.DEPTH_ATTACHMENT,  // attachment point
+				Castle.gl.TEXTURE_2D,        // texture target
+				Castle.depthTexture,         // texture
+				0);                   // mip level
+
+			const unusedTexture = Castle.gl.createTexture();
+			Castle.gl.bindTexture(Castle.gl.TEXTURE_2D, unusedTexture);
+			Castle.gl.texImage2D(
+				Castle.gl.TEXTURE_2D,
+				0,
+				Castle.gl.RGBA,
+				Castle.depthTextureSize,
+				Castle.depthTextureSize,
+				0,
+				Castle.gl.RGBA,
+				Castle.gl.UNSIGNED_BYTE,
+				null,
+			);
+			Castle.gl.texParameteri(Castle.gl.TEXTURE_2D, Castle.gl.TEXTURE_MAG_FILTER, Castle.gl.NEAREST);
+			Castle.gl.texParameteri(Castle.gl.TEXTURE_2D, Castle.gl.TEXTURE_MIN_FILTER, Castle.gl.NEAREST);
+			Castle.gl.texParameteri(Castle.gl.TEXTURE_2D, Castle.gl.TEXTURE_WRAP_S, Castle.gl.REPEAT);
+			Castle.gl.texParameteri(Castle.gl.TEXTURE_2D, Castle.gl.TEXTURE_WRAP_T, Castle.gl.REPEAT);
+
+			// attach it to the framebuffer
+			Castle.gl.framebufferTexture2D(
+				Castle.gl.FRAMEBUFFER,        // target
+				Castle.gl.COLOR_ATTACHMENT0,  // attachment point
+				Castle.gl.TEXTURE_2D,         // texture target
+				unusedTexture,         // texture
+				0);                  // mip level
+
+		}
+
+		let shaderNames = [], texNames = [];
+		Castle.sceneBuildings = new Object;
+
+		let sceneMeshesToLoadCount = -1; // Initial value. Scene must have objects
+
+		let result = await HTTP.request('content/scenes.json');
+
+		Castle.scenesJson = result;
+
+		Castle.currentScene = result.scenes.find(value => value.sceneName === sceneName);
+
+		sceneMeshesToLoadCount = Castle.currentScene.objects.length + Castle.currentScene.buildings.length; // Set scene objects count to some valid value
+
+		let loadedBuildings = [];
+
+		loadedBuildings.push(Castle.currentScene.buildings);
+
+		for (let obj of Castle.currentScene.objects) {
+
+			Castle.sceneObjects.push({
+				meshName: obj.mesh, meshData: {}, shader: obj.shader, shaderId: {}, blend: obj.blend,
+				tintColor: obj.tintColor, uvScale: obj.uvScale, uvScroll: obj.uvScroll,
+				texture: obj.texture, texture_2: obj.texture_2, texture_3: obj.texture_3, texture_4: obj.texture_4,
+				textureId: {}, texture2Id: {}, texture3Id: {}, texture4Id: {}, strip: obj.strip, transform: obj.transform, indexCount: obj.indexCount
+			});
+
+			Castle.loadObjectResources(shaderNames, texNames, obj);
+
+			sceneMeshesToLoadCount--; // Decrement after each loaded object
+
+		}
+
+		Castle.identityMatrix = new Float32Array(16);
+
+		mat4.identity(Castle.identityMatrix);
+
+		for (let building of Castle.currentScene.buildings) {
+
+			let buildingTranslation = building.translation ? building.translation : [0, 0];
+
+			for (let obj of building.objects) {
+
+				obj.transform[3] -= buildingTranslation[0];
+
+				obj.transform[11] -= buildingTranslation[1];
+
+				if (!(building.name in Castle.sceneBuildings)) {
+
+					Castle.sceneBuildings[building.name] = { size: building.size, objects: [], transparentObjects: [] };
+
+				}
+
+				let selectedContainer = obj.blend ? Castle.sceneBuildings[building.name].transparentObjects : Castle.sceneBuildings[building.name].objects;
+
+				selectedContainer.push({
+					meshName: obj.mesh, meshData: {}, shader: obj.shader, shaderId: {}, blend: obj.blend,
+					tintColor: obj.tintColor, uvScale: obj.uvScale, uvScroll: obj.uvScroll,
+					texture: obj.texture, texture_2: obj.texture_2, texture_3: obj.texture_3, texture_4: obj.texture_4,
+					textureId: {}, texture2Id: {}, texture3Id: {}, texture4Id: {}, strip: obj.strip, transform: obj.transform, indexCount: obj.indexCount
+				});
+
+				Castle.loadObjectResources(shaderNames, texNames, obj);
+
+			}
+
+			sceneMeshesToLoadCount--;
+
+		}
+
+
+
+
+		await Castle.loadResources(Castle.sceneObjects, Castle.sceneBuildings, shaderNames, texNames);
+
+		//var canvas = globalCanvas; //document.getElementById('game-surface');
+
+		Castle.globalCanvas.classList.add('castle-fade-in');
+
+		if (NativeAPI.fileSystem && !('castle' in Sound.all)) {
+			var soundFiles = NativeAPI.fileSystem.readdirSync('content/sounds/' + sceneName);
+
+			let playCastleMusic = function () {
+				let musicName = 'content/sounds/' + sceneName + '/' + soundFiles[Math.floor(Math.random() * soundFiles.length)];
+				Sound.stop('castle');
+				Sound.play(musicName, { id: 'castle', volume: Castle.GetVolume(Castle.AUDIO_MUSIC) }, playCastleMusic)
+
+			}
+			playCastleMusic();
+		}
+
+		Castle.loadBuildings();
+
+		Castle.MainLoop(Castle.sceneObjects, Castle.sceneBuildings, Castle.sceneShaders, Castle.sceneTextures);
+
+	}
+
+	static loadObjectResources(shaderNames, texNames, obj) {
+
+		shaderNames.push(obj.shader);
+
+		texNames.push(obj.texture);
+
+		if (obj.texture_2) {
+
+			texNames.push(obj.texture_2);
+
+		}
+
+		if (obj.texture_3) {
+
+			texNames.push(obj.texture_3);
+
+		}
+
+		if (obj.texture_4) {
+
+			texNames.push(obj.texture_4);
+
+		}
+
+	}
+
+	static uniformLocationCache = new Object();
+	static getUniformLocation(program, name) {
+		if (program.progId in this.uniformLocationCache) {
+			if (name in this.uniformLocationCache[program.progId]) {
+				return this.uniformLocationCache[program.progId][name];
+			}
+		} else {
+			this.uniformLocationCache[program.progId] = new Object();
+		}
+		let uniformLocation = Castle.gl.getUniformLocation(program.prog, name);
+		this.uniformLocationCache[program.progId][name] = uniformLocation;
+		return uniformLocation;
+	}
+
+	static async loadResources(sceneObjects, sceneBuildings, notUniqeShaderNames, notUniqeTexNames) {
+		let shaderNames = [...new Set(notUniqeShaderNames)];
+		let texNames = [...new Set(notUniqeTexNames)];
+
+		function remapIndices(sceneObjectsContainer, objId) {
+			sceneObjectsContainer[objId].shaderId = shaderNames.findIndex(value => value === sceneObjectsContainer[objId].shader);
+			sceneObjectsContainer[objId].textureId = texNames.findIndex(value => value === sceneObjectsContainer[objId].texture);
+			sceneObjectsContainer[objId].texture2Id = texNames.findIndex(value => value === sceneObjectsContainer[objId].texture_2);
+			sceneObjectsContainer[objId].texture3Id = texNames.findIndex(value => value === sceneObjectsContainer[objId].texture_3);
+			sceneObjectsContainer[objId].texture4Id = texNames.findIndex(value => value === sceneObjectsContainer[objId].texture_4);
+		}
+
+		for (var objId = 0; objId < sceneObjects.length; objId++) {
+			remapIndices(sceneObjects, objId);
+		}
+		for (let b in Castle.sceneBuildings) {
+			let building = Castle.sceneBuildings[b].objects;
+			for (objId = 0; objId < building.length; ++objId) {
+				remapIndices(building, objId);
+			}
+
+			let buildingTransp = Castle.sceneBuildings[b].transparentObjects;
+			for (objId = 0; objId < buildingTransp.length; ++objId) {
+				remapIndices(buildingTransp, objId);
+			}
+		}
+
+		Castle.sceneTextures = new Array(texNames.length);
+		let loaded = { mesh: 0, texture: 0, shader: 0 };
+
+		Castle.sceneShaders = new Array(shaderNames.length);
+
+		let vsText = await HTTP.request(`content/shaders/shader.vs.glsl`, 'text');
+
+		let fsText = await HTTP.request(`content/shaders/shader.fs.glsl`, 'text');
+
+		for (let i = 0; i < shaderNames.length; ++i) {
+
+			let definesText = await HTTP.request(`content/shaders/${shaderNames[i]}.glsl`, 'text');
+
+			let programColor = Castle.prepareShader("\n#define RENDER_PASS_COLOR\n", definesText, vsText, fsText);
+
+			let programSM = Castle.prepareShader("\n#define RENDER_PASS_SM\n", definesText, vsText, fsText);
+
+			Castle.sceneShaders[i] = { PSO: programColor, PSO_SM: programSM, attributes: Castle.scenesJson.shaderLayouts.find(value => value.name === shaderNames[i]).layout, vertStride: 0 };
+
+			loaded.shader++;
+
+		}
+
+		for (let i = 0; i < texNames.length; ++i) {
+
+			Castle.sceneTextures[i] = Castle.loadTexture(await PreloadImages.loadAsync(`content/textures/${texNames[i]}.webp`));
+
+			loaded.texture++;
+
+		}
+
+		for (let i = 0; i < sceneObjects.length; ++i) {
+
+			await Castle.loadMesh(shaderNames, sceneObjects, i);
+
+			loaded.mesh++;
+
+		}
+
+		let totalMeshes = Castle.sceneObjects.length;
+
+		for (let buildingMain in Castle.sceneBuildings) {
+
+			let building = Castle.sceneBuildings[buildingMain].objects;
+
+			for (let objId = 0; objId < building.length; ++objId) {
+
+				await Castle.loadMesh(shaderNames, building, objId);
+
+			}
+
+			totalMeshes += building.length;
+
+			let buildingTransp = Castle.sceneBuildings[buildingMain].transparentObjects;
+
+			for (let objId = 0; objId < buildingTransp.length; ++objId) {
+
+				await Castle.loadMesh(shaderNames, buildingTransp, objId);
+
+			}
+
+			totalMeshes += buildingTransp.length;
+
+		}
+
+	}
+
+	static uniqueProgCounter = 0;
+
+	static prepareShader(renderPassDefine, definesText, vsText, fsText) {
+
+		let vertexShader = Castle.gl.createShader(Castle.gl.VERTEX_SHADER), fragmentShader = Castle.gl.createShader(Castle.gl.FRAGMENT_SHADER);
+
+		Castle.gl.shaderSource(vertexShader, definesText + renderPassDefine + vsText);
+
+		Castle.gl.shaderSource(fragmentShader, definesText + renderPassDefine + fsText);
+
+		Castle.gl.compileShader(vertexShader);
+
+		if (!Castle.gl.getShaderParameter(vertexShader, Castle.gl.COMPILE_STATUS)) {
+
+			console.error('ERROR compiling vertex shader!', Castle.gl.getShaderInfoLog(vertexShader));
+
+			return 1;
+
+		}
+
+		Castle.gl.compileShader(fragmentShader);
+
+		if (!Castle.gl.getShaderParameter(fragmentShader, Castle.gl.COMPILE_STATUS)) {
+
+			console.error('ERROR compiling fragment shader!', Castle.gl.getShaderInfoLog(fragmentShader));
+
+			return 1;
+
+		}
+		//console.log('Loaded shader ' + shaderNames[shaderId]);
+		let program = {prog: Castle.gl.createProgram(), progId: this.uniqueProgCounter++};
+
+		Castle.gl.attachShader(program.prog, vertexShader);
+
+		Castle.gl.attachShader(program.prog, fragmentShader);
+
+		Castle.gl.linkProgram(program.prog);
+
+		if (!Castle.gl.getProgramParameter(program.prog, Castle.gl.LINK_STATUS)) {
+
+			console.error('ERROR linking program!', Castle.gl.getProgramInfoLog(program.prog));
+
+			return 1;
+
+		}
+
+		Castle.gl.validateProgram(program.prog);
+
+		if (!Castle.gl.getProgramParameter(program.prog, Castle.gl.VALIDATE_STATUS)) {
+
+			console.error('ERROR validating program!', Castle.gl.getProgramInfoLog(program.prog));
+
+			return 1;
+
+		}
+
+		return program;
+
+	}
+
+	static lerp(a, b, alpha) {
+		return a + alpha * (b - a);
+	}
+	static clamp(val, min, max) {
+		return Math.min(Math.max(val, min), max)
+	}
+
+	static loadTexture(image) {
+
+		let texture = Castle.gl.createTexture();
+
+		Castle.gl.bindTexture(Castle.gl.TEXTURE_2D, texture);
+
+		Castle.gl.texParameteri(Castle.gl.TEXTURE_2D, Castle.gl.TEXTURE_WRAP_S, Castle.gl.REPEAT);
+
+		Castle.gl.texParameteri(Castle.gl.TEXTURE_2D, Castle.gl.TEXTURE_WRAP_T, Castle.gl.REPEAT);
+
+		Castle.gl.texParameteri(Castle.gl.TEXTURE_2D, Castle.gl.TEXTURE_MIN_FILTER, Castle.gl.LINEAR);
+
+		Castle.gl.texParameteri(Castle.gl.TEXTURE_2D, Castle.gl.TEXTURE_MAG_FILTER, Castle.gl.LINEAR);
+
+		Castle.gl.texImage2D(Castle.gl.TEXTURE_2D, 0, Castle.gl.RGBA, Castle.gl.RGBA, Castle.gl.UNSIGNED_BYTE, image);
+
+		Castle.gl.generateMipmap(Castle.gl.TEXTURE_2D);
+
+		return texture;
+
+	}
+
+	static async loadMesh(shaderNames, sceneObjectsContainer, objectId) {
+
+		let meshData = await HTTP.request(`content/meshes/${sceneObjectsContainer[objectId].meshName}`, 'arrayBuffer');
+
+		let vertices = Castle.gl.createBuffer();
+
+		let meshFloat = new Float32Array(meshData);
+
+		Castle.gl.bindBuffer(Castle.gl.ARRAY_BUFFER, vertices);
+
+		Castle.gl.bufferData(Castle.gl.ARRAY_BUFFER, meshFloat, Castle.gl.STATIC_DRAW);
+
+		let attributes = Castle.scenesJson.shaderLayouts.find(value => value.name === shaderNames[sceneObjectsContainer[objectId].shaderId]).layout;
+
+		let vertStride = 0;
+
+		for (let attribute of attributes) {
+
+			vertStride += attribute.count * attribute.sizeElem;
+
+		}
+
+		let indexCount = meshFloat.length / (vertStride / 4);
+
+		if (indexCount != sceneObjectsContainer[objectId].indexCount) {
+
+			console.error('Fatal error getting index count (' + meshName + ')');
+
+		}
+
+		sceneObjectsContainer[objectId].meshData = { vertices: vertices, vertStride: vertStride, indexCount: meshFloat.length / (vertStride / 4) };
+
+		//console.log('Loaded mesh ' + meshName);
+
+	}
+
+	static MainLoop(sceneObjects, sceneBuildings, sceneShaders, sceneTextures) {
+
+		if (Castle.sceneBuildings) {
+			var gridBuilding = Castle.sceneBuildings['grid'];
+
+			var gridTransform = gridBuilding.transparentObjects[0].transform;
+
+			Castle.gridTranslation = [gridTransform[3], gridTransform[11]];
+
+		} else {
+			Castle.gridTranslation = [0, 0];
+		}
+		requestAnimationFrame(Castle.loop);
+	}
+
+	static loop() {
+
+		let isStopRender = Castle.render.includes(false);
+		if (isStopRender) {
+			requestAnimationFrame(Castle.loop);
+			return;
+		}
+
+		Castle.prevTime = Castle.currentTime;
+
+		Castle.currentTime = (Date.now() - Castle.loadTime) / 1000.0;
+
+		Castle.deltaTime = Castle.currentTime - Castle.prevTime;
+
+		// Update cam behaviour
+
+		let factor = Castle.clamp(Castle.cameraAnimationSpeed * Castle.deltaTime, 0, 1);
+
+		Castle.currentFixedValue = Castle.lerp(Castle.currentFixedValue, Castle.targetFixedValue, factor);
+
+		let targetFovs = [Castle.fixedFovValues[Math.round(Castle.initialFixedValue)], Castle.fixedFovValues[Math.round(Castle.targetFixedValue)]];
+
+		let targetRots = [Castle.fixedRotationTiltValues[Math.round(Castle.initialFixedValue)], Castle.fixedRotationTiltValues[Math.round(Castle.targetFixedValue)]];
+
+		let targetCHVs = [Castle.fixedCameraHeightValues[Math.round(Castle.initialFixedValue)], Castle.fixedCameraHeightValues[Math.round(Castle.targetFixedValue)]];
+
+		let camLerp = Math.abs(Castle.initialFixedValue - Castle.currentFixedValue);
+
+		Castle.fov = Castle.lerp(targetFovs[0], targetFovs[1], camLerp);
+
+		Castle.rotationTilt = Castle.lerp(targetRots[0], targetRots[1], camLerp);
+
+		Castle.cameraHeight = Castle.lerp(targetCHVs[0], targetCHVs[1], camLerp);
+
+		let buildingsToDraw = [];
+
+		for (let building of Castle.placedBuildings) {
+			var mesh = Castle.sceneBuildings[Castle.buildings[building.id]];
+			buildingsToDraw.push({
+				mesh: mesh, rotation: building.rot * 1.57, position: [building.posX, building.posY], name: Castle.buildings[building.id],
+				translation: [Castle.zeroTranslation[0] + (building.posX * 7.0 + mesh.size[0] / 2.0 * 7.0), 1, Castle.zeroTranslation[1] + ((building.posY-17) * 7.0 + mesh.size[1] / 2.0 * 7.0)]
+			});
+		}
+		if (Castle.buildMode && Castle.phantomBuilding.id > 0) {
+			var mesh = Castle.sceneBuildings['grid'];
+			buildingsToDraw.push({
+				mesh: mesh, rotation: 0, position: [0, 0], name: 'grid',
+				translation: [Castle.zeroTranslation[0] + (mesh.size[0] / 2.0 * 7.0), 1, Castle.zeroTranslation[1] + (mesh.size[1] / 2.0 * 7.0)]
+			});
+		}
+
+		Castle.updateMainCam();
+
+		let outlinedBuilding = -1;
+		Castle.outlinedBuilding = null;
+		if (Object.keys(Window.windows).length === 0) { // do not outline when any window is active
+			if (Castle.phantomBuilding.id > 0) {
+				let building = Castle.phantomBuilding;
+				var mesh = Castle.sceneBuildings[Castle.buildings[building.id]];
+				buildingsToDraw.push({
+					outlined: true, mesh: mesh, rotation: building.rot * 1.57, position: [building.posX, building.posY], name: Castle.buildings[building.id],
+					translation: [Castle.zeroTranslation[0] + (building.posX * 7.0 + mesh.size[0] / 2.0 * 7.0), 1, Castle.zeroTranslation[1] + ((building.posY-17) * 7.0 + mesh.size[1] / 2.0 * 7.0)]
+				});
+				outlinedBuilding = buildingsToDraw.length - 1;
+			} else {
+				for (let i = 0; i < buildingsToDraw.length; ++i) {
+					let building = buildingsToDraw[i];
+					let shift = [Castle.zeroTranslation[0] + Castle.gridTranslation[0], Castle.zeroTranslation[1] + Castle.gridTranslation[1]];
+					if (shift[0] - Castle.gridCursorPosX > building.translation[0] - building.mesh.size[0] / 2 * 7 && shift[0] - Castle.gridCursorPosX < building.translation[0] + building.mesh.size[1] / 2 * 7 &&
+						shift[1] - Castle.gridCursorPosZ > building.translation[2] - building.mesh.size[1] / 2 * 7 && shift[1] - Castle.gridCursorPosZ < building.translation[2] + building.mesh.size[1] / 2 * 7 &&
+						(buildingsToDraw[i].name in CastleBuildingsEvents || Castle.buildMode)
+					) {
+						outlinedBuilding = i;
+						Castle.outlinedBuilding = buildingsToDraw[outlinedBuilding];
+						break;
+					}
+				}
+			}
+		}
+
+		if (Castle.isSMEnabled && !Castle.isStaticSMCached && Castle.sceneObjects && Castle.isBuildingsLoaded) {
+			Castle.gl.bindFramebuffer(Castle.gl.FRAMEBUFFER, Castle.depthFramebuffer);
+			Castle.gl.viewport(0, 0, Castle.depthTextureSize, Castle.depthTextureSize);
+			Castle.gl.clear(Castle.gl.COLOR_BUFFER_BIT | Castle.gl.DEPTH_BUFFER_BIT);
+
+			for (let i = 0; i < Castle.sceneObjects.length; ++i) {
+				let obj = Castle.sceneObjects[i];
+				if (obj.blend)
+					break;
+				Castle.prepareAndDrawObject(obj, true);
+			}
+			for (let buildingToDraw of buildingsToDraw) {
+				for (let i = 0; i < buildingToDraw.mesh.objects.length; ++i) {
+					if (!buildingToDraw.outlined) {
+						Castle.prepareAndDrawObject(buildingToDraw.mesh.objects[i], true, buildingToDraw.rotation, buildingToDraw.translation);
+					}
+				}
+			}
+			Castle.isStaticSMCached = true;
+		}
+
+		Castle.gl.bindFramebuffer(Castle.gl.FRAMEBUFFER, null);
+		Castle.gl.viewport(0, 0, Castle.gl.canvas.width, Castle.gl.canvas.height);
+		Castle.gl.clearColor(0.75, 0.85, 0.8, 1.0);
+		Castle.gl.clear(Castle.gl.COLOR_BUFFER_BIT | Castle.gl.DEPTH_BUFFER_BIT);
+
+		if (Castle.sceneObjects) {
+			let blendsFrom;
+			for (let i = 0; i < Castle.sceneObjects.length; ++i) {
+				if (Castle.sceneObjects[i].blend) {
+					blendsFrom = i;
+					break;
+				}
+				Castle.prepareAndDrawObject(Castle.sceneObjects[i], false);
+			}
+
+			if (outlinedBuilding >= 0) {
+				Castle.gl.disable(Castle.gl.DEPTH_TEST);
+				Castle.gl.depthMask(false);
+				let buildingToDraw = buildingsToDraw[outlinedBuilding];
+				let outlineColor = Castle.BUILDING_OUTLINE_GOOD;
+				if (Castle.buildMode) {
+					outlineColor = Castle.BUILDING_OUTLINE_SELECTION;
+					if (Castle.phantomBuilding.id > 0) {
+						outlineColor =  Castle.phantomBuildingIsAllowedToBuild ? Castle.BUILDING_OUTLINE_GOOD : Castle.BUILDING_OUTLINE_BAD;;
+					}
+				}
+				for (let i = 0; i < buildingToDraw.mesh.objects.length; ++i) {
+					let outlinedTranslation = [buildingToDraw.translation[0], buildingToDraw.translation[1], buildingToDraw.translation[2]];
+					outlinedTranslation[1] -= 6.0 / buildingToDraw.mesh.size[0];
+					Castle.prepareAndDrawObject(buildingToDraw.mesh.objects[i], false, buildingToDraw.rotation, outlinedTranslation, outlineColor, 1.0 + (0.16 / Math.pow(buildingToDraw.mesh.size[0], 3/4)));
+				}
+				Castle.gl.enable(Castle.gl.DEPTH_TEST);
+				Castle.gl.depthMask(true);
+			}
+
+			for (let buildingToDraw of buildingsToDraw) {
+				for (let i = 0; i < buildingToDraw.mesh.objects.length; ++i) {
+					Castle.prepareAndDrawObject(buildingToDraw.mesh.objects[i], false, buildingToDraw.rotation, buildingToDraw.translation);
+				}
+			}
+
+			for (let i = blendsFrom; i < Castle.sceneObjects.length; ++i) {
+				Castle.prepareAndDrawObject(Castle.sceneObjects[i], false);
+			}
+
+			for (let buildingToDraw of buildingsToDraw) {
+				for (let i = 0; i < buildingToDraw.mesh.transparentObjects.length; ++i) {
+					Castle.prepareAndDrawObject(buildingToDraw.mesh.transparentObjects[i], false, buildingToDraw.rotation, buildingToDraw.translation);
+				}
+			}
+		}
+		Castle.gl.disable(Castle.gl.BLEND);
+		Castle.gl.enable(Castle.gl.CULL_FACE);
+		Castle.gl.colorMask(true, true, true, true);
+		Castle.gl.depthMask(true);
+
+		Castle.cursorDeltaPos[0] = 0;
+		Castle.cursorDeltaPos[1] = 0;
+
+		requestAnimationFrame(Castle.loop);
+
+	}
+
+	static prepareAndDrawObject(obj, isSMPass, rotation, translation, tintOverride, scaleOverride) {
+
+		let meshData = obj.meshData;
+		let associatedTexture = obj.textureId;
+		let associatedTexture2 = obj.texture2Id;
+		let associatedTexture3 = obj.texture3Id;
+		let associatedTexture4 = obj.texture4Id;
+		let associatedShader = Castle.sceneShaders[obj.shaderId];
+
+		let textures = [Castle.sceneTextures[associatedTexture],
+		associatedTexture2 ? Castle.sceneTextures[associatedTexture2] : {},
+		associatedTexture3 ? Castle.sceneTextures[associatedTexture3] : {},
+		associatedTexture4 ? Castle.sceneTextures[associatedTexture4] : {}];
+		let uvScroll = [0.0, 0.0];
+
+		if (obj.uvScroll) {
+			uvScroll[0] = obj.uvScroll[0] * Castle.currentTime;
+			uvScroll[1] = obj.uvScroll[1] * Castle.currentTime;
+		}
+
+		Castle.drawObject(isSMPass ? associatedShader.PSO_SM : associatedShader.PSO,
+			textures, meshData.vertices, meshData.indexCount,
+			meshData.vertStride, Castle.sceneShaders[obj.shaderId].attributes,
+			obj.strip, obj.transform, isSMPass,
+			obj.blend, obj.tintColor, obj.uvScale, uvScroll, rotation, translation, tintOverride, scaleOverride, obj.meshName == 'grid_9_01.bin');
+
+	}
+
+	static updateMainCam() {
+
+		mat4.perspective(Castle.projMatrix, glMatrix.toRadian(Castle.fov), Castle.canvasWidth / Castle.canvasHeight, Castle.zNear, Castle.zFar);
+
+		var camPosElements = [-1432, -440, -1582];
+
+		var camPosX = camPosElements[0] + Castle.camDeltaPos[0];
+
+		var camPosY = camPosElements[2] - Castle.camDeltaPos[1];
+
+		var camPosZ = camPosElements[1] + Castle.cameraHeight;
+
+		var camPos = vec3.fromValues(camPosX, camPosZ, camPosY);
+
+		var camForwElements = [-2.170, -2.36, 3.14];
+
+		var quatStart = quat.create();
+
+		quat.identity(quatStart);
+
+		var quatX = quat.create();
+
+		var quatY = quat.create();
+
+		var quatZ = quat.create();
+
+		quat.rotateX(quatX, quatStart, camForwElements[0] + Castle.rotationTilt);
+
+		quat.rotateY(quatY, quatX, camForwElements[1]);
+
+		quat.rotateZ(quatZ, quatY, camForwElements[2]);
+
+		mat4.fromRotationTranslation(Castle.viewMatrix, quatZ, vec3.create());
+
+		mat4.translate(Castle.viewMatrix, Castle.viewMatrix, camPos);
+
+		mat4.multiply(Castle.viewMatrix2, Castle.flipMatr, Castle.viewMatrix);
+
+		mat4.multiply(Castle.viewProjMatr, Castle.projMatrix, Castle.viewMatrix2);
+
+		var camForw = [Castle.viewMatrix2[2], Castle.viewMatrix2[6], Castle.viewMatrix2[10], 0];
+
+		var camForwXY = [camForw[0], camForw[2]];
+
+		vec2.normalize(camForwXY, camForwXY);
+
+		var camRight = [Castle.viewMatrix2[0], Castle.viewMatrix2[4], Castle.viewMatrix2[8], 0];
+
+		var camRightXY = [camRight[0], camRight[2]];
+
+		vec2.normalize(camRightXY, camRightXY);
+
+		Castle.camDeltaPos[0] -= (camForwXY[1] * Castle.cursorDeltaPos[0] - camRightXY[1] * Castle.cursorDeltaPos[1]) * 0.1;
+
+		Castle.camDeltaPos[1] -= (camForwXY[0] * Castle.cursorDeltaPos[0] - camRightXY[0] * Castle.cursorDeltaPos[1]) * 0.1;
+
+		Castle.camDeltaPos[0] = Castle.clamp(Castle.camDeltaPos[0], Castle.camDeltaPosMinMax[0][0], Castle.camDeltaPosMinMax[0][1]);
+
+		Castle.camDeltaPos[1] = Castle.clamp(Castle.camDeltaPos[1], Castle.camDeltaPosMinMax[1][0], Castle.camDeltaPosMinMax[1][1]);
+
+		mat4.invert(Castle.viewProjInv, Castle.viewProjMatr); // viewProj -> world
+
+		Castle.cursorBasis = [((Castle.cursorPosition[0] - Castle.canvasWidth / 2) / Castle.canvasWidth * 2), -((Castle.cursorPosition[1] - Castle.canvasHeight / 2) / Castle.canvasHeight * 2), 1, 1];
+
+		vec4.transformMat4(Castle.cursorBasis2, Castle.cursorBasis, Castle.viewProjInv);
+
+		Castle.cursorBasis2[0] /= -Castle.cursorBasis2[3];
+
+		Castle.cursorBasis2[1] /= -Castle.cursorBasis2[3];
+
+		Castle.cursorBasis2[2] /= -Castle.cursorBasis2[3];
+
+		var camForwNew = [Castle.cursorBasis2[0] - camPos[0], Castle.cursorBasis2[1] - camPos[1], Castle.cursorBasis2[2] - camPos[2]];
+
+		vec3.normalize(camForwNew, camForwNew);
+
+		var t = -(camPos[1] + 27) / camForwNew[1];
+
+		Castle.gridCursorPosX = camPos[0] + t * camForwNew[0] + (Castle.zeroTranslation[0] + Castle.gridTranslation[0]);
+
+		Castle.gridCursorPosZ = camPos[2] + t * camForwNew[2] + (Castle.zeroTranslation[1] + Castle.gridTranslation[1]);
+
+	}
+	static setupMainCam(program) {
+
+		let matViewProjUniformLocation = Castle.getUniformLocation(program, 'mViewProj');
+
+		Castle.gl.uniformMatrix4fv(matViewProjUniformLocation, Castle.gl.FALSE, Castle.viewProjMatr);
+
+		let matViewProjSMUniformLocation = Castle.getUniformLocation(program, 'lightViewProj');
+
+		Castle.gl.uniformMatrix4fv(matViewProjSMUniformLocation, Castle.gl.FALSE, Castle.lightViewProjMatrix);
+
+		let zNearFar = Castle.getUniformLocation(program, 'zNear_zFar');
+
+		Castle.gl.uniform4f(zNearFar, Castle.zNear, Castle.zFar, Castle.zNearSM, Castle.zFarSM);
+
+		let cursorGridPosition = Castle.getUniformLocation(program, 'cursorGridPosition');
+
+		Castle.gl.uniform2f(cursorGridPosition, -Castle.gridCursorPosX, -Castle.gridCursorPosZ);
+
+	}
+
+	static setupSMCam(program) {
+
+		let matViewProjUniformLocation = Castle.getUniformLocation(program, 'mViewProj');
+
+		Castle.gl.uniformMatrix4fv(matViewProjUniformLocation, Castle.gl.FALSE, Castle.lightViewProjMatrix);
+
+	}
+
+	static getBlendFunc(blendString) {
+
+		switch (blendString) {
+
+			case "ZERO": return Castle.gl.ZERO; break;
+
+			case "ONE": return Castle.gl.ONE; break;
+
+			case "SRC_COLOR": return Castle.gl.SRC_COLOR; break;
+
+			case "ONE_MINUS_SRC_COLOR": return Castle.gl.ONE_MINUS_SRC_COLOR; break;
+
+			case "DST_COLOR": return Castle.gl.DST_COLOR; break;
+
+			case "ONE_MINUS_DST_COLOR": return Castle.gl.ONE_MINUS_DST_COLOR; break;
+
+			case "SRC_ALPHA": return Castle.gl.SRC_ALPHA; break;
+
+			case "ONE_MINUS_SRC_ALPHA": return Castle.gl.ONE_MINUS_SRC_ALPHA; break;
+
+			case "DST_ALPHA": return Castle.gl.DST_ALPHA; break;
+
+			case "ONE_MINUS_DST_ALPHA": return Castle.gl.ONE_MINUS_DST_ALPHA; break;
+
+			case "CONSTANT_COLOR": return Castle.gl.CONSTANT_COLOR; break;
+
+			case "ONE_MINUS_CONSTANT_COLOR": return Castle.gl.ONE_MINUS_CONSTANT_COLOR; break;
+
+			case "CONSTANT_ALPHA": return Castle.gl.CONSTANT_ALPHA; break;
+
+			case "ONE_MINUS_CONSTANT_ALPHA": return Castle.gl.ONE_MINUS_CONSTANT_ALPHA; break;
+
+			case "SRC_ALPHA_SATURATE": return Castle.gl.SRC_ALPHA_SATURATE; break;
+
+			default: return Castle.gl.ONE; break;
+
+		}
+
+	}
+
+	static drawObject(program, textures, vertices, indexCount, vertStride, attributes, strip, transform, isSMPass, blend, tintColor, uvScale, uvScroll, rotation, translation, tintOverride, scaleOverride, isGrid) {
+
+		if (blend) {
+
+			Castle.gl.enable(Castle.gl.BLEND);
+
+			Castle.gl.disable(Castle.gl.CULL_FACE);
+
+			Castle.gl.blendEquation(Castle.gl.FUNC_ADD);
+
+			Castle.gl.colorMask(true, true, true, false);
+
+			Castle.gl.depthMask(false);
+
+			Castle.gl.blendFunc(Castle.getBlendFunc(blend[0]), Castle.getBlendFunc(blend[1]));
+
+		}
+
+		Castle.gl.bindBuffer(Castle.gl.ARRAY_BUFFER, vertices);
+
+		let attribOffset = 0;
+
+		for (let attribute of attributes) {
+
+			let attribLocation = Castle.gl.getAttribLocation(program.prog, attribute.name);
+
+			let attribType = attribute.sizeElem == 4 ? Castle.gl.FLOAT : (attribute.sizeElem == 2 ? Castle.gl.UNSIGNED_SHORT : Castle.gl.UNSIGNED_BYTE);
+
+			Castle.gl.vertexAttribPointer(
+				attribLocation, // Attribute location
+				attribute.count, // Number of elements per attribute
+				attribType, // Type of elements
+				Castle.gl.TRUE,
+				vertStride, // Size of an individual vertex
+				attribOffset // Offset from the beginning of a single vertex to this attribute
+			);
+
+			Castle.gl.enableVertexAttribArray(attribLocation);
+
+			attribOffset += attribute.count * attribute.sizeElem;
+
+		}
+
+		Castle.gl.bindTexture(Castle.gl.TEXTURE_2D, null);
+		// Tell OpenGL state machine which program should be active.
+		Castle.gl.useProgram(program.prog);
+
+		isSMPass ? Castle.setupSMCam(program) : Castle.setupMainCam(program);
+
+		let tintColorValue = tintOverride ? tintOverride : (tintColor ? tintColor : [1, 1, 1, 1]);
+
+		let tintColorLocation = Castle.getUniformLocation(program, 'tintColor');
+
+		Castle.gl.uniform4fv(tintColorLocation, tintColorValue);
+
+		let uvScaleValue = uvScale ? uvScale : [1, 1, 1, 1];
+
+		let uvScaleLocation = Castle.getUniformLocation(program, 'uvScale');
+
+		Castle.gl.uniform4fv(uvScaleLocation, uvScaleValue);
+
+		if (uvScroll[0] > 0) {
+
+			let e = 1;
+
+		}
+
+		let uvScrollValue = uvScroll ? uvScroll : [0, 0];
+
+		let uvScrollLocation = Castle.getUniformLocation(program, 'uvScroll');
+
+		Castle.gl.uniform2fv(uvScrollLocation, uvScrollValue);
+
+		let worldMatrix = transform ? transform : new Float32Array([
+			1, 0, 0, 0,
+			0, 0, 1, 0,
+			0, -1, 0, 0,
+			0, 0, 0, 1
+		]);
+
+		var worldMatrix2 = new Float32Array(16);
+
+		var worldMatrix3 = new Float32Array(16);
+
+		mat4.transpose(worldMatrix2, worldMatrix);
+
+		if (rotation) {
+
+			mat4.fromRotation(worldMatrix3, rotation, [0, 1, 0]);
+
+			mat4.mul(worldMatrix2, worldMatrix3, worldMatrix2);
+
+		}
+
+		if (scaleOverride) {
+
+			mat4.fromScaling(worldMatrix3, [scaleOverride, scaleOverride, scaleOverride]);
+
+			mat4.mul(worldMatrix2, worldMatrix3, worldMatrix2);
+		}
+
+		if (translation) {
+
+			worldMatrix2[12] += translation[0];
+
+			worldMatrix2[13] += translation[1];
+
+			worldMatrix2[14] += translation[2];
+
+		}
+
+		let matWorldUniformLocation = Castle.getUniformLocation(program, 'mWorld');
+
+		Castle.gl.uniformMatrix4fv(matWorldUniformLocation, Castle.gl.FALSE, worldMatrix2);
+
+		for (let i = 0; i < textures.length; ++i) {
+
+			if (textures[i]) {
+
+				Castle.gl.activeTexture(Castle.gl.TEXTURE0 + i);
+
+				Castle.gl.bindTexture(Castle.gl.TEXTURE_2D, textures[i]);
+
+				let attribName = "tex" + i;
+
+				let texLocation = Castle.getUniformLocation(program, attribName);
+
+				Castle.gl.uniform1i(texLocation, i);
+
+			}
+
+		}
+
+		if (!isSMPass) {
+
+			Castle.gl.activeTexture(Castle.gl.TEXTURE0 + textures.length);
+
+			Castle.gl.bindTexture(Castle.gl.TEXTURE_2D, Castle.depthTexture);
+
+			let attribNameSM = "smTexture";
+
+			let texLocationSM = Castle.getUniformLocation(program, attribNameSM);
+
+			Castle.gl.uniform1i(texLocationSM, textures.length);
+
+		}
+
+		if (!isSMPass && isGrid) {
+			Castle.gl.activeTexture(Castle.gl.TEXTURE0 + textures.length + 1);
+
+			Castle.gl.bindTexture(Castle.gl.TEXTURE_2D, Castle.gridTexture);
+			Castle.gl.texImage2D(Castle.gl.TEXTURE_2D, 0, Castle.gl.RGBA, 64, 64, 0, Castle.gl.RGBA, Castle.gl.UNSIGNED_BYTE, Castle.allowedToBuildGridTex);
+
+			let attribNameSM = "gridTex";
+
+			let texLocationSM = Castle.getUniformLocation(program, attribNameSM);
+
+			Castle.gl.uniform1i(texLocationSM, textures.length + 1);
+			
+		}
+
+		Castle.gl.drawArrays(strip ? Castle.gl.TRIANGLE_STRIP : Castle.gl.TRIANGLES, 0, indexCount);
+
+	}
+
+}
+
+class Settings {
+    static defaultSettings = {
+        fullscreen: true,
+        render: true,
+        globalVolume: 0.5,
+        musicVolume: 0.7,
+        soundsVolume: 0.7,
+		radminPriority: false
+    };
+
+    static settings = JSON.parse(JSON.stringify(this.defaultSettings));
+    static pwcLauncherSettingsDir;
+    static settingsFilePath;
+
+    static async ensureSettingsFile() {
+        const homeDir = NativeAPI.os.homedir();
+        this.pwcLauncherSettingsDir = NativeAPI.path.join(homeDir, 'Prime World Classic');
+        this.settingsFilePath = NativeAPI.path.join(this.pwcLauncherSettingsDir, 'launcher.cfg');
+
+        try {
+            await NativeAPI.fileSystem.promises.mkdir(this.pwcLauncherSettingsDir, { recursive: true });
+            await NativeAPI.fileSystem.promises.access(this.settingsFilePath);
+            return true;
+        } catch (e) {
+            App.error('Ошибка доступа к файлу настроек: ' + e);
+            await this.writeDefaultSettings();
+            return false;
+        }
+    }
+
+    static async writeDefaultSettings() {
+        this.settings = JSON.parse(JSON.stringify(this.defaultSettings));
+        await this.WriteSettings();
+    }
+
+    static async ReadSettings() {
+        if (!NativeAPI.status) {
+            App.error('NativeAPI не инициализирован! Используются настройки по умолчанию');
+            this.settings = { ...this.defaultSettings };
+            return;
+        }
+
+        try {
+            if (await this.ensureSettingsFile()) {
+                const data = await NativeAPI.fileSystem.promises.readFile(this.settingsFilePath, 'utf-8');
+                this.settings = { ...this.defaultSettings, ...JSON.parse(data) };
+            }
+        } catch (e) {
+            App.error('Ошибка чтения настроек: ' + e);
+            this.settings = { ...this.defaultSettings };
+        }
+    }
+
+    static async WriteSettings() {
+        if (!this.settingsFilePath || !NativeAPI.status) {
+            App.error('Не могу сохранить настройки: путь или NativeAPI недоступны');
+            return;
+        }
+        
+        try {
+            await NativeAPI.fileSystem.promises.writeFile(
+                this.settingsFilePath,
+                JSON.stringify(this.settings, null, 2),
+                'utf-8'
+            );
+        } catch (e) {
+            App.error('Ошибка сохранения настроек: ' + e);
+        }
+    }
+
+    static async ApplySettings(options = {}) {
+		// Установка значений по умолчанию для options
+		options = {
+			render: true,    // Применять настройки рендеринга по умолчанию
+			audio: true,     // Применять настройки звука по умолчанию
+			window: true,    // Применять настройки окна по умолчанию
+			...options       // Переопределение дефолтных значений
+		};
+	
+		try {
+			// 1. Применение настроек рендеринга (если не отключено в options)
+			if (options.render !== false && typeof Castle !== 'undefined') {
+				Castle.toggleRender(Castle.RENDER_LAYER_PLAYER, this.settings.render);
+			}
+	
+			// 2. Применение настроек окна (если не отключено в options)
+			if (options.window !== false && NativeAPI.status && NativeAPI.window) {
+				const currentMode = await NativeAPI.window.isFullscreen;
+				if (this.settings.fullscreen && !currentMode) {
+					await NativeAPI.window.enterFullscreen();
+				} else if (!this.settings.fullscreen && currentMode) {
+					await NativeAPI.window.leaveFullscreen();
+					NativeAPI.window.resizeTo(1280, 720);
+					NativeAPI.window.setPosition('center');
+				}
+			}
+	
+			// 3. Применение настроек звука (если не отключено в options)
+			if (options.audio !== false && typeof Sound !== 'undefined') {
+				// Обновляем громкость для всех звуков
+				for (const soundId in Sound.all) {
+					const type = soundId === 'castle' ? Castle.AUDIO_MUSIC : Castle.AUDIO_SOUNDS;
+					Sound.setVolume(soundId, Castle.GetVolume(type));
+				}
+				
+				// Специальная обработка тестового звука (если используется)
+				if (Castle.testSoundIsPlaying && Sound.all.sound_test) {
+					Sound.setVolume('sound_test', Castle.GetVolume(Castle.AUDIO_SOUNDS));
+				}
+			}
+	
+		} catch (e) {
+			App.error('Ошибка применения настроек: ' + e);
+		}
+	}
+
+    static async init() {
+        await this.ReadSettings();
+        await this.ApplySettings();
+        
+        window.addEventListener('beforeunload', () => {
+            this.WriteSettings();
+        });
+    }
+}
+
+class MM {
+
+	static id = '';
+
+	static hero = false;
+
+	static view = document.createElement('div');
+
+	static button = DOM({ tag: 'div' }, DOM({ tag: 'div' }), DOM({ id: 'MMQueue' }, '0'));
+
+	static renderBody = false;
+
+	static active = false;
+
+	static targetPlayerAnimate = false;
+
+	static activeSelectHero = 0;
+
+	static gameRunEvent() {
+		Castle.toggleRender(Castle.RENDER_LAYER_GAME, false);
+		Castle.toggleMusic(Castle.MUSIC_LAYER_GAME, false);
+		document.body.style.display = 'none';
+		NativeAPI.window.hide();
+
+		NativeAPI.app.unregisterGlobalHotKey(NativeAPI.altEnterShortcut);
+	}
+
+	static gameStopEvent() {
+		Castle.toggleRender(Castle.RENDER_LAYER_GAME, true);
+		Castle.toggleMusic(Castle.MUSIC_LAYER_GAME, true);
+		document.body.style.display = 'block';
+		
+		if (NativeAPI.status) {
+			try {
+				Settings.ApplySettings();
+				
+				NativeAPI.window.show();
+				NativeAPI.app.registerGlobalHotKey(NativeAPI.altEnterShortcut);
+			} catch (e) {
+				App.error(e);
+			}
+		}
+		
+		View.show('castle');
+	}
+
+	static async init() {
+
+		MM.view.classList.add('mm');
+
+		MM.view.style.display = 'none';
+
+		document.body.append(MM.view);
+
+		let button = CastleNAVBAR.init();
+
+		button.onclick = () => MM.start();
+
+		// Linux test
+		//let testRun = DOM({style:'castle-button-play-test'}, "Test");
+		//CastleNAVBAR.body.append(testRun);
+
+		//testRun.onclick = () => PWGame.start("Tester00Tester00Tester00Tester004c8fa55b5ee54d6ddbaab2373f8a6a74d7f9c5d739bdd79da12f3beda73c7115", MM.gameStopEvent);
+
+		Timer.init();
+
+		window.addEventListener('beforeunload', () => {
+
+			if (NativeAPI.status) {
+
+				// Stop MM search
+				if (MM.active) {
+
+					MM.start();
+
+				}
+
+			}
+
+		});
+
+	}
+
+	static soundEvent() {
+
+		Sound.play('content/sounds/found.ogg', { id: 'MM_found', volume: Castle.GetVolume(Castle.AUDIO_SOUNDS) });
+
+	}
+
+	static play() {
+
+		return MM.button;
+
+	}
+
+	static show(content) {
+
+		if (MM.view.firstChild) {
+
+			while (MM.view.firstChild) {
+
+				MM.view.firstChild.remove();
+
+			}
+
+		}
+
+		MM.view.append(content);
+
+		MM.view.style.display = 'flex';
+
+	}
+
+	static close() {
+
+		Sound.stop('tambur');
+
+		Castle.toggleMusic(Castle.MUSIC_LAYER_TAMBUR, true);
+
+		MM.view.style.display = 'none';
+
+	}
+
+	static searchActive(status = true) {
+
+		if ((status) && (!MM.active)) {
+
+			MM.active = true;
+
+			//MM.buttonAnimate = MM.button.animate({opacity:[1,0.5,1]},{duration:1000,iterations:Infinity,easing:'ease-out'});
+
+			//MM.button.firstChild.innerText = 'Поиск боя';
+
+			CastleNAVBAR.play();
+
+		}
+
+		if ((!status) && (MM.active)) {
+
+			MM.active = false;
+
+			CastleNAVBAR.cancel();
+
+			/*
+			if(MM.buttonAnimate){
+				
+				MM.buttonAnimate.cancel();
+				
+			}
+			
+			MM.button.firstChild.innerText = Lang.text('fight');
+			*/
+
+		}
+
+	}
+
+	static async gameStartCheck() {
+
+		if (PWGame.gameConnectionTestIsActive) {
+
+			return;
+
+		}
+
+		if (!PWGame.gameServerHasConnection || !PWGame.isUpToDate || !PWGame.isValidated) {
+
+			MM.button.firstChild.innerText = 'Проверка';
+
+		}
+
+		try {
+
+			if (!MM.active) {
+
+				PWGame.gameConnectionTestIsActive = true;
+
+				await PWGame.check();
+
+				await PWGame.testGameServerConnection();
+
+				await PWGame.checkUpdates();
+
+				PWGame.gameConnectionTestIsActive = false;
+
+			}
+
+		}
+		catch (error) {
+
+			PWGame.gameConnectionTestIsActive = false;
+
+			if (!PWGame.gameServerHasConnection || !PWGame.isUpToDate || !PWGame.isValidated) { // Неудача
+
+				MM.button.firstChild.innerText = Lang.text('fight');
+
+			}
+
+			return App.error(error);
+
+		}
+
+	}
+
+	static async start() {
+
+		if (NativeAPI.status) {
+
+			await MM.gameStartCheck();
+
+		}
+		else {
+
+			const downloadMessage = DOM({
+				tag: 'p',
+				innerHTML: 'Загрузите и установите последнюю Windows версию <a href="https://pw.26rus-game.ru/" class="launcher-link">лаунчера</a> всего один раз, теперь вам не нужно будет делать лишних действий по обновлению игры, лаунчер все сделает автоматически.'
+			});
+
+			const splashContent = DOM({ 
+				style: 'splash-content-window' 
+			});
+
+			const heading = DOM({ tag: 'h1' }, 'Необходима Windows версия лаунчера!');
+			const paragraph1 = DOM({ tag: 'p' }, 'Мы отказались от поиска боя и запуска игры Prime World через браузер, так как у игроков регулярно возникали с этим проблемы.');
+			const paragraph2 = DOM({ tag: 'p' }, 'Мы полностью перенесли браузерный лаунчер в полноценное Windows приложение с автоматическим обновлением клиентской части Prime World.');
+
+			// Создаем кнопку закрытия
+			const closeButton = DOM({
+				tag: 'div',
+				style: 'close-button',
+				event: ['click', () => Splash.hide()]
+			});
+			closeButton.style.backgroundImage = 'url(content/icons/close-cropped.svg)';
+
+			splashContent.append(closeButton, heading, paragraph1, paragraph2, downloadMessage);
+
+			// Добавляем стили для ссылки
+			const style = DOM({
+				tag: 'style',
+				innerHTML: `
+					.launcher-link {
+						color: #ff0000;
+						text-decoration: none;
+						transition: color 0.3s ease;
+					}
+					.launcher-link:hover {
+						color: #ff6666;
+						text-decoration: underline;
+					}
+				`
+			});
+			document.head.append(style);
+
+			Splash.show(splashContent, false);
+			return;
+
+		}
+
+		if (!MM.hero) {
+
+			MM.hero = await App.api.request('build', 'heroAll');
+
+		}
+
+		if (MM.active) {
+
+			try {
+
+				await App.api.request(CURRENT_MM, 'cancel');
+
+			}
+			catch (error) {
+
+				return App.error(error);
+
+			}
+
+			MM.searchActive(false);
+
+		}
+		else {
+
+			MM.searchActive(true);
+
+			try {
+
+				let request = await App.api.request(CURRENT_MM, 'start', { hero: MM.activeSelectHero, version: PW_VERSION, mode: CastleNAVBAR.mode });
+
+				if (request.type == 'reconnect') {
+
+					MM.searchActive(false);
+
+					MM.gameRunEvent();
+
+					PWGame.reconnect(request.id, MM.gameStopEvent);
+
+					return;
+
+				}
+
+			}
+			catch (error) {
+
+				MM.searchActive(false);
+
+				return App.error(error);
+
+			}
+
+		}
+
+	}
+
+	static async ready(data) {
+
+		MM.id = data.id;
+
+		let body = DOM({ style: 'mm-ready' }, Timer.body, DOM({ id: `MMReady`, style: 'mm-ready-count' }, `0/${data.limit}`));
+
+		await Timer.start(data.id, 'Бой найден', () => {
+
+			MM.close();
+
+			MM.searchActive(true);
+
+		});
+
+		MM.searchActive(false);
+
+		MM.soundEvent();
+
+		let button = DOM({
+			style: 'ready-button', event: ['click', async () => {
+
+				try {
+
+					await App.api.request(CURRENT_MM, 'ready', { id: data.id });
+
+				}
+				catch (error) {
+
+					Timer.stop();
+
+					MM.close();
+
+					MM.searchActive(false);
+
+					return;
+
+				}
+
+				button.style.opacity = 0;
+
+			}]
+		}, Lang.text('ready'));
+
+
+		button.style.fontSize = '2cqw';
+
+		button.animate({ transform: ['scale(1)', 'scale(0.8)', 'scale(1.2)', 'scale(1)'] }, { duration: 500, iterations: Infinity, easing: 'ease-in-out' });
+
+		body.append(button);
+
+		MM.show(body);
+
+	}
+
+	static async lobbyBuildView(heroId) {
+
+		if (MM.lobbyBuildField.firstChild) {
+
+			MM.lobbyBuildField.firstChild.remove();
+
+		}
+
+		while (MM.lobbyBuildTab.firstChild) {
+
+			MM.lobbyBuildTab.firstChild.remove();
+
+		}
+
+		let builds = await App.api.request('build', 'my', { hero: heroId });
+
+		for (let build of builds) {
+
+			let tab = DOM({
+				event: ['click', async () => {
+
+					await App.api.request('build', 'target', { id: build.id });
+
+					for (let child of MM.lobbyBuildTab.children) {
+
+						child.style.background = 'rgba(255,255,255,0)';
+
+					}
+
+					tab.style.background = 'rgba(255,255,255,0.3)';
+
+					if (MM.lobbyBuildField.firstChild) {
+
+						MM.lobbyBuildField.firstChild.remove();
+
+					}
+
+					MM.lobbyBuildField.append(Build.viewModel(build.body, false, false));
+
+				}]
+			}, build.name);
+
+			if (build.target) {
+
+				tab.style.background = 'rgba(255,255,255,0.3)';
+
+				if (MM.lobbyBuildField.firstChild) {
+
+					MM.lobbyBuildField.firstChild.remove();
+
+				}
+
+				MM.lobbyBuildField.append(Build.viewModel(build.body, false, false));
+
+			}
+
+			MM.lobbyBuildTab.append(tab);
+
+		}
+
+	}
+
+	static async lobby(data) {
+
+		if (!MM.hero) {
+
+			MM.hero = await App.api.request('build', 'heroAll');
+
+		}
+
+		if (!MM.id) {
+
+			MM.id = data.id;
+
+		}
+
+		MM.searchActive(false);
+
+		MM.lobbyUsers = data.users;
+
+		MM.targetHeroId = data.users[App.storage.data.id].hero;
+
+		let lobbyBuild = DOM({ style: 'mm-lobby-middle-build' });
+
+		MM.lobbyBuildField = DOM();
+
+		MM.lobbyBuildField.style.margin = '0.5cqw 0';
+
+		MM.lobbyBuildField.style.width = '28cqw';
+
+		MM.lobbyBuildField.style.height = '28cqw';
+
+		MM.lobbyBuildTab = DOM({ style: 'lobby-build-tab' });
+
+		MM.lobbyConfirm = DOM({
+			style: 'ready-button', event: ['click', async () => {
+
+				try {
+
+					await App.api.request(CURRENT_MM, 'hero', { id: data.id, heroId: MM.targetHeroId });
+
+				}
+				catch (error) {
+
+					MM.lobbyConfirm.innerText = error;
+
+					setTimeout(() => {
+
+						MM.lobbyConfirm.innerText = 'Подтвердить';
+
+					}, 1500);
+
+				}
+
+			}]
+		}, 'Подтвердить');
+
+		MM.lobbyConfirm.style.opacity = 0;
+
+		MM.lobbyConfirm.style.width = '50%';
+
+		MM.lobbyConfirm.animate({ transform: ['scale(1)', 'scale(0.8)', 'scale(1.2)', 'scale(1)'] }, { duration: 2000, iterations: Infinity, easing: 'ease-in-out' });
+
+		lobbyBuild.append(MM.lobbyConfirm, MM.lobbyBuildField, MM.lobbyBuildTab);
+
+		if (MM.targetHeroId) {
+
+			MM.lobbyBuildView(MM.targetHeroId);
+
+		}
+
+		let leftTeam = DOM({ style: 'mm-lobby-header-team' });
+
+		let rightTeam = DOM({ style: 'mm-lobby-header-team' });
+
+		for (let key of data.map) {
+
+			let player = DOM({ id: `PLAYER${key}`, style: 'mm-lobby-header-team-player' });
+
+			player.dataset.hero = data.users[key].hero;
+
+			let hero = DOM({ style: 'mm-lobby-header-team-player-hero' });
+
+			let name = DOM({ style: 'mm-lobby-header-team-player-name' }, `${data.users[key].nickname}`);
+
+			let rankIcon = DOM({ style: 'rank-icon' });
+
+			rankIcon.style.backgroundImage = `url(content/ranks/${Rank.icon(data.users[key].rating)}.webp)`;
+
+			let rank = DOM({ style: 'rank' }, DOM({ style: 'rank-lvl' }, data.users[key].rating), rankIcon);
+
+			hero.append(rank);
+
+			if ('commander' in data.users[key]) {
+
+				hero.append(DOM({ style: `mm-status-commander-${Winrate.icon(data.users[key].winrate)}` }));
+
+				name.setAttribute('style', 'color:rgba(255,215,0,0.9)');
+
+			}
+
+			hero.style.backgroundImage = (data.users[key].hero) ? `url(content/hero/${data.users[key].hero}/1.webp)` : `url(content/hero/empty.webp)`;
+
+			player.append(hero, name);
+
+			if (key == data.target) {
+
+				MM.lobbyPlayerAnimate = player.animate({ transform: ['scale(1)', 'scale(0.8)', 'scale(1.1)', 'scale(1)'] }, { duration: 2000, iterations: Infinity, easing: 'ease-in-out' });
+
+			}
+
+			if (data.users[App.storage.data.id].team == data.users[key].team) {
+
+				leftTeam.append(player);
+
+				player.onclick = () => {
+
+					if (player.dataset.hero) {
+
+						Build.view(key, player.dataset.hero, data.users[key].nickname, false);
+
+					}
+
+				}
+
+			}
+			else {
+
+				name.innerText = 'ifst';
+
+				name.style.opacity = 0;
+
+				rankIcon.style.backgroundImage = 'none';
+
+				rank.firstChild.innerText = 1100;
+
+				rank.firstChild.style.opacity = 0;
+
+				rightTeam.append(player);
+
+			}
+
+		}
+
+		MM.lobbyHeroes = DOM({ style: 'mm-lobby-middle-hero' });
+
+		//let preload = new PreloadImages(MM.lobbyHeroes);
+
+		let activeRankName = '';
+
+		for (let item of MM.hero) {
+
+			let getRankName = Rank.getName(item.rating);
+
+			if (getRankName != activeRankName) {
+
+				let rankIcon = DOM({ style: 'mm-lobby-middle-hero-line-icon' });
+
+				rankIcon.style.backgroundImage = `url(content/ranks/${Rank.icon(item.rating)}.webp)`;
+
+				let rankIcon2 = DOM({ style: 'mm-lobby-middle-hero-line-icon' });
+
+				rankIcon2.style.backgroundImage = `url(content/ranks/${Rank.icon(item.rating)}.webp)`;
+
+				MM.lobbyHeroes.append(DOM({ style: 'mm-lobby-middle-hero-line' }, rankIcon, DOM({ style: 'mm-lobby-middle-hero-line-name' }, getRankName), rankIcon2));
+
+				activeRankName = getRankName;
+
+			}
+
+			let hero = DOM({ id: `HERO${item.id}`, data: { ban: 0 }, style: 'mm-lobby-middle-hero-item' });
+
+			hero.style.backgroundImage = `url("content/hero/${item.id}/1.webp")`;
+
+			hero.onclick = async () => {
+
+				MM.targetHeroId = item.id;
+
+				await App.api.request(CURRENT_MM, 'eventChangeHero', { id: MM.id, heroId: item.id });
+
+				MM.lobbyBuildView(MM.targetHeroId);
+
+			}
+
+			let rank = DOM({ style: 'rank' }, DOM({ style: 'rank-lvl' }, item.rating));
+
+			hero.append(rank);
+
+			MM.lobbyHeroes.append(hero);
+
+			//preload.add(hero);
+
+		}
+
+
+		if (App.storage.data.id == data.target) {
+
+			MM.lobbyConfirm.style.opacity = 1;
+
+		}
+
+		let info = DOM({ style: 'lobby-timer' });
+
+		await Timer.start(data.id, '', () => {
+
+			MM.close();
+
+			MM.searchActive(true);
+
+		});
+
+		info.append(Timer.body);
+
+		MM.chatBody = DOM({ style: 'mm-lobby-middle-chat-body' });
+
+		let chatInput = DOM({ tag: 'input', style: 'mm-lobby-middle-chat-button', placeholder: Lang.text('enterTextAndPressEnter') })
+
+		chatInput.addEventListener('keyup', async (event) => {
+
+			if (event.code === 'Enter') {
+
+				if (chatInput.value.length < 2) {
+
+					throw 'Количество символов < 2';
+
+				}
+
+				if (chatInput.value.length > 256) {
+
+					throw 'Количество символов > 256';
+
+				}
+
+				await App.api.request(CURRENT_MM, 'chat', { id: MM.id, message: chatInput.value });
+
+				chatInput.value = '';
+
+			}
+
+		});
+
+		let body = DOM({ style: 'mm-lobby' }, DOM({ style: 'mm-lobby-header' }, leftTeam, info, rightTeam), DOM({ style: 'mm-lobby-middle' }, DOM({ style: 'mm-lobby-middle-chat' }, DOM({ style: 'mm-lobby-middle-chat-map' }, (data.mode == 0) ? MM.renderMap() : DOM()), MM.chatBody, chatInput), lobbyBuild, MM.lobbyHeroes));
+
+		Sound.play('content/sounds/tambur.ogg', { id: 'tambur', volume: Castle.GetVolume(Castle.AUDIO_MUSIC), loop: true });
+
+		Castle.toggleMusic(Castle.MUSIC_LAYER_TAMBUR, false);
+
+		MM.show(body);
+
+		for (let key in data.users) {
+
+			if (!data.users[key].hero) {
+
+				continue;
+
+			}
+
+			let findHero = document.getElementById(`HERO${data.users[key].hero}`);
+
+			if (findHero) {
+
+				findHero.style.filter = 'grayscale(100%)';
+
+				findHero.style.backgroundColor = 'rgba(255, 255, 255, 0.3)';
+
+				findHero.dataset.ban = key;
+
+			}
+
+		}
+
+	}
+
+	static renderMap() {
+
+		MM.renderBody = DOM({ style: 'map' });
+
+		let container = DOM({ tag: 'div' }, MM.renderBody);
+
+		container.setAttribute('style', 'width:37cqh;height:37cqh');
+
+		for (let number of [1, 2, 3, 4, 5, 6]) {
+
+			let item = DOM({
+				style: `map-item-${number}`, data: { player: 0, position: number }, event: ['click', async () => {
+
+					await App.api.request(CURRENT_MM, 'position', { id: MM.id, position: (item.dataset.player == App.storage.data.id) ? 0 : item.dataset.position });
+
+				}]
+			})
+
+			MM.renderBody.append(item);
+
+		}
+
+		return container;
+
+	}
+
+	static async select(data) {
+
+		Sound.play(`content/hero/${data.heroId}/revive/${data.sound}.ogg`, { 
+			id: `heroSound_${data.heroId}_${data.sound}`,
+			volume: Castle.GetVolume(Castle.AUDIO_SOUNDS) 
+		});
+
+		MM.lobbyPlayerAnimate.cancel();
+
+		await Timer.start(data.id, '', () => {
+
+			MM.close();
+
+			MM.searchActive(true);
+
+		});
+
+		let findOldPlayer = document.getElementById(`PLAYER${data.userId}`);
+
+		if (findOldPlayer) {
+
+			findOldPlayer.dataset.hero = data.heroId;
+
+			findOldPlayer.firstChild.style.backgroundImage = `url(content/hero/${data.heroId}/1.webp)`;
+
+			findOldPlayer.firstChild.firstChild.firstChild.innerText = data.rating;
+
+			findOldPlayer.firstChild.firstChild.lastChild.style.backgroundImage = `url(content/ranks/99.png)`;
+
+		}
+
+		if (data.target != 0) {
+
+			let findPlayer = document.getElementById(`PLAYER${data.target}`);
+
+			if (findPlayer) {
+
+				MM.lobbyPlayerAnimate = findPlayer.animate({ transform: ['scale(1)', 'scale(0.8)', 'scale(1.2)', 'scale(1)'] }, { duration: 500, iterations: Infinity, easing: 'ease-in-out' });
+
+			}
+
+		}
+
+		for (let child of MM.lobbyHeroes.children) {
+
+			if (child.dataset.ban == data.userId) {
+
+				child.dataset.ban = 0;
+
+				child.style.filter = 'none';
+
+				child.style.backgroundColor = 'rgba(255, 255, 255, 0)';
+
+				break;
+
+			}
+
+		}
+
+		let findHero = document.getElementById(`HERO${data.heroId}`);
+
+		if (findHero) {
+
+			findHero.style.filter = 'grayscale(100%)';
+
+			findHero.style.backgroundColor = 'rgba(255, 255, 255, 0.3)';
+
+			findHero.onclick = false;
+
+		}
+
+		if (App.storage.data.id == data.target) {
+
+			MM.lobbyConfirm.style.opacity = 1;
+
+		}
+		else {
+
+			MM.lobbyConfirm.style.opacity = 0;
+
+		}
+
+	}
+
+	static finish(data) {
+		Timer.stop();
+		MM.close();
+	
+		try {
+			Settings.ApplySettings();
+		} catch (e) {
+			App.error(e);
+		}
+	
+		if (data.mode == 3) {
+			ARAM.briefing(data.hero, data.role, () => {
+				MM.gameRunEvent();
+				PWGame.start(data.key, MM.gameStopEvent);
+			});
+		} else {
+			MM.gameRunEvent();
+			PWGame.start(data.key, MM.gameStopEvent);
+		}
+	}
+
+	static eventChangeHero(data) {
+
+		let findPlayer = document.getElementById(`PLAYER${data.id}`);
+
+		let url = `url(content/hero/${data.heroId}/1.webp)`;
+
+		if (findPlayer) {
+
+			findPlayer.dataset.hero = data.heroId;
+
+			findPlayer.firstChild.style.backgroundImage = url;
+
+			findPlayer.firstChild.firstChild.firstChild.innerText = data.rating;
+
+			findPlayer.firstChild.firstChild.lastChild.style.backgroundImage = `url(content/ranks/${Rank.icon(data.rating)}.webp)`;
+
+		}
+
+		if (MM.renderBody) {
+
+			for (let item of MM.renderBody.children) {
+
+				if (item.dataset.player == data.id) {
+
+					item.style.backgroundImage = url;
+
+					break;
+
+				}
+
+			}
+
+		}
+
+		/*
+		let oldHero = MM.lobbyUsers[data.id].hero, countHero = 0;
+		
+		for(let key in MM.lobbyUsers){
+			
+			if(MM.lobbyUsers[key].hero == oldHero){
+				
+				countHero++;
+				
+			}
+			
+		}
+		
+		if(countHero == 1){
+			
+			let findHero = document.getElementById(`HERO${oldHero}`);
+			
+			if(findHero){
+				
+				findHero.style.backgroundColor = 'rgba(51, 255, 51, 0)';
+				
+				findHero.dataset.active = 0;
+				
+			}
+			
+		}
+		
+		let findHero = document.getElementById(`HERO${data.heroId}`);
+		
+		if(findHero){
+			
+			if(findHero.dataset.active == 0){
+				
+				findHero.style.backgroundColor = 'rgba(51, 255, 51, 0.8)';
+				
+				findHero.dataset.active = 1;
+				
+				MM.lobbyUsers[data.id].hero = data.heroId;
+				
+			}
+			
+		}
+		*/
+	}
+
+	static chat(data) {
+
+		let message = DOM(`${data.message}`);
+
+		if (data.id == 1) {
+
+			message.style.color = 'rgba(255, 50, 0, 0.9)';
+			
+		}
+		else if ( (data.id) && ('commander' in MM.lobbyUsers[data.id]) ) {
+
+			message.style.color = 'rgba(255,215,0,0.9)';
+			
+		}
+		
+		let item = DOM({ style: 'mm-lobby-middle-chat-body-item' });
+		
+		if(data.id){
+			
+			item.append(DOM({tag:'div'},`${MM.lobbyUsers[data.id].nickname}:`));
+			
+		}
+		
+		item.append(message);
+
+		MM.chatBody.append(item);
+
+		item.scrollIntoView({ block: 'end', behavior: 'smooth' });
+		
+	}
+
+}
+
+class ARAM {
+	
+	static role = {
+		1:{name:'Защитник',description:'Прорвать оборону противника и недопустить подхода вражеских героев к более уязвимым союзникам вашей команды.'},
+		2:{name:'Штурмовик',description:'Поддержать прорыв обороны противника и недопустить подхода вражеских героев к более уязвимым союзникам вашей команды.'},
+		3:{name:'Верховный повелитель',description:'Нанести основной урон вражеской команде и соблюдать дистанцию между противниками, чтобы исключить их подход близко к вам.'},
+		4:{name:'Младший повелитель',description:'Нанести основной урон вражеской команде и соблюдать дистанцию между противниками, чтобы исключить их подход близко к вам.'},
+		5:{name:'Поддержка',description:'Не допустить ослабления героев союзной команды и любой ценой быть готовым спасти каждого из них.'},
+		6:{name:'Преследователь',description:'Найти уязвимых героев вражеской команды для нанесения урона с целью ослабления роли противника или его уничтожения.'},
+		7:{name:'Стрелок',description:'Нанести урон по более уязвимым героям вражеской команды и соблюдать дистанцию между противниками, чтобы исключить их подход близко к вам.'}	
+	};
+	
+	static briefing(heroId, roleId, callback) {
+
+		let hero = DOM({ style: 'aram-briefing-left' }, DOM({ style: 'aram-random' }));
+		
+		hero.style.backgroundImage = `url(content/hero/empty.webp)`;
+
+		let lastRandomHero = 0, second = 17, timer = DOM({ style: 'aram-timer' }, 'Начало боя через 15...');
+
+		let setIntervalId = setInterval(() => {
+
+			if (second <= 5) {
+
+				clearInterval(setIntervalId);
+
+				hero.style.backgroundImage = `url(content/hero/${heroId}/1.webp)`;
+
+				Sound.play(`content/hero/${heroId}/revive/${App.getRandomInt(1, 4)}.ogg`, { volume: Castle.GetVolume(Castle.AUDIO_SOUNDS) });
+
+				hero.firstChild.animate({ opacity: [1, 0] }, { duration: 5000, fill: 'forwards', easing: 'ease-out' });
+
+				// hero.animate({ backgroundSize: ['100%', '125%'] }, { duration: 1500, fill: 'forwards', easing: 'ease-in' });
+
+				return;
+
+			}
+
+			let heroRandom = 0;
+
+			while (true) {
+
+				heroRandom = App.getRandomInt(1,65);
+
+				if (heroRandom != lastRandomHero) {
+
+					lastRandomHero = heroRandom;
+
+					break;
+
+				}
+
+			}
+
+			hero.style.backgroundImage = `url(content/hero/${heroRandom}/1.webp)`;
+
+		}, 150);
+
+		let timerId = setInterval(() => {
+
+			if (second == 0) {
+
+				clearInterval(timerId);
+
+				return;
+				
+			}
+
+			second--;
+
+			timer.innerText = (second == 0) ? Lang.text('fight') : `Начало боя через ${second}...`;
+			
+		}, 1000);
+		
+		let part = DOM({style:'aram-background-part'});
+		
+		part.style.backgroundImage = `url(content/img/aram/part.png)`;
+		
+		part.style.backdropFilter = 'blur(5vmax)';
+		
+		//let text = DOM({style:'aram-text'},DOM({style:'aram-text-center'},DOM({tag:'div'},DOM({tag:'h1'},`Ваша роль — ${ARAM.role[roleId].name}`)),DOM({tag:'div'},ARAM.role[roleId].task)));
+		let h1 = DOM({tag:'h1'},'Без права на ошибку');
+		let text = DOM({tag:'div'},'Одна ошибка в ARAM — равномерна гибели всей команды. Восстановить запас здоровья или энергии героя на главной базе нельзя.');
+		let bodyText = DOM({style:'aram-text'},DOM({style:'aram-text-center'},h1,text));
+		
+		setTimeout(() => {
+			
+			let animate = bodyText.animate({ opacity: [0,1] }, { duration: 1650, fill: 'forwards', easing: 'ease-out' });
+			
+			animate.onfinish = () => {
+				
+				setTimeout(() => {
+					
+					animate.reverse();
+					
+					animate.onfinish = () => {
+						
+						h1.innerText = `Ваша роль
+						${ARAM.role[roleId].name}`;
+						
+						text.innerText = '';
+						
+						animate.onfinish = () => {
+							
+							animate.onfinish = () => {
+								
+								h1.innerText = 'Ваша задача';
+								text.innerText = ARAM.role[roleId].description;
+								
+								animate.reverse();
+								
+								animate.onfinish = () => {
+									
+									animate.reverse();
+									
+									animate.onfinish = null;
+									
+								};
+								
+							};
+							
+							animate.reverse();
+							
+						};
+						
+						animate.reverse();
+						
+					};
+					
+				},1000);
+				
+			}
+			
+		},1000);
+		
+		let background = DOM({ style: 'aram-background' },part,hero,bodyText); // content
+		
+		background.style.backgroundImage = `url(content/img/aram/bg.png)`;
+
+		//timer.animate({ transform: ['scale(1)', 'scale(1.1)', 'scale(1)'] }, { duration: 1000, iterations: Infinity, easing: 'ease-out' });
+
+		setTimeout(() => {
+			
+			let animate = part.animate({ backdropFilter: ['blur(5vmax)', 'blur(0)'] }, { duration: 5000, fill: 'forwards', easing: 'ease-in-out' });
+			
+			animate.onfinish = () => {
+				
+				part.style.display = 'none';
+				
+				setTimeout(() => {
+					
+					background.animate({ transform: ['scale(1)', 'scale(1.9)'] }, { duration: 1000, easing: 'ease-out', fill: 'forwards' });
+					
+					setTimeout(() => {
+						
+						Castle.toggleMusic(Castle.MUSIC_LAYER_TAMBUR, true);
+						
+						callback();
+						
+						Splash.hide();
+						
+					},4000);
+					
+					
+				},500);
+				
+			}
+			
+		},7500);
+
+		Castle.toggleMusic(Castle.MUSIC_LAYER_TAMBUR, false);
+
+		Sound.play('content/sounds/aram/bg.mp3', { id: 'backgroundAram', volume: Castle.GetVolume(Castle.AUDIO_MUSIC) });
+
+		Splash.show(background, false);
+
+	}
+
+}
+
+class Sound {
+
+	static all = new Object();
+
+	static play(source, object = new Object(), callback) {
+
+		if (('id' in object) && (object.id)) {
+
+			if (object.id in Sound.all) {
+
+				Sound.stop(object.id);
+
+			}
+
+		}
+
+		let audio = new Audio();
+
+		if ('loop' in object) {
+
+			audio.loop = object.loop ? true : false;
+
+		}
+
+		audio.preload = 'auto';
+
+		audio.src = source;
+
+		audio.play();
+
+		if (callback) {
+
+
+			audio.addEventListener("ended", (event) => {
+				callback();
+			});
+
+		}
+
+		if (('id' in object) && (object.id)) {
+
+			if (!(object.id in Sound.all)) {
+
+				Sound.all[object.id] = audio;
+
+			}
+
+			if ('volume' in object) {
+				Sound.setVolume(object.id, object.volume);
+			}
+
+		}
+
+	}
+
+	static stop(id) {
+
+		if (id in Sound.all) {
+
+			Sound.all[id].pause();
+
+			delete Sound.all[id];
+
+		}
+
+	}
+
+	static setVolume(id, volume) {
+
+		if (id in Sound.all) {
+
+			Sound.all[id].volume = volume;
+
+		}
+	}
+
+	static pause(id) {
+		if (id in Sound.all) {
+			Sound.all[id].pause();
+		}
+	}
+	static unpause(id) {
+		if (id in Sound.all) {
+			Sound.all[id].play();
+		}
+	}
+
+}
+
+class Timer {
+
+	static intervalId = false;
+
+	static init() {
+
+		Timer.sb = DOM(`${name} 00:00`);
+
+		Timer.body = DOM({ style: 'mm-timer' }, Timer.sb);
+
+	}
+
+	static async start(id, name, callback) {
+
+		Timer.stop();
+
+		Timer.callback = callback;
+
+		Timer.message = name;
+
+		Timer.timeFinish = await App.api.request(CURRENT_MM, 'getTimer', { id: id, time: Date.now() });
+
+		if (Timer.end()) {
+
+			return;
+
+		}
+
+		Timer.intervalId = setInterval(() => Timer.update(), 250);
+
+		Timer.update();
+
+	}
+
+	static update() {
+
+		if (Timer.end()) {
+
+			return;
+
+		}
+
+		let seconds = Math.round(Math.abs(Date.now() - Timer.timeFinish) / 1000);
+
+		Timer.sb.innerText = `${Timer.message} 00:${(seconds < 10 ? '0' : '')}${seconds}`;
+
+	}
+
+	static end() {
+
+		if ((Date.now() - Timer.timeFinish) >= 0) {
+
+			Timer.stop();
+
+			Timer.callback();
+
+			return true;
+
+		}
+
+		return false;
+
+	}
+
+	static stop() {
+
+		if (Timer.intervalId) {
+
+			clearInterval(Timer.intervalId);
+
+			Timer.intervalId = false;
+
+		}
+
+	}
+
+}
+
+class PreloadImages {
+
+	static load(callback, url) {
+
+		let preload = new Image();
+
+		preload.src = url;
+
+		preload.addEventListener('load', () => {
+
+			callback();
+
+		});
+
+	}
+
+	static async loadAsync(url) {
+
+		let image = new Image();
+
+		image.src = url;
+
+		return new Promise((resolve, reject) => {
+
+			image.addEventListener('load', () => {
+				resolve(image);
+			});
+
+			image.addEventListener('error', (error) => reject(error));
+
+		});
+
+	}
+
+	constructor(target, callback) {
+
+		this.target = target;
+
+		this.callback = callback;
+
+		this.observer = new IntersectionObserver((entries) => this.preload(entries));
+
+	}
+
+	add(element, target) {
+
+		element.style.opacity = 0;
+
+		this.observer.observe(element);
+
+		if (target) {
+
+			target.append(element);
+
+		}
+		else {
+
+			this.target.append(element);
+
+		}
+
+	}
+
+	preload(entries) {
+
+		for (let entry of entries) {
+
+			if (entry.isIntersecting) {
+
+				let preload = new Image();
+
+				preload.src = entry.target.dataset.url;
+
+				preload.addEventListener('load', () => {
+
+					entry.target.style.backgroundImage = `url("${entry.target.dataset.url}")`;
+
+					let animation = entry.target.animate({ opacity: [0, 1], transform: ['scale(0.9)', 'scale(1)'] }, { duration: 500, easing: 'ease-out', fill: 'forwards' });
+
+					if (this.callback) {
+
+						animation.onfinish = () => {
+
+							this.callback(entry.target);
+
+							animation.onfinish = null;
+
+						}
+
+					}
+
+				});
+
+				this.observer.unobserve(entry.target);
+
+			}
+
+		}
+
+	}
+
+}
+
+class Game {
+
+	static sizeX = 10;
+
+	static sizeY = 15;
+
+	static target = false;
+
+	static targetAnimate = false;
+
+	static blocked = false;
+
+	static eventBack = false;
+
+	static eventFinish = false;
+
+	static eventExit = false;
+
+	static init(body, object, isSplah) {
+
+		if (object) {
+
+			if ('back' in object) {
+
+				Game.eventBack = object.back;
+
+			}
+
+			if ('finish' in object) {
+
+				Game.eventFinish = object.finish;
+
+			}
+
+			if ('exit' in object) {
+
+				Game.eventExit = object.exit;
+
+			}
+
+		}
+
+		Game.units = new Array();
+
+		Game.info = DOM({ style: "game-info", event: ['click', (e) => Game.click(e)] });
+
+		Game.scoring = DOM({ style: "game-scoring", event: ['click', (e) => Game.click(e)] });
+
+		Game.field = DOM({ style: "game-field", event: ['click', (e) => Game.click(e)] });
+
+		Game.fieldScoringContainer = DOM({ style: "game-field-scoring-container", event: ['click', (e) => Game.click(e)] }, Game.scoring, Game.field);
+
+		Game.viewScore = DOM({ style: "game-view-score" });
+
+		Game.viewInfo = DOM({ style: "game-view-info" });
+
+		Game.viewMoves = DOM();;
+
+		Game.viewTotalScore = DOM();
+
+		Game.map = object.map;
+
+		Game.background = object.background;
+
+		Game.units = object.unit;
+
+		Game.rarity = object.rarity;
+
+		Game.moves = object.move;
+
+		Game.dataScore = new Object();
+
+		Game.totalScore = 0;
+
+		if ('score' in object) {
+
+			for (let id in object.score) {
+
+				Game.score(id, object.score[id]);
+
+			}
+
+		}
+
+		Game.viewMoves.innerText = `Ходы: ${object.move} (${object.moveTotal})`;
+
+		Game.viewTotalScore.innerText = `Оcколки: ${Game.totalScore} | `;
+
+		if (!isSplah) {
+			Game.viewInfo.append(
+				DOM({ event: ['click', () => Game.eventBack()] }, 'Вернуться назад'),
+				DOM({}, ` | `)
+			)
+		}
+
+		Game.viewInfo.append(
+			Game.viewTotalScore,
+			Game.viewMoves,
+			DOM({}, ` | `),
+			DOM({ event: ['click', () => Game.eventFinish()] }, 'Завершить игру')
+		);
+
+		Game.scoring.append(Game.viewScore);
+		Game.info.append(Game.viewInfo);
+
+		if (body) {
+
+			body.append(Game.info, Game.fieldScoringContainer);
+
+		}
+		else {
+
+			document.body.append(Game.info, Game.field);
+
+		}
+
+		Game.view();
+
+	}
+
+	static score(id, number) {
+
+		if ((!id) || (id == '0')) {
+
+			return;
+
+		}
+
+		if (!(id in Game.dataScore)) {
+
+			let unit = DOM({ style: [`rarity${Game.rarity[id]}`, 'game-rarity-general'] });
+			let text = DOM({ style: 'game-text' });
+
+			unit.style.backgroundImage = `url(content/talents/${id}.webp)`;
+
+			unit.append(text);
+
+			Game.dataScore[id] = unit;
+
+			Game.viewScore.append(unit);
+
+		}
+
+		Game.totalScore += number;
+
+		Game.viewTotalScore.innerText = `Оcколки: ${Game.totalScore} | `;
+
+		Game.dataScore[id].firstChild.innerText = (Number(Game.dataScore[id].innerText) + number);
+
+		Game.dataScore[id].animate({ transform: ['scale(1)', 'scale(1.5)', 'scale(1)'] }, { duration: 250, fill: 'both', easing: 'ease-out' });
+
+	}
+
+	static position(coordinate) {
+
+		return (coordinate ? `${coordinate * 100}cqh` : '0');
+
+	}
+
+	static createUnit(id, x, y) {
+
+		let unit = DOM({ style: 'game-unit-item', id: `${x}:${y}` });
+
+		let rarity = '';
+
+		switch (Game.rarity[id]) {
+
+			case 2: rarity = '0 0 20cqh rgba(174,80,251,0.8), inset 10cqh 10cqh 15cqh rgba(174,80,251,0.5)'; break;
+
+			case 3: rarity = '0 0 20cqh rgba(255,156,32,0.8), inset 10cqh 10cqh 15cqh rgba(255,156,32,0.5)'; break;
+
+			case 4: rarity = '0 0 20cqh rgba(255,26,26,0.8), inset 10cqh 10cqh 15cqh rgba(255,26,26,0.5)'; break;
+
+		}
+
+		if (rarity) {
+
+			unit.style.boxShadow = rarity;
+
+		}
+
+		unit.style.backgroundImage = `url(content/talents/${id}.webp)`;
+
+		unit.style.top = `${Game.position(x)}`;
+
+		unit.style.left = `${Game.position(y)}`;
+
+		Game.field.append(DOM({ style: 'unit-container', event: ['click', (e) => Game.click(e)] }, unit));
+
+		return unit;
+
+	}
+
+	static createBackgroundUnit(x, y) {
+
+		let unit = DOM({ style: 'game-unit-bg', id: `${x}:${y}` });
+
+		unit.id = `BG:${x}:${y}`;
+
+		unit.style.backgroundImage = `url(content/talents/763.webp)`;
+
+		unit.style.top = `${Game.position(x)}`;
+
+		unit.style.left = `${Game.position(y)}`;
+
+		Game.field.append(DOM({ style: 'unit-container', event: ['click', (e) => Game.click(e)] }, unit));
+
+		return unit;
+
+	}
+
+	static shuffle(arr) {
+
+		let j, temp;
+
+		for (let i = arr.length - 1; i > 0; i--) {
+
+			j = Math.floor(Math.random() * (i + 1));
+
+			temp = arr[j];
+
+			arr[j] = arr[i];
+
+			arr[i] = temp;
+
+		}
+
+		return arr;
+
+	}
+
+	static getRandomInt(min, max) {
+
+		min = Math.ceil(min);
+
+		max = Math.floor(max);
+
+		return Math.floor(Math.random() * (max - min + 1)) + min;
+
+	}
+
+	static view() {
+
+		Game.blocked = true;
+
+		let units = new Array(), background = new Array();
+
+		for (let x = 0; x < Game.sizeX; x++) {
+
+			for (let y = 0; y < Game.sizeY; y++) {
+
+				if (Game.background[x][y]) {
+
+					background.push({ x: x, y: y, body: Game.createBackgroundUnit(x, y) });
+
+				}
+
+				units.push(Game.createUnit(Game.map[x][y], x, y));
+
+			}
+
+		}
+
+		units = Game.shuffle(units);
+
+		let delay = 0, number = 0;
+
+		for (let unit of units) {
+
+			number++;
+
+			let topOffset = `${(unit.offsetTop) + Game.getRandomInt(-50, 50)}cqh`;
+
+			let leftOffset = `${(unit.offsetLeft) + Game.getRandomInt(-50, 50)}cqh`;
+
+			let animate = unit.animate({
+				top: [topOffset, unit.style.top], left: [leftOffset, unit.style.left],
+				opacity: [0, 1],
+				transform: ['scale(2.5)', 'scale(0.9)']
+			},
+				{ delay: delay, duration: 250, fill: 'both', easing: 'ease-out' });
+
+			delay += 5;
+
+			if (number == units.length) {
+
+				animate.onfinish = () => {
+
+					for (let item of background) {
+
+						let state = Game.background[item.x][item.y];
+
+						switch (state) {
+
+							case 1: state = 0.9; break;
+
+							case 2: state = 0.6; break;
+
+							case 3: state = 0.3; break;
+
+						}
+
+						item.body.animate({ opacity: [0, state], transform: ['scale(0.3)', 'scale(1)', 'scale(0.9)'] }, { duration: 500, fill: 'both', easing: 'ease-in' });
+
+					}
+
+					Game.blocked = false;
+
+
+					animate.onfinish = null;
+
+				}
+
+			}
+
+		}
+
+	}
+
+	static async click(event) {
+
+		if (Game.blocked) {
+
+			return;
+
+		}
+
+		if (!event.target.id) {
+
+			return;
+
+		}
+
+		let data = event.target.id.split(':');
+
+		if (!Game.map[data[0]][data[1]]) {
+
+			return;
+
+		}
+
+		if (Game.target) {
+
+			if (Game.target.id == event.target.id) {
+
+				Game.target = false;
+
+				Game.targetAnimate.cancel();
+
+				return;
+
+			}
+
+			Game.targetAnimate.cancel();
+
+			try {
+
+				await Game.move(Game.target, event.target);
+
+			}
+			catch (e) {
+				console.log(e);
+				return Game.exit();
+
+			}
+
+			Game.target = false;
+
+		}
+		else {
+
+			Game.target = event.target;
+
+			Game.targetAnimate = Game.target.animate({ transform: ['scale(0.9)', 'scale(1.1)', 'scale(0.9)'] }, { duration: 500, iterations: Infinity });
+
+		}
+
+	}
+
+	static async move(element1, element2) {
+
+		Game.blocked = true;
+
+		let data1 = element1.id.split(':'), data2 = element2.id.split(':');
+
+		let protect = false;
+
+		if ((((Number(data1[0]) - 1) == data2[0]) && (data1[1] == data2[1])) || (((Number(data1[0]) + 1) == data2[0]) && (data1[1] == data2[1])) || (((Number(data1[1]) - 1) == data2[1]) && (data1[0] == data2[0])) || (((Number(data1[1]) + 1) == data2[1]) && (data1[0] == data2[0]))) {
+
+			protect = true;
+
+		}
+
+		if (!protect) {
+
+			Game.blocked = false;
+
+			return;
+
+		}
+
+		let request = await App.api.request('gamev2', 'move2', { x1: data1[0], y1: data1[1], x2: data2[0], y2: data2[1] });
+
+		if (request.render.length) {
+
+			element1.id = `${data2[0]}:${data2[1]}`;
+
+			element2.id = `${data1[0]}:${data1[1]}`;
+
+			Game.moves++;
+
+			Game.viewMoves.innerText = `Ходов: ${request.move} (${request.moveTotal})`;
+
+		}
+
+		let element1Animate = element1.animate({ top: [`${Game.position(data1[0])}`, `${Game.position(data2[0])}`], left: [`${Game.position(data1[1])}`, `${Game.position(data2[1])}`] }, { duration: 250, fill: 'both' });
+
+		let element2Animate = element2.animate({ top: [`${Game.position(data2[0])}`, `${Game.position(data1[0])}`], left: [`${Game.position(data2[1])}`, `${Game.position(data1[1])}`] }, { duration: 250, fill: 'both' });
+
+		element1Animate.onfinish = async () => {
+
+			if (request.render.length) {
+
+				for (let item of request.render) {
+
+					switch (item.action) {
+
+						case 'hide':
+
+							await Game.hideAnimate(item.data);
+
+							await Game.backgroundAnimate(item.data);
+
+							break;
+
+						case 'move': await Game.moveAnimate(item.data); break;
+
+						case 'add': await Game.dropAnimate(item.data); break;
+
+					}
+
+				}
+
+				if (request.move != request.moveTotal) {
+
+					Game.blocked = false;
+
+				}
+
+			}
+			else {
+
+				element1Animate.reverse();
+
+				if (request.move != request.moveTotal) {
+
+					Game.blocked = false;
+
+				}
+
+			}
+
+			element1Animate.onfinish = null;
+
+		}
+
+		element2Animate.onfinish = () => {
+
+			if (!request.render.length) {
+
+				element2Animate.reverse();
+
+			}
+
+			element2Animate.onfinish = null;
+
+		}
+
+	}
+
+	static async hideAnimate(data) {
+
+		return new Promise((resolve, reject) => {
+
+			if (!data.hide.length) {
+
+				resolve(false);
+
+			}
+
+			let number = 1;
+
+			for (let unit of data.hide) {
+
+				let findUnit = document.getElementById(`${unit.x}:${unit.y}`);
+
+				if (!findUnit) {
+
+					continue;
+
+				}
+
+				let animate = findUnit.animate({ opacity: [1, 0], transform: ['scale(0.9)', 'scale(3)'] }, { duration: 250, fill: 'both', easing: 'ease-out' });
+
+				if (number == data.hide.length) {
+
+					animate.onfinish = () => {
+
+						for (let id in data.score) {
+
+							Game.score(id, data.score[id]);
+
+						}
+
+						findUnit.remove();
+
+						resolve(true);
+
+					}
+
+				}
+				else {
+
+					animate.onfinish = () => {
+
+						findUnit.remove();
+
+					}
+
+				}
+
+				number++;
+
+			}
+
+		});
+
+	}
+
+	static async backgroundAnimate(data) {
+
+		return new Promise((resolve, reject) => {
+
+			if (!data.hide.length) {
+
+				resolve(false);
+
+			}
+
+			let hideBackground = new Array();
+
+			for (let unit of data.hide) {
+
+				if (!Game.background[unit.x][unit.y]) {
+
+					continue;
+
+				}
+
+				hideBackground.push({ x: unit.x, y: unit.y, body: document.getElementById(`BG:${unit.x}:${unit.y}`) });
+
+			}
+
+			if (!hideBackground.length) {
+
+				resolve(true);
+
+			}
+
+			let number = 0, state = [0, 0.9, 0.6, 0.3];
+
+			for (let item of hideBackground) {
+
+				number++;
+
+				if (!item.body) {
+
+					continue;
+
+				}
+
+				let currentState = Game.background[item.x][item.y];
+
+				Game.background[item.x][item.y]--;
+
+				let animate = item.body.animate({ opacity: [currentState, Game.background[item.x][item.y]], transform: ['scale(0.9)', 'scale(1.6)', 'scale(0.9)'] }, { duration: 500, fill: 'both', easing: 'ease-out' });
+
+				if (number == hideBackground.length) {
+
+					animate.onfinish = () => {
+
+						if (!Game.background[item.x][item.y]) {
+
+							item.body.remove();
+
+						}
+
+						resolve(true);
+
+					}
+
+				}
+				else {
+
+					animate.onfinish = () => {
+
+						if (!Game.background[item.x][item.y]) {
+
+							item.body.remove();
+
+						}
+
+					}
+
+				}
+
+			}
+
+		});
+
+	}
+
+	static async moveAnimate(data) {
+
+		return new Promise((resolve, reject) => {
+
+			if (!data.length) {
+
+				resolve(false);
+
+			}
+
+			let number = 1;
+
+			for (let unit of data) {
+
+				let findUnit = document.getElementById(`${unit.x1}:${unit.y1}`);
+
+				findUnit.id = `${unit.x2}:${unit.y2}`;
+
+				let animate = findUnit.animate({ top: [`${Game.position(unit.x1)}`, `${Game.position(unit.x2)}`], transform: ['rotate(0) scale(0.9)', `rotate(${Game.getRandomInt(-180, 180)}deg) scale(0.9)`, 'rotate(0) scale(0.9)'] }, { duration: 250, fill: 'both', easing: 'ease-in' });
+
+				if (number == data.length) {
+
+					animate.onfinish = () => {
+
+						animate.onfinish = null;
+
+						resolve(true);
+
+					}
+
+				}
+
+				number++;
+
+			}
+
+		});
+
+	}
+
+	static async dropAnimate(data) {
+
+		return new Promise((resolve, reject) => {
+
+			if (!data.length) {
+
+				resolve(false);
+
+			}
+
+			let number = 1;
+
+			for (let unit of data) {
+
+				let createUnit = Game.createUnit(unit.id, unit.x, unit.y);
+
+				let animate = createUnit.animate({ opacity: [0, 1], transform: ['rotate(0) scale(0.9)', 'rotate(360deg) scale(0.9)'] }, { duration: 250, fill: 'both', easing: 'ease-in' });
+
+				if (number == data.length) {
+
+					animate.onfinish = () => {
+
+						animate.onfinish = null;
+
+						resolve(true);
+
+					}
+
+				}
+
+				number++;
+
+			}
+
+		});
+
+	}
+
+	static exit() {
+
+		if (Game.eventExit) {
+
+			Game.eventExit();
+
+		}
+
+	}
+
+}
+
+class Splash {
+
+	static init() {
+
+		Splash.body = document.createElement('div');
+
+		Splash.body.style.display = 'none';
+
+		Splash.body.classList.add('splash');
+
+		document.body.append(Splash.body);
+
+	}
+
+	static show(element, content = true) {
+
+		if (Splash.body.firstChild) {
+
+			while (Splash.body.firstChild) {
+
+				Splash.body.firstChild.remove();
+
+			}
+
+		}
+
+		if (content) {
+
+			let body = document.createElement('div');
+
+			body.classList.add('splash-content');
+
+			body.append(element);
+
+			Splash.body.append(body);
+
+		}
+		else {
+
+			Splash.body.append(element);
+
+		}
+
+		Splash.body.style.display = 'flex';
+
+	}
+
+	static hide() {
+
+		Splash.body.style.display = 'none';
+
+	}
+
+}
+
+function DOM(properties) {
+
+	let parent = document.createElement(((typeof properties == 'object') && ('tag' in properties)) ? properties.tag : 'div');
+
+	if (typeof properties == 'string') {
+
+		parent.append(properties);
+
+	}
+	else {
+
+		for (let property in properties) {
+
+			if (property == 'tag') continue;
+
+			switch (property) {
+
+				case 'style':
+
+					if (typeof properties.style === 'string') {
+						parent.classList.add(properties.style);
+					} else {
+						parent.classList.add(...properties.style);
+					}
+
+					break;
+
+				case 'data':
+
+					for (let key in properties.data) {
+
+						parent.dataset[key] = properties.data[key];
+
+					}
+
+					break;
+
+				case 'event':
+
+					parent.addEventListener(properties.event[0], properties.event[1]);
+
+					break;
+
+				default:
+
+					parent[property] = properties[property];
+
+					break;
+
+			}
+
+		}
+
+	}
+
+	if (arguments.length > 1) {
+
+		let i, fragment = document.createDocumentFragment();
+
+		for (i = 1; i < arguments.length; i++) {
+
+			fragment.append(arguments[i]);
+
+		}
+
+		parent.append(fragment);
+
+	}
+
+	return parent;
+
+}
+
+// Castle
+{
+	/**
+	 * @fileoverview gl-matrix - High performance matrix and vector operations
+	 * @author Brandon Jones
+	 * @author Colin MacKenzie IV
+	 * @version 2.3.2
+	 */
+
+	/* Copyright (c) 2015, Brandon Jones, Colin MacKenzie IV.
+	
+	Permission is hereby granted, free of charge, to any person obtaining a copy
+	of this software and associated documentation files (the "Software"), to deal
+	in the Software without restriction, including without limitation the rights
+	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+	copies of the Software, and to permit persons to whom the Software is
+	furnished to do so, subject to the following conditions:
+	
+	The above copyright notice and this permission notice shall be included in
+	all copies or substantial portions of the Software.
+	
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+	THE SOFTWARE. */
+
+	(function webpackUniversalModuleDefinition(root, factory) {
+		if (typeof exports === 'object' && typeof module === 'object')
+			module.exports = factory();
+		else if (typeof define === 'function' && define.amd)
+			define(factory);
+		else {
+			var a = factory();
+			for (var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
+		}
+	})(this, function () {
+		return /******/ (function (modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+
+/******/ 		// Check if module is in cache
+/******/ 		if (installedModules[moduleId])
+/******/ 			return installedModules[moduleId].exports;
+
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			exports: {},
+/******/ 			id: moduleId,
+/******/ 			loaded: false
+					/******/
+};
+
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+
+/******/ 		// Flag the module as loaded
+/******/ 		module.loaded = true;
+
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+				/******/
+}
+
+
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(0);
+			/******/
+})
+/************************************************************************/
+/******/([
+/* 0 */
+/***/ function (module, exports, __webpack_require__) {
+
+				/**
+				 * @fileoverview gl-matrix - High performance matrix and vector operations
+				 * @author Brandon Jones
+				 * @author Colin MacKenzie IV
+				 * @version 2.3.2
+				 */
+
+				/* Copyright (c) 2015, Brandon Jones, Colin MacKenzie IV.
+			
+				Permission is hereby granted, free of charge, to any person obtaining a copy
+				of this software and associated documentation files (the "Software"), to deal
+				in the Software without restriction, including without limitation the rights
+				to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+				copies of the Software, and to permit persons to whom the Software is
+				furnished to do so, subject to the following conditions:
+			
+				The above copyright notice and this permission notice shall be included in
+				all copies or substantial portions of the Software.
+			
+				THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+				IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+				FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+				AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+				LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+				OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+				THE SOFTWARE. */
+				// END HEADER
+
+				exports.glMatrix = __webpack_require__(1);
+				exports.mat2 = __webpack_require__(2);
+				exports.mat2d = __webpack_require__(3);
+				exports.mat3 = __webpack_require__(4);
+				exports.mat4 = __webpack_require__(5);
+				exports.quat = __webpack_require__(6);
+				exports.vec2 = __webpack_require__(9);
+				exports.vec3 = __webpack_require__(7);
+				exports.vec4 = __webpack_require__(8);
+
+				/***/
+},
+/* 1 */
+/***/ function (module, exports) {
+
+				/* Copyright (c) 2015, Brandon Jones, Colin MacKenzie IV.
+			
+				Permission is hereby granted, free of charge, to any person obtaining a copy
+				of this software and associated documentation files (the "Software"), to deal
+				in the Software without restriction, including without limitation the rights
+				to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+				copies of the Software, and to permit persons to whom the Software is
+				furnished to do so, subject to the following conditions:
+			
+				The above copyright notice and this permission notice shall be included in
+				all copies or substantial portions of the Software.
+			
+				THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+				IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+				FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+				AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+				LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+				OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+				THE SOFTWARE. */
+
+				/**
+				 * @class Common utilities
+				 * @name glMatrix
+				 */
+				var glMatrix = {};
+
+				// Configuration Constants
+				glMatrix.EPSILON = 0.000001;
+				glMatrix.ARRAY_TYPE = (typeof Float32Array !== 'undefined') ? Float32Array : Array;
+				glMatrix.RANDOM = Math.random;
+				glMatrix.ENABLE_SIMD = false;
+
+				// Capability detection
+				glMatrix.SIMD_AVAILABLE = (glMatrix.ARRAY_TYPE === Float32Array) && ('SIMD' in this);
+				glMatrix.USE_SIMD = glMatrix.ENABLE_SIMD && glMatrix.SIMD_AVAILABLE;
+
+				/**
+				 * Sets the type of array used when creating new vectors and matrices
+				 *
+				 * @param {Type} type Array type, such as Float32Array or Array
+				 */
+				glMatrix.setMatrixArrayType = function (type) {
+					glMatrix.ARRAY_TYPE = type;
+				}
+
+				var degree = Math.PI / 180;
+
+				/**
+				* Convert Degree To Radian
+				*
+				* @param {Number} Angle in Degrees
+				*/
+				glMatrix.toRadian = function (a) {
+					return a * degree;
+				}
+
+				module.exports = glMatrix;
+
+
+				/***/
+},
+/* 2 */
+/***/ function (module, exports, __webpack_require__) {
+
+				/* Copyright (c) 2015, Brandon Jones, Colin MacKenzie IV.
+			
+				Permission is hereby granted, free of charge, to any person obtaining a copy
+				of this software and associated documentation files (the "Software"), to deal
+				in the Software without restriction, including without limitation the rights
+				to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+				copies of the Software, and to permit persons to whom the Software is
+				furnished to do so, subject to the following conditions:
+			
+				The above copyright notice and this permission notice shall be included in
+				all copies or substantial portions of the Software.
+			
+				THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+				IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+				FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+				AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+				LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+				OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+				THE SOFTWARE. */
+
+				var glMatrix = __webpack_require__(1);
+
+				/**
+				 * @class 2x2 Matrix
+				 * @name mat2
+				 */
+				var mat2 = {};
+
+				/**
+				 * Creates a new identity mat2
+				 *
+				 * @returns {mat2} a new 2x2 matrix
+				 */
+				mat2.create = function () {
+					var out = new glMatrix.ARRAY_TYPE(4);
+					out[0] = 1;
+					out[1] = 0;
+					out[2] = 0;
+					out[3] = 1;
+					return out;
+				};
+
+				/**
+				 * Creates a new mat2 initialized with values from an existing matrix
+				 *
+				 * @param {mat2} a matrix to clone
+				 * @returns {mat2} a new 2x2 matrix
+				 */
+				mat2.clone = function (a) {
+					var out = new glMatrix.ARRAY_TYPE(4);
+					out[0] = a[0];
+					out[1] = a[1];
+					out[2] = a[2];
+					out[3] = a[3];
+					return out;
+				};
+
+				/**
+				 * Copy the values from one mat2 to another
+				 *
+				 * @param {mat2} out the receiving matrix
+				 * @param {mat2} a the source matrix
+				 * @returns {mat2} out
+				 */
+				mat2.copy = function (out, a) {
+					out[0] = a[0];
+					out[1] = a[1];
+					out[2] = a[2];
+					out[3] = a[3];
+					return out;
+				};
+
+				/**
+				 * Set a mat2 to the identity matrix
+				 *
+				 * @param {mat2} out the receiving matrix
+				 * @returns {mat2} out
+				 */
+				mat2.identity = function (out) {
+					out[0] = 1;
+					out[1] = 0;
+					out[2] = 0;
+					out[3] = 1;
+					return out;
+				};
+
+				/**
+				 * Transpose the values of a mat2
+				 *
+				 * @param {mat2} out the receiving matrix
+				 * @param {mat2} a the source matrix
+				 * @returns {mat2} out
+				 */
+				mat2.transpose = function (out, a) {
+					// If we are transposing ourselves we can skip a few steps but have to cache some values
+					if (out === a) {
+						var a1 = a[1];
+						out[1] = a[2];
+						out[2] = a1;
+					} else {
+						out[0] = a[0];
+						out[1] = a[2];
+						out[2] = a[1];
+						out[3] = a[3];
+					}
+
+					return out;
+				};
+
+				/**
+				 * Inverts a mat2
+				 *
+				 * @param {mat2} out the receiving matrix
+				 * @param {mat2} a the source matrix
+				 * @returns {mat2} out
+				 */
+				mat2.invert = function (out, a) {
+					var a0 = a[0], a1 = a[1], a2 = a[2], a3 = a[3],
+
+						// Calculate the determinant
+						det = a0 * a3 - a2 * a1;
+
+					if (!det) {
+						return null;
+					}
+					det = 1.0 / det;
+
+					out[0] = a3 * det;
+					out[1] = -a1 * det;
+					out[2] = -a2 * det;
+					out[3] = a0 * det;
+
+					return out;
+				};
+
+				/**
+				 * Calculates the adjugate of a mat2
+				 *
+				 * @param {mat2} out the receiving matrix
+				 * @param {mat2} a the source matrix
+				 * @returns {mat2} out
+				 */
+				mat2.adjoint = function (out, a) {
+					// Caching this value is nessecary if out == a
+					var a0 = a[0];
+					out[0] = a[3];
+					out[1] = -a[1];
+					out[2] = -a[2];
+					out[3] = a0;
+
+					return out;
+				};
+
+				/**
+				 * Calculates the determinant of a mat2
+				 *
+				 * @param {mat2} a the source matrix
+				 * @returns {Number} determinant of a
+				 */
+				mat2.determinant = function (a) {
+					return a[0] * a[3] - a[2] * a[1];
+				};
+
+				/**
+				 * Multiplies two mat2's
+				 *
+				 * @param {mat2} out the receiving matrix
+				 * @param {mat2} a the first operand
+				 * @param {mat2} b the second operand
+				 * @returns {mat2} out
+				 */
+				mat2.multiply = function (out, a, b) {
+					var a0 = a[0], a1 = a[1], a2 = a[2], a3 = a[3];
+					var b0 = b[0], b1 = b[1], b2 = b[2], b3 = b[3];
+					out[0] = a0 * b0 + a2 * b1;
+					out[1] = a1 * b0 + a3 * b1;
+					out[2] = a0 * b2 + a2 * b3;
+					out[3] = a1 * b2 + a3 * b3;
+					return out;
+				};
+
+				/**
+				 * Alias for {@link mat2.multiply}
+				 * @function
+				 */
+				mat2.mul = mat2.multiply;
+
+				/**
+				 * Rotates a mat2 by the given angle
+				 *
+				 * @param {mat2} out the receiving matrix
+				 * @param {mat2} a the matrix to rotate
+				 * @param {Number} rad the angle to rotate the matrix by
+				 * @returns {mat2} out
+				 */
+				mat2.rotate = function (out, a, rad) {
+					var a0 = a[0], a1 = a[1], a2 = a[2], a3 = a[3],
+						s = Math.sin(rad),
+						c = Math.cos(rad);
+					out[0] = a0 * c + a2 * s;
+					out[1] = a1 * c + a3 * s;
+					out[2] = a0 * -s + a2 * c;
+					out[3] = a1 * -s + a3 * c;
+					return out;
+				};
+
+				/**
+				 * Scales the mat2 by the dimensions in the given vec2
+				 *
+				 * @param {mat2} out the receiving matrix
+				 * @param {mat2} a the matrix to rotate
+				 * @param {vec2} v the vec2 to scale the matrix by
+				 * @returns {mat2} out
+				 **/
+				mat2.scale = function (out, a, v) {
+					var a0 = a[0], a1 = a[1], a2 = a[2], a3 = a[3],
+						v0 = v[0], v1 = v[1];
+					out[0] = a0 * v0;
+					out[1] = a1 * v0;
+					out[2] = a2 * v1;
+					out[3] = a3 * v1;
+					return out;
+				};
+
+				/**
+				 * Creates a matrix from a given angle
+				 * This is equivalent to (but much faster than):
+				 *
+				 *     mat2.identity(dest);
+				 *     mat2.rotate(dest, dest, rad);
+				 *
+				 * @param {mat2} out mat2 receiving operation result
+				 * @param {Number} rad the angle to rotate the matrix by
+				 * @returns {mat2} out
+				 */
+				mat2.fromRotation = function (out, rad) {
+					var s = Math.sin(rad),
+						c = Math.cos(rad);
+					out[0] = c;
+					out[1] = s;
+					out[2] = -s;
+					out[3] = c;
+					return out;
+				}
+
+				/**
+				 * Creates a matrix from a vector scaling
+				 * This is equivalent to (but much faster than):
+				 *
+				 *     mat2.identity(dest);
+				 *     mat2.scale(dest, dest, vec);
+				 *
+				 * @param {mat2} out mat2 receiving operation result
+				 * @param {vec2} v Scaling vector
+				 * @returns {mat2} out
+				 */
+				mat2.fromScaling = function (out, v) {
+					out[0] = v[0];
+					out[1] = 0;
+					out[2] = 0;
+					out[3] = v[1];
+					return out;
+				}
+
+				/**
+				 * Returns a string representation of a mat2
+				 *
+				 * @param {mat2} mat matrix to represent as a string
+				 * @returns {String} string representation of the matrix
+				 */
+				mat2.str = function (a) {
+					return 'mat2(' + a[0] + ', ' + a[1] + ', ' + a[2] + ', ' + a[3] + ')';
+				};
+
+				/**
+				 * Returns Frobenius norm of a mat2
+				 *
+				 * @param {mat2} a the matrix to calculate Frobenius norm of
+				 * @returns {Number} Frobenius norm
+				 */
+				mat2.frob = function (a) {
+					return (Math.sqrt(Math.pow(a[0], 2) + Math.pow(a[1], 2) + Math.pow(a[2], 2) + Math.pow(a[3], 2)))
+				};
+
+				/**
+				 * Returns L, D and U matrices (Lower triangular, Diagonal and Upper triangular) by factorizing the input matrix
+				 * @param {mat2} L the lower triangular matrix 
+				 * @param {mat2} D the diagonal matrix 
+				 * @param {mat2} U the upper triangular matrix 
+				 * @param {mat2} a the input matrix to factorize
+				 */
+
+				mat2.LDU = function (L, D, U, a) {
+					L[2] = a[2] / a[0];
+					U[0] = a[0];
+					U[1] = a[1];
+					U[3] = a[3] - L[2] * U[1];
+					return [L, D, U];
+				};
+
+
+				module.exports = mat2;
+
+
+				/***/
+},
+/* 3 */
+/***/ function (module, exports, __webpack_require__) {
+
+				/* Copyright (c) 2015, Brandon Jones, Colin MacKenzie IV.
+			
+				Permission is hereby granted, free of charge, to any person obtaining a copy
+				of this software and associated documentation files (the "Software"), to deal
+				in the Software without restriction, including without limitation the rights
+				to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+				copies of the Software, and to permit persons to whom the Software is
+				furnished to do so, subject to the following conditions:
+			
+				The above copyright notice and this permission notice shall be included in
+				all copies or substantial portions of the Software.
+			
+				THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+				IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+				FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+				AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+				LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+				OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+				THE SOFTWARE. */
+
+				var glMatrix = __webpack_require__(1);
+
+				/**
+				 * @class 2x3 Matrix
+				 * @name mat2d
+				 * 
+				 * @description 
+				 * A mat2d contains six elements defined as:
+				 * <pre>
+				 * [a, c, tx,
+				 *  b, d, ty]
+				 * </pre>
+				 * This is a short form for the 3x3 matrix:
+				 * <pre>
+				 * [a, c, tx,
+				 *  b, d, ty,
+				 *  0, 0, 1]
+				 * </pre>
+				 * The last row is ignored so the array is shorter and operations are faster.
+				 */
+				var mat2d = {};
+
+				/**
+				 * Creates a new identity mat2d
+				 *
+				 * @returns {mat2d} a new 2x3 matrix
+				 */
+				mat2d.create = function () {
+					var out = new glMatrix.ARRAY_TYPE(6);
+					out[0] = 1;
+					out[1] = 0;
+					out[2] = 0;
+					out[3] = 1;
+					out[4] = 0;
+					out[5] = 0;
+					return out;
+				};
+
+				/**
+				 * Creates a new mat2d initialized with values from an existing matrix
+				 *
+				 * @param {mat2d} a matrix to clone
+				 * @returns {mat2d} a new 2x3 matrix
+				 */
+				mat2d.clone = function (a) {
+					var out = new glMatrix.ARRAY_TYPE(6);
+					out[0] = a[0];
+					out[1] = a[1];
+					out[2] = a[2];
+					out[3] = a[3];
+					out[4] = a[4];
+					out[5] = a[5];
+					return out;
+				};
+
+				/**
+				 * Copy the values from one mat2d to another
+				 *
+				 * @param {mat2d} out the receiving matrix
+				 * @param {mat2d} a the source matrix
+				 * @returns {mat2d} out
+				 */
+				mat2d.copy = function (out, a) {
+					out[0] = a[0];
+					out[1] = a[1];
+					out[2] = a[2];
+					out[3] = a[3];
+					out[4] = a[4];
+					out[5] = a[5];
+					return out;
+				};
+
+				/**
+				 * Set a mat2d to the identity matrix
+				 *
+				 * @param {mat2d} out the receiving matrix
+				 * @returns {mat2d} out
+				 */
+				mat2d.identity = function (out) {
+					out[0] = 1;
+					out[1] = 0;
+					out[2] = 0;
+					out[3] = 1;
+					out[4] = 0;
+					out[5] = 0;
+					return out;
+				};
+
+				/**
+				 * Inverts a mat2d
+				 *
+				 * @param {mat2d} out the receiving matrix
+				 * @param {mat2d} a the source matrix
+				 * @returns {mat2d} out
+				 */
+				mat2d.invert = function (out, a) {
+					var aa = a[0], ab = a[1], ac = a[2], ad = a[3],
+						atx = a[4], aty = a[5];
+
+					var det = aa * ad - ab * ac;
+					if (!det) {
+						return null;
+					}
+					det = 1.0 / det;
+
+					out[0] = ad * det;
+					out[1] = -ab * det;
+					out[2] = -ac * det;
+					out[3] = aa * det;
+					out[4] = (ac * aty - ad * atx) * det;
+					out[5] = (ab * atx - aa * aty) * det;
+					return out;
+				};
+
+				/**
+				 * Calculates the determinant of a mat2d
+				 *
+				 * @param {mat2d} a the source matrix
+				 * @returns {Number} determinant of a
+				 */
+				mat2d.determinant = function (a) {
+					return a[0] * a[3] - a[1] * a[2];
+				};
+
+				/**
+				 * Multiplies two mat2d's
+				 *
+				 * @param {mat2d} out the receiving matrix
+				 * @param {mat2d} a the first operand
+				 * @param {mat2d} b the second operand
+				 * @returns {mat2d} out
+				 */
+				mat2d.multiply = function (out, a, b) {
+					var a0 = a[0], a1 = a[1], a2 = a[2], a3 = a[3], a4 = a[4], a5 = a[5],
+						b0 = b[0], b1 = b[1], b2 = b[2], b3 = b[3], b4 = b[4], b5 = b[5];
+					out[0] = a0 * b0 + a2 * b1;
+					out[1] = a1 * b0 + a3 * b1;
+					out[2] = a0 * b2 + a2 * b3;
+					out[3] = a1 * b2 + a3 * b3;
+					out[4] = a0 * b4 + a2 * b5 + a4;
+					out[5] = a1 * b4 + a3 * b5 + a5;
+					return out;
+				};
+
+				/**
+				 * Alias for {@link mat2d.multiply}
+				 * @function
+				 */
+				mat2d.mul = mat2d.multiply;
+
+				/**
+				 * Rotates a mat2d by the given angle
+				 *
+				 * @param {mat2d} out the receiving matrix
+				 * @param {mat2d} a the matrix to rotate
+				 * @param {Number} rad the angle to rotate the matrix by
+				 * @returns {mat2d} out
+				 */
+				mat2d.rotate = function (out, a, rad) {
+					var a0 = a[0], a1 = a[1], a2 = a[2], a3 = a[3], a4 = a[4], a5 = a[5],
+						s = Math.sin(rad),
+						c = Math.cos(rad);
+					out[0] = a0 * c + a2 * s;
+					out[1] = a1 * c + a3 * s;
+					out[2] = a0 * -s + a2 * c;
+					out[3] = a1 * -s + a3 * c;
+					out[4] = a4;
+					out[5] = a5;
+					return out;
+				};
+
+				/**
+				 * Scales the mat2d by the dimensions in the given vec2
+				 *
+				 * @param {mat2d} out the receiving matrix
+				 * @param {mat2d} a the matrix to translate
+				 * @param {vec2} v the vec2 to scale the matrix by
+				 * @returns {mat2d} out
+				 **/
+				mat2d.scale = function (out, a, v) {
+					var a0 = a[0], a1 = a[1], a2 = a[2], a3 = a[3], a4 = a[4], a5 = a[5],
+						v0 = v[0], v1 = v[1];
+					out[0] = a0 * v0;
+					out[1] = a1 * v0;
+					out[2] = a2 * v1;
+					out[3] = a3 * v1;
+					out[4] = a4;
+					out[5] = a5;
+					return out;
+				};
+
+				/**
+				 * Translates the mat2d by the dimensions in the given vec2
+				 *
+				 * @param {mat2d} out the receiving matrix
+				 * @param {mat2d} a the matrix to translate
+				 * @param {vec2} v the vec2 to translate the matrix by
+				 * @returns {mat2d} out
+				 **/
+				mat2d.translate = function (out, a, v) {
+					var a0 = a[0], a1 = a[1], a2 = a[2], a3 = a[3], a4 = a[4], a5 = a[5],
+						v0 = v[0], v1 = v[1];
+					out[0] = a0;
+					out[1] = a1;
+					out[2] = a2;
+					out[3] = a3;
+					out[4] = a0 * v0 + a2 * v1 + a4;
+					out[5] = a1 * v0 + a3 * v1 + a5;
+					return out;
+				};
+
+				/**
+				 * Creates a matrix from a given angle
+				 * This is equivalent to (but much faster than):
+				 *
+				 *     mat2d.identity(dest);
+				 *     mat2d.rotate(dest, dest, rad);
+				 *
+				 * @param {mat2d} out mat2d receiving operation result
+				 * @param {Number} rad the angle to rotate the matrix by
+				 * @returns {mat2d} out
+				 */
+				mat2d.fromRotation = function (out, rad) {
+					var s = Math.sin(rad), c = Math.cos(rad);
+					out[0] = c;
+					out[1] = s;
+					out[2] = -s;
+					out[3] = c;
+					out[4] = 0;
+					out[5] = 0;
+					return out;
+				}
+
+				/**
+				 * Creates a matrix from a vector scaling
+				 * This is equivalent to (but much faster than):
+				 *
+				 *     mat2d.identity(dest);
+				 *     mat2d.scale(dest, dest, vec);
+				 *
+				 * @param {mat2d} out mat2d receiving operation result
+				 * @param {vec2} v Scaling vector
+				 * @returns {mat2d} out
+				 */
+				mat2d.fromScaling = function (out, v) {
+					out[0] = v[0];
+					out[1] = 0;
+					out[2] = 0;
+					out[3] = v[1];
+					out[4] = 0;
+					out[5] = 0;
+					return out;
+				}
+
+				/**
+				 * Creates a matrix from a vector translation
+				 * This is equivalent to (but much faster than):
+				 *
+				 *     mat2d.identity(dest);
+				 *     mat2d.translate(dest, dest, vec);
+				 *
+				 * @param {mat2d} out mat2d receiving operation result
+				 * @param {vec2} v Translation vector
+				 * @returns {mat2d} out
+				 */
+				mat2d.fromTranslation = function (out, v) {
+					out[0] = 1;
+					out[1] = 0;
+					out[2] = 0;
+					out[3] = 1;
+					out[4] = v[0];
+					out[5] = v[1];
+					return out;
+				}
+
+				/**
+				 * Returns a string representation of a mat2d
+				 *
+				 * @param {mat2d} a matrix to represent as a string
+				 * @returns {String} string representation of the matrix
+				 */
+				mat2d.str = function (a) {
+					return 'mat2d(' + a[0] + ', ' + a[1] + ', ' + a[2] + ', ' +
+						a[3] + ', ' + a[4] + ', ' + a[5] + ')';
+				};
+
+				/**
+				 * Returns Frobenius norm of a mat2d
+				 *
+				 * @param {mat2d} a the matrix to calculate Frobenius norm of
+				 * @returns {Number} Frobenius norm
+				 */
+				mat2d.frob = function (a) {
+					return (Math.sqrt(Math.pow(a[0], 2) + Math.pow(a[1], 2) + Math.pow(a[2], 2) + Math.pow(a[3], 2) + Math.pow(a[4], 2) + Math.pow(a[5], 2) + 1))
+				};
+
+				module.exports = mat2d;
+
+
+				/***/
+},
+/* 4 */
+/***/ function (module, exports, __webpack_require__) {
+
+				/* Copyright (c) 2015, Brandon Jones, Colin MacKenzie IV.
+			
+				Permission is hereby granted, free of charge, to any person obtaining a copy
+				of this software and associated documentation files (the "Software"), to deal
+				in the Software without restriction, including without limitation the rights
+				to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+				copies of the Software, and to permit persons to whom the Software is
+				furnished to do so, subject to the following conditions:
+			
+				The above copyright notice and this permission notice shall be included in
+				all copies or substantial portions of the Software.
+			
+				THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+				IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+				FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+				AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+				LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+				OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+				THE SOFTWARE. */
+
+				var glMatrix = __webpack_require__(1);
+
+				/**
+				 * @class 3x3 Matrix
+				 * @name mat3
+				 */
+				var mat3 = {};
+
+				/**
+				 * Creates a new identity mat3
+				 *
+				 * @returns {mat3} a new 3x3 matrix
+				 */
+				mat3.create = function () {
+					var out = new glMatrix.ARRAY_TYPE(9);
+					out[0] = 1;
+					out[1] = 0;
+					out[2] = 0;
+					out[3] = 0;
+					out[4] = 1;
+					out[5] = 0;
+					out[6] = 0;
+					out[7] = 0;
+					out[8] = 1;
+					return out;
+				};
+
+				/**
+				 * Copies the upper-left 3x3 values into the given mat3.
+				 *
+				 * @param {mat3} out the receiving 3x3 matrix
+				 * @param {mat4} a   the source 4x4 matrix
+				 * @returns {mat3} out
+				 */
+				mat3.fromMat4 = function (out, a) {
+					out[0] = a[0];
+					out[1] = a[1];
+					out[2] = a[2];
+					out[3] = a[4];
+					out[4] = a[5];
+					out[5] = a[6];
+					out[6] = a[8];
+					out[7] = a[9];
+					out[8] = a[10];
+					return out;
+				};
+
+				/**
+				 * Creates a new mat3 initialized with values from an existing matrix
+				 *
+				 * @param {mat3} a matrix to clone
+				 * @returns {mat3} a new 3x3 matrix
+				 */
+				mat3.clone = function (a) {
+					var out = new glMatrix.ARRAY_TYPE(9);
+					out[0] = a[0];
+					out[1] = a[1];
+					out[2] = a[2];
+					out[3] = a[3];
+					out[4] = a[4];
+					out[5] = a[5];
+					out[6] = a[6];
+					out[7] = a[7];
+					out[8] = a[8];
+					return out;
+				};
+
+				/**
+				 * Copy the values from one mat3 to another
+				 *
+				 * @param {mat3} out the receiving matrix
+				 * @param {mat3} a the source matrix
+				 * @returns {mat3} out
+				 */
+				mat3.copy = function (out, a) {
+					out[0] = a[0];
+					out[1] = a[1];
+					out[2] = a[2];
+					out[3] = a[3];
+					out[4] = a[4];
+					out[5] = a[5];
+					out[6] = a[6];
+					out[7] = a[7];
+					out[8] = a[8];
+					return out;
+				};
+
+				/**
+				 * Set a mat3 to the identity matrix
+				 *
+				 * @param {mat3} out the receiving matrix
+				 * @returns {mat3} out
+				 */
+				mat3.identity = function (out) {
+					out[0] = 1;
+					out[1] = 0;
+					out[2] = 0;
+					out[3] = 0;
+					out[4] = 1;
+					out[5] = 0;
+					out[6] = 0;
+					out[7] = 0;
+					out[8] = 1;
+					return out;
+				};
+
+				/**
+				 * Transpose the values of a mat3
+				 *
+				 * @param {mat3} out the receiving matrix
+				 * @param {mat3} a the source matrix
+				 * @returns {mat3} out
+				 */
+				mat3.transpose = function (out, a) {
+					// If we are transposing ourselves we can skip a few steps but have to cache some values
+					if (out === a) {
+						var a01 = a[1], a02 = a[2], a12 = a[5];
+						out[1] = a[3];
+						out[2] = a[6];
+						out[3] = a01;
+						out[5] = a[7];
+						out[6] = a02;
+						out[7] = a12;
+					} else {
+						out[0] = a[0];
+						out[1] = a[3];
+						out[2] = a[6];
+						out[3] = a[1];
+						out[4] = a[4];
+						out[5] = a[7];
+						out[6] = a[2];
+						out[7] = a[5];
+						out[8] = a[8];
+					}
+
+					return out;
+				};
+
+				/**
+				 * Inverts a mat3
+				 *
+				 * @param {mat3} out the receiving matrix
+				 * @param {mat3} a the source matrix
+				 * @returns {mat3} out
+				 */
+				mat3.invert = function (out, a) {
+					var a00 = a[0], a01 = a[1], a02 = a[2],
+						a10 = a[3], a11 = a[4], a12 = a[5],
+						a20 = a[6], a21 = a[7], a22 = a[8],
+
+						b01 = a22 * a11 - a12 * a21,
+						b11 = -a22 * a10 + a12 * a20,
+						b21 = a21 * a10 - a11 * a20,
+
+						// Calculate the determinant
+						det = a00 * b01 + a01 * b11 + a02 * b21;
+
+					if (!det) {
+						return null;
+					}
+					det = 1.0 / det;
+
+					out[0] = b01 * det;
+					out[1] = (-a22 * a01 + a02 * a21) * det;
+					out[2] = (a12 * a01 - a02 * a11) * det;
+					out[3] = b11 * det;
+					out[4] = (a22 * a00 - a02 * a20) * det;
+					out[5] = (-a12 * a00 + a02 * a10) * det;
+					out[6] = b21 * det;
+					out[7] = (-a21 * a00 + a01 * a20) * det;
+					out[8] = (a11 * a00 - a01 * a10) * det;
+					return out;
+				};
+
+				/**
+				 * Calculates the adjugate of a mat3
+				 *
+				 * @param {mat3} out the receiving matrix
+				 * @param {mat3} a the source matrix
+				 * @returns {mat3} out
+				 */
+				mat3.adjoint = function (out, a) {
+					var a00 = a[0], a01 = a[1], a02 = a[2],
+						a10 = a[3], a11 = a[4], a12 = a[5],
+						a20 = a[6], a21 = a[7], a22 = a[8];
+
+					out[0] = (a11 * a22 - a12 * a21);
+					out[1] = (a02 * a21 - a01 * a22);
+					out[2] = (a01 * a12 - a02 * a11);
+					out[3] = (a12 * a20 - a10 * a22);
+					out[4] = (a00 * a22 - a02 * a20);
+					out[5] = (a02 * a10 - a00 * a12);
+					out[6] = (a10 * a21 - a11 * a20);
+					out[7] = (a01 * a20 - a00 * a21);
+					out[8] = (a00 * a11 - a01 * a10);
+					return out;
+				};
+
+				/**
+				 * Calculates the determinant of a mat3
+				 *
+				 * @param {mat3} a the source matrix
+				 * @returns {Number} determinant of a
+				 */
+				mat3.determinant = function (a) {
+					var a00 = a[0], a01 = a[1], a02 = a[2],
+						a10 = a[3], a11 = a[4], a12 = a[5],
+						a20 = a[6], a21 = a[7], a22 = a[8];
+
+					return a00 * (a22 * a11 - a12 * a21) + a01 * (-a22 * a10 + a12 * a20) + a02 * (a21 * a10 - a11 * a20);
+				};
+
+				/**
+				 * Multiplies two mat3's
+				 *
+				 * @param {mat3} out the receiving matrix
+				 * @param {mat3} a the first operand
+				 * @param {mat3} b the second operand
+				 * @returns {mat3} out
+				 */
+				mat3.multiply = function (out, a, b) {
+					var a00 = a[0], a01 = a[1], a02 = a[2],
+						a10 = a[3], a11 = a[4], a12 = a[5],
+						a20 = a[6], a21 = a[7], a22 = a[8],
+
+						b00 = b[0], b01 = b[1], b02 = b[2],
+						b10 = b[3], b11 = b[4], b12 = b[5],
+						b20 = b[6], b21 = b[7], b22 = b[8];
+
+					out[0] = b00 * a00 + b01 * a10 + b02 * a20;
+					out[1] = b00 * a01 + b01 * a11 + b02 * a21;
+					out[2] = b00 * a02 + b01 * a12 + b02 * a22;
+
+					out[3] = b10 * a00 + b11 * a10 + b12 * a20;
+					out[4] = b10 * a01 + b11 * a11 + b12 * a21;
+					out[5] = b10 * a02 + b11 * a12 + b12 * a22;
+
+					out[6] = b20 * a00 + b21 * a10 + b22 * a20;
+					out[7] = b20 * a01 + b21 * a11 + b22 * a21;
+					out[8] = b20 * a02 + b21 * a12 + b22 * a22;
+					return out;
+				};
+
+				/**
+				 * Alias for {@link mat3.multiply}
+				 * @function
+				 */
+				mat3.mul = mat3.multiply;
+
+				/**
+				 * Translate a mat3 by the given vector
+				 *
+				 * @param {mat3} out the receiving matrix
+				 * @param {mat3} a the matrix to translate
+				 * @param {vec2} v vector to translate by
+				 * @returns {mat3} out
+				 */
+				mat3.translate = function (out, a, v) {
+					var a00 = a[0], a01 = a[1], a02 = a[2],
+						a10 = a[3], a11 = a[4], a12 = a[5],
+						a20 = a[6], a21 = a[7], a22 = a[8],
+						x = v[0], y = v[1];
+
+					out[0] = a00;
+					out[1] = a01;
+					out[2] = a02;
+
+					out[3] = a10;
+					out[4] = a11;
+					out[5] = a12;
+
+					out[6] = x * a00 + y * a10 + a20;
+					out[7] = x * a01 + y * a11 + a21;
+					out[8] = x * a02 + y * a12 + a22;
+					return out;
+				};
+
+				/**
+				 * Rotates a mat3 by the given angle
+				 *
+				 * @param {mat3} out the receiving matrix
+				 * @param {mat3} a the matrix to rotate
+				 * @param {Number} rad the angle to rotate the matrix by
+				 * @returns {mat3} out
+				 */
+				mat3.rotate = function (out, a, rad) {
+					var a00 = a[0], a01 = a[1], a02 = a[2],
+						a10 = a[3], a11 = a[4], a12 = a[5],
+						a20 = a[6], a21 = a[7], a22 = a[8],
+
+						s = Math.sin(rad),
+						c = Math.cos(rad);
+
+					out[0] = c * a00 + s * a10;
+					out[1] = c * a01 + s * a11;
+					out[2] = c * a02 + s * a12;
+
+					out[3] = c * a10 - s * a00;
+					out[4] = c * a11 - s * a01;
+					out[5] = c * a12 - s * a02;
+
+					out[6] = a20;
+					out[7] = a21;
+					out[8] = a22;
+					return out;
+				};
+
+				/**
+				 * Scales the mat3 by the dimensions in the given vec2
+				 *
+				 * @param {mat3} out the receiving matrix
+				 * @param {mat3} a the matrix to rotate
+				 * @param {vec2} v the vec2 to scale the matrix by
+				 * @returns {mat3} out
+				 **/
+				mat3.scale = function (out, a, v) {
+					var x = v[0], y = v[1];
+
+					out[0] = x * a[0];
+					out[1] = x * a[1];
+					out[2] = x * a[2];
+
+					out[3] = y * a[3];
+					out[4] = y * a[4];
+					out[5] = y * a[5];
+
+					out[6] = a[6];
+					out[7] = a[7];
+					out[8] = a[8];
+					return out;
+				};
+
+				/**
+				 * Creates a matrix from a vector translation
+				 * This is equivalent to (but much faster than):
+				 *
+				 *     mat3.identity(dest);
+				 *     mat3.translate(dest, dest, vec);
+				 *
+				 * @param {mat3} out mat3 receiving operation result
+				 * @param {vec2} v Translation vector
+				 * @returns {mat3} out
+				 */
+				mat3.fromTranslation = function (out, v) {
+					out[0] = 1;
+					out[1] = 0;
+					out[2] = 0;
+					out[3] = 0;
+					out[4] = 1;
+					out[5] = 0;
+					out[6] = v[0];
+					out[7] = v[1];
+					out[8] = 1;
+					return out;
+				}
+
+				/**
+				 * Creates a matrix from a given angle
+				 * This is equivalent to (but much faster than):
+				 *
+				 *     mat3.identity(dest);
+				 *     mat3.rotate(dest, dest, rad);
+				 *
+				 * @param {mat3} out mat3 receiving operation result
+				 * @param {Number} rad the angle to rotate the matrix by
+				 * @returns {mat3} out
+				 */
+				mat3.fromRotation = function (out, rad) {
+					var s = Math.sin(rad), c = Math.cos(rad);
+
+					out[0] = c;
+					out[1] = s;
+					out[2] = 0;
+
+					out[3] = -s;
+					out[4] = c;
+					out[5] = 0;
+
+					out[6] = 0;
+					out[7] = 0;
+					out[8] = 1;
+					return out;
+				}
+
+				/**
+				 * Creates a matrix from a vector scaling
+				 * This is equivalent to (but much faster than):
+				 *
+				 *     mat3.identity(dest);
+				 *     mat3.scale(dest, dest, vec);
+				 *
+				 * @param {mat3} out mat3 receiving operation result
+				 * @param {vec2} v Scaling vector
+				 * @returns {mat3} out
+				 */
+				mat3.fromScaling = function (out, v) {
+					out[0] = v[0];
+					out[1] = 0;
+					out[2] = 0;
+
+					out[3] = 0;
+					out[4] = v[1];
+					out[5] = 0;
+
+					out[6] = 0;
+					out[7] = 0;
+					out[8] = 1;
+					return out;
+				}
+
+				/**
+				 * Copies the values from a mat2d into a mat3
+				 *
+				 * @param {mat3} out the receiving matrix
+				 * @param {mat2d} a the matrix to copy
+				 * @returns {mat3} out
+				 **/
+				mat3.fromMat2d = function (out, a) {
+					out[0] = a[0];
+					out[1] = a[1];
+					out[2] = 0;
+
+					out[3] = a[2];
+					out[4] = a[3];
+					out[5] = 0;
+
+					out[6] = a[4];
+					out[7] = a[5];
+					out[8] = 1;
+					return out;
+				};
+
+				/**
+				* Calculates a 3x3 matrix from the given quaternion
+				*
+				* @param {mat3} out mat3 receiving operation result
+				* @param {quat} q Quaternion to create matrix from
+				*
+				* @returns {mat3} out
+				*/
+				mat3.fromQuat = function (out, q) {
+					var x = q[0], y = q[1], z = q[2], w = q[3],
+						x2 = x + x,
+						y2 = y + y,
+						z2 = z + z,
+
+						xx = x * x2,
+						yx = y * x2,
+						yy = y * y2,
+						zx = z * x2,
+						zy = z * y2,
+						zz = z * z2,
+						wx = w * x2,
+						wy = w * y2,
+						wz = w * z2;
+
+					out[0] = 1 - yy - zz;
+					out[3] = yx - wz;
+					out[6] = zx + wy;
+
+					out[1] = yx + wz;
+					out[4] = 1 - xx - zz;
+					out[7] = zy - wx;
+
+					out[2] = zx - wy;
+					out[5] = zy + wx;
+					out[8] = 1 - xx - yy;
+
+					return out;
+				};
+
+				/**
+				* Calculates a 3x3 normal matrix (transpose inverse) from the 4x4 matrix
+				*
+				* @param {mat3} out mat3 receiving operation result
+				* @param {mat4} a Mat4 to derive the normal matrix from
+				*
+				* @returns {mat3} out
+				*/
+				mat3.normalFromMat4 = function (out, a) {
+					var a00 = a[0], a01 = a[1], a02 = a[2], a03 = a[3],
+						a10 = a[4], a11 = a[5], a12 = a[6], a13 = a[7],
+						a20 = a[8], a21 = a[9], a22 = a[10], a23 = a[11],
+						a30 = a[12], a31 = a[13], a32 = a[14], a33 = a[15],
+
+						b00 = a00 * a11 - a01 * a10,
+						b01 = a00 * a12 - a02 * a10,
+						b02 = a00 * a13 - a03 * a10,
+						b03 = a01 * a12 - a02 * a11,
+						b04 = a01 * a13 - a03 * a11,
+						b05 = a02 * a13 - a03 * a12,
+						b06 = a20 * a31 - a21 * a30,
+						b07 = a20 * a32 - a22 * a30,
+						b08 = a20 * a33 - a23 * a30,
+						b09 = a21 * a32 - a22 * a31,
+						b10 = a21 * a33 - a23 * a31,
+						b11 = a22 * a33 - a23 * a32,
+
+						// Calculate the determinant
+						det = b00 * b11 - b01 * b10 + b02 * b09 + b03 * b08 - b04 * b07 + b05 * b06;
+
+					if (!det) {
+						return null;
+					}
+					det = 1.0 / det;
+
+					out[0] = (a11 * b11 - a12 * b10 + a13 * b09) * det;
+					out[1] = (a12 * b08 - a10 * b11 - a13 * b07) * det;
+					out[2] = (a10 * b10 - a11 * b08 + a13 * b06) * det;
+
+					out[3] = (a02 * b10 - a01 * b11 - a03 * b09) * det;
+					out[4] = (a00 * b11 - a02 * b08 + a03 * b07) * det;
+					out[5] = (a01 * b08 - a00 * b10 - a03 * b06) * det;
+
+					out[6] = (a31 * b05 - a32 * b04 + a33 * b03) * det;
+					out[7] = (a32 * b02 - a30 * b05 - a33 * b01) * det;
+					out[8] = (a30 * b04 - a31 * b02 + a33 * b00) * det;
+
+					return out;
+				};
+
+				/**
+				 * Returns a string representation of a mat3
+				 *
+				 * @param {mat3} mat matrix to represent as a string
+				 * @returns {String} string representation of the matrix
+				 */
+				mat3.str = function (a) {
+					return 'mat3(' + a[0] + ', ' + a[1] + ', ' + a[2] + ', ' +
+						a[3] + ', ' + a[4] + ', ' + a[5] + ', ' +
+						a[6] + ', ' + a[7] + ', ' + a[8] + ')';
+				};
+
+				/**
+				 * Returns Frobenius norm of a mat3
+				 *
+				 * @param {mat3} a the matrix to calculate Frobenius norm of
+				 * @returns {Number} Frobenius norm
+				 */
+				mat3.frob = function (a) {
+					return (Math.sqrt(Math.pow(a[0], 2) + Math.pow(a[1], 2) + Math.pow(a[2], 2) + Math.pow(a[3], 2) + Math.pow(a[4], 2) + Math.pow(a[5], 2) + Math.pow(a[6], 2) + Math.pow(a[7], 2) + Math.pow(a[8], 2)))
+				};
+
+
+				module.exports = mat3;
+
+
+				/***/
+},
+/* 5 */
+/***/ function (module, exports, __webpack_require__) {
+
+				/* Copyright (c) 2015, Brandon Jones, Colin MacKenzie IV.
+			
+				Permission is hereby granted, free of charge, to any person obtaining a copy
+				of this software and associated documentation files (the "Software"), to deal
+				in the Software without restriction, including without limitation the rights
+				to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+				copies of the Software, and to permit persons to whom the Software is
+				furnished to do so, subject to the following conditions:
+			
+				The above copyright notice and this permission notice shall be included in
+				all copies or substantial portions of the Software.
+			
+				THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+				IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+				FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+				AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+				LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+				OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+				THE SOFTWARE. */
+
+				var glMatrix = __webpack_require__(1);
+
+				/**
+				 * @class 4x4 Matrix
+				 * @name mat4
+				 */
+				var mat4 = {
+					scalar: {},
+					SIMD: {},
+				};
+
+				/**
+				 * Creates a new identity mat4
+				 *
+				 * @returns {mat4} a new 4x4 matrix
+				 */
+				mat4.create = function () {
+					var out = new glMatrix.ARRAY_TYPE(16);
+					out[0] = 1;
+					out[1] = 0;
+					out[2] = 0;
+					out[3] = 0;
+					out[4] = 0;
+					out[5] = 1;
+					out[6] = 0;
+					out[7] = 0;
+					out[8] = 0;
+					out[9] = 0;
+					out[10] = 1;
+					out[11] = 0;
+					out[12] = 0;
+					out[13] = 0;
+					out[14] = 0;
+					out[15] = 1;
+					return out;
+				};
+
+				/**
+				 * Creates a new mat4 initialized with values from an existing matrix
+				 *
+				 * @param {mat4} a matrix to clone
+				 * @returns {mat4} a new 4x4 matrix
+				 */
+				mat4.clone = function (a) {
+					var out = new glMatrix.ARRAY_TYPE(16);
+					out[0] = a[0];
+					out[1] = a[1];
+					out[2] = a[2];
+					out[3] = a[3];
+					out[4] = a[4];
+					out[5] = a[5];
+					out[6] = a[6];
+					out[7] = a[7];
+					out[8] = a[8];
+					out[9] = a[9];
+					out[10] = a[10];
+					out[11] = a[11];
+					out[12] = a[12];
+					out[13] = a[13];
+					out[14] = a[14];
+					out[15] = a[15];
+					return out;
+				};
+
+				/**
+				 * Copy the values from one mat4 to another
+				 *
+				 * @param {mat4} out the receiving matrix
+				 * @param {mat4} a the source matrix
+				 * @returns {mat4} out
+				 */
+				mat4.copy = function (out, a) {
+					out[0] = a[0];
+					out[1] = a[1];
+					out[2] = a[2];
+					out[3] = a[3];
+					out[4] = a[4];
+					out[5] = a[5];
+					out[6] = a[6];
+					out[7] = a[7];
+					out[8] = a[8];
+					out[9] = a[9];
+					out[10] = a[10];
+					out[11] = a[11];
+					out[12] = a[12];
+					out[13] = a[13];
+					out[14] = a[14];
+					out[15] = a[15];
+					return out;
+				};
+
+				/**
+				 * Set a mat4 to the identity matrix
+				 *
+				 * @param {mat4} out the receiving matrix
+				 * @returns {mat4} out
+				 */
+				mat4.identity = function (out) {
+					out[0] = 1;
+					out[1] = 0;
+					out[2] = 0;
+					out[3] = 0;
+					out[4] = 0;
+					out[5] = 1;
+					out[6] = 0;
+					out[7] = 0;
+					out[8] = 0;
+					out[9] = 0;
+					out[10] = 1;
+					out[11] = 0;
+					out[12] = 0;
+					out[13] = 0;
+					out[14] = 0;
+					out[15] = 1;
+					return out;
+				};
+
+				/**
+				 * Transpose the values of a mat4 not using SIMD
+				 *
+				 * @param {mat4} out the receiving matrix
+				 * @param {mat4} a the source matrix
+				 * @returns {mat4} out
+				 */
+				mat4.scalar.transpose = function (out, a) {
+					// If we are transposing ourselves we can skip a few steps but have to cache some values
+					if (out === a) {
+						var a01 = a[1], a02 = a[2], a03 = a[3],
+							a12 = a[6], a13 = a[7],
+							a23 = a[11];
+
+						out[1] = a[4];
+						out[2] = a[8];
+						out[3] = a[12];
+						out[4] = a01;
+						out[6] = a[9];
+						out[7] = a[13];
+						out[8] = a02;
+						out[9] = a12;
+						out[11] = a[14];
+						out[12] = a03;
+						out[13] = a13;
+						out[14] = a23;
+					} else {
+						out[0] = a[0];
+						out[1] = a[4];
+						out[2] = a[8];
+						out[3] = a[12];
+						out[4] = a[1];
+						out[5] = a[5];
+						out[6] = a[9];
+						out[7] = a[13];
+						out[8] = a[2];
+						out[9] = a[6];
+						out[10] = a[10];
+						out[11] = a[14];
+						out[12] = a[3];
+						out[13] = a[7];
+						out[14] = a[11];
+						out[15] = a[15];
+					}
+
+					return out;
+				};
+
+				/**
+				 * Transpose the values of a mat4 using SIMD
+				 *
+				 * @param {mat4} out the receiving matrix
+				 * @param {mat4} a the source matrix
+				 * @returns {mat4} out
+				 */
+				mat4.SIMD.transpose = function (out, a) {
+					var a0, a1, a2, a3,
+						tmp01, tmp23,
+						out0, out1, out2, out3;
+
+					a0 = SIMD.Float32x4.load(a, 0);
+					a1 = SIMD.Float32x4.load(a, 4);
+					a2 = SIMD.Float32x4.load(a, 8);
+					a3 = SIMD.Float32x4.load(a, 12);
+
+					tmp01 = SIMD.Float32x4.shuffle(a0, a1, 0, 1, 4, 5);
+					tmp23 = SIMD.Float32x4.shuffle(a2, a3, 0, 1, 4, 5);
+					out0 = SIMD.Float32x4.shuffle(tmp01, tmp23, 0, 2, 4, 6);
+					out1 = SIMD.Float32x4.shuffle(tmp01, tmp23, 1, 3, 5, 7);
+					SIMD.Float32x4.store(out, 0, out0);
+					SIMD.Float32x4.store(out, 4, out1);
+
+					tmp01 = SIMD.Float32x4.shuffle(a0, a1, 2, 3, 6, 7);
+					tmp23 = SIMD.Float32x4.shuffle(a2, a3, 2, 3, 6, 7);
+					out2 = SIMD.Float32x4.shuffle(tmp01, tmp23, 0, 2, 4, 6);
+					out3 = SIMD.Float32x4.shuffle(tmp01, tmp23, 1, 3, 5, 7);
+					SIMD.Float32x4.store(out, 8, out2);
+					SIMD.Float32x4.store(out, 12, out3);
+
+					return out;
+				};
+
+				/**
+				 * Transpse a mat4 using SIMD if available and enabled
+				 *
+				 * @param {mat4} out the receiving matrix
+				 * @param {mat4} a the source matrix
+				 * @returns {mat4} out
+				 */
+				mat4.transpose = glMatrix.USE_SIMD ? mat4.SIMD.transpose : mat4.scalar.transpose;
+
+				/**
+				 * Inverts a mat4 not using SIMD
+				 *
+				 * @param {mat4} out the receiving matrix
+				 * @param {mat4} a the source matrix
+				 * @returns {mat4} out
+				 */
+				mat4.scalar.invert = function (out, a) {
+					var a00 = a[0], a01 = a[1], a02 = a[2], a03 = a[3],
+						a10 = a[4], a11 = a[5], a12 = a[6], a13 = a[7],
+						a20 = a[8], a21 = a[9], a22 = a[10], a23 = a[11],
+						a30 = a[12], a31 = a[13], a32 = a[14], a33 = a[15],
+
+						b00 = a00 * a11 - a01 * a10,
+						b01 = a00 * a12 - a02 * a10,
+						b02 = a00 * a13 - a03 * a10,
+						b03 = a01 * a12 - a02 * a11,
+						b04 = a01 * a13 - a03 * a11,
+						b05 = a02 * a13 - a03 * a12,
+						b06 = a20 * a31 - a21 * a30,
+						b07 = a20 * a32 - a22 * a30,
+						b08 = a20 * a33 - a23 * a30,
+						b09 = a21 * a32 - a22 * a31,
+						b10 = a21 * a33 - a23 * a31,
+						b11 = a22 * a33 - a23 * a32,
+
+						// Calculate the determinant
+						det = b00 * b11 - b01 * b10 + b02 * b09 + b03 * b08 - b04 * b07 + b05 * b06;
+
+					if (!det) {
+						return null;
+					}
+					det = 1.0 / det;
+
+					out[0] = (a11 * b11 - a12 * b10 + a13 * b09) * det;
+					out[1] = (a02 * b10 - a01 * b11 - a03 * b09) * det;
+					out[2] = (a31 * b05 - a32 * b04 + a33 * b03) * det;
+					out[3] = (a22 * b04 - a21 * b05 - a23 * b03) * det;
+					out[4] = (a12 * b08 - a10 * b11 - a13 * b07) * det;
+					out[5] = (a00 * b11 - a02 * b08 + a03 * b07) * det;
+					out[6] = (a32 * b02 - a30 * b05 - a33 * b01) * det;
+					out[7] = (a20 * b05 - a22 * b02 + a23 * b01) * det;
+					out[8] = (a10 * b10 - a11 * b08 + a13 * b06) * det;
+					out[9] = (a01 * b08 - a00 * b10 - a03 * b06) * det;
+					out[10] = (a30 * b04 - a31 * b02 + a33 * b00) * det;
+					out[11] = (a21 * b02 - a20 * b04 - a23 * b00) * det;
+					out[12] = (a11 * b07 - a10 * b09 - a12 * b06) * det;
+					out[13] = (a00 * b09 - a01 * b07 + a02 * b06) * det;
+					out[14] = (a31 * b01 - a30 * b03 - a32 * b00) * det;
+					out[15] = (a20 * b03 - a21 * b01 + a22 * b00) * det;
+
+					return out;
+				};
+
+				/**
+				 * Inverts a mat4 using SIMD
+				 *
+				 * @param {mat4} out the receiving matrix
+				 * @param {mat4} a the source matrix
+				 * @returns {mat4} out
+				 */
+				mat4.SIMD.invert = function (out, a) {
+					var row0, row1, row2, row3,
+						tmp1,
+						minor0, minor1, minor2, minor3,
+						det,
+						a0 = SIMD.Float32x4.load(a, 0),
+						a1 = SIMD.Float32x4.load(a, 4),
+						a2 = SIMD.Float32x4.load(a, 8),
+						a3 = SIMD.Float32x4.load(a, 12);
+
+					// Compute matrix adjugate
+					tmp1 = SIMD.Float32x4.shuffle(a0, a1, 0, 1, 4, 5);
+					row1 = SIMD.Float32x4.shuffle(a2, a3, 0, 1, 4, 5);
+					row0 = SIMD.Float32x4.shuffle(tmp1, row1, 0, 2, 4, 6);
+					row1 = SIMD.Float32x4.shuffle(row1, tmp1, 1, 3, 5, 7);
+					tmp1 = SIMD.Float32x4.shuffle(a0, a1, 2, 3, 6, 7);
+					row3 = SIMD.Float32x4.shuffle(a2, a3, 2, 3, 6, 7);
+					row2 = SIMD.Float32x4.shuffle(tmp1, row3, 0, 2, 4, 6);
+					row3 = SIMD.Float32x4.shuffle(row3, tmp1, 1, 3, 5, 7);
+
+					tmp1 = SIMD.Float32x4.mul(row2, row3);
+					tmp1 = SIMD.Float32x4.swizzle(tmp1, 1, 0, 3, 2);
+					minor0 = SIMD.Float32x4.mul(row1, tmp1);
+					minor1 = SIMD.Float32x4.mul(row0, tmp1);
+					tmp1 = SIMD.Float32x4.swizzle(tmp1, 2, 3, 0, 1);
+					minor0 = SIMD.Float32x4.sub(SIMD.Float32x4.mul(row1, tmp1), minor0);
+					minor1 = SIMD.Float32x4.sub(SIMD.Float32x4.mul(row0, tmp1), minor1);
+					minor1 = SIMD.Float32x4.swizzle(minor1, 2, 3, 0, 1);
+
+					tmp1 = SIMD.Float32x4.mul(row1, row2);
+					tmp1 = SIMD.Float32x4.swizzle(tmp1, 1, 0, 3, 2);
+					minor0 = SIMD.Float32x4.add(SIMD.Float32x4.mul(row3, tmp1), minor0);
+					minor3 = SIMD.Float32x4.mul(row0, tmp1);
+					tmp1 = SIMD.Float32x4.swizzle(tmp1, 2, 3, 0, 1);
+					minor0 = SIMD.Float32x4.sub(minor0, SIMD.Float32x4.mul(row3, tmp1));
+					minor3 = SIMD.Float32x4.sub(SIMD.Float32x4.mul(row0, tmp1), minor3);
+					minor3 = SIMD.Float32x4.swizzle(minor3, 2, 3, 0, 1);
+
+					tmp1 = SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(row1, 2, 3, 0, 1), row3);
+					tmp1 = SIMD.Float32x4.swizzle(tmp1, 1, 0, 3, 2);
+					row2 = SIMD.Float32x4.swizzle(row2, 2, 3, 0, 1);
+					minor0 = SIMD.Float32x4.add(SIMD.Float32x4.mul(row2, tmp1), minor0);
+					minor2 = SIMD.Float32x4.mul(row0, tmp1);
+					tmp1 = SIMD.Float32x4.swizzle(tmp1, 2, 3, 0, 1);
+					minor0 = SIMD.Float32x4.sub(minor0, SIMD.Float32x4.mul(row2, tmp1));
+					minor2 = SIMD.Float32x4.sub(SIMD.Float32x4.mul(row0, tmp1), minor2);
+					minor2 = SIMD.Float32x4.swizzle(minor2, 2, 3, 0, 1);
+
+					tmp1 = SIMD.Float32x4.mul(row0, row1);
+					tmp1 = SIMD.Float32x4.swizzle(tmp1, 1, 0, 3, 2);
+					minor2 = SIMD.Float32x4.add(SIMD.Float32x4.mul(row3, tmp1), minor2);
+					minor3 = SIMD.Float32x4.sub(SIMD.Float32x4.mul(row2, tmp1), minor3);
+					tmp1 = SIMD.Float32x4.swizzle(tmp1, 2, 3, 0, 1);
+					minor2 = SIMD.Float32x4.sub(SIMD.Float32x4.mul(row3, tmp1), minor2);
+					minor3 = SIMD.Float32x4.sub(minor3, SIMD.Float32x4.mul(row2, tmp1));
+
+					tmp1 = SIMD.Float32x4.mul(row0, row3);
+					tmp1 = SIMD.Float32x4.swizzle(tmp1, 1, 0, 3, 2);
+					minor1 = SIMD.Float32x4.sub(minor1, SIMD.Float32x4.mul(row2, tmp1));
+					minor2 = SIMD.Float32x4.add(SIMD.Float32x4.mul(row1, tmp1), minor2);
+					tmp1 = SIMD.Float32x4.swizzle(tmp1, 2, 3, 0, 1);
+					minor1 = SIMD.Float32x4.add(SIMD.Float32x4.mul(row2, tmp1), minor1);
+					minor2 = SIMD.Float32x4.sub(minor2, SIMD.Float32x4.mul(row1, tmp1));
+
+					tmp1 = SIMD.Float32x4.mul(row0, row2);
+					tmp1 = SIMD.Float32x4.swizzle(tmp1, 1, 0, 3, 2);
+					minor1 = SIMD.Float32x4.add(SIMD.Float32x4.mul(row3, tmp1), minor1);
+					minor3 = SIMD.Float32x4.sub(minor3, SIMD.Float32x4.mul(row1, tmp1));
+					tmp1 = SIMD.Float32x4.swizzle(tmp1, 2, 3, 0, 1);
+					minor1 = SIMD.Float32x4.sub(minor1, SIMD.Float32x4.mul(row3, tmp1));
+					minor3 = SIMD.Float32x4.add(SIMD.Float32x4.mul(row1, tmp1), minor3);
+
+					// Compute matrix determinant
+					det = SIMD.Float32x4.mul(row0, minor0);
+					det = SIMD.Float32x4.add(SIMD.Float32x4.swizzle(det, 2, 3, 0, 1), det);
+					det = SIMD.Float32x4.add(SIMD.Float32x4.swizzle(det, 1, 0, 3, 2), det);
+					tmp1 = SIMD.Float32x4.reciprocalApproximation(det);
+					det = SIMD.Float32x4.sub(
+						SIMD.Float32x4.add(tmp1, tmp1),
+						SIMD.Float32x4.mul(det, SIMD.Float32x4.mul(tmp1, tmp1)));
+					det = SIMD.Float32x4.swizzle(det, 0, 0, 0, 0);
+					if (!det) {
+						return null;
+					}
+
+					// Compute matrix inverse
+					SIMD.Float32x4.store(out, 0, SIMD.Float32x4.mul(det, minor0));
+					SIMD.Float32x4.store(out, 4, SIMD.Float32x4.mul(det, minor1));
+					SIMD.Float32x4.store(out, 8, SIMD.Float32x4.mul(det, minor2));
+					SIMD.Float32x4.store(out, 12, SIMD.Float32x4.mul(det, minor3));
+					return out;
+				}
+
+				/**
+				 * Inverts a mat4 using SIMD if available and enabled
+				 *
+				 * @param {mat4} out the receiving matrix
+				 * @param {mat4} a the source matrix
+				 * @returns {mat4} out
+				 */
+				mat4.invert = glMatrix.USE_SIMD ? mat4.SIMD.invert : mat4.scalar.invert;
+
+				/**
+				 * Calculates the adjugate of a mat4 not using SIMD
+				 *
+				 * @param {mat4} out the receiving matrix
+				 * @param {mat4} a the source matrix
+				 * @returns {mat4} out
+				 */
+				mat4.scalar.adjoint = function (out, a) {
+					var a00 = a[0], a01 = a[1], a02 = a[2], a03 = a[3],
+						a10 = a[4], a11 = a[5], a12 = a[6], a13 = a[7],
+						a20 = a[8], a21 = a[9], a22 = a[10], a23 = a[11],
+						a30 = a[12], a31 = a[13], a32 = a[14], a33 = a[15];
+
+					out[0] = (a11 * (a22 * a33 - a23 * a32) - a21 * (a12 * a33 - a13 * a32) + a31 * (a12 * a23 - a13 * a22));
+					out[1] = -(a01 * (a22 * a33 - a23 * a32) - a21 * (a02 * a33 - a03 * a32) + a31 * (a02 * a23 - a03 * a22));
+					out[2] = (a01 * (a12 * a33 - a13 * a32) - a11 * (a02 * a33 - a03 * a32) + a31 * (a02 * a13 - a03 * a12));
+					out[3] = -(a01 * (a12 * a23 - a13 * a22) - a11 * (a02 * a23 - a03 * a22) + a21 * (a02 * a13 - a03 * a12));
+					out[4] = -(a10 * (a22 * a33 - a23 * a32) - a20 * (a12 * a33 - a13 * a32) + a30 * (a12 * a23 - a13 * a22));
+					out[5] = (a00 * (a22 * a33 - a23 * a32) - a20 * (a02 * a33 - a03 * a32) + a30 * (a02 * a23 - a03 * a22));
+					out[6] = -(a00 * (a12 * a33 - a13 * a32) - a10 * (a02 * a33 - a03 * a32) + a30 * (a02 * a13 - a03 * a12));
+					out[7] = (a00 * (a12 * a23 - a13 * a22) - a10 * (a02 * a23 - a03 * a22) + a20 * (a02 * a13 - a03 * a12));
+					out[8] = (a10 * (a21 * a33 - a23 * a31) - a20 * (a11 * a33 - a13 * a31) + a30 * (a11 * a23 - a13 * a21));
+					out[9] = -(a00 * (a21 * a33 - a23 * a31) - a20 * (a01 * a33 - a03 * a31) + a30 * (a01 * a23 - a03 * a21));
+					out[10] = (a00 * (a11 * a33 - a13 * a31) - a10 * (a01 * a33 - a03 * a31) + a30 * (a01 * a13 - a03 * a11));
+					out[11] = -(a00 * (a11 * a23 - a13 * a21) - a10 * (a01 * a23 - a03 * a21) + a20 * (a01 * a13 - a03 * a11));
+					out[12] = -(a10 * (a21 * a32 - a22 * a31) - a20 * (a11 * a32 - a12 * a31) + a30 * (a11 * a22 - a12 * a21));
+					out[13] = (a00 * (a21 * a32 - a22 * a31) - a20 * (a01 * a32 - a02 * a31) + a30 * (a01 * a22 - a02 * a21));
+					out[14] = -(a00 * (a11 * a32 - a12 * a31) - a10 * (a01 * a32 - a02 * a31) + a30 * (a01 * a12 - a02 * a11));
+					out[15] = (a00 * (a11 * a22 - a12 * a21) - a10 * (a01 * a22 - a02 * a21) + a20 * (a01 * a12 - a02 * a11));
+					return out;
+				};
+
+				/**
+				 * Calculates the adjugate of a mat4 using SIMD
+				 *
+				 * @param {mat4} out the receiving matrix
+				 * @param {mat4} a the source matrix
+				 * @returns {mat4} out
+				 */
+				mat4.SIMD.adjoint = function (out, a) {
+					var a0, a1, a2, a3;
+					var row0, row1, row2, row3;
+					var tmp1;
+					var minor0, minor1, minor2, minor3;
+
+					var a0 = SIMD.Float32x4.load(a, 0);
+					var a1 = SIMD.Float32x4.load(a, 4);
+					var a2 = SIMD.Float32x4.load(a, 8);
+					var a3 = SIMD.Float32x4.load(a, 12);
+
+					// Transpose the source matrix.  Sort of.  Not a true transpose operation
+					tmp1 = SIMD.Float32x4.shuffle(a0, a1, 0, 1, 4, 5);
+					row1 = SIMD.Float32x4.shuffle(a2, a3, 0, 1, 4, 5);
+					row0 = SIMD.Float32x4.shuffle(tmp1, row1, 0, 2, 4, 6);
+					row1 = SIMD.Float32x4.shuffle(row1, tmp1, 1, 3, 5, 7);
+
+					tmp1 = SIMD.Float32x4.shuffle(a0, a1, 2, 3, 6, 7);
+					row3 = SIMD.Float32x4.shuffle(a2, a3, 2, 3, 6, 7);
+					row2 = SIMD.Float32x4.shuffle(tmp1, row3, 0, 2, 4, 6);
+					row3 = SIMD.Float32x4.shuffle(row3, tmp1, 1, 3, 5, 7);
+
+					tmp1 = SIMD.Float32x4.mul(row2, row3);
+					tmp1 = SIMD.Float32x4.swizzle(tmp1, 1, 0, 3, 2);
+					minor0 = SIMD.Float32x4.mul(row1, tmp1);
+					minor1 = SIMD.Float32x4.mul(row0, tmp1);
+					tmp1 = SIMD.Float32x4.swizzle(tmp1, 2, 3, 0, 1);
+					minor0 = SIMD.Float32x4.sub(SIMD.Float32x4.mul(row1, tmp1), minor0);
+					minor1 = SIMD.Float32x4.sub(SIMD.Float32x4.mul(row0, tmp1), minor1);
+					minor1 = SIMD.Float32x4.swizzle(minor1, 2, 3, 0, 1);
+
+					tmp1 = SIMD.Float32x4.mul(row1, row2);
+					tmp1 = SIMD.Float32x4.swizzle(tmp1, 1, 0, 3, 2);
+					minor0 = SIMD.Float32x4.add(SIMD.Float32x4.mul(row3, tmp1), minor0);
+					minor3 = SIMD.Float32x4.mul(row0, tmp1);
+					tmp1 = SIMD.Float32x4.swizzle(tmp1, 2, 3, 0, 1);
+					minor0 = SIMD.Float32x4.sub(minor0, SIMD.Float32x4.mul(row3, tmp1));
+					minor3 = SIMD.Float32x4.sub(SIMD.Float32x4.mul(row0, tmp1), minor3);
+					minor3 = SIMD.Float32x4.swizzle(minor3, 2, 3, 0, 1);
+
+					tmp1 = SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(row1, 2, 3, 0, 1), row3);
+					tmp1 = SIMD.Float32x4.swizzle(tmp1, 1, 0, 3, 2);
+					row2 = SIMD.Float32x4.swizzle(row2, 2, 3, 0, 1);
+					minor0 = SIMD.Float32x4.add(SIMD.Float32x4.mul(row2, tmp1), minor0);
+					minor2 = SIMD.Float32x4.mul(row0, tmp1);
+					tmp1 = SIMD.Float32x4.swizzle(tmp1, 2, 3, 0, 1);
+					minor0 = SIMD.Float32x4.sub(minor0, SIMD.Float32x4.mul(row2, tmp1));
+					minor2 = SIMD.Float32x4.sub(SIMD.Float32x4.mul(row0, tmp1), minor2);
+					minor2 = SIMD.Float32x4.swizzle(minor2, 2, 3, 0, 1);
+
+					tmp1 = SIMD.Float32x4.mul(row0, row1);
+					tmp1 = SIMD.Float32x4.swizzle(tmp1, 1, 0, 3, 2);
+					minor2 = SIMD.Float32x4.add(SIMD.Float32x4.mul(row3, tmp1), minor2);
+					minor3 = SIMD.Float32x4.sub(SIMD.Float32x4.mul(row2, tmp1), minor3);
+					tmp1 = SIMD.Float32x4.swizzle(tmp1, 2, 3, 0, 1);
+					minor2 = SIMD.Float32x4.sub(SIMD.Float32x4.mul(row3, tmp1), minor2);
+					minor3 = SIMD.Float32x4.sub(minor3, SIMD.Float32x4.mul(row2, tmp1));
+
+					tmp1 = SIMD.Float32x4.mul(row0, row3);
+					tmp1 = SIMD.Float32x4.swizzle(tmp1, 1, 0, 3, 2);
+					minor1 = SIMD.Float32x4.sub(minor1, SIMD.Float32x4.mul(row2, tmp1));
+					minor2 = SIMD.Float32x4.add(SIMD.Float32x4.mul(row1, tmp1), minor2);
+					tmp1 = SIMD.Float32x4.swizzle(tmp1, 2, 3, 0, 1);
+					minor1 = SIMD.Float32x4.add(SIMD.Float32x4.mul(row2, tmp1), minor1);
+					minor2 = SIMD.Float32x4.sub(minor2, SIMD.Float32x4.mul(row1, tmp1));
+
+					tmp1 = SIMD.Float32x4.mul(row0, row2);
+					tmp1 = SIMD.Float32x4.swizzle(tmp1, 1, 0, 3, 2);
+					minor1 = SIMD.Float32x4.add(SIMD.Float32x4.mul(row3, tmp1), minor1);
+					minor3 = SIMD.Float32x4.sub(minor3, SIMD.Float32x4.mul(row1, tmp1));
+					tmp1 = SIMD.Float32x4.swizzle(tmp1, 2, 3, 0, 1);
+					minor1 = SIMD.Float32x4.sub(minor1, SIMD.Float32x4.mul(row3, tmp1));
+					minor3 = SIMD.Float32x4.add(SIMD.Float32x4.mul(row1, tmp1), minor3);
+
+					SIMD.Float32x4.store(out, 0, minor0);
+					SIMD.Float32x4.store(out, 4, minor1);
+					SIMD.Float32x4.store(out, 8, minor2);
+					SIMD.Float32x4.store(out, 12, minor3);
+					return out;
+				};
+
+				/**
+				 * Calculates the adjugate of a mat4 using SIMD if available and enabled
+				 *
+				 * @param {mat4} out the receiving matrix
+				 * @param {mat4} a the source matrix
+				 * @returns {mat4} out
+				 */
+				mat4.adjoint = glMatrix.USE_SIMD ? mat4.SIMD.adjoint : mat4.scalar.adjoint;
+
+				/**
+				 * Calculates the determinant of a mat4
+				 *
+				 * @param {mat4} a the source matrix
+				 * @returns {Number} determinant of a
+				 */
+				mat4.determinant = function (a) {
+					var a00 = a[0], a01 = a[1], a02 = a[2], a03 = a[3],
+						a10 = a[4], a11 = a[5], a12 = a[6], a13 = a[7],
+						a20 = a[8], a21 = a[9], a22 = a[10], a23 = a[11],
+						a30 = a[12], a31 = a[13], a32 = a[14], a33 = a[15],
+
+						b00 = a00 * a11 - a01 * a10,
+						b01 = a00 * a12 - a02 * a10,
+						b02 = a00 * a13 - a03 * a10,
+						b03 = a01 * a12 - a02 * a11,
+						b04 = a01 * a13 - a03 * a11,
+						b05 = a02 * a13 - a03 * a12,
+						b06 = a20 * a31 - a21 * a30,
+						b07 = a20 * a32 - a22 * a30,
+						b08 = a20 * a33 - a23 * a30,
+						b09 = a21 * a32 - a22 * a31,
+						b10 = a21 * a33 - a23 * a31,
+						b11 = a22 * a33 - a23 * a32;
+
+					// Calculate the determinant
+					return b00 * b11 - b01 * b10 + b02 * b09 + b03 * b08 - b04 * b07 + b05 * b06;
+				};
+
+				/**
+				 * Multiplies two mat4's explicitly using SIMD
+				 *
+				 * @param {mat4} out the receiving matrix
+				 * @param {mat4} a the first operand, must be a Float32Array
+				 * @param {mat4} b the second operand, must be a Float32Array
+				 * @returns {mat4} out
+				 */
+				mat4.SIMD.multiply = function (out, a, b) {
+					var a0 = SIMD.Float32x4.load(a, 0);
+					var a1 = SIMD.Float32x4.load(a, 4);
+					var a2 = SIMD.Float32x4.load(a, 8);
+					var a3 = SIMD.Float32x4.load(a, 12);
+
+					var b0 = SIMD.Float32x4.load(b, 0);
+					var out0 = SIMD.Float32x4.add(
+						SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(b0, 0, 0, 0, 0), a0),
+						SIMD.Float32x4.add(
+							SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(b0, 1, 1, 1, 1), a1),
+							SIMD.Float32x4.add(
+								SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(b0, 2, 2, 2, 2), a2),
+								SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(b0, 3, 3, 3, 3), a3))));
+					SIMD.Float32x4.store(out, 0, out0);
+
+					var b1 = SIMD.Float32x4.load(b, 4);
+					var out1 = SIMD.Float32x4.add(
+						SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(b1, 0, 0, 0, 0), a0),
+						SIMD.Float32x4.add(
+							SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(b1, 1, 1, 1, 1), a1),
+							SIMD.Float32x4.add(
+								SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(b1, 2, 2, 2, 2), a2),
+								SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(b1, 3, 3, 3, 3), a3))));
+					SIMD.Float32x4.store(out, 4, out1);
+
+					var b2 = SIMD.Float32x4.load(b, 8);
+					var out2 = SIMD.Float32x4.add(
+						SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(b2, 0, 0, 0, 0), a0),
+						SIMD.Float32x4.add(
+							SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(b2, 1, 1, 1, 1), a1),
+							SIMD.Float32x4.add(
+								SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(b2, 2, 2, 2, 2), a2),
+								SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(b2, 3, 3, 3, 3), a3))));
+					SIMD.Float32x4.store(out, 8, out2);
+
+					var b3 = SIMD.Float32x4.load(b, 12);
+					var out3 = SIMD.Float32x4.add(
+						SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(b3, 0, 0, 0, 0), a0),
+						SIMD.Float32x4.add(
+							SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(b3, 1, 1, 1, 1), a1),
+							SIMD.Float32x4.add(
+								SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(b3, 2, 2, 2, 2), a2),
+								SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(b3, 3, 3, 3, 3), a3))));
+					SIMD.Float32x4.store(out, 12, out3);
+
+					return out;
+				};
+
+				/**
+				 * Multiplies two mat4's explicitly not using SIMD
+				 *
+				 * @param {mat4} out the receiving matrix
+				 * @param {mat4} a the first operand
+				 * @param {mat4} b the second operand
+				 * @returns {mat4} out
+				 */
+				mat4.scalar.multiply = function (out, a, b) {
+					var a00 = a[0], a01 = a[1], a02 = a[2], a03 = a[3],
+						a10 = a[4], a11 = a[5], a12 = a[6], a13 = a[7],
+						a20 = a[8], a21 = a[9], a22 = a[10], a23 = a[11],
+						a30 = a[12], a31 = a[13], a32 = a[14], a33 = a[15];
+
+					// Cache only the current line of the second matrix
+					var b0 = b[0], b1 = b[1], b2 = b[2], b3 = b[3];
+					out[0] = b0 * a00 + b1 * a10 + b2 * a20 + b3 * a30;
+					out[1] = b0 * a01 + b1 * a11 + b2 * a21 + b3 * a31;
+					out[2] = b0 * a02 + b1 * a12 + b2 * a22 + b3 * a32;
+					out[3] = b0 * a03 + b1 * a13 + b2 * a23 + b3 * a33;
+
+					b0 = b[4]; b1 = b[5]; b2 = b[6]; b3 = b[7];
+					out[4] = b0 * a00 + b1 * a10 + b2 * a20 + b3 * a30;
+					out[5] = b0 * a01 + b1 * a11 + b2 * a21 + b3 * a31;
+					out[6] = b0 * a02 + b1 * a12 + b2 * a22 + b3 * a32;
+					out[7] = b0 * a03 + b1 * a13 + b2 * a23 + b3 * a33;
+
+					b0 = b[8]; b1 = b[9]; b2 = b[10]; b3 = b[11];
+					out[8] = b0 * a00 + b1 * a10 + b2 * a20 + b3 * a30;
+					out[9] = b0 * a01 + b1 * a11 + b2 * a21 + b3 * a31;
+					out[10] = b0 * a02 + b1 * a12 + b2 * a22 + b3 * a32;
+					out[11] = b0 * a03 + b1 * a13 + b2 * a23 + b3 * a33;
+
+					b0 = b[12]; b1 = b[13]; b2 = b[14]; b3 = b[15];
+					out[12] = b0 * a00 + b1 * a10 + b2 * a20 + b3 * a30;
+					out[13] = b0 * a01 + b1 * a11 + b2 * a21 + b3 * a31;
+					out[14] = b0 * a02 + b1 * a12 + b2 * a22 + b3 * a32;
+					out[15] = b0 * a03 + b1 * a13 + b2 * a23 + b3 * a33;
+					return out;
+				};
+
+				/**
+				 * Multiplies two mat4's using SIMD if available and enabled
+				 *
+				 * @param {mat4} out the receiving matrix
+				 * @param {mat4} a the first operand
+				 * @param {mat4} b the second operand
+				 * @returns {mat4} out
+				 */
+				mat4.multiply = glMatrix.USE_SIMD ? mat4.SIMD.multiply : mat4.scalar.multiply;
+
+				/**
+				 * Alias for {@link mat4.multiply}
+				 * @function
+				 */
+				mat4.mul = mat4.multiply;
+
+				/**
+				 * Translate a mat4 by the given vector not using SIMD
+				 *
+				 * @param {mat4} out the receiving matrix
+				 * @param {mat4} a the matrix to translate
+				 * @param {vec3} v vector to translate by
+				 * @returns {mat4} out
+				 */
+				mat4.scalar.translate = function (out, a, v) {
+					var x = v[0], y = v[1], z = v[2],
+						a00, a01, a02, a03,
+						a10, a11, a12, a13,
+						a20, a21, a22, a23;
+
+					if (a === out) {
+						out[12] = a[0] * x + a[4] * y + a[8] * z + a[12];
+						out[13] = a[1] * x + a[5] * y + a[9] * z + a[13];
+						out[14] = a[2] * x + a[6] * y + a[10] * z + a[14];
+						out[15] = a[3] * x + a[7] * y + a[11] * z + a[15];
+					} else {
+						a00 = a[0]; a01 = a[1]; a02 = a[2]; a03 = a[3];
+						a10 = a[4]; a11 = a[5]; a12 = a[6]; a13 = a[7];
+						a20 = a[8]; a21 = a[9]; a22 = a[10]; a23 = a[11];
+
+						out[0] = a00; out[1] = a01; out[2] = a02; out[3] = a03;
+						out[4] = a10; out[5] = a11; out[6] = a12; out[7] = a13;
+						out[8] = a20; out[9] = a21; out[10] = a22; out[11] = a23;
+
+						out[12] = a00 * x + a10 * y + a20 * z + a[12];
+						out[13] = a01 * x + a11 * y + a21 * z + a[13];
+						out[14] = a02 * x + a12 * y + a22 * z + a[14];
+						out[15] = a03 * x + a13 * y + a23 * z + a[15];
+					}
+
+					return out;
+				};
+
+				/**
+				 * Translates a mat4 by the given vector using SIMD
+				 *
+				 * @param {mat4} out the receiving matrix
+				 * @param {mat4} a the matrix to translate
+				 * @param {vec3} v vector to translate by
+				 * @returns {mat4} out
+				 */
+				mat4.SIMD.translate = function (out, a, v) {
+					var a0 = SIMD.Float32x4.load(a, 0),
+						a1 = SIMD.Float32x4.load(a, 4),
+						a2 = SIMD.Float32x4.load(a, 8),
+						a3 = SIMD.Float32x4.load(a, 12),
+						vec = SIMD.Float32x4(v[0], v[1], v[2], 0);
+
+					if (a !== out) {
+						out[0] = a[0]; out[1] = a[1]; out[2] = a[2]; out[3] = a[3];
+						out[4] = a[4]; out[5] = a[5]; out[6] = a[6]; out[7] = a[7];
+						out[8] = a[8]; out[9] = a[9]; out[10] = a[10]; out[11] = a[11];
+					}
+
+					a0 = SIMD.Float32x4.mul(a0, SIMD.Float32x4.swizzle(vec, 0, 0, 0, 0));
+					a1 = SIMD.Float32x4.mul(a1, SIMD.Float32x4.swizzle(vec, 1, 1, 1, 1));
+					a2 = SIMD.Float32x4.mul(a2, SIMD.Float32x4.swizzle(vec, 2, 2, 2, 2));
+
+					var t0 = SIMD.Float32x4.add(a0, SIMD.Float32x4.add(a1, SIMD.Float32x4.add(a2, a3)));
+					SIMD.Float32x4.store(out, 12, t0);
+
+					return out;
+				};
+
+				/**
+				 * Translates a mat4 by the given vector using SIMD if available and enabled
+				 *
+				 * @param {mat4} out the receiving matrix
+				 * @param {mat4} a the matrix to translate
+				 * @param {vec3} v vector to translate by
+				 * @returns {mat4} out
+				 */
+				mat4.translate = glMatrix.USE_SIMD ? mat4.SIMD.translate : mat4.scalar.translate;
+
+				/**
+				 * Scales the mat4 by the dimensions in the given vec3 not using vectorization
+				 *
+				 * @param {mat4} out the receiving matrix
+				 * @param {mat4} a the matrix to scale
+				 * @param {vec3} v the vec3 to scale the matrix by
+				 * @returns {mat4} out
+				 **/
+				mat4.scalar.scale = function (out, a, v) {
+					var x = v[0], y = v[1], z = v[2];
+
+					out[0] = a[0] * x;
+					out[1] = a[1] * x;
+					out[2] = a[2] * x;
+					out[3] = a[3] * x;
+					out[4] = a[4] * y;
+					out[5] = a[5] * y;
+					out[6] = a[6] * y;
+					out[7] = a[7] * y;
+					out[8] = a[8] * z;
+					out[9] = a[9] * z;
+					out[10] = a[10] * z;
+					out[11] = a[11] * z;
+					out[12] = a[12];
+					out[13] = a[13];
+					out[14] = a[14];
+					out[15] = a[15];
+					return out;
+				};
+
+				/**
+				 * Scales the mat4 by the dimensions in the given vec3 using vectorization
+				 *
+				 * @param {mat4} out the receiving matrix
+				 * @param {mat4} a the matrix to scale
+				 * @param {vec3} v the vec3 to scale the matrix by
+				 * @returns {mat4} out
+				 **/
+				mat4.SIMD.scale = function (out, a, v) {
+					var a0, a1, a2;
+					var vec = SIMD.Float32x4(v[0], v[1], v[2], 0);
+
+					a0 = SIMD.Float32x4.load(a, 0);
+					SIMD.Float32x4.store(
+						out, 0, SIMD.Float32x4.mul(a0, SIMD.Float32x4.swizzle(vec, 0, 0, 0, 0)));
+
+					a1 = SIMD.Float32x4.load(a, 4);
+					SIMD.Float32x4.store(
+						out, 4, SIMD.Float32x4.mul(a1, SIMD.Float32x4.swizzle(vec, 1, 1, 1, 1)));
+
+					a2 = SIMD.Float32x4.load(a, 8);
+					SIMD.Float32x4.store(
+						out, 8, SIMD.Float32x4.mul(a2, SIMD.Float32x4.swizzle(vec, 2, 2, 2, 2)));
+
+					out[12] = a[12];
+					out[13] = a[13];
+					out[14] = a[14];
+					out[15] = a[15];
+					return out;
+				};
+
+				/**
+				 * Scales the mat4 by the dimensions in the given vec3 using SIMD if available and enabled
+				 *
+				 * @param {mat4} out the receiving matrix
+				 * @param {mat4} a the matrix to scale
+				 * @param {vec3} v the vec3 to scale the matrix by
+				 * @returns {mat4} out
+				 */
+				mat4.scale = glMatrix.USE_SIMD ? mat4.SIMD.scale : mat4.scalar.scale;
+
+				/**
+				 * Rotates a mat4 by the given angle around the given axis
+				 *
+				 * @param {mat4} out the receiving matrix
+				 * @param {mat4} a the matrix to rotate
+				 * @param {Number} rad the angle to rotate the matrix by
+				 * @param {vec3} axis the axis to rotate around
+				 * @returns {mat4} out
+				 */
+				mat4.rotate = function (out, a, rad, axis) {
+					var x = axis[0], y = axis[1], z = axis[2],
+						len = Math.sqrt(x * x + y * y + z * z),
+						s, c, t,
+						a00, a01, a02, a03,
+						a10, a11, a12, a13,
+						a20, a21, a22, a23,
+						b00, b01, b02,
+						b10, b11, b12,
+						b20, b21, b22;
+
+					if (Math.abs(len) < glMatrix.EPSILON) { return null; }
+
+					len = 1 / len;
+					x *= len;
+					y *= len;
+					z *= len;
+
+					s = Math.sin(rad);
+					c = Math.cos(rad);
+					t = 1 - c;
+
+					a00 = a[0]; a01 = a[1]; a02 = a[2]; a03 = a[3];
+					a10 = a[4]; a11 = a[5]; a12 = a[6]; a13 = a[7];
+					a20 = a[8]; a21 = a[9]; a22 = a[10]; a23 = a[11];
+
+					// Construct the elements of the rotation matrix
+					b00 = x * x * t + c; b01 = y * x * t + z * s; b02 = z * x * t - y * s;
+					b10 = x * y * t - z * s; b11 = y * y * t + c; b12 = z * y * t + x * s;
+					b20 = x * z * t + y * s; b21 = y * z * t - x * s; b22 = z * z * t + c;
+
+					// Perform rotation-specific matrix multiplication
+					out[0] = a00 * b00 + a10 * b01 + a20 * b02;
+					out[1] = a01 * b00 + a11 * b01 + a21 * b02;
+					out[2] = a02 * b00 + a12 * b01 + a22 * b02;
+					out[3] = a03 * b00 + a13 * b01 + a23 * b02;
+					out[4] = a00 * b10 + a10 * b11 + a20 * b12;
+					out[5] = a01 * b10 + a11 * b11 + a21 * b12;
+					out[6] = a02 * b10 + a12 * b11 + a22 * b12;
+					out[7] = a03 * b10 + a13 * b11 + a23 * b12;
+					out[8] = a00 * b20 + a10 * b21 + a20 * b22;
+					out[9] = a01 * b20 + a11 * b21 + a21 * b22;
+					out[10] = a02 * b20 + a12 * b21 + a22 * b22;
+					out[11] = a03 * b20 + a13 * b21 + a23 * b22;
+
+					if (a !== out) { // If the source and destination differ, copy the unchanged last row
+						out[12] = a[12];
+						out[13] = a[13];
+						out[14] = a[14];
+						out[15] = a[15];
+					}
+					return out;
+				};
+
+				/**
+				 * Rotates a matrix by the given angle around the X axis not using SIMD
+				 *
+				 * @param {mat4} out the receiving matrix
+				 * @param {mat4} a the matrix to rotate
+				 * @param {Number} rad the angle to rotate the matrix by
+				 * @returns {mat4} out
+				 */
+				mat4.scalar.rotateX = function (out, a, rad) {
+					var s = Math.sin(rad),
+						c = Math.cos(rad),
+						a10 = a[4],
+						a11 = a[5],
+						a12 = a[6],
+						a13 = a[7],
+						a20 = a[8],
+						a21 = a[9],
+						a22 = a[10],
+						a23 = a[11];
+
+					if (a !== out) { // If the source and destination differ, copy the unchanged rows
+						out[0] = a[0];
+						out[1] = a[1];
+						out[2] = a[2];
+						out[3] = a[3];
+						out[12] = a[12];
+						out[13] = a[13];
+						out[14] = a[14];
+						out[15] = a[15];
+					}
+
+					// Perform axis-specific matrix multiplication
+					out[4] = a10 * c + a20 * s;
+					out[5] = a11 * c + a21 * s;
+					out[6] = a12 * c + a22 * s;
+					out[7] = a13 * c + a23 * s;
+					out[8] = a20 * c - a10 * s;
+					out[9] = a21 * c - a11 * s;
+					out[10] = a22 * c - a12 * s;
+					out[11] = a23 * c - a13 * s;
+					return out;
+				};
+
+				/**
+				 * Rotates a matrix by the given angle around the X axis using SIMD
+				 *
+				 * @param {mat4} out the receiving matrix
+				 * @param {mat4} a the matrix to rotate
+				 * @param {Number} rad the angle to rotate the matrix by
+				 * @returns {mat4} out
+				 */
+				mat4.SIMD.rotateX = function (out, a, rad) {
+					var s = SIMD.Float32x4.splat(Math.sin(rad)),
+						c = SIMD.Float32x4.splat(Math.cos(rad));
+
+					if (a !== out) { // If the source and destination differ, copy the unchanged rows
+						out[0] = a[0];
+						out[1] = a[1];
+						out[2] = a[2];
+						out[3] = a[3];
+						out[12] = a[12];
+						out[13] = a[13];
+						out[14] = a[14];
+						out[15] = a[15];
+					}
+
+					// Perform axis-specific matrix multiplication
+					var a_1 = SIMD.Float32x4.load(a, 4);
+					var a_2 = SIMD.Float32x4.load(a, 8);
+					SIMD.Float32x4.store(out, 4,
+						SIMD.Float32x4.add(SIMD.Float32x4.mul(a_1, c), SIMD.Float32x4.mul(a_2, s)));
+					SIMD.Float32x4.store(out, 8,
+						SIMD.Float32x4.sub(SIMD.Float32x4.mul(a_2, c), SIMD.Float32x4.mul(a_1, s)));
+					return out;
+				};
+
+				/**
+				 * Rotates a matrix by the given angle around the X axis using SIMD if availabe and enabled
+				 *
+				 * @param {mat4} out the receiving matrix
+				 * @param {mat4} a the matrix to rotate
+				 * @param {Number} rad the angle to rotate the matrix by
+				 * @returns {mat4} out
+				 */
+				mat4.rotateX = glMatrix.USE_SIMD ? mat4.SIMD.rotateX : mat4.scalar.rotateX;
+
+				/**
+				 * Rotates a matrix by the given angle around the Y axis not using SIMD
+				 *
+				 * @param {mat4} out the receiving matrix
+				 * @param {mat4} a the matrix to rotate
+				 * @param {Number} rad the angle to rotate the matrix by
+				 * @returns {mat4} out
+				 */
+				mat4.scalar.rotateY = function (out, a, rad) {
+					var s = Math.sin(rad),
+						c = Math.cos(rad),
+						a00 = a[0],
+						a01 = a[1],
+						a02 = a[2],
+						a03 = a[3],
+						a20 = a[8],
+						a21 = a[9],
+						a22 = a[10],
+						a23 = a[11];
+
+					if (a !== out) { // If the source and destination differ, copy the unchanged rows
+						out[4] = a[4];
+						out[5] = a[5];
+						out[6] = a[6];
+						out[7] = a[7];
+						out[12] = a[12];
+						out[13] = a[13];
+						out[14] = a[14];
+						out[15] = a[15];
+					}
+
+					// Perform axis-specific matrix multiplication
+					out[0] = a00 * c - a20 * s;
+					out[1] = a01 * c - a21 * s;
+					out[2] = a02 * c - a22 * s;
+					out[3] = a03 * c - a23 * s;
+					out[8] = a00 * s + a20 * c;
+					out[9] = a01 * s + a21 * c;
+					out[10] = a02 * s + a22 * c;
+					out[11] = a03 * s + a23 * c;
+					return out;
+				};
+
+				/**
+				 * Rotates a matrix by the given angle around the Y axis using SIMD
+				 *
+				 * @param {mat4} out the receiving matrix
+				 * @param {mat4} a the matrix to rotate
+				 * @param {Number} rad the angle to rotate the matrix by
+				 * @returns {mat4} out
+				 */
+				mat4.SIMD.rotateY = function (out, a, rad) {
+					var s = SIMD.Float32x4.splat(Math.sin(rad)),
+						c = SIMD.Float32x4.splat(Math.cos(rad));
+
+					if (a !== out) { // If the source and destination differ, copy the unchanged rows
+						out[4] = a[4];
+						out[5] = a[5];
+						out[6] = a[6];
+						out[7] = a[7];
+						out[12] = a[12];
+						out[13] = a[13];
+						out[14] = a[14];
+						out[15] = a[15];
+					}
+
+					// Perform axis-specific matrix multiplication
+					var a_0 = SIMD.Float32x4.load(a, 0);
+					var a_2 = SIMD.Float32x4.load(a, 8);
+					SIMD.Float32x4.store(out, 0,
+						SIMD.Float32x4.sub(SIMD.Float32x4.mul(a_0, c), SIMD.Float32x4.mul(a_2, s)));
+					SIMD.Float32x4.store(out, 8,
+						SIMD.Float32x4.add(SIMD.Float32x4.mul(a_0, s), SIMD.Float32x4.mul(a_2, c)));
+					return out;
+				};
+
+				/**
+				 * Rotates a matrix by the given angle around the Y axis if SIMD available and enabled
+				 *
+				 * @param {mat4} out the receiving matrix
+				 * @param {mat4} a the matrix to rotate
+				 * @param {Number} rad the angle to rotate the matrix by
+				 * @returns {mat4} out
+				 */
+				mat4.rotateY = glMatrix.USE_SIMD ? mat4.SIMD.rotateY : mat4.scalar.rotateY;
+
+				/**
+				 * Rotates a matrix by the given angle around the Z axis not using SIMD
+				 *
+				 * @param {mat4} out the receiving matrix
+				 * @param {mat4} a the matrix to rotate
+				 * @param {Number} rad the angle to rotate the matrix by
+				 * @returns {mat4} out
+				 */
+				mat4.scalar.rotateZ = function (out, a, rad) {
+					var s = Math.sin(rad),
+						c = Math.cos(rad),
+						a00 = a[0],
+						a01 = a[1],
+						a02 = a[2],
+						a03 = a[3],
+						a10 = a[4],
+						a11 = a[5],
+						a12 = a[6],
+						a13 = a[7];
+
+					if (a !== out) { // If the source and destination differ, copy the unchanged last row
+						out[8] = a[8];
+						out[9] = a[9];
+						out[10] = a[10];
+						out[11] = a[11];
+						out[12] = a[12];
+						out[13] = a[13];
+						out[14] = a[14];
+						out[15] = a[15];
+					}
+
+					// Perform axis-specific matrix multiplication
+					out[0] = a00 * c + a10 * s;
+					out[1] = a01 * c + a11 * s;
+					out[2] = a02 * c + a12 * s;
+					out[3] = a03 * c + a13 * s;
+					out[4] = a10 * c - a00 * s;
+					out[5] = a11 * c - a01 * s;
+					out[6] = a12 * c - a02 * s;
+					out[7] = a13 * c - a03 * s;
+					return out;
+				};
+
+				/**
+				 * Rotates a matrix by the given angle around the Z axis using SIMD
+				 *
+				 * @param {mat4} out the receiving matrix
+				 * @param {mat4} a the matrix to rotate
+				 * @param {Number} rad the angle to rotate the matrix by
+				 * @returns {mat4} out
+				 */
+				mat4.SIMD.rotateZ = function (out, a, rad) {
+					var s = SIMD.Float32x4.splat(Math.sin(rad)),
+						c = SIMD.Float32x4.splat(Math.cos(rad));
+
+					if (a !== out) { // If the source and destination differ, copy the unchanged last row
+						out[8] = a[8];
+						out[9] = a[9];
+						out[10] = a[10];
+						out[11] = a[11];
+						out[12] = a[12];
+						out[13] = a[13];
+						out[14] = a[14];
+						out[15] = a[15];
+					}
+
+					// Perform axis-specific matrix multiplication
+					var a_0 = SIMD.Float32x4.load(a, 0);
+					var a_1 = SIMD.Float32x4.load(a, 4);
+					SIMD.Float32x4.store(out, 0,
+						SIMD.Float32x4.add(SIMD.Float32x4.mul(a_0, c), SIMD.Float32x4.mul(a_1, s)));
+					SIMD.Float32x4.store(out, 4,
+						SIMD.Float32x4.sub(SIMD.Float32x4.mul(a_1, c), SIMD.Float32x4.mul(a_0, s)));
+					return out;
+				};
+
+				/**
+				 * Rotates a matrix by the given angle around the Z axis if SIMD available and enabled
+				 *
+				 * @param {mat4} out the receiving matrix
+				 * @param {mat4} a the matrix to rotate
+				 * @param {Number} rad the angle to rotate the matrix by
+				 * @returns {mat4} out
+				 */
+				mat4.rotateZ = glMatrix.USE_SIMD ? mat4.SIMD.rotateZ : mat4.scalar.rotateZ;
+
+				/**
+				 * Creates a matrix from a vector translation
+				 * This is equivalent to (but much faster than):
+				 *
+				 *     mat4.identity(dest);
+				 *     mat4.translate(dest, dest, vec);
+				 *
+				 * @param {mat4} out mat4 receiving operation result
+				 * @param {vec3} v Translation vector
+				 * @returns {mat4} out
+				 */
+				mat4.fromTranslation = function (out, v) {
+					out[0] = 1;
+					out[1] = 0;
+					out[2] = 0;
+					out[3] = 0;
+					out[4] = 0;
+					out[5] = 1;
+					out[6] = 0;
+					out[7] = 0;
+					out[8] = 0;
+					out[9] = 0;
+					out[10] = 1;
+					out[11] = 0;
+					out[12] = v[0];
+					out[13] = v[1];
+					out[14] = v[2];
+					out[15] = 1;
+					return out;
+				}
+
+				/**
+				 * Creates a matrix from a vector scaling
+				 * This is equivalent to (but much faster than):
+				 *
+				 *     mat4.identity(dest);
+				 *     mat4.scale(dest, dest, vec);
+				 *
+				 * @param {mat4} out mat4 receiving operation result
+				 * @param {vec3} v Scaling vector
+				 * @returns {mat4} out
+				 */
+				mat4.fromScaling = function (out, v) {
+					out[0] = v[0];
+					out[1] = 0;
+					out[2] = 0;
+					out[3] = 0;
+					out[4] = 0;
+					out[5] = v[1];
+					out[6] = 0;
+					out[7] = 0;
+					out[8] = 0;
+					out[9] = 0;
+					out[10] = v[2];
+					out[11] = 0;
+					out[12] = 0;
+					out[13] = 0;
+					out[14] = 0;
+					out[15] = 1;
+					return out;
+				}
+
+				/**
+				 * Creates a matrix from a given angle around a given axis
+				 * This is equivalent to (but much faster than):
+				 *
+				 *     mat4.identity(dest);
+				 *     mat4.rotate(dest, dest, rad, axis);
+				 *
+				 * @param {mat4} out mat4 receiving operation result
+				 * @param {Number} rad the angle to rotate the matrix by
+				 * @param {vec3} axis the axis to rotate around
+				 * @returns {mat4} out
+				 */
+				mat4.fromRotation = function (out, rad, axis) {
+					var x = axis[0], y = axis[1], z = axis[2],
+						len = Math.sqrt(x * x + y * y + z * z),
+						s, c, t;
+
+					if (Math.abs(len) < glMatrix.EPSILON) { return null; }
+
+					len = 1 / len;
+					x *= len;
+					y *= len;
+					z *= len;
+
+					s = Math.sin(rad);
+					c = Math.cos(rad);
+					t = 1 - c;
+
+					// Perform rotation-specific matrix multiplication
+					out[0] = x * x * t + c;
+					out[1] = y * x * t + z * s;
+					out[2] = z * x * t - y * s;
+					out[3] = 0;
+					out[4] = x * y * t - z * s;
+					out[5] = y * y * t + c;
+					out[6] = z * y * t + x * s;
+					out[7] = 0;
+					out[8] = x * z * t + y * s;
+					out[9] = y * z * t - x * s;
+					out[10] = z * z * t + c;
+					out[11] = 0;
+					out[12] = 0;
+					out[13] = 0;
+					out[14] = 0;
+					out[15] = 1;
+					return out;
+				}
+
+				/**
+				 * Creates a matrix from the given angle around the X axis
+				 * This is equivalent to (but much faster than):
+				 *
+				 *     mat4.identity(dest);
+				 *     mat4.rotateX(dest, dest, rad);
+				 *
+				 * @param {mat4} out mat4 receiving operation result
+				 * @param {Number} rad the angle to rotate the matrix by
+				 * @returns {mat4} out
+				 */
+				mat4.fromXRotation = function (out, rad) {
+					var s = Math.sin(rad),
+						c = Math.cos(rad);
+
+					// Perform axis-specific matrix multiplication
+					out[0] = 1;
+					out[1] = 0;
+					out[2] = 0;
+					out[3] = 0;
+					out[4] = 0;
+					out[5] = c;
+					out[6] = s;
+					out[7] = 0;
+					out[8] = 0;
+					out[9] = -s;
+					out[10] = c;
+					out[11] = 0;
+					out[12] = 0;
+					out[13] = 0;
+					out[14] = 0;
+					out[15] = 1;
+					return out;
+				}
+
+				/**
+				 * Creates a matrix from the given angle around the Y axis
+				 * This is equivalent to (but much faster than):
+				 *
+				 *     mat4.identity(dest);
+				 *     mat4.rotateY(dest, dest, rad);
+				 *
+				 * @param {mat4} out mat4 receiving operation result
+				 * @param {Number} rad the angle to rotate the matrix by
+				 * @returns {mat4} out
+				 */
+				mat4.fromYRotation = function (out, rad) {
+					var s = Math.sin(rad),
+						c = Math.cos(rad);
+
+					// Perform axis-specific matrix multiplication
+					out[0] = c;
+					out[1] = 0;
+					out[2] = -s;
+					out[3] = 0;
+					out[4] = 0;
+					out[5] = 1;
+					out[6] = 0;
+					out[7] = 0;
+					out[8] = s;
+					out[9] = 0;
+					out[10] = c;
+					out[11] = 0;
+					out[12] = 0;
+					out[13] = 0;
+					out[14] = 0;
+					out[15] = 1;
+					return out;
+				}
+
+				/**
+				 * Creates a matrix from the given angle around the Z axis
+				 * This is equivalent to (but much faster than):
+				 *
+				 *     mat4.identity(dest);
+				 *     mat4.rotateZ(dest, dest, rad);
+				 *
+				 * @param {mat4} out mat4 receiving operation result
+				 * @param {Number} rad the angle to rotate the matrix by
+				 * @returns {mat4} out
+				 */
+				mat4.fromZRotation = function (out, rad) {
+					var s = Math.sin(rad),
+						c = Math.cos(rad);
+
+					// Perform axis-specific matrix multiplication
+					out[0] = c;
+					out[1] = s;
+					out[2] = 0;
+					out[3] = 0;
+					out[4] = -s;
+					out[5] = c;
+					out[6] = 0;
+					out[7] = 0;
+					out[8] = 0;
+					out[9] = 0;
+					out[10] = 1;
+					out[11] = 0;
+					out[12] = 0;
+					out[13] = 0;
+					out[14] = 0;
+					out[15] = 1;
+					return out;
+				}
+
+				/**
+				 * Creates a matrix from a quaternion rotation and vector translation
+				 * This is equivalent to (but much faster than):
+				 *
+				 *     mat4.identity(dest);
+				 *     mat4.translate(dest, vec);
+				 *     var quatMat = mat4.create();
+				 *     quat4.toMat4(quat, quatMat);
+				 *     mat4.multiply(dest, quatMat);
+				 *
+				 * @param {mat4} out mat4 receiving operation result
+				 * @param {quat4} q Rotation quaternion
+				 * @param {vec3} v Translation vector
+				 * @returns {mat4} out
+				 */
+				mat4.fromRotationTranslation = function (out, q, v) {
+					// Quaternion math
+					var x = q[0], y = q[1], z = q[2], w = q[3],
+						x2 = x + x,
+						y2 = y + y,
+						z2 = z + z,
+
+						xx = x * x2,
+						xy = x * y2,
+						xz = x * z2,
+						yy = y * y2,
+						yz = y * z2,
+						zz = z * z2,
+						wx = w * x2,
+						wy = w * y2,
+						wz = w * z2;
+
+					out[0] = 1 - (yy + zz);
+					out[1] = xy + wz;
+					out[2] = xz - wy;
+					out[3] = 0;
+					out[4] = xy - wz;
+					out[5] = 1 - (xx + zz);
+					out[6] = yz + wx;
+					out[7] = 0;
+					out[8] = xz + wy;
+					out[9] = yz - wx;
+					out[10] = 1 - (xx + yy);
+					out[11] = 0;
+					out[12] = v[0];
+					out[13] = v[1];
+					out[14] = v[2];
+					out[15] = 1;
+
+					return out;
+				};
+
+				/**
+				 * Creates a matrix from a quaternion rotation, vector translation and vector scale
+				 * This is equivalent to (but much faster than):
+				 *
+				 *     mat4.identity(dest);
+				 *     mat4.translate(dest, vec);
+				 *     var quatMat = mat4.create();
+				 *     quat4.toMat4(quat, quatMat);
+				 *     mat4.multiply(dest, quatMat);
+				 *     mat4.scale(dest, scale)
+				 *
+				 * @param {mat4} out mat4 receiving operation result
+				 * @param {quat4} q Rotation quaternion
+				 * @param {vec3} v Translation vector
+				 * @param {vec3} s Scaling vector
+				 * @returns {mat4} out
+				 */
+				mat4.fromRotationTranslationScale = function (out, q, v, s) {
+					// Quaternion math
+					var x = q[0], y = q[1], z = q[2], w = q[3],
+						x2 = x + x,
+						y2 = y + y,
+						z2 = z + z,
+
+						xx = x * x2,
+						xy = x * y2,
+						xz = x * z2,
+						yy = y * y2,
+						yz = y * z2,
+						zz = z * z2,
+						wx = w * x2,
+						wy = w * y2,
+						wz = w * z2,
+						sx = s[0],
+						sy = s[1],
+						sz = s[2];
+
+					out[0] = (1 - (yy + zz)) * sx;
+					out[1] = (xy + wz) * sx;
+					out[2] = (xz - wy) * sx;
+					out[3] = 0;
+					out[4] = (xy - wz) * sy;
+					out[5] = (1 - (xx + zz)) * sy;
+					out[6] = (yz + wx) * sy;
+					out[7] = 0;
+					out[8] = (xz + wy) * sz;
+					out[9] = (yz - wx) * sz;
+					out[10] = (1 - (xx + yy)) * sz;
+					out[11] = 0;
+					out[12] = v[0];
+					out[13] = v[1];
+					out[14] = v[2];
+					out[15] = 1;
+
+					return out;
+				};
+
+				/**
+				 * Creates a matrix from a quaternion rotation, vector translation and vector scale, rotating and scaling around the given origin
+				 * This is equivalent to (but much faster than):
+				 *
+				 *     mat4.identity(dest);
+				 *     mat4.translate(dest, vec);
+				 *     mat4.translate(dest, origin);
+				 *     var quatMat = mat4.create();
+				 *     quat4.toMat4(quat, quatMat);
+				 *     mat4.multiply(dest, quatMat);
+				 *     mat4.scale(dest, scale)
+				 *     mat4.translate(dest, negativeOrigin);
+				 *
+				 * @param {mat4} out mat4 receiving operation result
+				 * @param {quat4} q Rotation quaternion
+				 * @param {vec3} v Translation vector
+				 * @param {vec3} s Scaling vector
+				 * @param {vec3} o The origin vector around which to scale and rotate
+				 * @returns {mat4} out
+				 */
+				mat4.fromRotationTranslationScaleOrigin = function (out, q, v, s, o) {
+					// Quaternion math
+					var x = q[0], y = q[1], z = q[2], w = q[3],
+						x2 = x + x,
+						y2 = y + y,
+						z2 = z + z,
+
+						xx = x * x2,
+						xy = x * y2,
+						xz = x * z2,
+						yy = y * y2,
+						yz = y * z2,
+						zz = z * z2,
+						wx = w * x2,
+						wy = w * y2,
+						wz = w * z2,
+
+						sx = s[0],
+						sy = s[1],
+						sz = s[2],
+
+						ox = o[0],
+						oy = o[1],
+						oz = o[2];
+
+					out[0] = (1 - (yy + zz)) * sx;
+					out[1] = (xy + wz) * sx;
+					out[2] = (xz - wy) * sx;
+					out[3] = 0;
+					out[4] = (xy - wz) * sy;
+					out[5] = (1 - (xx + zz)) * sy;
+					out[6] = (yz + wx) * sy;
+					out[7] = 0;
+					out[8] = (xz + wy) * sz;
+					out[9] = (yz - wx) * sz;
+					out[10] = (1 - (xx + yy)) * sz;
+					out[11] = 0;
+					out[12] = v[0] + ox - (out[0] * ox + out[4] * oy + out[8] * oz);
+					out[13] = v[1] + oy - (out[1] * ox + out[5] * oy + out[9] * oz);
+					out[14] = v[2] + oz - (out[2] * ox + out[6] * oy + out[10] * oz);
+					out[15] = 1;
+
+					return out;
+				};
+
+				mat4.fromQuat = function (out, q) {
+					var x = q[0], y = q[1], z = q[2], w = q[3],
+						x2 = x + x,
+						y2 = y + y,
+						z2 = z + z,
+
+						xx = x * x2,
+						yx = y * x2,
+						yy = y * y2,
+						zx = z * x2,
+						zy = z * y2,
+						zz = z * z2,
+						wx = w * x2,
+						wy = w * y2,
+						wz = w * z2;
+
+					out[0] = 1 - yy - zz;
+					out[1] = yx + wz;
+					out[2] = zx - wy;
+					out[3] = 0;
+
+					out[4] = yx - wz;
+					out[5] = 1 - xx - zz;
+					out[6] = zy + wx;
+					out[7] = 0;
+
+					out[8] = zx + wy;
+					out[9] = zy - wx;
+					out[10] = 1 - xx - yy;
+					out[11] = 0;
+
+					out[12] = 0;
+					out[13] = 0;
+					out[14] = 0;
+					out[15] = 1;
+
+					return out;
+				};
+
+				/**
+				 * Generates a frustum matrix with the given bounds
+				 *
+				 * @param {mat4} out mat4 frustum matrix will be written into
+				 * @param {Number} left Left bound of the frustum
+				 * @param {Number} right Right bound of the frustum
+				 * @param {Number} bottom Bottom bound of the frustum
+				 * @param {Number} top Top bound of the frustum
+				 * @param {Number} near Near bound of the frustum
+				 * @param {Number} far Far bound of the frustum
+				 * @returns {mat4} out
+				 */
+				mat4.frustum = function (out, left, right, bottom, top, near, far) {
+					var rl = 1 / (right - left),
+						tb = 1 / (top - bottom),
+						nf = 1 / (near - far);
+					out[0] = (near * 2) * rl;
+					out[1] = 0;
+					out[2] = 0;
+					out[3] = 0;
+					out[4] = 0;
+					out[5] = (near * 2) * tb;
+					out[6] = 0;
+					out[7] = 0;
+					out[8] = (right + left) * rl;
+					out[9] = (top + bottom) * tb;
+					out[10] = (far + near) * nf;
+					out[11] = -1;
+					out[12] = 0;
+					out[13] = 0;
+					out[14] = (far * near * 2) * nf;
+					out[15] = 0;
+					return out;
+				};
+
+				/**
+				 * Generates a perspective projection matrix with the given bounds
+				 *
+				 * @param {mat4} out mat4 frustum matrix will be written into
+				 * @param {number} fovy Vertical field of view in radians
+				 * @param {number} aspect Aspect ratio. typically viewport width/height
+				 * @param {number} near Near bound of the frustum
+				 * @param {number} far Far bound of the frustum
+				 * @returns {mat4} out
+				 */
+				mat4.perspective = function (out, fovy, aspect, near, far) {
+					var f = 1.0 / Math.tan(fovy / 2),
+						nf = 1 / (near - far);
+					out[0] = f / aspect;
+					out[1] = 0;
+					out[2] = 0;
+					out[3] = 0;
+					out[4] = 0;
+					out[5] = f;
+					out[6] = 0;
+					out[7] = 0;
+					out[8] = 0;
+					out[9] = 0;
+					out[10] = (far + near) * nf;
+					out[11] = -1;
+					out[12] = 0;
+					out[13] = 0;
+					out[14] = (2 * far * near) * nf;
+					out[15] = 0;
+					return out;
+				};
+
+				/**
+				 * Generates a perspective projection matrix with the given field of view.
+				 * This is primarily useful for generating projection matrices to be used
+				 * with the still experiemental WebVR API.
+				 *
+				 * @param {mat4} out mat4 frustum matrix will be written into
+				 * @param {number} fov Object containing the following values: upDegrees, downDegrees, leftDegrees, rightDegrees
+				 * @param {number} near Near bound of the frustum
+				 * @param {number} far Far bound of the frustum
+				 * @returns {mat4} out
+				 */
+				mat4.perspectiveFromFieldOfView = function (out, fov, near, far) {
+					var upTan = Math.tan(fov.upDegrees * Math.PI / 180.0),
+						downTan = Math.tan(fov.downDegrees * Math.PI / 180.0),
+						leftTan = Math.tan(fov.leftDegrees * Math.PI / 180.0),
+						rightTan = Math.tan(fov.rightDegrees * Math.PI / 180.0),
+						xScale = 2.0 / (leftTan + rightTan),
+						yScale = 2.0 / (upTan + downTan);
+
+					out[0] = xScale;
+					out[1] = 0.0;
+					out[2] = 0.0;
+					out[3] = 0.0;
+					out[4] = 0.0;
+					out[5] = yScale;
+					out[6] = 0.0;
+					out[7] = 0.0;
+					out[8] = -((leftTan - rightTan) * xScale * 0.5);
+					out[9] = ((upTan - downTan) * yScale * 0.5);
+					out[10] = far / (near - far);
+					out[11] = -1.0;
+					out[12] = 0.0;
+					out[13] = 0.0;
+					out[14] = (far * near) / (near - far);
+					out[15] = 0.0;
+					return out;
+				}
+
+				/**
+				 * Generates a orthogonal projection matrix with the given bounds
+				 *
+				 * @param {mat4} out mat4 frustum matrix will be written into
+				 * @param {number} left Left bound of the frustum
+				 * @param {number} right Right bound of the frustum
+				 * @param {number} bottom Bottom bound of the frustum
+				 * @param {number} top Top bound of the frustum
+				 * @param {number} near Near bound of the frustum
+				 * @param {number} far Far bound of the frustum
+				 * @returns {mat4} out
+				 */
+				mat4.ortho = function (out, left, right, bottom, top, near, far) {
+					var lr = 1 / (left - right),
+						bt = 1 / (bottom - top),
+						nf = 1 / (near - far);
+					out[0] = -2 * lr;
+					out[1] = 0;
+					out[2] = 0;
+					out[3] = 0;
+					out[4] = 0;
+					out[5] = -2 * bt;
+					out[6] = 0;
+					out[7] = 0;
+					out[8] = 0;
+					out[9] = 0;
+					out[10] = 2 * nf;
+					out[11] = 0;
+					out[12] = (left + right) * lr;
+					out[13] = (top + bottom) * bt;
+					out[14] = (far + near) * nf;
+					out[15] = 1;
+					return out;
+				};
+
+				/**
+				 * Generates a look-at matrix with the given eye position, focal point, and up axis
+				 *
+				 * @param {mat4} out mat4 frustum matrix will be written into
+				 * @param {vec3} eye Position of the viewer
+				 * @param {vec3} center Point the viewer is looking at
+				 * @param {vec3} up vec3 pointing up
+				 * @returns {mat4} out
+				 */
+				mat4.lookAt = function (out, eye, center, up) {
+					var x0, x1, x2, y0, y1, y2, z0, z1, z2, len,
+						eyex = eye[0],
+						eyey = eye[1],
+						eyez = eye[2],
+						upx = up[0],
+						upy = up[1],
+						upz = up[2],
+						centerx = center[0],
+						centery = center[1],
+						centerz = center[2];
+
+					if (Math.abs(eyex - centerx) < glMatrix.EPSILON &&
+						Math.abs(eyey - centery) < glMatrix.EPSILON &&
+						Math.abs(eyez - centerz) < glMatrix.EPSILON) {
+						return mat4.identity(out);
+					}
+
+					z0 = eyex - centerx;
+					z1 = eyey - centery;
+					z2 = eyez - centerz;
+
+					len = 1 / Math.sqrt(z0 * z0 + z1 * z1 + z2 * z2);
+					z0 *= len;
+					z1 *= len;
+					z2 *= len;
+
+					x0 = upy * z2 - upz * z1;
+					x1 = upz * z0 - upx * z2;
+					x2 = upx * z1 - upy * z0;
+					len = Math.sqrt(x0 * x0 + x1 * x1 + x2 * x2);
+					if (!len) {
+						x0 = 0;
+						x1 = 0;
+						x2 = 0;
+					} else {
+						len = 1 / len;
+						x0 *= len;
+						x1 *= len;
+						x2 *= len;
+					}
+
+					y0 = z1 * x2 - z2 * x1;
+					y1 = z2 * x0 - z0 * x2;
+					y2 = z0 * x1 - z1 * x0;
+
+					len = Math.sqrt(y0 * y0 + y1 * y1 + y2 * y2);
+					if (!len) {
+						y0 = 0;
+						y1 = 0;
+						y2 = 0;
+					} else {
+						len = 1 / len;
+						y0 *= len;
+						y1 *= len;
+						y2 *= len;
+					}
+
+					out[0] = x0;
+					out[1] = y0;
+					out[2] = z0;
+					out[3] = 0;
+					out[4] = x1;
+					out[5] = y1;
+					out[6] = z1;
+					out[7] = 0;
+					out[8] = x2;
+					out[9] = y2;
+					out[10] = z2;
+					out[11] = 0;
+					out[12] = -(x0 * eyex + x1 * eyey + x2 * eyez);
+					out[13] = -(y0 * eyex + y1 * eyey + y2 * eyez);
+					out[14] = -(z0 * eyex + z1 * eyey + z2 * eyez);
+					out[15] = 1;
+
+					return out;
+				};
+
+				/**
+				 * Returns a string representation of a mat4
+				 *
+				 * @param {mat4} mat matrix to represent as a string
+				 * @returns {String} string representation of the matrix
+				 */
+				mat4.str = function (a) {
+					return 'mat4(' + a[0] + ', ' + a[1] + ', ' + a[2] + ', ' + a[3] + ', ' +
+						a[4] + ', ' + a[5] + ', ' + a[6] + ', ' + a[7] + ', ' +
+						a[8] + ', ' + a[9] + ', ' + a[10] + ', ' + a[11] + ', ' +
+						a[12] + ', ' + a[13] + ', ' + a[14] + ', ' + a[15] + ')';
+				};
+
+				/**
+				 * Returns Frobenius norm of a mat4
+				 *
+				 * @param {mat4} a the matrix to calculate Frobenius norm of
+				 * @returns {Number} Frobenius norm
+				 */
+				mat4.frob = function (a) {
+					return (Math.sqrt(Math.pow(a[0], 2) + Math.pow(a[1], 2) + Math.pow(a[2], 2) + Math.pow(a[3], 2) + Math.pow(a[4], 2) + Math.pow(a[5], 2) + Math.pow(a[6], 2) + Math.pow(a[7], 2) + Math.pow(a[8], 2) + Math.pow(a[9], 2) + Math.pow(a[10], 2) + Math.pow(a[11], 2) + Math.pow(a[12], 2) + Math.pow(a[13], 2) + Math.pow(a[14], 2) + Math.pow(a[15], 2)))
+				};
+
+
+				module.exports = mat4;
+
+
+				/***/
+},
+/* 6 */
+/***/ function (module, exports, __webpack_require__) {
+
+				/* Copyright (c) 2015, Brandon Jones, Colin MacKenzie IV.
+			
+				Permission is hereby granted, free of charge, to any person obtaining a copy
+				of this software and associated documentation files (the "Software"), to deal
+				in the Software without restriction, including without limitation the rights
+				to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+				copies of the Software, and to permit persons to whom the Software is
+				furnished to do so, subject to the following conditions:
+			
+				The above copyright notice and this permission notice shall be included in
+				all copies or substantial portions of the Software.
+			
+				THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+				IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+				FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+				AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+				LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+				OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+				THE SOFTWARE. */
+
+				var glMatrix = __webpack_require__(1);
+				var mat3 = __webpack_require__(4);
+				var vec3 = __webpack_require__(7);
+				var vec4 = __webpack_require__(8);
+
+				/**
+				 * @class Quaternion
+				 * @name quat
+				 */
+				var quat = {};
+
+				/**
+				 * Creates a new identity quat
+				 *
+				 * @returns {quat} a new quaternion
+				 */
+				quat.create = function () {
+					var out = new glMatrix.ARRAY_TYPE(4);
+					out[0] = 0;
+					out[1] = 0;
+					out[2] = 0;
+					out[3] = 1;
+					return out;
+				};
+
+				/**
+				 * Sets a quaternion to represent the shortest rotation from one
+				 * vector to another.
+				 *
+				 * Both vectors are assumed to be unit length.
+				 *
+				 * @param {quat} out the receiving quaternion.
+				 * @param {vec3} a the initial vector
+				 * @param {vec3} b the destination vector
+				 * @returns {quat} out
+				 */
+				quat.rotationTo = (function () {
+					var tmpvec3 = vec3.create();
+					var xUnitVec3 = vec3.fromValues(1, 0, 0);
+					var yUnitVec3 = vec3.fromValues(0, 1, 0);
+
+					return function (out, a, b) {
+						var dot = vec3.dot(a, b);
+						if (dot < -0.999999) {
+							vec3.cross(tmpvec3, xUnitVec3, a);
+							if (vec3.length(tmpvec3) < 0.000001)
+								vec3.cross(tmpvec3, yUnitVec3, a);
+							vec3.normalize(tmpvec3, tmpvec3);
+							quat.setAxisAngle(out, tmpvec3, Math.PI);
+							return out;
+						} else if (dot > 0.999999) {
+							out[0] = 0;
+							out[1] = 0;
+							out[2] = 0;
+							out[3] = 1;
+							return out;
+						} else {
+							vec3.cross(tmpvec3, a, b);
+							out[0] = tmpvec3[0];
+							out[1] = tmpvec3[1];
+							out[2] = tmpvec3[2];
+							out[3] = 1 + dot;
+							return quat.normalize(out, out);
+						}
+					};
+				})();
+
+				/**
+				 * Sets the specified quaternion with values corresponding to the given
+				 * axes. Each axis is a vec3 and is expected to be unit length and
+				 * perpendicular to all other specified axes.
+				 *
+				 * @param {vec3} view  the vector representing the viewing direction
+				 * @param {vec3} right the vector representing the local "right" direction
+				 * @param {vec3} up    the vector representing the local "up" direction
+				 * @returns {quat} out
+				 */
+				quat.setAxes = (function () {
+					var matr = mat3.create();
+
+					return function (out, view, right, up) {
+						matr[0] = right[0];
+						matr[3] = right[1];
+						matr[6] = right[2];
+
+						matr[1] = up[0];
+						matr[4] = up[1];
+						matr[7] = up[2];
+
+						matr[2] = -view[0];
+						matr[5] = -view[1];
+						matr[8] = -view[2];
+
+						return quat.normalize(out, quat.fromMat3(out, matr));
+					};
+				})();
+
+				/**
+				 * Creates a new quat initialized with values from an existing quaternion
+				 *
+				 * @param {quat} a quaternion to clone
+				 * @returns {quat} a new quaternion
+				 * @function
+				 */
+				quat.clone = vec4.clone;
+
+				/**
+				 * Creates a new quat initialized with the given values
+				 *
+				 * @param {Number} x X component
+				 * @param {Number} y Y component
+				 * @param {Number} z Z component
+				 * @param {Number} w W component
+				 * @returns {quat} a new quaternion
+				 * @function
+				 */
+				quat.fromValues = vec4.fromValues;
+
+				/**
+				 * Copy the values from one quat to another
+				 *
+				 * @param {quat} out the receiving quaternion
+				 * @param {quat} a the source quaternion
+				 * @returns {quat} out
+				 * @function
+				 */
+				quat.copy = vec4.copy;
+
+				/**
+				 * Set the components of a quat to the given values
+				 *
+				 * @param {quat} out the receiving quaternion
+				 * @param {Number} x X component
+				 * @param {Number} y Y component
+				 * @param {Number} z Z component
+				 * @param {Number} w W component
+				 * @returns {quat} out
+				 * @function
+				 */
+				quat.set = vec4.set;
+
+				/**
+				 * Set a quat to the identity quaternion
+				 *
+				 * @param {quat} out the receiving quaternion
+				 * @returns {quat} out
+				 */
+				quat.identity = function (out) {
+					out[0] = 0;
+					out[1] = 0;
+					out[2] = 0;
+					out[3] = 1;
+					return out;
+				};
+
+				/**
+				 * Sets a quat from the given angle and rotation axis,
+				 * then returns it.
+				 *
+				 * @param {quat} out the receiving quaternion
+				 * @param {vec3} axis the axis around which to rotate
+				 * @param {Number} rad the angle in radians
+				 * @returns {quat} out
+				 **/
+				quat.setAxisAngle = function (out, axis, rad) {
+					rad = rad * 0.5;
+					var s = Math.sin(rad);
+					out[0] = s * axis[0];
+					out[1] = s * axis[1];
+					out[2] = s * axis[2];
+					out[3] = Math.cos(rad);
+					return out;
+				};
+
+				/**
+				 * Adds two quat's
+				 *
+				 * @param {quat} out the receiving quaternion
+				 * @param {quat} a the first operand
+				 * @param {quat} b the second operand
+				 * @returns {quat} out
+				 * @function
+				 */
+				quat.add = vec4.add;
+
+				/**
+				 * Multiplies two quat's
+				 *
+				 * @param {quat} out the receiving quaternion
+				 * @param {quat} a the first operand
+				 * @param {quat} b the second operand
+				 * @returns {quat} out
+				 */
+				quat.multiply = function (out, a, b) {
+					var ax = a[0], ay = a[1], az = a[2], aw = a[3],
+						bx = b[0], by = b[1], bz = b[2], bw = b[3];
+
+					out[0] = ax * bw + aw * bx + ay * bz - az * by;
+					out[1] = ay * bw + aw * by + az * bx - ax * bz;
+					out[2] = az * bw + aw * bz + ax * by - ay * bx;
+					out[3] = aw * bw - ax * bx - ay * by - az * bz;
+					return out;
+				};
+
+				/**
+				 * Alias for {@link quat.multiply}
+				 * @function
+				 */
+				quat.mul = quat.multiply;
+
+				/**
+				 * Scales a quat by a scalar number
+				 *
+				 * @param {quat} out the receiving vector
+				 * @param {quat} a the vector to scale
+				 * @param {Number} b amount to scale the vector by
+				 * @returns {quat} out
+				 * @function
+				 */
+				quat.scale = vec4.scale;
+
+				/**
+				 * Rotates a quaternion by the given angle about the X axis
+				 *
+				 * @param {quat} out quat receiving operation result
+				 * @param {quat} a quat to rotate
+				 * @param {number} rad angle (in radians) to rotate
+				 * @returns {quat} out
+				 */
+				quat.rotateX = function (out, a, rad) {
+					rad *= 0.5;
+
+					var ax = a[0], ay = a[1], az = a[2], aw = a[3],
+						bx = Math.sin(rad), bw = Math.cos(rad);
+
+					out[0] = ax * bw + aw * bx;
+					out[1] = ay * bw + az * bx;
+					out[2] = az * bw - ay * bx;
+					out[3] = aw * bw - ax * bx;
+					return out;
+				};
+
+				/**
+				 * Rotates a quaternion by the given angle about the Y axis
+				 *
+				 * @param {quat} out quat receiving operation result
+				 * @param {quat} a quat to rotate
+				 * @param {number} rad angle (in radians) to rotate
+				 * @returns {quat} out
+				 */
+				quat.rotateY = function (out, a, rad) {
+					rad *= 0.5;
+
+					var ax = a[0], ay = a[1], az = a[2], aw = a[3],
+						by = Math.sin(rad), bw = Math.cos(rad);
+
+					out[0] = ax * bw - az * by;
+					out[1] = ay * bw + aw * by;
+					out[2] = az * bw + ax * by;
+					out[3] = aw * bw - ay * by;
+					return out;
+				};
+
+				/**
+				 * Rotates a quaternion by the given angle about the Z axis
+				 *
+				 * @param {quat} out quat receiving operation result
+				 * @param {quat} a quat to rotate
+				 * @param {number} rad angle (in radians) to rotate
+				 * @returns {quat} out
+				 */
+				quat.rotateZ = function (out, a, rad) {
+					rad *= 0.5;
+
+					var ax = a[0], ay = a[1], az = a[2], aw = a[3],
+						bz = Math.sin(rad), bw = Math.cos(rad);
+
+					out[0] = ax * bw + ay * bz;
+					out[1] = ay * bw - ax * bz;
+					out[2] = az * bw + aw * bz;
+					out[3] = aw * bw - az * bz;
+					return out;
+				};
+
+				/**
+				 * Calculates the W component of a quat from the X, Y, and Z components.
+				 * Assumes that quaternion is 1 unit in length.
+				 * Any existing W component will be ignored.
+				 *
+				 * @param {quat} out the receiving quaternion
+				 * @param {quat} a quat to calculate W component of
+				 * @returns {quat} out
+				 */
+				quat.calculateW = function (out, a) {
+					var x = a[0], y = a[1], z = a[2];
+
+					out[0] = x;
+					out[1] = y;
+					out[2] = z;
+					out[3] = Math.sqrt(Math.abs(1.0 - x * x - y * y - z * z));
+					return out;
+				};
+
+				/**
+				 * Calculates the dot product of two quat's
+				 *
+				 * @param {quat} a the first operand
+				 * @param {quat} b the second operand
+				 * @returns {Number} dot product of a and b
+				 * @function
+				 */
+				quat.dot = vec4.dot;
+
+				/**
+				 * Performs a linear interpolation between two quat's
+				 *
+				 * @param {quat} out the receiving quaternion
+				 * @param {quat} a the first operand
+				 * @param {quat} b the second operand
+				 * @param {Number} t interpolation amount between the two inputs
+				 * @returns {quat} out
+				 * @function
+				 */
+				quat.lerp = vec4.lerp;
+
+				/**
+				 * Performs a spherical linear interpolation between two quat
+				 *
+				 * @param {quat} out the receiving quaternion
+				 * @param {quat} a the first operand
+				 * @param {quat} b the second operand
+				 * @param {Number} t interpolation amount between the two inputs
+				 * @returns {quat} out
+				 */
+				quat.slerp = function (out, a, b, t) {
+					// benchmarks:
+					//    http://jsperf.com/quaternion-slerp-implementations
+
+					var ax = a[0], ay = a[1], az = a[2], aw = a[3],
+						bx = b[0], by = b[1], bz = b[2], bw = b[3];
+
+					var omega, cosom, sinom, scale0, scale1;
+
+					// calc cosine
+					cosom = ax * bx + ay * by + az * bz + aw * bw;
+					// adjust signs (if necessary)
+					if (cosom < 0.0) {
+						cosom = -cosom;
+						bx = - bx;
+						by = - by;
+						bz = - bz;
+						bw = - bw;
+					}
+					// calculate coefficients
+					if ((1.0 - cosom) > 0.000001) {
+						// standard case (slerp)
+						omega = Math.acos(cosom);
+						sinom = Math.sin(omega);
+						scale0 = Math.sin((1.0 - t) * omega) / sinom;
+						scale1 = Math.sin(t * omega) / sinom;
+					} else {
+						// "from" and "to" quaternions are very close 
+						//  ... so we can do a linear interpolation
+						scale0 = 1.0 - t;
+						scale1 = t;
+					}
+					// calculate final values
+					out[0] = scale0 * ax + scale1 * bx;
+					out[1] = scale0 * ay + scale1 * by;
+					out[2] = scale0 * az + scale1 * bz;
+					out[3] = scale0 * aw + scale1 * bw;
+
+					return out;
+				};
+
+				/**
+				 * Performs a spherical linear interpolation with two control points
+				 *
+				 * @param {quat} out the receiving quaternion
+				 * @param {quat} a the first operand
+				 * @param {quat} b the second operand
+				 * @param {quat} c the third operand
+				 * @param {quat} d the fourth operand
+				 * @param {Number} t interpolation amount
+				 * @returns {quat} out
+				 */
+				quat.sqlerp = (function () {
+					var temp1 = quat.create();
+					var temp2 = quat.create();
+
+					return function (out, a, b, c, d, t) {
+						quat.slerp(temp1, a, d, t);
+						quat.slerp(temp2, b, c, t);
+						quat.slerp(out, temp1, temp2, 2 * t * (1 - t));
+
+						return out;
+					};
+				}());
+
+				/**
+				 * Calculates the inverse of a quat
+				 *
+				 * @param {quat} out the receiving quaternion
+				 * @param {quat} a quat to calculate inverse of
+				 * @returns {quat} out
+				 */
+				quat.invert = function (out, a) {
+					var a0 = a[0], a1 = a[1], a2 = a[2], a3 = a[3],
+						dot = a0 * a0 + a1 * a1 + a2 * a2 + a3 * a3,
+						invDot = dot ? 1.0 / dot : 0;
+
+					// TODO: Would be faster to return [0,0,0,0] immediately if dot == 0
+
+					out[0] = -a0 * invDot;
+					out[1] = -a1 * invDot;
+					out[2] = -a2 * invDot;
+					out[3] = a3 * invDot;
+					return out;
+				};
+
+				/**
+				 * Calculates the conjugate of a quat
+				 * If the quaternion is normalized, this function is faster than quat.inverse and produces the same result.
+				 *
+				 * @param {quat} out the receiving quaternion
+				 * @param {quat} a quat to calculate conjugate of
+				 * @returns {quat} out
+				 */
+				quat.conjugate = function (out, a) {
+					out[0] = -a[0];
+					out[1] = -a[1];
+					out[2] = -a[2];
+					out[3] = a[3];
+					return out;
+				};
+
+				/**
+				 * Calculates the length of a quat
+				 *
+				 * @param {quat} a vector to calculate length of
+				 * @returns {Number} length of a
+				 * @function
+				 */
+				quat.length = vec4.length;
+
+				/**
+				 * Alias for {@link quat.length}
+				 * @function
+				 */
+				quat.len = quat.length;
+
+				/**
+				 * Calculates the squared length of a quat
+				 *
+				 * @param {quat} a vector to calculate squared length of
+				 * @returns {Number} squared length of a
+				 * @function
+				 */
+				quat.squaredLength = vec4.squaredLength;
+
+				/**
+				 * Alias for {@link quat.squaredLength}
+				 * @function
+				 */
+				quat.sqrLen = quat.squaredLength;
+
+				/**
+				 * Normalize a quat
+				 *
+				 * @param {quat} out the receiving quaternion
+				 * @param {quat} a quaternion to normalize
+				 * @returns {quat} out
+				 * @function
+				 */
+				quat.normalize = vec4.normalize;
+
+				/**
+				 * Creates a quaternion from the given 3x3 rotation matrix.
+				 *
+				 * NOTE: The resultant quaternion is not normalized, so you should be sure
+				 * to renormalize the quaternion yourself where necessary.
+				 *
+				 * @param {quat} out the receiving quaternion
+				 * @param {mat3} m rotation matrix
+				 * @returns {quat} out
+				 * @function
+				 */
+				quat.fromMat3 = function (out, m) {
+					// Algorithm in Ken Shoemake's article in 1987 SIGGRAPH course notes
+					// article "Quaternion Calculus and Fast Animation".
+					var fTrace = m[0] + m[4] + m[8];
+					var fRoot;
+
+					if (fTrace > 0.0) {
+						// |w| > 1/2, may as well choose w > 1/2
+						fRoot = Math.sqrt(fTrace + 1.0);  // 2w
+						out[3] = 0.5 * fRoot;
+						fRoot = 0.5 / fRoot;  // 1/(4w)
+						out[0] = (m[5] - m[7]) * fRoot;
+						out[1] = (m[6] - m[2]) * fRoot;
+						out[2] = (m[1] - m[3]) * fRoot;
+					} else {
+						// |w| <= 1/2
+						var i = 0;
+						if (m[4] > m[0])
+							i = 1;
+						if (m[8] > m[i * 3 + i])
+							i = 2;
+						var j = (i + 1) % 3;
+						var k = (i + 2) % 3;
+
+						fRoot = Math.sqrt(m[i * 3 + i] - m[j * 3 + j] - m[k * 3 + k] + 1.0);
+						out[i] = 0.5 * fRoot;
+						fRoot = 0.5 / fRoot;
+						out[3] = (m[j * 3 + k] - m[k * 3 + j]) * fRoot;
+						out[j] = (m[j * 3 + i] + m[i * 3 + j]) * fRoot;
+						out[k] = (m[k * 3 + i] + m[i * 3 + k]) * fRoot;
+					}
+
+					return out;
+				};
+
+				/**
+				 * Returns a string representation of a quatenion
+				 *
+				 * @param {quat} vec vector to represent as a string
+				 * @returns {String} string representation of the vector
+				 */
+				quat.str = function (a) {
+					return 'quat(' + a[0] + ', ' + a[1] + ', ' + a[2] + ', ' + a[3] + ')';
+				};
+
+				module.exports = quat;
+
+
+				/***/
+},
+/* 7 */
+/***/ function (module, exports, __webpack_require__) {
+
+				/* Copyright (c) 2015, Brandon Jones, Colin MacKenzie IV.
+			
+				Permission is hereby granted, free of charge, to any person obtaining a copy
+				of this software and associated documentation files (the "Software"), to deal
+				in the Software without restriction, including without limitation the rights
+				to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+				copies of the Software, and to permit persons to whom the Software is
+				furnished to do so, subject to the following conditions:
+			
+				The above copyright notice and this permission notice shall be included in
+				all copies or substantial portions of the Software.
+			
+				THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+				IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+				FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+				AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+				LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+				OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+				THE SOFTWARE. */
+
+				var glMatrix = __webpack_require__(1);
+
+				/**
+				 * @class 3 Dimensional Vector
+				 * @name vec3
+				 */
+				var vec3 = {};
+
+				/**
+				 * Creates a new, empty vec3
+				 *
+				 * @returns {vec3} a new 3D vector
+				 */
+				vec3.create = function () {
+					var out = new glMatrix.ARRAY_TYPE(3);
+					out[0] = 0;
+					out[1] = 0;
+					out[2] = 0;
+					return out;
+				};
+
+				/**
+				 * Creates a new vec3 initialized with values from an existing vector
+				 *
+				 * @param {vec3} a vector to clone
+				 * @returns {vec3} a new 3D vector
+				 */
+				vec3.clone = function (a) {
+					var out = new glMatrix.ARRAY_TYPE(3);
+					out[0] = a[0];
+					out[1] = a[1];
+					out[2] = a[2];
+					return out;
+				};
+
+				/**
+				 * Creates a new vec3 initialized with the given values
+				 *
+				 * @param {Number} x X component
+				 * @param {Number} y Y component
+				 * @param {Number} z Z component
+				 * @returns {vec3} a new 3D vector
+				 */
+				vec3.fromValues = function (x, y, z) {
+					var out = new glMatrix.ARRAY_TYPE(3);
+					out[0] = x;
+					out[1] = y;
+					out[2] = z;
+					return out;
+				};
+
+				/**
+				 * Copy the values from one vec3 to another
+				 *
+				 * @param {vec3} out the receiving vector
+				 * @param {vec3} a the source vector
+				 * @returns {vec3} out
+				 */
+				vec3.copy = function (out, a) {
+					out[0] = a[0];
+					out[1] = a[1];
+					out[2] = a[2];
+					return out;
+				};
+
+				/**
+				 * Set the components of a vec3 to the given values
+				 *
+				 * @param {vec3} out the receiving vector
+				 * @param {Number} x X component
+				 * @param {Number} y Y component
+				 * @param {Number} z Z component
+				 * @returns {vec3} out
+				 */
+				vec3.set = function (out, x, y, z) {
+					out[0] = x;
+					out[1] = y;
+					out[2] = z;
+					return out;
+				};
+
+				/**
+				 * Adds two vec3's
+				 *
+				 * @param {vec3} out the receiving vector
+				 * @param {vec3} a the first operand
+				 * @param {vec3} b the second operand
+				 * @returns {vec3} out
+				 */
+				vec3.add = function (out, a, b) {
+					out[0] = a[0] + b[0];
+					out[1] = a[1] + b[1];
+					out[2] = a[2] + b[2];
+					return out;
+				};
+
+				/**
+				 * Subtracts vector b from vector a
+				 *
+				 * @param {vec3} out the receiving vector
+				 * @param {vec3} a the first operand
+				 * @param {vec3} b the second operand
+				 * @returns {vec3} out
+				 */
+				vec3.subtract = function (out, a, b) {
+					out[0] = a[0] - b[0];
+					out[1] = a[1] - b[1];
+					out[2] = a[2] - b[2];
+					return out;
+				};
+
+				/**
+				 * Alias for {@link vec3.subtract}
+				 * @function
+				 */
+				vec3.sub = vec3.subtract;
+
+				/**
+				 * Multiplies two vec3's
+				 *
+				 * @param {vec3} out the receiving vector
+				 * @param {vec3} a the first operand
+				 * @param {vec3} b the second operand
+				 * @returns {vec3} out
+				 */
+				vec3.multiply = function (out, a, b) {
+					out[0] = a[0] * b[0];
+					out[1] = a[1] * b[1];
+					out[2] = a[2] * b[2];
+					return out;
+				};
+
+				/**
+				 * Alias for {@link vec3.multiply}
+				 * @function
+				 */
+				vec3.mul = vec3.multiply;
+
+				/**
+				 * Divides two vec3's
+				 *
+				 * @param {vec3} out the receiving vector
+				 * @param {vec3} a the first operand
+				 * @param {vec3} b the second operand
+				 * @returns {vec3} out
+				 */
+				vec3.divide = function (out, a, b) {
+					out[0] = a[0] / b[0];
+					out[1] = a[1] / b[1];
+					out[2] = a[2] / b[2];
+					return out;
+				};
+
+				/**
+				 * Alias for {@link vec3.divide}
+				 * @function
+				 */
+				vec3.div = vec3.divide;
+
+				/**
+				 * Returns the minimum of two vec3's
+				 *
+				 * @param {vec3} out the receiving vector
+				 * @param {vec3} a the first operand
+				 * @param {vec3} b the second operand
+				 * @returns {vec3} out
+				 */
+				vec3.min = function (out, a, b) {
+					out[0] = Math.min(a[0], b[0]);
+					out[1] = Math.min(a[1], b[1]);
+					out[2] = Math.min(a[2], b[2]);
+					return out;
+				};
+
+				/**
+				 * Returns the maximum of two vec3's
+				 *
+				 * @param {vec3} out the receiving vector
+				 * @param {vec3} a the first operand
+				 * @param {vec3} b the second operand
+				 * @returns {vec3} out
+				 */
+				vec3.max = function (out, a, b) {
+					out[0] = Math.max(a[0], b[0]);
+					out[1] = Math.max(a[1], b[1]);
+					out[2] = Math.max(a[2], b[2]);
+					return out;
+				};
+
+				/**
+				 * Scales a vec3 by a scalar number
+				 *
+				 * @param {vec3} out the receiving vector
+				 * @param {vec3} a the vector to scale
+				 * @param {Number} b amount to scale the vector by
+				 * @returns {vec3} out
+				 */
+				vec3.scale = function (out, a, b) {
+					out[0] = a[0] * b;
+					out[1] = a[1] * b;
+					out[2] = a[2] * b;
+					return out;
+				};
+
+				/**
+				 * Adds two vec3's after scaling the second operand by a scalar value
+				 *
+				 * @param {vec3} out the receiving vector
+				 * @param {vec3} a the first operand
+				 * @param {vec3} b the second operand
+				 * @param {Number} scale the amount to scale b by before adding
+				 * @returns {vec3} out
+				 */
+				vec3.scaleAndAdd = function (out, a, b, scale) {
+					out[0] = a[0] + (b[0] * scale);
+					out[1] = a[1] + (b[1] * scale);
+					out[2] = a[2] + (b[2] * scale);
+					return out;
+				};
+
+				/**
+				 * Calculates the euclidian distance between two vec3's
+				 *
+				 * @param {vec3} a the first operand
+				 * @param {vec3} b the second operand
+				 * @returns {Number} distance between a and b
+				 */
+				vec3.distance = function (a, b) {
+					var x = b[0] - a[0],
+						y = b[1] - a[1],
+						z = b[2] - a[2];
+					return Math.sqrt(x * x + y * y + z * z);
+				};
+
+				/**
+				 * Alias for {@link vec3.distance}
+				 * @function
+				 */
+				vec3.dist = vec3.distance;
+
+				/**
+				 * Calculates the squared euclidian distance between two vec3's
+				 *
+				 * @param {vec3} a the first operand
+				 * @param {vec3} b the second operand
+				 * @returns {Number} squared distance between a and b
+				 */
+				vec3.squaredDistance = function (a, b) {
+					var x = b[0] - a[0],
+						y = b[1] - a[1],
+						z = b[2] - a[2];
+					return x * x + y * y + z * z;
+				};
+
+				/**
+				 * Alias for {@link vec3.squaredDistance}
+				 * @function
+				 */
+				vec3.sqrDist = vec3.squaredDistance;
+
+				/**
+				 * Calculates the length of a vec3
+				 *
+				 * @param {vec3} a vector to calculate length of
+				 * @returns {Number} length of a
+				 */
+				vec3.length = function (a) {
+					var x = a[0],
+						y = a[1],
+						z = a[2];
+					return Math.sqrt(x * x + y * y + z * z);
+				};
+
+				/**
+				 * Alias for {@link vec3.length}
+				 * @function
+				 */
+				vec3.len = vec3.length;
+
+				/**
+				 * Calculates the squared length of a vec3
+				 *
+				 * @param {vec3} a vector to calculate squared length of
+				 * @returns {Number} squared length of a
+				 */
+				vec3.squaredLength = function (a) {
+					var x = a[0],
+						y = a[1],
+						z = a[2];
+					return x * x + y * y + z * z;
+				};
+
+				/**
+				 * Alias for {@link vec3.squaredLength}
+				 * @function
+				 */
+				vec3.sqrLen = vec3.squaredLength;
+
+				/**
+				 * Negates the components of a vec3
+				 *
+				 * @param {vec3} out the receiving vector
+				 * @param {vec3} a vector to negate
+				 * @returns {vec3} out
+				 */
+				vec3.negate = function (out, a) {
+					out[0] = -a[0];
+					out[1] = -a[1];
+					out[2] = -a[2];
+					return out;
+				};
+
+				/**
+				 * Returns the inverse of the components of a vec3
+				 *
+				 * @param {vec3} out the receiving vector
+				 * @param {vec3} a vector to invert
+				 * @returns {vec3} out
+				 */
+				vec3.inverse = function (out, a) {
+					out[0] = 1.0 / a[0];
+					out[1] = 1.0 / a[1];
+					out[2] = 1.0 / a[2];
+					return out;
+				};
+
+				/**
+				 * Normalize a vec3
+				 *
+				 * @param {vec3} out the receiving vector
+				 * @param {vec3} a vector to normalize
+				 * @returns {vec3} out
+				 */
+				vec3.normalize = function (out, a) {
+					var x = a[0],
+						y = a[1],
+						z = a[2];
+					var len = x * x + y * y + z * z;
+					if (len > 0) {
+						//TODO: evaluate use of glm_invsqrt here?
+						len = 1 / Math.sqrt(len);
+						out[0] = a[0] * len;
+						out[1] = a[1] * len;
+						out[2] = a[2] * len;
+					}
+					return out;
+				};
+
+				/**
+				 * Calculates the dot product of two vec3's
+				 *
+				 * @param {vec3} a the first operand
+				 * @param {vec3} b the second operand
+				 * @returns {Number} dot product of a and b
+				 */
+				vec3.dot = function (a, b) {
+					return a[0] * b[0] + a[1] * b[1] + a[2] * b[2];
+				};
+
+				/**
+				 * Computes the cross product of two vec3's
+				 *
+				 * @param {vec3} out the receiving vector
+				 * @param {vec3} a the first operand
+				 * @param {vec3} b the second operand
+				 * @returns {vec3} out
+				 */
+				vec3.cross = function (out, a, b) {
+					var ax = a[0], ay = a[1], az = a[2],
+						bx = b[0], by = b[1], bz = b[2];
+
+					out[0] = ay * bz - az * by;
+					out[1] = az * bx - ax * bz;
+					out[2] = ax * by - ay * bx;
+					return out;
+				};
+
+				/**
+				 * Performs a linear interpolation between two vec3's
+				 *
+				 * @param {vec3} out the receiving vector
+				 * @param {vec3} a the first operand
+				 * @param {vec3} b the second operand
+				 * @param {Number} t interpolation amount between the two inputs
+				 * @returns {vec3} out
+				 */
+				vec3.lerp = function (out, a, b, t) {
+					var ax = a[0],
+						ay = a[1],
+						az = a[2];
+					out[0] = ax + t * (b[0] - ax);
+					out[1] = ay + t * (b[1] - ay);
+					out[2] = az + t * (b[2] - az);
+					return out;
+				};
+
+				/**
+				 * Performs a hermite interpolation with two control points
+				 *
+				 * @param {vec3} out the receiving vector
+				 * @param {vec3} a the first operand
+				 * @param {vec3} b the second operand
+				 * @param {vec3} c the third operand
+				 * @param {vec3} d the fourth operand
+				 * @param {Number} t interpolation amount between the two inputs
+				 * @returns {vec3} out
+				 */
+				vec3.hermite = function (out, a, b, c, d, t) {
+					var factorTimes2 = t * t,
+						factor1 = factorTimes2 * (2 * t - 3) + 1,
+						factor2 = factorTimes2 * (t - 2) + t,
+						factor3 = factorTimes2 * (t - 1),
+						factor4 = factorTimes2 * (3 - 2 * t);
+
+					out[0] = a[0] * factor1 + b[0] * factor2 + c[0] * factor3 + d[0] * factor4;
+					out[1] = a[1] * factor1 + b[1] * factor2 + c[1] * factor3 + d[1] * factor4;
+					out[2] = a[2] * factor1 + b[2] * factor2 + c[2] * factor3 + d[2] * factor4;
+
+					return out;
+				};
+
+				/**
+				 * Performs a bezier interpolation with two control points
+				 *
+				 * @param {vec3} out the receiving vector
+				 * @param {vec3} a the first operand
+				 * @param {vec3} b the second operand
+				 * @param {vec3} c the third operand
+				 * @param {vec3} d the fourth operand
+				 * @param {Number} t interpolation amount between the two inputs
+				 * @returns {vec3} out
+				 */
+				vec3.bezier = function (out, a, b, c, d, t) {
+					var inverseFactor = 1 - t,
+						inverseFactorTimesTwo = inverseFactor * inverseFactor,
+						factorTimes2 = t * t,
+						factor1 = inverseFactorTimesTwo * inverseFactor,
+						factor2 = 3 * t * inverseFactorTimesTwo,
+						factor3 = 3 * factorTimes2 * inverseFactor,
+						factor4 = factorTimes2 * t;
+
+					out[0] = a[0] * factor1 + b[0] * factor2 + c[0] * factor3 + d[0] * factor4;
+					out[1] = a[1] * factor1 + b[1] * factor2 + c[1] * factor3 + d[1] * factor4;
+					out[2] = a[2] * factor1 + b[2] * factor2 + c[2] * factor3 + d[2] * factor4;
+
+					return out;
+				};
+
+				/**
+				 * Generates a random vector with the given scale
+				 *
+				 * @param {vec3} out the receiving vector
+				 * @param {Number} [scale] Length of the resulting vector. If ommitted, a unit vector will be returned
+				 * @returns {vec3} out
+				 */
+				vec3.random = function (out, scale) {
+					scale = scale || 1.0;
+
+					var r = glMatrix.RANDOM() * 2.0 * Math.PI;
+					var z = (glMatrix.RANDOM() * 2.0) - 1.0;
+					var zScale = Math.sqrt(1.0 - z * z) * scale;
+
+					out[0] = Math.cos(r) * zScale;
+					out[1] = Math.sin(r) * zScale;
+					out[2] = z * scale;
+					return out;
+				};
+
+				/**
+				 * Transforms the vec3 with a mat4.
+				 * 4th vector component is implicitly '1'
+				 *
+				 * @param {vec3} out the receiving vector
+				 * @param {vec3} a the vector to transform
+				 * @param {mat4} m matrix to transform with
+				 * @returns {vec3} out
+				 */
+				vec3.transformMat4 = function (out, a, m) {
+					var x = a[0], y = a[1], z = a[2],
+						w = m[3] * x + m[7] * y + m[11] * z + m[15];
+					w = w || 1.0;
+					out[0] = (m[0] * x + m[4] * y + m[8] * z + m[12]) / w;
+					out[1] = (m[1] * x + m[5] * y + m[9] * z + m[13]) / w;
+					out[2] = (m[2] * x + m[6] * y + m[10] * z + m[14]) / w;
+					return out;
+				};
+
+				/**
+				 * Transforms the vec3 with a mat3.
+				 *
+				 * @param {vec3} out the receiving vector
+				 * @param {vec3} a the vector to transform
+				 * @param {mat4} m the 3x3 matrix to transform with
+				 * @returns {vec3} out
+				 */
+				vec3.transformMat3 = function (out, a, m) {
+					var x = a[0], y = a[1], z = a[2];
+					out[0] = x * m[0] + y * m[3] + z * m[6];
+					out[1] = x * m[1] + y * m[4] + z * m[7];
+					out[2] = x * m[2] + y * m[5] + z * m[8];
+					return out;
+				};
+
+				/**
+				 * Transforms the vec3 with a quat
+				 *
+				 * @param {vec3} out the receiving vector
+				 * @param {vec3} a the vector to transform
+				 * @param {quat} q quaternion to transform with
+				 * @returns {vec3} out
+				 */
+				vec3.transformQuat = function (out, a, q) {
+					// benchmarks: http://jsperf.com/quaternion-transform-vec3-implementations
+
+					var x = a[0], y = a[1], z = a[2],
+						qx = q[0], qy = q[1], qz = q[2], qw = q[3],
+
+						// calculate quat * vec
+						ix = qw * x + qy * z - qz * y,
+						iy = qw * y + qz * x - qx * z,
+						iz = qw * z + qx * y - qy * x,
+						iw = -qx * x - qy * y - qz * z;
+
+					// calculate result * inverse quat
+					out[0] = ix * qw + iw * -qx + iy * -qz - iz * -qy;
+					out[1] = iy * qw + iw * -qy + iz * -qx - ix * -qz;
+					out[2] = iz * qw + iw * -qz + ix * -qy - iy * -qx;
+					return out;
+				};
+
+				/**
+				 * Rotate a 3D vector around the x-axis
+				 * @param {vec3} out The receiving vec3
+				 * @param {vec3} a The vec3 point to rotate
+				 * @param {vec3} b The origin of the rotation
+				 * @param {Number} c The angle of rotation
+				 * @returns {vec3} out
+				 */
+				vec3.rotateX = function (out, a, b, c) {
+					var p = [], r = [];
+					//Translate point to the origin
+					p[0] = a[0] - b[0];
+					p[1] = a[1] - b[1];
+					p[2] = a[2] - b[2];
+
+					//perform rotation
+					r[0] = p[0];
+					r[1] = p[1] * Math.cos(c) - p[2] * Math.sin(c);
+					r[2] = p[1] * Math.sin(c) + p[2] * Math.cos(c);
+
+					//translate to correct position
+					out[0] = r[0] + b[0];
+					out[1] = r[1] + b[1];
+					out[2] = r[2] + b[2];
+
+					return out;
+				};
+
+				/**
+				 * Rotate a 3D vector around the y-axis
+				 * @param {vec3} out The receiving vec3
+				 * @param {vec3} a The vec3 point to rotate
+				 * @param {vec3} b The origin of the rotation
+				 * @param {Number} c The angle of rotation
+				 * @returns {vec3} out
+				 */
+				vec3.rotateY = function (out, a, b, c) {
+					var p = [], r = [];
+					//Translate point to the origin
+					p[0] = a[0] - b[0];
+					p[1] = a[1] - b[1];
+					p[2] = a[2] - b[2];
+
+					//perform rotation
+					r[0] = p[2] * Math.sin(c) + p[0] * Math.cos(c);
+					r[1] = p[1];
+					r[2] = p[2] * Math.cos(c) - p[0] * Math.sin(c);
+
+					//translate to correct position
+					out[0] = r[0] + b[0];
+					out[1] = r[1] + b[1];
+					out[2] = r[2] + b[2];
+
+					return out;
+				};
+
+				/**
+				 * Rotate a 3D vector around the z-axis
+				 * @param {vec3} out The receiving vec3
+				 * @param {vec3} a The vec3 point to rotate
+				 * @param {vec3} b The origin of the rotation
+				 * @param {Number} c The angle of rotation
+				 * @returns {vec3} out
+				 */
+				vec3.rotateZ = function (out, a, b, c) {
+					var p = [], r = [];
+					//Translate point to the origin
+					p[0] = a[0] - b[0];
+					p[1] = a[1] - b[1];
+					p[2] = a[2] - b[2];
+
+					//perform rotation
+					r[0] = p[0] * Math.cos(c) - p[1] * Math.sin(c);
+					r[1] = p[0] * Math.sin(c) + p[1] * Math.cos(c);
+					r[2] = p[2];
+
+					//translate to correct position
+					out[0] = r[0] + b[0];
+					out[1] = r[1] + b[1];
+					out[2] = r[2] + b[2];
+
+					return out;
+				};
+
+				/**
+				 * Perform some operation over an array of vec3s.
+				 *
+				 * @param {Array} a the array of vectors to iterate over
+				 * @param {Number} stride Number of elements between the start of each vec3. If 0 assumes tightly packed
+				 * @param {Number} offset Number of elements to skip at the beginning of the array
+				 * @param {Number} count Number of vec3s to iterate over. If 0 iterates over entire array
+				 * @param {Function} fn Function to call for each vector in the array
+				 * @param {Object} [arg] additional argument to pass to fn
+				 * @returns {Array} a
+				 * @function
+				 */
+				vec3.forEach = (function () {
+					var vec = vec3.create();
+
+					return function (a, stride, offset, count, fn, arg) {
+						var i, l;
+						if (!stride) {
+							stride = 3;
+						}
+
+						if (!offset) {
+							offset = 0;
+						}
+
+						if (count) {
+							l = Math.min((count * stride) + offset, a.length);
+						} else {
+							l = a.length;
+						}
+
+						for (i = offset; i < l; i += stride) {
+							vec[0] = a[i]; vec[1] = a[i + 1]; vec[2] = a[i + 2];
+							fn(vec, vec, arg);
+							a[i] = vec[0]; a[i + 1] = vec[1]; a[i + 2] = vec[2];
+						}
+
+						return a;
+					};
+				})();
+
+				/**
+				 * Get the angle between two 3D vectors
+				 * @param {vec3} a The first operand
+				 * @param {vec3} b The second operand
+				 * @returns {Number} The angle in radians
+				 */
+				vec3.angle = function (a, b) {
+
+					var tempA = vec3.fromValues(a[0], a[1], a[2]);
+					var tempB = vec3.fromValues(b[0], b[1], b[2]);
+
+					vec3.normalize(tempA, tempA);
+					vec3.normalize(tempB, tempB);
+
+					var cosine = vec3.dot(tempA, tempB);
+
+					if (cosine > 1.0) {
+						return 0;
+					} else {
+						return Math.acos(cosine);
+					}
+				};
+
+				/**
+				 * Returns a string representation of a vector
+				 *
+				 * @param {vec3} vec vector to represent as a string
+				 * @returns {String} string representation of the vector
+				 */
+				vec3.str = function (a) {
+					return 'vec3(' + a[0] + ', ' + a[1] + ', ' + a[2] + ')';
+				};
+
+				module.exports = vec3;
+
+
+				/***/
+},
+/* 8 */
+/***/ function (module, exports, __webpack_require__) {
+
+				/* Copyright (c) 2015, Brandon Jones, Colin MacKenzie IV.
+			
+				Permission is hereby granted, free of charge, to any person obtaining a copy
+				of this software and associated documentation files (the "Software"), to deal
+				in the Software without restriction, including without limitation the rights
+				to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+				copies of the Software, and to permit persons to whom the Software is
+				furnished to do so, subject to the following conditions:
+			
+				The above copyright notice and this permission notice shall be included in
+				all copies or substantial portions of the Software.
+			
+				THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+				IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+				FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+				AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+				LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+				OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+				THE SOFTWARE. */
+
+				var glMatrix = __webpack_require__(1);
+
+				/**
+				 * @class 4 Dimensional Vector
+				 * @name vec4
+				 */
+				var vec4 = {};
+
+				/**
+				 * Creates a new, empty vec4
+				 *
+				 * @returns {vec4} a new 4D vector
+				 */
+				vec4.create = function () {
+					var out = new glMatrix.ARRAY_TYPE(4);
+					out[0] = 0;
+					out[1] = 0;
+					out[2] = 0;
+					out[3] = 0;
+					return out;
+				};
+
+				/**
+				 * Creates a new vec4 initialized with values from an existing vector
+				 *
+				 * @param {vec4} a vector to clone
+				 * @returns {vec4} a new 4D vector
+				 */
+				vec4.clone = function (a) {
+					var out = new glMatrix.ARRAY_TYPE(4);
+					out[0] = a[0];
+					out[1] = a[1];
+					out[2] = a[2];
+					out[3] = a[3];
+					return out;
+				};
+
+				/**
+				 * Creates a new vec4 initialized with the given values
+				 *
+				 * @param {Number} x X component
+				 * @param {Number} y Y component
+				 * @param {Number} z Z component
+				 * @param {Number} w W component
+				 * @returns {vec4} a new 4D vector
+				 */
+				vec4.fromValues = function (x, y, z, w) {
+					var out = new glMatrix.ARRAY_TYPE(4);
+					out[0] = x;
+					out[1] = y;
+					out[2] = z;
+					out[3] = w;
+					return out;
+				};
+
+				/**
+				 * Copy the values from one vec4 to another
+				 *
+				 * @param {vec4} out the receiving vector
+				 * @param {vec4} a the source vector
+				 * @returns {vec4} out
+				 */
+				vec4.copy = function (out, a) {
+					out[0] = a[0];
+					out[1] = a[1];
+					out[2] = a[2];
+					out[3] = a[3];
+					return out;
+				};
+
+				/**
+				 * Set the components of a vec4 to the given values
+				 *
+				 * @param {vec4} out the receiving vector
+				 * @param {Number} x X component
+				 * @param {Number} y Y component
+				 * @param {Number} z Z component
+				 * @param {Number} w W component
+				 * @returns {vec4} out
+				 */
+				vec4.set = function (out, x, y, z, w) {
+					out[0] = x;
+					out[1] = y;
+					out[2] = z;
+					out[3] = w;
+					return out;
+				};
+
+				/**
+				 * Adds two vec4's
+				 *
+				 * @param {vec4} out the receiving vector
+				 * @param {vec4} a the first operand
+				 * @param {vec4} b the second operand
+				 * @returns {vec4} out
+				 */
+				vec4.add = function (out, a, b) {
+					out[0] = a[0] + b[0];
+					out[1] = a[1] + b[1];
+					out[2] = a[2] + b[2];
+					out[3] = a[3] + b[3];
+					return out;
+				};
+
+				/**
+				 * Subtracts vector b from vector a
+				 *
+				 * @param {vec4} out the receiving vector
+				 * @param {vec4} a the first operand
+				 * @param {vec4} b the second operand
+				 * @returns {vec4} out
+				 */
+				vec4.subtract = function (out, a, b) {
+					out[0] = a[0] - b[0];
+					out[1] = a[1] - b[1];
+					out[2] = a[2] - b[2];
+					out[3] = a[3] - b[3];
+					return out;
+				};
+
+				/**
+				 * Alias for {@link vec4.subtract}
+				 * @function
+				 */
+				vec4.sub = vec4.subtract;
+
+				/**
+				 * Multiplies two vec4's
+				 *
+				 * @param {vec4} out the receiving vector
+				 * @param {vec4} a the first operand
+				 * @param {vec4} b the second operand
+				 * @returns {vec4} out
+				 */
+				vec4.multiply = function (out, a, b) {
+					out[0] = a[0] * b[0];
+					out[1] = a[1] * b[1];
+					out[2] = a[2] * b[2];
+					out[3] = a[3] * b[3];
+					return out;
+				};
+
+				/**
+				 * Alias for {@link vec4.multiply}
+				 * @function
+				 */
+				vec4.mul = vec4.multiply;
+
+				/**
+				 * Divides two vec4's
+				 *
+				 * @param {vec4} out the receiving vector
+				 * @param {vec4} a the first operand
+				 * @param {vec4} b the second operand
+				 * @returns {vec4} out
+				 */
+				vec4.divide = function (out, a, b) {
+					out[0] = a[0] / b[0];
+					out[1] = a[1] / b[1];
+					out[2] = a[2] / b[2];
+					out[3] = a[3] / b[3];
+					return out;
+				};
+
+				/**
+				 * Alias for {@link vec4.divide}
+				 * @function
+				 */
+				vec4.div = vec4.divide;
+
+				/**
+				 * Returns the minimum of two vec4's
+				 *
+				 * @param {vec4} out the receiving vector
+				 * @param {vec4} a the first operand
+				 * @param {vec4} b the second operand
+				 * @returns {vec4} out
+				 */
+				vec4.min = function (out, a, b) {
+					out[0] = Math.min(a[0], b[0]);
+					out[1] = Math.min(a[1], b[1]);
+					out[2] = Math.min(a[2], b[2]);
+					out[3] = Math.min(a[3], b[3]);
+					return out;
+				};
+
+				/**
+				 * Returns the maximum of two vec4's
+				 *
+				 * @param {vec4} out the receiving vector
+				 * @param {vec4} a the first operand
+				 * @param {vec4} b the second operand
+				 * @returns {vec4} out
+				 */
+				vec4.max = function (out, a, b) {
+					out[0] = Math.max(a[0], b[0]);
+					out[1] = Math.max(a[1], b[1]);
+					out[2] = Math.max(a[2], b[2]);
+					out[3] = Math.max(a[3], b[3]);
+					return out;
+				};
+
+				/**
+				 * Scales a vec4 by a scalar number
+				 *
+				 * @param {vec4} out the receiving vector
+				 * @param {vec4} a the vector to scale
+				 * @param {Number} b amount to scale the vector by
+				 * @returns {vec4} out
+				 */
+				vec4.scale = function (out, a, b) {
+					out[0] = a[0] * b;
+					out[1] = a[1] * b;
+					out[2] = a[2] * b;
+					out[3] = a[3] * b;
+					return out;
+				};
+
+				/**
+				 * Adds two vec4's after scaling the second operand by a scalar value
+				 *
+				 * @param {vec4} out the receiving vector
+				 * @param {vec4} a the first operand
+				 * @param {vec4} b the second operand
+				 * @param {Number} scale the amount to scale b by before adding
+				 * @returns {vec4} out
+				 */
+				vec4.scaleAndAdd = function (out, a, b, scale) {
+					out[0] = a[0] + (b[0] * scale);
+					out[1] = a[1] + (b[1] * scale);
+					out[2] = a[2] + (b[2] * scale);
+					out[3] = a[3] + (b[3] * scale);
+					return out;
+				};
+
+				/**
+				 * Calculates the euclidian distance between two vec4's
+				 *
+				 * @param {vec4} a the first operand
+				 * @param {vec4} b the second operand
+				 * @returns {Number} distance between a and b
+				 */
+				vec4.distance = function (a, b) {
+					var x = b[0] - a[0],
+						y = b[1] - a[1],
+						z = b[2] - a[2],
+						w = b[3] - a[3];
+					return Math.sqrt(x * x + y * y + z * z + w * w);
+				};
+
+				/**
+				 * Alias for {@link vec4.distance}
+				 * @function
+				 */
+				vec4.dist = vec4.distance;
+
+				/**
+				 * Calculates the squared euclidian distance between two vec4's
+				 *
+				 * @param {vec4} a the first operand
+				 * @param {vec4} b the second operand
+				 * @returns {Number} squared distance between a and b
+				 */
+				vec4.squaredDistance = function (a, b) {
+					var x = b[0] - a[0],
+						y = b[1] - a[1],
+						z = b[2] - a[2],
+						w = b[3] - a[3];
+					return x * x + y * y + z * z + w * w;
+				};
+
+				/**
+				 * Alias for {@link vec4.squaredDistance}
+				 * @function
+				 */
+				vec4.sqrDist = vec4.squaredDistance;
+
+				/**
+				 * Calculates the length of a vec4
+				 *
+				 * @param {vec4} a vector to calculate length of
+				 * @returns {Number} length of a
+				 */
+				vec4.length = function (a) {
+					var x = a[0],
+						y = a[1],
+						z = a[2],
+						w = a[3];
+					return Math.sqrt(x * x + y * y + z * z + w * w);
+				};
+
+				/**
+				 * Alias for {@link vec4.length}
+				 * @function
+				 */
+				vec4.len = vec4.length;
+
+				/**
+				 * Calculates the squared length of a vec4
+				 *
+				 * @param {vec4} a vector to calculate squared length of
+				 * @returns {Number} squared length of a
+				 */
+				vec4.squaredLength = function (a) {
+					var x = a[0],
+						y = a[1],
+						z = a[2],
+						w = a[3];
+					return x * x + y * y + z * z + w * w;
+				};
+
+				/**
+				 * Alias for {@link vec4.squaredLength}
+				 * @function
+				 */
+				vec4.sqrLen = vec4.squaredLength;
+
+				/**
+				 * Negates the components of a vec4
+				 *
+				 * @param {vec4} out the receiving vector
+				 * @param {vec4} a vector to negate
+				 * @returns {vec4} out
+				 */
+				vec4.negate = function (out, a) {
+					out[0] = -a[0];
+					out[1] = -a[1];
+					out[2] = -a[2];
+					out[3] = -a[3];
+					return out;
+				};
+
+				/**
+				 * Returns the inverse of the components of a vec4
+				 *
+				 * @param {vec4} out the receiving vector
+				 * @param {vec4} a vector to invert
+				 * @returns {vec4} out
+				 */
+				vec4.inverse = function (out, a) {
+					out[0] = 1.0 / a[0];
+					out[1] = 1.0 / a[1];
+					out[2] = 1.0 / a[2];
+					out[3] = 1.0 / a[3];
+					return out;
+				};
+
+				/**
+				 * Normalize a vec4
+				 *
+				 * @param {vec4} out the receiving vector
+				 * @param {vec4} a vector to normalize
+				 * @returns {vec4} out
+				 */
+				vec4.normalize = function (out, a) {
+					var x = a[0],
+						y = a[1],
+						z = a[2],
+						w = a[3];
+					var len = x * x + y * y + z * z + w * w;
+					if (len > 0) {
+						len = 1 / Math.sqrt(len);
+						out[0] = x * len;
+						out[1] = y * len;
+						out[2] = z * len;
+						out[3] = w * len;
+					}
+					return out;
+				};
+
+				/**
+				 * Calculates the dot product of two vec4's
+				 *
+				 * @param {vec4} a the first operand
+				 * @param {vec4} b the second operand
+				 * @returns {Number} dot product of a and b
+				 */
+				vec4.dot = function (a, b) {
+					return a[0] * b[0] + a[1] * b[1] + a[2] * b[2] + a[3] * b[3];
+				};
+
+				/**
+				 * Performs a linear interpolation between two vec4's
+				 *
+				 * @param {vec4} out the receiving vector
+				 * @param {vec4} a the first operand
+				 * @param {vec4} b the second operand
+				 * @param {Number} t interpolation amount between the two inputs
+				 * @returns {vec4} out
+				 */
+				vec4.lerp = function (out, a, b, t) {
+					var ax = a[0],
+						ay = a[1],
+						az = a[2],
+						aw = a[3];
+					out[0] = ax + t * (b[0] - ax);
+					out[1] = ay + t * (b[1] - ay);
+					out[2] = az + t * (b[2] - az);
+					out[3] = aw + t * (b[3] - aw);
+					return out;
+				};
+
+				/**
+				 * Generates a random vector with the given scale
+				 *
+				 * @param {vec4} out the receiving vector
+				 * @param {Number} [scale] Length of the resulting vector. If ommitted, a unit vector will be returned
+				 * @returns {vec4} out
+				 */
+				vec4.random = function (out, scale) {
+					scale = scale || 1.0;
+
+					//TODO: This is a pretty awful way of doing this. Find something better.
+					out[0] = glMatrix.RANDOM();
+					out[1] = glMatrix.RANDOM();
+					out[2] = glMatrix.RANDOM();
+					out[3] = glMatrix.RANDOM();
+					vec4.normalize(out, out);
+					vec4.scale(out, out, scale);
+					return out;
+				};
+
+				/**
+				 * Transforms the vec4 with a mat4.
+				 *
+				 * @param {vec4} out the receiving vector
+				 * @param {vec4} a the vector to transform
+				 * @param {mat4} m matrix to transform with
+				 * @returns {vec4} out
+				 */
+				vec4.transformMat4 = function (out, a, m) {
+					var x = a[0], y = a[1], z = a[2], w = a[3];
+					out[0] = m[0] * x + m[4] * y + m[8] * z + m[12] * w;
+					out[1] = m[1] * x + m[5] * y + m[9] * z + m[13] * w;
+					out[2] = m[2] * x + m[6] * y + m[10] * z + m[14] * w;
+					out[3] = m[3] * x + m[7] * y + m[11] * z + m[15] * w;
+					return out;
+				};
+
+				/**
+				 * Transforms the vec4 with a quat
+				 *
+				 * @param {vec4} out the receiving vector
+				 * @param {vec4} a the vector to transform
+				 * @param {quat} q quaternion to transform with
+				 * @returns {vec4} out
+				 */
+				vec4.transformQuat = function (out, a, q) {
+					var x = a[0], y = a[1], z = a[2],
+						qx = q[0], qy = q[1], qz = q[2], qw = q[3],
+
+						// calculate quat * vec
+						ix = qw * x + qy * z - qz * y,
+						iy = qw * y + qz * x - qx * z,
+						iz = qw * z + qx * y - qy * x,
+						iw = -qx * x - qy * y - qz * z;
+
+					// calculate result * inverse quat
+					out[0] = ix * qw + iw * -qx + iy * -qz - iz * -qy;
+					out[1] = iy * qw + iw * -qy + iz * -qx - ix * -qz;
+					out[2] = iz * qw + iw * -qz + ix * -qy - iy * -qx;
+					out[3] = a[3];
+					return out;
+				};
+
+				/**
+				 * Perform some operation over an array of vec4s.
+				 *
+				 * @param {Array} a the array of vectors to iterate over
+				 * @param {Number} stride Number of elements between the start of each vec4. If 0 assumes tightly packed
+				 * @param {Number} offset Number of elements to skip at the beginning of the array
+				 * @param {Number} count Number of vec4s to iterate over. If 0 iterates over entire array
+				 * @param {Function} fn Function to call for each vector in the array
+				 * @param {Object} [arg] additional argument to pass to fn
+				 * @returns {Array} a
+				 * @function
+				 */
+				vec4.forEach = (function () {
+					var vec = vec4.create();
+
+					return function (a, stride, offset, count, fn, arg) {
+						var i, l;
+						if (!stride) {
+							stride = 4;
+						}
+
+						if (!offset) {
+							offset = 0;
+						}
+
+						if (count) {
+							l = Math.min((count * stride) + offset, a.length);
+						} else {
+							l = a.length;
+						}
+
+						for (i = offset; i < l; i += stride) {
+							vec[0] = a[i]; vec[1] = a[i + 1]; vec[2] = a[i + 2]; vec[3] = a[i + 3];
+							fn(vec, vec, arg);
+							a[i] = vec[0]; a[i + 1] = vec[1]; a[i + 2] = vec[2]; a[i + 3] = vec[3];
+						}
+
+						return a;
+					};
+				})();
+
+				/**
+				 * Returns a string representation of a vector
+				 *
+				 * @param {vec4} vec vector to represent as a string
+				 * @returns {String} string representation of the vector
+				 */
+				vec4.str = function (a) {
+					return 'vec4(' + a[0] + ', ' + a[1] + ', ' + a[2] + ', ' + a[3] + ')';
+				};
+
+				module.exports = vec4;
+
+
+				/***/
+},
+/* 9 */
+/***/ function (module, exports, __webpack_require__) {
+
+				/* Copyright (c) 2015, Brandon Jones, Colin MacKenzie IV.
+			
+				Permission is hereby granted, free of charge, to any person obtaining a copy
+				of this software and associated documentation files (the "Software"), to deal
+				in the Software without restriction, including without limitation the rights
+				to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+				copies of the Software, and to permit persons to whom the Software is
+				furnished to do so, subject to the following conditions:
+			
+				The above copyright notice and this permission notice shall be included in
+				all copies or substantial portions of the Software.
+			
+				THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+				IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+				FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+				AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+				LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+				OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+				THE SOFTWARE. */
+
+				var glMatrix = __webpack_require__(1);
+
+				/**
+				 * @class 2 Dimensional Vector
+				 * @name vec2
+				 */
+				var vec2 = {};
+
+				/**
+				 * Creates a new, empty vec2
+				 *
+				 * @returns {vec2} a new 2D vector
+				 */
+				vec2.create = function () {
+					var out = new glMatrix.ARRAY_TYPE(2);
+					out[0] = 0;
+					out[1] = 0;
+					return out;
+				};
+
+				/**
+				 * Creates a new vec2 initialized with values from an existing vector
+				 *
+				 * @param {vec2} a vector to clone
+				 * @returns {vec2} a new 2D vector
+				 */
+				vec2.clone = function (a) {
+					var out = new glMatrix.ARRAY_TYPE(2);
+					out[0] = a[0];
+					out[1] = a[1];
+					return out;
+				};
+
+				/**
+				 * Creates a new vec2 initialized with the given values
+				 *
+				 * @param {Number} x X component
+				 * @param {Number} y Y component
+				 * @returns {vec2} a new 2D vector
+				 */
+				vec2.fromValues = function (x, y) {
+					var out = new glMatrix.ARRAY_TYPE(2);
+					out[0] = x;
+					out[1] = y;
+					return out;
+				};
+
+				/**
+				 * Copy the values from one vec2 to another
+				 *
+				 * @param {vec2} out the receiving vector
+				 * @param {vec2} a the source vector
+				 * @returns {vec2} out
+				 */
+				vec2.copy = function (out, a) {
+					out[0] = a[0];
+					out[1] = a[1];
+					return out;
+				};
+
+				/**
+				 * Set the components of a vec2 to the given values
+				 *
+				 * @param {vec2} out the receiving vector
+				 * @param {Number} x X component
+				 * @param {Number} y Y component
+				 * @returns {vec2} out
+				 */
+				vec2.set = function (out, x, y) {
+					out[0] = x;
+					out[1] = y;
+					return out;
+				};
+
+				/**
+				 * Adds two vec2's
+				 *
+				 * @param {vec2} out the receiving vector
+				 * @param {vec2} a the first operand
+				 * @param {vec2} b the second operand
+				 * @returns {vec2} out
+				 */
+				vec2.add = function (out, a, b) {
+					out[0] = a[0] + b[0];
+					out[1] = a[1] + b[1];
+					return out;
+				};
+
+				/**
+				 * Subtracts vector b from vector a
+				 *
+				 * @param {vec2} out the receiving vector
+				 * @param {vec2} a the first operand
+				 * @param {vec2} b the second operand
+				 * @returns {vec2} out
+				 */
+				vec2.subtract = function (out, a, b) {
+					out[0] = a[0] - b[0];
+					out[1] = a[1] - b[1];
+					return out;
+				};
+
+				/**
+				 * Alias for {@link vec2.subtract}
+				 * @function
+				 */
+				vec2.sub = vec2.subtract;
+
+				/**
+				 * Multiplies two vec2's
+				 *
+				 * @param {vec2} out the receiving vector
+				 * @param {vec2} a the first operand
+				 * @param {vec2} b the second operand
+				 * @returns {vec2} out
+				 */
+				vec2.multiply = function (out, a, b) {
+					out[0] = a[0] * b[0];
+					out[1] = a[1] * b[1];
+					return out;
+				};
+
+				/**
+				 * Alias for {@link vec2.multiply}
+				 * @function
+				 */
+				vec2.mul = vec2.multiply;
+
+				/**
+				 * Divides two vec2's
+				 *
+				 * @param {vec2} out the receiving vector
+				 * @param {vec2} a the first operand
+				 * @param {vec2} b the second operand
+				 * @returns {vec2} out
+				 */
+				vec2.divide = function (out, a, b) {
+					out[0] = a[0] / b[0];
+					out[1] = a[1] / b[1];
+					return out;
+				};
+
+				/**
+				 * Alias for {@link vec2.divide}
+				 * @function
+				 */
+				vec2.div = vec2.divide;
+
+				/**
+				 * Returns the minimum of two vec2's
+				 *
+				 * @param {vec2} out the receiving vector
+				 * @param {vec2} a the first operand
+				 * @param {vec2} b the second operand
+				 * @returns {vec2} out
+				 */
+				vec2.min = function (out, a, b) {
+					out[0] = Math.min(a[0], b[0]);
+					out[1] = Math.min(a[1], b[1]);
+					return out;
+				};
+
+				/**
+				 * Returns the maximum of two vec2's
+				 *
+				 * @param {vec2} out the receiving vector
+				 * @param {vec2} a the first operand
+				 * @param {vec2} b the second operand
+				 * @returns {vec2} out
+				 */
+				vec2.max = function (out, a, b) {
+					out[0] = Math.max(a[0], b[0]);
+					out[1] = Math.max(a[1], b[1]);
+					return out;
+				};
+
+				/**
+				 * Scales a vec2 by a scalar number
+				 *
+				 * @param {vec2} out the receiving vector
+				 * @param {vec2} a the vector to scale
+				 * @param {Number} b amount to scale the vector by
+				 * @returns {vec2} out
+				 */
+				vec2.scale = function (out, a, b) {
+					out[0] = a[0] * b;
+					out[1] = a[1] * b;
+					return out;
+				};
+
+				/**
+				 * Adds two vec2's after scaling the second operand by a scalar value
+				 *
+				 * @param {vec2} out the receiving vector
+				 * @param {vec2} a the first operand
+				 * @param {vec2} b the second operand
+				 * @param {Number} scale the amount to scale b by before adding
+				 * @returns {vec2} out
+				 */
+				vec2.scaleAndAdd = function (out, a, b, scale) {
+					out[0] = a[0] + (b[0] * scale);
+					out[1] = a[1] + (b[1] * scale);
+					return out;
+				};
+
+				/**
+				 * Calculates the euclidian distance between two vec2's
+				 *
+				 * @param {vec2} a the first operand
+				 * @param {vec2} b the second operand
+				 * @returns {Number} distance between a and b
+				 */
+				vec2.distance = function (a, b) {
+					var x = b[0] - a[0],
+						y = b[1] - a[1];
+					return Math.sqrt(x * x + y * y);
+				};
+
+				/**
+				 * Alias for {@link vec2.distance}
+				 * @function
+				 */
+				vec2.dist = vec2.distance;
+
+				/**
+				 * Calculates the squared euclidian distance between two vec2's
+				 *
+				 * @param {vec2} a the first operand
+				 * @param {vec2} b the second operand
+				 * @returns {Number} squared distance between a and b
+				 */
+				vec2.squaredDistance = function (a, b) {
+					var x = b[0] - a[0],
+						y = b[1] - a[1];
+					return x * x + y * y;
+				};
+
+				/**
+				 * Alias for {@link vec2.squaredDistance}
+				 * @function
+				 */
+				vec2.sqrDist = vec2.squaredDistance;
+
+				/**
+				 * Calculates the length of a vec2
+				 *
+				 * @param {vec2} a vector to calculate length of
+				 * @returns {Number} length of a
+				 */
+				vec2.length = function (a) {
+					var x = a[0],
+						y = a[1];
+					return Math.sqrt(x * x + y * y);
+				};
+
+				/**
+				 * Alias for {@link vec2.length}
+				 * @function
+				 */
+				vec2.len = vec2.length;
+
+				/**
+				 * Calculates the squared length of a vec2
+				 *
+				 * @param {vec2} a vector to calculate squared length of
+				 * @returns {Number} squared length of a
+				 */
+				vec2.squaredLength = function (a) {
+					var x = a[0],
+						y = a[1];
+					return x * x + y * y;
+				};
+
+				/**
+				 * Alias for {@link vec2.squaredLength}
+				 * @function
+				 */
+				vec2.sqrLen = vec2.squaredLength;
+
+				/**
+				 * Negates the components of a vec2
+				 *
+				 * @param {vec2} out the receiving vector
+				 * @param {vec2} a vector to negate
+				 * @returns {vec2} out
+				 */
+				vec2.negate = function (out, a) {
+					out[0] = -a[0];
+					out[1] = -a[1];
+					return out;
+				};
+
+				/**
+				 * Returns the inverse of the components of a vec2
+				 *
+				 * @param {vec2} out the receiving vector
+				 * @param {vec2} a vector to invert
+				 * @returns {vec2} out
+				 */
+				vec2.inverse = function (out, a) {
+					out[0] = 1.0 / a[0];
+					out[1] = 1.0 / a[1];
+					return out;
+				};
+
+				/**
+				 * Normalize a vec2
+				 *
+				 * @param {vec2} out the receiving vector
+				 * @param {vec2} a vector to normalize
+				 * @returns {vec2} out
+				 */
+				vec2.normalize = function (out, a) {
+					var x = a[0],
+						y = a[1];
+					var len = x * x + y * y;
+					if (len > 0) {
+						//TODO: evaluate use of glm_invsqrt here?
+						len = 1 / Math.sqrt(len);
+						out[0] = a[0] * len;
+						out[1] = a[1] * len;
+					}
+					return out;
+				};
+
+				/**
+				 * Calculates the dot product of two vec2's
+				 *
+				 * @param {vec2} a the first operand
+				 * @param {vec2} b the second operand
+				 * @returns {Number} dot product of a and b
+				 */
+				vec2.dot = function (a, b) {
+					return a[0] * b[0] + a[1] * b[1];
+				};
+
+				/**
+				 * Computes the cross product of two vec2's
+				 * Note that the cross product must by definition produce a 3D vector
+				 *
+				 * @param {vec3} out the receiving vector
+				 * @param {vec2} a the first operand
+				 * @param {vec2} b the second operand
+				 * @returns {vec3} out
+				 */
+				vec2.cross = function (out, a, b) {
+					var z = a[0] * b[1] - a[1] * b[0];
+					out[0] = out[1] = 0;
+					out[2] = z;
+					return out;
+				};
+
+				/**
+				 * Performs a linear interpolation between two vec2's
+				 *
+				 * @param {vec2} out the receiving vector
+				 * @param {vec2} a the first operand
+				 * @param {vec2} b the second operand
+				 * @param {Number} t interpolation amount between the two inputs
+				 * @returns {vec2} out
+				 */
+				vec2.lerp = function (out, a, b, t) {
+					var ax = a[0],
+						ay = a[1];
+					out[0] = ax + t * (b[0] - ax);
+					out[1] = ay + t * (b[1] - ay);
+					return out;
+				};
+
+				/**
+				 * Generates a random vector with the given scale
+				 *
+				 * @param {vec2} out the receiving vector
+				 * @param {Number} [scale] Length of the resulting vector. If ommitted, a unit vector will be returned
+				 * @returns {vec2} out
+				 */
+				vec2.random = function (out, scale) {
+					scale = scale || 1.0;
+					var r = glMatrix.RANDOM() * 2.0 * Math.PI;
+					out[0] = Math.cos(r) * scale;
+					out[1] = Math.sin(r) * scale;
+					return out;
+				};
+
+				/**
+				 * Transforms the vec2 with a mat2
+				 *
+				 * @param {vec2} out the receiving vector
+				 * @param {vec2} a the vector to transform
+				 * @param {mat2} m matrix to transform with
+				 * @returns {vec2} out
+				 */
+				vec2.transformMat2 = function (out, a, m) {
+					var x = a[0],
+						y = a[1];
+					out[0] = m[0] * x + m[2] * y;
+					out[1] = m[1] * x + m[3] * y;
+					return out;
+				};
+
+				/**
+				 * Transforms the vec2 with a mat2d
+				 *
+				 * @param {vec2} out the receiving vector
+				 * @param {vec2} a the vector to transform
+				 * @param {mat2d} m matrix to transform with
+				 * @returns {vec2} out
+				 */
+				vec2.transformMat2d = function (out, a, m) {
+					var x = a[0],
+						y = a[1];
+					out[0] = m[0] * x + m[2] * y + m[4];
+					out[1] = m[1] * x + m[3] * y + m[5];
+					return out;
+				};
+
+				/**
+				 * Transforms the vec2 with a mat3
+				 * 3rd vector component is implicitly '1'
+				 *
+				 * @param {vec2} out the receiving vector
+				 * @param {vec2} a the vector to transform
+				 * @param {mat3} m matrix to transform with
+				 * @returns {vec2} out
+				 */
+				vec2.transformMat3 = function (out, a, m) {
+					var x = a[0],
+						y = a[1];
+					out[0] = m[0] * x + m[3] * y + m[6];
+					out[1] = m[1] * x + m[4] * y + m[7];
+					return out;
+				};
+
+				/**
+				 * Transforms the vec2 with a mat4
+				 * 3rd vector component is implicitly '0'
+				 * 4th vector component is implicitly '1'
+				 *
+				 * @param {vec2} out the receiving vector
+				 * @param {vec2} a the vector to transform
+				 * @param {mat4} m matrix to transform with
+				 * @returns {vec2} out
+				 */
+				vec2.transformMat4 = function (out, a, m) {
+					var x = a[0],
+						y = a[1];
+					out[0] = m[0] * x + m[4] * y + m[12];
+					out[1] = m[1] * x + m[5] * y + m[13];
+					return out;
+				};
+
+				/**
+				 * Perform some operation over an array of vec2s.
+				 *
+				 * @param {Array} a the array of vectors to iterate over
+				 * @param {Number} stride Number of elements between the start of each vec2. If 0 assumes tightly packed
+				 * @param {Number} offset Number of elements to skip at the beginning of the array
+				 * @param {Number} count Number of vec2s to iterate over. If 0 iterates over entire array
+				 * @param {Function} fn Function to call for each vector in the array
+				 * @param {Object} [arg] additional argument to pass to fn
+				 * @returns {Array} a
+				 * @function
+				 */
+				vec2.forEach = (function () {
+					var vec = vec2.create();
+
+					return function (a, stride, offset, count, fn, arg) {
+						var i, l;
+						if (!stride) {
+							stride = 2;
+						}
+
+						if (!offset) {
+							offset = 0;
+						}
+
+						if (count) {
+							l = Math.min((count * stride) + offset, a.length);
+						} else {
+							l = a.length;
+						}
+
+						for (i = offset; i < l; i += stride) {
+							vec[0] = a[i]; vec[1] = a[i + 1];
+							fn(vec, vec, arg);
+							a[i] = vec[0]; a[i + 1] = vec[1];
+						}
+
+						return a;
+					};
+				})();
+
+				/**
+				 * Returns a string representation of a vector
+				 *
+				 * @param {vec2} vec vector to represent as a string
+				 * @returns {String} string representation of the vector
+				 */
+				vec2.str = function (a) {
+					return 'vec2(' + a[0] + ', ' + a[1] + ')';
+				};
+
+				module.exports = vec2;
+
+
+				/***/
+}
+/******/])
+	});
+	;
+}
