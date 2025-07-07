@@ -18,6 +18,14 @@ class ParentEvent {
 				
 			}
 			
+			if('error' in body){
+				
+				App.error(body.error);
+				
+			}
+			
+			return;
+			
 		}
 		
 		await App.storage.set({ id: body.id, token: body.token, login: body.login, fraction: body.fraction });
@@ -50,136 +58,168 @@ class Lang {
 
 	static target = 'ru'; // TODO get from the system
 	// TODO add UI dropdown?
-
 	static default = 'ru';
 
 	static list = {
 		en: {
-			fight: 'Fight!',
-			enterTextAndPressEnter: 'Enter the text and press Enter',
-			ready: 'Ready',
-			library: 'Library',
-			menu: 'Меню',
-			preferences: 'Preferences',
-			windowMode: 'Window mode',
-			radminPriority: 'RadminVPN Priority',
-			threeD: '3D',
-			volume: 'Volume',
-			volumeMusic: 'Volume of music',
-			volumeSound: 'Volume of sounds',
-			back: 'Back',
-			soundHelp: 'If the sound settings are lost, you can adjust the volume in the mixer: right-click on the sound icon on the Taskbar -> Volume Mixer -> Game icon -> make it quieter',
-			support: 'Support',
-			supportDesk: 'Questions? Feel free to contact us:',
-			accountSwitch: 'Switch account',
-			exit: 'Exit from Prime World',
-			version: 'Version',
-			health: 'Health',
-			energy: 'Energy',
-			speed: 'Speed',
-			strength: 'Strength',
-			intelligence: 'Intelligence',
-			agility: 'Agility',
-			dexterity: 'Dexterity',
-			stamina: 'Stamina',
-			will: 'Will',
-			damage: 'Damage',
-			criticalHit: 'Critical Hit',
-			attacksPerSecond: 'Attacks per second',
-			penetration: 'Penetration',
-			defencePsys: 'Defence Psysical',
-			defenceMagic: 'Defence Magic',
-			skins: 'Skins',
-			steamauthTitle: 'Login with Steam',
-			steamauth: 'By clicking Continue, you will register a new account! If you want to log in to your current PW Classic account, you must first link your Steam account from the settings menu.',
+			locale:['en_US'],
+			name:'English',
+			word: {
+				fight: 'Fight!',
+				enterTextAndPressEnter: 'Enter the text and press Enter',
+				ready: 'Ready',
+				library: 'Library',
+				menu: 'Меню',
+				preferences: 'Preferences',
+				windowMode: 'Window mode',
+				radminPriority: 'RadminVPN Priority',
+				threeD: '3D',
+				volume: 'Volume',
+				volumeMusic: 'Volume of music',
+				volumeSound: 'Volume of sounds',
+				back: 'Back',
+				soundHelp: 'If the sound settings are lost, you can adjust the volume in the mixer: right-click on the sound icon on the Taskbar -> Volume Mixer -> Game icon -> make it quieter',
+				support: 'Support',
+				supportDesk: 'Questions? Feel free to contact us:',
+				accountSwitch: 'Switch account',
+				exit: 'Exit from Prime World',
+				version: 'Version',
+				health: 'Health',
+				energy: 'Energy',
+				speed: 'Speed',
+				strength: 'Strength',
+				intelligence: 'Intelligence',
+				agility: 'Agility',
+				dexterity: 'Dexterity',
+				stamina: 'Stamina',
+				will: 'Will',
+				damage: 'Damage',
+				criticalHit: 'Critical Hit',
+				attacksPerSecond: 'Attacks per second',
+				penetration: 'Penetration',
+				defencePsys: 'Defence Psysical',
+				defenceMagic: 'Defence Magic',
+				skins: 'Skins',
+				steamauthTitle: 'Login with Steam',
+				steamauth: 'By clicking Continue, you will register a new account! If you want to log in to your current PW Classic account, you must first link your Steam account from the settings menu.'
+			}
 		},
 		ru: {
-			fight: 'В бой!',
-			enterTextAndPressEnter: 'Введите текст и нажмите Enter',
-			ready: 'Готов',
-			library: 'Библиотека',
-			menu: 'Меню',
-			preferences: 'Настройки',
-			windowMode: 'Оконный режим',
-			radminPriority: 'Приоритет RadminVPN',
-			threeD: '3D графика',
-			volume: 'Общая громкость',
-			volumeMusic: 'Громкость музыки',
-			volumeSound: 'Громкость звуков',
-			back: 'Назад',
-			soundHelp: 'Если сбиваются настройки звука, то можно отрегулировать в микшере громкости: ПКМ на значок звука на Панели задач -> Микшер громкости -> Значок игры -> делаете тише',
-			support: 'Поддержка',
-			supportDesk: 'Если у Вас есть вопросы, Вы можете связаться с нами через:',
-			accountSwitch: 'Сменить аккаунт',
-			exit: 'Выйти из Prime World',
-			version: 'Версия',
-			health: 'Здоровье',
-			energy: 'Энергия',
-			speed: 'Скорость',
-			strength: 'Сила',
-			intelligence: 'Разум',
-			agility: 'Проворство',
-			dexterity: 'Хитрость',
-			stamina: 'Стойкость',
-			will: 'Воля',
-			damage: 'Урон',
-			criticalHit: 'Шанс крита',
-			attacksPerSecond: 'Скорость атаки',
-			penetration: 'Пробивание',
-			defencePsys: 'Защита тела',
-			defenceMagic: 'Защита духа',
-			skins: 'Скины',
-			steamauthTitle: 'Вход через Steam',
-			steamauth: 'Нажимая кнопку Продолжить, произойдёт регистрация нового аккаунта! Если Вы хотите осуществить вход в свой текущий аккаунт PW Classic, Вам необхоидмо сначала привязать свой Steam аккаунт из меню настроек.',
+			locale:['ru_RU'],
+			name:'Русский',
+			word: {
+				fight: 'В бой!',
+				enterTextAndPressEnter: 'Введите текст и нажмите Enter',
+				ready: 'Готов',
+				library: 'Библиотека',
+				menu: 'Меню',
+				preferences: 'Настройки',
+				windowMode: 'Оконный режим',
+				radminPriority: 'Приоритет RadminVPN',
+				threeD: '3D графика',
+				volume: 'Общая громкость',
+				volumeMusic: 'Громкость музыки',
+				volumeSound: 'Громкость звуков',
+				back: 'Назад',
+				soundHelp: 'Если сбиваются настройки звука, то можно отрегулировать в микшере громкости: ПКМ на значок звука на Панели задач -> Микшер громкости -> Значок игры -> делаете тише',
+				support: 'Поддержка',
+				supportDesk: 'Если у Вас есть вопросы, Вы можете связаться с нами через:',
+				accountSwitch: 'Сменить аккаунт',
+				exit: 'Выйти из Prime World',
+				version: 'Версия',
+				health: 'Здоровье',
+				energy: 'Энергия',
+				speed: 'Скорость',
+				strength: 'Сила',
+				intelligence: 'Разум',
+				agility: 'Проворство',
+				dexterity: 'Хитрость',
+				stamina: 'Стойкость',
+				will: 'Воля',
+				damage: 'Урон',
+				criticalHit: 'Шанс крита',
+				attacksPerSecond: 'Скорость атаки',
+				penetration: 'Пробивание',
+				defencePsys: 'Защита тела',
+				defenceMagic: 'Защита духа',
+				skins: 'Скины',
+				steamauthTitle: 'Вход через Steam',
+				steamauth: 'Нажимая кнопку Продолжить, произойдёт регистрация нового аккаунта! Если Вы хотите осуществить вход в свой текущий аккаунт PW Classic, Вам необхоидмо сначала привязать свой Steam аккаунт из меню настроек.'
+			}
 		},
 		be: {
-			fight: 'У бой!',
-			enterTextAndPressEnter: 'Увядзіце тэкст і націсніце Enter',
-			ready: 'Гатоў',
-			library: 'Бібліятэка',
-			menu: 'Мяню',
-			preferences: 'Прылады',
-			windowMode: 'Аконны рэжым',
-			radminPriority: 'Прыярытэт RadminVPN',
-			threeD: '3D графіка',
-			volume: 'Агульная гучнасць',
-			volumeMusic: 'Гучнасць музыкі',
-			volumeSound: 'Гучнасць гукаў',
-			back: 'Назад',
-			soundHelp: 'Калі збіваюцца налады гуку, то можна адрэгуляваць ў мікшар гучнасці: правы пстрык мышы на значок гуку на панэлі задач -> Мікшар гучнасці -> Значок гульні -> рабіце цішэй',
-			support: 'Падтрымка',
-			supportDesk: 'Калі ў вас ёсць пытанні, вы можаце звязацца з намі праз:',
-			accountSwitch: 'Змяніць улiковы запiс',
-			exit: 'Выйсці з Prime World',
-			version: 'Версія',
-			health: 'Здароўе',
-			energy: 'Энергія',
-			speed: 'Хуткасць',
-			strength: 'Сіла',
-			intelligence: 'Розум',
-			agility: 'Шпаркасць',
-			dexterity: 'Хітрасць',
-			stamina: 'Цягавітасьць',
-			will: 'Воля',
-			damage: 'Шкода',
-			criticalHit: 'Шанец крытычнага траплення',
-			attacksPerSecond: 'Хуткасць атакі',
-			penetration: 'Прабіванне',
-			defencePsys: 'Абарона цела',
-			defenceMagic: 'Абарона духу',
-			skins: 'Абалонкі',
-			steamauthTitle: 'Увайсці праз steam',
-			steamauth: 'Націскаючы кнопку Працягнуць, адбудзецца рэгістрацыя новага акаўнта! Калі Вы жадаеце ажыццявіць уваход у свой бягучы акаўнт PW Classic, Вам неабходна спачатку прывязаць свой Steam акаўнт з меню налад.',
-		},
-
+			locale:['be_BY'],
+			name:'Беларускі',
+			word: {
+				fight: 'У бой!',
+				enterTextAndPressEnter: 'Увядзіце тэкст і націсніце Enter',
+				ready: 'Гатоў',
+				library: 'Бібліятэка',
+				menu: 'Мяню',
+				preferences: 'Прылады',
+				windowMode: 'Аконны рэжым',
+				radminPriority: 'Прыярытэт RadminVPN',
+				threeD: '3D графіка',
+				volume: 'Агульная гучнасць',
+				volumeMusic: 'Гучнасць музыкі',
+				volumeSound: 'Гучнасць гукаў',
+				back: 'Назад',
+				soundHelp: 'Калі збіваюцца налады гуку, то можна адрэгуляваць ў мікшар гучнасці: правы пстрык мышы на значок гуку на панэлі задач -> Мікшар гучнасці -> Значок гульні -> рабіце цішэй',
+				support: 'Падтрымка',
+				supportDesk: 'Калі ў вас ёсць пытанні, вы можаце звязацца з намі праз:',
+				accountSwitch: 'Змяніць улiковы запiс',
+				exit: 'Выйсці з Prime World',
+				version: 'Версія',
+				health: 'Здароўе',
+				energy: 'Энергія',
+				speed: 'Хуткасць',
+				strength: 'Сіла',
+				intelligence: 'Розум',
+				agility: 'Шпаркасць',
+				dexterity: 'Хітрасць',
+				stamina: 'Цягавітасьць',
+				will: 'Воля',
+				damage: 'Шкода',
+				criticalHit: 'Шанец крытычнага траплення',
+				attacksPerSecond: 'Хуткасць атакі',
+				penetration: 'Прабіванне',
+				defencePsys: 'Абарона цела',
+				defenceMagic: 'Абарона духу',
+				skins: 'Абалонкі',
+				steamauthTitle: 'Увайсці праз steam',
+				steamauth: 'Націскаючы кнопку Працягнуць, адбудзецца рэгістрацыя новага акаўнта! Калі Вы жадаеце ажыццявіць уваход у свой бягучы акаўнт PW Classic, Вам неабходна спачатку прывязаць свой Steam акаўнт з меню налад.'
+			}	
+		}
 	};
+	
+	static init(){
+		
+		if( !('language' in navigator) ){
+			
+			return App.error(`Невозможно определить локаль пользователя`);
+			
+		}
+		
+		for(let key in Lang.list){
+			
+			if(Lang.list[key].locale.includes(navigator.language)){
+				
+				Lang.target = key;
+				
+				break;
+				
+			}
+			
+		}
+		
+	}
 
 	static text(word) {
-		if (word in Lang.list[Lang.target]) {
-			return Lang.list[Lang.target][word];
+		if (word in Lang.list[Lang.target].word) {
+			return Lang.list[Lang.target].word[word];
 		}
 
-		return Lang.list[Lang.default][word];
+		return Lang.list[Lang.default].word[word];
 	}
 
 }
@@ -298,6 +338,8 @@ window.addEventListener('DOMContentLoaded', () => {
 		console.log('event.data',event.data);
 		
 	});
+	
+	Lang.init();
 
 	Splash.init();
 
@@ -1283,25 +1325,33 @@ class CastleNAVBAR {
 
 		}
 
-		CastleNAVBAR.body.children[9].append(DOM({ title: 'Очередь игроков матчмейкинга на данный режим игры' }));
-
+		CastleNAVBAR.body.children[9].append(DOM({ style: 'castle-button-play-queue', title: 'Очередь игроков матчмейкинга на данный режим игры' }));
+		
+		CastleNAVBAR.body.children[11].append(DOM({style:'castle-button-play-queue-mode'}));
+		
 		CastleNAVBAR.body.children[11].onclick = () => {
 
 			CastleNAVBAR.setMode(1);
-
+			
 		};
+		
+		CastleNAVBAR.body.children[12].append(DOM({style:'castle-button-play-queue-mode'}));
 
 		CastleNAVBAR.body.children[12].onclick = () => {
 
 			CastleNAVBAR.setMode(2);
-
+			
 		};
+		
+		CastleNAVBAR.body.children[13].append(DOM({style:'castle-button-play-queue-mode'}));
 
 		CastleNAVBAR.body.children[13].onclick = () => {
 
 			CastleNAVBAR.setMode(3);
-
+			
 		};
+		
+		CastleNAVBAR.body.children[14].append(DOM({style:'castle-button-play-queue-mode'}));
 
 		CastleNAVBAR.body.children[14].onclick = () => {
 
@@ -1309,11 +1359,15 @@ class CastleNAVBAR {
 			
 		};
 		
+		CastleNAVBAR.body.children[15].append(DOM({style:'castle-button-play-queue-mode'}));
+		
 		CastleNAVBAR.body.children[15].onclick = () => {
 
 			CastleNAVBAR.setMode(5);
 			
 		};
+		
+		CastleNAVBAR.body.children[16].append(DOM({style:'castle-button-play-queue-mode'}));
 		
 		CastleNAVBAR.body.children[16].onclick = () => {
 
@@ -1322,7 +1376,7 @@ class CastleNAVBAR {
 		};
 		
 		return CastleNAVBAR.body.children[5];
-
+		
 	}
 
 	static play() {
@@ -1398,10 +1452,16 @@ class CastleNAVBAR {
 	}
 
 	static setMode(type) {
+		
+		let modeSelect = (type - 1);
+		
+		if(CastleNAVBAR.mode != modeSelect){
+			
+			CastleNAVBAR.body.children[9].firstChild.innerText = '';
+			
+		}
 
-		CastleNAVBAR.body.children[9].firstChild.innerText = '';
-
-		CastleNAVBAR.mode = (type - 1);
+		CastleNAVBAR.mode = modeSelect;
 
 		CastleNAVBAR.body.children[5].style.display = 'block';
 
@@ -1434,13 +1494,19 @@ class CastleNAVBAR {
 			if (data.mode[CastleNAVBAR.mode]) {
 
 				queue = data.mode[CastleNAVBAR.mode];
-
+				
 			}
-
+			
 		}
 
 		CastleNAVBAR.body.children[9].firstChild.innerText = ((queue) ? queue : '');
-
+		
+		for(let item of [{child:11,mode:0},{child:12,mode:1},{child:13,mode:2},{child:14,mode:3},{child:15,mode:4},{child:16,mode:5}]){
+			
+			CastleNAVBAR.body.children[item.child].firstChild.innerText = ( ( (item.mode in data.mode) && (data.mode[item.mode]) ) ? data.mode[item.mode] : '');
+			
+		}
+		
 	}
 
 }
@@ -3568,7 +3634,11 @@ class Window {
 			DOM({ style: 'castle-menu-title' }, Lang.text('steamauthTitle')),
 			DOM({ style: 'castle-menu-items'},
 			DOM({ style: 'castle-menu-text' }, Lang.text('steamauth')),
-			DOM({ style: 'castle-menu-item-button', event: ['click', () => window.open('https://api2.26rus-game.ru:2087', 'SteamAuth', 'width=1280, height=720, top='+((screen.height-720)/2)+', left='+((screen.width-1280)/2)+', toolbar=no, menubar=no, location=no, scrollbars=no, resizable=no, status=no')]}, "Продолжить")			
+			DOM({ style: 'castle-menu-item-button', event: ['click', () => {
+				
+				ParentEvent.children = window.open('https://api2.26rus-game.ru:2087', 'SteamAuth', 'width=1280, height=720, top='+((screen.height-720)/2)+', left='+((screen.width-1280)/2)+', toolbar=no, menubar=no, location=no, scrollbars=no, resizable=no, status=no');
+				
+			}]}, "Продолжить")			
 			)
 		);
 	}
