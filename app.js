@@ -1,6 +1,6 @@
 APP_VERSION = '0';
 
-PW_VERSION = '2.5.4';
+PW_VERSION = '2.6.0';
 
 CURRENT_MM = 'mm'
 
@@ -65,6 +65,15 @@ class Lang {
 			locale:['en_US'],
 			name:'English',
 			word: {
+				nickname: 'login/Nickname',
+				code: 'code/Telegram bot',
+				password: 'password',
+				passwordAgain: 'password again',
+				login: 'Login',
+				registration: 'Registration',
+				fraction: 'Select a faction',
+				adornia: 'Kingdom of Adornia',
+				docts: 'Empire of the Docts',
 				fight: 'Fight!',
 				enterTextAndPressEnter: 'Enter the text and press Enter',
 				ready: 'Ready',
@@ -100,6 +109,7 @@ class Lang {
 				defencePsys: 'Defence Psysical',
 				defenceMagic: 'Defence Magic',
 				skins: 'Skins',
+				authorizationSteam: 'Login with Steam',
 				steamauthTitle: 'Login with Steam',
 				steamauth: 'By clicking Continue, you will register a new account! If you want to log in to your current PW Classic account, you must first link your Steam account from the settings menu.'
 			}
@@ -108,6 +118,15 @@ class Lang {
 			locale:['ru_RU'],
 			name:'Русский',
 			word: {
+				nickname: 'Логин/Никнейм',
+				code: 'Инвайт-код',
+				password: 'Пароль',
+				passwordAgain: 'Еще раз пароль',
+				login: 'Войти',
+				registration: 'Регистрация',
+				fraction: 'Выберите фракцию',
+				adornia: 'Королевство Адорния',
+				docts: 'Империя Доктов',
 				fight: 'В бой!',
 				enterTextAndPressEnter: 'Введите текст и нажмите Enter',
 				ready: 'Готов',
@@ -143,6 +162,7 @@ class Lang {
 				defencePsys: 'Защита тела',
 				defenceMagic: 'Защита духа',
 				skins: 'Скины',
+				authorizationSteam: 'Вход через Steam',
 				steamauthTitle: 'Вход через Steam',
 				steamauth: 'Нажимая кнопку Продолжить, произойдёт регистрация нового аккаунта! Если Вы хотите осуществить вход в свой текущий аккаунт PW Classic, Вам необхоидмо сначала привязать свой Steam аккаунт из меню настроек.'
 			}
@@ -151,6 +171,15 @@ class Lang {
 			locale:['be_BY'],
 			name:'Беларускі',
 			word: {
+				nickname: 'Лагін/Нікнейм',
+				code: 'Код/бот тэлеграм',
+				password: 'Пароль',
+				passwordAgain: 'Яшчэ раз пароль',
+				login: 'Увайсці',
+				registration: 'Рэгістрацыя',
+				fraction: 'Абярыце фракцыю',
+				adornia: 'Каралеўства Адорнія',
+				docts: 'Імперыя Доктаў',
 				fight: 'У бой!',
 				enterTextAndPressEnter: 'Увядзіце тэкст і націсніце Enter',
 				ready: 'Гатоў',
@@ -186,6 +215,7 @@ class Lang {
 				defencePsys: 'Абарона цела',
 				defenceMagic: 'Абарона духу',
 				skins: 'Абалонкі',
+				authorizationSteam: 'Увайсці праз steam',
 				steamauthTitle: 'Увайсці праз steam',
 				steamauth: 'Націскаючы кнопку Працягнуць, адбудзецца рэгістрацыя новага акаўнта! Калі Вы жадаеце ажыццявіць уваход у свой бягучы акаўнт PW Classic, Вам неабходна спачатку прывязаць свой Steam акаўнт з меню налад.'
 			}	
@@ -194,15 +224,23 @@ class Lang {
 	
 	static init(){
 		
-		if( !('language' in navigator) ){
+		let locale = NativeAPI.getLocale();
+		
+		if(!locale){
 			
-			return App.error(`Невозможно определить локаль пользователя`);
+			if( !('language' in navigator) ){
+				
+				return;
+				
+			}
+			
+			locale = navigator.language;
 			
 		}
 		
 		for(let key in Lang.list){
 			
-			if(Lang.list[key].locale.includes(navigator.language)){
+			if(Lang.list[key].locale.includes(locale)){
 				
 				Lang.target = key;
 				
@@ -339,11 +377,11 @@ window.addEventListener('DOMContentLoaded', () => {
 		
 	});
 	
-	Lang.init();
-
 	Splash.init();
 
 	NativeAPI.init();
+	
+	Lang.init();
 
 	NativeAPI.update((data) => {
 
@@ -1259,6 +1297,10 @@ class CastleNAVBAR {
 	static state = false;
 
 	static mode = 0;
+	
+	static karma = 0;
+	
+	static division = 0;
 
 	static init() {
 
@@ -1279,7 +1321,10 @@ class CastleNAVBAR {
 			'castle-button-play-m3',
 			'castle-button-play-m4',
 			'castle-button-play-m5',
-			'castle-button-play-m6'
+			'castle-button-play-m6',
+			'castle-button-play-division',
+			'castle-button-play-karma'
+
 		];
 
 		CastleNAVBAR.body = DOM({ style: 'castle-button-play' });
@@ -1375,6 +1420,12 @@ class CastleNAVBAR {
 			
 		};
 		
+		CastleNAVBAR.body.children[17].title = 'Дивизия';
+		
+		CastleNAVBAR.body.children[18].title = 'Уровень кармы вашего аккаунта';
+		
+		CastleNAVBAR.body.children[18].append(DOM({tag:'div'}));
+		
 		return CastleNAVBAR.body.children[5];
 		
 	}
@@ -1402,7 +1453,57 @@ class CastleNAVBAR {
 		CastleNAVBAR.body.children[3].style.filter = 'grayscale(70%)';
 
 		CastleNAVBAR.body.children[4].style.filter = 'grayscale(70%)';
-
+		
+		if(CastleNAVBAR.karma){
+			
+			let karma = 0;
+			
+			if(CastleNAVBAR.karma >= 75){
+				
+				karma = 75;
+				
+			}
+			else if(CastleNAVBAR.karma >= 50){
+				
+				karma = 50;
+				
+			}
+			
+			if(karma){
+				
+				CastleNAVBAR.body.children[18].style.display = 'flex';
+				
+				CastleNAVBAR.body.children[18].firstChild.innerText = `>${karma}`;
+				
+			}
+			
+		}
+		
+		if(CastleNAVBAR.division){
+			
+			let division = 0;
+			
+			if(CastleNAVBAR.division <= 50){
+				
+				division = 3;
+				
+			}
+			else if(CastleNAVBAR.division <= 100){
+				
+				division = 11;
+				
+			}
+			
+			if(division){
+				
+				CastleNAVBAR.body.children[17].style.backgroundImage =  `url(content/ranks/${division}.webp)`;
+				
+				CastleNAVBAR.body.children[17].style.display = 'block';
+				
+			}
+			
+		}
+		
 	}
 
 	static cancel() {
@@ -1428,6 +1529,10 @@ class CastleNAVBAR {
 		CastleNAVBAR.body.children[3].style.filter = 'grayscale(0)';
 
 		CastleNAVBAR.body.children[4].style.filter = 'grayscale(0)';
+		
+		CastleNAVBAR.body.children[17].style.display = 'none';
+		
+		CastleNAVBAR.body.children[18].style.display = 'none';
 
 	}
 
@@ -1598,7 +1703,7 @@ class View {
 			}
 		}];
 
-		let login = DOM({ tag: 'input', placeholder: 'Никнейм', event: numEnterEvent }), password = DOM({ tag: 'input', placeholder: 'Пароль', type: 'password', event: numEnterEvent });
+		let login = DOM({ tag: 'input', placeholder: Lang.text('nickname'), event: numEnterEvent }), password = DOM({ tag: 'input', placeholder: Lang.text('password'), type: 'password', event: numEnterEvent });
 
 		let authorizationForm = DOM({ style: 'login_box' }, DOM({ style: 'login-box-forma' }, DOM({ tag: 'div' }, DOM({ tag: 'img', style: 'login-box-forma-logo', src: 'content/img/logo_classic.webp' })),
 
@@ -1606,11 +1711,11 @@ class View {
 				login,
 				password,
 				DOM({ style: 'login-box-forma-buttons' }, 
-					DOM({ style: 'login-box-forma-button', event: ['click', () => App.authorization(login, password)] }, 'Войти'), 
-					DOM({ style: 'login-box-forma-button', event: ['click', () => View.show('registration')]}, 'Регистрация')
+					DOM({ style: 'login-box-forma-button', event: ['click', () => App.authorization(login, password)] }, Lang.text('login')), 
+					DOM({ style: 'login-box-forma-button', event: ['click', () => View.show('registration')]}, Lang.text('registration'))
 				),
 				DOM({ style: 'login-box-forma-buttons' }, 
-					DOM({style: ['login-box-forma-button', 'steamauth'], event:['click',() => Window.show('main', 'steamauth')]},'Вход через Steam')
+					DOM({style: ['login-box-forma-button', 'steamauth'], event:['click',() => Window.show('main', 'steamauth')]}, Lang.text('authorizationSteam'))
 				),
 			)), DOM({ style: 'author' }, `Prime World: Classic v.${PW_VERSION}.${APP_VERSION}`));
 
@@ -1625,24 +1730,24 @@ class View {
 		}];
 
 		let fraction = DOM({ tag: 'select' },
-			DOM({ tag: 'option', value: 0, disabled: true, selected: true }, 'Сторона'),
-			DOM({ tag: 'option', value: 1 }, 'Адорнийцы'),
-			DOM({ tag: 'option', value: 2 }, 'Докты')
+			DOM({ tag: 'option', value: 0, disabled: true, selected: true }, Lang.text('fraction')),
+			DOM({ tag: 'option', value: 1 }, Lang.text('adornia')),
+			DOM({ tag: 'option', value: 2 }, Lang.text('docts'))
 		);
 
 		let tgBotUrl = 'https://t.me/primeworldclassic_bot';
 
 		let telegramBotLink = DOM({ style: 'telegram-bot' , tag: 'a', target: '_blank', href: tgBotUrl, event: ['click', (e) => NativeAPI.linkHandler(e)]});
 
-		let invite = DOM({ tag: 'input', placeholder: 'Инвайт-код', event: numEnterEvent });
+		let invite = DOM({ tag: 'input', placeholder: Lang.text('code'), event: numEnterEvent });
 
 		let inviteContainer = DOM({ style: 'invite-input' }, invite, telegramBotLink)
 
-		let login = DOM({ tag: 'input', placeholder: 'Никнейм', event: numEnterEvent });
+		let login = DOM({ tag: 'input', placeholder: Lang.text('nickname'), event: numEnterEvent });
 
-		let password = DOM({ tag: 'input', placeholder: 'Пароль', type: 'password', event: numEnterEvent });
+		let password = DOM({ tag: 'input', placeholder: Lang.text('password'), type: 'password', event: numEnterEvent });
 
-		let password2 = DOM({ tag: 'input', placeholder: 'Еще раз пароль', type: 'password', event: numEnterEvent });
+		let password2 = DOM({ tag: 'input', placeholder: Lang.text('passwordAgain'), type: 'password', event: numEnterEvent });
 
 		return DOM({ style: 'login_box' }, DOM({ style: 'login-box-forma' },
 
@@ -3669,27 +3774,11 @@ class Window {
 			App.isAdmin() ? DOM({ style: 'castle-menu-item-button' },
 				DOM({ event: ['click', () => Window.show('main', 'adminPanel')] }, 'Админ')) : DOM(),
 			DOM({ style: 'castle-menu-item-button' },
+				DOM({ event: ['click', () => Window.show('main', 'accountPanel')] }, 'Аккаунт')),
+			DOM({ style: 'castle-menu-item-button' },
 				DOM({ event: ['click', () => Window.show('main', 'settings')] }, Lang.text('preferences'))),
 			DOM({ style: 'castle-menu-item-button' },
 				DOM({ event: ['click', () => Window.show('main', 'support')] }, Lang.text('support'))),
-			DOM({ style: ['castle-menu-item-button'] },
-				DOM({ event: ['click', () => {
-					
-					ParentEvent.children = window.open(`https://api2.26rus-game.ru:2087/connect/${App.storage.data.token}`, `SteamAuth`, 'width=1280, height=720, top='+((screen.height-720)/2)+', left='+((screen.width-1280)/2)+', toolbar=no, menubar=no, location=no, scrollbars=no, resizable=no, status=no');
-					
-				}] }, 'Привязать Steam')),
-			DOM({ style: ['castle-menu-item-button'] },
-				DOM({ event: ['click', () => {
-					
-					App.setNickname();
-					
-				}] }, 'Изменить никнейм')),
-			DOM({ style: ['castle-menu-item-button'] },
-				DOM({ event: ['click', () => {
-					
-					App.setFraction();
-					
-				}] }, 'Изменить сторону')),
 			DOM({
 				style: 'castle-menu-item-button', event: ['click', async () => {
 					App.exit();
@@ -4067,6 +4156,34 @@ class Window {
 			DOM({ style: 'castle-menu-item-button', event: ['click', () => Window.show('main', 'menu')] }, Lang.text('back'))
 		);
 	}
+	static async accountPanel() {
+		return DOM({ id: 'wcastle-menu' },
+			DOM({ style: 'castle-menu-title' }, 'Аккаунт'),
+			DOM({
+				style: 'castle-menu-item-button', event: ['click', () => {
+					
+					ParentEvent.children = window.open(`https://api2.26rus-game.ru:2087/connect/${App.storage.data.token}`, `SteamAuth`, 'width=1280, height=720, top='+((screen.height-720)/2)+', left='+((screen.width-1280)/2)+', toolbar=no, menubar=no, location=no, scrollbars=no, resizable=no, status=no');
+					
+				}]
+			}, 'Привязать Steam'),
+			DOM({
+				style: 'castle-menu-item-button', event: ['click', () => {
+					
+					App.setNickname();
+					
+				}]
+			}, 'Изменить никнейм'),
+			DOM({
+				style: 'castle-menu-item-button', event: ['click', () => {
+					
+					App.setFraction();
+					
+				}]
+			}, 'Сменить сторону'),
+			DOM({ style: 'castle-menu-item-button', event: ['click', () => Window.show('main', 'menu')] }, Lang.text('back'))
+		);
+	}
+	
 }
 
 // Функция для обработки нажатия клавиш
@@ -4548,7 +4665,7 @@ class Build {
 
 						await App.api.request(CURRENT_MM, 'heroParty', { id: MM.partyId, hero: Build.heroId });
 
-						await App.api.request(CURRENT_MM, 'start', { version: PW_VERSION, mode: 99 });
+						await App.api.request(CURRENT_MM, 'start', { version: PW_VERSION, mode: 99, mac: NativeAPI.getMACAdress() });
 
 					}
 					else {
@@ -7335,9 +7452,9 @@ class App {
 					this.bestHost = index;
 					
 					sockets.forEach((socket, i) => {
-						if (i !== index && socket) {
+						//if (i !== index && socket) {
 							socket.close();
-						}
+						//}
 					});
 
 					this.init();
@@ -7511,6 +7628,7 @@ class App {
 	}
 
 	static setNickname(){
+		
 		const close = DOM({tag: 'div', style: 'close-button', event: ['click', () => Splash.hide()]});
 		
 		close.style.backgroundImage = 'url(content/icons/close-cropped.svg)';
@@ -7526,6 +7644,16 @@ class App {
 				if(!name.value){
 					
 					Splash.hide();
+					
+					return;
+					
+				}
+				
+				if(App.storage.data.login == name.value){
+					
+					Splash.hide();
+					
+					return;
 					
 				}
 				
@@ -7734,7 +7862,7 @@ class App {
 
 		try {
 
-			request = await App.api.request('user', 'registration', { fraction: fraction.value, invite: invite.value.trim(), login: login.value.trim(), password: password.value.trim(), analysis: analysis});
+			request = await App.api.request('user', 'registration', { fraction: fraction.value, invite: invite.value.trim(), login: login.value.trim(), password: password.value.trim(), analysis: analysis, mac: NativeAPI.getMACAdress() });
 
 		}
 		catch (error) {
@@ -8659,6 +8787,89 @@ class NativeAPI {
 
 		};
 
+	}
+	
+	static getMACAdress(){
+		
+		let result = new Array();
+		
+		if(!NativeAPI.status){
+			
+			return result;
+			
+		}
+		
+		try{
+			
+			let networkInterfaces = NativeAPI.os.networkInterfaces();
+			
+			for(let key in networkInterfaces){
+				
+				if(['Radmin VPN'].includes(`${key}`)){
+					
+					continue;
+					
+				}
+				
+				for(let networkInterface of networkInterfaces[key]){
+					
+					if(networkInterface.internal){
+						
+						continue;
+						
+					}
+					
+					if( !('mac' in networkInterface) || (!networkInterface.mac) || (networkInterface.mac == '00:00:00:00:00:00') ){
+						
+						continue;
+						
+					}
+					
+					if(!result.includes(`${networkInterface.mac}`)){
+						
+						result.push(`${networkInterface.mac}`);
+						
+					}
+					
+				}
+				
+			}
+			
+			
+		}
+		catch(error){
+			
+			console.log(error);
+			
+		}
+		
+		return result;
+		
+	}
+	
+	static getLocale(){
+		
+		let result = '';
+		
+		if(!NativeAPI.status){
+			
+			return result;
+			
+		}
+		
+		try{
+			
+			result = Intl.DateTimeFormat().resolvedOptions().locale;
+			
+		}
+		catch(error){
+			
+			
+			
+		}
+		
+		return result;
+		
 	}
 
 	static async ping(hostname, port = 80, timeout = 3000) {
@@ -10813,8 +11024,12 @@ class MM {
 
 			try {
 
-				let request = await App.api.request(CURRENT_MM, 'start', { hero: MM.activeSelectHero, version: PW_VERSION, mode: CastleNAVBAR.mode });
-
+				let request = await App.api.request(CURRENT_MM, 'start', { hero: MM.activeSelectHero, version: PW_VERSION, mode: CastleNAVBAR.mode, mac: NativeAPI.getMACAdress() });
+				
+				CastleNAVBAR.division = request.division;
+				
+				CastleNAVBAR.karma = request.karma;
+				
 				if (request.type == 'reconnect') {
 
 					MM.searchActive(false);
@@ -11441,7 +11656,7 @@ class MM {
 
 		let message = DOM(`${data.message}`);
 
-		if (data.id == 1) {
+		if (App.isAdmin(data.id)) {
 
 			message.style.color = 'rgba(255, 50, 0, 0.9)';
 			
