@@ -1,6 +1,6 @@
 APP_VERSION = '0';
 
-PW_VERSION = '2.6.10';
+PW_VERSION = '2.6.11';
 
 CURRENT_MM = 'mm'
 
@@ -7598,9 +7598,9 @@ class App {
 				7:{nickname:'Farfania',hero:9,ready:1,rating:1100,select:false,team:2},
 				8:{nickname:'Rekongstor',hero:25,ready:1,rating:1100,select:false,team:2},
 				9:{nickname:'Hatem',hero:0,ready:1,rating:2200,select:false,team:2}
-				},target:7,map:[4,2,App.storage.data.id,5,6,7,8,9,10,1858]};
+				},target:7,map:[4,2,App.storage.data.id,5,6,7,8,9,10,1858],mode:0,hero:['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15']};
 
-			obj.users[App.storage.data.id] = {winrate:51,nickname:App.storage.data.login,hero:49,ready:0,rating:1284,select:true,team:1,mode:0,commander:true};
+			obj.users[App.storage.data.id] = {winrate:51,nickname:App.storage.data.login,hero:48,ready:0,rating:1284,select:true,team:1,mode:0,commander:true};
 				
 			  MM.lobby(obj);
 			
@@ -8232,7 +8232,7 @@ class Chat {
 			nickname.style.fontWeight = 600;
 
 			nickname.classList.add('telegrambot-text');
-			
+
 		}
 		else if (App.isAdmin(data.id)) {
 
@@ -11220,6 +11220,8 @@ class MM {
 		}
 
 		let builds = await App.api.request('build', 'my', { hero: heroId });
+		
+		let target = 0;
 
 		for (let build of builds) {
 
@@ -11227,6 +11229,8 @@ class MM {
 				event: ['click', async () => {
 
 					await App.api.request('build', 'target', { id: build.id });
+					
+					target = build.id;
 
 					for (let child of MM.lobbyBuildTab.children) {
 
@@ -11248,6 +11252,8 @@ class MM {
 			}, build.name);
 
 			if (build.target) {
+				
+				target = build.id;
 
 				tab.style.background = 'rgba(255,255,255,0.3)';
 
@@ -11264,7 +11270,51 @@ class MM {
 			MM.lobbyBuildTab.append(tab);
 
 		}
-
+		
+		let notify = true, random = DOM({style:'ready-button',event:['click', async () => {
+			
+			if(notify){
+				
+				random.innerText = 'Перезаписать текущий билд?';
+				
+				notify = false;
+				
+				return;
+				
+			}
+			
+			random.innerText = 'Генерация...';
+			
+			let build = await App.api.request('build', 'rebuild', { id: target });
+			
+			if (MM.lobbyBuildField.firstChild) {
+				
+				MM.lobbyBuildField.firstChild.remove();
+				
+			}
+			
+			MM.lobbyBuildField.append(Build.viewModel(build.body, false, false));
+			
+			notify = true;
+			
+			for (let item of builds) {
+				
+				if(item.id == target){
+					
+					item.body = build.body;
+					
+				}
+				
+			}
+			
+			random.innerText = 'Случайный билд';
+			
+		}]},'Случайный билд');
+		
+		random.style.width = 'auto';
+		
+		MM.lobbyBuildTab.append(random);
+		
 	}
 
 	static async lobby(data) {
@@ -11416,6 +11466,22 @@ class MM {
 		let activeRankName = '';
 
 		for (let item of MM.hero) {
+			
+			if(!item.id){
+				
+				continue;
+				
+			}
+			
+			if( ('hero' in data) && (data.hero.length) ){
+				
+				if(!data.hero.includes(`${item.id}`)){
+					
+					continue;
+					
+				}
+				
+			}
 
 			let getRankName = Rank.getName(item.rating);
 
@@ -11506,7 +11572,7 @@ class MM {
 
 		});
 
-		let body = DOM({ style: 'mm-lobby' }, DOM({ style: 'mm-lobby-header' }, leftTeam, info, rightTeam), DOM({ style: 'mm-lobby-middle' }, DOM({ style: 'mm-lobby-middle-chat' }, DOM({ style: 'mm-lobby-middle-chat-map' }, (data.mode == 0) ? MM.renderMap() : DOM()), MM.chatBody, chatInput), lobbyBuild, MM.lobbyHeroes));
+		let body = DOM({ style: 'mm-lobby' }, DOM({ style: 'mm-lobby-header' }, leftTeam, info, rightTeam), DOM({ style: 'mm-lobby-middle' }, DOM({ style: 'mm-lobby-middle-chat' }, DOM({ style: 'mm-lobby-middle-chat-map' }, (data.mode == 0) ? MM.renderMap(data.users[App.storage.data.id].team) : DOM()), MM.chatBody, chatInput), lobbyBuild, MM.lobbyHeroes));
 
 		Sound.play('content/sounds/tambur.ogg', { id: 'tambur', volume: Castle.GetVolume(Castle.AUDIO_MUSIC), loop: true });
 
@@ -11538,9 +11604,9 @@ class MM {
 
 	}
 
-	static renderMap() {
+	static renderMap(team) {
 
-		MM.renderBody = DOM({ style: 'map' });
+		MM.renderBody = DOM({ style: (team == 1) ? 'map' : 'map-reverse' });
 
 		let container = DOM({ tag: 'div' }, MM.renderBody);
 
@@ -11552,14 +11618,15 @@ class MM {
 				style: `map-item-${number}`, data: { player: 0, position: number }, event: ['click', async () => {
 
 					await App.api.request(CURRENT_MM, 'position', { id: MM.id, position: (item.dataset.player == App.storage.data.id) ? 0 : item.dataset.position });
+					
 
 				}]
 			})
 
 			MM.renderBody.append(item);
-
+			
 		}
-
+		
 		return container;
 
 	}
@@ -11657,7 +11724,7 @@ class MM {
 		} catch (e) {
 			App.error(e);
 		}
-	
+		/*
 		if (data.mode == 3) {
 			ARAM.briefing(data.hero, data.role, () => {
 				MM.gameRunEvent();
@@ -11667,6 +11734,12 @@ class MM {
 			MM.gameRunEvent();
 			PWGame.start(data.key, MM.gameStopEvent);
 		}
+		*/
+		
+		MM.gameRunEvent();
+		
+		PWGame.start(data.key, MM.gameStopEvent);
+		
 	}
 
 	static eventChangeHero(data) {
