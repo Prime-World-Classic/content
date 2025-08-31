@@ -1,6 +1,6 @@
 APP_VERSION = '0';
 
-PW_VERSION = '2.7.0';
+PW_VERSION = '2.7.1';
 
 CURRENT_MM = 'mm'
 
@@ -1685,15 +1685,9 @@ class View {
 			var template = await View[method](value, value2, value3);
 
 		}
-		catch (error) { // session is not valid (когда выдали бан), при любой ошибке рендера выкидываем с учетки
+		catch (error) {
 
 			App.error(error);
-
-			if (String(error).search(new RegExp(`session is not valid`, 'i')) != -1) {
-
-				App.exit();
-
-			}
 
 			return;
 
@@ -1845,9 +1839,19 @@ class View {
 			body.append(castlePlay);
 			
 		}
-		catch(e){
+		catch(error){
 			
-			console.log(e);
+			if(String(error).search(new RegExp(`session is not valid`, 'i')) != -1){
+				
+				await App.exit();
+				
+				NativeAPI.reset();
+				
+				return;
+				
+			}
+			
+			console.log(error);
 			
 		}
 		
@@ -2191,56 +2195,104 @@ class View {
 	}
 
 	static castleBannerOnline() {
-
   const getDivisionId = () =>
     (window.User && (User.divisionId || User.rank || User.rating)) ||
     (window.Settings && Settings.user && (Settings.user.divisionId || Settings.user.rank)) ||
     10;
 
+	const isFiniteNumber = (v) => Number.isFinite(v) && !Number.isNaN(v);
+
+	const safeQueueCounts = (cssKey) => {
+    let party = 0, players = 0;
+
+    try {
+		if (typeof View?.getQueue === 'function') {
+        const v = Number(View.getQueue(cssKey));
+        if (isFiniteNumber(v)) party = v;
+    }
+    } catch (_) {}
+
+    try {
+		if (typeof View?.getTotalQueue === 'function') {
+        const t = Number(View.getTotalQueue(cssKey));
+        if (isFiniteNumber(t)) players = t;
+    }
+    } catch (_) {}
+
+    return { players, party };
+  };
+
+  // карта режимов
   const modeMap = {
     pvp: 0,
     anderkrug: 1,
     cte: 2,
     m4: 3,
-	'custom-battle': 4,
+    'custom-battle': 4,
     'pve-ep2-red': 5
   };
 
+  // тип медалей
   const medalMap = {
     pvp: 'gold',
     anderkrug: 'gold',
     cte: 'gold',
     m4: 'gold',
-    'pve-ep2-red': 'silver',
-    'custom-battle': 'gold'
+    'pve-ep2-red': 'gold',
+    'custom-battle': 'silver'
   };
 
   const bannerItems = Object.entries(modeMap).map(([cssKey]) => ({
     cssKey,
-    label: () => View.getQueue(cssKey)
+    label: () => (typeof View?.getQueue === 'function' ? View.getQueue(cssKey) : 0)
   }));
 
   const banner = DOM({ style: ['castle-banner-online'] });
   banner.append(DOM({ style: ['banner-ornament'] }));
-  
+
+  // --- элементы по режимам ---
   bannerItems.forEach((item, idx) => {
     const wrap = DOM({ style: ['banner-item'] });
 
+    // иконка режима
     const icon = DOM({ style: ['banner-icon', `banner-icon--${item.cssKey}`] });
     wrap.append(icon);
 
-    const lbl = DOM({ tag: 'div', style: ['banner-count'] });
-
-	const current = item.label(); 
-	const total = (typeof View?.getTotalQueue === 'function')
-	? View.getTotalQueue(item.cssKey)
-	: 0;
-
-	lbl.textContent = `${total}/${current}`;
-	
+    // счётчик: всегда стартует с "0/0"
+    const lbl = DOM({ tag: 'div', style: ['banner-count', 'is-loading'] });
+    lbl.textContent = '0/0';
+    lbl.title =
+      'Отображение очереди по режимам:\n' +
+      'слева — игроков в поиске,\n' +
+      'справа — количество групп (пати).';
     wrap.append(lbl);
 
-    // медаль
+
+    const onQueuesUpdated = () => {
+      const { players, party } = safeQueueCounts(item.cssKey);
+      lbl.textContent = `${players}/${party}`;
+      if (players || party) lbl.classList.remove('is-loading');
+    };
+    window.addEventListener?.('queues:updated', onQueuesUpdated);
+
+    let ticks = 0;
+    const iv = setInterval(() => {
+      ticks++;
+      const { players, party } = safeQueueCounts(item.cssKey);
+      const current = lbl.textContent;
+      const next = `${players}/${party}`;
+      if (current !== next) {
+        lbl.textContent = next;
+      }
+      if (players || party) {
+        lbl.classList.remove('is-loading');
+      }
+      if ((players || party) || ticks >= 30) {
+        clearInterval(iv);
+      }
+    }, 500);
+
+    // медаль/кнопка
     const type = medalMap[item.cssKey] || 'gold';
     const disabled = (type === 'silver');
 
@@ -2255,9 +2307,7 @@ class View {
       medal.title = 'Посмотреть статистику по режиму';
       medal.setAttribute('role', 'button');
       medal.tabIndex = 0;
-      const openStats = () => {
-		Window.show('main','top',0,idx);
-      };
+      const openStats = () => { Window.show('main', 'top', 0, idx); };
       medal.addEventListener('click', openStats);
       medal.addEventListener('keydown', (e) => {
         if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openStats(); }
@@ -2272,11 +2322,11 @@ class View {
     }
   });
 
+  // --- блок статистики/кнопка Stat ---
   const statWrapper = DOM({ style: ['banner-stat-wrapper'] });
   const statRect    = DOM({ style: ['banner-stat-rect'] });
   const statCircle  = DOM({ style: ['banner-stat-circle'] });
 
-  // Кнопка Stat
   const statsBtn = DOM({
     style: ['banner-icon', 'banner-icon--stat', 'button-outline'],
     title: 'Статистика',
@@ -2285,34 +2335,45 @@ class View {
         if (e.key === 'Escape') { Splash.hide(); document.removeEventListener('keydown', onEsc); }
       };
       document.addEventListener('keydown', onEsc, { once: true });
+
+      const BASE  = 'https://pw2.26rus-game.ru/stats/';
+      const id    = Number(App?.storage?.data?.id) || 0;
+      const login = String(App?.storage?.data?.login || '').trim();
+
+      const qs = new URLSearchParams();
+      if (id > 0) qs.set('user_id', String(id));
+      else if (login) qs.set('login', login);
+      else qs.set('user_id', '0');
+      qs.set('tab', 'info');
+      qs.set('q', '');
+      qs.set('_', Date.now().toString());
+
+      const src = `${BASE}?${qs.toString()}`;
+
       Splash.show(
         DOM(
           { style: 'iframe-stats', event: ['click', (e) => { if (e.target === e.currentTarget) Splash.hide(); }] },
           DOM({ style: 'iframe-stats-navbar', event: ['click', () => Splash.hide()] }),
-          DOM({ tag: 'iframe', src: 'https://pw2.26rus-game.ru/stats/?tab=info&q=&user_id=0', style: 'iframe-stats-frame' })
+          DOM({ tag: 'iframe', src, style: 'iframe-stats-frame' })
         ),
         false
       );
     }]
   });
 
-  // ► Бейдж дивизии ПОД кнопкой Stat
-  const divId = getDivisionId();
-  const divInfo = typeof Division?.get === 'function'
-    ? Division.get(divId)
-    : { name: 'Дивизион', icon: 1 };
+  // бейдж дивизии под кнопкой Stat
+  const divId   = getDivisionId();
+  const divInfo = typeof Division?.get === 'function' ? Division.get(divId) : { name: 'Дивизион', icon: 1 };
 
   const divisionBadgeUnderStat = DOM({ style: ['banner-division-badge', 'banner-division-badge--stat'] });
   divisionBadgeUnderStat.style.backgroundImage = `url(content/ranks/${divInfo.icon}.webp)`;
-
-  
   divisionBadgeUnderStat.title =
-    'Дивизия — группа игроков под одним званием,\n' +
-    'которая играет примерно на равно винрейте матчмейкинга.';
+    'Дивизия — группа игроков под одним званием,\nкоторая играет примерно на равном винрейте матчмейкинга.';
 
   statCircle.append(statsBtn, divisionBadgeUnderStat);
   statWrapper.append(statRect, statCircle);
 
+  // подсказка слева
   const tooltipWrap   = DOM({ tag: 'div', style: ['tooltip-wrap-left'] });
   const questionIcon  = DOM({ tag: 'div', style: ['question-icon'] });
   const tooltipBubble = DOM({ tag: 'div', style: ['tooltip-bubble-img'] });
@@ -2322,15 +2383,15 @@ class View {
   tooltipWrap.append(questionIcon, tooltipBubble);
 
   banner.append(tooltipWrap, statWrapper);
-
   return DOM({ style: 'castle-banner-online-wrapper' }, banner);
 }
+
 
 	static castleSettings() {
 
 		let builds = DOM({ style: ['castle-builds', 'button-outline'], title: "Рейтинг", event: ['click', () => View.show('top')] });
 
-		let ratings = DOM({ style: ['castle-top', 'button-outline'], title: "Рейтинг", event: ['click', () => Window.show('main', 'top')] });
+		/*let ratings = DOM({ style: ['castle-top', 'button-outline'], title: "Рейтинг", event: ['click', () => Window.show('main', 'top')] });*/
 
 		let settings = DOM({
 			style: ['castle-settings-btn', 'button-outline'], title: "Вкл/Выкл графики замка", event: ['click', () => {
@@ -2356,7 +2417,7 @@ class View {
 		input.max = '1';
 		input.step = '0.01';
 
-		let body = DOM({ style: ['castle-settings'] }, menu, ratings);
+		let body = DOM({ style: ['castle-settings'] }, menu);
 		let container = DOM({ style: ['castle-settings-container'] }, View.castleBannerOnline(), body);
 		return container;
 	}
@@ -7489,11 +7550,23 @@ class Events {
 		if (!NativeAPI.status) {
 
 			return;
-
+			
 		}
 
 		MM.eventChangeHero(data);
+		
+	}
+	
+	static MMBanHero(data) {
 
+		if (!NativeAPI.status) {
+
+			return;
+			
+		}
+
+		MM.eventBanHero(data);
+		
 	}
 
 	static MMChat(data) {
@@ -7565,7 +7638,7 @@ class Events {
 		}
 
 		MM.select(data);
-
+		
 	}
 
 	static MMEnd(data) {
@@ -7779,23 +7852,25 @@ class App {
 		await MM.init();
 		/*
 		setTimeout(() => {
-			let obj = {id:1, users:{
-				10:{nickname:'Nesh',hero:15,ready:1,rating:1300,select:false,team:1},
-				1858:{nickname:'vitaly-zdanevich',hero:3,ready:1,rating:1100,select:false,team:1},
-				2:{nickname:'Коао',hero:12,ready:1,rating:1100,select:false,team:1},
-				4:{nickname:'Lantarm',hero:24,ready:1,rating:1100,select:false,team:1},
-				5:{nickname:'123',hero:8,ready:1,rating:1100,select:false,team:2},
-				6:{nickname:'123',hero:2,ready:1,rating:1100,select:false,team:2},
-				7:{nickname:'Farfania',hero:9,ready:1,rating:1100,select:false,team:2},
-				8:{nickname:'Rekongstor',hero:25,ready:1,rating:1100,select:false,team:2},
-				9:{nickname:'Hatem',hero:0,ready:1,rating:2200,select:false,team:2}
-				},target:7,map:[4,2,App.storage.data.id,5,6,7,8,9,10,1858],mode:0,hero:['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15']};
-
-			obj.users[App.storage.data.id] = {winrate:51,nickname:App.storage.data.login,hero:48,ready:0,rating:1284,select:true,team:1,mode:0,commander:true};
-				
-			  MM.lobby(obj);
 			
-		 }, 1000);
+			let obj = {id:1, users:{
+				10:{nickname:'Nesh',hero:15,ready:1,rating:1300,select:false,team:1,banhero:59},
+				1858:{nickname:'DOK',hero:6,ready:1,rating:1100,select:false,team:1,banhero:14},
+				2:{nickname:'Коао',hero:12,ready:1,rating:1100,select:false,team:1,banhero:62},
+				4:{nickname:'Lantarm',hero:24,ready:1,rating:1100,select:false,team:1,banhero:9},
+				5:{nickname:'123',hero:8,ready:1,rating:1100,select:false,team:2,banhero:20},
+				6:{nickname:'123',hero:2,ready:1,rating:1100,select:false,team:2,banhero:21},
+				7:{nickname:'Farfania',hero:9,ready:1,rating:1100,select:false,team:2,banhero:22},
+				8:{nickname:'Rekongstor',hero:25,ready:1,rating:1100,select:false,team:2,banhero:23},
+				9:{nickname:'Hatem',hero:0,ready:1,rating:2200,select:false,team:2,banhero:26}
+			},target:7,map:[4,2,App.storage.data.id,5,6,7,8,9,10,1858],mode:0};
+
+			obj.users[App.storage.data.id] = {winrate:51,nickname:App.storage.data.login,hero:20,ready:0,rating:1284,select:true,team:1,mode:0,commander:true,banhero:16};
+			
+			MM.lobby(obj);
+			
+		},1000);
+		
 		setTimeout(() => {
 			
 			MM.chat({id:0,message:'тестовое сообщение'});
@@ -11037,6 +11112,8 @@ class MM {
 	static id = '';
 
 	static hero = false;
+	
+	static targetBanHeroId = 0;
 
 	static view = document.createElement('div');
 
@@ -11552,8 +11629,8 @@ class MM {
 
 				try {
 
-					await App.api.request(CURRENT_MM, 'hero', { id: data.id, heroId: MM.targetHeroId });
-
+					await App.api.request(CURRENT_MM, 'hero', { id: data.id, heroId: MM.targetHeroId, banHeroId: MM.targetBanHeroId });
+					
 				}
 				catch (error) {
 
@@ -11562,9 +11639,9 @@ class MM {
 					setTimeout(() => {
 
 						MM.lobbyConfirm.innerText = 'Подтвердить';
-
+						
 					}, 1500);
-
+					
 				}
 
 			}]
@@ -11611,8 +11688,20 @@ class MM {
 				hero.append(DOM({ style: `mm-status-commander-${Winrate.icon(data.users[key].winrate)}` }));
 
 				name.setAttribute('style', 'color:rgba(255,215,0,0.9)');
-
+				
 			}
+			
+			let banhero = DOM({style:'mm-player-ban'});
+			
+			if(data.users[key].banhero){
+				
+				banhero.style.backgroundImage = `url(content/hero/${data.users[key].banhero}/1.webp)`
+				
+				banhero.style.display = 'block';
+				
+			}
+			
+			hero.append(banhero);
 
 			hero.style.backgroundImage = (data.users[key].hero) ? `url(content/hero/${data.users[key].hero}/1.webp)` : `url(content/hero/empty.webp)`;
 
@@ -11621,7 +11710,7 @@ class MM {
 			if (key == data.target) {
 
 				MM.lobbyPlayerAnimate = player.animate({ transform: ['scale(1)', 'scale(0.8)', 'scale(1.1)', 'scale(1)'] }, { duration: 2000, iterations: Infinity, easing: 'ease-in-out' });
-
+				
 			}
 
 			if (data.users[App.storage.data.id].team == data.users[key].team) {
@@ -11657,7 +11746,7 @@ class MM {
 
 		}
 
-		MM.lobbyHeroes = DOM({ style: 'mm-lobby-middle-hero' });
+		MM.lobbyHeroes = DOM({ style: 'mm-lobby-middle-hero' },DOM({style:'mm-lobby-middle-hero-prompt'},'ЛКМ (ВЫБРАТЬ) / ПКМ (ЗАБЛОКИРОВАТЬ)'));
 
 		//let preload = new PreloadImages(MM.lobbyHeroes);
 
@@ -11710,7 +11799,15 @@ class MM {
 				await App.api.request(CURRENT_MM, 'eventChangeHero', { id: MM.id, heroId: item.id });
 
 				MM.lobbyBuildView(MM.targetHeroId);
-
+				
+			}
+			
+			hero.oncontextmenu = async () => {
+				
+				await App.api.request(CURRENT_MM, 'eventBanHero', { id: MM.id, heroId: item.id });
+				
+				MM.targetBanHeroId = item.id;
+				
 			}
 
 			let rank = DOM({ style: 'rank' }, DOM({ style: 'rank-lvl' }, item.rating));
@@ -11783,7 +11880,7 @@ class MM {
 			if (!data.users[key].hero) {
 
 				continue;
-
+				
 			}
 
 			let findHero = document.getElementById(`HERO${data.users[key].hero}`);
@@ -11795,11 +11892,25 @@ class MM {
 				findHero.style.backgroundColor = 'rgba(255, 255, 255, 0.3)';
 
 				findHero.dataset.ban = key;
-
+				
 			}
-
+			
+			if(data.users[key].banhero){
+				
+				let findHero = document.getElementById(`HERO${data.users[key].banhero}`);
+				
+				if (findHero) {
+					
+					findHero.style.filter = 'grayscale(100%)';
+					
+					findHero.style.backgroundColor = 'rgba(255, 255, 255, 0.3)';
+					
+				}
+				
+			}
+			
 		}
-
+		
 	}
 
 	static renderMap(team) {
@@ -11857,7 +11968,20 @@ class MM {
 			findOldPlayer.firstChild.firstChild.firstChild.innerText = data.rating;
 
 			findOldPlayer.firstChild.firstChild.lastChild.style.backgroundImage = `url(content/ranks/99.png)`;
-
+			
+			if(data.banHeroId){
+				
+				findOldPlayer.firstChild.lastChild.style.backgroundImage = `url(content/hero/${data.banHeroId}/1.webp)`;
+				
+				findOldPlayer.firstChild.lastChild.style.display = 'block';
+				
+			}
+			else{
+				
+				findOldPlayer.firstChild.lastChild.style.display = 'none';
+				
+			}
+			
 		}
 
 		if (data.target != 0) {
@@ -11867,7 +11991,7 @@ class MM {
 			if (findPlayer) {
 
 				MM.lobbyPlayerAnimate = findPlayer.animate({ transform: ['scale(1)', 'scale(0.8)', 'scale(1.2)', 'scale(1)'] }, { duration: 500, iterations: Infinity, easing: 'ease-in-out' });
-
+				
 			}
 
 		}
@@ -11883,7 +12007,7 @@ class MM {
 				child.style.backgroundColor = 'rgba(255, 255, 255, 0)';
 
 				break;
-
+				
 			}
 
 		}
@@ -11897,20 +12021,40 @@ class MM {
 			findHero.style.backgroundColor = 'rgba(255, 255, 255, 0.3)';
 
 			findHero.onclick = false;
-
+			
+			findHero.oncontextmenu = false;
+			
+		}
+		
+		if(data.banHeroId){
+			
+			let findHero = document.getElementById(`HERO${data.banHeroId}`);
+			
+			if (findHero) {
+				
+				findHero.style.filter = 'grayscale(100%)';
+				
+				findHero.style.backgroundColor = 'rgba(255, 255, 255, 0.3)';
+				
+				findHero.onclick = false;
+				
+				findHero.oncontextmenu = false;
+				
+			}
+			
 		}
 
 		if (App.storage.data.id == data.target) {
 
 			MM.lobbyConfirm.style.opacity = 1;
-
+			
 		}
 		else {
 
 			MM.lobbyConfirm.style.opacity = 0;
-
+			
 		}
-
+		
 	}
 
 	static finish(data) {
@@ -11967,56 +12111,27 @@ class MM {
 					item.style.backgroundImage = url;
 
 					break;
-
+					
 				}
+				
+			}
+			
+		}
+		
+	}
 
-			}
+	static eventBanHero(data){
 
-		}
-
-		/*
-		let oldHero = MM.lobbyUsers[data.id].hero, countHero = 0;
+		let findPlayer = document.getElementById(`PLAYER${data.id}`);
 		
-		for(let key in MM.lobbyUsers){
+		if(findPlayer){
 			
-			if(MM.lobbyUsers[key].hero == oldHero){
-				
-				countHero++;
-				
-			}
+			findPlayer.firstChild.lastChild.style.backgroundImage = `url(content/hero/${data.heroId}/1.webp)`;
+			
+			findPlayer.firstChild.lastChild.style.display = 'block';
 			
 		}
 		
-		if(countHero == 1){
-			
-			let findHero = document.getElementById(`HERO${oldHero}`);
-			
-			if(findHero){
-				
-				findHero.style.backgroundColor = 'rgba(51, 255, 51, 0)';
-				
-				findHero.dataset.active = 0;
-				
-			}
-			
-		}
-		
-		let findHero = document.getElementById(`HERO${data.heroId}`);
-		
-		if(findHero){
-			
-			if(findHero.dataset.active == 0){
-				
-				findHero.style.backgroundColor = 'rgba(51, 255, 51, 0.8)';
-				
-				findHero.dataset.active = 1;
-				
-				MM.lobbyUsers[data.id].hero = data.heroId;
-				
-			}
-			
-		}
-		*/
 	}
 
 	static chat(data) {
