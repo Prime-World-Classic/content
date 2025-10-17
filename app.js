@@ -1,6 +1,6 @@
 APP_VERSION = '0';
 
-PW_VERSION = '2.9.2';
+PW_VERSION = '2.9.3';
 
 CURRENT_MM = 'mm'
 
@@ -4004,7 +4004,7 @@ root.appendChild(content);
 				),
 				DOM({ style: 'build-active-bar-container' },
 					Build.activeBarView,
-					DOM({ style: 'build-active-bar-hint' }, 'Нажмите правой кнопкой мыши на талант в этой полосе чтобы включить/выключить смарткаст (применение навыка без подтверждения)')
+					DOM({ style: 'build-active-bar-hint' }, Lang.text('smartcastDescription'))
 				)
 			),
 			DOM({ style: 'build-right' },
@@ -4035,142 +4035,160 @@ root.appendChild(content);
 
 
 	static async talents() {
-    let body = DOM({ style: 'main' });
-    
-    // Создаем контейнер для заголовка (кнопка закрытия + поиск)
-    let header = DOM({ style: 'adm-header' });
-    
-    // Кнопка закрытия
-    let closeBtn = DOM({ 
-        style: 'close-btn',
-        event: ['click', () => View.show('castle')] 
-    }, '[X]');
-    
-    // Строка поиска
-    let searchInput = DOM({
-        tag: 'input',
-        placeholder: 'Поиск талантов...',
-        style: 'search-input'
-    });
-    
-    header.append(closeBtn, searchInput);
-    
-    let adm = DOM({ style: 'adm' }, header);
-    let result = await App.api.request('build', 'talentAll');
-    let talentContainers = [];
-    let talentsContainer = DOM({ style: 'talents-container' });
+		let body = DOM({ style: 'main' });
+		
+		// Создаем контейнер для заголовка (кнопка закрытия + поиск)
+		let header = DOM({ style: 'adm-header' });
+		
+		// Кнопка закрытия
+		let closeBtn = DOM({ 
+			style: 'close-btn',
+			event: ['click', () => View.show('castle')] 
+		}, '[X]');
+		
+		// Строка поиска
+		let searchInput = DOM({
+			tag: 'input',
+			placeholder: 'Поиск талантов...',
+			style: 'search-input'
+		});
+		
+		header.append(closeBtn, searchInput);
+		
+		let adm = DOM({ style: 'adm' }, header);
+		let result = await App.api.request('build', 'talentAll');
+		let talentContainers = [];
+		let talentsContainer = DOM({ style: 'talents-container' });
 
-    for (let item of result) {
-        let div = DOM({ tag: 'div', class: 'talent-item' });
-        div.append(DOM(`id${item.id}`), DOM({ tag: 'img', src: `content/talents/${item.id}.webp` }));
+		for (let item of result) {
+			let div = DOM({ tag: 'div', class: 'talent-item' });
+			div.append(DOM(`id${item.id}`), DOM({ tag: 'img', src: `content/talents/${item.id}.webp` }));
 
-        for (let key in item) {
-            if (key == 'id') continue;
-            div.append(
-                DOM({ tag: 'div' }, key),
-                App.input(async (value) => {
-                    let object = new Object();
-                    object[key] = value;
-                    await App.api.request('build', 'talentEdit', { id: item.id, object: object });
-                }, { value: item[key] })
-            );
-        }
-        
-        talentContainers.push({ element: div, data: item });
-        talentsContainer.append(div);
-    }
-    
-    const filterTalents = (searchText) => {
-        searchText = searchText.toLowerCase();
-        talentContainers.forEach(({ element, data }) => {
-            let matches = false;
-            for (let key in data) {
-                if (String(data[key]).toLowerCase().includes(searchText)) {
-                    matches = true;
-                    break;
-                }
-            }
-            element.style.display = matches ? 'flex' : 'none';
-        });
-    };
-    
-    searchInput.addEventListener('input', (e) => {
-        filterTalents(e.target.value);
-    });
-    
-    adm.append(talentsContainer);
-    body.append(adm);
-    return body;
-}
+			for (let key in item) {
+				if (key == 'id') continue;
+				
+				// Создаем контейнер для пары "ключ-значение"
+				let keyValuePair = DOM({ 
+					tag: 'div', 
+					class: 'key-value-pair' 
+				});
+				
+				keyValuePair.append(
+					DOM({ tag: 'div', class: 'key' }, key),
+					App.input(async (value) => {
+						let object = new Object();
+						object[key] = value;
+						await App.api.request('build', 'talentEdit', { id: item.id, object: object });
+					}, { value: item[key] })
+				);
+				
+				div.append(keyValuePair);
+			}
+			
+			talentContainers.push({ element: div, data: item });
+			talentsContainer.append(div);
+		}
+		
+		const filterTalents = (searchText) => {
+			searchText = searchText.toLowerCase();
+			talentContainers.forEach(({ element, data }) => {
+				let matches = false;
+				for (let key in data) {
+					if (String(data[key]).toLowerCase().includes(searchText)) {
+						matches = true;
+						break;
+					}
+				}
+				element.style.display = matches ? 'flex' : 'none';
+			});
+		};
+		
+		searchInput.addEventListener('input', (e) => {
+			filterTalents(e.target.value);
+		});
+		
+		adm.append(talentsContainer);
+		body.append(adm);
+		return body;
+	}
 
-static async talents2() {
-    let body = DOM({ style: 'main' });
-    
-    // Создаем контейнер для заголовка (кнопка закрытия + поиск)
-    let header = DOM({ style: 'adm-header' });
-    
-    // Кнопка закрытия
-    let closeBtn = DOM({ 
-        style: 'close-btn',
-        event: ['click', () => View.show('castle')] 
-    }, '[X]');
-    
-    // Строка поиска
-    let searchInput = DOM({
-        tag: 'input',
-        placeholder: 'Поиск геройских талантов...',
-        style: 'search-input'
-    });
-    
-    header.append(closeBtn, searchInput);
-    
-    let adm = DOM({ style: 'adm' }, header);
-    let result = await App.api.request('build', 'talentHeroAll');
-    let talentContainers = [];
-    let talentsContainer = DOM({ style: 'talents-container' });
+	static async talents2() {
+		let body = DOM({ style: 'main' });
+		
+		// Создаем контейнер для заголовка (кнопка закрытия + поиск)
+		let header = DOM({ style: 'adm-header' });
+		
+		// Кнопка закрытия
+		let closeBtn = DOM({ 
+			style: 'close-btn',
+			event: ['click', () => View.show('castle')] 
+		}, '[X]');
+		
+		// Строка поиска
+		let searchInput = DOM({
+			tag: 'input',
+			placeholder: 'Поиск геройских талантов...',
+			style: 'search-input'
+		});
+		
+		header.append(closeBtn, searchInput);
+		
+		let adm = DOM({ style: 'adm' }, header);
+		let result = await App.api.request('build', 'talentHeroAll');
+		let talentContainers = [];
+		let talentsContainer = DOM({ style: 'talents-container' });
 
-    for (let item of result) {
-        let div = DOM({ tag: 'div', class: 'talent-item' });
-        div.append(DOM(`id${item.id}`), DOM({ tag: 'img', src: `content/htalents/${item.id}.webp` }));
+		for (let item of result) {
+			let div = DOM({ tag: 'div', class: 'talent-item' });
+			div.append(DOM(`id${item.id}`), DOM({ tag: 'img', src: `content/htalents/${item.id}.webp` }));
 
-        for (let key in item) {
-            if (key == 'id') continue;
-            div.append(
-                DOM({ tag: 'div' }, key),
-                App.input(async (value) => {
-                    let object = new Object();
-                    object[key] = value;
-                    await App.api.request('build', 'talentHeroEdit', { id: item.id, object: object });
-                }, { value: item[key] })
-            );
-        }
-        
-        talentContainers.push({ element: div, data: item });
-        talentsContainer.append(div);
-    }
-    
-    const filterTalents = (searchText) => {
-        searchText = searchText.toLowerCase();
-        talentContainers.forEach(({ element, data }) => {
-            let matches = false;
-            for (let key in data) {
-                if (String(data[key]).toLowerCase().includes(searchText)) {
-                    matches = true;
-                    break;
-                }
-            }
-            element.style.display = matches ? 'flex' : 'none';
-        });
-    };
-    
-    searchInput.addEventListener('input', (e) => {
-        filterTalents(e.target.value);
-    });
-    
-    adm.append(talentsContainer);
-    body.append(adm);
-    return body;
-}
+			for (let key in item) {
+				if (key == 'id') continue;
+				
+				// Создаем контейнер для пары "ключ-значение"
+				let keyValuePair = DOM({ 
+					tag: 'div', 
+					class: 'key-value-pair' 
+				});
+				
+				keyValuePair.append(
+					DOM({ tag: 'div', class: 'key' }, key),
+					App.input(async (value) => {
+						let object = new Object();
+						object[key] = value;
+						await App.api.request('build', 'talentHeroEdit', { id: item.id, object: object });
+					}, { value: item[key] })
+				);
+				
+				div.append(keyValuePair);
+			}
+			
+			talentContainers.push({ element: div, data: item });
+			talentsContainer.append(div);
+		}
+		
+		const filterTalents = (searchText) => {
+			searchText = searchText.toLowerCase();
+			talentContainers.forEach(({ element, data }) => {
+				let matches = false;
+				for (let key in data) {
+					if (String(data[key]).toLowerCase().includes(searchText)) {
+						matches = true;
+						break;
+					}
+				}
+				element.style.display = matches ? 'flex' : 'none';
+			});
+		};
+		
+		searchInput.addEventListener('input', (e) => {
+			filterTalents(e.target.value);
+		});
+		
+		adm.append(talentsContainer);
+		body.append(adm);
+		return body;
+	}
 
 	static async users() {
 
@@ -4420,7 +4438,7 @@ class Window {
 					}]
 				},
 					{ checked: Settings.settings.fullscreen }),
-				DOM({ tag: 'label', for: 'fullscreen-toggle' }, Lang.text('windowMode'))
+				DOM({ tag: 'label', for: 'fullscreen-toggle' }, Lang.text('windowMode') + ' (F11)')
 			),
 			DOM({ style: 'castle-menu-item-checkbox' },
             	DOM({
@@ -6878,7 +6896,7 @@ class Build {
 	static async enableSmartCast(element, sendRequest) {
 		element.classList.add('smartcast');
 		element.dataset.active = 1;
-		element.title = 'Смарткаст включён';
+		element.title = Lang.text('titleSmartcastIsEnabled');
 		if (sendRequest) {
 			await Build.requestSmartcast(element);
 		}
@@ -6887,7 +6905,7 @@ class Build {
 	static async disableSmartCast(element, sendRequest) {
 		element.classList.remove('smartcast');
 		element.dataset.active = 0;
-		element.title = 'Смарткаст выключён';
+		element.title = Lang.text('titleSmartcastIsDisabled');
 		if (sendRequest) {
 			await Build.requestSmartcast(element);
 		}
@@ -8179,11 +8197,11 @@ class Events {
 			
 			let body = document.createDocumentFragment();
 			
-			body.append(DOM(`Звонок от ${data.isCaller}?`),DOM({style:'splash-content-button',event:['click', async () => {
+			body.append(DOM(`Звонок от ${data.name}?`),DOM({style:'splash-content-button',event:['click', async () => {
 				
 				try{
 					
-					let voice = new Voice(data.id,'',data.isCaller,true);
+					let voice = new Voice(data.id,'',data.name,true);
 					
 					await voice.accept(data.offer);
 					
@@ -8203,7 +8221,7 @@ class Events {
 		}
 		else{
 			
-			let voice = new Voice(data.id);
+			let voice = new Voice(data.id,'',data.name);
 			
 			await voice.accept(data.offer);
 			
@@ -8825,7 +8843,7 @@ class Voice {
 	static peerConnectionConfig = {
 		// проверка stun https://webrtc.github.io/samples/src/content/peerconnection/trickle-ice/
 		iceServers:[
-		{url:'turn:81.88.210.30:3478',credential:'pw',username:'pw'}
+		{urls:['turn:81.88.210.30:3478'],credential:'pw',username:'pw'}
 		/*
 		{url:'turn:192.158.29.39:3478?transport=udp',credential:'JZEOEt2V3Qb0y27GRntt2u2PAYA=',username:'28224511:1379330808'},
 		{url:'turn:192.158.29.39:3478?transport=tcp',credential:'JZEOEt2V3Qb0y27GRntt2u2PAYA=',username:'28224511:1379330808'},
@@ -8882,7 +8900,7 @@ class Voice {
 	
 	static cacheCandidate = new Object();
 	
-	static limit = 5;
+	static limit = 10;
 	
 	static init(){
 		
@@ -8900,19 +8918,41 @@ class Voice {
 		
 		if(!Voice.userMedia){
 			
-			Voice.userMedia = await navigator.mediaDevices.getUserMedia({audio:( App.isAdmin() ? Voice.mediaAudioConfigHighQality : Voice.mediaAudioConfig ),video:false});
+			Voice.infoPanel.style.display = 'flex';
 			
-			let tracks = Voice.userMedia.getTracks();
+			try{
+				
+				Voice.userMedia = await navigator.mediaDevices.getUserMedia({audio:( App.isAdmin() ? Voice.mediaAudioConfigHighQality : Voice.mediaAudioConfig ),video:false});
+				
+			}
+			catch(error){
+				
+				return App.error(`Не можем получить доступ к медиа устройствам: ${error}`);
+				
+			}
+			
+			let tracks = new Array();
+			
+			try{
+				
+				tracks = Voice.userMedia.getTracks();
+				
+			}
+			catch(error){
+				
+				return App.error(`Не можем получить дорожки потоков: ${error}`);
+				
+			}
 			
 			if(!tracks.length){
 				
-				throw 'Отсутствие медиа потоков';
+				return App.error('Отсутствие медиа потоков');
 				
 			}
 			
 			if(tracks[0].kind != 'audio'){
 				
-				throw 'Нам нужен микрофон';
+				return App.error('Не можем найти микрофон по умолчанию');
 				
 			}
 			
@@ -8920,32 +8960,32 @@ class Voice {
 			
 			Voice.mic.enabled = false;
 			
-			Voice.infoPanel.style.display = 'flex';
-			
 		}
 		
 	}
 	
 	static toggleEnabledMic(){
 		
-		if(Voice.mic){
+		if(!Voice.mic){
 			
-			Voice.mic.enabled = !Voice.mic.enabled;
+			return App.error('Мы не смогли определить ваш микрофон по умолчанию');
 			
-			if(Voice.mic.enabled){
-				
-				Sound.play('content/sounds/voice/enabled.mp3');
-				
-				Voice.infoPanel.firstChild.lastChild.style.opacity = 0;
-				
-			}
-			else{
-				
-				Sound.play('content/sounds/voice/disabled.mp3');
-				
-				Voice.infoPanel.firstChild.lastChild.style.opacity = 1;
-				
-			}
+		}
+		
+		Voice.mic.enabled = !Voice.mic.enabled;
+		
+		if(Voice.mic.enabled){
+			
+			Sound.play('content/sounds/voice/enabled.mp3');
+			
+			Voice.infoPanel.firstChild.lastChild.style.opacity = 0;
+			
+		}
+		else{
+			
+			Sound.play('content/sounds/voice/disabled.mp3');
+			
+			Voice.infoPanel.firstChild.lastChild.style.opacity = 1;
 			
 		}
 		
@@ -9011,13 +9051,24 @@ class Voice {
 		
 		let level = DOM({style:'voice-info-panel-body-item-bar-level'});
 		
-		Voice.indication(Voice.userMedia,(percent) => {
-			
-			level.style.width = `${percent}%`;
-			
-		});
+		let bar = DOM({style:'voice-info-panel-body-item-bar'},level);
 		
-		Voice.infoPanel.firstChild.append(DOM({style:'voice-info-panel-body-item'},DOM({style:'voice-info-panel-body-item-name'},App.storage.data.login),DOM({style:'voice-info-panel-body-item-status'},DOM({style:'voice-info-panel-body-item-bar'},level))));
+		if(Voice.mic){
+			
+			Voice.indication(Voice.userMedia,(percent) => {
+				
+				level.style.width = `${percent}%`;
+				
+			});
+			
+		}
+		else{
+			
+			bar.classList.add('voice-info-panel-body-item-nostream');
+			
+		}
+		
+		Voice.infoPanel.firstChild.append(DOM({style:'voice-info-panel-body-item'},DOM({style:'voice-info-panel-body-item-name',event:['click',() => Voice.toggleEnabledMic()]},App.storage.data.login),DOM({style:'voice-info-panel-body-item-status'},bar)));
 		
 		for(let id in Voice.manager){
 			
@@ -9027,9 +9078,13 @@ class Voice {
 		
 		let tutorial = DOM({style:'voice-info-panel-body-tutorial'},'Нажмите CTRL + Z, чтобы включить микрофон!');
 		
-		if(Voice.mic.enabled){
+		if(Voice.mic){
 			
-			tutorial.style.opacity = 0;
+			if(Voice.mic.enabled){
+				
+				tutorial.style.opacity = 0;
+				
+			}
 			
 		}
 		
@@ -9069,6 +9124,8 @@ class Voice {
 		
 		let level = DOM({style:'voice-info-panel-body-item-bar-level'});
 		
+		let bar = DOM({style:'voice-info-panel-body-item-bar'},level);
+		
 		let indication = () => {
 			
 			if( (Voice.manager[id].peer.connectionState == 'connected') && (Voice.manager[id].stream) ){
@@ -9078,6 +9135,25 @@ class Voice {
 					level.style.width = `${percent}%`;
 					
 				});
+				
+			}
+			
+			if(Voice.manager[id].stream){
+				
+				if(bar.classList.contains('voice-info-panel-body-item-nostream')){
+					
+					bar.classList.remove('voice-info-panel-body-item-nostream');
+					
+				}
+				
+			}
+			else{
+				
+				if(!bar.classList.contains('voice-info-panel-body-item-nostream')){
+					
+					bar.classList.add('voice-info-panel-body-item-nostream');
+					
+				}
 				
 			}
 			
@@ -9093,7 +9169,7 @@ class Voice {
 			
 		}
 		
-		Voice.infoPanel.firstChild.append(DOM({style:'voice-info-panel-body-item'},item,DOM({style:'voice-info-panel-body-item-status'},DOM({style:'voice-info-panel-body-item-bar'},level))));
+		Voice.infoPanel.firstChild.append(DOM({style:'voice-info-panel-body-item'},item,DOM({style:'voice-info-panel-body-item-status'},bar)));
 		
 	}
 	
@@ -9170,7 +9246,11 @@ class Voice {
 				
 				if(!Object.keys(Voice.manager).length){
 					
-					Voice.mic.enabled = false;
+					if(Voice.mic){
+						
+						Voice.mic.enabled = false;
+						
+					}
 					
 				}
 				
@@ -9344,7 +9424,11 @@ class Voice {
 		
 		await Voice.initAudio();
 		
-		this.peer.addTrack(Voice.mic);
+		if(Voice.mic){
+			
+			this.peer.addTrack(Voice.mic);
+			
+		}
 		
 		let offer = await this.peer.createOffer({offerToReceiveAudio:true,offerToReceiveVideo:false});
 		
@@ -9382,7 +9466,11 @@ class Voice {
 		
 		await Voice.initAudio();
 		
-		this.peer.addTrack(Voice.mic);
+		if(Voice.mic){
+			
+			this.peer.addTrack(Voice.mic);
+			
+		}
 		
 		await this.peer.setRemoteDescription(offer);
 		
@@ -12170,6 +12258,61 @@ class Settings {
             App.error('Ошибка сохранения настроек: ' + e);
         }
     }
+	
+	// Инициализация глобальных горячих клавиш
+    static initGlobalHotkeys() {
+        console.log('Initializing global hotkeys...');
+        
+        document.addEventListener('keydown', (e) => {
+            // F11 - переключение полноэкранного режима
+            if (e.key === 'F11') {
+                e.preventDefault();
+                e.stopPropagation();
+                this.toggleFullscreen();
+            }
+        });
+        
+        console.log('Global hotkeys initialized - F11 for fullscreen toggle');
+    }
+
+    // Метод для переключения полноэкранного режима
+    static toggleFullscreen() {
+        if (!this.settings) {
+            console.warn('Settings not initialized');
+            return;
+        }
+        
+        this.settings.fullscreen = !this.settings.fullscreen;
+        console.log(`Toggling fullscreen: ${this.settings.fullscreen ? 'ON' : 'OFF'}`);
+        
+        // Применяем настройки
+        this.ApplySettings({render: false, audio: false});
+        
+        // Синхронизируем UI если открыты настройки
+        this.syncFullscreenUI();
+        
+        // Показываем уведомление пользователю
+        this.showFullscreenNotification();
+    }
+
+    // Синхронизация UI чекбокса
+    static syncFullscreenUI() {
+        const fullscreenToggle = document.getElementById('fullscreen-toggle');
+        if (fullscreenToggle) {
+            fullscreenToggle.checked = !this.settings.fullscreen;
+            console.log('Updated fullscreen toggle UI');
+        }
+    }
+
+    // Показать уведомление о переключении режима
+    static showFullscreenNotification() {
+        if (typeof App !== 'undefined' && App.notify) {
+            const message = this.settings.fullscreen ? 
+                (Lang.text('fullscreenEnabled') || 'Fullscreen enabled') : 
+                (Lang.text('fullscreenDisabled') || 'Window mode enabled');
+            App.notify(message);
+        }
+    }
 
     static async ApplySettings(options = {}) {
 		// Установка значений по умолчанию для options
@@ -12228,6 +12371,9 @@ class Settings {
         await this.ReadSettings();
         await this.ApplySettings();
         
+		// Инициализируем глобальные горячие клавиши
+        this.initGlobalHotkeys();
+		
         window.addEventListener('beforeunload', () => {
             this.WriteSettings();
         });
