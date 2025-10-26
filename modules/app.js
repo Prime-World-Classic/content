@@ -17,7 +17,7 @@ export class App {
 
     static PW_VERSION = '2.10.0';
 
-    static CURRENT_MM = 'mmtest'
+    static CURRENT_MM = 'mm'
 
     static RIGA = 'wss://pwclassic.isgood.host:443';
     static MOSCOW = 'wss://api2.26rus-game.ru:8443';
