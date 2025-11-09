@@ -279,12 +279,24 @@ html,body{cursor:url('img/cursor.png') 0 0,default}
   margin-top: -2.6cqh;
   margin-right: 1.2cqh;
   position: absolute;   
-  width: 6.9vh;
-  height: 6.9vh;
+  width: 9vh;
+  height: 9vh;
   background: url('./img/queue/Cristal.png') no-repeat center/contain;
   top: 0.4cqh;   
-  left: -8.1cqh; 
+  left: -8.5cqh; 
   z-index: 5;
+  display: flex;
+  flex-direction: column;
+}
+
+.quest-counter {
+    font-size: 1.6cqh;
+	line-height: 3.2cqh;
+	font-weight: 800;
+    color: #ffffffab;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
 }
 
 
@@ -1568,7 +1580,6 @@ html,body{cursor:url('img/cursor.png') 0 0,default}
 .quest{
 	
 	position:absolute;
-	left:0;
 	top: 17vh;
 	display:flex;
 	align-items:center;
@@ -1616,15 +1627,23 @@ html,body{cursor:url('img/cursor.png') 0 0,default}
 }
 
 .quest-item-exclamation{
-	position: absolute;
-	width:80cqw;
-	height:80cqw;
 	background-image: url('img/quest/3.png');
 	animation: questanim 1s linear infinite;
+	width:80cqw;
+	height:80cqw;
 	position: absolute;
 	right: -30cqw;
 	bottom: -20cqw;
-	
+}
+
+.quest-item-completed{
+	background-image: url('img/quest/4.png');
+	background-size: contain;
+	width:50cqw;
+	height:50cqw;
+	position: absolute;
+	right: -10cqw;
+	bottom: 0cqw;
 }
 
 .quest-item-timer{
@@ -1637,7 +1656,7 @@ html,body{cursor:url('img/cursor.png') 0 0,default}
 	text-align:center;
 	color:rgba(255,255,255,0.9);
 	position: relative;
-	bottom: 0;
+	bottom: 20cqh;
 	
 }
 

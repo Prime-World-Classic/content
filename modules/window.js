@@ -97,12 +97,108 @@ export class Window {
 		let view = await View.inventory(true);
 		return DOM({ id: 'winventory' }, view);
 	}
-	/*
-	static async quest(questId,cloneNode,test) {
-		let view = await View.quest(questId,cloneNode,test);
+	
+	static async quest(item) {
 		
+		let quest = await App.api.request('quest','get',{id:item.id});
+		
+		let root = DOM({ id: 'wquest' });
+		
+		const content = DOM({ style: 'wquest__content' });
+
+		const titlebar = DOM({ style: 'wquest__titlebar' });
+		const h3 = DOM({ tag: 'h3', style: 'wquest__title' }, quest.title);
+
+		titlebar.appendChild(h3);
+
+		const body = DOM({ style: 'wquest__body' }, quest.description);
+
+		const objective = DOM({ style: 'wquest__objective' });
+		const objText = DOM({ style: 'wquest__objective' }, quest.target);
+		objective.appendChild(objText);
+
+		if (quest.total) {
+			const counter = DOM({}, quest.score, " / ", quest.total);
+			objText.append(counter);
+		}
+
+		const tokens = item.reward;
+		const rewards = DOM({ style: 'wquest__rewards' });
+		for (let reward in item.reward) {
+			const chip = DOM({ style: 'wquest__chip' }); 
+			const icon = DOM({ style: 'wquest__chip-icon' });
+			let iconUrl = "";
+			switch (reward) {
+				case 'crystal':
+					iconUrl = `url("content/img/queue/DiamondBlue.png")`
+					break;
+				default:
+					iconUrl = `url("content/img/queue/Spravka.png")`
+			}
+			icon.style.backgroundImage = iconUrl;
+
+			const val = DOM({ style: 'wquest__chip-value' }, item.reward[reward]);
+			chip.appendChild(icon); 
+			chip.appendChild(val);
+			rewards.appendChild(chip);
+		}
+
+		const avatar = DOM({ style: 'wquest__avatar' });
+		const avatarContainer = DOM({ style: 'quest_container' }, avatar);
+		avatarContainer.style.backgroundImage = `url("content/img/quest/1.png")`;
+		avatarContainer.style.backgroundSize = 'cover, contain';
+		avatarContainer.style.backgroundPosition = 'center, center';
+		avatarContainer.style.backgroundRepeat = 'no-repeat, no-repeat';
+
+		avatar.style.backgroundImage = `url("content/hero/${item.heroId}/1.webp")`;
+		avatar.style.backgroundSize = 'cover, contain';
+		avatar.style.backgroundPosition = 'center, center';
+		avatar.style.backgroundRepeat = 'no-repeat, no-repeat';
+
+		content.appendChild(titlebar);
+		content.appendChild(body);
+		content.appendChild(objective);
+		content.appendChild(rewards);
+		content.appendChild(avatarContainer);
+		
+		switch(quest.status){
+			
+			case 0:
+			
+			content.appendChild(DOM({style: "quest-accept-button", event: ['click', async () => {
+				
+				await App.api.request('quest','start',{id:quest.id});
+				
+				Window.close('main');
+				
+				View.castleQuestUpdate();
+				
+			}]}, DOM({style: "quest-button-text"},'Начать')));
+			
+			break;
+			
+			case 2:
+			
+			content.appendChild(DOM({style: "quest-accept-button", event: ['click', async () => {
+				
+				await App.api.request('quest','finish',{id:quest.id});
+				
+				Window.close('main');
+				
+				View.castleQuestUpdate();
+				
+			}]}, DOM({style: "quest-button-text"},'Завершить')));
+			
+			
+			break;
+			
+		}
+		
+		root.appendChild(content);
+
+		return root;
 	}
-	*/
+	
 	static async menu() {
 		return DOM({ id: 'wcastle-menu' },
 			DOM({ style: 'castle-menu-title' }, Lang.text('menu')),
