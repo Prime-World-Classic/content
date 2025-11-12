@@ -8,6 +8,7 @@ import { Castle } from './castle.js';
 import { Settings } from './settings.js';
 import { Sound } from './sound.js';
 import { Splash } from './splash.js';
+import { Voice } from './voice.js';
 
 export class Window {
 	static windows = {}
@@ -79,6 +80,7 @@ export class Window {
 	}
 	static async build(heroId, targetId = 0, isWindow = false) {
 		let viewBuild = await View.build(heroId, targetId, isWindow);
+		requestAnimationFrame(() => Voice.updatePanelPosition());
 		return DOM({ id: 'wbuild' }, viewBuild);
 	}
 	static async top(hero = 0, mode = 0) {
@@ -96,6 +98,107 @@ export class Window {
 	static async inventory() {
 		let view = await View.inventory(true);
 		return DOM({ id: 'winventory' }, view);
+	}
+
+	static processShopAndCollection(request, isShop) {
+		let category = {
+			skin: DOM({style: 'shop_items'}),
+			flag: DOM({style: 'shop_items'}),
+			frame: DOM({style: 'shop_items'}),
+		}
+		
+		for (const rItem of request) {
+			let item = DOM({style: 'shop_item_img'});
+			item.style.backgroundImage = `url("content/${ Shop.items[rItem.id].img }")`;
+			const translatedName = Lang.text(Shop.items[rItem.id].name);
+			category[Shop.items[rItem.id].category].appendChild(
+				DOM({style: rItem.enabled ? 'shop_item' : 'shop_item_disabled'}, 
+					item, 
+					DOM({style: 'shop_item_name'}, translatedName), 
+					DOM(
+						{style: 'shop_item_price_container', event: ['click', async () => {
+							if (!rItem.enabled) { return; }
+							if (isShop) {
+								Window.close('main');
+								Splash.show(DOM({}, DOM({style: 'splash-item-container'}, item), DOM({style: 'splash-item-text'}, `Купить ${translatedName} за ${rItem.price}`, DOM({style: 'splash-item-text'}, DOM({style: 'shop_item_price_icon'}), "?")), 
+									DOM({style: 'splash-content-button', event: ['click', async () => {
+										Splash.hide();
+										App.error(`Покупочка ${Shop.items[rItem.id].name}`); // TODO: REQUEST
+										Window.show('main', 'shop');
+									}]}, "Купить"), 
+									DOM({style: 'splash-content-button-red', event: ['click', async () => {
+										Splash.hide();
+										Window.show('main', 'shop');
+									}]}, "Отмена")
+								))
+							} else {
+								Window.close('main');
+								Splash.show(DOM({}, DOM({style: 'splash-item-container'}, item), `Экипировать ${translatedName}?`, 
+									DOM({style: 'splash-content-button', event: ['click', async () => {
+										Splash.hide();
+										App.error(`Экипировочка ${Shop.items[rItem.id].name}`); // TODO: REQUEST
+										Window.show('main', 'collection');
+									}]}, "Экипировать"), 
+									DOM({style: 'splash-content-button-red', event: ['click', async () => {
+										Splash.hide();
+										Window.show('main', 'collection');
+									}]}, "Отмена")
+								))
+							}
+						}]}, 
+						isShop ? DOM({style: 'shop_item_price'},
+							DOM({style: 'shop_item_price_icon'}), 
+							rItem.price
+						) : DOM({style: 'shop_item_price'},
+							rItem.enabled ? Lang.text("shop_use") : Lang.text("shop_in_use")
+						)
+					)
+				)
+			);
+		}
+		let shopSeparator = DOM({style: 'shop_separator'}, DOM({style: 'shop_separator_left'}), DOM({style: 'shop_separator_center'}), DOM({style: 'shop_separator_right'}));
+		
+		let shopHeader = DOM({style: 'shop_header'}, 
+			DOM({style: ['shop_header_item', isShop ? 'shop_header_selected' : 'shop_header_not_selected'], event: ['click', async () => Window.show('main', 'shop')]}, Lang.text('shop_shop')), 
+			DOM({style: ['shop_header_item', !isShop ? 'shop_header_selected' : 'shop_header_not_selected'], event: ['click', async () => Window.show('main', 'collection')]}, Lang.text('shop_collection')),
+			shopSeparator.cloneNode(true));
+
+		let skins = DOM({style: 'shop_category'}, DOM({style: 'shop_category_header'}, Lang.text('shop_skins')), category.skin);
+		let flags = DOM({style: 'shop_category'}, DOM({style: 'shop_category_header'}, Lang.text('shop_flags')), category.flag);
+		let frames = DOM({style: 'shop_category'}, DOM({style: 'shop_category_header'}, Lang.text('shop_frames')), category.frame);
+		let wnd = DOM({id: 'wshop'}, shopHeader, DOM({style: 'shop_with_scroll'}, skins, flags, frames));
+		return wnd;
+	}
+
+	static async shop() {
+		// enabled: - не приобретено ли уже? делает кнопку активации недоступной
+		let request = [
+			{ id: 0, enabled: true, price: 220 }, // скин
+			{ id: 1, enabled: true, price: 10 }, // флаги
+			{ id: 2, enabled: false, price: 10 },
+			{ id: 3, enabled: true, price: 10 },
+			{ id: 3, enabled: true, price: 10 },
+			{ id: 3, enabled: true, price: 10 },
+			{ id: 3, enabled: true, price: 10 },
+			{ id: 3, enabled: true, price: 10 },
+			{ id: 3, enabled: true, price: 10 },
+			{ id: 3, enabled: true, price: 10 },
+			{ id: 5, enabled: false, price: 100 }, // рамка
+		];
+		return this.processShopAndCollection(request, true);
+	}
+
+	static async collection() {
+		// enabled - не экипировано ли уже? делает кнопку активации недоступной
+		let request = [
+			{ id: 0, enabled: false }, // скин
+			{ id: 1, enabled: false }, // флаги
+			{ id: 2, enabled: true },
+			{ id: 3, enabled: false },
+			{ id: 4, enabled: false },
+			{ id: 5, enabled: true }, // рамка
+		];
+		return this.processShopAndCollection(request, false);
 	}
 	
 	static async quest(item) {
