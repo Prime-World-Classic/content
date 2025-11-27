@@ -1,32 +1,52 @@
 import { App } from './app.js';
 
 export class DomAudio {
-    static eventMouseOver() {
-        App.error("MouseOver");
-        // TODO: Audio
-    }
-    static eventMouseDown() {
-        App.error("MouseDown");
-        // TODO: Audio
-    }
-    static eventMouseUp() {
-        App.error("MouseUp");
-        // TODO: Audio
-    }
+  static eventMouseOver() {
+    //App.error("MouseOver");
+    // TODO: Audio
+  }
+  static eventMouseDown() {
+    //App.error("MouseDown");
+    // TODO: Audio
+  }
+  static eventMouseUp() {
+    //App.error("MouseUp");
+    // TODO: Audio
+  }
 
-    eventMouseOverCallback = null;
+  static eventInput() {
+    //App.error("Input");
+  }
 
-    eventMouseDownCallback = null;
+  static eventChange() {
+    //App.error("Change");
+  }
 
-    eventMouseUpCallback = null;
+  eventMouseOverCallback = null;
 
-    constructor(mouseover = DomAudio.eventMouseOver, mousedown = DomAudio.eventMouseDown, mouseup = DomAudio.eventMouseUp) {
+  eventMouseDownCallback = null;
 
-        this.eventMouseOverCallback = mouseover;
+  eventMouseUpCallback = null;
 
-        this.eventMouseDownCallback = mousedown;
+  eventInputCallback = null;
 
-        this.eventMouseUpCallback = mouseup;
+  eventChangeCallback = null;
 
-    }
+  constructor(
+    mouseover = DomAudio.eventMouseOver,
+    mousedown = DomAudio.eventMouseDown,
+    mouseup = DomAudio.eventMouseUp,
+    input = DomAudio.eventInput,
+    change = DomAudio.eventChange,
+  ) {
+    this.eventMouseOverCallback = mouseover;
+
+    this.eventMouseDownCallback = mousedown;
+
+    this.eventMouseUpCallback = mouseup;
+
+    this.eventInputCallback = input;
+
+    this.eventChangeCallback = change;
+  }
 }
