@@ -12,11 +12,14 @@ import { Splash } from './splash.js';
 import { Window } from './window.js';
 import { Castle } from './castle.js';
 import { Lang } from './lang.js';
+import { Sound } from './sound.js';
+import { domAudioPresets } from './domAudioPresets.js';
+import { SOUNDS_LIBRARY, generateHeroSoundsNative, generateHeroSoundsFallback } from './soundsLibrary.js';
 
 export class App {
   static APP_VERSION = '0';
 
-  static PW_VERSION = '2.12.4';
+  static PW_VERSION = '2.13.0';
 
   static CURRENT_MM = 'mm';
 
@@ -69,6 +72,36 @@ export class App {
     }, 30000);
   }
 
+  /**
+   * Preloads all sounds in SOUNDS_LIBRARY
+   * @returns {Promise<void>} A promise that resolves when all sounds are preloaded
+   */
+  static async initSounds() {
+    if (NativeAPI.status) {
+      generateHeroSoundsNative();
+    } else {
+      generateHeroSoundsFallback();
+    }
+    console.log('SOUNDS_LIBRARY', SOUNDS_LIBRARY);
+    const tasks = [];
+
+    const walk = (obj) => {
+      for (const key in obj) {
+        const value = obj[key];
+
+        if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
+          walk(value);
+        } else {
+          tasks.push(Sound.preload(key, value));
+        }
+      }
+    };
+
+    walk(SOUNDS_LIBRARY);
+
+    await Promise.all(tasks);
+  }
+
   static async init() {
     // wss://api2.26rus-game.ru:8443 - Москва (основа)
     // wss://relay.26rus-game.ru:8443 - Рига (Прокси)
@@ -78,6 +111,8 @@ export class App {
     await News.init();
 
     await Store.init();
+
+    await App.initSounds();
 
     App.storage = new Store('u3');
 
@@ -138,17 +173,21 @@ export class App {
         // 1. Сначала закрываем Splash если открыт
         if (typeof Splash !== 'undefined' && Splash.body && Splash.body.style.display === 'flex') {
           Splash.hide();
+          Sound.play(SOUNDS_LIBRARY.CLICK_CLOSE, { id: 'ui-close', volume: Castle.GetVolume(Castle.AUDIO_SOUNDS) });
           return;
         }
 
         // 2. Затем закрываем окна по одному в обратном порядке
         if (typeof Window !== 'undefined' && Window.anyOpen && Window.anyOpen()) {
           Window.closeLast(); // Закрываем только последнее окно
+          Sound.play(SOUNDS_LIBRARY.CLICK_CLOSE, { id: 'ui-close', volume: Castle.GetVolume(Castle.AUDIO_SOUNDS) });
+          return;
         }
         // 3. Если окон нет - открываем настройки
         else {
           if (typeof Window !== 'undefined' && Window.show) {
             Window.show('main', 'menu');
+            Sound.play(SOUNDS_LIBRARY.CLICK_OPEN_BIG, { id: 'ui-big-click', volume: Castle.GetVolume(Castle.AUDIO_SOUNDS) });
           }
         }
       }
@@ -258,6 +297,7 @@ export class App {
   static setNickname() {
     const close = DOM({
       tag: 'div',
+      domaudio: domAudioPresets.closeButton,
       style: 'close-button',
       event: ['click', () => Splash.hide()],
     });
@@ -269,6 +309,7 @@ export class App {
     let title = DOM({ tag: 'div', style: 'castle-menu-text' }, Lang.text('nicknameChangeCooldown'));
 
     let name = DOM({
+      domaudio: domAudioPresets.defaultInput,
       tag: 'input',
       placeholder: Lang.text('nicknamePlaceholder'),
       value: App.storage.data.login,
@@ -276,6 +317,7 @@ export class App {
 
     let button = DOM(
       {
+        domaudio: domAudioPresets.bigButton,
         style: 'splash-content-button',
         event: [
           'click',
@@ -317,6 +359,7 @@ export class App {
   static setFraction() {
     const close = DOM({
       tag: 'div',
+      domaudio: domAudioPresets.closeButton,
       style: 'close-button',
       event: ['click', () => Splash.hide()],
     });
@@ -362,6 +405,7 @@ export class App {
     factions.forEach((faction) => {
       const factionElement = DOM({
         tag: 'div',
+        domaudio: domAudioPresets.defaultButton,
         style: 'faction-item',
         event: [
           'click',
@@ -425,6 +469,7 @@ export class App {
     const button = DOM(
       {
         style: 'splash-content-button',
+        domaudio: domAudioPresets.bigButton,
         event: [
           'click',
           async () => {
@@ -565,7 +610,10 @@ export class App {
     }
 
     let msg = DOM({ tag: 'div' }, `${message}`);
-
+    Sound.play(SOUNDS_LIBRARY.ERROR, {
+      id: 'ui-error',
+      volume: Castle.GetVolume(Castle.AUDIO_SOUNDS) * 0.25,
+    });
     setTimeout(() => {
       msg.remove();
     }, timeout);
@@ -585,6 +633,10 @@ export class App {
 
       document.body.append(body);
     }, delay);
+    Sound.play(SOUNDS_LIBRARY.ERROR, {
+      id: 'ui-error',
+      volume: Castle.GetVolume(Castle.AUDIO_SOUNDS) * 0.25,
+    });
   }
 
   static isAdmin(id = 0) {

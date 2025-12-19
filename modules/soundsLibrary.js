@@ -1,16 +1,21 @@
-export const SOUNDS_LIBRARY = {
+import { NativeAPI } from './nativeApi.js';
 
+
+export const SOUNDS_LIBRARY = {
   // UI Sounds
   CLICK: 'content/sounds/ui/Click.wav',
   CLICK_CLOSE: 'content/sounds/ui/ClickClose.wav',
   CLICK_OPEN_BIG: 'content/sounds/ui/ClickOpenBig.wav',
+  CLICK_BUTTON_PRESS_SMALL: 'content/sounds/ui/ClickButtonPressSmall.wav',
 
   CHAT: 'content/sounds/ui/chat.wav',
-  CLICK_BUTTON_PRESS_SMALL: 'content/sounds/ui/ClickButtonPressSmall.wav',
   BUY: 'content/sounds/ui/buy.wav',
   GOLD_COINS: 'content/sounds/ui/GoldCoins.wav',
+
   ERROR: 'content/sounds/ui/error.wav',
   MM_FOUND: 'content/sounds/found.ogg',
+  GROUP_INVITE: 'content/sounds/ui/GroupInvite.wav',
+  CALL: 'content/sounds/ui/Call.wav',
 
   // Music
   AD: {
@@ -34,5 +39,53 @@ export const SOUNDS_LIBRARY = {
   VC_DISABLED: 'content/sounds/voice/disabled.mp3',
 
   TAMBUR: 'content/sounds/tambur.ogg',
-  GROUP_INVITE: 'content/sounds/ui/GroupInvite.wav',
 };
+
+/*  HERO SOUNDS GENERATION */
+
+const HERO_SOUND_TYPES = ['revive'];
+
+export function generateHeroSoundsNative() {
+  const fs = NativeAPI.fileSystem;
+  const path = NativeAPI.path;
+
+  const heroRoot = path.join(process.cwd(), 'content/hero');
+
+  const heroIds = fs
+    .readdirSync(heroRoot, { withFileTypes: true })
+    .filter(d => d.isDirectory())
+    .map(d => d.name);
+
+  for (const heroId of heroIds) {
+    for (const type of HERO_SOUND_TYPES) {
+      const typeDir = path.join(heroRoot, heroId, type);
+      if (!fs.existsSync(typeDir)) continue;
+
+      const sounds = fs
+        .readdirSync(typeDir)
+        .filter(f => f.endsWith('.ogg'))
+        .map(f => f.replace('.ogg', ''));
+
+      for (const sound of sounds) {
+        SOUNDS_LIBRARY[`HERO_${heroId}_${type}_${sound}`] =
+          `content/hero/${heroId}/${type}/${sound}.ogg`;
+      }
+    }
+  }
+}
+
+export function generateHeroSoundsFallback() {
+  const HERO_IDS = Array.from({ length: 65 }, (_, i) => i + 1);
+  const FALLBACK_SOUNDS = ['1', '2', '3', '4'];
+
+  for (const heroId of HERO_IDS) {
+    for (const type of HERO_SOUND_TYPES) {
+      for (const sound of FALLBACK_SOUNDS) {
+        SOUNDS_LIBRARY[`HERO_${heroId}_${type}_${sound}`] =
+          `content/hero/${heroId}/${type}/${sound}.ogg`;
+      }
+    }
+  }
+}
+
+
