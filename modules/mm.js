@@ -35,6 +35,8 @@ export class MM {
   static targetPlayerAnimate = false;
 
   static activeSelectHero = 0;
+  
+  static isInTambur = false;
 
   static gameRunEvent() {
     Castle.toggleRender(Castle.RENDER_LAYER_GAME, false);
@@ -124,6 +126,8 @@ export class MM {
     Sound.stop('tambur');
 
     Castle.toggleMusic(Castle.MUSIC_LAYER_TAMBUR, true);
+	
+	MM.isInTambur = false;
 
     MM.view.style.display = 'none';
 
@@ -453,6 +457,9 @@ export class MM {
   }
 
   static async lobby(data) {
+	  
+	MM.isInTambur = true;
+	
     MM.targetBanHeroId = 0;
 
     if (!MM.hero) {
@@ -546,11 +553,14 @@ export class MM {
 
       let name = DOM({ style: 'mm-lobby-header-team-player-name' }, `${data.users[key].nickname}`);
 
-      let rankIcon = DOM({ style: 'rank-icon' });
-
+      const rankIcon = DOM({ style: 'rank-icon' });
       rankIcon.style.backgroundImage = `url(content/ranks/${Rank.icon(data.users[key].rating)}.webp)`;
-
-      let rank = DOM({ style: 'rank' }, DOM({ style: 'rank-lvl' }, data.users[key].rating), rankIcon);
+      const rankIconWrapper = DOM({ style: 'rank-icon-wrapper' }, rankIcon);
+      rankIconWrapper.style.backgroundImage = `url(content/ranks/rateIconBack.png)`;
+      rankIconWrapper.style.backgroundSize = 'contain';
+      rankIconWrapper.style.backgroundPosition = 'center center';
+      rankIconWrapper.style.backgroundRepeat = 'no-repeat';
+      let rank = DOM({ style: 'rank' }, DOM({ style: 'rank-lvl' }, data.users[key].rating), rankIconWrapper);
 
       hero.append(rank, DOM({ style: 'mm-frame' }));
 
@@ -592,6 +602,7 @@ export class MM {
       } else {
         name.innerText = 'ifst';
 
+      
         name.style.opacity = 0;
 
         rankIcon.style.backgroundImage = 'none';
@@ -849,9 +860,32 @@ export class MM {
 
       findOldPlayer.firstChild.style.backgroundImage = `url(content/hero/${data.heroId}/${skinId}.webp)`;
 
-      findOldPlayer.firstChild.firstChild.firstChild.innerText = data.rating;
-
-      findOldPlayer.firstChild.firstChild.lastChild.style.backgroundImage = `url(content/ranks/99.png)`;
+      const rankContainer = findOldPlayer.firstChild.querySelector('.rank');
+      if (rankContainer) {
+        const rankLvl = rankContainer.querySelector('.rank-lvl');
+        const rankIconWrapper = rankContainer.querySelector('.rank-icon-wrapper');
+        const rankIcon = rankIconWrapper ? rankIconWrapper.querySelector('.rank-icon') : null;
+        
+        if (rankLvl) {
+          rankLvl.innerText = data.rating;
+          // Убеждаемся, что backgroundImage удален с rank-lvl
+          rankLvl.style.backgroundImage = '';
+          rankLvl.style.removeProperty('background-image');
+        }
+        
+        // Восстанавливаем правильный фон на rank-icon-wrapper (rateIconBack.png)
+        if (rankIconWrapper) {
+          rankIconWrapper.style.backgroundImage = `url(content/ranks/rateIconBack.png)`;
+          rankIconWrapper.style.backgroundSize = 'contain';
+          rankIconWrapper.style.backgroundPosition = 'center center';
+          rankIconWrapper.style.backgroundRepeat = 'no-repeat';
+        }
+        
+        // Устанавливаем 99.png только на rank-icon (иконка "готов")
+        if (rankIcon) {
+          rankIcon.style.backgroundImage = `url(content/ranks/99.png)`;
+        }
+      }
 
       if (data.banHeroId) {
         findOldPlayer.firstChild.lastChild.style.backgroundImage = `url(content/hero/${data.banHeroId}/1.webp)`;
@@ -921,7 +955,9 @@ export class MM {
   static finish(data) {
     Timer.stop();
     MM.close();
-
+	
+	MM.isInTambur = false;
+	
     try {
       Settings.ApplySettings();
     } catch (e) {
@@ -965,9 +1001,32 @@ export class MM {
 
       findPlayer.firstChild.style.backgroundImage = url;
 
-      findPlayer.firstChild.firstChild.firstChild.innerText = data.rating;
-
-      findPlayer.firstChild.firstChild.lastChild.style.backgroundImage = `url(content/ranks/${Rank.icon(data.rating)}.webp)`;
+      const rankContainer = findPlayer.firstChild.querySelector('.rank');
+      if (rankContainer) {
+        const rankLvl = rankContainer.querySelector('.rank-lvl');
+        const rankIconWrapper = rankContainer.querySelector('.rank-icon-wrapper');
+        const rankIcon = rankIconWrapper ? rankIconWrapper.querySelector('.rank-icon') : null;
+        
+        if (rankLvl) {
+          rankLvl.innerText = data.rating;
+          // Убеждаемся, что backgroundImage удален с rank-lvl
+          rankLvl.style.backgroundImage = '';
+          rankLvl.style.removeProperty('background-image');
+        }
+        
+        // Восстанавливаем правильный фон на rank-icon-wrapper (rateIconBack.png)
+        if (rankIconWrapper) {
+          rankIconWrapper.style.backgroundImage = `url(content/ranks/rateIconBack.png)`;
+          rankIconWrapper.style.backgroundSize = 'contain';
+          rankIconWrapper.style.backgroundPosition = 'center center';
+          rankIconWrapper.style.backgroundRepeat = 'no-repeat';
+        }
+        
+        // Устанавливаем backgroundImage только на rank-icon
+        if (rankIcon) {
+          rankIcon.style.backgroundImage = `url(content/ranks/${Rank.icon(data.rating)}.webp)`;
+        }
+      }
     }
 
     if (MM.renderBody) {
