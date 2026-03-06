@@ -1396,8 +1396,8 @@ export class Build {
     }
 
     Build.heroImg.onclick = () => {
-      closeTip();
       Window.show('main', 'top', data.id, 0);
+	  closeTip();
     };
 
     Build.heroImg.style.backgroundImage = `url(content/hero/${data.id}/${
@@ -2203,8 +2203,9 @@ export class Build {
   }
 
   static getKeyName(index) {
-    if (!Build.binds[index].keys) return;
+
     return index < 10 ? Build.binds[index].keys.join('+') : 'Отключен';
+	
   }
 
   static setSortInventory(key, value) {
