@@ -647,10 +647,6 @@ export class App {
 	return [935, 1033, 6179, 8686].includes(Number(id ? id : App.storage.data.id));
   }
 
-  static isEnterKey(e) {
-    return e.key === 'Enter' || e.keyCode === 13 || e.code === 'Enter' || e.code === 'NumpadEnter';
-  }
-
   static href(url) {
     let a = DOM({ tag: 'a', href: url });
 
