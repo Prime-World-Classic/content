@@ -62,6 +62,7 @@ export const ru = {
     structureError: 'Ошибка структуры',
     accountNotFoundOrRecover: 'Аккаунт не найден, пройдите регистрацию или восстановите через Telegram бота @primeworldclassic_bot',
     accountBanned: 'Аккаунт заблокирован навсегда. Для подробностей обратитесь в службу поддержки.',
+    accountBlockedForMinutes: 'Ваш аккаунт заблокирован на ${blocked} мин.',
     //accountBlocked: 'Аккаунт заблокирован за нарушение правил сообщества на ${blocked} мин.',
     invalidCredentials: 'Неверный пара логин или пароль. Восстановить аккаунт можно через Telegram бота @primeworldclassic_bot',
     invalidInvite: 'Инвайт-код недействителен. Получить инвайт-код можно через Telegram бота @primeworldclassic_bot',
@@ -96,6 +97,11 @@ export const ru = {
 
     //castleNavBar
     clickToViewHeroRating: 'Нажмите сюда, чтобы посмотреть рейтинг по отдельным героям',
+    topColPlace: 'Место',
+    topColPlayer: 'Никнейм',
+    topColHero: 'Герой',
+    topColRating: 'Рейтинг',
+    topEmpty: 'Нет данных',
     gm1: 'Пограничье',
     gm2: 'Форпост',
     gm3: 'Драгонвальд',
@@ -131,6 +137,8 @@ export const ru = {
     windowShopUnequip: 'Снять',
     windowShopUnequipItem: 'Снять ',
     windowShopCurrentFrame: 'текущую рамку',
+    buyModalText: 'Покупка',
+    equipment: 'Экипировка',
 
     //Settings
     settingsFileAccessError: 'Ошибка доступа к файлу настроек: ',
@@ -247,6 +255,22 @@ export const ru = {
     sets: 'Сеты',
     setHintLmb: 'ЛКМ для переноса талантов в билд',
     setHintRmb: 'ПКМ для удаления талантов из билда',
+    setHintLmbMode2: 'ЛКМ: ставит таланты в билд, а в библиотеке показывает только неустановленные таланты сета по строкам.',
+    setHintLmbMode3: 'ЛКМ: показывает неустановленные таланты сета в библиотеке по строкам.',
+    setHintRmbMode3: 'ПКМ: удаляет таланты сета из билда (если они там есть).',
+    buildSettingsTitle: 'Настройки билда',
+    buildSettingsLmbMode: 'ЛКМ\\ПКМ по сету',
+    buildSettingsRowHighlight: 'Подсветка строки',
+    buildSettingsLayout: 'Расположение',
+    buildSettingsOn: 'Вкл',
+    buildSettingsOff: 'Выкл',
+    buildSettingsLayoutColumn: 'Горизонтально',
+    buildSettingsLayoutRow: 'Вертикально',
+    buildSettingsLmbMode1: 'Обычный',
+    buildSettingsLmbMode2: 'Отобразить остатки сета в Библиотеке',
+    buildSettingsLmbMode3: 'Отобразить сет в Библиотеке',
+    buildSettingsSetMatchOnly: 'Только совпадающие статы',
+    buildAltResetHint: 'Alt: сбросить фильтр сета в библиотеке',
     windowsLauncherRequired: 'Необходима Windows версия лаунчера',
     buildNamePlaceholder: 'Наименование билда',
     createBuild: 'Создать билд',
@@ -256,7 +280,7 @@ export const ru = {
     duplicateToNewBuild: 'Дублировать в новый билд',
     resetTalentsTitle: 'Сбросить таланты в этом билде?',
     reset: 'Сбросить',
-    renameBuild: 'Переименовать билд',
+    renameBuild: 'Переименовать',
     native: 'Родная',
     enemy: 'Вражеская',
     gradualTalentsTitle: 'Учитывание талантов, которые дают постепенную прибавку к определенному параметру Ваших характеристик (например таланты оранжевого качества "Убийственная логика", Неудержимая сила")',
@@ -264,10 +288,13 @@ export const ru = {
     territoryTalentsTitle: 'Учитывание талантов, которые дают дополнительный баф от типа территории (земли) - родная, вражеская/нейтральная (например таланты красного качества "Оберег жизни", "Сияние естества")',
     makeStatPriorityTitle: 'Сделать характеристику приоритетной',
     talentQualityTitle: '{name} качество талантов',
-	tipTitle: 'Билды из Зала славы (ЛКМ)',
-	tipBody: 'Билды по данному герою из Зала славы топ-100 игроков.\nНажмите на иконку, чтобы посмотреть билды.\n\nДля копирования билда из Зала славы оставьте окно своего билда открытым на нужной вкладке.\nЗатем перейдите к выбранному билду из Зала славы и нажмите «Украсть билд».',
+	  tipTitle: 'Билды из Зала славы (ЛКМ)',
+	  tipBody: 'Билды по данному герою из Зала славы топ-100 игроков.\nНажмите на иконку, чтобы посмотреть билды.\n\nДля копирования билда из Зала славы оставьте окно своего билда открытым на нужной вкладке.\nЗатем перейдите к выбранному билду из Зала славы и нажмите «Украсть билд».',
+    assembly: 'Сборка',
 
     //Друзья
+    friends: 'Друзья',
+    searchForFriends: 'Поиск друзей',
     callAFriend: 'Звонок',
     inviteToAGroup: 'Группа',
     friendIsOffline: 'Не в сети',
@@ -283,10 +310,11 @@ export const ru = {
     friendCallFrom: 'Игрок {name} вызывает по голосовой связи.',
     friendDropCall: 'Сбросить',
     inviteToAFriend: 'Пригласить',
-    kristallik: 'qwe',
+    battleText: 'Сражение',
 
     //Войс
     enableMic: 'Нажмите <strong>Ctrl+Z</strong> или на свой Ник, чтобы включить: {Voice.mic.label}',
+    enableMicSuffix: ' или на свой Ник, чтобы включить: {Voice.mic.label}',
     mediaDevicesError: 'Не можем получить доступ к медиа устройствам: {error}',
     streamTracksError: 'Не можем получить дорожки потоков: {error}',
     mediaTracksLack: 'Отсутствие медиа потоков',
@@ -297,6 +325,7 @@ export const ru = {
     voiceDisabled: 'Голосовая связь отключена',
     synthesisLang: 'ru-RU',
     hotkeyDropCalls: '<strong>Ctrl+K</strong> - сбросить все звонки кроме друзей',
+    hotkeyDropCallsSuffix: ' - сбросить все звонки кроме друзей',
     hotkeyVolumeControl: '<strong>Ctrl+↑/↓</strong> - повысить/понизить громкость',
 
     // Квесты
@@ -429,7 +458,7 @@ export const ru = {
       {
         type: 'p',
         content:
-          'Чтобы посмотреть топ по определённым героям, нажмите на топ #1 вверху окна и из предложенного списка выберите интересующего вас героя. Таблица отсортирует топ-100 игроков сервера на выбранном герое.',
+          'Чтобы посмотреть топ по определённым героям, нажмите на медальную иконку справа от тройки лидеров и из предложенного списка выберите интересующего вас героя. Таблица отсортирует топ-100 игроков сервера на выбранном герое.',
       },
       {
         type: 'img',
@@ -437,9 +466,15 @@ export const ru = {
       },
     ],
 
+
+    helpWindow: 'Справка',
     help_btn_close: 'Прочитано',
 
     // keybindings
+
+    voiceHotkeys: 'Голосовая связь',
+    voiceEnableToggle: 'Вкл/выкл микрофон',
+    voiceDropCalls: 'Сбросить звонки',
 
     slot: 'Ячейка {num}',
     selfCast: 'Использовать на себя',
@@ -500,6 +535,9 @@ export const ru = {
     frame_req_2: '50 побед',
     frame_req_3: '75 побед',
     frame_req_4: '100 побед',
+
+
+
 
     // Магазин - флаги
     flag_admin: 'Админ',

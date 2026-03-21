@@ -237,6 +237,16 @@ export class Events {
     Chat.viewMessage(data);
   }
 
+  static UFriendIncoming(data) {
+    View.setFriendIncomingStatus(data && Number(data.hasIncoming) == 1);
+    if (View.castleActiveTab === 'friends') {
+      View.bodyCastleFriends();
+      View.castleBottom.scrollLeft = 0;
+      View.updateArrows();
+      Castle.buildMode = false;
+    }
+  }
+
 
   static async VCall(data) {
     if (data.isCaller) {

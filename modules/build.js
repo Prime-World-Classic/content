@@ -15,6 +15,7 @@ import { SOUNDS_LIBRARY } from './soundsLibrary.js';
 import { Castle } from './castle.js';
 import { KeybindStore } from './keybindings/keybindings.store.js';
 import { TalentSets } from './talentSets.js';
+import { Settings } from './settings.js';
 
 export class Build {
   static loading = false;
@@ -268,6 +269,17 @@ export class Build {
   }
 
   static async init(heroId, targetId, isWindow) {
+    Build.ensureBuildSettingsDefaults();
+
+    try {
+      Build.buildSettingsButton?.parentNode?.removeChild?.(Build.buildSettingsButton);
+    } catch {}
+    try {
+      Build.buildSettingsPanel?.parentNode?.removeChild?.(Build.buildSettingsPanel);
+    } catch {}
+    Build.buildSettingsButton = null;
+    Build.buildSettingsPanel = null;
+
     Build.talents = new Object();
 
     Build.descriptionView = document.createElement('div');
@@ -358,6 +370,7 @@ export class Build {
 
     Build.inventoryView = document.createElement('div');
     Build.inventoryView.classList.add('build-talent-view');
+    Build.applyTalentViewLayoutFromSettings();
 
     Build.setsListView = DOM({ style: 'build-sets' });
     Build.setsListView.addEventListener(
@@ -366,16 +379,61 @@ export class Build {
         if (e.ctrlKey || e.shiftKey) return;
         if (!Build.setsListView) return;
 
-        e.preventDefault();
-
         const view = Build.setsListView;
         const dy = Number(e.deltaY) || 0;
+        if (!dy) return;
+
+        const max = Math.max(0, view.scrollHeight - view.clientHeight);
+        const cur = view.scrollTop;
+        const canScroll = max > 0 && ((dy < 0 && cur > 0) || (dy > 0 && cur < max));
+        // If list is already at edge and cannot scroll further, keep current hover preview.
+        if (!canScroll) return;
+
+        // Match library behavior: wheel scroll drops current hover visuals.
+        Build._setsHoverSuppressed = true;
+        Build._setsLastPointerX = e.clientX;
+        Build._setsLastPointerY = e.clientY;
+        Build.clearEmptySlotPreviews();
+        if (Build.descriptionView) Build.descriptionView.style.display = 'none';
+        Build._descriptionPinnedBySet = false;
+        Build._hoveredSetTalentIds = null;
+        Build._hoveredSetAnchorEl = null;
+        Build.clearSetHighlights();
+        try {
+          if (Build._setsScrollStopTimer) clearTimeout(Build._setsScrollStopTimer);
+        } catch {}
+        Build._setsScrollStopTimer = setTimeout(() => {
+          Build._setsScrollStopTimer = 0;
+          Build._setsHoverSuppressed = false;
+          try {
+            const x = Number(Build._setsLastPointerX);
+            const y = Number(Build._setsLastPointerY);
+            if (!Number.isFinite(x) || !Number.isFinite(y)) return;
+            const below = document.elementFromPoint(x, y);
+            const hoveredSet = below?.closest?.('.build-set-item');
+            if (!hoveredSet || !Build.setsListView?.contains?.(hoveredSet)) return;
+            hoveredSet.dispatchEvent(
+              new MouseEvent('mouseenter', {
+                bubbles: false,
+                cancelable: false,
+                view: window,
+                clientX: x,
+                clientY: y,
+              }),
+            );
+          } catch {}
+        }, 140);
+
+        // In row layout, keep native wheel speed (same feel as library).
+        if (Build.inventoryView?.classList?.contains('build-talent-view--row')) return;
+
+        e.preventDefault();
+
         const scaled = dy / 3;
 
         if (typeof Build._setsScrollTarget !== 'number') Build._setsScrollTarget = view.scrollTop;
         Build._setsScrollTarget += scaled;
 
-        const max = Math.max(0, view.scrollHeight - view.clientHeight);
         if (Build._setsScrollTarget < 0) Build._setsScrollTarget = 0;
         if (Build._setsScrollTarget > max) Build._setsScrollTarget = max;
 
@@ -455,7 +513,13 @@ export class Build {
     const setsHeader = DOM({ tag: 'legend', style: 'build-inventory-legend' }, Lang.text('sets'));
     setsSection.append(setsHeader, Build.setsListView);
 
+    Build.altResetHintView = DOM({ style: 'build-alt-reset-hint' }, Lang.text('buildAltResetHint'));
     Build.inventoryView.append(talentsSection, setsSection);
+    Build.attachAltResetHintBelowInventory();
+    Build.installAltResetHandler();
+    Build.buildSettingsButton = Build.createBuildSettingsButton();
+    Build.buildSettingsPanel = Build.createBuildSettingsPanel();
+    Build.attachBuildSettingsToWbuild();
 
     Build.renderTalentSetsList();
 
@@ -525,10 +589,14 @@ export class Build {
     //	Build.activeBar([35,-35,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]);
 
     Build.ruleSortInventory = new Object();
+    Build.scheduleAttachBuildSettings();
   }
 
   static async refreshBuildStateFromServer({ refreshInventory = true } = {}) {
     if (!Build.heroId || Build.targetId === undefined || Build.targetId === null) return;
+
+    // Ensure the settings button/panel remain attached after rebuilds.
+    Build.scheduleAttachBuildSettings(20);
 
     let highlightedLevels = [];
     try {
@@ -575,35 +643,265 @@ export class Build {
     } catch {}
   }
 
-  static beginSilentBuildUiUpdate() {
+  static ensureBuildSettingsDefaults() {
+    if (!Settings.settings) return;
+    if (!Number.isFinite(Number(Settings.settings.buildSetLmbMode))) {
+      Settings.settings.buildSetLmbMode = 1;
+    }
+    if (Settings.settings.buildSetLmbMode < 1 || Settings.settings.buildSetLmbMode > 3) {
+      Settings.settings.buildSetLmbMode = 1;
+    }
+    if (typeof Settings.settings.buildRowHoverHighlight !== 'boolean') {
+      Settings.settings.buildRowHoverHighlight = true;
+    }
+    if (!Number.isFinite(Number(Settings.settings.buildTalentViewLayout))) {
+      Settings.settings.buildTalentViewLayout = 0;
+    }
+    if (Settings.settings.buildTalentViewLayout !== 0 && Settings.settings.buildTalentViewLayout !== 1) {
+      Settings.settings.buildTalentViewLayout = 0;
+    }
+    if (typeof Settings.settings.buildSetOnlyMatchingStats !== 'boolean') {
+      Settings.settings.buildSetOnlyMatchingStats = false;
+    }
+  }
+
+  static getSetLmbMode() {
+    const mode = Number(Settings.settings?.buildSetLmbMode);
+    if (!Number.isFinite(mode) || mode < 1 || mode > 3) return 1;
+    return mode;
+  }
+
+  static isBuildRowHoverHighlightEnabled() {
+    return !!Settings.settings?.buildRowHoverHighlight;
+  }
+
+  static applyTalentViewLayoutFromSettings() {
     try {
-      Build.fieldView?.classList?.add('build-ui-updating');
-    } catch {}
-    try {
-      Build.inventoryView?.classList?.add('build-ui-updating');
+      const v = Build.inventoryView;
+      if (!v) return;
+      const mode = Number(Settings.settings?.buildTalentViewLayout) === 1 ? 1 : 0;
+      v.classList.toggle('build-talent-view--row', mode === 1);
     } catch {}
   }
 
-  static endSilentBuildUiUpdate() {
-    const end = () => {
+  static createBuildSettingsButton() {
+    const button = DOM({
+      tag: 'button',
+      style: 'build-list-settings',
+      domaudio: domAudioPresets.defaultButton,
+      event: [
+        'click',
+        (e) => {
+          e?.preventDefault?.();
+          e?.stopPropagation?.();
+          Build.toggleBuildSettingsPanel();
+        },
+      ],
+    });
+    button.type = 'button';
+    button.textContent = '';
+    button.title = Lang.text('buildSettingsTitle');
+    return button;
+  }
+
+  static createBuildSettingsPanel() {
+    const panel = DOM({ style: 'build-settings-panel' });
+    panel.style.display = 'none';
+
+    const title = DOM({ style: 'build-settings-title' }, Lang.text('buildSettingsTitle'));
+
+    const modeLabel = DOM({ style: 'build-settings-row-label' }, Lang.text('buildSettingsLmbMode'));
+    const modeValue = DOM({ tag: 'span', style: 'build-settings-row-value' });
+    modeValue.textContent = Build.getSetLmbModeLabel(Build.getSetLmbMode());
+    const modeDots = DOM({ style: 'build-settings-mode-dots' });
+    const buildSetModeValue = async (next) => {
+      Settings.settings.buildSetLmbMode = next;
+      modeValue.textContent = Build.getSetLmbModeLabel(next);
+      const items = modeDots.querySelectorAll('.build-settings-mode-dot');
+      items.forEach((dot, idx) => dot.classList.toggle('build-settings-mode-dot-active', idx + 1 === next));
       try {
-        Build.fieldView?.classList?.remove('build-ui-updating');
-      } catch {}
-      try {
-        Build.inventoryView?.classList?.remove('build-ui-updating');
+        await Settings.WriteSettings();
       } catch {}
     };
 
-    requestAnimationFrame(() => requestAnimationFrame(end));
+    for (let i = 1; i <= 3; i++) {
+      const dotStyle = ['build-settings-mode-dot'];
+      if (Build.getSetLmbMode() === i) dotStyle.push('build-settings-mode-dot-active');
+      const dot = DOM({
+        tag: 'button',
+        type: 'button',
+        style: dotStyle,
+        title: Lang.text(`buildSettingsLmbMode${i}`),
+        event: [
+          'click',
+          async () => {
+            await buildSetModeValue(i);
+          },
+        ],
+      });
+      modeDots.append(dot);
+    }
+
+    const hoverLabel = DOM({ style: 'build-settings-row-label' }, Lang.text('buildSettingsRowHighlight'));
+    const hoverValue = DOM({ tag: 'span', style: 'build-settings-row-value' });
+    const hoverDots = DOM({ style: 'build-settings-mode-dots' });
+    const applyHoverValue = async (enabled) => {
+      Settings.settings.buildRowHoverHighlight = enabled;
+      hoverValue.textContent = enabled ? Lang.text('buildSettingsOn') : Lang.text('buildSettingsOff');
+      if (!enabled) Build.clearBuildRowHoverHighlight();
+      const activeIndex = enabled ? 1 : 0;
+      const items = hoverDots.querySelectorAll('.build-settings-mode-dot');
+      items.forEach((dot, idx) => dot.classList.toggle('build-settings-mode-dot-active', idx === activeIndex));
+      try {
+        await Settings.WriteSettings();
+      } catch {}
+    };
+    const hoverEnabledNow = Build.isBuildRowHoverHighlightEnabled();
+    hoverValue.textContent = hoverEnabledNow ? Lang.text('buildSettingsOn') : Lang.text('buildSettingsOff');
+    for (let i = 0; i < 2; i++) {
+      const enabled = i === 1;
+      const dotStyle = ['build-settings-mode-dot'];
+      if ((hoverEnabledNow && enabled) || (!hoverEnabledNow && !enabled)) dotStyle.push('build-settings-mode-dot-active');
+      const dot = DOM({
+        tag: 'button',
+        type: 'button',
+        style: dotStyle,
+        title: enabled ? Lang.text('buildSettingsOn') : Lang.text('buildSettingsOff'),
+        event: ['click', async () => applyHoverValue(enabled)],
+      });
+      hoverDots.append(dot);
+    }
+
+    const layoutLabel = DOM({ style: 'build-settings-row-label' }, Lang.text('buildSettingsLayout'));
+    const layoutValue = DOM({ tag: 'span', style: 'build-settings-row-value' });
+    const getLayoutText = (n) => (n === 1 ? Lang.text('buildSettingsLayoutRow') : Lang.text('buildSettingsLayoutColumn'));
+    layoutValue.textContent = getLayoutText(Number(Settings.settings?.buildTalentViewLayout) === 1 ? 1 : 0);
+
+    const layoutDots = DOM({ style: 'build-settings-mode-dots' });
+    const applyLayoutValue = async (next) => {
+      Settings.settings.buildTalentViewLayout = next;
+      layoutValue.textContent = getLayoutText(next);
+      Build.applyTalentViewLayoutFromSettings();
+      const items = layoutDots.querySelectorAll('.build-settings-mode-dot');
+      items.forEach((dot, idx) => dot.classList.toggle('build-settings-mode-dot-active', idx === next));
+      try {
+        await Settings.WriteSettings();
+      } catch {}
+    };
+    const layoutNow = Number(Settings.settings?.buildTalentViewLayout) === 1 ? 1 : 0;
+    for (let i = 0; i < 2; i++) {
+      const dotStyle = ['build-settings-mode-dot'];
+      if (layoutNow === i) dotStyle.push('build-settings-mode-dot-active');
+      const dot = DOM({
+        tag: 'button',
+        type: 'button',
+        style: dotStyle,
+        title: i === 1 ? Lang.text('buildSettingsLayoutRow') : Lang.text('buildSettingsLayoutColumn'),
+        event: ['click', async () => applyLayoutValue(i)],
+      });
+      layoutDots.append(dot);
+    }
+
+    const matchLabel = DOM({ style: 'build-settings-row-label' }, Lang.text('buildSettingsSetMatchOnly'));
+    const matchValue = DOM({ tag: 'span', style: 'build-settings-row-value' });
+    const matchDots = DOM({ style: 'build-settings-mode-dots' });
+    const applyMatchValue = async (enabled) => {
+      Settings.settings.buildSetOnlyMatchingStats = enabled;
+      matchValue.textContent = enabled ? Lang.text('buildSettingsOn') : Lang.text('buildSettingsOff');
+      const activeIndex = enabled ? 1 : 0;
+      const items = matchDots.querySelectorAll('.build-settings-mode-dot');
+      items.forEach((dot, idx) => dot.classList.toggle('build-settings-mode-dot-active', idx === activeIndex));
+      try {
+        await Settings.WriteSettings();
+      } catch {}
+    };
+    const matchEnabledNow = Boolean(Settings.settings?.buildSetOnlyMatchingStats);
+    matchValue.textContent = matchEnabledNow ? Lang.text('buildSettingsOn') : Lang.text('buildSettingsOff');
+    for (let i = 0; i < 2; i++) {
+      const enabled = i === 1;
+      const dotStyle = ['build-settings-mode-dot'];
+      if ((matchEnabledNow && enabled) || (!matchEnabledNow && !enabled)) dotStyle.push('build-settings-mode-dot-active');
+      const dot = DOM({
+        tag: 'button',
+        type: 'button',
+        style: dotStyle,
+        title: enabled ? Lang.text('buildSettingsOn') : Lang.text('buildSettingsOff'),
+        event: ['click', async () => applyMatchValue(enabled)],
+      });
+      matchDots.append(dot);
+    }
+
+    panel.append(
+      title,
+      modeLabel,
+      modeDots,
+      modeValue,
+      hoverLabel,
+      hoverDots,
+      hoverValue,
+      layoutLabel,
+      layoutDots,
+      layoutValue,
+      matchLabel,
+      matchDots,
+      matchValue,
+    );
+
+    return panel;
   }
 
-  static async runWithSilentBuildUiUpdate(callback) {
-    Build.beginSilentBuildUiUpdate();
+  static getSetLmbModeLabel(mode) {
+    if (mode === 2) return Lang.text('buildSettingsLmbMode2');
+    if (mode === 3) return Lang.text('buildSettingsLmbMode3');
+    return Lang.text('buildSettingsLmbMode1');
+  }
+
+  static toggleBuildSettingsPanel(force) {
+    const panel = Build.buildSettingsPanel;
+    if (!panel) return;
+    const shouldOpen = typeof force === 'boolean' ? force : panel.style.display === 'none';
+    panel.style.display = shouldOpen ? 'flex' : 'none';
+  }
+
+  static attachBuildSettingsToWbuild() {
     try {
-      return await callback();
-    } finally {
-      Build.endSilentBuildUiUpdate();
-    }
+      // Attach only to the current build window instance.
+      // During window re-open, an old #wbuild can still exist briefly.
+      const candidates = Array.from(document.querySelectorAll('#wbuild'));
+      const wbuild = candidates.find((el) => el?.contains?.(Build.buildActionsView));
+      if (!wbuild) return;
+      if (Build.buildSettingsButton && Build.buildSettingsButton.parentNode !== wbuild) wbuild.append(Build.buildSettingsButton);
+      if (Build.buildSettingsPanel && Build.buildSettingsPanel.parentNode !== wbuild) wbuild.append(Build.buildSettingsPanel);
+    } catch {}
+  }
+
+  static scheduleAttachBuildSettings(maxAttempts = 80) {
+    try {
+      if (Build._buildSettingsAttachTimer) clearTimeout(Build._buildSettingsAttachTimer);
+    } catch {}
+
+    let attempts = 0;
+    const tick = () => {
+      Build._buildSettingsAttachTimer = 0;
+      Build.attachBuildSettingsToWbuild();
+
+      let attached = false;
+      try {
+        const candidates = Array.from(document.querySelectorAll('#wbuild'));
+        const wbuild = candidates.find((el) => el?.contains?.(Build.buildActionsView));
+        attached =
+          !!wbuild &&
+          wbuild.contains(Build.buildActionsView) &&
+          Build.buildSettingsButton?.parentNode === wbuild &&
+          Build.buildSettingsPanel?.parentNode === wbuild;
+      } catch {}
+
+      if (attached || attempts >= maxAttempts) return;
+      attempts++;
+      Build._buildSettingsAttachTimer = setTimeout(tick, 120);
+    };
+
+    tick();
   }
 
   static CleanInvalidDescriptions() {
@@ -688,8 +986,9 @@ export class Build {
     close.style.backgroundImage = 'url(content/icons/close-cropped.svg)';
 
     let template = document.createDocumentFragment();
-
+    const modal = DOM({style: 'title-modal'}, DOM({style: 'title-modal-text'}, Lang.text('assembly')));
     let name = DOM({
+      id: 'build-create-input',
       domaudio: domAudioPresets.defaultInput,
       tag: 'input',
       placeholder: Lang.text('buildNamePlaceholder'),
@@ -697,7 +996,7 @@ export class Build {
 
     let button = DOM(
       {
-        style: 'splash-content-button',
+        style: 'splash-content-button-modal',
         domaudio: domAudioPresets.bigButton,
         event: [
           'click',
@@ -719,7 +1018,7 @@ export class Build {
       btnName,
     );
 
-    template.append(name, button, close);
+    template.append(modal, name, button, close);
 
     Splash.show(template);
   }
@@ -757,7 +1056,7 @@ export class Build {
 
           const fragment = document.createDocumentFragment();
           const title = DOM(
-            { style: 'splash-text' },
+            { style: 'splash-text', id: 'duplicateBuildModal'},
             builds.length >= 6 ? Lang.text('buildLimitReached') : Lang.text('selectBuildToReplace'),
           );
           fragment.append(title);
@@ -809,14 +1108,13 @@ export class Build {
                       event: ['click', () => Splash.hide()],
                     });
                     close.style.backgroundImage = 'url(content/icons/close-cropped.svg)';
-
                     let template = document.createDocumentFragment();
                     let name = DOM({
                       domaudio: domAudioPresets.defaultInput,
                       tag: 'input',
                       placeholder: Lang.text('buildNamePlaceholder'),
                     });
-
+                    
                     let button = DOM(
                       {
                         style: 'splash-content-button',
@@ -851,7 +1149,7 @@ export class Build {
                       },
                       Lang.text('createAndDuplicate'),
                     );
-
+                    
                     template.append(name, button, close);
                     Splash.show(template);
                   },
@@ -869,8 +1167,10 @@ export class Build {
             style: 'close-button',
             event: ['click', () => Splash.hide()],
           });
+
+          const modal = DOM({style: 'title-modal'}, DOM({style: 'title-modal-text'}, Lang.text('assembly')));
           closeButton.style.backgroundImage = 'url(content/icons/close-cropped.svg)';
-          fragment.append(closeButton);
+          fragment.append(modal, closeButton);
 
           Splash.show(fragment);
         },
@@ -917,7 +1217,8 @@ export class Build {
           'click',
           async () => {
             const fragment = document.createDocumentFragment();
-            const title = DOM({ style: 'splash-text' }, Lang.text('resetTalentsTitle'));
+            const modal = DOM({style: 'title-modal'}, DOM({style: 'title-modal-text'}, Lang.text('assembly')));
+            const title = DOM({ style: 'splash-text', id: 'resetBuildText' }, Lang.text('resetTalentsTitle'));
             fragment.append(title);
 
             // Красная кнопка сброса
@@ -949,7 +1250,7 @@ export class Build {
               reset.style.backgroundColor = '#7b001c';
             });
 
-            fragment.append(reset);
+            fragment.append(modal, reset);
 
             let closeButton = DOM({
               tag: 'div',
@@ -2065,6 +2366,7 @@ export class Build {
     if (container) {
       container.replaceChildren();
     }
+    Build._inventoryDefaultOrder = new Map();
 
     const requestedBuildId = Build.id;
     Build.loading = true;
@@ -2076,8 +2378,12 @@ export class Build {
           return;
         }
 
+        let orderIndex = 0;
         for (let item of data) {
+          const key = `${Number(item?.id)}`;
+          Build._inventoryDefaultOrder.set(key, orderIndex);
           let talentContainer = DOM({ style: 'build-talent-item-container' });
+          talentContainer.dataset.defaultOrder = `${orderIndex}`;
 
           Build.inventoryView.querySelector('.build-talents').append(talentContainer);
 
@@ -2086,11 +2392,29 @@ export class Build {
           item.state = 1;
 
           preload.add(Build.templateViewTalent(item));
+          orderIndex++;
         }
 
         Build.loading = false;
         try {
           Build.sortInventory();
+        } catch {}
+        try {
+          const ids = Build._hoveredSetTalentIds;
+          const anchor = Build._hoveredSetAnchorEl;
+          if (ids?.length && anchor?.isConnected) {
+            Build.highlightSetTalents(ids);
+            Build.previewSetTalentsInEmptySlots({ _manualOrder: ids, key: 'hover_preview_inventory' });
+            const start = performance.now();
+            const tick = () => {
+              if (Build._hoveredSetAnchorEl !== anchor || Build._hoveredSetTalentIds !== ids) return;
+              Build.highlightSetTalents(ids);
+              Build.previewSetTalentsInEmptySlots({ _manualOrder: ids, key: 'hover_preview_inventory_tick' });
+              if (performance.now() - start >= 900) return;
+              setTimeout(tick, 140);
+            };
+            setTimeout(tick, 120);
+          }
         } catch {}
       },
       'build',
@@ -2100,8 +2424,14 @@ export class Build {
   }
 
   static isTalentInBuild(talentId) {
+    const numericId = Number(talentId);
     for (const t of Build.installedTalents || []) {
-      if (t && t.id === talentId) return true;
+      if (!t) continue;
+      if (Number.isFinite(numericId)) {
+        if (Number(t.id) === numericId) return true;
+      } else if (`${t.id}` === `${talentId}`) {
+        return true;
+      }
     }
     return false;
   }
@@ -2148,6 +2478,27 @@ export class Build {
     Build.clearEmptySlotPreviews();
   }
 
+  static setSelectedSetItem(item) {
+    try {
+      if (Build._selectedSetItem && Build._selectedSetItem !== item) {
+        Build._selectedSetItem.classList.remove('build-set-item-selected');
+      }
+      Build._selectedSetItem = item || null;
+      if (Build._selectedSetItem) {
+        Build._selectedSetItem.classList.add('build-set-item-selected');
+      }
+    } catch {}
+  }
+
+  static clearSelectedSetItem() {
+    try {
+      if (Build._selectedSetItem) {
+        Build._selectedSetItem.classList.remove('build-set-item-selected');
+      }
+    } catch {}
+    Build._selectedSetItem = null;
+  }
+
   static clearEmptySlotPreviews() {
     try {
       Build.fieldView
@@ -2159,6 +2510,39 @@ export class Build {
           el.classList.remove('build-talent-empty-slot-preview');
           el.style.backgroundImage = '';
         });
+    } catch {}
+    Build.stopPreviewBlinkTickerIfIdle();
+  }
+
+  static ensurePreviewBlinkTicker() {
+    if (Build._previewBlinkTimer) return;
+    Build._previewBlinkState = false;
+    const tick = () => {
+      if (!Build._previewBlinkTimer) return;
+      Build._previewBlinkState = !Build._previewBlinkState;
+      try {
+        Build.fieldView?.classList?.toggle('build-preview-blink-on', Build._previewBlinkState);
+      } catch {}
+    };
+    Build._previewBlinkTimer = setInterval(tick, 450);
+    tick();
+  }
+
+  static stopPreviewBlinkTickerIfIdle() {
+    let hasPreview = false;
+    try {
+      hasPreview = !!Build.fieldView?.querySelector?.(
+        '.build-hero-grid-item.build-set-empty-slot-preview, .build-hero-grid-item.build-talent-empty-slot-preview',
+      );
+    } catch {}
+    if (hasPreview) return;
+    try {
+      if (Build._previewBlinkTimer) clearInterval(Build._previewBlinkTimer);
+    } catch {}
+    Build._previewBlinkTimer = 0;
+    Build._previewBlinkState = false;
+    try {
+      Build.fieldView?.classList?.remove('build-preview-blink-on');
     } catch {}
   }
 
@@ -2177,7 +2561,11 @@ export class Build {
     try {
       Build.clearEmptySlotPreviews();
 
-      const ids = TalentSets.getTalentIds(set);
+      let ids = TalentSets.getTalentIds(set);
+      if (previewClass === 'build-set-empty-slot-preview' && Array.isArray(ids)) {
+        if (ids.length > 1) ids = Build.sortSetTalentIdsByPriority(ids);
+        ids = Build.filterSetTalentIdsByMatchingStats(ids);
+      }
       const simInstalled = Array.isArray(Build.installedTalents) ? Build.installedTalents.slice() : new Array(36).fill(null);
 
       for (const id of ids) {
@@ -2214,6 +2602,7 @@ export class Build {
         const src = id > 0 ? `content/talents/${id}.webp` : `content/htalents/${Math.abs(id)}.webp`;
         cell.style.backgroundImage = `url("${src}")`;
       }
+      Build.ensurePreviewBlinkTicker();
     } catch {}
   }
 
@@ -2405,10 +2794,12 @@ export class Build {
     await Build.waitForCondition(hasAny, timeoutMs);
     if (Build._hoveredSetTalentIds !== talentIds) return;
     Build.highlightSetTalents(talentIds);
+    Build.previewSetTalentsInEmptySlots({ _manualOrder: ids, key: 'hover_preview_recover' });
   }
 
   static showSetDescription(set, anchorEl) {
     Build._descriptionPinnedBySet = true;
+    const mode = Build.getSetLmbMode();
     const mainId = TalentSets.chooseMainTalentId(set);
     const ids = TalentSets.getTalentIds(set);
 
@@ -2431,12 +2822,20 @@ export class Build {
       const desc = Lang.text(descriptionKey);
       mainDesc = `<div><b>${mainName}</b><br><br>${desc}</div>`;
     }
+
+    let lmbHint = Lang.text('setHintLmb');
+    if (mode === 2) lmbHint = Lang.text('setHintLmbMode2');
+    if (mode === 3) lmbHint = Lang.text('setHintLmbMode3');
+
+    let rmbHint = Lang.text('setHintRmb');
+    if (mode === 3) rmbHint = Lang.text('setHintRmbMode3');
+
     const html =
       `${mainDesc}` +
       `<div class="build-set-desc-icons">${iconHtml}</div>` +
       `<div class="build-set-desc-hints">` +
-      `<div>${Lang.text('setHintLmb')}</div>` +
-      `<div>${Lang.text('setHintRmb')}</div>` +
+      `<div>${lmbHint}</div>` +
+      `<div>${rmbHint}</div>` +
       `</div>`;
 
     const dataForParams = mainId != null ? Build.talents[String(mainId)] : null;
@@ -2451,12 +2850,14 @@ export class Build {
     Build.previewSetTalentsInEmptySlots(set);
     Build.highlightSetTalentsAfterRender(ids);
     if (withDelayedHighlights) {
-      setTimeout(() => {
-        if (Build._hoveredSetAnchorEl === item && Build._hoveredSetTalentIds === ids) Build.highlightSetTalents(ids);
-      }, 250);
-      setTimeout(() => {
-        if (Build._hoveredSetAnchorEl === item && Build._hoveredSetTalentIds === ids) Build.highlightSetTalents(ids);
-      }, 700);
+      const start = performance.now();
+      const tick = () => {
+        if (Build._hoveredSetAnchorEl !== item || Build._hoveredSetTalentIds !== ids) return;
+        Build.highlightSetTalents(ids);
+        if (performance.now() - start >= 1400) return;
+        setTimeout(tick, 140);
+      };
+      setTimeout(tick, 120);
     }
     requestAnimationFrame(() => {
       if (Build._hoveredSetAnchorEl !== item || Build._hoveredSetTalentIds !== ids) return;
@@ -2545,8 +2946,187 @@ export class Build {
     });
   }
 
+  static getSetApplyPriorityBases(useFallback = true) {
+    const bases = ['sila', 'razum', 'provorstvo', 'hitrost', 'stoikost', 'volia'];
+
+    // Source of truth: profile checkboxes (circle/checkbox) in hero stats block.
+    const profile = Build.profileStats || {};
+    const fromProfile = bases.filter((k) => Number(profile[k]) === 1);
+    if (fromProfile.length) return new Set(fromProfile);
+
+    if (!useFallback) return new Set();
+
+    // Fallback: current stats filter state.
+    const selected = Array.isArray(Build.ruleSortInventory?.stats) ? Build.ruleSortInventory.stats : [];
+    if (!selected.length) return new Set();
+    return new Set(bases.filter((k) => selected.includes(k)));
+  }
+
+  static getSetPriorityFamilyWeights() {
+    return {
+      sila: { pure: ['sila', 'silarz', 'silavz'], mixed: ['sr', 'srsv'] },
+      razum: { pure: ['razum', 'razumrz', 'razumvz'], mixed: ['sr', 'srsv'] },
+      provorstvo: { pure: ['provorstvo', 'provorstvorz', 'provorstvovz'], mixed: ['ph'] },
+      hitrost: { pure: ['hitrost', 'hitrostrz', 'hitrostvz'], mixed: ['ph'] },
+      stoikost: { pure: ['stoikost', 'stoikostrz'], mixed: ['sv', 'svvz', 'vs', 'srsv'] },
+      volia: { pure: ['volia', 'voliarz'], mixed: ['sv', 'svvz', 'vs', 'srsv'] },
+    };
+  }
+
+  static getSetSilaRazumPresence(stats = {}) {
+    const pureSilaKeys = ['sila', 'silarz', 'silavz'];
+    const pureRazumKeys = ['razum', 'razumrz', 'razumvz'];
+    const maxSrKeys = ['sr', 'srsv'];
+    const hasPureSila = pureSilaKeys.some((k) => Build.hasTalentStatKey(stats, k));
+    const hasPureRazum = pureRazumKeys.some((k) => Build.hasTalentStatKey(stats, k));
+    const hasSrMax = maxSrKeys.some((k) => Build.hasTalentStatKey(stats, k));
+    return { hasPureSila, hasPureRazum, hasSrMax };
+  }
+
+  static hasTalentStatKey(stats = {}, key = '') {
+    if (!key) return false;
+    return key in stats || `${key}buff` in stats;
+  }
+
+  static hasNonCheckboxStatKey(stats = {}, familyWeights = null) {
+    const map = familyWeights || Build.getSetPriorityFamilyWeights();
+    const checkboxKeys = new Set(['srMin', 'phMin', 'svMin', 'srsvMin']);
+    try {
+      for (const cfg of Object.values(map)) {
+        for (const k of cfg?.pure || []) checkboxKeys.add(k);
+        for (const k of cfg?.mixed || []) checkboxKeys.add(k);
+      }
+    } catch {}
+
+    for (const rawKey of Object.keys(stats || {})) {
+      const k = String(rawKey).endsWith('buff') ? String(rawKey).slice(0, -4) : String(rawKey);
+      if (!checkboxKeys.has(k)) return true;
+    }
+    return false;
+  }
+
+  static hasAnyCheckboxStatKey(stats = {}, familyWeights = null) {
+    const map = familyWeights || Build.getSetPriorityFamilyWeights();
+    const checkboxKeys = new Set(['srMin', 'phMin', 'svMin', 'srsvMin']);
+    try {
+      for (const cfg of Object.values(map)) {
+        for (const k of cfg?.pure || []) checkboxKeys.add(k);
+        for (const k of cfg?.mixed || []) checkboxKeys.add(k);
+      }
+    } catch {}
+
+    for (const rawKey of Object.keys(stats || {})) {
+      const k = String(rawKey).endsWith('buff') ? String(rawKey).slice(0, -4) : String(rawKey);
+      if (checkboxKeys.has(k)) return true;
+    }
+    return false;
+  }
+
+  static sortSetTalentIdsByPriority(ids) {
+    if (!Array.isArray(ids) || ids.length <= 1) return ids;
+    const bases = Build.getSetApplyPriorityBases(false);
+    if (!bases.size) return ids;
+
+    const familyWeights = Build.getSetPriorityFamilyWeights();
+    const hasSilaSelected = bases.has('sila');
+    const hasRazumSelected = bases.has('razum');
+    const dominantSr = hasSilaSelected && hasRazumSelected ? Build.getMaxStat(['sila', 'razum']) : null;
+
+    const pureWeight = 10;
+    const mixedWeight = 3;
+
+    const scored = ids.map((id, idx) => {
+      const data = Build.talents?.[String(id)];
+      const score = Build.getSetTalentPriorityScore(data, bases, familyWeights, pureWeight, mixedWeight, { dominantSr });
+
+      return { id, idx, score };
+    });
+
+    scored.sort((a, b) => {
+      if (b.score !== a.score) return b.score - a.score;
+      return a.idx - b.idx;
+    });
+
+    return scored.map((x) => x.id);
+  }
+
+  static getSetTalentPriorityScore(data, bases, familyWeights, pureWeight = 10, mixedWeight = 3, options = {}) {
+    const stats = data?.stats || {};
+    let score = 0;
+    for (const base of bases || []) {
+      const map = familyWeights?.[base];
+      if (!map) continue;
+      let basePureWeight = pureWeight;
+      let baseMixedWeight = mixedWeight;
+
+      // If both Sila and Razum are selected, prioritize the larger of those
+      // stats in current build state.
+      if (options?.dominantSr && (base === 'sila' || base === 'razum')) {
+        if (base === options.dominantSr) {
+          basePureWeight += 4;
+          baseMixedWeight += 1;
+        } else {
+          basePureWeight = Math.max(0, basePureWeight - 2);
+          baseMixedWeight = Math.max(0, baseMixedWeight - 1);
+        }
+      }
+
+      for (const k of map.pure) {
+        if (Build.hasTalentStatKey(stats, k)) score += basePureWeight;
+      }
+      for (const k of map.mixed) {
+        if (Build.hasTalentStatKey(stats, k)) score += baseMixedWeight;
+      }
+    }
+    return score;
+  }
+
+  static filterSetTalentIdsByMatchingStats(ids) {
+    if (!Array.isArray(ids) || !ids.length) return ids || [];
+    if (!Settings.settings?.buildSetOnlyMatchingStats) return ids;
+
+    const bases = Build.getSetApplyPriorityBases(false);
+
+    const familyWeights = Build.getSetPriorityFamilyWeights();
+    const hasSilaSelected = bases.has('sila');
+    const hasRazumSelected = bases.has('razum');
+    const bothSelected = hasSilaSelected && hasRazumSelected;
+    const dominantSr = bothSelected ? Build.getMaxStat(['sila', 'razum']) : null;
+    const nonSrBases = new Set([...bases].filter((b) => b !== 'sila' && b !== 'razum'));
+
+    return ids.filter((id) => {
+      const data = Build.talents?.[String(id)];
+      const stats = data?.stats || {};
+      const hasCheckbox = Build.hasAnyCheckboxStatKey(stats, familyWeights);
+      const hasNonCheckbox = Build.hasNonCheckboxStatKey(stats, familyWeights);
+      if (!bases.size) return !hasCheckbox && hasNonCheckbox;
+      // Always allow "other stats" only when talent has no checkbox-related
+      // stats at all. Mixed talents must still obey checkbox filters.
+      if (!hasCheckbox && hasNonCheckbox) return true;
+      const srPresence = Build.getSetSilaRazumPresence(stats);
+
+      // If only Razum is selected, reject only pure Sila talents.
+      // "Largest stat" aliases (sr/srsv) are allowed.
+      if (hasRazumSelected && !hasSilaSelected && srPresence.hasPureSila) return false;
+      // If only Sila is selected, reject only pure Razum talents.
+      // "Largest stat" aliases (sr/srsv) are allowed.
+      if (hasSilaSelected && !hasRazumSelected && srPresence.hasPureRazum) return false;
+
+      // If neither Sila nor Razum is selected, reject talents that are only
+      // Sila/Razum-based (including "max between them" aliases like sr/srsv).
+      if (!hasSilaSelected && !hasRazumSelected && (srPresence.hasPureSila || srPresence.hasPureRazum || srPresence.hasSrMax)) {
+        const nonSrScore = Build.getSetTalentPriorityScore(data, nonSrBases, familyWeights);
+        if (nonSrScore <= 0) return false;
+      }
+
+      return Build.getSetTalentPriorityScore(data, bases, familyWeights, 10, 3, { dominantSr }) > 0;
+    });
+  }
+
   static async applySetToBuild(set) {
-    const ids = TalentSets.getTalentIds(set);
+    const setIds = TalentSets.getTalentIds(set);
+    let ids = Build.sortSetTalentIdsByPriority(setIds);
+    ids = Build.filterSetTalentIdsByMatchingStats(ids);
     const simInstalled = Array.isArray(Build.installedTalents) ? Build.installedTalents.slice() : new Array(36).fill(null);
     for (const id of ids) {
       if (Build.isTalentInBuild(id)) continue;
@@ -2594,17 +3174,8 @@ export class Build {
       }
     }
 
-    try {
-      Build.updateHeroStats();
-    } catch {}
+    Build.refreshLocalBuildUiAfterSet(setIds);
 
-    await Build.runWithSilentBuildUiUpdate(async () => {
-      await Build.refreshBuildStateFromServer({ refreshInventory: true });
-    });
-
-    try {
-      Build.promoteSetTalentsInInventoryAfterRender(set);
-    } catch {}
   }
 
   static applySetInventoryOrder(set) {
@@ -2612,36 +3183,119 @@ export class Build {
     if (!list) return;
 
     const ids = TalentSets.getTalentIds(set);
-    const toMove = [];
+    const mode = Build.getSetLmbMode();
+    Build._forceShowOnlySetTalentIds = null;
+    Build._forceShowOnlyTalentIds = null;
+
+    if (mode === 2 || mode === 3) {
+      Build._forceShowOnlySetTalentIds = new Set(ids.map(String));
+      Build.refreshForcedSetOnlyTalentIds();
+      if (!Build._forceShowOnlyTalentIds?.size) return;
+
+      const prevScroll = list.scrollTop;
+
+      // Show only leftovers; then rebuild DOM order grouped by build rows (levels 6..1).
+      // We preserve the original relative order inside each level group.
+      Build.sortInventory();
+
+      const visibleContainers = Array.from(list.querySelectorAll('.build-talent-item-container')).filter((container) => {
+        try {
+          return container?.style?.display !== 'none';
+        } catch {
+          return false;
+        }
+      });
+
+      const byLevel = new Map();
+      for (const container of visibleContainers) {
+        const item = container.querySelector('.build-talent-item');
+        const talentId = item?.dataset?.id ? String(item.dataset.id) : null;
+        if (!talentId) continue;
+        const level = Number(Build.talents?.[talentId]?.level) || 0;
+        if (!byLevel.has(level)) byLevel.set(level, []);
+        byLevel.get(level).push(container);
+      }
+
+      const orderedLevels = [6, 5, 4, 3, 2, 1, 0];
+      const ordered = [];
+      for (const lvl of orderedLevels) {
+        const part = byLevel.get(lvl);
+        if (part?.length) ordered.push(...part);
+      }
+
+      for (const container of ordered) {
+        try {
+          if (container.parentNode === list) list.removeChild(container);
+        } catch {}
+      }
+      for (const container of ordered) {
+        try {
+          list.appendChild(container);
+        } catch {}
+      }
+
+      try {
+        list.scrollTop = prevScroll;
+      } catch {}
+      return;
+    }
+    Build._forceShowOnlySetTalentIds = null;
+
+    Build.sortInventory();
+    const allContainers = Array.from(list.querySelectorAll('.build-talent-item-container'));
+    const setContainers = [];
+    const setContainerKeys = new Set();
     for (const id of ids) {
       if (Build.isTalentInBuild(id)) continue;
       const el = list.querySelector(`.build-talent-item[data-id="${id}"]`);
       if (!el) continue;
       const container = el.closest('.build-talent-item-container');
       if (!container) continue;
-      toMove.push(container);
+      if (container.style.display === 'none') continue;
+      const key = `${Number(id)}`;
+      if (setContainerKeys.has(key)) continue;
+      setContainerKeys.add(key);
+      setContainers.push(container);
     }
-    if (!toMove.length) return;
-    for (let i = toMove.length - 1; i >= 0; i--) list.prepend(toMove[i]);
+    const getDefaultOrder = (container) => {
+      const item = container?.querySelector?.('.build-talent-item');
+      const id = `${Number(item?.dataset?.id)}`;
+      const byData = Number(container?.dataset?.defaultOrder);
+      if (Number.isFinite(byData)) return byData;
+      const byMap = Number(Build._inventoryDefaultOrder?.get?.(id));
+      if (Number.isFinite(byMap)) return byMap;
+      return Number.MAX_SAFE_INTEGER;
+    };
+    const restContainers = allContainers.filter((container) => {
+      const item = container?.querySelector?.('.build-talent-item');
+      const id = `${Number(item?.dataset?.id)}`;
+      return !setContainerKeys.has(id);
+    });
+    restContainers.sort((a, b) => getDefaultOrder(a) - getDefaultOrder(b));
+    const ordered = [...setContainers, ...restContainers];
+    for (const container of ordered) {
+      try {
+        list.appendChild(container);
+      } catch {}
+    }
     try {
       list.scrollTop = 0;
     } catch {}
   }
 
-  static async promoteSetTalentsInInventoryAfterRender(set, timeoutMs = 2000) {
-    const list = Build.inventoryView?.querySelector('.build-talents');
-    if (!list) return;
-    const ids = TalentSets.getTalentIds(set);
-    await Build.waitForCondition(() => ids.some((id) => list.querySelector(`.build-talent-item[data-id="${id}"]`)), timeoutMs);
-    Build.applySetInventoryOrder(set);
-  }
-
   static async removeSetFromBuild(set) {
     const ids = TalentSets.getTalentIds(set);
     for (const id of ids) {
+      const setTalentIdNum = Number(id);
       for (let index = 0; index < (Build.installedTalents || []).length; index++) {
         const t = Build.installedTalents[index];
-        if (!t || t.id !== id) continue;
+        if (!t) continue;
+        const installedIdNum = Number(t.id);
+        if (Number.isFinite(setTalentIdNum) && Number.isFinite(installedIdNum)) {
+          if (installedIdNum !== setTalentIdNum) continue;
+        } else if (`${t.id}` !== `${id}`) {
+          continue;
+        }
 
         try {
           await Build.removeTalentFromActiveByFieldIndex(index);
@@ -2654,17 +3308,8 @@ export class Build {
       }
     }
 
-    try {
-      Build.updateHeroStats();
-    } catch {}
+    Build.refreshLocalBuildUiAfterSet(ids, set);
 
-    await Build.runWithSilentBuildUiUpdate(async () => {
-      await Build.refreshBuildStateFromServer({ refreshInventory: true });
-    });
-
-    try {
-      Build.promoteSetTalentsInInventoryAfterRender(set);
-    } catch {}
   }
 
   static tryBeginSetAction() {
@@ -2683,11 +3328,15 @@ export class Build {
 
     if (!Build._setsHoverMonitorInstalled) {
       Build._setsHoverMonitorInstalled = true;
+      let lastCheck = 0;
       document.addEventListener(
         'mousemove',
         (e) => {
           const anchor = Build._hoveredSetAnchorEl;
           if (!anchor) return;
+          const now = performance.now();
+          if (now - lastCheck < 80) return;
+          lastCheck = now;
           const below = document.elementFromPoint(e.clientX, e.clientY);
           const hoveredSet = below?.closest?.('.build-set-item');
           if (hoveredSet === anchor) return;
@@ -2712,6 +3361,7 @@ export class Build {
 
       const ids = TalentSets.getTalentIds(set);
       item.addEventListener('mouseenter', () => {
+        if (Build._setsHoverSuppressed) return;
         Build.showSetDescription(set, item);
         Build._hoveredSetTalentIds = ids;
         Build._hoveredSetAnchorEl = item;
@@ -2719,6 +3369,9 @@ export class Build {
         Build.previewSetTalentsInEmptySlots(set);
       });
       item.addEventListener('mouseleave', () => {
+        // After set click, transient mouseleave can happen during fast rerender.
+        // Keep current hover visuals pinned; global mousemove monitor will clear on real leave.
+        if (Build._descriptionPinnedBySet && Build._hoveredSetAnchorEl === item) return;
         Build.descriptionView.style.display = 'none';
         Build._descriptionPinnedBySet = false;
         Build._hoveredSetTalentIds = null;
@@ -2734,12 +3387,26 @@ export class Build {
         if (!Build.tryBeginSetAction()) return;
         (async () => {
           try {
+            Build.setSelectedSetItem(item);
+            const mode = Build.getSetLmbMode();
             Build._descriptionPinnedBySet = true;
             Build._hoveredSetTalentIds = ids;
-            Build._forceShowTalentIds = new Set(ids.map(String));
+            Build._forceShowTalentIds = mode === 1 ? new Set(ids.map(String)) : null;
+            Build._forceShowOnlySetTalentIds = null;
+            Build._forceShowOnlyTalentIds = null;
 
-            Build.applySetInventoryOrder(set);
-            await Build.applySetToBuild(set);
+            if (mode === 2) {
+              Build._forceShowOnlySetTalentIds = new Set(ids.map(String));
+              Build._forceShowOnlyTalentIds = new Set();
+            } else if (mode === 3) {
+              Build.applySetInventoryOrder(set);
+            }
+            if (mode !== 3) {
+              await Build.applySetToBuild(set);
+              Build.applySetInventoryOrder(set);
+            } else {
+              Build.applySetInventoryOrder(set);
+            }
             Build.refreshSetHoverState(set, item, ids, true);
           } finally {
             Build.endSetAction();
@@ -2754,8 +3421,13 @@ export class Build {
         if (!Build.tryBeginSetAction()) return;
         (async () => {
           try {
+            Build.setSelectedSetItem(item);
+            const mode = Build.getSetLmbMode();
             Build._hoveredSetTalentIds = ids;
-            Build._forceShowTalentIds = new Set(ids.map(String));
+            Build._forceShowTalentIds = mode === 1 ? new Set(ids.map(String)) : null;
+            Build._forceShowOnlySetTalentIds = null;
+            Build._forceShowOnlyTalentIds = null;
+            Build.applySetInventoryOrder(set);
             await Build.removeSetFromBuild(set);
             Build.refreshSetHoverState(set, item, ids);
           } finally {
@@ -3031,6 +3703,8 @@ export class Build {
 
   static setSortInventory(key, value) {
     Build._forceShowTalentIds = null;
+    Build._forceShowOnlySetTalentIds = null;
+    Build._forceShowOnlyTalentIds = null;
     if (!(key in Build.ruleSortInventory)) {
       Build.ruleSortInventory[key] = new Array();
 
@@ -3046,6 +3720,8 @@ export class Build {
 
   static removeSortInventory(key, value) {
     Build._forceShowTalentIds = null;
+    Build._forceShowOnlySetTalentIds = null;
+    Build._forceShowOnlyTalentIds = null;
     if (key in Build.ruleSortInventory) {
       let newArray = new Array();
 
@@ -3072,8 +3748,24 @@ export class Build {
       flag = true;
 
     try {
+      if (Build._forceShowOnlyTalentIds) {
+        const id = String(item.dataset.id);
+        const visible = Build._forceShowOnlyTalentIds.has(id);
+        itemContainer.style.display = visible ? 'block' : 'none';
+        if (visible) {
+          const level = Number(Build.talents?.[id]?.level) || 0;
+          // Build rows are rendered from 6 -> 1 (top -> bottom), mirror this in library.
+          const row = level > 0 ? 7 - level : 1;
+          itemContainer.style.gridRow = `${row}`;
+        } else {
+          itemContainer.style.gridRow = '';
+        }
+        return;
+      }
+      itemContainer.style.gridRow = '';
       if (Build._forceShowTalentIds && Build._forceShowTalentIds.has(String(item.dataset.id))) {
-        itemContainer.style.display = 'block';
+        const inBuild = Build.isTalentInBuild(Number(item.dataset.id));
+        itemContainer.style.display = inBuild ? 'none' : 'block';
         return;
       }
     } catch {}
@@ -3127,9 +3819,146 @@ export class Build {
   }
 
   static sortInventory() {
+    Build.refreshForcedSetOnlyTalentIds();
     for (let itemContainer of Build.inventoryView.querySelectorAll('.build-talent-item-container')) {
       Build.applySorting(itemContainer);
     }
+  }
+
+  static refreshLocalBuildUiAfterSet(ids, set = null) {
+    try {
+      Build.updateHeroStats();
+    } catch {}
+    try {
+      Build.rebuildFieldConflictFromInstalledTalents();
+      Build.syncFieldSlotsFromInstalledTalents();
+      Build.activeBar(Array.isArray(Build.activeBarItems) ? Build.activeBarItems : new Array(24).fill(0));
+      Build.ensureTalentIdsPresentInInventory(ids);
+      Build.sortInventory();
+      if (set) Build.applySetInventoryOrder(set);
+    } catch {}
+  }
+
+  static rebuildFieldConflictFromInstalledTalents() {
+    Build.fieldConflict = new Object();
+    for (const talent of Build.installedTalents || []) {
+      if (!talent) continue;
+      if ('conflict' in talent) {
+        Build.fieldConflict[Math.abs(talent.id)] = true;
+      }
+    }
+  }
+
+  static syncFieldSlotsFromInstalledTalents() {
+    for (let index = 0; index < 36; index++) {
+      const cell = Build.fieldView?.querySelector?.(`.build-hero-grid-item[data-position="${index}"]`);
+      if (!cell) continue;
+      const currentEl = cell.querySelector('.build-talent-item');
+      const expectedTalent = Build.installedTalents?.[index] || null;
+      const currentId = currentEl ? Number(currentEl.dataset.id) : null;
+      const expectedId = expectedTalent ? Number(expectedTalent.id) : null;
+      if (currentEl && expectedTalent && currentId === expectedId) continue;
+      if (currentEl) {
+        try {
+          currentEl.remove();
+        } catch {}
+      }
+      if (!expectedTalent) continue;
+      const view = Build.templateViewTalent({ ...expectedTalent, state: 2 });
+      const preload = new PreloadImages(cell);
+      preload.add(view, cell);
+    }
+  }
+
+  static ensureTalentIdsPresentInInventory(ids) {
+    const list = Build.inventoryView?.querySelector('.build-talents');
+    if (!list || !Array.isArray(ids)) return;
+    const normalizeId = (v) => {
+      const n = Number(v);
+      if (Number.isFinite(n)) return `${n}`;
+      return `${v}`;
+    };
+    const existing = new Map();
+    for (const item of Array.from(list.querySelectorAll('.build-talent-item'))) {
+      const id = item?.dataset?.id;
+      if (!id) continue;
+      const key = normalizeId(id);
+      const container = item.closest('.build-talent-item-container');
+      if (!container) continue;
+      if (existing.has(key)) {
+        try { container.remove(); } catch {}
+        continue;
+      }
+      existing.set(key, container);
+    }
+    const uniqueIds = new Set((ids || []).map((id) => normalizeId(id)));
+    for (const key of uniqueIds) {
+      if (Build.isTalentInBuild(key)) continue;
+      if (existing.has(key)) continue;
+      const data = Build.talents?.[key] || Build.talents?.[String(key)];
+      if (!data) continue;
+      const talentContainer = DOM({ style: 'build-talent-item-container' });
+      const defaultOrder = Number(Build._inventoryDefaultOrder?.get?.(key));
+      if (Number.isFinite(defaultOrder)) {
+        talentContainer.dataset.defaultOrder = `${defaultOrder}`;
+      }
+      const preload = new PreloadImages(talentContainer);
+      const talentView = Build.templateViewTalent({ ...data, state: 1 });
+      preload.add(talentView);
+      list.append(talentContainer);
+      existing.set(key, talentContainer);
+    }
+  }
+
+  static refreshForcedSetOnlyTalentIds() {
+    if (!Build._forceShowOnlySetTalentIds) return;
+    const leftovers = new Set();
+    for (const id of Build._forceShowOnlySetTalentIds) {
+      if (Build.isTalentInBuild(id)) continue;
+      leftovers.add(String(id));
+    }
+    Build._forceShowOnlyTalentIds = leftovers;
+  }
+
+  static attachAltResetHintBelowInventory() {
+    try {
+      const hint = Build.altResetHintView;
+      const inv = Build.inventoryView;
+      const parent = inv?.parentElement;
+      if (!hint || !inv || !parent) {
+        requestAnimationFrame(() => Build.attachAltResetHintBelowInventory());
+        return;
+      }
+      if (hint.parentNode !== parent || hint.previousSibling !== inv) {
+        inv.insertAdjacentElement('afterend', hint);
+      }
+    } catch {}
+  }
+
+  static resetSetForcedLibraryView() {
+    Build._forceShowTalentIds = null;
+    Build._forceShowOnlySetTalentIds = null;
+    Build._forceShowOnlyTalentIds = null;
+    Build.clearSelectedSetItem();
+    try { Build.sortInventory(); } catch {}
+  }
+
+  static installAltResetHandler() {
+    try {
+      if (Build._altResetHandler) {
+        window.removeEventListener('keydown', Build._altResetHandler, true);
+      }
+    } catch {}
+
+    Build._altResetHandler = (e) => {
+      const isAlt = e?.key === 'Alt' || e?.code === 'AltLeft' || e?.code === 'AltRight';
+      if (!isAlt || e?.repeat) return;
+      Build.resetSetForcedLibraryView();
+    };
+
+    try {
+      window.addEventListener('keydown', Build._altResetHandler, true);
+    } catch {}
   }
 
   static cancelSortInventory() {
@@ -3256,7 +4085,10 @@ export class Build {
           }
         }
 
-        if (Build._hoveredSetTalentIds) Build.highlightSetTalents(Build._hoveredSetTalentIds);
+        if (Build._hoveredSetTalentIds) {
+          Build.highlightSetTalents(Build._hoveredSetTalentIds);
+          Build.previewSetTalentsInEmptySlots({ _manualOrder: Build._hoveredSetTalentIds, key: 'hover_preview_move' });
+        }
         else Build.clearSetHighlights();
 
         let removeFromActive = async (position, skipActiveId) => {
@@ -3528,6 +4360,21 @@ export class Build {
 
             element.dataset.state = 1;
 
+            try {
+              const duplicates = Array.from(
+                targetElement.querySelectorAll(`.build-talent-item[data-id="${data.id}"]`)
+              );
+              for (const dup of duplicates) {
+                if (dup === element) continue;
+                const dupContainer = dup.closest('.build-talent-item-container');
+                if (dupContainer) {
+                  dupContainer.remove();
+                } else {
+                  dup.remove();
+                }
+              }
+            } catch {}
+
             let containedTalent = DOM({ style: 'build-talent-item-container' }, element);
 
             Build.applySorting(containedTalent);
@@ -3648,6 +4495,12 @@ export class Build {
           await removeFromActive(element.dataset.position);
         }
 
+        try {
+          if (Build._forceShowOnlySetTalentIds || Build._forceShowOnlyTalentIds || Build._forceShowTalentIds) {
+            Build.sortInventory();
+          }
+        } catch {}
+
         Build.updateHeroStats();
 
         fieldRow.style.background = '';
@@ -3655,12 +4508,44 @@ export class Build {
         element.style.position = 'static';
 
         element.style.zIndex = 'auto';
+
+        // If cursor stays over a library talent after click/drag-end,
+        // restore tooltip/row-highlight without requiring mouse movement.
+        try {
+          const hovered = document.elementFromPoint(event.clientX, event.clientY);
+          const hoveredTalent = hovered?.closest?.('.build-talents .build-talent-item');
+          if (hoveredTalent) {
+            hoveredTalent.dispatchEvent(
+              new MouseEvent('mouseover', {
+                bubbles: true,
+                clientX: event.clientX,
+                clientY: event.clientY,
+              }),
+            );
+          }
+        } catch {}
       };
     };
 
     element.ondragstart = () => {
       return false;
     };
+  }
+
+  static highlightBuildRowByLevel(level) {
+    Build.clearBuildRowHoverHighlight();
+    const row = document.getElementById(`bfr${level}`);
+    if (!row) return;
+    row.style.background = 'rgba(255,255,255,0.5)';
+    row.style.borderRadius = '1cqh';
+    Build._hoveredBuildRowEl = row;
+  }
+
+  static clearBuildRowHoverHighlight() {
+    if (!Build._hoveredBuildRowEl) return;
+    Build._hoveredBuildRowEl.style.background = '';
+    Build._hoveredBuildRowEl.style.borderRadius = '';
+    Build._hoveredBuildRowEl = null;
   }
 
   static description(element) {
@@ -3787,6 +4672,9 @@ export class Build {
 
       // Preview: where this library talent would land in the build.
       if (isInventoryTalent) {
+        if (Build.isBuildRowHoverHighlightEnabled() && data.level > 0) {
+          Build.highlightBuildRowByLevel(data.level);
+        }
         // Single talent preview in library should pick the left-most empty slot.
         Build.previewSetTalentsInEmptySlots(
           { _manualOrder: [data.id], key: `single_${data.id}` },
@@ -3798,6 +4686,7 @@ export class Build {
 
     let descEventEnd = () => {
       Build.descriptionView.style.display = 'none';
+      Build.clearBuildRowHoverHighlight();
       // Remove only slot previews (keeps set-highlight logic independent).
       if (element.closest?.('.build-talents')) Build.clearEmptySlotPreviews();
     };
@@ -3817,6 +4706,40 @@ export class Build {
     };
   }
   static cleanup() {
+    Build.clearBuildRowHoverHighlight();
+    Build.toggleBuildSettingsPanel(false);
+    try {
+      if (Build._altResetHandler) window.removeEventListener('keydown', Build._altResetHandler, true);
+    } catch {}
+    Build._altResetHandler = null;
+    try {
+      Build.altResetHintView?.parentNode?.removeChild?.(Build.altResetHintView);
+    } catch {}
+    Build.altResetHintView = null;
+    try {
+      if (Build._previewBlinkTimer) clearInterval(Build._previewBlinkTimer);
+    } catch {}
+    Build._previewBlinkTimer = 0;
+    Build._previewBlinkState = false;
+    try {
+      Build.fieldView?.classList?.remove('build-preview-blink-on');
+    } catch {}
+    try {
+      if (Build._setsScrollStopTimer) clearTimeout(Build._setsScrollStopTimer);
+    } catch {}
+    Build._setsScrollStopTimer = 0;
+    try {
+      if (Build._buildSettingsAttachTimer) clearTimeout(Build._buildSettingsAttachTimer);
+    } catch {}
+    Build._buildSettingsAttachTimer = 0;
+    try {
+      Build.buildSettingsButton?.parentNode?.removeChild?.(Build.buildSettingsButton);
+    } catch {}
+    try {
+      Build.buildSettingsPanel?.parentNode?.removeChild?.(Build.buildSettingsPanel);
+    } catch {}
+    Build.buildSettingsButton = null;
+    Build.buildSettingsPanel = null;
     if (Build.descriptionView && Build.descriptionView.parentNode) {
       Build.descriptionView.remove();
       Build.descriptionView = null;

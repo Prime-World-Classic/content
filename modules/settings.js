@@ -14,6 +14,12 @@ export class Settings {
     radminPriority: false,
     language: 'ru',
     novoice: false,
+    voiceToggleHotkey: ['CTRL', 'Z'],
+    voiceDropHotkey: ['CTRL', 'K'],
+    buildSetLmbMode: 1,
+    buildRowHoverHighlight: true,
+    buildTalentViewLayout: 0,
+    buildSetOnlyMatchingStats: false,
   };
 
   static settings = JSON.parse(JSON.stringify(this.defaultSettings));

@@ -61,6 +61,7 @@ export const en = {
 	structureError: 'Structure error',
 	accountNotFoundOrRecover: 'Account not found, please register or recover via Telegram bot @primeworldclassic_bot',
 	accountBanned: 'Account is permanently banned. For details, please contact support.',
+	accountBlockedForMinutes: 'Your account is blocked for ${blocked} min.',
 	//accountBlocked: 'Account blocked for community rules violation for ${blocked} min.',
 	invalidCredentials: 'Wrong login or password. Account can be recovered via Telegram bot @primeworldclassic_bot',
 	invalidInvite: 'Invite code is invalid. Get invite code via Telegram bot @primeworldclassic_bot',
@@ -94,6 +95,11 @@ export const en = {
 
     //castleNavBar
     clickToViewHeroRating: 'Click to view rating by individual heroes',
+    topColPlace: '#',
+    topColPlayer: 'Nickname',
+    topColHero: 'Hero',
+    topColRating: 'Rating',
+    topEmpty: 'No data',
     gm1: 'Borderlands',
     gm2: 'Outpost',
     gm3: 'Dragonwald',
@@ -128,6 +134,8 @@ export const en = {
     windowShopUnequip: 'Unequip',
     windowShopUnequipItem: 'Unequip ',
     windowShopCurrentFrame: 'the current frame',
+    buyModalText: 'Purchase',
+    equipment: 'Equipment',
 
     //Settings
     settingsFileAccessError: 'Settings file access error: ',
@@ -243,6 +251,22 @@ export const en = {
     sets: 'Sets',
     setHintLmb: 'LMB to move talents to build',
     setHintRmb: 'RMB to remove talents from build',
+    setHintLmbMode2: 'LMB: installs set talents into build, and shows only not-installed set talents in library by rows.',
+    setHintLmbMode3: 'LMB: shows not-installed set talents in library by rows.',
+    setHintRmbMode3: 'RMB: removes set talents from build (if they are installed).',
+    buildSettingsTitle: 'Build settings',
+    buildSettingsLmbMode: 'LMB\\RBM on set',
+    buildSettingsRowHighlight: 'Row highlight',
+    buildSettingsLayout: 'Layout',
+    buildSettingsOn: 'On',
+    buildSettingsOff: 'Off',
+    buildSettingsLayoutColumn: 'Horizontally',
+    buildSettingsLayoutRow: 'Vertically',
+    buildSettingsLmbMode1: 'Display all talents in Library',
+    buildSettingsLmbMode2: 'Show set leftovers in Library',
+    buildSettingsLmbMode3: 'Show set in Library',
+    buildSettingsSetMatchOnly: 'Matching stats only',
+    buildAltResetHint: 'Alt: reset set filter in library',
     windowsLauncherRequired: 'Windows launcher version required',
     buildNamePlaceholder: 'Build name',
     createBuild: 'Create build',
@@ -252,7 +276,7 @@ export const en = {
     duplicateToNewBuild: 'Duplicate to new build',
     resetTalentsTitle: 'Reset talents in this build?',
     reset: 'Reset',
-    renameBuild: 'Rename build',
+    renameBuild: 'Rename',
     native: 'Native',
     enemy: 'Enemy',
     gradualTalentsTitle: 'Accounting for talents that provide gradual increases to specific parameters of your characteristics (e.g., orange quality talents "Deadly Logic", "Unstoppable Force")',
@@ -261,9 +285,10 @@ export const en = {
     makeStatPriorityTitle: 'Make characteristic priority',
     tipTitle: 'Hall of Fame Builds (LMB)',
 	tipBody: 'Builds for this hero from the Hall of Fame top-100 players.\nClick on the icon to view builds.\n\nTo copy a build from the Hall of Fame, leave your build window open on the desired tab.\nThen go to the selected build from the Hall of Fame and click "Steal build".',
-
+assembly: 'Assembly',
     //Друзья
-
+    friends: 'Friends',
+    searchForFriends: 'Search for friends',
     callAFriend: 'Call',
     inviteToAGroup: 'Party',
     friendIsOffline: 'Offline',
@@ -279,10 +304,11 @@ export const en = {
     friendCallFrom: 'Accept call from {name}?',
     friendDropCall: 'Drop call',
     inviteToAFriend: 'Invite',
-
+    battleText: 'Battle',
     //Войс
 
     enableMic: 'Press <strong>Ctrl+Z</strong> or click your Nickname to enable: {Voice.mic.label}',
+    enableMicSuffix: ' or click your Nickname to enable: {Voice.mic.label}',
     mediaDevicesError: 'Cannot access media devices: {error}',
     streamTracksError: 'Cannot get stream tracks: {error}',
     mediaTracksLack: 'No media tracks available',
@@ -293,6 +319,7 @@ export const en = {
     voiceDisabled: 'Voice communication is disabled',
     synthesisLang: 'en-US',
     hotkeyDropCalls: '<strong>Ctrl+K</strong> - drop all calls except friends',
+    hotkeyDropCallsSuffix: ' - drop all calls except friends',
     hotkeyVolumeControl: '<strong>Ctrl+↑/↓</strong> - increase/decrease volume',
 
     // Квесты
@@ -434,7 +461,7 @@ export const en = {
       {
         type: 'p',
         content:
-          'To view the top of certain heroes, click on top #1 at the top of the window and select the hero you are interested in from the suggested list. The table will sort the top 100 server players on the selected hero.',
+          'To view the top for specific heroes, click the medal icon to the right of the top 3 and select the hero you want from the list. The table will show the top 100 server players for that hero.',
       },
       {
         type: 'img',
@@ -442,9 +469,15 @@ export const en = {
       },
     ],
 
+
+    helpWindow: 'Help window',
     help_btn_close: 'Mark as read',
 
     // keybindings
+
+    voiceHotkeys: 'Voice communication',
+    voiceEnableToggle: 'Toggle microphone',
+    voiceDropCalls: 'Drop calls',
 
     slot: 'Slot {num}',
     selfCast: 'Self-cast',
