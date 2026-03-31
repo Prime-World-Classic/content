@@ -65,6 +65,8 @@ export class Voice {
 
   static infoPanel = null;
 
+  static infoPanelHiddenByUser = false;
+
   static cacheCandidate = new Object();
 
   static limit = 10;
@@ -73,9 +75,124 @@ export class Voice {
 
   static volumeLevelStep = 0.2;
 
+  static reconnectJobs = new Map();
+
+  static reconnectPlanMs = [2000, 5000, 10000, 15000, 20000];
+
+  static reconnectMaxDurationMs = 15 * 60 * 1000;
+
+  static reconnectDisconnectedGraceMs = 3000;
+
+  static getReconnectToken(id, key) {
+    return `${String(key || '')}:${Number(id) || 0}`;
+  }
+
+  static shouldAutoReconnectKey(key) {
+    return !!key;
+  }
+
+  static stopReconnectJob(id, key) {
+    const token = Voice.getReconnectToken(id, key);
+    const job = Voice.reconnectJobs.get(token);
+    if (!job) return;
+    if (job.timer) {
+      clearTimeout(job.timer);
+      job.timer = null;
+    }
+    Voice.reconnectJobs.delete(token);
+  }
+
+  static getReconnectJob(id, key) {
+    const token = Voice.getReconnectToken(id, key);
+    return Voice.reconnectJobs.get(token) || null;
+  }
+
+  static getInfoPanelBody() {
+    return Voice.infoPanel?.querySelector?.('.voice-info-panel-body') || null;
+  }
+
+  static showInfoPanel(force = false) {
+    if (!Voice.infoPanel) return;
+    if (!force && Voice.infoPanelHiddenByUser) return;
+    Voice.infoPanel.style.display = 'flex';
+  }
+
+  static stopAllReconnectJobs() {
+    for (const job of Voice.reconnectJobs.values()) {
+      if (job.timer) {
+        clearTimeout(job.timer);
+        job.timer = null;
+      }
+    }
+    Voice.reconnectJobs.clear();
+  }
+
+  static ensureReconnectJob(id, key, name = '', important = false, initialDelayMs = 0) {
+    if (!Voice.shouldAutoReconnectKey(key)) return;
+    const token = Voice.getReconnectToken(id, key);
+    if (Voice.reconnectJobs.has(token)) return;
+    const job = {
+      id: Number(id),
+      key: String(key || ''),
+      name: String(name || ''),
+      important: Boolean(important),
+      attempt: 0,
+      startedAt: Date.now(),
+      timer: null,
+      activeCallAttempt: false,
+    };
+    Voice.reconnectJobs.set(token, job);
+    const run = async () => {
+      const current = Voice.reconnectJobs.get(token);
+      if (!current) return;
+      if (Date.now() - current.startedAt > Voice.reconnectMaxDurationMs) {
+        Voice.stopReconnectJob(current.id, current.key);
+        return;
+      }
+      const existing = Voice.manager[current.id];
+      if (existing && existing.peer && existing.peer.connectionState !== 'closed') {
+        const delayBusy = Voice.reconnectPlanMs[Math.min(current.attempt, Voice.reconnectPlanMs.length - 1)];
+        current.timer = setTimeout(run, delayBusy);
+        return;
+      }
+      let voice = null;
+      try {
+        current.activeCallAttempt = true;
+        voice = new Voice(current.id, current.key, current.name, current.important);
+        await voice.call({ reconnect: 1 });
+      } catch (error) {
+        console.log('Voice reconnect attempt failed:', error);
+        try {
+          voice?.close({ keepReconnect: true });
+        } catch {}
+      } finally {
+        current.activeCallAttempt = false;
+      }
+      current.attempt += 1;
+      const delay = Voice.reconnectPlanMs[Math.min(current.attempt, Voice.reconnectPlanMs.length - 1)];
+      current.timer = setTimeout(run, delay);
+    };
+    job.timer = setTimeout(run, Math.max(0, Number(initialDelayMs) || 0));
+  }
+
   static init() {
     if (!Voice.infoPanel) {
-      Voice.infoPanel = DOM({ style: ['voice-info-panel', 'left-offset-with-shift'] }, DOM({ style: 'voice-info-panel-body' }));
+      const closeButton = DOM(
+        {
+          tag: 'div',
+          style: ['close-button', 'voice-info-panel-close'],
+          domaudio: domAudioPresets.defaultButton,
+          event: [
+            'click',
+            () => {
+              Voice.infoPanelHiddenByUser = true;
+              if (Voice.infoPanel) Voice.infoPanel.style.display = 'none';
+            },
+          ],
+        },
+      );
+      closeButton.style.backgroundImage = 'url(content/icons/close-cropped.svg)';
+      Voice.infoPanel = DOM({ style: ['voice-info-panel', 'left-offset-with-shift'] }, closeButton, DOM({ style: 'voice-info-panel-body' }));
     }
 
     document.body.append(Voice.infoPanel);
@@ -88,7 +205,7 @@ export class Voice {
       return;
     }
 
-    Voice.infoPanel.style.display = 'flex';
+    Voice.showInfoPanel();
 
     try {
       Voice.userMedia = await navigator.mediaDevices.getUserMedia({
@@ -125,6 +242,8 @@ export class Voice {
   }
 
   static async toggleEnabledMic() {
+    Voice.infoPanelHiddenByUser = false;
+    Voice.showInfoPanel(true);
     if (!Voice.userMedia) {
       await Voice.initLocalMedia();
 
@@ -197,8 +316,10 @@ export class Voice {
   }
 
   static updateInfoPanel() {
-    while (Voice.infoPanel.firstChild.firstChild) {
-      Voice.infoPanel.firstChild.firstChild.remove();
+    const panelBody = Voice.getInfoPanelBody();
+    if (!panelBody) return;
+    while (panelBody.firstChild) {
+      panelBody.firstChild.remove();
     }
 
     let level = DOM({ style: 'voice-info-panel-body-item-bar-level' });
@@ -213,7 +334,7 @@ export class Voice {
       bar.classList.add('voice-info-panel-body-item-nostream');
     }
 
-    Voice.infoPanel.firstChild.append(
+    panelBody.append(
       DOM(
         { style: 'voice-info-panel-body-item' },
         DOM(
@@ -269,7 +390,7 @@ export class Voice {
       }
     }
 
-    Voice.infoPanel.firstChild.append(tutorial);
+    panelBody.append(tutorial);
   }
 
   static playerInfoPanel(id) {
@@ -277,19 +398,24 @@ export class Voice {
 
     let state = () => {
       let status = '';
+      const reconnectJob = Voice.getReconnectJob(id, Voice.manager[id].key);
 
-      switch (Voice.manager[id].peer.connectionState) {
-        case 'new':
-          status = Lang.text('waitingResponse');
-          break;
+      if (reconnectJob && Voice.manager[id].peer.connectionState !== 'connected') {
+        status = Lang.text('voiceReconnectingAttempt').replace('{attempt}', String((reconnectJob.attempt || 0) + 1));
+      } else {
+        switch (Voice.manager[id].peer.connectionState) {
+          case 'new':
+            status = Lang.text('waitingResponse');
+            break;
 
-        case 'connecting':
-          status = Lang.text('voiceConnecting');
-          break;
+          case 'connecting':
+            status = Lang.text('voiceConnecting');
+            break;
 
-        default:
-          status = Voice.manager[id].peer.connectionState;
-          break;
+          default:
+            status = Voice.manager[id].peer.connectionState;
+            break;
+        }
       }
 
       return Voice.manager[id].peer.connectionState == 'connected' ? `${name} [Х]` : `${name} (${status})`;
@@ -302,7 +428,7 @@ export class Voice {
         event: [
           'click',
           () => {
-            Voice.manager[id].close();
+            Voice.drop(Number(id));
 
             item.remove();
           },
@@ -341,7 +467,9 @@ export class Voice {
       indication();
     };
 
-    Voice.infoPanel.firstChild.append(
+    const panelBody = Voice.getInfoPanelBody();
+    if (!panelBody) return;
+    panelBody.append(
       DOM({ style: 'voice-info-panel-body-item' }, item, DOM({ style: 'voice-info-panel-body-item-status' }, bar)),
     );
   }
@@ -379,12 +507,29 @@ export class Voice {
     await Voice.manager[id].peer.addIceCandidate(candidate);
   }
 
+  static async remoteDrop(id) {
+    const target = Voice.manager[id];
+    if (!target) return;
+    await target.close();
+  }
+
+  static drop(id) {
+    const target = Voice.manager[id];
+    if (!target) return;
+    App.api.ghost('user', 'callDrop', { id }).catch(() => {});
+    target.close();
+  }
+
   static destroy(full = false, say = false) {
+    Voice.stopAllReconnectJobs();
     for (let id in Voice.manager) {
       if (!full && Voice.manager[id].important) {
         continue;
       }
 
+      if (Number(id) > 0) {
+        App.api.ghost('user', 'callDrop', { id: Number(id) }).catch(() => {});
+      }
       Voice.manager[id].close();
     }
 
@@ -456,6 +601,9 @@ export class Voice {
       throw Lang.text('voiceDisabled');
     }
 
+    Voice.infoPanelHiddenByUser = false;
+    Voice.showInfoPanel(true);
+
     let start = false;
 
     for (let user of users) {
@@ -485,6 +633,12 @@ export class Voice {
     this.important = important;
 
     this.isCaller = false;
+
+    this.reconnectScheduled = false;
+    
+    this.hasEverConnected = false;
+
+    this.allowAutoReconnect = true;
 
     this.stream = null;
 
@@ -549,18 +703,57 @@ export class Voice {
       switch (this.peer.iceConnectionState) {
         case 'connected':
           console.log('Соединение успешно установлено');
+          this.hasEverConnected = true;
+          Voice.stopReconnectJob(this.id, this.key);
+          this.reconnectScheduled = false;
           break;
 
         case 'disconnected':
-          this.close();
-          break; // reconnect
+          if (
+            this.allowAutoReconnect &&
+            Voice.shouldAutoReconnectKey(this.key) &&
+            this.isCaller &&
+            !this.reconnectScheduled &&
+            (this.key !== 'friend' || this.hasEverConnected)
+          ) {
+            this.reconnectScheduled = true;
+            Voice.ensureReconnectJob(this.id, this.key, this.name, this.important, Voice.reconnectDisconnectedGraceMs);
+            this.close({ keepReconnect: true });
+          } else {
+            this.close();
+          }
+          break;
 
         case 'failed':
-          this.close();
-          break; // reconnect
+          if (
+            this.allowAutoReconnect &&
+            Voice.shouldAutoReconnectKey(this.key) &&
+            this.isCaller &&
+            !this.reconnectScheduled &&
+            (this.key !== 'friend' || this.hasEverConnected)
+          ) {
+            this.reconnectScheduled = true;
+            Voice.ensureReconnectJob(this.id, this.key, this.name, this.important, 0);
+            this.close({ keepReconnect: true });
+          } else {
+            this.close();
+          }
+          break;
 
         case 'closed':
-          this.close();
+          if (
+            this.allowAutoReconnect &&
+            Voice.shouldAutoReconnectKey(this.key) &&
+            this.isCaller &&
+            !this.reconnectScheduled &&
+            (this.key !== 'friend' || this.hasEverConnected)
+          ) {
+            this.reconnectScheduled = true;
+            Voice.ensureReconnectJob(this.id, this.key, this.name, this.important, Voice.reconnectDisconnectedGraceMs);
+            this.close({ keepReconnect: true });
+          } else {
+            this.close();
+          }
           break;
       }
 
@@ -568,10 +761,13 @@ export class Voice {
     };
   }
 
-  async call() {
+  async call(options = {}) {
     if (Settings.settings.novoice) {
       throw Lang.text('voiceDisabled');
     }
+
+    Voice.infoPanelHiddenByUser = false;
+    Voice.showInfoPanel(true);
 
     if (!this.peer) {
       return;
@@ -604,6 +800,7 @@ export class Voice {
       id: this.id,
       key: this.key,
       offer: offer,
+      reconnect: Number(options?.reconnect || 0) ? 1 : 0,
     });
 
     this.isCaller = true;
@@ -615,6 +812,9 @@ export class Voice {
     if (Settings.settings.novoice) {
       throw Lang.text('voiceDisabled');
     }
+
+    Voice.infoPanelHiddenByUser = false;
+    Voice.showInfoPanel(true);
 
     if (!this.peer) {
       return;
@@ -638,24 +838,23 @@ export class Voice {
   }
 
   async reconnect() {
-    console.log('Реконнект...');
-    this.close();
-
-    if (!this.isCaller) {
-      return;
-    }
-
-    let voice = new Voice(this.id, this.key);
-
-    try {
-      voice.call();
-    } catch (error) {
-      console.log(error);
-    }
+    if (!Voice.shouldAutoReconnectKey(this.key) || !this.isCaller) return;
+    Voice.ensureReconnectJob(this.id, this.key, this.name, this.important, 0);
+    this.close({ keepReconnect: true });
   }
 
-  async close() {
-    this.peer.close();
+  async close(options = {}) {
+    const keepReconnect = Boolean(options?.keepReconnect);
+    if (!keepReconnect) {
+      this.allowAutoReconnect = false;
+    }
+    if (!keepReconnect) {
+      Voice.stopReconnectJob(this.id, this.key);
+    }
+
+    try {
+      this.peer?.close?.();
+    } catch {}
 
     delete Voice.manager[this.id];
 

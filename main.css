@@ -681,8 +681,8 @@ input::placeholder {
   width: 100cqmin;
   align-items: center;
   justify-content: center;
-  position: relative;
-  top: 1cqh;
+  position: absolute;
+  top: 10cqh;
   left: 2cqh;
 }
 
@@ -760,8 +760,8 @@ input::placeholder {
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
-  padding: 0.35cqh 0.7cqw;
-  border-radius: 1cqh;
+  padding: 0.85cqh 1cqw;
+  border-radius: 1.5cqh;
   background: rgba(0, 0, 0, 0.72);
   border: 0.01cqh solid rgba(104, 158, 154, 0.4);
   color: rgba(232, 248, 248, 0.95);
@@ -1018,10 +1018,9 @@ input::placeholder {
 }
 
 button.build-action-item {
-  background-color: #279aac !important;
+  background-color: transparent;
   background-size: 30cqmin;
   background-repeat: no-repeat;
-  box-shadow: none !important;
   width: 17cqmin;
   height: 17cqmin;
   border-width: 0;
@@ -1034,7 +1033,13 @@ button.build-action-item {
 }
 
 button.build-action-item:hover {
-  transform: scale(1.1);
+  transform: scale(1.06);
+  filter: brightness(1.1);
+}
+
+button.build-action-item.build-action-item-active {
+  transform: scale(1.06);
+  filter: brightness(1.12);
 }
 
 .build-action-item-background {
@@ -1043,6 +1048,52 @@ button.build-action-item:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  transition: filter 0.16s ease, transform 0.16s ease;
+}
+
+.build-action-item:hover .build-action-item-background,
+.build-action-item:hover .btn-duplicate {
+  filter: brightness(1.14) drop-shadow(0 0 0.35cqh rgba(255, 255, 255, 0.3));
+}
+
+button.build-action-item.build-action-item-active .build-action-item-background,
+button.build-action-item.build-action-item-active .btn-duplicate {
+  filter: brightness(1.2) saturate(1.1) drop-shadow(0 0 0.5cqh rgba(255, 255, 255, 0.4));
+}
+
+button.build-action-item.btn-hover.color-1.build-action-item-disabled .build-action-item-background,
+button.build-action-item.btn-hover.color-1.build-action-item-disabled .btn-duplicate {
+  filter: grayscale(1) brightness(0.72);
+}
+
+button.build-action-item.build-action-item-disabled:hover {
+  transform: none;
+  filter: none;
+}
+
+/* Recreated action buttons: only icon, no legacy frame/background effects. */
+button.build-action-item.btn-hover.color-1 {
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+  border: 0;
+  padding: 0;
+}
+
+button.build-action-item.btn-hover.color-1 .build-action-item-background,
+button.build-action-item.btn-hover.color-1 .btn-duplicate {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  filter: none;
+  opacity: 1;
+}
+
+button.build-action-item.btn-hover.color-1 .btn-duplicate {
+  position: static;
+  transform: none;
 }
 
 .btn-create {
@@ -1056,6 +1107,44 @@ button.build-action-item:hover {
 .btn-trash {
   background-position: 0cqw 0;
 }
+
+.btn-combat-mode {
+  position: relative;
+  background-image: url('img/buttonColor.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  overflow: hidden;
+}
+
+.btn-combat-mode-count {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -52%);
+  color: rgb(175 170 104 / 98%);
+  font: 600 3.8cqh / 1 'DejaVuSans', sans-serif;
+  text-shadow: 0 0.25cqh 0.35cqh rgba(0, 0, 0, 0.72);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.btn-combat-mode-count.btn-combat-mode-count-raw {
+  width: 7.2cqh;
+  height: 4.6cqh;
+  transform: translate(-50%, -50%);
+  background: url('img/combatModeRaw.png') center/contain no-repeat;
+}
+
+.btn-combat-mode-glass {
+  position: absolute;
+  inset: 0;
+  background: url('img/buttonGlass.png') center/contain no-repeat;
+  pointer-events: none;
+  z-index: 3;
+}
+
+/* On hover/active global button filter changes text rasterization; keep combat-mode number stable */
 
 .buttons-talents-and-sets {
   display: none;
@@ -1233,6 +1322,68 @@ button.build-action-item:hover {
   will-change: transform; /* Оптимизация анимации */
 }
 
+.build-talent-item.build-combat-locked {
+  filter: grayscale(0.9) brightness(0.7);
+}
+
+/* Combat mode readability: learned talents are slightly brighter than unlearned ones */
+.build-field.build-combat-mode-on .build-talent-item.build-combat-learned {
+  filter: saturate(1.36) brightness(1.52);
+}
+
+.build-field.build-combat-mode-on .build-talent-item.build-combat-learned::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 22%;
+  background: rgba(0, 0, 0, 0.28);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.build-field.build-combat-mode-on .build-talent-item:not(.build-combat-learned):not(.build-combat-locked) {
+  filter: saturate(0.92) brightness(0.9);
+}
+
+@keyframes buildCombatSurroundedBlinkPulse {
+  0%,
+  86%,
+  100% {
+    transform: scale(1);
+  }
+  91% {
+    transform: scale(0.9);
+  }
+  96% {
+    transform: scale(1.06);
+  }
+}
+
+.build-field.build-combat-mode-on .build-talent-item.build-combat-surrounded-blink {
+  animation: buildCombatSurroundedBlinkPulse 3s ease-in-out infinite;
+}
+
+.build-talent-item .build-combat-order-badge {
+  position: absolute;
+  right: 4cqw;
+  bottom: 4cqw;
+  min-width: 22cqw;
+  height: 22cqw;
+  padding: 0 4cqw;
+  border-radius: 6cqw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font: 16cqw / 1 'DejaVuSans', sans-serif;
+  font-weight: 700;
+  text-shadow: 0 0 1.2cqw rgba(0, 0, 0, 0.9);
+  background: linear-gradient(180deg, rgba(17, 86, 118, 0.95), rgba(12, 54, 76, 0.95));
+  box-shadow: 0 0 1cqw rgba(0, 0, 0, 0.55);
+  pointer-events: none;
+  z-index: 1200;
+}
+
 @keyframes buildSetEmptySlotPreviewBlink {
   0%,
   100% {
@@ -1312,11 +1463,7 @@ button.build-action-item:hover {
 }
 
 .build-rarity-other:after {
-  inset: 0;
-  border-radius: 50%;
-  transform: scale(1.3);
-  z-index: 999;
-  background-size: 94% 94%;
+  content: none;
 }
 
 .build-talent-view {
@@ -1807,6 +1954,14 @@ button.build-action-item:hover {
   box-shadow: 0 0 0.7cqh rgba(255, 224, 116, 0.75);
 }
 
+.build-set-item.build-stat-filter-hover-set {
+  border-width: calc(var(--build-hl-border-mm) * 1.2);
+  border-color: hsl(var(--build-hl-h) 100% 68% / 0.95);
+  box-shadow:
+    inset 0 0 0 calc(var(--build-hl-border-mm) * 0.9) hsl(var(--build-hl-h) 100% 68% / 0.45),
+    0 0 calc(var(--build-hl-border-mm) * 6.5) hsl(var(--build-hl-h) 100% 68% / 0.5);
+}
+
 .build-set-desc-icons {
   margin-top: 0.6cqh;
   display: flex;
@@ -1915,7 +2070,7 @@ button.build-action-item:hover {
   justify-content: center;
   flex-flow: column;
   position: absolute;
-  top: 88cqw;
+  top: 89cqw;
   right: 17cqw;
 }
 
@@ -2029,6 +2184,10 @@ button.build-action-item:hover {
 
 .build-description div {
   margin-top: 1cqh;
+}
+
+.build-description .build-set-main-desc {
+  margin-top: 0;
 }
 
 .build-description span {
@@ -2674,6 +2833,7 @@ button.build-action-item:hover {
 
 #castle-menu-text-change-nickname{
   font-size: 1.6cqh;
+  white-space: nowrap;
 }
 #splash-content-button-modal-fraction{
   margin-top: 1.5cqh;
@@ -5496,6 +5656,29 @@ i-success {
   z-index: 9996;
 }
 
+.voice-info-panel-close {
+  position: absolute;
+  top: -0.9cqh;
+  right: -0.9cqh;
+  width: 2.8vh;
+  height: 2.8vh;
+  min-width: 2.8vh;
+  min-height: 2.8vh;
+  background-image: url('content/icons/close-cropped.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  opacity: 1;
+  display: block;
+  z-index: 9997;
+  transform: none !important;
+}
+
+.voice-info-panel-close:hover {
+  transform: scale(1.08) !important;
+}
+
 .left-offset-with-shift {
   position: absolute;
   left: 10vh;
@@ -6139,6 +6322,51 @@ body:has(#wcastle-call)::before {
 .build-hero-avatar-actions .btn-skins {
   margin: 0;
   align-self: stretch;
+}
+
+.build-hero-nav-btn {
+  width: 4cqh;
+  height: 4cqh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: var(--cursor-pointer);
+  opacity: 1 !important;
+  filter: none !important;
+  transform: scale(1);
+  transition:
+    transform 120ms ease,
+    filter 120ms ease;
+}
+
+.build-hero-nav-btn:hover {
+  transform: scale(1.08);
+  filter: brightness(1.14) drop-shadow(0 0 0.5cqh rgba(255, 255, 255, 0.35)) !important;
+}
+
+.build-hero-nav-controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  z-index: 7;
+}
+
+.build-hero-nav-btn-left {
+  position: absolute;
+  top: -9cqh;
+  left: 3.3cqh;
+  width: 6cqh;
+  height: 6cqh;
+}
+
+.build-hero-nav-btn-right {
+  position: absolute;
+  top: -9cqh;
+  left: 18.9cqh;
+  width: 6cqh;
+  height: 6cqh;
 }
 
 .build-avatar-wrap {

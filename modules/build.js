@@ -16,6 +16,7 @@ import { Castle } from './castle.js';
 import { KeybindStore } from './keybindings/keybindings.store.js';
 import { TalentSets } from './talentSets.js';
 import { Settings } from './settings.js';
+import { getMainHeroTalentId } from './mainHeroTalent.js';
 
 export class Build {
   static loading = false;
@@ -25,10 +26,18 @@ export class Build {
   static BUILD_HIGHLIGHT_BORDER_MM_DEFAULT = 0.42;
   static BUILD_HIGHLIGHT_BORDER_MM_MIN = 0.08;
   static BUILD_HIGHLIGHT_BORDER_MM_MAX = 1.5;
+  static REGEN_HP_FROM_MAX_HP_PCT = 0.0015; // 0.15%
+  static REGEN_MP_FROM_MAX_MP_PCT = 0.0036; // 0.36%
 
   /** span с числом подсвеченных по стат-фильтру талантов (см. .build-hero-stats-highlight-count). */
   static statFilterHighlightCountValueEl = null;
   static statFilterHighlightCountWrapEl = null;
+  static combatModeButtonEl = null;
+  static combatModeButtonCountEl = null;
+  static combatModeEnabled = false;
+  static combatModeLearnOrder = [];
+  static combatModeLearnOrderBySlot = new Map();
+  static combatModeLearnedSlots = new Set();
 
   static language = {
     sr: 'Сила/Разум',
@@ -105,6 +114,16 @@ export class Build {
     2: 3.24,
     1: 2.625,
     0: 11.28,
+  };
+
+  /** Доля строки билда (слоты сверху вниз) в мощи: суммарно по 6 слотам строки = вклад веса. */
+  static TALENT_POWER_LINE_WEIGHTS = {
+    5: 33.0 / 600.0,
+    4: 23.0 / 600.0,
+    3: 16.0 / 600.0,
+    2: 13.0 / 600.0,
+    1: 9.0 / 600.0,
+    0: 6.0 / 600.0,
   };
 
   static binds = [];
@@ -582,6 +601,7 @@ export class Build {
       volia: 0.0,
     };
     Build.installedTalents = new Array(36).fill(null);
+    Build.resetCombatModeState();
     Build.profileStats = new Object();
 
     Build.applyRz = true;
@@ -611,6 +631,8 @@ export class Build {
     Build.level();
 
     Build.field(request.body);
+    Build.syncCombatModeButtonState();
+    Build.renderCombatOrderBadges();
 
     Build.inventory();
 
@@ -648,6 +670,7 @@ export class Build {
     }
 
     try {
+      Build.setCombatMode(false, { force: true });
       Build.fieldConflict = new Object();
       Build.installedTalents = new Array(36).fill(null);
       Build.fieldView?.replaceChildren();
@@ -673,6 +696,7 @@ export class Build {
     try {
       if (request?.active) Build.activeBar(request.active);
     } catch {}
+    Build.syncCombatModeButtonState();
   }
 
   static ensureBuildSettingsDefaults() {
@@ -1320,6 +1344,32 @@ export class Build {
   }
 
   static buildActions(builds, isWindow) {
+    // Переключаемый боевой режим (симуляция прокачки талантов в текущем билде)
+    {
+      const combatMode = DOM({
+        tag: 'button',
+        domaudio: domAudioPresets.defaultButton,
+        style: ['build-action-item', 'btn-hover', 'color-1', 'build-action-item-combat-mode'],
+        event: [
+          'click',
+          () => {
+            Build.toggleCombatMode();
+          },
+        ],
+      });
+      const combatModeBg = DOM({
+        style: ['btn-combat-mode', 'build-action-item-background'],
+      });
+      const combatModeCount = DOM({ tag: 'span', style: 'btn-combat-mode-count' }, '');
+      const combatModeGlass = DOM({ tag: 'span', style: 'btn-combat-mode-glass' });
+      combatModeBg.append(combatModeCount, combatModeGlass);
+      combatMode.append(combatModeBg);
+      Build.buildActionsView.append(combatMode);
+      Build.combatModeButtonEl = combatMode;
+      Build.combatModeButtonCountEl = combatModeCount;
+      Build.syncCombatModeButtonState();
+    }
+
     if (builds.length < 6) {
       const create = DOM({
         tag: 'button',
@@ -1332,7 +1382,7 @@ export class Build {
       let createBg = DOM({
         style: ['btn-create', 'build-action-item-background'],
       });
-      createBg.style.backgroundImage = `url('content/icons/plus.svg')`;
+      createBg.style.backgroundImage = `url('content/img/create.png')`;
       create.append(createBg);
       Build.buildActionsView.append(create);
     }
@@ -1474,7 +1524,7 @@ export class Build {
     });
 
     let duplicateBg = DOM({ style: ['btn-duplicate'] });
-    duplicateBg.style.backgroundImage = `url('content/icons/copy.svg')`;
+    duplicateBg.style.backgroundImage = `url('content/img/copy.png')`;
     duplicate.append(duplicateBg);
     Build.buildActionsView.append(duplicate);
 
@@ -1497,7 +1547,7 @@ export class Build {
       let randomBg = DOM({
         style: ['btn-random', 'build-action-item-background'],
       });
-      randomBg.style.backgroundImage = `url('content/icons/dice.svg')`;
+      randomBg.style.backgroundImage = `url('content/img/random.png')`;
       random.append(randomBg);
       Build.buildActionsView.append(random);
     }
@@ -1564,10 +1614,353 @@ export class Build {
       let resetBg = DOM({
         style: ['btn-trash', 'build-action-item-background'],
       });
-      resetBg.style.backgroundImage = `url('content/icons/trash.svg')`;
+      resetBg.style.backgroundImage = `url('content/img/remove.png')`;
       resetBuild.append(resetBg);
       Build.buildActionsView.append(resetBuild);
     }
+
+  }
+
+  static resetCombatModeState() {
+    Build.combatModeButtonEl = null;
+    Build.combatModeButtonCountEl = null;
+    Build.combatModeEnabled = false;
+    Build.combatModeLearnOrder = [];
+    Build.combatModeLearnOrderBySlot = new Map();
+    Build.combatModeLearnedSlots = new Set();
+  }
+
+  static getCombatModeHeroLevel() {
+    return Build.combatModeLearnOrder.length;
+  }
+
+  static getCombatMainTalentSlotIndex() {
+    for (let i = 0; i < (Build.installedTalents || []).length; i++) {
+      const t = Build.installedTalents[i];
+      if (Build.isMainHeroClassTalent(t)) return i;
+    }
+    return -1;
+  }
+
+  static isBuildCompleteForCombatMode() {
+    const list = Build.installedTalents || [];
+    if (!Array.isArray(list) || list.length !== 36) return false;
+    for (const t of list) {
+      if (!t) return false;
+    }
+    return true;
+  }
+
+  static hasMainTalentInBuildForCombatMode() {
+    return Build.getCombatMainTalentSlotIndex() >= 0;
+  }
+
+  static canEnableCombatMode() {
+    return Build.isBuildCompleteForCombatMode() && Build.hasMainTalentInBuildForCombatMode();
+  }
+
+  static getCombatModeTooltip() {
+    if (!Build.canEnableCombatMode()) {
+      return `${Lang.text('combatModeName')}\n${Lang.text('combatModeBuildNotComplete')}`;
+    }
+    return Lang.text('combatModeName');
+  }
+
+  static syncCombatModeButtonState() {
+    const btn = Build.combatModeButtonEl;
+    if (!btn) return;
+    const canEnable = Build.canEnableCombatMode();
+    if (!canEnable && Build.combatModeEnabled) {
+      Build.setCombatMode(false, { force: true });
+    }
+    btn.classList.toggle('build-action-item-active', Build.combatModeEnabled);
+    btn.classList.toggle('build-action-item-disabled', !canEnable);
+    btn.title = Build.getCombatModeTooltip();
+    if (Build.combatModeButtonCountEl) {
+      const isRawMode = !Build.combatModeEnabled;
+      Build.combatModeButtonCountEl.classList.toggle('btn-combat-mode-count-raw', isRawMode);
+      Build.combatModeButtonCountEl.textContent = isRawMode ? '' : String(Build.getCombatModeHeroLevel());
+    }
+  }
+
+  static getCombatUnlockedRowsForLevel(level) {
+    const lvl = Math.max(1, Number(level) || 1);
+    if (lvl >= 20) return 6;
+    return Math.max(1, Math.min(6, 1 + Math.floor(lvl / 4)));
+  }
+
+  static renderCombatOrderBadges() {
+    try {
+      Build.fieldView?.querySelectorAll('.build-combat-order-badge').forEach((el) => el.remove());
+      Build.fieldView?.querySelectorAll('.build-talent-item.build-combat-learned').forEach((el) => el.classList.remove('build-combat-learned'));
+      Build.fieldView?.querySelectorAll('.build-talent-item.build-combat-locked').forEach((el) => el.classList.remove('build-combat-locked'));
+      Build.fieldView?.querySelectorAll('.build-talent-item.build-combat-surrounded-blink').forEach((el) =>
+        el.classList.remove('build-combat-surrounded-blink'),
+      );
+    } catch {}
+    if (!Build.combatModeEnabled) {
+      Build.fieldView?.classList.remove('build-combat-mode-on');
+      return;
+    }
+    Build.fieldView?.classList.add('build-combat-mode-on');
+    const unlockedRows = Build.getCombatUnlockedRowsForLevel(Build.getCombatModeHeroLevel());
+    const cells = Build.fieldView?.querySelectorAll('.build-hero-grid-item') || [];
+    const slotToTalentEl = new Map();
+    for (const cell of cells) {
+      const talentEl = cell?.querySelector?.('.build-talent-item');
+      if (!talentEl) continue;
+      const slot = Number(cell?.dataset?.position);
+      if (!Number.isFinite(slot)) continue;
+      slotToTalentEl.set(slot, talentEl);
+      const slotTalent = Build.installedTalents?.[slot];
+      const row = Math.max(1, Number(slotTalent?.level) || 1);
+      const learnedOrder = Build.combatModeLearnOrderBySlot.get(slot);
+      const isLearned = Number.isFinite(learnedOrder);
+      if (isLearned) {
+        talentEl.classList.add('build-combat-learned');
+        const badge = DOM({ style: 'build-combat-order-badge' }, String(learnedOrder));
+        talentEl.append(badge);
+      } else if (row > unlockedRows) {
+        talentEl.classList.add('build-combat-locked');
+      }
+    }
+
+    // Blink enclosed unlearned talents (4 sides are either walls or already learned talents).
+    const GRID_SIZE = 6;
+    const learnedSet = Build.combatModeLearnedSlots || new Set();
+    for (const [slot, talentEl] of slotToTalentEl.entries()) {
+      if (learnedSet.has(slot)) continue;
+      const row = Math.floor(slot / GRID_SIZE);
+      const col = slot % GRID_SIZE;
+      const topBlocked = row === 0 || learnedSet.has(slot - GRID_SIZE);
+      const rightBlocked = col === GRID_SIZE - 1 || learnedSet.has(slot + 1);
+      const bottomBlocked = row === GRID_SIZE - 1 || learnedSet.has(slot + GRID_SIZE);
+      const leftBlocked = col === 0 || learnedSet.has(slot - 1);
+      if (topBlocked && rightBlocked && bottomBlocked && leftBlocked) {
+        talentEl.classList.add('build-combat-surrounded-blink');
+      }
+    }
+  }
+
+  static getCombatLearnedInstalledTalents() {
+    const effective = new Array(36).fill(null);
+    for (const slot of Build.combatModeLearnedSlots) {
+      if (slot < 0 || slot >= 36) continue;
+      effective[slot] = Build.installedTalents?.[slot] || null;
+    }
+    return effective;
+  }
+
+  static getEffectiveInstalledTalents() {
+    if (!Build.combatModeEnabled) return Build.installedTalents;
+    return Build.getCombatLearnedInstalledTalents();
+  }
+
+  static canLearnTalentInCombatMode(slotIndex) {
+    if (!Build.combatModeEnabled) return false;
+    if (Build.combatModeLearnedSlots.has(slotIndex)) return false;
+    const talent = Build.installedTalents?.[slotIndex];
+    if (!talent) return false;
+    const currentLevel = Build.getCombatModeHeroLevel();
+    const unlockedRows = Build.getCombatUnlockedRowsForLevel(currentLevel);
+    const talentRow = Math.max(1, Number(talent.level) || 1);
+    return talentRow <= unlockedRows;
+  }
+
+  static learnCombatTalentAtSlot(slotIndex) {
+    if (!Build.canLearnTalentInCombatMode(slotIndex)) return false;
+    const order = Build.combatModeLearnOrder.length + 1;
+    Build.combatModeLearnOrder.push(slotIndex);
+    Build.combatModeLearnedSlots.add(slotIndex);
+    Build.combatModeLearnOrderBySlot.set(slotIndex, order);
+    return true;
+  }
+
+  static rebuildCombatLearnOrderMapsFromOrderArray() {
+    Build.combatModeLearnedSlots = new Set(Build.combatModeLearnOrder);
+    Build.combatModeLearnOrderBySlot = new Map();
+    for (let i = 0; i < Build.combatModeLearnOrder.length; i++) {
+      Build.combatModeLearnOrderBySlot.set(Build.combatModeLearnOrder[i], i + 1);
+    }
+  }
+
+  /**
+   * После изменения числа изученных: уровень = длина списка; строки выше допустимой для этого уровня снимаются
+   * (с конца порядка изучения среди нарушителей).
+   */
+  static enforceCombatLearnedRowConstraints() {
+    const requirements = [4, 8, 12, 16, 20];
+    
+    let changed = true;
+    while (changed) {
+      changed = false;
+      
+      const talentsByRow = new Map();
+      Build.combatModeLearnOrder.forEach(slot => {
+        const t = Build.installedTalents?.[slot];
+        const row = Math.max(1, Number(t?.level) || 1);
+        talentsByRow.set(row, (talentsByRow.get(row) || 0) + 1);
+      });
+      
+      let totalTalents = 0;
+      for (let row = 1; row <= 5; row++) {
+        totalTalents += talentsByRow.get(row) || 0;
+        if (totalTalents < requirements[row - 1]) {
+          for (let i = Build.combatModeLearnOrder.length - 1; i > 0; i--) {
+            const slot = Build.combatModeLearnOrder[i];
+            const t = Build.installedTalents?.[slot];
+            const talentRow = Math.max(1, Number(t?.level) || 1);
+            if (talentRow === row + 1) {
+              Build.combatModeLearnOrder.splice(i, 1);
+              Build.rebuildCombatLearnOrderMapsFromOrderArray();
+              changed = true;
+              break;
+            }
+          }
+          break;
+        }
+      }
+    }
+    
+    while (Build.combatModeLearnOrder.length > 0) {
+      const level = Build.combatModeLearnOrder.length;
+      const unlockedRows = Build.getCombatUnlockedRowsForLevel(level);
+      let removeIdx = -1;
+      for (let j = Build.combatModeLearnOrder.length - 1; j > 0; j--) {
+        const slot = Build.combatModeLearnOrder[j];
+        const t = Build.installedTalents?.[slot];
+        const row = Math.max(1, Number(t?.level) || 1);
+        if (row > unlockedRows) {
+          removeIdx = j;
+          break;
+        }
+      }
+      if (removeIdx < 0) break;
+      Build.combatModeLearnOrder.splice(removeIdx, 1);
+      Build.rebuildCombatLearnOrderMapsFromOrderArray();
+    }
+    
+    if (Build.combatModeLearnOrder.length === 0) {
+      const mainSlot = Build.getCombatMainTalentSlotIndex();
+      if (mainSlot >= 0) {
+        Build.combatModeLearnOrder = [mainSlot];
+        Build.rebuildCombatLearnOrderMapsFromOrderArray();
+      }
+    }
+  }
+
+  /**
+   * Оставить только первые keepLastOrder шагов (номера 1…keepLastOrder). 0 — ни одного; пусто → снова только главный классовый талант.
+   */
+  static rollbackCombatProgressToOrder(keepLastOrder) {
+    let keep = Number(keepLastOrder);
+    if (!Number.isFinite(keep)) keep = 0;
+    keep = Math.max(0, Math.floor(keep));
+    const nextOrder = [];
+    const nextSet = new Set();
+    const nextMap = new Map();
+    for (let i = 0; i < Build.combatModeLearnOrder.length; i++) {
+      const slot = Build.combatModeLearnOrder[i];
+      const ord = i + 1;
+      if (ord > keep) break;
+      nextOrder.push(slot);
+      nextSet.add(slot);
+      nextMap.set(slot, ord);
+    }
+    Build.combatModeLearnOrder = nextOrder;
+    Build.combatModeLearnedSlots = nextSet;
+    Build.combatModeLearnOrderBySlot = nextMap;
+    if (Build.combatModeLearnOrder.length === 0) {
+      const mainSlot = Build.getCombatMainTalentSlotIndex();
+      if (mainSlot >= 0) {
+        Build.combatModeLearnOrder = [mainSlot];
+        Build.rebuildCombatLearnOrderMapsFromOrderArray();
+      }
+    }
+    Build.enforceCombatLearnedRowConstraints();
+  }
+
+  /** ПКМ по изученному таланту: снять только его, номера следующих −1; затем проверка строк по уровню. */
+  static handleCombatTalentContextMenu(talentEl, event) {
+    if (!Build.combatModeEnabled) return false;
+    if (Number(talentEl?.dataset?.state) !== 2) return false;
+    const slot = Number(talentEl?.parentElement?.dataset?.position);
+    if (!Number.isFinite(slot)) return false;
+    
+    const mainSlot = Build.getCombatMainTalentSlotIndex();
+    if (slot === mainSlot) return false;
+    
+    if (!Build.combatModeLearnOrderBySlot.has(slot)) return false;
+    event?.preventDefault?.();
+    event?.stopPropagation?.();
+    const idx = Build.combatModeLearnOrder.indexOf(slot);
+    if (idx < 0) return true;
+    Build.combatModeLearnOrder.splice(idx, 1);
+    Build.rebuildCombatLearnOrderMapsFromOrderArray();
+    Build.enforceCombatLearnedRowConstraints();
+    Build.renderCombatOrderBadges();
+    Build.updateHeroStats();
+    Build.refreshStatFilterHighlightCountDisplay();
+    Build.syncCombatModeButtonState();
+    return true;
+  }
+
+  static handleCombatTalentClick(element, event) {
+    if (!Build.combatModeEnabled) return false;
+    if (Number(element?.dataset?.state) !== 2) return false;
+    const slot = Number(element?.parentElement?.dataset?.position);
+    if (!Number.isFinite(slot)) return false;
+    event?.preventDefault?.();
+    event?.stopPropagation?.();
+    const existingOrder = Build.combatModeLearnOrderBySlot.get(slot);
+    if (Number.isFinite(existingOrder)) {
+      Build.rollbackCombatProgressToOrder(existingOrder - 1);
+    } else {
+      const learned = Build.learnCombatTalentAtSlot(slot);
+      if (!learned) return true;
+    }
+    Build.renderCombatOrderBadges();
+    Build.updateHeroStats();
+    Build.refreshStatFilterHighlightCountDisplay();
+    Build.syncCombatModeButtonState();
+    return true;
+  }
+
+  static toggleCombatMode() {
+    Build.setCombatMode(!Build.combatModeEnabled);
+  }
+
+  static setCombatMode(enabled, { force = false } = {}) {
+    const next = !!enabled;
+    if (!force && next && !Build.canEnableCombatMode()) {
+      Build.syncCombatModeButtonState();
+      return;
+    }
+    if (Build.combatModeEnabled === next) {
+      Build.syncCombatModeButtonState();
+      return;
+    }
+
+    Build.combatModeEnabled = next;
+    Build.combatModeLearnOrder = [];
+    Build.combatModeLearnOrderBySlot = new Map();
+    Build.combatModeLearnedSlots = new Set();
+
+    if (next) {
+      const mainSlot = Build.getCombatMainTalentSlotIndex();
+      if (mainSlot < 0) {
+        Build.combatModeEnabled = false;
+      } else {
+        Build.combatModeLearnOrder = [mainSlot];
+        Build.combatModeLearnedSlots = new Set([mainSlot]);
+        Build.combatModeLearnOrderBySlot = new Map([[mainSlot, 1]]);
+      }
+    }
+
+    Build.renderCombatOrderBadges();
+    Build.updateHeroStats();
+    Build.refreshStatFilterHighlightCountDisplay();
+    Build.syncCombatModeButtonState();
   }
 
   static list(builds, isWindow) {
@@ -2345,10 +2738,80 @@ export class Build {
 
     const avatarWrap = DOM({ style: 'build-avatar-wrap' }, Build.heroImg);
 
+    const navPrev = DOM({
+      style: ['build-hero-nav-btn', 'build-hero-nav-btn-left'],
+      domaudio: domAudioPresets.defaultButton,
+      event: [
+        'click',
+        async () => {
+          await Build.switchHeroFromCastleBottomList(-1);
+        },
+      ],
+    });
+    navPrev.style.backgroundImage = 'url("content/img/goLeft.png")';
+
+    const navNext = DOM({
+      style: ['build-hero-nav-btn', 'build-hero-nav-btn-right'],
+      domaudio: domAudioPresets.defaultButton,
+      event: [
+        'click',
+        async () => {
+          await Build.switchHeroFromCastleBottomList(1);
+        },
+      ],
+    });
+    navNext.style.backgroundImage = 'url("content/img/goRight.png")';
+
     const avatarActions = DOM({ style: 'build-hero-avatar-actions' }, Build.skinView, Build.training);
     const wrapper = DOM({ style: 'build-hero-avatar-and-name' }, avatarWrap, avatarActions);
+    const heroNav = DOM({ style: 'build-hero-nav-controls' }, navPrev, navNext);
 
-    Build.heroView.append(wrapper, stats);
+    Build.heroView.append(wrapper, stats, heroNav);
+  }
+
+  static getHeroIdsFromCastleBottomList() {
+    const ids = [];
+    const seen = new Set();
+    try {
+      const nodes = View.castleBottom?.querySelectorAll?.('.castle-hero-item');
+      for (const node of nodes || []) {
+        let heroId = Number(node?.dataset?.heroId);
+        if (!Number.isFinite(heroId) || heroId <= 0) {
+          const m = String(node?.id || '').match(/^id(\d+)$/);
+          heroId = m ? Number(m[1]) : NaN;
+        }
+        if (!Number.isFinite(heroId) || heroId <= 0 || seen.has(heroId)) continue;
+        seen.add(heroId);
+        ids.push(heroId);
+      }
+    } catch {}
+    return ids;
+  }
+
+  static async switchHeroFromCastleBottomList(direction = 1) {
+    const ids = Build.getHeroIdsFromCastleBottomList();
+    if (!ids.length) return;
+    const dir = Number(direction) < 0 ? -1 : 1;
+    const currentHeroId = Number(Build.heroId);
+    let index = ids.indexOf(currentHeroId);
+    if (index < 0) index = 0;
+    const nextHeroId = ids[(index + dir + ids.length) % ids.length];
+    if (!Number.isFinite(nextHeroId) || nextHeroId <= 0 || nextHeroId === currentHeroId) return;
+
+    try {
+      View.setCastleOpenedBuildHero?.(nextHeroId);
+      View.scrollCastleBottomToHero?.(nextHeroId);
+    } catch {}
+
+    const isWindowBuild = Window.windows?.main?.id === 'wbuild';
+    if (isWindowBuild) {
+      await Window.show('main', 'build', nextHeroId, 0, true);
+      try {
+        View.scrollCastleBottomToHero?.(nextHeroId);
+      } catch {}
+      return;
+    }
+    await View.show('build', nextHeroId);
   }
 
   /** Одна десятичная, без «.0» у целых (реген HP/MP). */
@@ -2360,20 +2823,82 @@ export class Build {
 
   /** Пересчёт вкладов талантов в calculationStats / силу героя (без обновления подписей в UI). */
   static recomputeTalentCalculationTotals() {
+    const effectiveInstalledTalents = Build.getEffectiveInstalledTalents() || [];
     Build.heroPower = 0.0;
     for (let key in Build.calculationStats) {
       Build.calculationStats[key] = 0.0;
     }
 
     for (let i = 35; i >= 0; i--) {
-      let talent = Build.installedTalents[i];
+      let talent = effectiveInstalledTalents[i];
       if (talent) {
-        Build.calcStatsFromPower(i);
+        if (!Build.combatModeEnabled) {
+          Build.calcStatsFromPower(i, effectiveInstalledTalents);
+        }
         Build.setStat(talent, true, false);
       }
     }
 
-    Build.applySetAddStatsForInstalledTalents(Build.installedTalents);
+    // Итоговая мощь: последний calcStatsFromPower(i) шёл до setStat слота i — в heroPower не хватало этого таланта.
+    // Пересчитываем один раз при полном Build.heroPower, как в боевом режиме при полной сумме мощи.
+    if (!Build.combatModeEnabled) {
+      Build.calcStatsFromPower(0, effectiveInstalledTalents);
+    }
+
+    Build.applySetAddStatsForInstalledTalents(effectiveInstalledTalents);
+    if (Build.combatModeEnabled) {
+      Build.applyCombatModeHeroStatsFromPower();
+    }
+  }
+
+  /** Мощь таланта по редкости/заточке (как в setStat). */
+  static getTalentRarityPowerContribution(talent) {
+    if (!talent) return 0;
+    const talentPowerByRarity = {
+      4: Build.talentPowerByRarityFirstLevel[4] + Build.talentPowerByRarityPerLevel[4] * (Build.talentRefineByRarity[4] - 1),
+      3: Build.talentPowerByRarityFirstLevel[3] + Build.talentPowerByRarityPerLevel[3] * (Build.talentRefineByRarity[3] - 1),
+      2: Build.talentPowerByRarityFirstLevel[2] + Build.talentPowerByRarityPerLevel[2] * (Build.talentRefineByRarity[2] - 1),
+      1: Build.talentPowerByRarityFirstLevel[1] + Build.talentPowerByRarityPerLevel[1] * (Build.talentRefineByRarity[1] - 1),
+      0: Build.talentPowerByRarityFirstLevel[0] + Build.talentPowerByRarityPerLevel[0] * (Build.talentRefineByRarity[4] - 1),
+    };
+    return 'rarity' in talent ? talentPowerByRarity[talent.rarity] : talentPowerByRarity[0];
+  }
+
+  /**
+   * Боевой режим: вклад мощи в статы героя.
+   * Сначала по полному билду считаются heroPowerFull и сумма весов строк (позиция на сетке),
+   * от m = heroPowerFull * sumWeightFull получаем «чистый» стат от мощи (как раньше по формуле),
+   * затем к базе идут только доли: statPowerFull * вес_строки_таланта для каждого изученного таланта (уровень строки = talent.level).
+   */
+  static applyCombatModeHeroStatsFromPower() {
+    const w = Build.TALENT_POWER_LINE_WEIGHTS;
+    const full = Build.installedTalents || [];
+    let heroPowerFull = 0;
+    let sumWeightFull = 0;
+    for (let i = 35; i >= 0; i--) {
+      const t = full[i];
+      if (!t) continue;
+      heroPowerFull += Build.getTalentRarityPowerContribution(t);
+      const gridLine = Math.floor((35 - i) / 6);
+      const wl = w[gridLine];
+      if (Number.isFinite(wl)) sumWeightFull += wl;
+    }
+    const mFull = heroPowerFull * sumWeightFull;
+    const q = Build.heroPowerModifier;
+    let sumLearnedLineWeights = 0;
+    for (const slot of Build.combatModeLearnedSlots) {
+      const t = full[slot];
+      if (!t) continue;
+      const rowIdx = Math.max(0, Math.min(5, (Number(t.level) || 1) - 1));
+      const wl = w[rowIdx];
+      if (Number.isFinite(wl)) sumLearnedLineWeights += wl;
+    }
+    for (let stat in Build.heroStatsFromPower) {
+      let Lvl = Number(Build.heroStatMods[stat]);
+      if (!Number.isFinite(Lvl)) Lvl = 0;
+      const statPowerFull = Lvl * (0.6 * q * (mFull / 10.0 - 16.0) + 36.0);
+      Build.heroStatsFromPower[stat] = statPowerFull * sumLearnedLineWeights;
+    }
   }
 
   static normalizeSetAddStatsRules(addStats) {
@@ -2569,8 +3094,13 @@ export class Build {
 
     for (let key2 in Build.dataStats) {
       if (key2 === 'talentCdPct') continue;
-      const total = Build.totalStat(key2);
+      let total = Build.totalStat(key2);
       if (key2 === 'regenhp' || key2 === 'regenmp') {
+        if (key2 === 'regenhp') {
+          total += Build.totalStat('hp') * Build.REGEN_HP_FROM_MAX_HP_PCT;
+        } else {
+          total += Build.totalStat('mp') * Build.REGEN_MP_FROM_MAX_MP_PCT;
+        }
         Build.dataStats[key2].lastChild.innerText = Build.formatRegenStatDisplay(total);
       } else {
         Build.dataStats[key2].lastChild.innerText = Math.round(total);
@@ -2632,20 +3162,13 @@ export class Build {
     }
   }
 
-  static calcStatsFromPower(maxTalentId) {
-    const talentPowerByLine = {
-      5: 33.0 / 600.0,
-      4: 23.0 / 600.0,
-      3: 16.0 / 600.0,
-      2: 13.0 / 600.0,
-      1: 9.0 / 600.0,
-      0: 6.0 / 600.0,
-    };
+  static calcStatsFromPower(maxTalentId, installedTalents = Build.installedTalents) {
+    const talentPowerByLine = Build.TALENT_POWER_LINE_WEIGHTS;
 
     Build.heroPowerFromInstalledTalents = 0.0;
 
     for (let i = 35; i >= 0 && i >= maxTalentId; i--) {
-      let talent = Build.installedTalents[i];
+      let talent = installedTalents[i];
       if (talent) {
         let line = Math.floor((35 - i) / 6);
         Build.heroPowerFromInstalledTalents += talentPowerByLine[line];
@@ -2831,6 +3354,15 @@ export class Build {
     }
   }
 
+  static isMainHeroClassTalent(talent) {
+    const mainTalentId = Math.abs(Number(getMainHeroTalentId(Build.heroId)));
+    if (!Number.isFinite(mainTalentId) || mainTalentId <= 0) return false;
+    const rawTalentId = Number(talent?.id);
+    if (!Number.isFinite(rawTalentId) || rawTalentId >= 0) return false; // only heroic/class talents
+    const classTalentId = Math.abs(rawTalentId);
+    return classTalentId === mainTalentId;
+  }
+
   static level() {
     let i = 6;
     for (const number of ['VI', 'V', 'IV', 'III', 'II', 'I']) {
@@ -2968,6 +3500,7 @@ export class Build {
     }
 
     Build.updateHeroStats();
+    Build.renderCombatOrderBadges();
   }
 
   static templateViewTalent(data) {
@@ -3008,6 +3541,12 @@ export class Build {
     Build.move(talent);
 
     Build.description(talent);
+    talent.addEventListener('click', (event) => {
+      Build.handleCombatTalentClick(talent, event);
+    });
+    talent.addEventListener('contextmenu', (event) => {
+      Build.handleCombatTalentContextMenu(talent, event);
+    });
 
     if (data.level == 0) {
       talent.style.display = 'none';
@@ -3395,12 +3934,106 @@ export class Build {
     } catch {}
   }
 
+  static clearStatFilterHoverHighlightOnSets() {
+    try {
+      Build.setsListView?.querySelectorAll('.build-set-item.build-stat-filter-hover-set').forEach((el) => {
+        el.classList.remove('build-stat-filter-hover-set');
+      });
+    } catch {}
+  }
+
+  static heroRowMatchesResolvedSetStatKey(heroRowKey, resolvedSetStatKey) {
+    const key = Build.resolveConditionalStatKey(Build.resolveCompositeStatAlias(resolvedSetStatKey));
+    if (!key) return false;
+    if (heroRowKey === 'critProb' && key === 'crit') return true;
+    const rowKeys = Build.getHeroStatRowFilterStatKeys(heroRowKey);
+    for (const rowKey of rowKeys) {
+      const normalizedRowKey = Build.resolveConditionalStatKey(Build.resolveCompositeStatAlias(rowKey));
+      if (normalizedRowKey === key) return true;
+    }
+    return false;
+  }
+
+  static applyStatFilterHoverHighlightOnSets(heroRowKey) {
+    Build.clearStatFilterHoverHighlightOnSets();
+    if (!Build.setsListView) return;
+    const rendered = Array.isArray(Build._renderedSetEntries) ? Build._renderedSetEntries : [];
+    if (!rendered.length) return;
+
+    const installedIds = new Set();
+    for (const talent of Build.installedTalents || []) {
+      const tid = Math.abs(Number(talent?.id));
+      if (Number.isFinite(tid) && tid > 0) installedIds.add(tid);
+    }
+    if (!installedIds.size) return;
+
+    for (const entry of rendered) {
+      const set = entry?.set;
+      const item = entry?.item;
+      if (!set || !item || !item.isConnected) continue;
+
+      const setIds = TalentSets.getTalentIds(set)
+        .map((id) => Math.abs(Number(id)))
+        .filter((id) => Number.isFinite(id) && id > 0);
+      if (!setIds.length) continue;
+
+      let count = 0;
+      for (const id of setIds) {
+        if (installedIds.has(id)) count++;
+      }
+      if (count <= 0) continue;
+
+      const requiredMain = Number(set?.mainNeed);
+      if (Number.isFinite(requiredMain) && requiredMain > 0 && !installedIds.has(Math.abs(requiredMain))) {
+        continue;
+      }
+
+      const rules = Build.normalizeSetAddStatsRules(set?.addStats);
+      let matched = false;
+      for (const rule of rules) {
+        if (count < rule.need) continue;
+        const stats = rule?.stats;
+        if (!stats || typeof stats !== 'object') continue;
+
+        let speeddTotal = 0;
+        for (const [rawKey, rawValue] of Object.entries(stats)) {
+          const value = Number(rawValue);
+          if (!Number.isFinite(value) || value === 0) continue;
+          const resolvedStatKey = Build.resolveConditionalStatKey(Build.resolveCompositeStatAlias(rawKey));
+          if (!resolvedStatKey) continue;
+          if (resolvedStatKey === 'speedd') {
+            speeddTotal += value;
+            continue;
+          }
+          if (Build.heroRowMatchesResolvedSetStatKey(heroRowKey, resolvedStatKey)) {
+            matched = true;
+            break;
+          }
+        }
+        if (matched) break;
+
+        if (speeddTotal !== 0 && Build.heroRowMatchesResolvedSetStatKey(heroRowKey, 'speed')) {
+          let mainId = Number(set?.mainNeed);
+          if (!Number.isFinite(mainId) || mainId <= 0) mainId = Number(TalentSets.chooseMainTalentId(set));
+          mainId = Math.abs(mainId);
+          if (Number.isFinite(mainId) && mainId > 0 && installedIds.has(mainId)) {
+            matched = true;
+            break;
+          }
+        }
+      }
+
+      if (matched) item.classList.add('build-stat-filter-hover-set');
+    }
+  }
+
   static clearStatFilterHoverHighlightOnBuild() {
     try {
       Build.fieldView
         ?.querySelectorAll('.build-talent-item.build-stat-filter-hover')
         .forEach((el) => el.classList.remove('build-stat-filter-hover'));
     } catch {}
+    Build.clearStatFilterHoverHighlightOnSets();
     Build._statFilterHoverRowKey = null;
     Build.refreshStatFilterHighlightCountDisplay();
   }
@@ -3427,6 +4060,7 @@ export class Build {
         if (!t) continue;
         if (Build.statRowMatchesTalentByFilterKeysOnly(heroRowKey, t)) highlightAt(index);
       }
+      Build.applyStatFilterHoverHighlightOnSets(heroRowKey);
       Build.refreshStatFilterHighlightCountDisplay();
       return;
     }
@@ -3438,6 +4072,7 @@ export class Build {
         if (Build.statRowMatchesTalentForHighlight(heroRowKey, t, index)) highlightAt(index);
       }
       Build.recomputeTalentCalculationTotals();
+      Build.applyStatFilterHoverHighlightOnSets(heroRowKey);
       Build.refreshStatFilterHighlightCountDisplay();
       return;
     }
@@ -3458,6 +4093,7 @@ export class Build {
       }
     }
     Build.recomputeTalentCalculationTotals();
+    Build.applyStatFilterHoverHighlightOnSets(heroRowKey);
     Build.refreshStatFilterHighlightCountDisplay();
   }
 
@@ -3746,6 +4382,62 @@ export class Build {
     } catch {}
   }
 
+  static formatCooldownValue(value) {
+    const num = Number(value);
+    if (!Number.isFinite(num)) return null;
+    const rounded = Math.round(num * 10) / 10;
+    if (Math.abs(rounded - Math.round(rounded)) < 1e-9) return String(Math.round(rounded));
+    return String(rounded).replace(/\.0$/, '');
+  }
+
+  static applyCooldownReductionToDescriptionMarkup() {
+    if (!Build.descriptionView) return;
+    const cdNodes = Build.descriptionView.querySelectorAll('cd');
+    if (!cdNodes.length) return;
+
+    const rawPct = Number(Build.totalStat('speedtal'));
+    const cdPct = Number.isFinite(rawPct) ? Math.max(0, Math.min(100, rawPct)) : 0;
+    if (cdPct <= 0) return;
+
+    for (const cdNode of cdNodes) {
+      const source = String(cdNode.textContent || '').trim();
+      let base = NaN;
+      const explicit = source.match(/^([0-9]+(?:[.,][0-9]+)?)$/);
+      if (explicit) {
+        base = Number(String(explicit[1]).replace(',', '.'));
+      } else if (!source) {
+        const parent = cdNode.parentElement;
+        if (parent) {
+          const textNodes = Array.from(parent.childNodes).filter((n) => n !== cdNode && n.nodeType === 3);
+          const rawNeighborNumber = textNodes
+            .map((n) => String(n.textContent || ''))
+            .join('')
+            .trim();
+          const implicit = rawNeighborNumber.match(/^([0-9]+(?:[.,][0-9]+)?)$/);
+          if (implicit) {
+            base = Number(String(implicit[1]).replace(',', '.'));
+            for (const tn of textNodes) tn.textContent = '';
+          }
+        }
+      }
+
+      if (!Number.isFinite(base) || base <= 0) continue;
+
+      const reduced = base * (1 - cdPct / 100);
+      const reducedText = Build.formatCooldownValue(reduced);
+      const baseText = Build.formatCooldownValue(base);
+      if (!reducedText || !baseText) continue;
+
+      const leftCd = document.createElement('cd');
+      leftCd.textContent = baseText;
+      const rightCd = document.createElement('cd');
+      rightCd.textContent = reducedText;
+      const fragment = document.createDocumentFragment();
+      fragment.append(leftCd, document.createTextNode(' -> '), rightCd);
+      cdNode.replaceWith(fragment);
+    }
+  }
+
   static renderDescriptionHtml({ html, anchorEl, anchorRect, talentDataForParams }) {
     if (!Build.descriptionView) return;
     Build.descriptionView.innerHTML = html || '';
@@ -3754,6 +4446,7 @@ export class Build {
     if (talentDataForParams) {
       Build.applyTalentParamsToDescription(talentDataForParams);
     }
+    Build.applyCooldownReductionToDescriptionMarkup();
 
     const rect = anchorRect || anchorEl?.getBoundingClientRect?.();
     if (rect) Build.scheduleDescriptionReposition(rect);
@@ -3804,7 +4497,7 @@ export class Build {
       const descriptionKey = `${prefix}${absId}_description`;
       const mainName = Lang.text(nameKey);
       const desc = Lang.text(descriptionKey);
-      mainDesc = `<div><b>${mainName}</b><br><br>${desc}</div>`;
+      mainDesc = `<div class="build-set-main-desc"><b>${mainName}</b><br><br>${desc}</div>`;
     }
 
     let lmbHint = Lang.text('setHintLmb');
@@ -4371,6 +5064,7 @@ export class Build {
   static renderTalentSetsList() {
     if (!Build.setsListView) return;
     Build.setsListView.replaceChildren();
+    Build._renderedSetEntries = [];
 
     if (!Build._setsHoverMonitorInstalled) {
       Build._setsHoverMonitorInstalled = true;
@@ -4404,6 +5098,7 @@ export class Build {
 
       const item = DOM({ style: 'build-set-item' });
       item.style.backgroundImage = `url("${src}")`;
+      Build._renderedSetEntries.push({ set, item });
 
       const ids = TalentSets.getTalentIds(set);
       item.addEventListener('mouseenter', () => {
@@ -4461,6 +5156,7 @@ export class Build {
       });
       item.addEventListener('contextmenu', (e) => {
         e.preventDefault();
+        if (Build.combatModeEnabled) return;
         try {
           Sound.play(SOUNDS_LIBRARY.CLICK, { id: 'ui-set-down', volume: Castle.GetVolume(Castle.AUDIO_SOUNDS) });
         } catch {}
@@ -4484,6 +5180,9 @@ export class Build {
 
       Build.setsListView.append(item);
     }
+    if (Build._statFilterHoverRowKey) {
+      Build.applyStatFilterHoverHighlightOnSets(Build._statFilterHoverRowKey);
+    }
   }
 
   static rarity() {
@@ -4493,15 +5192,44 @@ export class Build {
       { id: '2', name: Lang.text('titleThePurple'), color: '205,0,205' },
       { id: '1', name: Lang.text('titleTheBlue'), color: '17,105,237' },
     ];
+    const rarityImageBaseById = {
+      4: 'red',
+      3: 'orange',
+      2: 'purple',
+      1: 'blue',
+    };
+    const applyActiveFilterVisualByState = (button, isActive) => {
+      if (!button) return;
+      const suffix = isActive ? 'Show' : 'NoShow';
+      button.style.backgroundImage = `url("content/img/active${suffix}.png")`;
+      button.style.backgroundColor = 'transparent';
+      button.style.backgroundRepeat = 'no-repeat';
+      button.style.backgroundPosition = 'center';
+      button.style.backgroundSize = 'cover';
+      button.style.filter = isActive
+        ? 'brightness(1.04) saturate(2.02) drop-shadow(0 0 0.45cqh rgba(255,255,255,0.35))'
+        : 'none';
+    };
+    const applyRarityVisualByState = (button, rarityId, isActive) => {
+      const base = rarityImageBaseById[Number(rarityId)];
+      if (!base || !button) return;
+      const suffix = isActive ? 'Show' : 'NoShow';
+      button.style.backgroundImage = `url("content/img/${base}${suffix}.png")`;
+      button.style.backgroundColor = 'transparent';
+      button.style.backgroundRepeat = 'no-repeat';
+      button.style.backgroundPosition = 'center';
+      button.style.backgroundSize = 'cover';
+    };
 
     let a = document.createElement('div');
     a.title = Lang.text('titleActiveTalents');
 
     a.classList.add('build-rarity-other');
 
-    a.innerText = 'А';
+    a.innerText = '';
 
     a.dataset.active = 0;
+    applyActiveFilterVisualByState(a, false);
 
     a.addEventListener('click', (e) => {
       Sound.play(SOUNDS_LIBRARY.CLICK_BUTTON_PRESS_SMALL, {
@@ -4509,21 +5237,19 @@ export class Build {
         volume: Castle.GetVolume(Castle.AUDIO_SOUNDS),
       });
       if (a.dataset.active == 1) {
-        a.style.background = 'rgba(255,255,255,0.1)';
-
         Build.removeSortInventory('active', '1');
 
         Build.sortInventory();
 
         a.dataset.active = 0;
+        applyActiveFilterVisualByState(a, false);
       } else {
-        a.style.background = 'rgba(153,255,51,0.7)';
-
         Build.setSortInventory('active', '1');
 
         Build.sortInventory();
 
         a.dataset.active = 1;
+        applyActiveFilterVisualByState(a, true);
       }
     });
 
@@ -4539,18 +5265,21 @@ export class Build {
       }
 
       for (let l = 0; l < a.parentElement.childNodes.length; l++) {
-        a.parentElement.childNodes[l].dataset.active = 0;
-        a.parentElement.childNodes[l].style.border = 'none';
+        const node = a.parentElement.childNodes[l];
+        node.dataset.active = 0;
+        node.style.border = 'none';
+        if (node !== a) {
+          applyRarityVisualByState(node, node?.dataset?.rarityId, false);
+        }
       }
-      a.style.background = 'rgba(255,255,255,0.1)';
+      applyActiveFilterVisualByState(a, false);
 
       Build.setSortInventory('active', '1');
 
       Build.sortInventory();
 
       a.dataset.active = 1;
-
-      a.style.background = 'rgba(153,255,51,0.7)';
+      applyActiveFilterVisualByState(a, true);
     });
 
     Build.rarityView.append(a);
@@ -4561,6 +5290,7 @@ export class Build {
       button.dataset.active = 0;
 
       button.style.boxSizing = 'border-box';
+      button.dataset.rarityId = item.id;
 
       button.addEventListener('click', (e) => {
         Sound.play(SOUNDS_LIBRARY.CLICK_BUTTON_PRESS_SMALL, {
@@ -4575,14 +5305,16 @@ export class Build {
           Build.sortInventory();
 
           button.dataset.active = 0;
+          applyRarityVisualByState(button, item.id, false);
         } else {
-          button.style.border = 'solid calc(min(0.5cqh, 1cqw)) rgb(153,255,51)';
+          button.style.border = 'none';
 
           Build.setSortInventory('rarity', item.id);
 
           Build.sortInventory();
 
           button.dataset.active = 1;
+          applyRarityVisualByState(button, item.id, true);
         }
       });
 
@@ -4595,10 +5327,14 @@ export class Build {
         Build.removeSortInventory('active', '1');
 
         for (let l = 0; l < button.parentElement.childNodes.length; l++) {
-          button.parentElement.childNodes[l].dataset.active = 0;
-          button.parentElement.childNodes[l].style.border = 'none';
+          const node = button.parentElement.childNodes[l];
+          node.dataset.active = 0;
+          node.style.border = 'none';
+          if (node !== a) {
+            applyRarityVisualByState(node, node?.dataset?.rarityId, false);
+          }
         }
-        a.style.background = 'rgba(255,255,255,0.1)';
+        applyActiveFilterVisualByState(a, false);
 
         Build.setSortInventory('rarity', item.id);
 
@@ -4606,10 +5342,11 @@ export class Build {
 
         button.dataset.active = 1;
 
-        button.style.border = 'solid calc(min(0.5cqh, 1cqw)) rgb(153,255,51)';
+        button.style.border = 'none';
+        applyRarityVisualByState(button, item.id, true);
       });
 
-      button.style.background = `rgba(${item.color},0.6)`;
+      applyRarityVisualByState(button, item.id, false);
 
       button.title = Lang.text('talentQualityTitle').replace('{name}', item.name);
 
@@ -5051,6 +5788,11 @@ export class Build {
 
     element.onmousedown = (event) => {
       if (event.button != 0) return;
+      if (Build.combatModeEnabled) {
+        event.preventDefault();
+        event.stopPropagation();
+        return;
+      }
 
       let moveStart = Date.now();
       if (!Build._descriptionPinnedBySet) Build.descriptionView.style.display = 'none';
@@ -5298,6 +6040,14 @@ export class Build {
                 } else {
                   if (performSwapFromLibrary) {
                     swappingTal = Build.installedTalents[parseInt(elemBelow.dataset.position)];
+                    if (Build.isMainHeroClassTalent(swappingTal)) {
+                      App.notify(Lang.text('mainHeroClassTalentLocked'));
+                      elementSetDisplay(element, 'block');
+                      fieldRow.style.background = '';
+                      element.style.position = 'static';
+                      element.style.zIndex = 'auto';
+                      return;
+                    }
                   }
                   Build.installedTalents[parseInt(elemBelow.dataset.position)] = data;
                   Build.installedTalents[parseInt(swapParentNode.dataset.position)] = null;
@@ -5426,6 +6176,14 @@ export class Build {
 
           if (elemBelow && targetElement.className == 'build-talents' && element.dataset.state != 1) {
             let oldParentNode = element.parentNode;
+            if (Build.isMainHeroClassTalent(data)) {
+              App.notify(Lang.text('mainHeroClassTalentLocked'));
+              elementSetDisplay(element, 'block');
+              fieldRow.style.background = '';
+              element.style.position = 'static';
+              element.style.zIndex = 'auto';
+              return;
+            }
 
             element.dataset.state = 1;
 
@@ -5571,6 +6329,7 @@ export class Build {
         } catch {}
 
         Build.updateHeroStats();
+        Build.syncCombatModeButtonState();
 
         fieldRow.style.background = '';
 

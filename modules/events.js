@@ -124,6 +124,14 @@ export class Events {
 
     MM.select(data);
   }
+  
+  static MMSyncHeroes(data) {
+    if (!NativeAPI.status) {
+      return;
+    }
+    
+    MM.syncHeroes(data);
+  }
 
   static MMEnd(data) {
     if (!NativeAPI.status) {
@@ -211,6 +219,10 @@ export class Events {
     setTimeout(() => {
       MM.searchActive(false);
     }, 1000);
+    
+    if ((data && Number(data.noWarning) === 1) || data?.noWarning === true) {
+      return;
+    }
 
     let body = document.createDocumentFragment();
 
@@ -249,7 +261,7 @@ export class Events {
 
 
   static async VCall(data) {
-    if (data.isCaller) {
+    if (data.isCaller && Number(data?.reconnect || 0) !== 1) {
       let playCallSoundLoop = () => {
         Sound.stop('ui-call');
         Sound.play(
@@ -283,6 +295,10 @@ export class Events {
 
   static async VCandidate(data) {
     await Voice.candidate(data.id, data.candidate);
+  }
+
+  static async VDrop(data) {
+    await Voice.remoteDrop(data.id);
   }
 
   static VKick() {
