@@ -28,6 +28,8 @@ export class Build {
   static BUILD_HIGHLIGHT_BORDER_MM_MAX = 1.5;
   static REGEN_HP_FROM_MAX_HP_PCT = 0.0015; // 0.15%
   static REGEN_MP_FROM_MAX_MP_PCT = 0.0036; // 0.36%
+  // Max talent cooldown reduction percent shown in build hero stats and used in CD calculations.
+  static TALENT_COOLDOWN_PCT_MAX = 40;
 
   /** span с числом подсвеченных по стат-фильтру талантов (см. .build-hero-stats-highlight-count). */
   static statFilterHighlightCountValueEl = null;
@@ -2039,7 +2041,11 @@ export class Build {
       else speedAdd = Number(speedAdd);
       talentsStat += speedAdd;
     }
-    return initialStat + talentsStat + powerStat;
+    let total = initialStat + talentsStat + powerStat;
+    if (stat === 'speedtal') {
+      total = Math.max(0, Math.min(Build.TALENT_COOLDOWN_PCT_MAX, total));
+    }
+    return total;
   }
 
   static hero(data) {
@@ -2950,12 +2956,28 @@ export class Build {
   }
 
   static applyCalculatedStatDelta(calcKey, statChange) {
+    calcKey = Build.remapTalentStatKeyForHeroResource(calcKey);
+    if (!calcKey) return;
     if (!(calcKey in Build.calculationStats)) return;
     if (calcKey === 'speed') {
       Build.calculationStats[calcKey] = Math.max(Build.calculationStats[calcKey], statChange);
       return;
     }
     Build.calculationStats[calcKey] += statChange;
+  }
+
+  static heroHasZeroBaseEnergy() {
+    const baseMp = Number(Build.initialStats?.mp);
+    return Number.isFinite(baseMp) && Math.abs(baseMp) < 1e-9;
+  }
+
+  static remapTalentStatKeyForHeroResource(statKey) {
+    if (!statKey) return statKey;
+    if (!Build.heroHasZeroBaseEnergy()) return statKey;
+    if (statKey === 'mp') return null;
+    if (statKey === 'regenmp') return 'regenhp';
+    if (statKey === 'regenmpvz') return 'regenhpvz';
+    return statKey;
   }
 
   static resolveConditionalStatKey(rawKey) {
@@ -3027,7 +3049,7 @@ export class Build {
     const installedIds = new Set();
     for (const talent of installedTalents || []) {
       const tid = Number(talent?.id);
-      if (Number.isFinite(tid) && tid !== 0) installedIds.add(Math.abs(tid));
+      if (Number.isFinite(tid) && tid !== 0) installedIds.add(tid);
     }
     if (!installedIds.size) return;
 
@@ -3035,8 +3057,8 @@ export class Build {
     const sets = TalentSets.list();
     for (const set of sets) {
       const setIds = TalentSets.getTalentIds(set)
-        .map((id) => Math.abs(Number(id)))
-        .filter((id) => Number.isFinite(id) && id > 0);
+        .map((id) => Number(id))
+        .filter((id) => Number.isFinite(id) && id !== 0);
       if (!setIds.length) continue;
 
       let count = 0;
@@ -3046,7 +3068,7 @@ export class Build {
       if (count <= 0) continue;
 
       const requiredMain = Number(set?.mainNeed);
-      if (Number.isFinite(requiredMain) && requiredMain > 0 && !installedIds.has(Math.abs(requiredMain))) {
+      if (Number.isFinite(requiredMain) && requiredMain !== 0 && !installedIds.has(requiredMain)) {
         continue;
       }
 
@@ -3068,8 +3090,7 @@ export class Build {
             if (!Number.isFinite(mainId) || mainId <= 0) {
               mainId = Number(TalentSets.chooseMainTalentId(set));
             }
-            mainId = Math.abs(mainId);
-            if (Number.isFinite(mainId) && mainId > 0 && installedIds.has(mainId)) {
+            if (Number.isFinite(mainId) && mainId !== 0 && installedIds.has(mainId)) {
               const prev = Number(mainTalentSpeedBonusById.get(mainId)) || 0;
               mainTalentSpeedBonusById.set(mainId, prev + speedDeltaResolved);
             }
@@ -3312,7 +3333,9 @@ export class Build {
     // Apply animation and change stats in Build.calculationStats
     for (let key2 in add) {
       let statChange = parseFloat(add[key2]);
-      const resolvedKey = Build.resolveConditionalStatKey(key2);
+      const resolvedRawKey = Build.resolveConditionalStatKey(key2);
+      const resolvedKey = Build.remapTalentStatKeyForHeroResource(resolvedRawKey);
+      if (!resolvedKey) continue;
       if (resolvedKey === 'speed') {
         hasSpeedCandidate = true;
         if (Number.isFinite(statChange)) speedBaseCandidate = Math.max(speedBaseCandidate, statChange);
@@ -3325,12 +3348,18 @@ export class Build {
         calcualteSpecialStats(resolvedKey, statChange);
       }
 
-      if (!(key2 in Build.dataStats)) {
+      const animationKey =
+        resolvedKey in Build.dataStats
+          ? resolvedKey
+          : key2 in Build.dataStats
+            ? key2
+            : null;
+      if (!animationKey) {
         continue;
       }
 
       if (animation) {
-        Build.dataStats[key2].animate(
+        Build.dataStats[animationKey].animate(
           { transform: ['scale(1)', 'scale(1.5)', 'scale(1)'] },
           { duration: 250, fill: 'both', easing: 'ease-out' },
         );
@@ -3962,8 +3991,8 @@ export class Build {
 
     const installedIds = new Set();
     for (const talent of Build.installedTalents || []) {
-      const tid = Math.abs(Number(talent?.id));
-      if (Number.isFinite(tid) && tid > 0) installedIds.add(tid);
+      const tid = Number(talent?.id);
+      if (Number.isFinite(tid) && tid !== 0) installedIds.add(tid);
     }
     if (!installedIds.size) return;
 
@@ -3973,8 +4002,8 @@ export class Build {
       if (!set || !item || !item.isConnected) continue;
 
       const setIds = TalentSets.getTalentIds(set)
-        .map((id) => Math.abs(Number(id)))
-        .filter((id) => Number.isFinite(id) && id > 0);
+        .map((id) => Number(id))
+        .filter((id) => Number.isFinite(id) && id !== 0);
       if (!setIds.length) continue;
 
       let count = 0;
@@ -3984,7 +4013,7 @@ export class Build {
       if (count <= 0) continue;
 
       const requiredMain = Number(set?.mainNeed);
-      if (Number.isFinite(requiredMain) && requiredMain > 0 && !installedIds.has(Math.abs(requiredMain))) {
+      if (Number.isFinite(requiredMain) && requiredMain !== 0 && !installedIds.has(requiredMain)) {
         continue;
       }
 
@@ -4015,8 +4044,7 @@ export class Build {
         if (speeddTotal !== 0 && Build.heroRowMatchesResolvedSetStatKey(heroRowKey, 'speed')) {
           let mainId = Number(set?.mainNeed);
           if (!Number.isFinite(mainId) || mainId <= 0) mainId = Number(TalentSets.chooseMainTalentId(set));
-          mainId = Math.abs(mainId);
-          if (Number.isFinite(mainId) && mainId > 0 && installedIds.has(mainId)) {
+          if (Number.isFinite(mainId) && mainId !== 0 && installedIds.has(mainId)) {
             matched = true;
             break;
           }
@@ -4289,19 +4317,48 @@ export class Build {
           if (paramIterator >= params.length) return;
 
           const param = params[paramIterator];
-          const paramValues = String(param || '').split(',');
+          const paramValues = String(param || '')
+            .split(',')
+            .map((value) => String(value).trim());
 
           let statAffection, minValue, maxValue;
-          if (paramValues.length == 5) {
+          let dynamicByStat = false;
+          let optionalTokens = new Array();
+          if (paramValues.length >= 5) {
             minValue = parseFloat(paramValues[1]);
             maxValue = parseFloat(paramValues[2]);
             statAffection = paramValues[4];
-          } else if (paramValues.length == 3) {
+            dynamicByStat = true;
+            optionalTokens = paramValues.slice(5);
+          } else if (paramValues.length >= 3) {
             minValue = parseFloat(paramValues[0]);
             maxValue = parseFloat(paramValues[1]);
             statAffection = paramValues[2];
+            optionalTokens = paramValues.slice(3);
           } else {
             continue;
+          }
+
+          if (!Number.isFinite(minValue) || !Number.isFinite(maxValue) || !statAffection) {
+            paramIterator++;
+            continue;
+          }
+
+          let clampMin = null;
+          let clampMax = null;
+          for (const token of optionalTokens) {
+            const rawToken = String(token || '');
+            const minMatch = rawToken.match(/^min\s*:\s*(-?\d+(?:\.\d+)?)$/i);
+            if (minMatch) {
+              const parsed = Number(minMatch[1]);
+              if (Number.isFinite(parsed)) clampMin = parsed;
+              continue;
+            }
+            const maxMatch = rawToken.match(/^max\s*:\s*(-?\d+(?:\.\d+)?)$/i);
+            if (maxMatch) {
+              const parsed = Number(maxMatch[1]);
+              if (Number.isFinite(parsed)) clampMax = parsed;
+            }
           }
 
           let resolvedStatAffection;
@@ -4345,7 +4402,7 @@ export class Build {
             return a + alpha * (b - a);
           }
 
-          let outputString;
+          let outputValue;
           if (statAffection == 'sr_sum' || statAffection == 'ph_sum' || statAffection == 'sv_sum' || statAffection == 'hpmp_sum') {
             let resolvedTotalStat1 = Build.totalStat(resolvedStatAffection1);
             let resolvedTotalStat2 = Build.totalStat(resolvedStatAffection2);
@@ -4356,22 +4413,28 @@ export class Build {
               resolvedStatAffection2 == 'mp';
             const param1 = isHpOrEnergy ? 600.0 : 50.0;
             const param2 = isHpOrEnergy ? 6250.0 : 250.0;
-            outputString = lerp(minValue, maxValue, (resolvedTotalStat1 + resolvedTotalStat2 - param1) / param2).toFixed(1);
-            if (outputString.endsWith('.0')) outputString = outputString.replace('.0', '');
+            outputValue = lerp(minValue, maxValue, (resolvedTotalStat1 + resolvedTotalStat2 - param1) / param2);
           } else {
-            if (resolvedStatAffection in Build.dataStats && paramValues.length == 5) {
+            if (resolvedStatAffection in Build.dataStats && dynamicByStat) {
               let resolvedTotalStat = Build.totalStat(resolvedStatAffection);
               const isHpOrEnergy = resolvedStatAffection == 'hp' || resolvedStatAffection == 'mp';
               const param1 = isHpOrEnergy ? 600.0 : 50.0;
               const param2 = isHpOrEnergy ? 6250.0 : 250.0;
-              outputString = lerp(minValue, maxValue, (resolvedTotalStat - param1) / param2).toFixed(1);
-              if (outputString.endsWith('.0')) outputString = outputString.replace('.0', '');
+              outputValue = lerp(minValue, maxValue, (resolvedTotalStat - param1) / param2);
             } else {
               let refineBonus = Build.getTalentRefineByRarity(talentData.rarity);
-              outputString = (minValue + maxValue * refineBonus).toFixed(1);
-              if (outputString.endsWith('.0')) outputString = outputString.replace('.0', '');
+              outputValue = minValue + maxValue * refineBonus;
             }
           }
+
+          if (!Number.isFinite(outputValue)) {
+            paramIterator++;
+            continue;
+          }
+          if (Number.isFinite(clampMin)) outputValue = Math.min(outputValue, clampMin);
+          if (Number.isFinite(clampMax)) outputValue = Math.max(outputValue, clampMax);
+          let outputString = outputValue.toFixed(1);
+          if (outputString.endsWith('.0')) outputString = outputString.replace('.0', '');
 
           if (specialTag.innerHTML) specialTag.innerHTML = tagString.replace('%s', outputString);
           else outerTag.innerHTML = tagString.replace('%s', outputString);
@@ -4396,7 +4459,7 @@ export class Build {
     if (!cdNodes.length) return;
 
     const rawPct = Number(Build.totalStat('speedtal'));
-    const cdPct = Number.isFinite(rawPct) ? Math.max(0, Math.min(100, rawPct)) : 0;
+    const cdPct = Number.isFinite(rawPct) ? Math.max(0, Math.min(Build.TALENT_COOLDOWN_PCT_MAX, rawPct)) : 0;
     if (cdPct <= 0) return;
 
     for (const cdNode of cdNodes) {
