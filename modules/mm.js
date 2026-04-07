@@ -49,17 +49,37 @@ export class MM {
 
   static gameRunEvent() {
     MM.isInBattle = true;
-    Castle.toggleRender(Castle.RENDER_LAYER_GAME, false);
-    Castle.toggleMusic(Castle.MUSIC_LAYER_GAME, false);
-    document.body.style.display = 'none';
+    try {
+      Castle.toggleRender(Castle.RENDER_LAYER_GAME, false);
+    } catch (error) {
+      console.log('gameRunEvent toggleRender failed:', error);
+    }
+    try {
+      Castle.toggleMusic(Castle.MUSIC_LAYER_GAME, false);
+    } catch (error) {
+      console.log('gameRunEvent toggleMusic failed:', error);
+    }
+    try {
+      document.body.style.display = 'none';
+    } catch (error) {
+      console.log('gameRunEvent body hide failed:', error);
+    }
     try {
       NativeAPI.openVoiceWindow();
     } catch (error) {
       console.log('Voice window init failed:', error);
     }
-    NativeAPI.window.hide();
+    try {
+      NativeAPI.window?.hide?.();
+    } catch (error) {
+      console.log('gameRunEvent native hide failed:', error);
+    }
 
-    NativeAPI.app.unregisterGlobalHotKey(NativeAPI.altEnterShortcut);
+    try {
+      NativeAPI.app?.unregisterGlobalHotKey?.(NativeAPI.altEnterShortcut);
+    } catch (error) {
+      console.log('gameRunEvent hotkey unregister failed:', error);
+    }
   }
 
   static gameStopEvent() {

@@ -397,7 +397,14 @@ export class NativeAPI {
           console.log('Voice window fallback failed: popup not created');
           return;
         }
-        mountVoiceWindow(win);
+        try {
+          mountVoiceWindow(win);
+        } catch (error) {
+          console.log('Voice window fallback mount failed:', error);
+          try {
+            win.close(true);
+          } catch {}
+        }
       });
       if (!fallbackStarted) {
         console.log('Voice window fallback failed: open threw synchronously');
@@ -414,7 +421,15 @@ export class NativeAPI {
         tryFallbackOpen();
         return;
       }
-      mountVoiceWindow(win);
+      try {
+        mountVoiceWindow(win);
+      } catch (error) {
+        console.log('Voice window primary mount failed:', error);
+        try {
+          win.close(true);
+        } catch {}
+        tryFallbackOpen();
+      }
     });
 
     if (!primaryStarted) {
