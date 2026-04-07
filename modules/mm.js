@@ -338,12 +338,7 @@ export class MM {
 
           MM.gameRunEvent();
 
-          PWGame.reconnect(request.id, MM.gameStopEvent).catch((error) => {
-            try {
-              MM.gameStopEvent();
-            } catch {}
-            App.error(error);
-          });
+          PWGame.reconnect(request.id, MM.gameStopEvent);
 
           return;
         }
@@ -1150,12 +1145,7 @@ export class MM {
 
     MM.gameRunEvent();
 
-    PWGame.start(data.key, MM.gameStopEvent).catch((error) => {
-      try {
-        MM.gameStopEvent();
-      } catch {}
-      App.error(error);
-    });
+    PWGame.start(data.key, MM.gameStopEvent);
   }
 
   static eventChangeHero(data) {

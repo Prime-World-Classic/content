@@ -47,44 +47,24 @@ export class PWGame {
       const http = NativeAPI.http;
 
       if (PWGame.protocolServer) {
-        try {
-          PWGame.protocolServer.close(() => {});
-        } catch {}
+        PWGame.protocolServer.close(() => {});
       }
 
-      return await new Promise((resolve) => {
-        let settled = false;
-        const done = (ok) => {
-          if (settled) return;
-          settled = true;
-          resolve(Boolean(ok));
-        };
+      PWGame.protocolServer = http.createServer((req, res) => {
+        if (req.url === '/getConnectionData' && req.method === 'POST') {
+          res.writeHead(200, { 'Content-Type': 'text/plain' });
+          res.end(JSON.stringify({ protocol: PWGame.currentPlayPwProtocol }));
 
-        PWGame.protocolServer = http.createServer((req, res) => {
-          if (req.url === '/getConnectionData' && req.method === 'POST') {
-            res.writeHead(200, { 'Content-Type': 'text/plain' });
-            res.end(JSON.stringify({ protocol: PWGame.currentPlayPwProtocol }));
-          } else {
-            res.writeHead(404, { 'Content-Type': 'text/plain' });
-            res.end('Not Found');
-          }
-        });
-
-        PWGame.protocolServer.once('error', (error) => {
-          console.log('Protocol socket error:', error);
-          done(false);
-        });
-
-        try {
-          PWGame.protocolServer.listen(34980, '127.0.0.1', () => done(true));
-        } catch (error) {
-          console.log('Protocol socket listen failed:', error);
-          done(false);
+          //PWGame.protocolServer.close(() => {});
+        } else {
+          res.writeHead(404, { 'Content-Type': 'text/plain' });
+          res.end('Not Found');
         }
       });
+
+      PWGame.protocolServer.listen(34980, '127.0.0.1', () => {});
     } catch (e) {
       App.error(e, 30000);
-      return false;
     }
   }
 
@@ -101,10 +81,7 @@ export class PWGame {
 
     PWGame.currentPlayPwProtocol = PWGame.GetPlayPwProtocol(id);
 
-    const protocolSocketReady = await PWGame.openProtocolSocket();
-    if (!protocolSocketReady) {
-      throw 'Не удалось открыть локальный сокет игры (127.0.0.1:34980). Закройте второй лаунчер/игру и попробуйте снова.';
-    }
+    PWGame.openProtocolSocket();
 
     if (NativeAPI.platform == 'linux') {
       let spawn = await NativeAPI.childProcess.exec(PWGame.LUTRIS_EXEC);
