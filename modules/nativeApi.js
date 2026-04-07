@@ -260,8 +260,22 @@ export class NativeAPI {
       Math.max(560, Math.round(760 * monitorScale)),
     );
     const popupCssHref = new URL('content/main.css', window.location.href).href;
+    const baseWindowOptions = {
+      frame: false,
+      show: true,
+      focus: false,
+      show_in_taskbar: true,
+      always_on_top: false,
+      resizable: false,
+      width,
+      height,
+      position: 'center',
+    };
 
     const mountVoiceWindow = (win) => {
+      if (!win) {
+        return;
+      }
       NativeAPI.voiceWindow = win;
 
       const mountPanel = () => {
@@ -362,32 +376,49 @@ export class NativeAPI {
       });
     };
 
-    const openOptions = (transparentEnabled) => ({
-      frame: false,
-      show: true,
-      focus: false,
-      show_in_taskbar: true,
-      always_on_top: false,
-      transparent: Boolean(transparentEnabled),
-      resizable: false,
-      width,
-      height,
-      position: 'center',
-    });
+    const safeOpenVoicePopup = (options, onReady) => {
+      try {
+        nw.Window.open('about:blank', options, (win) => onReady(win || null));
+        return true;
+      } catch (error) {
+        console.log('Voice window open failed:', error);
+        return false;
+      }
+    };
 
-    try {
-      nw.Window.open('about:blank', openOptions(true), (win) => {
+    const fallbackWindowOptions = {
+      ...baseWindowOptions,
+      transparent: false,
+    };
+
+    const tryFallbackOpen = () => {
+      const fallbackStarted = safeOpenVoicePopup(fallbackWindowOptions, (win) => {
         if (!win) {
-          throw new Error('NW open returned empty window');
+          console.log('Voice window fallback failed: popup not created');
+          return;
         }
         mountVoiceWindow(win);
       });
-    } catch (error) {
-      console.log('Voice transparent window failed, fallback to opaque:', error);
-      nw.Window.open('about:blank', openOptions(false), (win) => {
-        if (!win) return;
-        mountVoiceWindow(win);
-      });
+      if (!fallbackStarted) {
+        console.log('Voice window fallback failed: open threw synchronously');
+      }
+    };
+
+    const primaryWindowOptions = {
+      ...baseWindowOptions,
+      transparent: true,
+    };
+
+    const primaryStarted = safeOpenVoicePopup(primaryWindowOptions, (win) => {
+      if (!win) {
+        tryFallbackOpen();
+        return;
+      }
+      mountVoiceWindow(win);
+    });
+
+    if (!primaryStarted) {
+      tryFallbackOpen();
     }
   }
 

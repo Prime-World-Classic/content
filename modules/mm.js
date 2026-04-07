@@ -55,7 +55,7 @@ export class MM {
     try {
       NativeAPI.openVoiceWindow();
     } catch (error) {
-      console.log('Voice window open failed, continue game launch:', error);
+      console.log('Voice window init failed:', error);
     }
     NativeAPI.window.hide();
 
