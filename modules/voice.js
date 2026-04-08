@@ -93,6 +93,12 @@ export class Voice {
   static mergeAutoAcceptUntil = new Map();
   
   static battleSuspendedPeers = new Map();
+  
+  static mutedPeers = new Set();
+  
+  static mutedByPeers = new Set();
+  
+  static panelMeterStops = new Set();
 
   static reconnectPlanMs = [2000, 5000, 10000, 15000, 20000];
 
@@ -127,6 +133,70 @@ export class Voice {
 
   static shouldAutoReconnectKey(key) {
     return !!key;
+  }
+
+  static isPeerMuted(id) {
+    const targetId = Number(id);
+    return Number.isFinite(targetId) && targetId > 0 && Voice.mutedPeers.has(targetId);
+  }
+
+  static setPeerMuted(id, muted = true) {
+    const targetId = Number(id);
+    if (!Number.isFinite(targetId) || targetId <= 0) {
+      return;
+    }
+    if (muted) {
+      Voice.mutedPeers.add(targetId);
+    } else {
+      Voice.mutedPeers.delete(targetId);
+    }
+    const target = Voice.manager?.[targetId];
+    if (target?.controller) {
+      target.controller.muted = Boolean(muted);
+    }
+  }
+
+  static togglePeerMuted(id) {
+    const targetId = Number(id);
+    if (!Number.isFinite(targetId) || targetId <= 0) {
+      return;
+    }
+    const nextMuted = !Voice.isPeerMuted(targetId);
+    Voice.setPeerMuted(targetId, nextMuted);
+    App.api
+      .ghost('user', 'callMuteState', {
+        id: targetId,
+        muted: nextMuted ? 1 : 0,
+      })
+      .catch(() => {});
+    Voice.updateInfoPanel();
+  }
+
+  static isMutedByPeer(id) {
+    const targetId = Number(id);
+    return Number.isFinite(targetId) && targetId > 0 && Voice.mutedByPeers.has(targetId);
+  }
+
+  static setMutedByPeer(id, muted = true) {
+    const targetId = Number(id);
+    if (!Number.isFinite(targetId) || targetId <= 0) {
+      return;
+    }
+    if (muted) {
+      Voice.mutedByPeers.add(targetId);
+    } else {
+      Voice.mutedByPeers.delete(targetId);
+    }
+    Voice.updateInfoPanel();
+  }
+
+  static stopPanelMeters() {
+    for (const stop of Voice.panelMeterStops) {
+      try {
+        stop?.();
+      } catch {}
+    }
+    Voice.panelMeterStops.clear();
   }
 
   static isFriendScopedConnection(target) {
@@ -476,46 +546,85 @@ export class Voice {
   }
 
   static indication(source, callback) {
-    let audioContext = new AudioContext();
+    let audioContext = null;
+    let mediaStreamSource = null;
+    let analyser = null;
+    let processor = null;
+    let zeroGain = null;
+    let stopped = false;
 
-    let mediaStreamSource = audioContext.createMediaStreamSource(source);
-
-    let analyser = audioContext.createAnalyser();
-
-    mediaStreamSource.connect(analyser);
-
-    analyser.fftSize = 256;
-
-    let bufferLength = analyser.frequencyBinCount;
-
-    let dataArray = new Uint8Array(bufferLength);
-
-    let checkVolume = () => {
-      analyser.getByteFrequencyData(dataArray);
-
-      let sum = 0;
-
-      for (let i = 0; i < bufferLength; i++) {
-        sum += dataArray[i];
+    const stop = () => {
+      if (stopped) return;
+      stopped = true;
+      if (processor) {
+        processor.onaudioprocess = null;
       }
-
-      let average = Math.round(sum / bufferLength);
-
-      if (average > 100) {
-        average = 100;
-      }
-
-      if (callback) {
-        callback(average);
-      }
-
-      requestAnimationFrame(checkVolume);
+      try {
+        mediaStreamSource?.disconnect?.();
+      } catch {}
+      try {
+        analyser?.disconnect?.();
+      } catch {}
+      try {
+        processor?.disconnect?.();
+      } catch {}
+      try {
+        zeroGain?.disconnect?.();
+      } catch {}
+      try {
+        audioContext?.close?.();
+      } catch {}
+      mediaStreamSource = null;
+      analyser = null;
+      processor = null;
+      zeroGain = null;
+      audioContext = null;
     };
 
-    checkVolume();
+    try {
+      audioContext = new AudioContext();
+      mediaStreamSource = audioContext.createMediaStreamSource(source);
+      analyser = audioContext.createAnalyser();
+      processor = audioContext.createScriptProcessor(2048, 1, 1);
+      zeroGain = audioContext.createGain();
+      zeroGain.gain.value = 0;
+      mediaStreamSource.connect(analyser);
+      analyser.connect(processor);
+      processor.connect(zeroGain);
+      zeroGain.connect(audioContext.destination);
+      analyser.fftSize = 256;
+
+      const bufferLength = analyser.frequencyBinCount;
+      const dataArray = new Uint8Array(bufferLength);
+
+      processor.onaudioprocess = () => {
+        if (stopped) return;
+        analyser.getByteFrequencyData(dataArray);
+
+        let sum = 0;
+        for (let i = 0; i < bufferLength; i++) {
+          sum += dataArray[i];
+        }
+
+        let average = Math.round(sum / bufferLength);
+        if (average > 100) {
+          average = 100;
+        }
+
+        if (callback) {
+          callback(average);
+        }
+      };
+    } catch (error) {
+      console.log('Voice indication init failed:', error);
+      stop();
+    }
+
+    return stop;
   }
 
   static updateInfoPanel() {
+    Voice.stopPanelMeters();
     const panelBody = Voice.getInfoPanelBody();
     if (!panelBody) return;
     while (panelBody.firstChild) {
@@ -533,9 +642,10 @@ export class Voice {
     } else if (Voice.mic.enabled) {
       level.classList.remove('voice-info-panel-body-item-bar-level-muted');
       bar.classList.remove('voice-info-panel-body-item-nostream');
-      Voice.indication(Voice.userMedia, (percent) => {
+      const stopMeter = Voice.indication(Voice.userMedia, (percent) => {
         level.style.width = `${percent}%`;
       });
+      Voice.panelMeterStops.add(stopMeter);
     } else {
       level.style.width = '0%';
       bar.classList.remove('voice-info-panel-body-item-nostream');
@@ -627,7 +737,7 @@ export class Voice {
         }
       }
 
-      return Voice.manager[id].peer.connectionState == 'connected' ? `${name} [Х]` : `${name} (${status})`;
+      return Voice.manager[id].peer.connectionState == 'connected' ? `${name}` : `${name} (${status})`;
     };
 
     let item = DOM(
@@ -637,24 +747,61 @@ export class Voice {
         event: [
           'click',
           () => {
+            if (Voice.infoPanel?.classList?.contains('voice-window-mode')) {
+              return;
+            }
             Voice.drop(Number(id));
-
             item.remove();
           },
         ],
       },
-      state(),
+      '',
     );
+    
+    let mute = DOM(
+      {
+        domaudio: domAudioPresets.defaultButton,
+        style: ['voice-info-panel-body-item-name', 'voice-info-panel-body-item-mute'],
+        event: ['click', () => Voice.togglePeerMuted(Number(id))],
+      },
+      '',
+    );
+    
+    mute.style.marginRight = '0.5cqw';
+    
+    let mutedByIcon = DOM(
+      {
+        style: 'voice-info-panel-body-item-muted-by',
+      },
+      '✖',
+    );
+    
+    const updateItemView = () => {
+      const mutedMark = Voice.isPeerMuted(Number(id)) ? ' [MUTED]' : '';
+      item.innerText = `${state()}${mutedMark}`;
+      mute.innerText = Voice.isPeerMuted(Number(id)) ? '🔇' : '🔊';
+      mutedByIcon.style.display = Voice.isMutedByPeer(Number(id)) ? '' : 'none';
+    };
+    
+    updateItemView();
 
     let level = DOM({ style: 'voice-info-panel-body-item-bar-level' });
 
     let bar = DOM({ style: 'voice-info-panel-body-item-bar' }, level);
+    let currentStopMeter = null;
 
     let indication = () => {
+      if (currentStopMeter) {
+        currentStopMeter();
+        Voice.panelMeterStops.delete(currentStopMeter);
+        currentStopMeter = null;
+      }
       if (Voice.manager[id].peer.connectionState == 'connected' && Voice.manager[id].stream) {
-        Voice.indication(Voice.manager[id].stream, (percent) => {
+        const stopMeter = Voice.indication(Voice.manager[id].stream, (percent) => {
           level.style.width = `${percent}%`;
         });
+        currentStopMeter = stopMeter;
+        Voice.panelMeterStops.add(stopMeter);
       }
 
       if (Voice.manager[id].stream) {
@@ -670,8 +817,12 @@ export class Voice {
 
     indication();
 
-    Voice.manager[id].peer.onconnectionstatechange = () => {
-      item.innerText = state();
+    const originalOnConnectionStateChange = Voice.manager[id].peer.onconnectionstatechange;
+    Voice.manager[id].peer.onconnectionstatechange = (...args) => {
+      try {
+        originalOnConnectionStateChange?.(...args);
+      } catch {}
+      updateItemView();
 
       indication();
     };
@@ -679,7 +830,11 @@ export class Voice {
     const panelBody = Voice.getInfoPanelBody();
     if (!panelBody) return;
     panelBody.append(
-      DOM({ style: 'voice-info-panel-body-item' }, item, DOM({ style: 'voice-info-panel-body-item-status' }, bar)),
+      DOM(
+        { style: 'voice-info-panel-body-item' },
+        DOM({ style: 'voice-info-panel-body-item-controls' }, mute, mutedByIcon, item),
+        DOM({ style: 'voice-info-panel-body-item-status' }, bar),
+      ),
     );
   }
 
@@ -845,6 +1000,7 @@ export class Voice {
   static async remoteDrop(id) {
     const target = Voice.manager[id];
     if (!target) return;
+    Voice.setMutedByPeer(id, false);
     await target.close();
   }
 
@@ -856,6 +1012,9 @@ export class Voice {
   }
 
   static destroy(full = false, say = false) {
+    if (!full && Voice.infoPanel?.classList?.contains('voice-window-mode')) {
+      return;
+    }
     Voice.stopAllReconnectJobs();
     Voice.battleSuspendedPeers.clear();
     for (let id in Voice.manager) {
@@ -1036,6 +1195,8 @@ export class Voice {
       this.controller.controls = true;
 
       this.controller.volume = Voice.volumeLevel;
+      
+      this.controller.muted = Voice.isPeerMuted(this.id);
 
       this.controller.play();
 
@@ -1067,14 +1228,83 @@ export class Voice {
       }
     };
 
-    this.peer.oniceconnectionstatechange = () => {
-      const clearDisconnectTimer = () => {
-        if (this.disconnectTimer) {
-          clearTimeout(this.disconnectTimer);
-          this.disconnectTimer = null;
-        }
-      };
+    const clearDisconnectTimer = () => {
+      if (this.disconnectTimer) {
+        clearTimeout(this.disconnectTimer);
+        this.disconnectTimer = null;
+      }
+    };
 
+    const canScheduleReconnect = () => {
+      return (
+        this.allowAutoReconnect &&
+        Voice.shouldAutoReconnectKey(this.key) &&
+        this.isCaller &&
+        !this.reconnectScheduled &&
+        (this.key !== 'friend' || this.hasEverConnected)
+      );
+    };
+
+    this.peer.onconnectionstatechange = () => {
+      const state = String(this.peer?.connectionState || '');
+      switch (state) {
+        case 'connected':
+          this.hasEverConnected = true;
+          if (this.timer) {
+            clearTimeout(this.timer);
+            this.timer = null;
+          }
+          clearDisconnectTimer();
+          Voice.stopReconnectJob(this.id, this.key);
+          this.reconnectScheduled = false;
+          break;
+
+        case 'disconnected':
+          clearDisconnectTimer();
+          this.disconnectTimer = setTimeout(() => {
+            this.disconnectTimer = null;
+            if (!this.peer || this.peer.connectionState === 'closed') {
+              this.close();
+              return;
+            }
+            if (this.peer.connectionState !== 'disconnected') {
+              return;
+            }
+            if (canScheduleReconnect()) {
+              this.reconnectScheduled = true;
+              Voice.ensureReconnectJob(this.id, this.key, this.name, this.important, Voice.reconnectDisconnectedGraceMs);
+              this.close({ keepReconnect: true });
+            } else {
+              this.close();
+            }
+          }, Voice.reconnectDisconnectedGraceMs);
+          break;
+
+        case 'failed':
+          clearDisconnectTimer();
+          if (canScheduleReconnect()) {
+            this.reconnectScheduled = true;
+            Voice.ensureReconnectJob(this.id, this.key, this.name, this.important, 0);
+            this.close({ keepReconnect: true });
+          } else {
+            this.close();
+          }
+          break;
+
+        case 'closed':
+          clearDisconnectTimer();
+          if (canScheduleReconnect()) {
+            this.reconnectScheduled = true;
+            Voice.ensureReconnectJob(this.id, this.key, this.name, this.important, Voice.reconnectDisconnectedGraceMs);
+            this.close({ keepReconnect: true });
+          } else {
+            this.close();
+          }
+          break;
+      }
+    };
+
+    this.peer.oniceconnectionstatechange = () => {
       switch (this.peer.iceConnectionState) {
         case 'connected':
           console.log('Соединение успешно установлено');
@@ -1101,13 +1331,7 @@ export class Voice {
             if (this.peer.iceConnectionState !== 'disconnected') {
               return;
             }
-            if (
-              this.allowAutoReconnect &&
-              Voice.shouldAutoReconnectKey(this.key) &&
-              this.isCaller &&
-              !this.reconnectScheduled &&
-              (this.key !== 'friend' || this.hasEverConnected)
-            ) {
+            if (canScheduleReconnect()) {
               this.reconnectScheduled = true;
               Voice.ensureReconnectJob(this.id, this.key, this.name, this.important, Voice.reconnectDisconnectedGraceMs);
               this.close({ keepReconnect: true });
@@ -1119,13 +1343,7 @@ export class Voice {
 
         case 'failed':
           clearDisconnectTimer();
-          if (
-            this.allowAutoReconnect &&
-            Voice.shouldAutoReconnectKey(this.key) &&
-            this.isCaller &&
-            !this.reconnectScheduled &&
-            (this.key !== 'friend' || this.hasEverConnected)
-          ) {
+          if (canScheduleReconnect()) {
             this.reconnectScheduled = true;
             Voice.ensureReconnectJob(this.id, this.key, this.name, this.important, 0);
             this.close({ keepReconnect: true });
@@ -1136,13 +1354,7 @@ export class Voice {
 
         case 'closed':
           clearDisconnectTimer();
-          if (
-            this.allowAutoReconnect &&
-            Voice.shouldAutoReconnectKey(this.key) &&
-            this.isCaller &&
-            !this.reconnectScheduled &&
-            (this.key !== 'friend' || this.hasEverConnected)
-          ) {
+          if (canScheduleReconnect()) {
             this.reconnectScheduled = true;
             Voice.ensureReconnectJob(this.id, this.key, this.name, this.important, Voice.reconnectDisconnectedGraceMs);
             this.close({ keepReconnect: true });
@@ -1264,6 +1476,8 @@ export class Voice {
     } catch {}
 
     delete Voice.manager[this.id];
+    
+    Voice.mutedByPeers.delete(this.id);
 
     if (this.id in Voice.cacheCandidate) {
       delete Voice.cacheCandidate[this.id];
