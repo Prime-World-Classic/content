@@ -222,6 +222,23 @@ export class NativeAPI {
     // Windows 10+ kernel is 10.0+.
     return major < 10;
   }
+  
+  static isLegacyNwjsForVoiceWindow() {
+    let nwVersion = '';
+    try {
+      nwVersion = String(process?.versions?.nw || '');
+    } catch {}
+    if (!nwVersion) {
+      return false;
+    }
+    const parts = nwVersion.split('.');
+    const major = Number(parts[0] || 0);
+    const minor = Number(parts[1] || 0);
+    if (!Number.isFinite(major) || !Number.isFinite(minor)) {
+      return false;
+    }
+    return major < 100 || (major === 100 && minor < 1);
+  }
 
   static restoreVoicePanelToMainWindow() {
     if (!Voice.infoPanel) return;
@@ -261,6 +278,9 @@ export class NativeAPI {
       return;
     }
     if (NativeAPI.isLegacyWindowsForVoiceWindow()) {
+      return;
+    }
+    if (NativeAPI.isLegacyNwjsForVoiceWindow()) {
       return;
     }
     if (!NativeAPI.status || !NativeAPI.app || NativeAPI.voiceWindow) {
