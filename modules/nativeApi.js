@@ -8,6 +8,7 @@ export class NativeAPI {
   static status = false;
   static exitRequested = false;
   static voiceWindow = null;
+  static isSteamClient = false;
 
   static platform;
 
@@ -77,6 +78,7 @@ export class NativeAPI {
     NativeAPI.loadModules();
 
     NativeAPI.platform = NativeAPI.os.platform();
+    NativeAPI.isSteamClient = NativeAPI.detectSteamClientLaunch();
 
     window.addEventListener('error', (event) => {
       const msg = event?.error?.stack || event?.error?.toString?.() || String(event?.message || 'Unknown error');
@@ -88,6 +90,34 @@ export class NativeAPI {
       const msg = reason?.stack || (typeof reason === 'string' ? reason : JSON.stringify(reason)) || 'Unknown rejection';
       NativeAPI.write('unhandledrejection.txt', msg);
     });
+  }
+
+  static detectSteamClientLaunch() {
+    if (!NativeAPI.status) {
+      return false;
+    }
+
+    try {
+      const steamEnvMarkers = ['SteamAppId', 'SteamGameId'];
+      if (steamEnvMarkers.some((key) => String(process?.env?.[key] || '').trim().length > 0)) {
+        return true;
+      }
+
+      const argvText = Array.isArray(process?.argv) ? process.argv.join(' ').toLowerCase() : '';
+      if (argvText.includes('steam://') || argvText.includes(' -steam') || argvText.includes('--steam')) {
+        return true;
+      }
+
+      // Steam-сборка может идти без локального апдейтера.
+      if (NativeAPI.platform === 'win32' && NativeAPI.fileSystem?.existsSync && NativeAPI.path?.join) {
+        const updaterPath = NativeAPI.path.join(process.cwd(), PWGame.PATH_UPDATE);
+        if (!NativeAPI.fileSystem.existsSync(updaterPath)) {
+          return true;
+        }
+      }
+    } catch {}
+
+    return false;
   }
 
   static loadModules() {
@@ -231,9 +261,15 @@ export class NativeAPI {
     if (!nwVersion) {
       return false;
     }
-    const parts = nwVersion.split('.');
-    const major = Number(parts[0] || 0);
-    const minor = Number(parts[1] || 0);
+    const parts = nwVersion.split('.').map((x) => Number(String(x || '').replace(/[^\d]/g, '')));
+    let major = Number(parts[0] || 0);
+    let minor = Number(parts[1] || 0);
+    // Some builds report NW.js as "0.100.1".
+    // Normalize to major=100, minor=1 for threshold checks.
+    if (major === 0 && Number.isFinite(parts[1]) && parts[1] > 0) {
+      major = Number(parts[1] || 0);
+      minor = Number(parts[2] || 0);
+    }
     if (!Number.isFinite(major) || !Number.isFinite(minor)) {
       return false;
     }

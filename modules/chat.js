@@ -308,7 +308,42 @@ export class Chat {
     Chat.pinnedCollapsed = true;
   }
 
+  static clearPinnedMessages() {
+    Chat.pinnedMessages = [];
+    Chat.pinnedCollapsed = true;
+    Chat.renderPinnedMessages();
+  }
+
+  static syncPinnedMessagesWithBackend() {
+    if (!Array.isArray(Chat.pinnedMessages) || !Chat.pinnedMessages.length) {
+      return;
+    }
+
+    const messages = Chat.pinnedMessages
+      .map((item) => ({
+        messageId: Number(item?.messageId || 0),
+        id: Number(item?.id || 0),
+        nickname: String(item?.nickname || ''),
+        to: Number(item?.to || 0),
+        flag: Number(item?.flag || 0),
+        message: String(item?.message || ''),
+        client: Number(item?.client || 0),
+        source: String(item?.source || ''),
+        pinned: true,
+      }))
+      .filter((item) => Number.isFinite(item.messageId) && item.messageId > 0);
+
+    if (!messages.length) {
+      return;
+    }
+
+    App.api.ghost('user', 'chatPinnedSync', { messages });
+  }
+
   static getMessageSourceType(data) {
+    const source = String(data?.source || '').toLowerCase();
+    if (source === 'steam' || source === 'phone' || source === 'telegram') return source;
+    if (Number(data?.client) === 2) return 'steam';
     if (Number(data?.client) === 1) return 'phone';
     if (Number(data?.id) === -2) return 'telegram';
     return null;
@@ -317,6 +352,7 @@ export class Chat {
   static getMessageSourceLabel(data) {
     const source = Chat.getMessageSourceType(data);
     if (source === 'phone') return Lang.text('titlePhone');
+    if (source === 'steam') return Lang.text('titleSteamClient');
     if (source === 'telegram') return Lang.text('titleTelegram');
     return '';
   }
@@ -583,6 +619,7 @@ export class Chat {
     }
     const to = Chat.to;
     const echoId = `${App.storage.data.id}-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+    const outgoingClient = NativeAPI.isSteamClient ? 2 : 0;
     
     Chat.viewMessage({
       messageId: `local-${echoId}`,
@@ -592,7 +629,8 @@ export class Chat {
       flag: 0,
       message: text,
       pinned: false,
-      client: 0,
+      client: outgoingClient,
+      source: outgoingClient === 2 ? 'steam' : '',
       echoId,
       localEcho: true,
     });
@@ -601,6 +639,7 @@ export class Chat {
       await App.api.request('user', 'chat', {
         message: text,
         to,
+        client: outgoingClient,
         echoId,
       });
     } catch (error) {
