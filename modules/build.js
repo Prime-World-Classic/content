@@ -20,6 +20,8 @@ import { getMainHeroTalentId } from './mainHeroTalent.js';
 
 export class Build {
   static loading = false;
+  static useOptimisticTalentApi = true;
+  static mutationQueue = Promise.resolve();
 
   /** HSL hue для подсветки сетов (как rgba(80,190,255)); толщина рамки в мм (макс. 1.5). */
   static BUILD_HIGHLIGHT_HUE_DEFAULT = 199;
@@ -36,6 +38,9 @@ export class Build {
   static statFilterHighlightCountWrapEl = null;
   static combatModeButtonEl = null;
   static combatModeButtonCountEl = null;
+  static setSortButtonEl = null;
+  static sortSetsInProgress = false;
+  static sortSetsClassSide = 'left';
   static combatModeEnabled = false;
   static combatModeLearnOrder = [];
   static combatModeLearnOrderBySlot = new Map();
@@ -332,6 +337,10 @@ export class Build {
 
     Build.descriptionView.style.display = 'none';
     Build._hoveredDescriptionTalentEl = null;
+    Build._libraryHoverSuppressed = false;
+    Build._libraryHoverSuppressTimer = 0;
+    Build._libraryPointerX = null;
+    Build._libraryPointerY = null;
 
     const bindCommandsToGet = [
       "cmd_action_bar_slot1",
@@ -410,6 +419,28 @@ export class Build {
     Build.talentsAndSetsView.append(buttonTalents, separator, buttonSets);
 
     const buildTalents = DOM({ style: 'build-talents' });
+    buildTalents.addEventListener(
+      'wheel',
+      () => {
+        Build.beginLibraryHoverSuppression();
+      },
+      { passive: true },
+    );
+    buildTalents.addEventListener(
+      'scroll',
+      () => {
+        Build.beginLibraryHoverSuppression();
+      },
+      { passive: true },
+    );
+    buildTalents.addEventListener(
+      'mousemove',
+      (e) => {
+        Build._libraryPointerX = e.clientX;
+        Build._libraryPointerY = e.clientY;
+      },
+      { passive: true },
+    );
 
     Build.inventoryView = document.createElement('div');
     Build.inventoryView.classList.add('build-talent-view');
@@ -701,6 +732,107 @@ export class Build {
     } catch {}
     Build.syncCombatModeButtonState();
   }
+  
+  static resolveTalentById(talentId) {
+    const key = `${Number(talentId)}`;
+    if (key in Build.talents) return Build.talents[key];
+    if (`${talentId}` in Build.talents) return Build.talents[`${talentId}`];
+    return null;
+  }
+  
+  static applyRollbackSnapshot(rollback) {
+    if (!rollback || !Array.isArray(rollback.body) || !Array.isArray(rollback.active)) {
+      return false;
+    }
+    if (rollback.body.length < 36 || rollback.active.length < 24) {
+      return false;
+    }
+    
+    const nextInstalled = new Array(36).fill(null);
+    for (let i = 0; i < 36; i++) {
+      const id = Number(rollback.body[i]) || 0;
+      if (!id) continue;
+      const data = Build.resolveTalentById(id);
+      if (!data) {
+        return false;
+      }
+      nextInstalled[i] = data;
+    }
+    
+    Build.installedTalents = nextInstalled;
+    Build.activeBarItems = rollback.active.slice(0, 24).map((item) => Number(item) || 0);
+    Build.rebuildFieldConflictFromInstalledTalents();
+    Build.syncFieldSlotsFromInstalledTalents();
+    Build.activeBar(Build.activeBarItems);
+    Build.sortInventory();
+    Build.updateHeroStats();
+    Build.syncCombatModeButtonState();
+    return true;
+  }
+  
+  static notifyTalentAnomaly(reason) {
+    const key = reason && `${reason}` ? `${reason}` : 'talentAnomalyUnknown';
+    const text = Lang.text(key);
+    App.notify(text && text !== key ? text : Lang.text('talentAnomalyUnknown'));
+  }
+  
+  static async handleOptimisticResponse(result) {
+    if (!result || typeof result !== 'object' || !('ok' in result)) {
+      return true;
+    }
+    if (result.ok) {
+      return true;
+    }
+    
+    const restored = Build.applyRollbackSnapshot(result.rollback);
+    Build.notifyTalentAnomaly(result.reason);
+    if (!restored) {
+      await Build.refreshBuildStateFromServer({ refreshInventory: true });
+    }
+    return false;
+  }
+  
+  static async sendBuildMutation({ optimisticMethod, legacyMethod, data }) {
+    const runLegacy = async () => {
+      if (!legacyMethod) return false;
+      let legacyData = data;
+      if (legacyMethod === 'swap' && data && !('id' in data) && 'buildId' in data) {
+        legacyData = { ...data, id: data.buildId };
+      }
+      await App.api.request('build', legacyMethod, legacyData);
+      return true;
+    };
+    
+    const runOptimistic = async () => {
+      if (!Build.useOptimisticTalentApi) {
+        return await runLegacy();
+      }
+      try {
+        const result = await App.api.request('build', optimisticMethod, data);
+        return await Build.handleOptimisticResponse(result);
+      } catch (error) {
+        return await runLegacy();
+      }
+    };
+    
+    Build.mutationQueue = Build.mutationQueue
+      .then(async () => {
+        try {
+          await runOptimistic();
+        } catch {}
+      })
+      .catch(() => {});
+    
+    return true;
+  }
+  
+  static async sendBuildMutationOrThrow(options) {
+    const ok = await Build.sendBuildMutation(options);
+    if (!ok) {
+      throw new Error('Talent action rejected by backend');
+    }
+    return true;
+  }
 
   static ensureBuildSettingsDefaults() {
     if (!Settings.settings) return;
@@ -727,6 +859,9 @@ export class Build {
     }
     if (Settings.settings.buildStatFilterHighlightMode < 0 || Settings.settings.buildStatFilterHighlightMode > 2) {
       Settings.settings.buildStatFilterHighlightMode = 1;
+    }
+    if (typeof Settings.settings.buildSetHoverOnTalent !== 'boolean') {
+      Settings.settings.buildSetHoverOnTalent = true;
     }
     if (!Number.isFinite(Number(Settings.settings.buildHighlightHue))) {
       Settings.settings.buildHighlightHue = Build.BUILD_HIGHLIGHT_HUE_DEFAULT;
@@ -799,6 +934,38 @@ export class Build {
 
   static isBuildRowHoverHighlightEnabled() {
     return !!Settings.settings?.buildRowHoverHighlight;
+  }
+
+  static isBuildSetHoverOnTalentEnabled() {
+    return Settings.settings?.buildSetHoverOnTalent !== false;
+  }
+
+  static beginLibraryHoverSuppression(timeoutMs = 80) {
+    Build._libraryHoverSuppressed = true;
+    try {
+      if (Build._libraryHoverSuppressTimer) clearTimeout(Build._libraryHoverSuppressTimer);
+    } catch {}
+    Build._libraryHoverSuppressTimer = setTimeout(() => {
+      Build._libraryHoverSuppressTimer = 0;
+      Build._libraryHoverSuppressed = false;
+      try {
+        const x = Number(Build._libraryPointerX);
+        const y = Number(Build._libraryPointerY);
+        if (!Number.isFinite(x) || !Number.isFinite(y)) return;
+        const below = document.elementFromPoint(x, y);
+        const hoveredTalent = below?.closest?.('.build-talents .build-talent-item');
+        if (!hoveredTalent) return;
+        hoveredTalent.dispatchEvent(
+          new MouseEvent('mouseover', {
+            bubbles: false,
+            cancelable: false,
+            view: window,
+            clientX: x,
+            clientY: y,
+          }),
+        );
+      } catch {}
+    }, timeoutMs);
   }
 
   static applyTalentViewLayoutFromSettings() {
@@ -984,6 +1151,37 @@ export class Build {
       statFiltDots.append(dot);
     }
 
+    const setHoverTalentLabel = DOM({ style: 'build-settings-row-label' }, Lang.text('buildSettingsSetHoverOnTalent'));
+    const setHoverTalentValue = DOM({ tag: 'span', style: 'build-settings-row-value' });
+    const setHoverTalentDots = DOM({ style: 'build-settings-mode-dots' });
+    const applySetHoverTalentValue = async (enabled) => {
+      Settings.settings.buildSetHoverOnTalent = enabled;
+      setHoverTalentValue.textContent = enabled ? Lang.text('buildSettingsOn') : Lang.text('buildSettingsOff');
+      const activeIndex = enabled ? 1 : 0;
+      const items = setHoverTalentDots.querySelectorAll('.build-settings-mode-dot');
+      items.forEach((dot, idx) => dot.classList.toggle('build-settings-mode-dot-active', idx === activeIndex));
+      try {
+        await Settings.WriteSettings();
+      } catch {}
+    };
+    const setHoverTalentEnabledNow = Build.isBuildSetHoverOnTalentEnabled();
+    setHoverTalentValue.textContent = setHoverTalentEnabledNow ? Lang.text('buildSettingsOn') : Lang.text('buildSettingsOff');
+    for (let i = 0; i < 2; i++) {
+      const enabled = i === 1;
+      const dotStyle = ['build-settings-mode-dot'];
+      if ((setHoverTalentEnabledNow && enabled) || (!setHoverTalentEnabledNow && !enabled)) {
+        dotStyle.push('build-settings-mode-dot-active');
+      }
+      const dot = DOM({
+        tag: 'button',
+        type: 'button',
+        style: dotStyle,
+        title: enabled ? Lang.text('buildSettingsOn') : Lang.text('buildSettingsOff'),
+        event: ['click', async () => applySetHoverTalentValue(enabled)],
+      });
+      setHoverTalentDots.append(dot);
+    }
+
     const hlBlock = DOM({ style: 'build-settings-hl-block' });
     const hlSliders = DOM({ style: 'build-settings-hl-sliders' });
     const hlHueLabel = DOM({ style: 'build-settings-hl-line-label' }, Lang.text('buildSettingsHighlightHue'));
@@ -1143,6 +1341,9 @@ export class Build {
       statFiltLabel,
       statFiltDots,
       statFiltValue,
+      setHoverTalentLabel,
+      setHoverTalentDots,
+      setHoverTalentValue,
       hlBlock,
     );
 
@@ -1341,7 +1542,7 @@ export class Build {
       btnName,
     );
 
-    template.append(modal, name, button, close);
+    template.append(modal, name, button, close, helpBtn);
 
     Splash.show(template);
   }
@@ -1622,11 +1823,51 @@ export class Build {
       Build.buildActionsView.append(resetBuild);
     }
 
+    // Кнопка сортировки сетовых талантов по колонкам
+    {
+      const sortSets = DOM({
+        tag: 'button',
+        domaudio: domAudioPresets.defaultButton,
+        style: ['build-action-item', 'btn-hover', 'color-1'],
+        event: [
+          'click',
+          async () => {
+            if (Build.combatModeEnabled || Build.sortSetsInProgress) {
+              Build.syncSetSortButtonState();
+              return;
+            }
+            await Build.sortSetTalentsIntoColumns();
+          },
+        ],
+      });
+      sortSets.addEventListener('contextmenu', async (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        if (Build.combatModeEnabled || Build.sortSetsInProgress) {
+          Build.syncSetSortButtonState();
+          return;
+        }
+        await Build.sortSetTalentsIntoColumns({ classEdgeSort: true });
+      });
+      const sortSetsBg = DOM({
+        style: ['btn-combat-mode', 'build-action-item-background'],
+      });
+      const sortSetsIcon = DOM({ tag: 'span', style: 'btn-sort-sets-icon' });
+      const sortSetsGlass = DOM({ tag: 'span', style: 'btn-combat-mode-glass' });
+      sortSetsBg.append(sortSetsIcon, sortSetsGlass);
+      sortSets.append(sortSetsBg);
+      Build.buildActionsView.append(sortSets);
+      Build.setSortButtonEl = sortSets;
+      Build.syncSetSortButtonState();
+    }
+
   }
 
   static resetCombatModeState() {
     Build.combatModeButtonEl = null;
     Build.combatModeButtonCountEl = null;
+    Build.setSortButtonEl = null;
+    Build.sortSetsInProgress = false;
     Build.combatModeEnabled = false;
     Build.combatModeLearnOrder = [];
     Build.combatModeLearnOrderBySlot = new Map();
@@ -1635,6 +1876,12 @@ export class Build {
 
   static getCombatModeHeroLevel() {
     return Build.combatModeLearnOrder.length;
+  }
+
+  static getCombatStackProgressFactor() {
+    if (!Build.combatModeEnabled) return 1;
+    const level = Math.max(1, Number(Build.getCombatModeHeroLevel()) || 1);
+    return Math.max(0, Math.min(1, level / 36));
   }
 
   static getCombatMainTalentSlotIndex() {
@@ -1669,6 +1916,12 @@ export class Build {
     return Lang.text('combatModeName');
   }
 
+  static getSortSetsButtonTooltip() {
+    if (Build.sortSetsInProgress) return Lang.text('sortSetsIntoColumnInProgress');
+    if (Build.combatModeEnabled) return Lang.text('sortSetsIntoColumnDisabledCombat');
+    return `${Lang.text('titleSortSetsIntoColumn')}\n${Lang.text('sortSetsRmbMirrorBuild')}`;
+  }
+
   static syncCombatModeButtonState() {
     const btn = Build.combatModeButtonEl;
     if (!btn) return;
@@ -1683,6 +1936,827 @@ export class Build {
       const isRawMode = !Build.combatModeEnabled;
       Build.combatModeButtonCountEl.classList.toggle('btn-combat-mode-count-raw', isRawMode);
       Build.combatModeButtonCountEl.textContent = isRawMode ? '' : String(Build.getCombatModeHeroLevel());
+    }
+    Build.syncSetSortButtonState();
+  }
+
+  static syncSetSortButtonState() {
+    const btn = Build.setSortButtonEl;
+    if (!btn) return;
+    const isDisabled = Build.combatModeEnabled || Build.sortSetsInProgress;
+    btn.classList.toggle('build-action-item-disabled', isDisabled);
+    btn.disabled = isDisabled;
+    btn.title = Build.getSortSetsButtonTooltip();
+  }
+
+  static getBuildSlotLevelByIndex(slotIndex) {
+    const slot = Number(slotIndex);
+    if (!Number.isFinite(slot)) return 0;
+    return Math.max(1, Math.min(6, 6 - Math.floor(slot / 6)));
+  }
+
+  static getRowSlotIndicesByLevel(level) {
+    const lvl = Math.max(1, Math.min(6, Number(level) || 1));
+    const rowStart = (6 - lvl) * 6;
+    return [rowStart, rowStart + 1, rowStart + 2, rowStart + 3, rowStart + 4, rowStart + 5];
+  }
+
+  static async swapBuildSlotsWithBackend(i1, i2) {
+    const slotA = Number(i1);
+    const slotB = Number(i2);
+    if (!Number.isFinite(slotA) || !Number.isFinite(slotB) || slotA === slotB) return false;
+    if (!Array.isArray(Build.installedTalents)) return false;
+    if (slotA < 0 || slotA >= Build.installedTalents.length) return false;
+    if (slotB < 0 || slotB >= Build.installedTalents.length) return false;
+
+    const talentA = Build.installedTalents[slotA];
+    const talentB = Build.installedTalents[slotB];
+    Build.installedTalents[slotA] = talentB;
+    Build.installedTalents[slotB] = talentA;
+
+    try {
+      const cellA = Build.fieldView?.querySelector?.(`.build-hero-grid-item[data-position="${slotA}"]`);
+      const cellB = Build.fieldView?.querySelector?.(`.build-hero-grid-item[data-position="${slotB}"]`);
+      if (cellA && cellB) {
+        const nodeA = cellA.firstElementChild;
+        const nodeB = cellB.firstElementChild;
+        if (nodeA) cellB.append(nodeA);
+        if (nodeB) cellA.append(nodeB);
+      }
+    } catch {}
+
+    try {
+      const movedTalent = talentA;
+      const displacedTalent = talentB;
+      if (movedTalent?.active && !displacedTalent?.active) {
+        for (let i = 0; i < (Build.activeBarItems || []).length; i++) {
+          const item = Number(Build.activeBarItems[i]) || 0;
+          if (!item) continue;
+          const sign = item < 0 ? -1 : 1;
+          if (Math.abs(item) === slotA + 1) {
+            Build.activeBarItems[i] = sign * (slotB + 1);
+          }
+        }
+      } else if (!movedTalent?.active && displacedTalent?.active) {
+        for (let i = 0; i < (Build.activeBarItems || []).length; i++) {
+          const item = Number(Build.activeBarItems[i]) || 0;
+          if (!item) continue;
+          const sign = item < 0 ? -1 : 1;
+          if (Math.abs(item) === slotB + 1) {
+            Build.activeBarItems[i] = sign * (slotA + 1);
+          }
+        }
+      }
+      Build.activeBar(Array.isArray(Build.activeBarItems) ? Build.activeBarItems : new Array(24).fill(0));
+    } catch {}
+
+    if (!Build._sortDeferBackendSync) {
+      await Build.sendBuildMutationOrThrow({
+        optimisticMethod: 'optimisticSwap',
+        legacyMethod: 'swap',
+        data: {
+          buildId: Build.id,
+          i1: slotA,
+          i2: slotB,
+        },
+      });
+    }
+    return true;
+  }
+
+  static getClassEdgeColumns(side = 'left') {
+    return side === 'right' ? [5, 4, 3] : [0, 1, 2];
+  }
+
+  static async normalizeClassTalentsToMajorSide() {
+    const leftCols = [0, 1, 2];
+    const rightCols = [3, 4, 5];
+    let globalLeft = 0;
+    let globalRight = 0;
+    for (let slot = 0; slot < (Build.installedTalents || []).length; slot++) {
+      const t = Build.installedTalents?.[slot];
+      if (!t || Number(t.id) >= 0) continue;
+      const col = slot % 6;
+      if (leftCols.includes(col)) globalLeft++;
+      else globalRight++;
+    }
+    if (globalLeft === globalRight) return 0;
+    const majorCols = globalLeft > globalRight ? leftCols : rightCols;
+
+    let moved = 0;
+    for (let level = 6; level >= 1; level--) {
+      const rowSlots = Build.getRowSlotIndicesByLevel(level);
+      const classSlots = rowSlots.filter((slot) => {
+        const t = Build.installedTalents?.[slot];
+        return !!t && Number(t.id) < 0;
+      });
+      if (!classSlots.length) continue;
+
+      const classCols = classSlots.map((slot) => rowSlots.indexOf(slot)).filter((c) => c >= 0);
+      if (classCols.every((c) => majorCols.includes(c))) continue;
+      const minorSlots = classSlots.filter((slot) => !majorCols.includes(rowSlots.indexOf(slot)));
+      if (!minorSlots.length) continue;
+
+      const targetSlots = majorCols
+        .map((col) => rowSlots[col])
+        .filter((slot) => {
+          const t = Build.installedTalents?.[slot];
+          return !(t && Number(t.id) < 0);
+        });
+      if (!targetSlots.length) continue;
+
+      for (const sourceSlot of minorSlots) {
+        const targetSlot = targetSlots.shift();
+        if (!Number.isFinite(targetSlot)) break;
+        const targetTalent = Build.installedTalents?.[targetSlot];
+        if (targetTalent && Number(targetTalent.id) < 0) continue;
+        await Build.swapBuildSlotsWithBackend(sourceSlot, targetSlot);
+        moved++;
+      }
+    }
+    return moved;
+  }
+
+  static async mirrorBuildRightToLeft() {
+    let moved = 0;
+    for (let level = 6; level >= 1; level--) {
+      const rowSlots = Build.getRowSlotIndicesByLevel(level);
+      const pairs = [
+        [rowSlots[0], rowSlots[5]],
+        [rowSlots[1], rowSlots[4]],
+        [rowSlots[2], rowSlots[3]],
+      ];
+      for (const [leftSlot, rightSlot] of pairs) {
+        const leftTalent = Build.installedTalents?.[leftSlot] || null;
+        const rightTalent = Build.installedTalents?.[rightSlot] || null;
+        if (!leftTalent && !rightTalent) continue;
+        const activeRefs = [];
+        try {
+          for (let i = 0; i < (Build.activeBarItems || []).length; i++) {
+            const item = Number(Build.activeBarItems[i]) || 0;
+            if (!item) continue;
+            const absPos = Math.abs(item);
+            if (absPos !== leftSlot + 1 && absPos !== rightSlot + 1) continue;
+            const talentRef = Build.installedTalents?.[absPos - 1] || null;
+            activeRefs.push({ i, sign: item < 0 ? -1 : 1, pos: absPos });
+            activeRefs[activeRefs.length - 1].talentRef = talentRef;
+          }
+        } catch {}
+        await Build.swapBuildSlotsWithBackend(leftSlot, rightSlot);
+        try {
+          for (const ref of activeRefs) {
+            const leftNow = Build.installedTalents?.[leftSlot] || null;
+            const rightNow = Build.installedTalents?.[rightSlot] || null;
+            let nextPos = ref.pos;
+            if (ref.talentRef && leftNow === ref.talentRef) nextPos = leftSlot + 1;
+            else if (ref.talentRef && rightNow === ref.talentRef) nextPos = rightSlot + 1;
+            Build.activeBarItems[ref.i] = ref.sign * nextPos;
+          }
+          Build.activeBar(Array.isArray(Build.activeBarItems) ? Build.activeBarItems : new Array(24).fill(0));
+        } catch {}
+        moved++;
+      }
+    }
+    return moved;
+  }
+
+  static buildSwapPlanFromBodySnapshots(initialBody = [], finalBody = []) {
+    const work = Array.isArray(initialBody) ? initialBody.slice() : [];
+    const target = Array.isArray(finalBody) ? finalBody : [];
+    const swaps = [];
+    const n = Math.min(work.length, target.length);
+    for (let i = 0; i < n; i++) {
+      if (work[i] === target[i]) continue;
+      let j = -1;
+      for (let k = i + 1; k < n; k++) {
+        if (work[k] === target[i]) {
+          j = k;
+          break;
+        }
+      }
+      if (j < 0) continue;
+      const t = work[i];
+      work[i] = work[j];
+      work[j] = t;
+      swaps.push([i, j]);
+    }
+    return swaps;
+  }
+
+  static simulateActiveAfterSwaps(active = [], swaps = []) {
+    const next = Array.isArray(active) ? active.slice(0, 24).map((v) => Number(v) || 0) : new Array(24).fill(0);
+    for (const pair of swaps || []) {
+      const i1 = Number(pair?.[0]);
+      const i2 = Number(pair?.[1]);
+      if (!Number.isFinite(i1) || !Number.isFinite(i2)) continue;
+      for (let i = 0; i < next.length; i++) {
+        const item = Number(next[i]) || 0;
+        if (!item) continue;
+        const sign = item < 0 ? -1 : 1;
+        const pos = Math.abs(item);
+        if (pos === i1 + 1) next[i] = sign * (i2 + 1);
+        else if (pos === i2 + 1) next[i] = sign * (i1 + 1);
+      }
+    }
+    return next;
+  }
+
+  static async syncSortResultToBackend(initialBody, initialActive) {
+    const finalBody = (Build.installedTalents || []).map((t) => Number(t?.id) || 0);
+    const finalActive = (Build.activeBarItems || []).slice(0, 24).map((v) => Number(v) || 0);
+    const swaps = Build.buildSwapPlanFromBodySnapshots(initialBody, finalBody);
+    for (const [i1, i2] of swaps) {
+      await Build.sendBuildMutationOrThrow({
+        optimisticMethod: 'optimisticSwap',
+        legacyMethod: 'swap',
+        data: { buildId: Build.id, i1, i2 },
+      });
+    }
+    const backendActive = Build.simulateActiveAfterSwaps(initialActive, swaps);
+    for (let i = 0; i < 24; i++) {
+      const want = Number(finalActive[i]) || 0;
+      const have = Number(backendActive[i]) || 0;
+      if (want === have) continue;
+      if (want === 0) {
+        await Build.sendBuildMutationOrThrow({
+          optimisticMethod: 'optimisticClearActive',
+          legacyMethod: 'setZeroActive',
+          data: { buildId: Build.id, index: i },
+        });
+      } else {
+        await Build.sendBuildMutationOrThrow({
+          optimisticMethod: 'optimisticSetActive',
+          legacyMethod: 'setActive',
+          data: { buildId: Build.id, index: i, position: want },
+        });
+      }
+    }
+  }
+
+  static async enforceSetColumnContinuity(setTalentToKey, fixedSlots) {
+    let moved = 0;
+    for (let pass = 0; pass < 4; pass++) {
+      let passMoved = 0;
+      for (let level = 5; level >= 1; level--) {
+        const prevSlots = Build.getRowSlotIndicesByLevel(level + 1);
+        const curSlots = Build.getRowSlotIndicesByLevel(level);
+
+        const prevColBySet = new Map();
+        const prevDupSet = new Set();
+        for (let col = 0; col < 6; col++) {
+          const slot = prevSlots[col];
+          const talent = Build.installedTalents?.[slot];
+          const id = Number(talent?.id);
+          if (!(id > 0)) continue;
+          const setKey = setTalentToKey.get(Math.abs(id));
+          if (!setKey) continue;
+          if (prevColBySet.has(setKey)) {
+            prevDupSet.add(setKey);
+          } else {
+            prevColBySet.set(setKey, col);
+          }
+        }
+        for (const k of prevDupSet) prevColBySet.delete(k);
+        if (!prevColBySet.size) continue;
+
+        const curSlotBySet = new Map();
+        for (let col = 0; col < 6; col++) {
+          const slot = curSlots[col];
+          const talent = Build.installedTalents?.[slot];
+          const id = Number(talent?.id);
+          if (!(id > 0)) continue;
+          const setKey = setTalentToKey.get(Math.abs(id));
+          if (!setKey) continue;
+          if (!curSlotBySet.has(setKey)) curSlotBySet.set(setKey, slot);
+        }
+        if (!curSlotBySet.size) continue;
+
+        const desiredColBySet = new Map();
+        for (const [setKey] of curSlotBySet) {
+          const desiredCol = prevColBySet.get(setKey);
+          if (Number.isFinite(desiredCol)) desiredColBySet.set(setKey, desiredCol);
+        }
+        if (!desiredColBySet.size) continue;
+
+        for (const [setKey, sourceSlotRaw] of curSlotBySet) {
+          const desiredCol = desiredColBySet.get(setKey);
+          if (!Number.isFinite(desiredCol)) continue;
+          const sourceSlot = Number(sourceSlotRaw);
+          const targetSlot = curSlots[desiredCol];
+          if (!Number.isFinite(sourceSlot) || !Number.isFinite(targetSlot) || sourceSlot === targetSlot) continue;
+          if (fixedSlots?.has?.(sourceSlot) || fixedSlots?.has?.(targetSlot)) continue;
+
+          const sourceTalent = Build.installedTalents?.[sourceSlot];
+          const targetTalent = Build.installedTalents?.[targetSlot];
+          const sourceId = Number(sourceTalent?.id);
+          const targetId = Number(targetTalent?.id);
+          if (!(sourceId > 0)) continue;
+          if (targetTalent && !(targetId > 0)) continue;
+
+          const targetSetKey = targetTalent ? setTalentToKey.get(Math.abs(targetId)) : null;
+          if (targetSetKey === setKey) continue;
+          if (targetSetKey && desiredColBySet.get(targetSetKey) === desiredCol) continue;
+
+          await Build.swapBuildSlotsWithBackend(sourceSlot, targetSlot);
+          moved++;
+          passMoved++;
+          curSlotBySet.set(setKey, targetSlot);
+          if (targetSetKey) curSlotBySet.set(targetSetKey, sourceSlot);
+        }
+      }
+      if (!passMoved) break;
+    }
+    return moved;
+  }
+
+  static getPreferredSetColumns(setTalentToKey) {
+    const counts = new Map();
+    for (let level = 6; level >= 1; level--) {
+      const rowSlots = Build.getRowSlotIndicesByLevel(level);
+      for (let col = 0; col < 6; col++) {
+        const slot = rowSlots[col];
+        const talent = Build.installedTalents?.[slot];
+        const id = Number(talent?.id);
+        if (!(id > 0)) continue;
+        const setKey = setTalentToKey.get(Math.abs(id));
+        if (!setKey) continue;
+        if (!counts.has(setKey)) counts.set(setKey, new Array(6).fill(0));
+        counts.get(setKey)[col] += 1;
+      }
+    }
+    const preferred = new Map();
+    for (const [setKey, arr] of counts.entries()) {
+      let bestCol = 0;
+      let bestVal = -1;
+      for (let col = 0; col < 6; col++) {
+        const v = Number(arr[col]) || 0;
+        if (v > bestVal) {
+          bestVal = v;
+          bestCol = col;
+        }
+      }
+      preferred.set(setKey, bestCol);
+    }
+    return preferred;
+  }
+
+  static async enforceSetPreferredColumns(setTalentToKey, fixedSlots) {
+    let moved = 0;
+    for (let pass = 0; pass < 3; pass++) {
+      let passMoved = 0;
+      const preferred = Build.getPreferredSetColumns(setTalentToKey);
+      for (let level = 6; level >= 1; level--) {
+        const rowSlots = Build.getRowSlotIndicesByLevel(level);
+        const rowSetToSlot = new Map();
+        for (let col = 0; col < 6; col++) {
+          const slot = rowSlots[col];
+          const talent = Build.installedTalents?.[slot];
+          const id = Number(talent?.id);
+          if (!(id > 0)) continue;
+          const setKey = setTalentToKey.get(Math.abs(id));
+          if (!setKey) continue;
+          if (!rowSetToSlot.has(setKey)) rowSetToSlot.set(setKey, slot);
+        }
+        for (const [setKey, sourceSlotRaw] of rowSetToSlot.entries()) {
+          const desiredCol = preferred.get(setKey);
+          if (!Number.isFinite(desiredCol)) continue;
+          const sourceSlot = Number(sourceSlotRaw);
+          const targetSlot = rowSlots[desiredCol];
+          if (!Number.isFinite(sourceSlot) || !Number.isFinite(targetSlot) || sourceSlot === targetSlot) continue;
+          if (fixedSlots?.has?.(sourceSlot) || fixedSlots?.has?.(targetSlot)) continue;
+
+          const sourceTalent = Build.installedTalents?.[sourceSlot];
+          const targetTalent = Build.installedTalents?.[targetSlot];
+          const sourceId = Number(sourceTalent?.id);
+          const targetId = Number(targetTalent?.id);
+          if (!(sourceId > 0)) continue;
+          if (targetTalent && !(targetId > 0)) continue;
+          const targetSetKey = targetTalent ? setTalentToKey.get(Math.abs(targetId)) : null;
+          if (targetSetKey === setKey) continue;
+          if (targetSetKey && preferred.get(targetSetKey) === desiredCol) continue;
+
+          await Build.swapBuildSlotsWithBackend(sourceSlot, targetSlot);
+          moved++;
+          passMoved++;
+        }
+      }
+      if (!passMoved) break;
+    }
+    return moved;
+  }
+
+  static async enforceSingleSetNeighborContinuity(setTalentToKey, fixedSlots, setSize = new Map(), direction = 'down') {
+    let moved = 0;
+    const levelOrder = direction === 'up' ? [2, 3, 4, 5, 6] : [5, 4, 3, 2, 1];
+    const getNeighborLevel = (lvl) => (direction === 'up' ? lvl - 1 : lvl + 1);
+    const countSetsInRow = (rowSlots) => {
+      const m = new Map();
+      for (const slot of rowSlots) {
+        const t = Build.installedTalents?.[slot];
+        const id = Number(t?.id);
+        if (!(id > 0)) continue;
+        const setKey = setTalentToKey.get(Math.abs(id));
+        if (!setKey) continue;
+        m.set(setKey, (m.get(setKey) || 0) + 1);
+      }
+      return m;
+    };
+    const getSetAtSlot = (slot) => {
+      const t = Build.installedTalents?.[slot];
+      const id = Number(t?.id);
+      if (!(id > 0)) return null;
+      return setTalentToKey.get(Math.abs(id)) || null;
+    };
+
+    for (let pass = 0; pass < 4; pass++) {
+      let passMoved = 0;
+      for (const level of levelOrder) {
+        const neighborLevel = getNeighborLevel(level);
+        if (neighborLevel < 1 || neighborLevel > 6) continue;
+        const rowSlots = Build.getRowSlotIndicesByLevel(level);
+        const neighborSlots = Build.getRowSlotIndicesByLevel(neighborLevel);
+        const rowCounts = countSetsInRow(rowSlots);
+        const neighborCounts = countSetsInRow(neighborSlots);
+        const movableCols = [];
+        for (let c = 0; c < 6; c++) {
+          if (!fixedSlots?.has?.(rowSlots[c])) movableCols.push(c);
+        }
+        if (movableCols.length < 2) continue;
+
+        const scoreRow = () => {
+          let score = 0;
+          for (let c = 0; c < 6; c++) {
+            const sk = getSetAtSlot(rowSlots[c]);
+            const nk = getSetAtSlot(neighborSlots[c]);
+            if (!sk || !nk) continue;
+            if ((rowCounts.get(sk) || 0) !== 1) continue;
+            if ((neighborCounts.get(nk) || 0) !== 1) continue;
+            if (sk === nk) {
+              // Sets with many installed talents must dominate column continuity.
+              const sz = Math.max(1, Number(setSize.get(sk)) || 1);
+              score += sz * sz * 10;
+            }
+          }
+          return score;
+        };
+
+        for (let iter = 0; iter < 4; iter++) {
+          const base = scoreRow();
+          let best = null;
+          for (let i = 0; i < movableCols.length; i++) {
+            for (let j = i + 1; j < movableCols.length; j++) {
+              const c1 = movableCols[i];
+              const c2 = movableCols[j];
+              const s1 = rowSlots[c1];
+              const s2 = rowSlots[c2];
+              const t1 = Build.installedTalents?.[s1];
+              const t2 = Build.installedTalents?.[s2];
+              const id1 = Number(t1?.id);
+              const id2 = Number(t2?.id);
+              if (t1 && !(id1 > 0)) continue;
+              if (t2 && !(id2 > 0)) continue;
+              await Build.swapBuildSlotsWithBackend(s1, s2);
+              const sc = scoreRow();
+              await Build.swapBuildSlotsWithBackend(s1, s2);
+              if (sc > base && (!best || sc > best.score)) {
+                best = { c1, c2, score: sc };
+              }
+            }
+          }
+          if (!best) break;
+          await Build.swapBuildSlotsWithBackend(rowSlots[best.c1], rowSlots[best.c2]);
+          moved++;
+          passMoved++;
+        }
+      }
+      if (!passMoved) break;
+    }
+    return moved;
+  }
+
+  static async sortSetTalentsIntoColumns(options = {}) {
+    if (Build.sortSetsInProgress) return;
+    if (Build.combatModeEnabled) {
+      Build.syncSetSortButtonState();
+      return;
+    }
+    if (!Array.isArray(Build.installedTalents) || Build.installedTalents.length < 36) return;
+    const classEdgeSort = !!options?.classEdgeSort;
+    const initialBodySnapshot = (Build.installedTalents || []).map((t) => Number(t?.id) || 0);
+    const initialActiveSnapshot = (Build.activeBarItems || []).slice(0, 24).map((v) => Number(v) || 0);
+
+    Build.sortSetsInProgress = true;
+    Build._sortDeferBackendSync = true;
+    Build.syncSetSortButtonState();
+    try {
+      if (classEdgeSort) {
+        await Build.normalizeClassTalentsToMajorSide();
+        await Build.mirrorBuildRightToLeft();
+      }
+
+      const setTalentToKey = new Map();
+      for (const set of TalentSets.list()) {
+        const setKey = `${set?.key || ''}`;
+        if (!setKey) continue;
+        const setIds = TalentSets.getTalentIds(set)
+          .map((id) => Math.abs(Number(id)))
+          .filter((id) => Number.isFinite(id) && id > 0);
+        for (const tid of setIds) {
+          if (!setTalentToKey.has(tid)) {
+            setTalentToKey.set(tid, setKey);
+          }
+        }
+      }
+
+      if (!setTalentToKey.size) return;
+
+      const fixedSlots = new Set();
+      const initialSetCounters = new Map();
+      // Priority metric: number of rows where set is present (duplicates in same row are ignored).
+      for (let level = 6; level >= 1; level--) {
+        const rowSlots = Build.getRowSlotIndicesByLevel(level);
+        const seenInRow = new Set();
+        for (const slot of rowSlots) {
+          const talent = Build.installedTalents[slot];
+          if (!talent) continue;
+          const talentId = Number(talent.id);
+          if (talentId < 0) {
+            fixedSlots.add(slot);
+            continue;
+          }
+          const setKey = setTalentToKey.get(Math.abs(talentId));
+          if (!setKey) continue;
+          seenInRow.add(setKey);
+        }
+        for (const setKey of seenInRow) {
+          initialSetCounters.set(setKey, (initialSetCounters.get(setKey) || 0) + 1);
+        }
+      }
+
+      const orderedSetKeys = Array.from(initialSetCounters.entries())
+        .sort((a, b) => b[1] - a[1])
+        .map(([setKey]) => setKey);
+      const setPriority = new Map();
+      orderedSetKeys.forEach((k, i) => setPriority.set(k, i));
+      const setSize = new Map(initialSetCounters);
+      const setColHistogram = new Map();
+      for (let level = 6; level >= 1; level--) {
+        const rowSlots = Build.getRowSlotIndicesByLevel(level);
+        for (let col = 0; col < 6; col++) {
+          const slot = rowSlots[col];
+          const t = Build.installedTalents?.[slot];
+          const id = Number(t?.id);
+          if (!(id > 0)) continue;
+          const setKey = setTalentToKey.get(Math.abs(id));
+          if (!setKey) continue;
+          if (!setColHistogram.has(setKey)) setColHistogram.set(setKey, new Array(6).fill(0));
+          setColHistogram.get(setKey)[col] += 1;
+        }
+      }
+      const setColAffinity = new Map();
+      for (const [setKey, hist] of setColHistogram.entries()) {
+        setColAffinity.set(setKey, (hist || new Array(6).fill(0)).slice(0, 6));
+      }
+      let swapCount = 0;
+
+      for (let level = 6; level >= 1; level--) {
+        const rowSlots = Build.getRowSlotIndicesByLevel(level);
+        const movableCols = [];
+        const entryAtCol = new Map();
+        const currentColByEntry = new Map();
+        const setGroups = new Map();
+        const otherEntries = [];
+
+        for (let col = 0; col < 6; col++) {
+          const slot = rowSlots[col];
+          if (fixedSlots.has(slot)) continue;
+          movableCols.push(col);
+          const t = Build.installedTalents?.[slot] || null;
+          const id = Number(t?.id);
+          const setKey = id > 0 ? setTalentToKey.get(Math.abs(id)) || null : null;
+          const entry = { slot, id, setKey };
+          entryAtCol.set(col, entry);
+          currentColByEntry.set(entry, col);
+          if (setKey) {
+            if (!setGroups.has(setKey)) setGroups.set(setKey, []);
+            setGroups.get(setKey).push(entry);
+          } else {
+            otherEntries.push(entry);
+          }
+        }
+
+        // If a row has multiple talents of the same set,
+        // keep only one set-representative for column alignment.
+        // Others are treated as non-set entries for this row.
+        for (const [setKey, entries] of Array.from(setGroups.entries())) {
+          if (!entries || entries.length <= 1) continue;
+          const affinity = setColAffinity.get(setKey) || new Array(6).fill(0);
+          let keep = entries[0];
+          let keepScore = -Infinity;
+          for (const e of entries) {
+            const c = currentColByEntry.get(e);
+            const col = Number.isFinite(c) ? c : 0;
+            const s = (Number(affinity[col]) || 0) * 100 - col;
+            if (s > keepScore) {
+              keepScore = s;
+              keep = e;
+            }
+          }
+          for (const e of entries) {
+            if (e === keep) continue;
+            e.setKey = null;
+            otherEntries.push(e);
+          }
+          setGroups.set(setKey, [keep]);
+        }
+
+        const remainingCols = movableCols.slice();
+        const desiredAtCol = new Map();
+        const sortedSets = Array.from(setGroups.keys()).sort((a, b) => {
+          const pa = setPriority.has(a) ? setPriority.get(a) : Number.MAX_SAFE_INTEGER;
+          const pb = setPriority.has(b) ? setPriority.get(b) : Number.MAX_SAFE_INTEGER;
+          if (pa !== pb) return pa - pb;
+          return `${a}`.localeCompare(`${b}`);
+        });
+
+        for (const setKey of sortedSets) {
+          const entries = setGroups.get(setKey) || [];
+          if (entries.length !== 1 || !remainingCols.length) continue;
+          const k = Math.min(entries.length, remainingCols.length);
+          const affinity = setColAffinity.get(setKey) || new Array(6).fill(0);
+          const rankedCols = remainingCols
+            .slice()
+            .sort((a, b) => {
+              const da = Number(affinity[a]) || 0;
+              const db = Number(affinity[b]) || 0;
+              if (db !== da) return db - da;
+              return a - b;
+            })
+            .slice(0, k)
+            .sort((a, b) => a - b);
+          for (let i = 0; i < rankedCols.length; i++) {
+            desiredAtCol.set(rankedCols[i], entries[i]);
+          }
+          for (const c of rankedCols) {
+            const idx = remainingCols.indexOf(c);
+            if (idx >= 0) remainingCols.splice(idx, 1);
+          }
+        }
+
+        const restEntries = [...otherEntries];
+        for (const setKey of sortedSets) {
+          const entries = setGroups.get(setKey) || [];
+          for (const e of entries) {
+            if (![...desiredAtCol.values()].includes(e)) restEntries.push(e);
+          }
+        }
+        for (let i = 0; i < remainingCols.length && i < restEntries.length; i++) {
+          desiredAtCol.set(remainingCols[i], restEntries[i]);
+        }
+
+        for (const col of movableCols) {
+          const desired = desiredAtCol.get(col);
+          if (!desired) continue;
+          const current = entryAtCol.get(col);
+          if (current === desired) continue;
+          const fromCol = currentColByEntry.get(desired);
+          if (!Number.isFinite(fromCol)) continue;
+          const leftSlot = rowSlots[col];
+          const rightSlot = rowSlots[fromCol];
+          if (fixedSlots.has(leftSlot) || fixedSlots.has(rightSlot)) continue;
+          const desiredSet = desired?.setKey || null;
+          const occupant = entryAtCol.get(col);
+          const occupantSet = occupant?.setKey || null;
+          if (desiredSet && occupantSet && desiredSet !== occupantSet) {
+            const desiredSize = Number(setSize.get(desiredSet)) || 0;
+            const occupantSize = Number(setSize.get(occupantSet)) || 0;
+            // Lower-size sets must not displace higher-size sets from a column.
+            if (desiredSize < occupantSize) continue;
+          }
+          await Build.swapBuildSlotsWithBackend(rightSlot, leftSlot);
+          swapCount++;
+
+          const eA = entryAtCol.get(col);
+          const eB = entryAtCol.get(fromCol);
+          entryAtCol.set(col, eB);
+          entryAtCol.set(fromCol, eA);
+          currentColByEntry.set(eA, fromCol);
+          currentColByEntry.set(eB, col);
+        }
+
+        // Polish current row against previous one: maximize vertical set continuity.
+        if (level < 6) {
+          const prevSlots = Build.getRowSlotIndicesByLevel(level + 1);
+          const nextSlots = level > 1 ? Build.getRowSlotIndicesByLevel(level - 1) : null;
+          const getSetAtSlot = (slot) => {
+            const t = Build.installedTalents?.[slot];
+            const id = Number(t?.id);
+            if (!(id > 0)) return null;
+            return setTalentToKey.get(Math.abs(id)) || null;
+          };
+          const prevSetAtCol = prevSlots.map((s) => getSetAtSlot(s));
+          const nextSetAtCol = nextSlots ? nextSlots.map((s) => getSetAtSlot(s)) : null;
+          const curSetCount = new Map();
+          const prevSetCount = new Map();
+          for (let c = 0; c < 6; c++) {
+            const curSet = getSetAtSlot(rowSlots[c]);
+            if (curSet) curSetCount.set(curSet, (curSetCount.get(curSet) || 0) + 1);
+            const pSet = prevSetAtCol[c];
+            if (pSet) prevSetCount.set(pSet, (prevSetCount.get(pSet) || 0) + 1);
+          }
+          const polishLockedCols = new Set();
+          for (const c of movableCols) {
+            const rowSet = getSetAtSlot(rowSlots[c]);
+            if (!rowSet) continue;
+            if ((curSetCount.get(rowSet) || 0) > 1) continue; // ignore duplicated set entries in row
+            const size = Number(setSize.get(rowSet)) || 0;
+            if (size < 3) continue; // protect only long sets
+            const hasPrevContinuation = prevSetAtCol[c] === rowSet;
+            const hasNextContinuation = !!nextSetAtCol && nextSetAtCol[c] === rowSet;
+            // Lock only real "inside column" cells so short sets can still align around them.
+            if (hasPrevContinuation && hasNextContinuation) {
+              polishLockedCols.add(c);
+            }
+          }
+          const scoreRow = () => {
+            let score = 0;
+            for (let c = 0; c < 6; c++) {
+              const sk = getSetAtSlot(rowSlots[c]);
+              if (!sk) continue;
+              if ((curSetCount.get(sk) || 0) > 1) continue; // ignore duplicated set entries in current row
+              if ((prevSetCount.get(sk) || 0) > 1) continue; // ignore duplicated set entries in previous row
+              if (sk === prevSetAtCol[c]) score++;
+            }
+            return score;
+          };
+          for (let iter = 0; iter < 4; iter++) {
+            let best = null;
+            const base = scoreRow();
+            for (let i = 0; i < movableCols.length; i++) {
+              for (let j = i + 1; j < movableCols.length; j++) {
+                const c1 = movableCols[i];
+                const c2 = movableCols[j];
+                if (polishLockedCols.has(c1) || polishLockedCols.has(c2)) continue;
+                const s1 = rowSlots[c1];
+                const s2 = rowSlots[c2];
+                const t1 = Build.installedTalents?.[s1];
+                const t2 = Build.installedTalents?.[s2];
+                const id1 = Number(t1?.id);
+                const id2 = Number(t2?.id);
+                if (t1 && !(id1 > 0)) continue;
+                if (t2 && !(id2 > 0)) continue;
+                await Build.swapBuildSlotsWithBackend(s1, s2);
+                const sc = scoreRow();
+                await Build.swapBuildSlotsWithBackend(s1, s2);
+                if (sc > base && (!best || sc > best.score)) {
+                  best = { c1, c2, score: sc };
+                }
+              }
+            }
+            if (!best) break;
+            await Build.swapBuildSlotsWithBackend(rowSlots[best.c1], rowSlots[best.c2]);
+            swapCount++;
+          }
+        }
+
+        // Update affinities using finalized row.
+        const affinitySetSeen = new Set();
+        for (let col = 0; col < 6; col++) {
+          const slot = rowSlots[col];
+          const t = Build.installedTalents?.[slot];
+          const id = Number(t?.id);
+          if (!(id > 0)) continue;
+          const setKey = setTalentToKey.get(Math.abs(id));
+          if (!setKey) continue;
+          if (affinitySetSeen.has(setKey)) continue; // only one entry per set per row
+          affinitySetSeen.add(setKey);
+          if (!setColAffinity.has(setKey)) setColAffinity.set(setKey, new Array(6).fill(0));
+          setColAffinity.get(setKey)[col] += 4;
+        }
+      }
+
+      swapCount += await Build.enforceSingleSetNeighborContinuity(setTalentToKey, fixedSlots, initialSetCounters, 'down');
+      swapCount += await Build.enforceSingleSetNeighborContinuity(setTalentToKey, fixedSlots, initialSetCounters, 'up');
+
+      Build.updateHeroStats();
+      Build.renderCombatOrderBadges();
+      Build.refreshActiveTalentDescription();
+      Build.refreshStatFilterHighlightCountDisplay();
+      Build.syncCombatModeButtonState();
+      await Build.syncSortResultToBackend(initialBodySnapshot, initialActiveSnapshot);
+
+      if (swapCount > 0) {
+        App.notify(Lang.text('sortSetsIntoColumnDone').replace('{count}', String(swapCount)));
+      }
+    } catch {
+      try {
+        await Build.refreshBuildStateFromServer({ refreshInventory: true });
+      } catch {}
+      App.notify(Lang.text('sortSetsIntoColumnFailed'));
+    } finally {
+      Build._sortDeferBackendSync = false;
+      Build.sortSetsInProgress = false;
+      Build.syncSetSortButtonState();
     }
   }
 
@@ -3290,6 +4364,9 @@ export class Build {
         let refineMul = parseFloat(talent.statsRefine[key]);
         statValue += refineBonus * refineMul;
       }
+      if (Build.combatModeEnabled && key.indexOf('stak') !== -1) {
+        statValue *= Build.getCombatStackProgressFactor();
+      }
       add[stat] = statValue;
     }
 
@@ -4522,11 +5599,54 @@ export class Build {
   static highlightSetTalents(talentIds) {
     Build.clearSetHighlights();
     const wanted = new Set((talentIds || []).map(String));
+    const visibleRect = Build.getLibraryVisibleScrollRect();
     Build.fieldView?.querySelectorAll('.build-talent-item').forEach((el) => {
       if (wanted.has(el.dataset.id)) el.classList.add('build-set-highlight');
     });
     Build.inventoryView?.querySelectorAll('.build-talents .build-talent-item').forEach((el) => {
-      if (wanted.has(el.dataset.id)) el.classList.add('build-set-highlight-lib');
+      if (wanted.has(el.dataset.id) && Build.isLibraryTalentVisibleByScroll(el, visibleRect)) el.classList.add('build-set-highlight-lib');
+    });
+    Build.refreshStatFilterHighlightCountDisplay();
+  }
+
+  static getLibraryVisibleScrollRect() {
+    const list = Build.inventoryView?.querySelector?.('.build-talents');
+    if (!list) return null;
+    const listRect = list.getBoundingClientRect?.();
+    return {
+      list,
+      listRect,
+      left: list.scrollLeft,
+      right: list.scrollLeft + list.clientWidth,
+      top: list.scrollTop,
+      bottom: list.scrollTop + list.clientHeight,
+    };
+  }
+
+  static isLibraryTalentVisibleByScroll(el, visibleRect) {
+    if (!el || !el.isConnected || !visibleRect?.list) return false;
+    if (!visibleRect.list.contains(el)) return false;
+    const elRect = el.getBoundingClientRect?.();
+    const listRect = visibleRect.listRect || visibleRect.list.getBoundingClientRect?.();
+    if (!elRect || !listRect) return false;
+    const left = elRect.left - listRect.left + visibleRect.list.scrollLeft;
+    const top = elRect.top - listRect.top + visibleRect.list.scrollTop;
+    const right = left + el.offsetWidth;
+    const bottom = top + el.offsetHeight;
+    return !(
+      right <= visibleRect.left ||
+      left >= visibleRect.right ||
+      bottom <= visibleRect.top ||
+      top >= visibleRect.bottom
+    );
+  }
+
+  static highlightSetTalentsInLibraryOnly(talentIds) {
+    Build.clearSetHighlights();
+    const wanted = new Set((talentIds || []).map(String));
+    const visibleRect = Build.getLibraryVisibleScrollRect();
+    Build.inventoryView?.querySelectorAll('.build-talents .build-talent-item').forEach((el) => {
+      if (wanted.has(el.dataset.id) && Build.isLibraryTalentVisibleByScroll(el, visibleRect)) el.classList.add('build-set-highlight-lib');
     });
     Build.refreshStatFilterHighlightCountDisplay();
   }
@@ -4867,7 +5987,7 @@ export class Build {
     });
   }
 
-  static async applySetToBuild(set) {
+  static applySetToBuild(set) {
     const setIds = TalentSets.getTalentIds(set);
     let ids = Build.sortSetTalentIdsByPriority(setIds);
     ids = Build.filterSetTalentIdsByMatchingStats(ids);
@@ -4889,30 +6009,36 @@ export class Build {
       if (emptyIndex == null) continue;
 
       try {
-        await App.api.request('build', 'set', {
-          buildId: Build.id,
-          talentId: data.id,
-          index: emptyIndex,
+        Build.sendBuildMutation({
+          optimisticMethod: 'optimisticSet',
+          legacyMethod: 'set',
+          data: {
+            buildId: Build.id,
+            talentId: data.id,
+            index: emptyIndex,
+          },
         });
 
         Build.installedTalents[emptyIndex] = data;
         simInstalled[emptyIndex] = data;
 
         if (data.active) {
-          try {
-            if (!Build.isFieldIndexAlreadyInActiveBar(emptyIndex)) {
-              const free = Build.findFirstFreeActiveBarIndex();
-              if (free !== -1) {
-                const position = Number(emptyIndex) + 1;
-                await App.api.request('build', 'setActive', {
+          if (!Build.isFieldIndexAlreadyInActiveBar(emptyIndex)) {
+            const free = Build.findFirstFreeActiveBarIndex();
+            if (free !== -1) {
+              const position = Number(emptyIndex) + 1;
+              Build.sendBuildMutation({
+                optimisticMethod: 'optimisticSetActive',
+                legacyMethod: 'setActive',
+                data: {
                   buildId: Build.id,
                   index: free,
                   position: position,
-                });
-                Build.activeBarItems[free] = position;
-              }
+                },
+              });
+              Build.activeBarItems[free] = position;
             }
-          } catch {}
+          }
         }
       } catch (e) {
       }
@@ -5091,27 +6217,42 @@ export class Build {
 
   static async removeSetFromBuild(set) {
     const ids = TalentSets.getTalentIds(set);
-    for (const id of ids) {
-      const setTalentIdNum = Number(id);
-      for (let index = 0; index < (Build.installedTalents || []).length; index++) {
-        const t = Build.installedTalents[index];
-        if (!t) continue;
-        const installedIdNum = Number(t.id);
-        if (Number.isFinite(setTalentIdNum) && Number.isFinite(installedIdNum)) {
-          if (installedIdNum !== setTalentIdNum) continue;
-        } else if (`${t.id}` !== `${id}`) {
-          continue;
-        }
-
-        try {
-          await Build.removeTalentFromActiveByFieldIndex(index);
-        } catch {}
-
-        try {
-          await App.api.request('build', 'setZero', { buildId: Build.id, index });
-          Build.installedTalents[index] = null;
-        } catch (e) {}
+    const idSet = new Set((ids || []).map((id) => `${Number(id)}`));
+    const removeIndices = [];
+    
+    for (let index = 0; index < (Build.installedTalents || []).length; index++) {
+      const t = Build.installedTalents[index];
+      if (!t) continue;
+      if (idSet.has(`${Number(t.id)}`)) {
+        removeIndices.push(index);
       }
+    }
+    
+    if (!removeIndices.length) {
+      Build.refreshLocalBuildUiAfterSet(ids, set);
+      return;
+    }
+    
+    const removePositions = new Set(removeIndices.map((index) => Number(index) + 1));
+    for (let i = 0; i < (Build.activeBarItems || []).length; i++) {
+      const activeItem = Number(Build.activeBarItems[i]) || 0;
+      if (!activeItem) continue;
+      if (!removePositions.has(Math.abs(activeItem))) continue;
+      Build.clearActiveSlotLocal(i);
+      Build.sendBuildMutation({
+        optimisticMethod: 'optimisticClearActive',
+        legacyMethod: 'setZeroActive',
+        data: { buildId: Build.id, index: i },
+      });
+    }
+    
+    for (const index of removeIndices) {
+      Build.installedTalents[index] = null;
+      Build.sendBuildMutation({
+        optimisticMethod: 'optimisticRemove',
+        legacyMethod: 'setZero',
+        data: { buildId: Build.id, index },
+      });
     }
 
     Build.refreshLocalBuildUiAfterSet(ids, set);
@@ -5210,7 +6351,7 @@ export class Build {
               Build.applySetInventoryOrder(set);
             }
             if (mode !== 3) {
-              await Build.applySetToBuild(set);
+              Build.applySetToBuild(set);
               Build.applySetInventoryOrder(set);
             } else {
               Build.applySetInventoryOrder(set);
@@ -5236,7 +6377,6 @@ export class Build {
             Build._forceShowTalentIds = mode === 1 ? new Set(ids.map(String)) : null;
             Build._forceShowOnlySetTalentIds = null;
             Build._forceShowOnlyTalentIds = null;
-            Build.applySetInventoryOrder(set);
             await Build.removeSetFromBuild(set);
             Build.refreshSetHoverState(set, item, ids);
           } finally {
@@ -5428,11 +6568,64 @@ export class Build {
     container.firstChild.remove();
 
     Build.activeBarItems[activeId] = 0;
-    await App.api.request('build', 'setZeroActive', {
+    await Build.sendBuildMutationOrThrow({
+      optimisticMethod: 'optimisticClearActive',
+      legacyMethod: 'setZeroActive',
+      data: {
       buildId: Build.id,
       index: activeId,
+      },
     });
   }
+  
+  static clearActiveSlotLocal(activeId) {
+    const index = Number(activeId);
+    if (!Number.isFinite(index) || index < 0) return;
+    const container = Build.activeBarView?.childNodes?.[index];
+    if (container) {
+      try {
+        container.classList.remove('smartcast');
+        container.dataset.active = 0;
+        container.title = Lang.text('titleSmartcastIsDisabled');
+      } catch {}
+      try {
+        container.firstChild?.remove?.();
+      } catch {}
+    }
+    if (Array.isArray(Build.activeBarItems) && index < Build.activeBarItems.length) {
+      Build.activeBarItems[index] = 0;
+    }
+  }
+  
+  static assignActiveSlotLocal(activeId, position) {
+    const index = Number(activeId);
+    const pos = Number(position);
+    if (!Number.isFinite(index) || index < 0) return;
+    if (!Number.isFinite(pos) || pos === 0) return;
+    
+    const absPos = Math.abs(pos);
+    for (let i = 0; i < (Build.activeBarItems || []).length; i++) {
+      if (i === index) continue;
+      const current = Number(Build.activeBarItems[i]) || 0;
+      if (!current) continue;
+      if (Math.abs(current) !== absPos) continue;
+      Build.clearActiveSlotLocal(i);
+    }
+    
+    if (Array.isArray(Build.activeBarItems) && index < Build.activeBarItems.length) {
+      Build.activeBarItems[index] = pos;
+    }
+    
+    const container = Build.activeBarView?.childNodes?.[index];
+    if (container) {
+      try {
+        if (container.firstChild) {
+          container.firstChild.remove();
+        }
+      } catch {}
+    }
+  }
+  
 
   static async requestSmartcast(element) {
     if (element.firstChild) {
@@ -5441,10 +6634,14 @@ export class Build {
         position = -position;
       }
 
-      await App.api.request('build', 'setActive', {
+      await Build.sendBuildMutationOrThrow({
+        optimisticMethod: 'optimisticSetActive',
+        legacyMethod: 'setActive',
+        data: {
         buildId: Build.id,
         index: element.dataset.index,
         position: position,
+        },
       });
     }
   }
@@ -5686,6 +6883,12 @@ export class Build {
   static refreshLocalBuildUiAfterSet(ids, set = null) {
     try {
       Build.updateHeroStats();
+    } catch {}
+    try {
+      Build.renderCombatOrderBadges();
+    } catch {}
+    try {
+      Build.syncCombatModeButtonState();
     } catch {}
     try {
       Build.rebuildFieldConflictFromInstalledTalents();
@@ -5978,7 +7181,7 @@ export class Build {
         };
 
         let addToActive = async (index, position, datasetPosition, targetElem, clone, smartCast) => {
-          Build.activeBarItems[index] = position;
+          Build.assignActiveSlotLocal(index, position);
           targetElem.append(clone);
           clone.style.position = 'static';
           clone.style.zIndex = 1;
@@ -5998,10 +7201,14 @@ export class Build {
           }
 
           try {
-            await App.api.request('build', 'setActive', {
-              buildId: Build.id,
-              index: index,
-              position: position,
+            await Build.sendBuildMutationOrThrow({
+              optimisticMethod: 'optimisticSetActive',
+              legacyMethod: 'setActive',
+              data: {
+                buildId: Build.id,
+                index: index,
+                position: position,
+              },
             });
             if (smartCast) {
               try {
@@ -6065,7 +7272,7 @@ export class Build {
 
           if (elemBelow.className == 'build-talent-item' && elemBelow.parentElement.className == 'build-hero-grid-item') {
             elemBelow = elemBelow.parentElement;
-            performSwap = swapParentNode.dataset.position ? true : false;
+            performSwap = (swapParentNode?.dataset?.position !== undefined);
             performSwapFromLibrary = !performSwap;
           }
 
@@ -6104,6 +7311,8 @@ export class Build {
 
                   swapParentNode.append(elemBelow.firstChild);
                   elemBelow.append(element);
+                  // Active bar keeps clones, so force immediate redraw after field swap.
+                  Build.activeBar(Array.isArray(Build.activeBarItems) ? Build.activeBarItems : new Array(24).fill(0));
                 } else {
                   if (performSwapFromLibrary) {
                     swappingTal = Build.installedTalents[parseInt(elemBelow.dataset.position)];
@@ -6131,7 +7340,7 @@ export class Build {
 
                 try {
                   let activeBarPosition = null;
-                  if (data.active && swapParentNode.dataset.position) {
+                  if (!performSwap && data.active && swapParentNode?.dataset?.position !== undefined) {
                     activeBarPosition = await editActive(
                       swapParentNode.dataset.position,
                       elemBelow.dataset.position,
@@ -6139,24 +7348,39 @@ export class Build {
                     );
                   }
                   if (performSwap) {
-                    let swappedTalent = Build.installedTalents[parseInt(swapParentNode.dataset.position)];
-
-                    if (swappedTalent.active) {
-                      await editActive(
-                        elemBelow.dataset.position,
-                        swapParentNode.dataset.position,
-                        swapParentNode.firstChild.cloneNode(true),
-                        activeBarPosition,
-                      );
+                    const oldPos = Number(swapParentNode.dataset.position);
+                    const newPos = Number(elemBelow.dataset.position);
+                    const movedTalent = swappingTal;
+                    const displacedTalent = Build.installedTalents[oldPos];
+                    if (movedTalent?.active && !displacedTalent?.active) {
+                      for (let i = 0; i < (Build.activeBarItems || []).length; i++) {
+                        const item = Number(Build.activeBarItems[i]) || 0;
+                        if (!item) continue;
+                        const sign = item < 0 ? -1 : 1;
+                        if (Math.abs(item) === oldPos + 1) {
+                          Build.activeBarItems[i] = sign * (newPos + 1);
+                        }
+                      }
+                      Build.activeBar(Array.isArray(Build.activeBarItems) ? Build.activeBarItems : new Array(24).fill(0));
+                    } else if (!movedTalent?.active && displacedTalent?.active) {
+                      for (let i = 0; i < (Build.activeBarItems || []).length; i++) {
+                        const item = Number(Build.activeBarItems[i]) || 0;
+                        if (!item) continue;
+                        const sign = item < 0 ? -1 : 1;
+                        if (Math.abs(item) === newPos + 1) {
+                          Build.activeBarItems[i] = sign * (oldPos + 1);
+                        }
+                      }
+                      Build.activeBar(Array.isArray(Build.activeBarItems) ? Build.activeBarItems : new Array(24).fill(0));
                     }
-                    await App.api.request('build', 'setZero', {
-                      buildId: Build.id,
-                      index: swapParentNode.dataset.position,
-                    });
-                    await App.api.request('build', 'set', {
-                      buildId: Build.id,
-                      talentId: swappedTalent.id,
-                      index: swapParentNode.dataset.position,
+                    await Build.sendBuildMutationOrThrow({
+                      optimisticMethod: 'optimisticSwap',
+                      legacyMethod: 'swap',
+                      data: {
+                        buildId: Build.id,
+                        i1: Number(swapParentNode.dataset.position),
+                        i2: Number(elemBelow.dataset.position),
+                      },
                     });
 
                     Build.setStat(data, true, false);
@@ -6166,19 +7390,29 @@ export class Build {
                         await removeFromActive(elemBelow.dataset.position);
                       }
                       swapParentNode.firstChild.dataset.state = 1;
-                      await App.api.request('build', 'setZero', {
-                        buildId: Build.id,
-                        index: elemBelow.dataset.position,
+                      await Build.sendBuildMutationOrThrow({
+                        optimisticMethod: 'optimisticRemove',
+                        legacyMethod: 'setZero',
+                        data: {
+                          buildId: Build.id,
+                          index: elemBelow.dataset.position,
+                        },
                       });
                     }
                     Build.setStat(data, true);
                   }
 
-                  await App.api.request('build', 'set', {
-                    buildId: Build.id,
-                    talentId: data.id,
-                    index: elemBelow.dataset.position,
-                  });
+                  if (!performSwap) {
+                    await Build.sendBuildMutationOrThrow({
+                      optimisticMethod: 'optimisticSet',
+                      legacyMethod: 'set',
+                      data: {
+                        buildId: Build.id,
+                        talentId: data.id,
+                        index: elemBelow.dataset.position,
+                      },
+                    });
+                  }
 
                   if (data.active && prevState != element.dataset.state) {
                     let index = -1;
@@ -6277,13 +7511,17 @@ export class Build {
             targetElement.prepend(containedTalent);
 
             try {
-              if (data.active && oldParentNode.dataset.position) {
+              if (data.active && oldParentNode?.dataset?.position !== undefined) {
                 await removeFromActive(oldParentNode.dataset.position);
               }
 
-              await App.api.request('build', 'setZero', {
-                buildId: Build.id,
-                index: oldParentNode.dataset.position,
+              await Build.sendBuildMutationOrThrow({
+                optimisticMethod: 'optimisticRemove',
+                legacyMethod: 'setZero',
+                data: {
+                  buildId: Build.id,
+                  index: oldParentNode.dataset.position,
+                },
               });
 
               Build.installedTalents[parseInt(oldParentNode.dataset.position)] = null;
@@ -6341,21 +7579,77 @@ export class Build {
                   // moved to other position
                   let swapElemParent = element.parentNode;
                   let targetElem = isSwap ? elemBelow.parentNode : elemBelow;
-                  let swapPositionRaw = isSwap ? elemBelow.dataset.position : 0;
-                  let swapPosition = Number(swapPositionRaw) + 1;
-                  let swapSmartCast = Number(targetElem.dataset.active);
-
                   let clone = element.cloneNode(true);
-                  let swapClone = isSwap ? elemBelow.cloneNode(true) : null;
-                  await removeFromActive(positionRaw);
-                  if (swapClone) {
-                    await removeFromActive(swapPositionRaw);
-                  }
-
-                  await addToActive(index, position, positionRaw, targetElem, clone, smartCast);
-
-                  if (swapClone) {
-                    await addToActive(startingIndex, swapPosition, swapPositionRaw, swapElemParent, swapClone, swapSmartCast);
+                  if (isSwap) {
+                    const swapPositionRaw = elemBelow.dataset.position;
+                    const swapPosition = Number(swapPositionRaw) + 1;
+                    const swapSmartCast = Number(targetElem.dataset.active);
+                    const swapClone = elemBelow.cloneNode(true);
+                    const targetIndexNum = Number(index);
+                    const startingIndexNum = Number(startingIndex);
+                    const startPositionNum = Number(position);
+                    const swapPositionNum = Number(swapPosition);
+                    
+                    if (
+                      Number.isFinite(targetIndexNum) &&
+                      Number.isFinite(startingIndexNum) &&
+                      Number.isFinite(startPositionNum) &&
+                      Number.isFinite(swapPositionNum) &&
+                      startPositionNum > 0 &&
+                      swapPositionNum > 0
+                    ) {
+                      // Atomic local swap without intermediate removals to avoid transient empty/duplicate states.
+                      Build.clearActiveSlotLocal(startingIndexNum);
+                      Build.clearActiveSlotLocal(targetIndexNum);
+                      
+                      Build.assignActiveSlotLocal(targetIndexNum, startPositionNum);
+                      Build.assignActiveSlotLocal(startingIndexNum, swapPositionNum);
+                      
+                      clone.dataset.position = `${Number(positionRaw)}`;
+                      clone.dataset.state = 3;
+                      clone.style.opacity = 1;
+                      clone.style.zIndex = 1;
+                      clone.style.position = 'static';
+                      Build.move(clone, true);
+                      targetElem.append(clone);
+                      
+                      swapClone.dataset.position = `${Number(swapPositionRaw)}`;
+                      swapClone.dataset.state = 3;
+                      swapClone.style.opacity = 1;
+                      swapClone.style.zIndex = 1;
+                      swapClone.style.position = 'static';
+                      Build.move(swapClone, true);
+                      swapElemParent.append(swapClone);
+                      
+                      if (smartCast) await Build.enableSmartCast(targetElem, false);
+                      else await Build.disableSmartCast(targetElem, false);
+                      
+                      if (swapSmartCast) await Build.enableSmartCast(swapElemParent, false);
+                      else await Build.disableSmartCast(swapElemParent, false);
+                      
+                      Build.sendBuildMutation({
+                        optimisticMethod: 'optimisticSetActive',
+                        legacyMethod: 'setActive',
+                        data: {
+                          buildId: Build.id,
+                          index: targetIndexNum,
+                          position: startPositionNum,
+                        },
+                      });
+                      
+                      Build.sendBuildMutation({
+                        optimisticMethod: 'optimisticSetActive',
+                        legacyMethod: 'setActive',
+                        data: {
+                          buildId: Build.id,
+                          index: startingIndexNum,
+                          position: swapPositionNum,
+                        },
+                      });
+                    }
+                  } else {
+                    await removeFromActive(positionRaw);
+                    await addToActive(index, position, positionRaw, targetElem, clone, smartCast);
                   }
                 }
               } else {
@@ -6371,12 +7665,16 @@ export class Build {
                   await removeFromActive(elemBelow.dataset.position);
                 }
                 await removeFromActive(positionRaw);
-                await App.api.request('build', 'setActive', {
-                  buildId: Build.id,
-                  index: index,
-                  position: position,
+                await Build.sendBuildMutationOrThrow({
+                  optimisticMethod: 'optimisticSetActive',
+                  legacyMethod: 'setActive',
+                  data: {
+                    buildId: Build.id,
+                    index: index,
+                    position: position,
+                  },
                 });
-                Build.activeBarItems[index] = position;
+                Build.assignActiveSlotLocal(index, position);
 
                 Build.move(clone, true);
 
@@ -6449,6 +7747,7 @@ export class Build {
     if (Build._descriptionPinnedBySet) return;
     const activeTalentEl = Build._hoveredDescriptionTalentEl;
     if (!activeTalentEl || !activeTalentEl.isConnected) return;
+    if (Build._libraryHoverSuppressed && activeTalentEl.closest?.('.build-talents')) return;
     try {
       activeTalentEl.dispatchEvent(new MouseEvent('mouseover', { bubbles: false, cancelable: false, view: window }));
     } catch {}
@@ -6459,6 +7758,7 @@ export class Build {
       let positionElement = element.getBoundingClientRect();
       let data = Build.talents[element.dataset.id];
       const isInventoryTalent = !!element.closest?.('.build-talents');
+      if (isInventoryTalent && Build._libraryHoverSuppressed) return;
 
       if (!data) {
         console.log('Не найден талант в билде: ' + element.dataset.id);
@@ -6473,6 +7773,33 @@ export class Build {
 
       const nameKey = `${prefix}${absId}_name`;
       const descriptionKey = `${prefix}${absId}_description`;
+
+      let hasSetHover = !!Build._hoveredSetTalentIds;
+      const numericTalentId = Number(data.id);
+      const canUseSetHoverForTalent = Number.isFinite(numericTalentId) && numericTalentId > 0;
+      if (!hasSetHover && canUseSetHoverForTalent && Build.isBuildSetHoverOnTalentEnabled()) {
+        const wantedId = numericTalentId;
+        if (Number.isFinite(wantedId) && wantedId > 0) {
+          for (const set of TalentSets.list()) {
+            const ids = TalentSets.getTalentIds(set);
+            if (!Array.isArray(ids) || !ids.length) continue;
+            if (!ids.some((id) => Number(id) === wantedId)) continue;
+            let installedSetTalentsCount = 0;
+            for (const id of ids) {
+              if (Build.isTalentInBuild(id)) installedSetTalentsCount++;
+            }
+            const hoveredTalentInstalledInBuild = Build.isTalentInBuild(data.id);
+            if (installedSetTalentsCount <= 1 && hoveredTalentInstalledInBuild) {
+              Build.highlightSetTalentsInLibraryOnly(ids);
+              hasSetHover = true;
+              break;
+            }
+            Build.highlightSetTalents(ids);
+            hasSetHover = true;
+            break;
+          }
+        }
+      }
 
       // Получаем переводы из системы Lang
       const name = Lang.text(nameKey);
@@ -6589,18 +7916,21 @@ export class Build {
         if (Build.isBuildRowHoverHighlightEnabled() && data.level > 0) {
           Build.highlightBuildRowByLevel(data.level);
         }
-        // Single talent preview in library should pick the left-most empty slot.
-        Build.previewSetTalentsInEmptySlots(
-          { _manualOrder: [data.id], key: `single_${data.id}` },
-          'left',
-          { previewClass: 'build-talent-empty-slot-preview' },
-        );
+        if (!hasSetHover) {
+          // Single talent preview in library should pick the left-most empty slot.
+          Build.previewSetTalentsInEmptySlots(
+            { _manualOrder: [data.id], key: `single_${data.id}` },
+            'left',
+            { previewClass: 'build-talent-empty-slot-preview' },
+          );
+        }
       }
     };
 
     let descEventEnd = () => {
       Build.descriptionView.style.display = 'none';
       Build.clearBuildRowHoverHighlight();
+      if (!Build._hoveredSetTalentIds) Build.clearSetHighlights();
       // Remove only slot previews (keeps set-highlight logic independent).
       if (element.closest?.('.build-talents')) Build.clearEmptySlotPreviews();
     };
@@ -6624,6 +7954,13 @@ export class Build {
   }
   static cleanup() {
     Build._hoveredDescriptionTalentEl = null;
+    Build._libraryHoverSuppressed = false;
+    try {
+      if (Build._libraryHoverSuppressTimer) clearTimeout(Build._libraryHoverSuppressTimer);
+    } catch {}
+    Build._libraryHoverSuppressTimer = 0;
+    Build._libraryPointerX = null;
+    Build._libraryPointerY = null;
     Build.clearBuildRowHoverHighlight();
     Build.toggleBuildSettingsPanel(false);
     try {
