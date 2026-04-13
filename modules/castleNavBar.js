@@ -2,7 +2,6 @@ import { DOM } from './dom.js';
 import { Lang } from './lang.js';
 import { Division } from './division.js';
 import { App } from './app.js';
-import { MM } from './mm.js';
 import { domAudioPresets } from './domAudioPresets.js';
 
 export class CastleNAVBAR {
@@ -257,8 +256,7 @@ export class CastleNAVBAR {
     }
   }
 
-  static setMode(type, options = {}) {
-    const { syncParty = true } = options || {};
+  static setMode(type) {
     let modeSelect = type - 1;
 
     if (CastleNAVBAR.mode != modeSelect) {
@@ -288,17 +286,6 @@ export class CastleNAVBAR {
     CastleNAVBAR.body.children[16].style.display = 'none';
 	
 	window.dispatchEvent(new CustomEvent('CastleModeChanged', { detail: { mode: CastleNAVBAR.mode } }));
-	
-	const inParty = Number(MM.partyMembersCount || 1) > 1;
-	if(syncParty && inParty && MM.partyId && (String(MM.partyId) === String(App.storage?.data?.id))){
-		
-		App.api.request(App.CURRENT_MM,'modeParty',{id:MM.partyId,mode:CastleNAVBAR.mode}).catch((error) => {
-			
-			App.error(error);
-			
-		});
-		
-	}
   }
 
   static queue(data) {

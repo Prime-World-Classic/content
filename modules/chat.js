@@ -557,34 +557,12 @@ export class Chat {
     item.dataset.localEcho = data.localEcho ? '1' : '0';
     if (Chat.canManagePins && !data.pinned) item.append(Chat.createPinButton(data));
 
-    item.addEventListener('contextmenu', (event) => {
-      event.preventDefault();
-      const canModerate = App.isAdmin() || App.isHelper();
-      let body = document.createDocumentFragment();
-      const modalTitle = DOM({ style: 'title-modal' }, DOM({ style: 'title-modal-text' }, 'Чат'));
-      const nicknameLine = DOM({ id: 'friendRemoveText' }, String(data.nickname || ''));
+    item.addEventListener('contextmenu', () => {
+      if (App.isAdmin() || App.isHelper()) {
+        let body = document.createDocumentFragment();
 
-      body.append(
-        modalTitle,
-        nicknameLine,
-        DOM(
-          {
-            style: 'splash-content-button',
-            domaudio: domAudioPresets.bigButton,
-            event: [
-              'click',
-              () => {
-                Splash.hide();
-                App.openStatsProfile({ id: data.id, login: data.nickname });
-              },
-            ],
-          },
-          Lang.text('showStatistics'),
-        ),
-      );
-
-      if (canModerate) {
         body.append(
+          DOM(`Выдать мут чата ${data.nickname}?`),
           DOM(
             {
               style: 'splash-content-button',
@@ -598,23 +576,21 @@ export class Chat {
                 },
               ],
             },
-            'Выдать мут',
+            'Да',
+          ),
+          DOM(
+            {
+              style: 'splash-content-button',
+              domaudio: domAudioPresets.bigButton,
+              event: ['click', async () => Splash.hide()],
+            },
+            'Нет',
           ),
         );
+
+        Splash.show(body);
       }
 
-      body.append(
-        DOM(
-          {
-            style: 'splash-content-button',
-            domaudio: domAudioPresets.bigButton,
-            event: ['click', () => Splash.hide()],
-          },
-          Lang.text('cancel'),
-        ),
-      );
-
-      Splash.show(body);
       return false;
     });
 

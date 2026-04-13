@@ -40,8 +40,6 @@ export class MM {
   static targetPlayerAnimate = false;
 
   static activeSelectHero = 0;
-  
-  static partyMembersCount = 1;
 
   static isInTambur = false;
   
@@ -659,7 +657,7 @@ export class MM {
     
     View.loadCastleHeroSelectedList();
     View.loadCastleHeroListNames();
-    const selectedHeroListId = View.getCastleHeroTamburListId(MM.hero);
+    const selectedHeroListId = Number(View.castleHeroSelectedList) || 0;
     const selectedHeroListMask = selectedHeroListId > 0 ? 1 << (selectedHeroListId - 1) : 0;
 
     let filteredHeroes = [];

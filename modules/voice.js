@@ -86,6 +86,8 @@ export class Voice {
 
   static volumeLevel = 1.0;
 
+  static volumeLevelStep = 0.2;
+
   static reconnectJobs = new Map();
 
   static mergeAutoAcceptUntil = new Map();
@@ -622,9 +624,6 @@ export class Voice {
   }
 
   static updateInfoPanel() {
-    if (Number.isFinite(Number(Settings.settings?.voiceVolume))) {
-      Voice.setVolumeLevel(Number(Settings.settings.voiceVolume));
-    }
     Voice.stopPanelMeters();
     const panelBody = Voice.getInfoPanelBody();
     if (!panelBody) return;
@@ -698,11 +697,13 @@ export class Voice {
       const dropKey = formatHotkey(Settings.settings?.voiceDropHotkey, 'Ctrl+K');
       const toggleKey = formatHotkey(Settings.settings?.voiceToggleHotkey, 'Ctrl+Z');
       if (Voice.mic.enabled) {
-        tutorial.innerHTML = `<strong>${dropKey}</strong>${Lang.text('hotkeyDropCallsSuffix')}`;
+        tutorial.innerHTML = `<strong>${dropKey}</strong>${Lang.text('hotkeyDropCallsSuffix')}<br>${Lang.text('hotkeyVolumeControl')}`;
       } else {
         const micLabel = String(Voice.rawMic?.label || Voice.mic?.label || 'microphone');
         tutorial.innerHTML =
           `<strong>${dropKey}</strong>${Lang.text('hotkeyDropCallsSuffix')}` +
+          '<br>' +
+          Lang.text('hotkeyVolumeControl') +
           '<br>────────────<br>' +
           `<strong>${toggleKey}</strong>${Lang.text('enableMicSuffix').replace('{Voice.mic.label}', micLabel)}`;
       }
@@ -1080,12 +1081,29 @@ export class Voice {
     }
   }
 
-  static setVolumeLevel(level = 1.0) {
-    const volumeLevel = Math.max(0, Math.min(1, Number(level) || 0));
-    for (let id in Voice.manager) {
-      if (Voice.manager[id]?.controller) {
-        Voice.manager[id].controller.volume = volumeLevel;
+  static volumeControl(increase = false) {
+    let volumeLevel = 0.0;
+
+    if (increase) {
+      volumeLevel = Voice.volumeLevel + Voice.volumeLevelStep;
+
+      if (volumeLevel > 1.0) {
+        return;
       }
+
+      App.say(`${Math.round(volumeLevel * 100)}%`);
+    } else {
+      volumeLevel = Voice.volumeLevel - Voice.volumeLevelStep;
+
+      if (volumeLevel < 0.0) {
+        return;
+      }
+
+      App.say(`${Math.round(volumeLevel * 100)}%`);
+    }
+
+    for (let id in Voice.manager) {
+      Voice.manager[id].controller.volume = volumeLevel;
     }
 
     Voice.volumeLevel = volumeLevel;
@@ -1131,9 +1149,6 @@ export class Voice {
   }
 
   constructor(id, key = '', name = '', important = false) {
-    if (Number.isFinite(Number(Settings.settings?.voiceVolume))) {
-      Voice.setVolumeLevel(Number(Settings.settings.voiceVolume));
-    }
     this.id = id;
 
     this.key = key;
