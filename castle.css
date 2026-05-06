@@ -1691,7 +1691,7 @@ body {
   filter: brightness(1.2);
 }
 
-.castle-hero-list-btn-active:not(.castle-hero-list-btn-all):not(.castle-hero-list-btn-add):not(.castle-friend-list-btn-fav)::after {
+.castle-hero-list-btn-active:not(.castle-hero-list-btn-all):not(.castle-hero-list-btn-add):not(.castle-friend-list-btn-fav):not(.castle-friend-list-btn-online)::after {
   content: '';
   position: absolute;
   left: 50%;
@@ -1742,6 +1742,12 @@ body {
   background-size: contain;
   background-position: center;
   filter: brightness(1.15);
+}
+
+.castle-friend-list-btn-online {
+  min-width: 6.2cqh;
+  font-size: 1.15cqh;
+  letter-spacing: 0.04em;
 }
 
 .castle-hero-list-btn-add {
@@ -2233,7 +2239,7 @@ body {
   border-radius: 3.5cqh;
  text-shadow: rgba(0, 0, 0, 1) 0.1cqh 0.1cqh 0.1cqh, rgba(0, 0, 0, 1) 0.1cqh -0.1cqh 0.1cqh, rgba(0, 0, 0, 1) -0.1cqh 0.1cqh 0.1cqh, rgba(0, 0, 0, 1) -0.1cqh -0.1cqh 0.1cqh;
   color: rgb(252, 229, 188);
-  font: 9cqh / 1.4 'DejaVuSans', sans-serif;
+  font: 9cqh / 1.5 'DejaVuSans', sans-serif;
   white-space: nowrap;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
   transition:
@@ -2334,7 +2340,7 @@ body {
   flex-flow: column nowrap;
   margin-top: 19cqh;
   max-height: 62cqh;
-  width: 50cqh;
+  width: 65cqh;
   z-index: 5;
 }
 

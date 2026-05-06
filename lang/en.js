@@ -19,6 +19,10 @@ export const en = {
     titleHelper: 'Helper',
     titlePhone: 'Phone',
     titleSteamClient: 'Steam Client',
+    chatEditedShort: 'edited.',
+    chatReplyShort: 'reply',
+    titleStarsGlory:
+      '"Stars of Glory" — 1 star = MVP 100%\n(best/most valuable player among 10 players in a match)\nwith zero deaths.',
     ready: 'Ready!',
     ready2: "Confirm the hero's choice",
     library: 'Library',
@@ -304,6 +308,9 @@ export const en = {
     buildSettingsLmbMode1: 'Display all talents in Library',
     buildSettingsLmbMode2: 'Show set leftovers in Library',
     buildSettingsLmbMode3: 'Show set in Library',
+    buildSettingsSetSortMode: 'Set sorting',
+    buildSettingsSetSortModeDefault: 'Default',
+    buildSettingsSetSortModePopular: 'By popularity',
     buildSettingsSetMatchOnly: 'Matching stats only (Sets)',
     buildSettingsStatFilterHighlight: 'Talent highlight (hover over a stat)',
     buildSettingsSetHoverOnTalent: 'Set highlight on talent hover',
@@ -1031,8 +1038,8 @@ export const en = {
     titleDuplicateTheCurrentBuild: 'Duplicate the current build',
     titleGenerateARandomBuild: 'Generate a random build',
     titleResetTalentsInThisBuild: 'Reset talents in this build',
-    titleSortSetsIntoColumn: 'Sort sets into columns',
-    sortSetsRmbMirrorBuild: 'RMB - Mirror build',
+    titleSortSetsIntoColumn: 'LMB - Sort talents in build',
+    sortSetsRmbMirrorBuild: 'RMB - Mirror build + sort',
     titleActiveTalents: 'Active talents',
     titleTheRed: 'The red',
     titleTheOrange: 'The orange',
@@ -2018,7 +2025,7 @@ export const en = {
       'The bleeding effect stacks up to <num>3</num> times on targets with reduced Health regeneration. <br>The Enchanted Arrow talent, upon reaching maximum distance or hitting an enemy, explodes and deals <mag>%s</mag> damage to enemies around.',
     htalent_176_name: "Hunt's fervor <mana>90</mana> <CD>18</CD>",
     htalent_176_description:
-      'Increases the Speed of the specified allied target by <num>50%</num> for <num>6</num> sec. </br>\n<rz>On native terrain, Speed is additionally increased by <num>20%</num>.</rz>',
+      'Increases the Speed of the specified allied target by <num>50%</num> for <num>6</num> sec. </br><rz>On native terrain, Speed is additionally increased by <num>20%</num>, healing is additionally increased by <num>50%</num> .</rz>',
     htalent_177_name: 'Devastating Shot <mana>215</mana> <CD>70</CD>',
     htalent_177_description:
       'The hero draws the bow for <num>1.6</num> sec. and releases an arrow in the specified direction, dealing up to <mag>%s</mag> damage to all enemies in its path. The longer the shot is charged, the more damage it deals.',
@@ -2058,7 +2065,7 @@ export const en = {
       'Creates an area for <num>8</num> sec. where enemies take <mag>%s</mag> damage per sec.<br>\nRat Swarm turns enemy terrain neutral.',
     htalent_190_name: "Flute's Call <mana>180</mana> <CD>15</CD>",
     htalent_190_description:
-      'Forces an enemy Hero to follow you for <num>2.5</num> seconds, or until <num>%s</num> damage (based on Intellect) is dealt, and forces enemy creatures to serve you.<br>Can control up to <num>4</num> creatures at the same time. Tamed creatures gain <num>%s</num> Agility and Cunning (based on Agility and Cunning).',
+      'Forces an enemy Hero to follow you for <num>2.5</num> seconds, or until <num>%s</num> damage (based on Intellect) is dealt, and forces enemy creatures to serve you.<br>Can control up to <num>4</num> creatures at the same time.',
     htalent_191_name: 'Rat Disease',
     htalent_191_description:
       'The Rat Swarm talent additionally deals <mag>%s</mag> damage to enemies and reduces their highest of Strength or Intellect by <num>%s</num> (based on Strength) for <num>3</num> sec. Reduces enemy healing by <num>%s%</num> (based on Strength), up to <num>75%</num>.<br>Total damage <mag>%s</mag>',
@@ -2828,7 +2835,7 @@ export const en = {
       "The Rainbow Jump talent increases the hero's Stamina and Will by <num>%s</num> (from Intellect) for <num>5</num> seconds.",
     htalent_464_name: 'Master of Training',
     htalent_464_description:
-      'Flute-enchanted creatures deal additional <num>%s</num> <red-d>physical damage</red-d> (from the greatest Strength and Intellect).',
+      'Flute-enchanted creatures deal additional <fiz>%s</fiz> damage (from the greatest Strength and Intellect).',
     htalent_465_name: 'Master of the Forest <mana>50</mana> <CD>15</CD>',
     htalent_465_description:
       'With the help of talent, the Call of the flute forces an additional Goblin to serve itself. Once every <num>15</num> seconds, you can order a Goblin to use an ability that stuns enemies around for <num>1</num> second.',
@@ -5918,6 +5925,6 @@ export const en = {
       'Increases harpoon range and flight speed by <num>50%</num>. <br> <br> <gray>Set</gray> <tn>"Boarding Harpoon"</tn>',
     talent_777_name: 'Boarding Supremacy',
     talent_777_description:
-      'Reduces the Boarding Harpoon talent cooldown by <num>20</num> sec. Stuns not only the main target but all enemies around it within radius <num>5</num>. After the stun, targets are additionally slowed by <num>50%</num> for <num>2</num> sec. <br> <br> <gray>Set</gray> <tn>"Boarding Harpoon"</tn>',
+      'Reduces the Boarding Harpoon talent cooldown by <num>20</num> sec. Stuns not only the main target but all enemies around it within radius <num>5</num>. After the stun, targets are additionally slowed by <num>50%</num> for <num>2</num> seconds <br> <br> <gray>Set</gray> <tn>"Boarding Harpoon"</tn>',
   },
 };

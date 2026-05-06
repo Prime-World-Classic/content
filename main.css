@@ -747,14 +747,16 @@ input::placeholder {
   pointer-events: auto;
 }
 
-.build-hero-stats-highlight-count[data-tooltip]:hover::after {
+.build-hero-stats-highlight-count[data-tooltip]:hover::after,
+.build-hero-stats-settings [data-tooltip]:hover::after,
+.build-list-settings[data-tooltip]:hover::after {
   content: attr(data-tooltip);
   position: absolute;
   bottom: calc(100% + 1.2cqh);
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
-  padding: 0.85cqh 1cqw;
+  padding: 1cqh 1cqh;
   border-radius: 1.5cqh;
   background: rgba(0, 0, 0, 0.72);
   border: 0.01cqh solid rgba(104, 158, 154, 0.4);
@@ -764,6 +766,44 @@ input::placeholder {
   z-index: 10001;
   pointer-events: none;
   text-shadow: 0 0 0.1cqh rgba(0, 0, 0, 0.8);
+}
+
+.build-hero-stats-settings [data-tooltip] {
+  position: relative;
+}
+
+.build-list-settings[data-tooltip] {
+  position: absolute;
+}
+
+.build-actions-view .build-action-item[data-tooltip] {
+  position: relative;
+}
+
+.build-actions-view .build-action-item[data-tooltip]:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 1.2cqh);
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  padding: 1cqh 1cqh;
+  border-radius: 1.5cqh;
+  background: rgba(0, 0, 0, 0.72);
+  border: 0.01cqh solid rgba(104, 158, 154, 0.4);
+  color: rgba(232, 248, 248, 0.95);
+  font-weight: 600;
+  font-size: calc(min(12cqh, 24cqw));
+  z-index: 10001;
+  pointer-events: none;
+  text-shadow: 0 0 0.1cqh rgba(0, 0, 0, 0.8);
+}
+
+.build-actions-view .build-action-item.build-action-item-multiline-tooltip[data-tooltip]:hover::after {
+  white-space: pre;
+  text-align: center;
+  word-break: normal;
+  overflow-wrap: normal;
 }
 
 .build-hero-stats-setting-land-type {
@@ -917,7 +957,6 @@ input::placeholder {
   transform-origin: center;
   transform: translate(50%, -40%);
   transition: all 0.2s ease;
-  z-index: 9999;
 }
 
 .help-button:hover {
@@ -4507,7 +4546,7 @@ button.build-action-item.btn-hover.color-1 .btn-duplicate {
   position: relative;
   width: 80%;
   height: 13cqh;
-  padding: 5%;
+  padding: 3%;
   transition: all 0.3s ease-out;
   opacity: 80%;
   border: 0.2cqh groove rgb(158, 155, 104);
@@ -4649,6 +4688,18 @@ button.build-action-item.btn-hover.color-1 .btn-duplicate {
   padding: 0.7cqh;
 }
 
+.chat-body-item-own {
+  background: linear-gradient(90deg, rgba(80, 140, 255, 0.22), rgba(80, 140, 255, 0.1));
+  border-left: 0.2cqh solid rgba(140, 205, 255, 0.95);
+  border-radius: 0.4cqh;
+}
+
+.chat-body-item-other {
+  background: linear-gradient(90deg, rgba(255, 205, 80, 0.11), rgba(255, 205, 80, 0.05));
+  border-left: 0.2cqh solid rgba(255, 225, 120, 0.48);
+  border-radius: 0.4cqh;
+}
+
 .chat-body-item-content {
   flex: 1;
   min-width: 0;
@@ -4656,7 +4707,7 @@ button.build-action-item.btn-hover.color-1 .btn-duplicate {
 
 .chat-body-item div {
   display: inline;
-  font: 2cqh / 1 'DejaVuSans', sans-serif;
+  font: 1.6cqh / 1 'DejaVuSans', sans-serif;
   text-shadow: rgba(0, 0, 0, 0.3) 0 0 0.2cqw;
   transition: all 0.3s ease-out;
   color: rgba(240, 240, 230, 0.9);
@@ -4689,6 +4740,10 @@ button.build-action-item.btn-hover.color-1 .btn-duplicate {
   margin-left: 0.5cqh;
   font: 1.25cqh / 1 'DejaVuSans', sans-serif;
   color: rgb(254 255 235 / 60%);
+}
+
+.chat-edit-indicator {
+  margin-right: 0.7cqh;
 }
 
 .chat-pinned-message {

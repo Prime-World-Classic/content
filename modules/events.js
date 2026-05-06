@@ -154,7 +154,7 @@ export class Events {
     if (data && ('mode' in data)) {
       CastleNAVBAR.setMode(Number(data.mode) + 1, { syncParty: false });
     }
-    View.show('castle', data);
+    View.refreshCastlePlayOnly(data).catch((error) => App.error(error));
   }
   
   static PMode(data) {
@@ -183,7 +183,7 @@ export class Events {
   }
 
   static PExit() {
-    View.show('castle');
+    View.refreshCastlePlayOnly().catch((error) => App.error(error));
   }
 
   static PReady(data) {
@@ -260,6 +260,21 @@ export class Events {
   /** Обновление только списка закреплённых (бэк шлёт UChatPinned, не UChat). */
   static UChatPinned(data) {
     Chat.viewMessage(data);
+  }
+  
+  static eventForumEditMessage(data) {
+    const id = Number(data?.id || 0);
+    if (!(id > 0)) return;
+    const cached = Chat.findCachedMessageById(id);
+    if (!cached) return;
+    Chat.viewMessage({
+      ...cached,
+      dbMessageId: Number(cached?.dbMessageId || id),
+      message: String(data?.message || cached?.message || ''),
+      edited: true,
+      editedAt: Date.now(),
+      pinned: Boolean(cached?.pinned),
+    });
   }
 
   static UFriendIncoming(data) {
