@@ -740,6 +740,13 @@ export class View {
       return;
     }
 
+    // Устаревший/отменённый рендер (null) — не трогаем текущий экран:
+    // при быстром переключении вкладки проигравшая гонка не должна
+    // убирать уже показанный вью (иначе пустой экран).
+    if (!template) {
+      return;
+    }
+
     // Ensure action bar slots exist in native input_new.cfg once per app session.
     if (method === 'castle' && !View._actionBarCfgEnsured) {
       try {
@@ -1275,8 +1282,6 @@ export class View {
 
               try {
                 await PWGame.check();
-
-                await PWGame.testGameServerConnection();
 
                 await PWGame.checkUpdates();
               } catch (e) {
@@ -3898,8 +3903,6 @@ export class View {
               try {
                 await PWGame.check();
 
-                await PWGame.testGameServerConnection();
-
                 await PWGame.checkUpdates();
               } catch (e) {
                 PWGame.gameConnectionTestIsActive = false;
@@ -4951,7 +4954,9 @@ export class View {
     header.append(closeBtn, searchInput);
 
     let adm = DOM({ style: 'adm' }, header);
-    let result = await App.api.request('build', 'talentAll');
+    // Пагинация с бюджетом размера (backend): фреймы под лимит CF (~23 КБ),
+    // полный набор 777 строк набирается циклом (~10 запросов).
+    let result = await App.api.requestPaged('build', 'talentAll');
     let talentContainers = [];
     let talentsContainer = DOM({ style: 'talents-container' });
 
@@ -5039,7 +5044,8 @@ export class View {
     header.append(closeBtn, searchInput);
 
     let adm = DOM({ style: 'adm' }, header);
-    let result = await App.api.request('build', 'talentHeroAll');
+    // То же, что talentAll: 831 строка набираются чанками под лимит CF.
+    let result = await App.api.requestPaged('build', 'talentHeroAll');
     let talentContainers = [];
     let talentsContainer = DOM({ style: 'talents-container' });
 

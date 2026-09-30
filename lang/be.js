@@ -23,7 +23,6 @@ export const be = {
     preferences: 'Прылады',
     advancedSettings: 'Дад. налады',
     windowMode: 'Аконны рэжым',
-    radminPriority: 'Прыярытэт RadminVPN',
     threeD: '3D графіка',
     voiceInWindow: 'Голас у акне',
     voiceInWindowRequiresWin11: 'Патрабуецца Windows 11',

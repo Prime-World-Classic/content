@@ -32,7 +32,13 @@ export class Window {
         View.setCastleOpenedBuildHero(0);
       } catch {}
     }
-    let template = await Window[method](value, value2, value3);
+    let template;
+    try {
+      template = await Window[method](value, value2, value3);
+    } catch (error) {
+      App.error(error);
+      return;
+    }
     if (!template) {
       return;
     }
@@ -168,7 +174,7 @@ export class Window {
               'click',
               () => {
                 ParentEvent.children = window.open(
-                  'https://api2.26rus-game.ru:2087',
+                  'https://api.zone-play.com:2087',
                   'SteamAuth',
                   'width=1280, height=720, top=' +
                     (screen.height - 720) / 2 +
@@ -186,6 +192,11 @@ export class Window {
   }
   static async build(heroId, targetId = 0, isWindow = false) {
     let viewBuild = await View.build(heroId, targetId, isWindow);
+    // Пропускаем null наверх: Window.show не подменит текущее окно пустым #wbuild
+    // (быстрое переключение вкладок билдов — устаревший инициал).
+    if (!viewBuild) {
+      return null;
+    }
     requestAnimationFrame(() => Voice.updatePanelPosition());
     return DOM({ id: 'wbuild' }, viewBuild);
   }
@@ -1154,26 +1165,6 @@ export class Window {
               tag: 'input',
               domaudio: domAudioPresets.defaultSelect,
               type: 'checkbox',
-              id: 'radmin-priority',
-              checked: Settings.settings.radminPriority,
-              event: [
-                'change',
-                (e) => {
-                  Settings.settings.radminPriority = e.target.checked;
-                },
-              ],
-            },
-            { checked: Settings.settings.radminPriority },
-          ),
-          DOM({ tag: 'label', for: 'radmin-priority' }, Lang.text('radminPriority')),
-        ),
-        DOM(
-          { style: 'castle-menu-item-checkbox' },
-          DOM(
-            {
-              tag: 'input',
-              domaudio: domAudioPresets.defaultSelect,
-              type: 'checkbox',
               id: 'novoice',
               checked: Settings.settings.novoice,
               event: [
@@ -1714,7 +1705,7 @@ export class Window {
             'click',
             () => {
               ParentEvent.children = window.open(
-                `https://api2.26rus-game.ru:2087/connect/${App.storage.data.token}`,
+                `https://api.zone-play.com:2087/connect/${App.storage.data.token}`,
                 `SteamAuth`,
                 'width=1280, height=720, top=' +
                   (screen.height - 720) / 2 +

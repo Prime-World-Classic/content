@@ -8,6 +8,7 @@ import { Voice } from './voice.js';
 import { Chat } from './chat.js';
 import { NativeAPI } from './nativeApi.js';
 import { MM } from './mm.js';
+import { PWGame } from './pwgame.js';
 import { Splash } from './splash.js';
 import { Sound } from './sound.js';
 import { SOUNDS_LIBRARY } from './soundsLibrary.js';
@@ -17,6 +18,13 @@ import { Window } from './window.js';
 import { Settings } from './settings.js';
 
 export class Events {
+  static closeMainFarmAndInventoryWindows() {
+    const mainWindowId = Window.windows?.main?.id;
+    if (mainWindowId === 'wgame' || mainWindowId === 'winventory') {
+      Window.close('main');
+    }
+  }
+
   static Message(data) {
     let body = document.createDocumentFragment();
 
@@ -33,6 +41,7 @@ export class Events {
     }
 
     // NativeAPI.attention();
+    Events.closeMainFarmAndInventoryWindows();
 
     MM.ready(data);
   }
@@ -55,6 +64,7 @@ export class Events {
     }
 
     // NativeAPI.attention();
+    Events.closeMainFarmAndInventoryWindows();
 
     MM.lobby(data);
   }
@@ -140,6 +150,37 @@ export class Events {
     }
 
     MM.finish(data);
+  }
+
+  // Бэкенд выбирает игровой сервер по стоимости: пока игрок ещё в лобби
+  // ожидания — промерить alive-пул прямыми UDP-пробами (логин-порт base+1)
+  // и доложить. После MMEnd игра уже запущена (isInBattle) — игнор.
+  static MMRequestPing(data) {
+    if (!NativeAPI.status || MM.isInBattle) {
+      return;
+    }
+
+    PWGame.probePoolForReport(data);
+  }
+
+  // Бэкенд отменил матч: ни один игровой сервер не принял сессию.
+  // Ищем выход из UI «ожидание боя» (лончер выходит оттуда только по
+  // MMEnd), возвращаем игрока в замок; поиск можно запустить заново.
+  static MMCancel(data) {
+    if (!NativeAPI.status) {
+      return;
+    }
+
+    MM.close();
+    MM.searchActive(false);
+
+    let body = document.createDocumentFragment();
+
+    body.append(DOM(Lang.text('mmMatchCancelled')));
+
+    Splash.show(body);
+
+    setTimeout(() => Splash.hide(), 4000);
   }
 
   static PInvite(data) {

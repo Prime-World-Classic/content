@@ -12,7 +12,6 @@ export class Settings {
     musicVolume: 0.5,
     soundsVolume: 0.2,
     voiceVolume: 1.0,
-    radminPriority: false,
     language: 'ru',
     novoice: false,
     voiceInWindow: true,
@@ -71,6 +70,10 @@ export class Settings {
       if (await this.ensureSettingsFile()) {
         const data = await NativeAPI.fileSystem.promises.readFile(this.settingsFilePath, 'utf-8');
         this.settings = { ...this.defaultSettings, ...JSON.parse(data) };
+        // Legacy-настройка из 2.15.x («Приоритет RadminVPN»): radmin-зеркало убрано
+        // из pool-протокола, настройка не должна ничего влиять — значение из
+        // старого launcher.cfg принудительно выключаем.
+        this.settings.radminPriority = false;
       }
     } catch (e) {
       App.error(Lang.text('settingsReadError') + e);

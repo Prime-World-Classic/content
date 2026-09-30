@@ -1,8 +1,8 @@
 import { Lang } from './lang.js';
+import { TalentData } from './talentData.js';
 import { ParentEvent } from './parentEvent.js';
 import { View } from './view.js';
 import { App } from './app.js';
-import { PWGame } from './pwgame.js';
 import { NativeAPI } from './nativeApi.js';
 import { Settings } from './settings.js';
 import { Splash } from './splash.js';
@@ -23,7 +23,7 @@ window.addEventListener('message', (event) => {
   console.log('event.data', event.data);
 });
 
-Lang.init().then(() => {
+Promise.all([Lang.init(), TalentData.init()]).then(() => {
   Splash.init();
 
   NativeAPI.init();
@@ -40,26 +40,9 @@ Lang.init().then(() => {
 
       View.updateProgress.lastChild.innerText = `${data.title} ${data.total}%...`;
     }
-  });
-
-  let testRadminConnection = async () => {
-    let hasConnection = await PWGame.testServerConnection(PWGame.gameServerIps[PWGame.RADMIN_GAME_SERVER_IP]);
-    if (hasConnection) {
-      PWGame.radminHasConnection = true;
-    }
-  };
-  let testMainConnection = async () => {
-    let hasConnection = await PWGame.testServerConnection(PWGame.gameServerIps[PWGame.MAIN_GAME_SERVER_IP]);
-    if (hasConnection) {
-      PWGame.mainServerHasConnection = true;
-    }
-  };
-  setTimeout((_) => {
-    testRadminConnection();
-    testMainConnection();
-  }, 3000);
+  }).catch((e) => NativeAPI.logUpdateError(e, 'update'));
 
   Settings.init().then(() => {
-    App.findBestHostAndInit();
+    App.connectAndInit();
   });
 });

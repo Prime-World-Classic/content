@@ -17,61 +17,69 @@ import { loadKeybinds } from './keybindings/keybindings.io.js';
 import { domAudioPresets } from './domAudioPresets.js';
 import { SOUNDS_LIBRARY, generateHeroSoundsNative, generateHeroSoundsFallback } from './soundsLibrary.js';
 import { SessionPulse } from './sessionPulse.js';
+import { HostRacer } from './hostRacer.js';
 
 export class App {
   static APP_VERSION = '0';
 
-  static PW_VERSION = '2.15.3';
+  static PW_VERSION = '2.15.4';
 
   static CURRENT_MM = 'mm';
 
-  static RVPN = 'ws://26.133.141.83:81';
-  static MOSCOW = 'wss://api2.26rus-game.ru';
-  static CLOUDFLARE = 'wss://api.26rus-game.ru';
-  static hostList = [this.RVPN, this.MOSCOW, this.CLOUDFLARE];
-  static bestHost = -1;
+  static RVPN = 'ws://26.187.55.30:3737';
+  static VPS = 'wss://pw-classic.ru';
+  // ВАЖНО: прокси CF молча роняет WS-фреймы больше ~23 КБ (замер: 22 КБ
+  // проходит, ≥24 КБ сброшен; после oversized-фрейма деградирует всё
+  // соединение). Поэтому ВСЕ ответы лончеру должны быть < 23 КБ: чат-синк —
+  // чанками, admin-списки талантов — пагинация с бюджетом (backend: лог
+  // LARGE RESPONSE при ответе > 15 КБ), build.sets — локальные данные.
+  // CF (api2.zone-play.com:2096, Cloudflare SaaS WS-прокси) исключён: замерено,
+  // что CF роняет соединения после ~2 средних S→C фреймов (2×5.4 КБ OK, 3-й
+  // не доходит; 17.9 КБ первым — OK, вторым — нет; задержки не помогают).
+  // Прямой DOK:2096 и VPS (pw-classic.ru) — без ограничений. Повторно
+  // включить, только если CF починит WS-прокси.
+  static hostList = [this.RVPN, this.VPS];
 
-  static async findBestHostAndInit() {
-    const sockets = [];
-    let resolved = false;
+  // Бессмертное подключение: таймаут на кандидата растёт по мере провальных
+  // раундов (потолок — конец списка); тупикового «конечного отказа» нет —
+  // цикл идёт, пока не ответит какой-нибудь хост. Сбрасывается при успехе.
+  static CONNECT_TIMEOUT_SCHEDULE = [3500, 5000, 7000, 10000, 15000, 20000, 30000];
+  static CONNECT_ROUND_BACKOFF_MS = 1000;
 
-    const handleOpen = (index) => {
-      return () => {
-        if (!resolved) {
-          resolved = true;
-          this.bestHost = index;
+  static connectTimeoutForRound(round) {
+    const schedule = this.CONNECT_TIMEOUT_SCHEDULE;
+    return schedule[Math.min(round, schedule.length - 1)];
+  }
 
-          sockets.forEach((socket, i) => {
-            //if (i !== index && socket) {
-            socket.close();
-            //}
-          });
+  /**
+   * Первое подключение: гонка хостов (HostRacer), открытый сокет
+   * передаётся в Api без повторного handshake. Гонка бессмертная:
+   * раунды идут с эскалацией таймаутов, пока не подключимся.
+   */
+  static async connectAndInit() {
+    let round = 0;
 
-          this.init();
+    this.racer = new HostRacer(this.hostList, {
+      getToken: () => {
+        // На первом подключении storage ещё не инициализирован
+        try {
+          return this.storage?.data?.token || '';
+        } catch (error) {
+          return '';
         }
-      };
-    };
+      },
+    });
 
-    for (let i = 0; i < this.hostList.length; i++) {
-      try {
-        const socket = new WebSocket(this.hostList[i]);
-        sockets[i] = socket;
+    while (true) {
+      const result = await this.racer.race({ timeoutMs: this.connectTimeoutForRound(round) });
 
-        socket.onopen = handleOpen(i);
-
-        socket.onerror = () => {
-          socket.close();
-        };
-      } catch (error) {
-        App.error(`Error creating WebSocket for ${this.hostList[i]}:`, error);
+      if (result.ok) {
+        return this.init(result.socket, result.host, result.latencyMs);
       }
+
+      round++;
+      await new Promise((resolve) => setTimeout(resolve, this.CONNECT_ROUND_BACKOFF_MS));
     }
-
-    setTimeout(() => {
-      if (this.bestHost == -1) {
-        App.error(Lang.text('apiConnectionError'));
-      }
-    }, 30000);
   }
 
   /**
@@ -103,11 +111,11 @@ export class App {
     await Promise.all(tasks);
   }
 
-  static async init() {
-    // wss://api2.26rus-game.ru:8443 - Москва (основа)
-    // wss://relay.26rus-game.ru:8443 - Рига (Прокси)
-    // wss://api.26rus-game.ru:8443 - США (прокси)
-    App.api = new Api(this.hostList, this.bestHost, Events);
+  static async init(socket = null, host = null, latencyMs = 0) {
+    // ws://26.187.55.30:3737 - Radmin VPN relay (DOK)
+    // wss://pw-classic.ru - VPS
+    // wss://api2.zone-play.com:2096/api - Cloudflare edge (DOK)
+    App.api = new Api(this.hostList, Events, { socket: socket, host: host, latencyMs: latencyMs });
 
     await News.init();
 
@@ -355,6 +363,10 @@ export class App {
     try {
       analysis = NativeAPI.analysis();
     } catch (e) {}
+
+    if (analysis && App.api) {
+      analysis.api = App.api.connectionInfo();
+    }
 
     try {
       request = await App.api.request('user', 'authorization', {
@@ -652,6 +664,10 @@ export class App {
       analysis = NativeAPI.analysis();
     } catch (e) {}
 
+    if (analysis && App.api) {
+      analysis.api = App.api.connectionInfo();
+    }
+
     try {
       request = await App.api.request('user', 'registration', {
         fraction: fraction.value,
@@ -691,7 +707,7 @@ export class App {
     };
     document.addEventListener('keydown', onEsc, { once: true });
 
-    const BASE = 'http://26.133.141.83/stats/';
+    const BASE = 'https://pw2.26rus-game.ru/stats/';
     const targetId = Number(id) || 0;
     const targetLogin = String(login || '').trim();
     const ownId = Number(App?.storage?.data?.id) || 0;
