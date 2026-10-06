@@ -22,7 +22,9 @@ import { HostRacer } from './hostRacer.js';
 export class App {
   static APP_VERSION = '0';
 
-  static PW_VERSION = '2.15.4';
+  // Прод-пара: CURRENT_MM=mm требует PW_VERSION == objects/mm.model.js.
+  // С 2.16.0 обе линии (mm и mmtest) одной версии.
+  static PW_VERSION = '2.16.0';
 
   static CURRENT_MM = 'mm';
 
