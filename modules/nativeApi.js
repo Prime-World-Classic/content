@@ -3,6 +3,7 @@ import { Voice } from './voice.js';
 import { PWGame } from './pwgame.js';
 import { Settings } from './settings.js';
 import { Lang } from './lang.js';
+import { MM } from './mm.js';
 
 export class NativeAPI {
   static status = false;
@@ -18,6 +19,18 @@ export class NativeAPI {
   static lastBranchV = null;
   static revBefore = null;
   static restartInProgress = false;
+
+  // Фоновая проверка обновлений content, пока лаунчер запущен
+  static CONTENT_WATCH_FIRST_MS = 2 * 60 * 1000;
+  static CONTENT_WATCH_INTERVAL_MS = 5 * 60 * 1000;
+  static CONTENT_WATCH_RESTART_DELAY_MS = 10 * 1000;
+  static CONTENT_WATCH_GUARD_KEY = 'contentWatchRestartRev';
+  static contentWatchTimer = 0;
+  static contentWatchPendingRev = null;
+  static updateInProgress = false;
+  static updateCallback = null;
+  static updateBackground = false;
+  static restartPending = false;
 
   // Лог-файлы обновления: лимит 10 МБ, при превышении остаётся хвост ~5 МБ
   static LOG_MAX_BYTES = 10 * 1024 * 1024;
@@ -513,6 +526,42 @@ export class NativeAPI {
     nw.Window.get().reloadIgnoringCache();
   }
 
+  // Перезагрузка после обновления content: апдейтер мог закрыться раньше,
+  // чем файлы реально стали доступны (антивирус/индексатор держат их на
+  // Windows) — тогда reload показывает страницу ошибки Chromium. Ждём паузу
+  // и проверяем, что ключевые файлы читаются, только потом перезагружаем.
+  static CONTENT_RELOAD_FILES = ['content/app.js', 'content/modules/_modules.js', 'content/modules/app.js'];
+
+  static async resetWhenContentReady() {
+    if (!NativeAPI.status) return;
+    const fs = NativeAPI.fileSystem;
+    const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+    await sleep(1500);
+    for (let attempt = 1; attempt <= 20; attempt++) {
+      let missing = '';
+      for (const file of NativeAPI.CONTENT_RELOAD_FILES) {
+        try {
+          const handle = await fs.promises.open(file, 'r');
+          const stat = await handle.stat();
+          await handle.close();
+          if (!stat.size) missing = file;
+        } catch {
+          missing = file;
+        }
+        if (missing) break;
+      }
+      if (!missing) {
+        NativeAPI.logUpdate('reload', `attempt=${attempt}`);
+        NativeAPI.reset();
+        return;
+      }
+      NativeAPI.logUpdate('reload-wait', `attempt=${attempt} file=${missing}`);
+      await sleep(1000);
+    }
+    NativeAPI.logUpdate('reload', 'files-not-ready, reload anyway');
+    NativeAPI.reset();
+  }
+
   // Append-запись в лог-файл с лимитом размера (лимит → остаётся хвост).
   // Файлы: update.log (stages) и update-errors.log (исключения целиком).
   static async cappedAppend(file, line) {
@@ -833,10 +882,19 @@ export class NativeAPI {
     }
   }
 
-  static async update(callback) {
+  // background=true — фоновое обновление из content-watch: после загрузки не
+  // перезагружаем окно сами, а показываем кнопку «Перезапустить» (App).
+  // При старте (background=false) перезагрузка автоматическая, без подтверждения.
+  static async update(callback, { background = false } = {}) {
     if (!NativeAPI.status) {
       return false;
     }
+    if (NativeAPI.updateInProgress) {
+      return true;
+    }
+    NativeAPI.updateBackground = Boolean(background);
+    if (callback) NativeAPI.updateCallback = callback;
+    callback = NativeAPI.updateCallback || (() => {});
 
     try {
       const isLinux = NativeAPI.platform == 'linux';
@@ -863,6 +921,7 @@ export class NativeAPI {
       NativeAPI.revBefore = await NativeAPI.readContentRevision();
       NativeAPI.logUpdate('start', `updater=${updaterPath} rev=${NativeAPI.revBefore || 'n/a'}`);
 
+      NativeAPI.updateInProgress = true;
       const child = NativeAPI.childProcess.spawn(updaterPath);
 
       let buffer = '';
@@ -886,12 +945,14 @@ export class NativeAPI {
       });
 
       child.on('error', (e) => {
+        NativeAPI.updateInProgress = false;
         NativeAPI.logUpdateError(e, 'updater-spawn');
         PWGame.isUpdateFailed = true;
         App.error(Lang.text('updateError') + ' ' + (e.message || e));
       });
 
       child.on('close', async (code) => {
+        NativeAPI.updateInProgress = false;
         try {
           callback({ update: false, title: '', total: 0 });
 
@@ -927,23 +988,179 @@ export class NativeAPI {
             changed = NativeAPI.updated; // .git не читается — bar-флаг
           }
 
-          if (ok && changed) {
-            NativeAPI.reset();
+          if (ok && changed && NativeAPI.updateBackground) {
+            NativeAPI.restartPending = true;
+            NativeAPI.logUpdate('restart-pending', `rev=${revAfter || 'n/a'}`);
+            try {
+              App.showLauncherRestartButton(true);
+            } catch (e) {
+              NativeAPI.logUpdateError(e, 'restart-button');
+            }
+            NativeAPI.startContentWatch();
+          } else if (ok && changed) {
+            await NativeAPI.resetWhenContentReady();
+          } else if (ok) {
+            NativeAPI.startContentWatch();
           }
         } catch (e) {
           NativeAPI.logUpdateError(e, 'close');
         }
       });
 
-      // А уведомление показываем с задержкой
-      setTimeout(() => {
-        App.notify(Lang.text('checkingUpdatesAndFiles'));
-      }, 1000);
+      // А уведомление показываем с задержкой (в фоне — молча)
+      if (!NativeAPI.updateBackground) {
+        setTimeout(() => {
+          App.notify(Lang.text('checkingUpdatesAndFiles'));
+        }, 1000);
+      }
     } catch (e) {
       NativeAPI.logUpdateError(e, 'update');
     }
 
     return true;
+  }
+
+  // ---- Фоновая проверка обновлений content ----
+  // Пока лаунчер открыт, раз в CONTENT_WATCH_INTERVAL_MS сверяем ревизию
+  // content/.git с веткой на удалённом репозитории (smart-HTTP info/refs, git
+  // не нужен). Если вышла новая — ждём, пока игрок не в поиске/лобби/бою, и
+  // запускаем тот же апдейтер, что и при старте (NativeAPI.update): он скачает
+  // content, а при смене ревизии появится кнопка «Перезапустить» под быстрыми
+  // кнопками справа (перезагрузка окна — только по клику игрока).
+  // Процесс НЕ перезапускаем: detached-relauncher + exit (restart()) на Windows
+  // просто закрывал лаунчер — дочерний процесс погибает вместе с NW.
+  // Защита от петли: ради одной и той же ревизии апдейтер запускаем один раз.
+  static startContentWatch() {
+    if (!NativeAPI.status || NativeAPI.contentWatchTimer) return;
+    const tick = async () => {
+      try {
+        await NativeAPI.checkContentUpdate();
+      } catch (e) {
+        NativeAPI.logUpdateError(e, 'content-watch');
+      }
+      NativeAPI.contentWatchTimer = setTimeout(tick, NativeAPI.CONTENT_WATCH_INTERVAL_MS);
+    };
+    NativeAPI.contentWatchTimer = setTimeout(tick, NativeAPI.CONTENT_WATCH_FIRST_MS);
+  }
+
+  static async readContentRemote() {
+    const fs = NativeAPI.fileSystem;
+    const join = NativeAPI.path.join;
+    let head = '';
+    let config = '';
+    try {
+      head = (await fs.promises.readFile(join('content', '.git', 'HEAD'), 'utf-8')).trim();
+      config = await fs.promises.readFile(join('content', '.git', 'config'), 'utf-8');
+    } catch {
+      return null;
+    }
+    const refMatch = head.match(/^ref:\s*(refs\/heads\/.+)$/);
+    if (!refMatch) return null;
+    const ref = refMatch[1].trim();
+    const branch = ref.slice('refs/heads/'.length);
+
+    // remote ветки (branch.<name>.remote), по умолчанию origin
+    let remoteName = 'origin';
+    let section = '';
+    const urls = {};
+    for (const raw of config.split(/\r?\n/)) {
+      const line = raw.trim();
+      const sec = line.match(/^\[(.+)\]$/);
+      if (sec) {
+        section = sec[1];
+        continue;
+      }
+      const kv = line.match(/^([A-Za-z]+)\s*=\s*(.+)$/);
+      if (!kv) continue;
+      const key = kv[1].toLowerCase();
+      const value = kv[2].trim().replace(/^"(.*)"$/, '$1');
+      const remoteSec = section.match(/^remote\s+"(.+)"$/);
+      if (remoteSec && key === 'url' && !urls[remoteSec[1]]) urls[remoteSec[1]] = value;
+      if (section === `branch "${branch}"` && key === 'remote') remoteName = value;
+    }
+    const url = urls[remoteName];
+    if (!url || !/^https?:\/\//i.test(url)) return null;
+    return { url, ref };
+  }
+
+  static fetchText(url, redirects = 3) {
+    return new Promise((resolve, reject) => {
+      const lib = url.startsWith('https:') ? NativeAPI.https : NativeAPI.http;
+      const req = lib.get(url, { headers: { 'User-Agent': 'git/2.40.0 pw-launcher' }, timeout: 15000 }, (res) => {
+        if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location && redirects > 0) {
+          res.resume();
+          resolve(NativeAPI.fetchText(new URL(res.headers.location, url).toString(), redirects - 1));
+          return;
+        }
+        if (res.statusCode !== 200) {
+          res.resume();
+          reject(new Error(`HTTP ${res.statusCode}`));
+          return;
+        }
+        let body = '';
+        res.setEncoding('utf8');
+        res.on('data', (chunk) => (body += chunk));
+        res.on('end', () => resolve(body));
+      });
+      req.on('timeout', () => req.destroy(new Error('timeout')));
+      req.on('error', reject);
+    });
+  }
+
+  static async readRemoteRevision(url, ref) {
+    const base = url.replace(/\/+$/, '');
+    const body = await NativeAPI.fetchText(`${base}/info/refs?service=git-upload-pack`);
+    // pkt-line: "<4 hex len><sha> <ref>[\0caps]\n"
+    const re = /([0-9a-f]{40}) ([^\0\n]+)/g;
+    let m;
+    while ((m = re.exec(body))) {
+      if (m[2] === ref) return m[1];
+    }
+    return null;
+  }
+
+  static isSafeToRestart() {
+    return !MM.active && !MM.isInTambur && !MM.isInBattle && !NativeAPI.exitRequested;
+  }
+
+  static async checkContentUpdate() {
+    if (NativeAPI.restartInProgress || NativeAPI.updateInProgress) return;
+    // Без апдейтера (Steam/dev) рестарт ничего не обновит — не проверяем
+    const updaterPath = NativeAPI.platform == 'linux' ? PWGame.PATH_UPDATE_LINUX : PWGame.PATH_UPDATE;
+    try {
+      await NativeAPI.fileSystem.promises.access(updaterPath);
+    } catch {
+      return;
+    }
+
+    const localRev = await NativeAPI.readContentRevision();
+    const remote = await NativeAPI.readContentRemote();
+    if (!localRev || !remote) return;
+
+    let remoteRev = NativeAPI.contentWatchPendingRev;
+    if (!remoteRev) {
+      remoteRev = await NativeAPI.readRemoteRevision(remote.url, remote.ref);
+      if (!remoteRev || remoteRev === localRev) return;
+
+      let guard = null;
+      try {
+        guard = localStorage.getItem(NativeAPI.CONTENT_WATCH_GUARD_KEY);
+      } catch {}
+      if (guard === remoteRev) return; // уже обновлялись ради неё — не помогло
+      NativeAPI.contentWatchPendingRev = remoteRev;
+      NativeAPI.logUpdate('content-watch-found', `local=${localRev} remote=${remoteRev}`);
+    }
+
+    // Игрок в поиске/лобби/бою — дождёмся следующей проверки
+    if (!NativeAPI.isSafeToRestart()) return;
+
+    try {
+      localStorage.setItem(NativeAPI.CONTENT_WATCH_GUARD_KEY, remoteRev);
+    } catch {}
+    NativeAPI.contentWatchPendingRev = null;
+    NativeAPI.logUpdate('content-watch-update', `remote=${remoteRev}`);
+    // Качаем в фоне; окно не перезагружаем — по готовности появится кнопка «Перезапустить».
+    await NativeAPI.update(null, { background: true });
   }
 
   static analysis() {

@@ -119,6 +119,7 @@ export class View {
   static castleHeroAutoOpenModes = new Set([1, 2, 5]);
   static castleAramMode = 3;
   static castlePartyHeroRequestInFlight = false;
+  static castlePlayRefreshSeq = 0;
 
   static getQueue(cssKey) {
     const map = {
@@ -163,6 +164,134 @@ export class View {
     }
   }
   
+  static FRIEND_LAST_SEEN_TICK_MS = 30 * 1000;
+  static friendLastSeenTimer = 0;
+
+  static getFriendLastOnline(item) {
+    const value = Number(item?.lastOnline || 0);
+    return Number.isFinite(value) && value > 0 ? value : 0;
+  }
+
+  // Короткая подпись «сколько не в сети»: только что / 15 мин / 3 ч / 2 дн / 12 мая.
+  static formatFriendLastSeen(lastOnline, now = Date.now()) {
+    const diff = Math.max(0, now - lastOnline);
+    const minute = 60 * 1000;
+    const hour = 60 * minute;
+    const day = 24 * hour;
+    if (diff < minute) return Lang.text('friendLastSeenJustNow');
+    if (diff < hour) return Lang.text('friendLastSeenMinutes').replace('{n}', String(Math.floor(diff / minute)));
+    if (diff < day) return Lang.text('friendLastSeenHours').replace('{n}', String(Math.floor(diff / hour)));
+    if (diff < 30 * day) return Lang.text('friendLastSeenDays').replace('{n}', String(Math.floor(diff / day)));
+    const date = new Date(lastOnline);
+    const sameYear = date.getFullYear() === new Date(now).getFullYear();
+    return date.toLocaleDateString(View.getFriendLastSeenLocale(), sameYear ? { day: 'numeric', month: 'short' } : { day: 'numeric', month: 'short', year: 'numeric' });
+  }
+
+  static getFriendLastSeenLocale() {
+    return Lang.target === 'en' ? 'en-GB' : 'ru-RU';
+  }
+
+  static formatFriendLastSeenTitle(lastOnline) {
+    const full = new Date(lastOnline).toLocaleString(View.getFriendLastSeenLocale(), {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+    });
+    return Lang.text('friendLastSeenTitle').replace('{date}', full);
+  }
+
+  static FRIEND_SINCE_STATES = ['queue', 'tambour', 'battle', 'away'];
+
+  static getFriendPresenceSince(item) {
+    const value = Number(item?.since || 0);
+    return Number.isFinite(value) && value > 0 ? value : 0;
+  }
+
+  // Длительность состояния: «<1 мин» / «12 мин» / «1 ч 5 мин» / «2 дн».
+  static formatFriendDuration(since, now = Date.now()) {
+    const minutes = Math.floor(Math.max(0, now - since) / 60000);
+    if (minutes < 1) return Lang.text('friendDurationLessMinute');
+    if (minutes < 60) return Lang.text('friendDurationMinutes').replace('{n}', String(minutes));
+    const hours = Math.floor(minutes / 60);
+    if (hours < 24) {
+      const rest = minutes % 60;
+      return rest
+        ? Lang.text('friendDurationHoursMinutes').replace('{h}', String(hours)).replace('{m}', String(rest))
+        : Lang.text('friendDurationHours').replace('{n}', String(hours));
+    }
+    return Lang.text('friendDurationDays').replace('{n}', String(Math.floor(hours / 24)));
+  }
+
+  static formatFriendSinceTitle(state, since) {
+    const time = new Date(since).toLocaleTimeString(View.getFriendLastSeenLocale(), { hour: '2-digit', minute: '2-digit' });
+    const key = state === 'away' ? 'friendSinceTitleAway' : 'friendSinceTitle';
+    return Lang.text(key).replace('{status}', View.getFriendPresenceLabel(state)).replace('{time}', time);
+  }
+
+  static getFriendBadgeText(badge, now = Date.now()) {
+    const value = Number(badge.dataset.lastOnline || badge.dataset.since || 0);
+    return badge.dataset.since ? View.formatFriendDuration(value, now) : View.formatFriendLastSeen(value, now);
+  }
+
+  // Плашка над кнопками: оффлайн — «🕓 3 ч назад» (из lastOnline),
+  // в поиске / тамбуре / бою / отошёл — «⏱ 12 мин» (since из памяти API, без БД).
+  static syncFriendLastSeenBadge(card, item) {
+    if (!card) return;
+    const state = View.normalizeFriendPresenceState(item);
+    const isFriend = Number(item?.status || 0) === 1;
+    const lastOnline = View.getFriendLastOnline(item);
+    const since = View.getFriendPresenceSince(item);
+    const showLastSeen = isFriend && state === 'offline' && lastOnline > 0;
+    const showSince = isFriend && !showLastSeen && since > 0 && View.FRIEND_SINCE_STATES.includes(state);
+    let badge = card.querySelector('.castle-friend-last-seen');
+    if (!showLastSeen && !showSince) {
+      badge?.remove();
+      if (card.dataset.lastSeenTitle === '1') {
+        card.removeAttribute('title');
+        delete card.dataset.lastSeenTitle;
+      }
+      return;
+    }
+    if (!badge) {
+      badge = DOM({ style: 'castle-friend-last-seen' });
+      card.append(badge);
+    }
+    delete badge.dataset.lastOnline;
+    delete badge.dataset.since;
+    badge.classList.toggle('castle-friend-since', showSince);
+    if (showSince) {
+      badge.dataset.since = String(since);
+      card.title = View.formatFriendSinceTitle(state, since);
+    } else {
+      badge.dataset.lastOnline = String(lastOnline);
+      card.title = View.formatFriendLastSeenTitle(lastOnline);
+    }
+    badge.textContent = View.getFriendBadgeText(badge);
+    card.dataset.lastSeenTitle = '1';
+    View.ensureFriendLastSeenTicker();
+  }
+
+  static ensureFriendLastSeenTicker() {
+    if (View.friendLastSeenTimer) return;
+    View.friendLastSeenTimer = setInterval(() => {
+      const badges = View.castleBottom?.querySelectorAll?.(
+        '.castle-friend-last-seen[data-last-online], .castle-friend-last-seen[data-since]',
+      );
+      if (!badges || !badges.length) {
+        clearInterval(View.friendLastSeenTimer);
+        View.friendLastSeenTimer = 0;
+        return;
+      }
+      const now = Date.now();
+      for (const badge of badges) {
+        const text = View.getFriendBadgeText(badge, now);
+        if (badge.textContent !== text) badge.textContent = text;
+      }
+    }, View.FRIEND_LAST_SEEN_TICK_MS);
+  }
+
   static isFriendGroupInviteEnabled(item) {
     return View.normalizeFriendPresenceState(item) === 'online';
   }
@@ -274,11 +403,19 @@ export class View {
     let changedItem = null;
     for (const item of View.castleFriendAll || []) {
       if (Number(item?.id) !== friendId) continue;
+      const wasOffline = View.normalizeFriendPresenceState(item) === 'offline';
       item.presenceState = String(data?.state || item?.presenceState || '');
+      if (Number(data?.lastOnline) > 0) {
+        item.lastOnline = Number(data.lastOnline);
+      } else if (!wasOffline && View.normalizeFriendPresenceState(item) === 'offline') {
+        // Старый бэкенд без lastOnline: друг вышел только что.
+        item.lastOnline = Date.now();
+      }
       if ('online' in (data || {})) item.online = Number(data.online) === 1 ? 1 : 0;
       if ('mobile' in (data || {})) item.mobile = Number(data.mobile) === 1 ? 1 : 0;
       if ('inParty' in (data || {})) item.inParty = Number(data.inParty) === 1 ? 1 : 0;
       if ('mode' in (data || {})) item.mode = Number(data.mode);
+      item.since = Number(data?.since || 0);
       changed = true;
       changedItem = item;
       break;
@@ -370,6 +507,7 @@ export class View {
     } else if (!showMobile && mobileEmoji) {
       mobileEmoji.remove();
     }
+    View.syncFriendLastSeenBadge(card, item);
   }
   
   static reorderVisibleFriendCards() {
@@ -435,6 +573,33 @@ export class View {
     return View.castleHeroAutoOpenModes.has(Number(mode));
   }
 
+  // Кэш build/heroAll для пати: раньше список запрашивался на каждый PUpdate
+  // и каждое открытие выбора героя. Параллельные вызовы делят один запрос.
+  static PARTY_HEROES_TTL_MS = 30 * 1000;
+  static partyHeroesCache = { at: 0, list: null, pending: null };
+
+  static async getPartyHeroes({ force = false } = {}) {
+    const cache = View.partyHeroesCache;
+    if (!force && Array.isArray(cache.list) && Date.now() - cache.at < View.PARTY_HEROES_TTL_MS) {
+      return cache.list;
+    }
+    if (cache.pending) return cache.pending;
+    cache.pending = (async () => {
+      try {
+        const list = await App.api.request('build', 'heroAll');
+        if (Array.isArray(list)) {
+          cache.list = list;
+          cache.at = Date.now();
+          MM.hero = list;
+        }
+        return list;
+      } finally {
+        cache.pending = null;
+      }
+    })();
+    return cache.pending;
+  }
+
   static async setCastlePartyHero(playerCard, heroId, fallbackRating = 1100) {
     if (!playerCard || Number(playerCard?.dataset?.id) !== Number(App.storage?.data?.id)) {
       return false;
@@ -464,8 +629,13 @@ export class View {
     if (numericHeroId > 0) {
       let heroes = MM.hero;
       if (!Array.isArray(heroes) || !heroes.length) {
-        heroes = await App.api.request('build', 'heroAll');
-        MM.hero = heroes;
+        try {
+          heroes = await View.getPartyHeroes();
+        } catch (error) {
+          // Герой уже выбран на сервере — без списка просто нет скина/рейтинга
+          console.warn('heroAll failed', error);
+          heroes = [];
+        }
       }
 
       const selectedHero = Array.isArray(heroes) ? heroes.find((item) => Number(item?.id) === numericHeroId) : null;
@@ -481,8 +651,17 @@ export class View {
     playerCard.style.backgroundPosition = 'center, center';
     playerCard.style.backgroundSize = 'contain, contain';
 
+    // Без героя (id 0) рейтинг не показываем — как при первой отрисовке пати,
+    // иначе на карточке оставалась цифра предыдущего героя.
     const rankContainer = playerCard.querySelector('.rank');
-    Rank.updateRankContainer(rankContainer, parseInt(heroRating, 10));
+    if (rankContainer) {
+      if (numericHeroId > 0) {
+        Rank.updateRankContainer(rankContainer, parseInt(heroRating, 10));
+        rankContainer.style.display = 'flex';
+      } else {
+        rankContainer.style.display = 'none';
+      }
+    }
 
     MM.activeSelectHero = numericHeroId;
     return true;
@@ -500,7 +679,17 @@ export class View {
       return;
     }
 
-    let request = await App.api.request('build', 'heroAll');
+    let request;
+    try {
+      request = await View.getPartyHeroes();
+    } catch (error) {
+      App.error(error);
+      return;
+    }
+    if (!Array.isArray(request)) {
+      App.error(Lang.text('partyHeroListError'));
+      return;
+    }
     MM.hero = request;
 
     let bannedHeroesResponse = new Array();
@@ -749,7 +938,7 @@ export class View {
   static castleTotalCrystal = DOM({ tag: 'div', style: ['question-icon'] }, DOM({ style: 'quest-counter' }, ''));
 
   static setCss(name = 'content/style.css') {
-    const cssVersion = '20261006-news-cq-scaling-1';
+    const cssVersion = '20261007-castle-navigation-1';
     const separator = name.includes('?') ? '&' : '?';
     let css = DOM({ tag: 'link', rel: 'stylesheet', href: `${name}${separator}v=${cssVersion}` });
 
@@ -1157,8 +1346,15 @@ export class View {
       return;
     }
 
+    // Несколько PUpdate подряд: castlePlay асинхронный (loadParty/heroAll),
+    // ответы могут прийти не по порядку — применяем только последний рендер
+    // и заменяем тот .castle-play, что в DOM сейчас (а не уже отсоединённый).
+    const seq = ++View.castlePlayRefreshSeq;
     const updatedCastlePlay = await View.castlePlay(partyData);
-    currentCastlePlay.replaceWith(updatedCastlePlay);
+    if (seq !== View.castlePlayRefreshSeq) return;
+    const liveCastlePlay = castleBody.querySelector('.castle-play');
+    if (!liveCastlePlay || View.active !== castleBody) return;
+    liveCastlePlay.replaceWith(updatedCastlePlay);
   }
 
   static async castlePlay(partyData = null, options = {}) {
@@ -1184,32 +1380,41 @@ export class View {
     let data = partyData || (await App.api.request(App.CURRENT_MM, 'loadParty')),
       players = new Array();
 
+    // Устаревший PUpdate (нас уже кикнули / пати распалась) — нас нет в users:
+    // берём актуальное состояние с сервера, а не падаем на data.users[myId].
+    const myId = App.storage.data.id;
+    if (partyData && !partyData?.users?.[myId]) {
+      data = await App.api.request(App.CURRENT_MM, 'loadParty');
+    }
+    if (!data || typeof data.users !== 'object' || !data.users) {
+      data = { ...(data || {}), id: myId, users: {} };
+    }
+
     MM.partyId = data.id;
     MM.partyMembersCount = Object.keys(data?.users || {}).length || 1;
     if (data && ('mode' in data) && !options?.preserveMode) {
       CastleNAVBAR.setMode(Number(data.mode) + 1, { syncParty: false });
     }
 
-    MM.activeSelectHero = data.users[App.storage.data.id].hero;
+    MM.activeSelectHero = Number(data.users[myId]?.hero) || 0;
 
-    MM.searchActive(data.users[MM.partyId].ready);
+    MM.searchActive(Boolean(data.users[MM.partyId]?.ready));
 
     try {
-      MM.hero = await App.api.request('build', 'heroAll');
-      console.log('DEBUG: Preloaded MM.hero for ratings:', MM.hero);
+      const heroes = await View.getPartyHeroes();
+      MM.hero = Array.isArray(heroes) ? heroes : [];
     } catch (e) {
       console.warn('Could not preload heroes:', e);
-      MM.hero = [];
+      if (!Array.isArray(MM.hero)) MM.hero = [];
     }
 
     for (let key in data.users) {
       let userRating = data.users[key].heroRating || 1100;
 
       if (key == App.storage.data.id && data.users[key].hero && MM.hero.length > 0) {
-        const userHero = MM.hero.find((h) => h.id === data.users[key].hero);
+        const userHero = MM.hero.find((h) => Number(h.id) === Number(data.users[key].hero));
         if (userHero && userHero.rating) {
           userRating = userHero.rating;
-          console.log('DEBUG: Found hero rating in MM.hero:', userRating);
         }
       }
 
@@ -1296,7 +1501,7 @@ export class View {
 
       item.append(rank);
 
-      if (!player.rating || player.rating === 0) {
+      if (!player.rating || player.rating === 0 || !Number(player.hero)) {
         rank.style.display = 'none';
       } else {
         rank.style.display = 'flex';
@@ -1306,7 +1511,7 @@ export class View {
         {
           style: ['castle-party-middle-item-ready-notready', 'castle-party-middle-item-not-ready'],
         },
-        DOM({}, 'Не готов'),
+        DOM({}, Lang.text('partyNotReady')),
       );
 
       if (player.id) {
@@ -1320,30 +1525,38 @@ export class View {
           status.classList.replace('castle-party-middle-item-not-ready', 'castle-party-middle-item-ready');
         } else if (player.id == App.storage.data.id) {
           status.onclick = async () => {
-            if (NativeAPI.status) {
-              if (PWGame.gameConnectionTestIsActive) {
-                return;
-              }
-
-              PWGame.gameConnectionTestIsActive = true;
-
-              try {
-                await PWGame.check();
-
-                await PWGame.checkUpdates();
-              } catch (e) {
-                PWGame.gameConnectionTestIsActive = false;
-                throw e;
-              }
-
-              PWGame.gameConnectionTestIsActive = false;
+            // Защита от двойного клика (в т.ч. в браузере без NativeAPI)
+            if (status.dataset.busy === '1') {
+              return;
             }
+            status.dataset.busy = '1';
+            try {
+              if (NativeAPI.status) {
+                if (PWGame.gameConnectionTestIsActive) {
+                  return;
+                }
 
-            await App.api.request(App.CURRENT_MM, 'readyParty', {
-              id: MM.partyId,
-            });
+                PWGame.gameConnectionTestIsActive = true;
 
-            status.onclick = false;
+                try {
+                  await PWGame.check();
+
+                  await PWGame.checkUpdates();
+                } finally {
+                  PWGame.gameConnectionTestIsActive = false;
+                }
+              }
+
+              await App.api.request(App.CURRENT_MM, 'readyParty', {
+                id: MM.partyId,
+              });
+
+              status.onclick = null;
+            } catch (e) {
+              App.error(e);
+            } finally {
+              delete status.dataset.busy;
+            }
           };
 
           status.firstChild.innerText = Lang.text('confirm');
@@ -1371,7 +1584,8 @@ export class View {
 
       removeButton.style.backgroundImage = `url(content/icons/close-cropped.svg)`;
 
-      let nicknameText = DOM({}, `${player.nickname ? player.nickname : 'Добавить'}`);
+      const nicknameValue = String(player.nickname || '');
+      let nicknameText = DOM({}, nicknameValue || Lang.text('partyAddPlayer'));
 
       let nicknameHideOverflowContainer = DOM({ style: 'castle-party-middle-item-nickname-hidden-overflow' }, nicknameText);
 
@@ -1392,7 +1606,7 @@ export class View {
         playerX.style.display = 'none';
       }
 
-      if (player.nickname.length > 20) {
+      if (nicknameValue.length > 20) {
         nickname.firstChild.firstChild.classList.add('castle-name-autoscroll');
       }
 
@@ -1407,7 +1621,7 @@ export class View {
           });
         });
 
-        if (player.nickname.length > 15) {
+        if (nicknameValue.length > 15) {
           nickname.firstChild.firstChild.classList.add('castle-name-autoscroll');
         }
 
@@ -1423,7 +1637,7 @@ export class View {
           await View.refreshCastlePlayOnly();
         });
 
-        if (player.nickname.length > 15) {
+        if (nicknameValue.length > 15) {
           nickname.firstChild.firstChild.classList.add('castle-name-autoscroll');
         }
 
@@ -2130,18 +2344,18 @@ export class View {
 
     for (let item of request.quests) {
       const timerMs = Number(item.timer ?? item.timeLeft ?? item.remainingMs ?? item.remaining ?? 0) || 0;
-      const isActiveQuest = Number(item.status) === 1 || timerMs > 0;
+      const isActiveQuest = Number(item.status) === 1;
       let hero = DOM({ style: 'quest-item-hero' }, DOM({ style: 'quest-item-portrait-glass' }));
       hero.style.backgroundImage = `url(content/hero/${item.heroId}/1.webp)`;
 
       let timer = DOM({ style: 'quest-item-timer' });
-      item.timer = Math.max(0, timerMs);
+      item.timer = isActiveQuest ? Math.max(0, timerMs) : 0;
       const tick = () => {
         item.timer = Math.max(0, item.timer - 1000);
         timer.textContent = Timer.getFormattedTimer(item.timer) || '00:00';
       };
       tick();
-      setInterval(tick, 1000);
+      if (isActiveQuest) setInterval(tick, 1000);
 
       let quest = DOM(
         {
@@ -3608,6 +3822,9 @@ export class View {
       if (status == 1 && View.normalizeFriendPresenceState(item) !== 'offline' && Number(item.mobile) == 1) {
         friend.append(DOM({ style: 'castle-friend-mobile-emoji' }, '📱'));
       }
+      if (!editMode) {
+        View.syncFriendLastSeenBadge(friend, item);
+      }
 
       friend.dataset.url = `content/hero/friendLogo.png`;
       preload.add(friend);
@@ -3863,364 +4080,6 @@ export class View {
     return menu;
   }
 
-  static async main(data) {
-    let body = DOM({ style: 'main' });
-
-    let middle = DOM({ style: 'party-middle' });
-
-    // const chatInput = DOM({tag: 'input', placeholder: 'Enter your message here', style: 'chat-input'});
-    // const chatMessages = DOM({style: 'chat-input'});
-    // const chat = DOM({style: 'chat'}, chatMessages, chatInput);
-
-    // let party = DOM({style:'party'},middle, chat);
-
-    let top = DOM({ style: 'top' });
-
-    App.api.silent(
-      (result) => {
-        let number = 1;
-
-        for (let player of result) {
-          let rank = DOM({ style: 'top-item-hero-rank' });
-
-          rank.style.backgroundImage = `url(content/ranks/${Rank.icon(player.rating)}.webp)`;
-
-          let hero = DOM({ style: 'top-item-hero' }, rank);
-
-          hero.style.backgroundImage = `url(content/hero/${player.hero}/${player.skin ? player.skin : 1}.webp)`;
-
-          let item = DOM(
-            {
-              domaudio: domAudioPresets.defaultButton,
-              style: 'top-item',
-              event: ['click', () => Build.view(player.id, player.hero, player.nickname)],
-            },
-            hero,
-            DOM({ style: 'top-item-player' }, DOM(`#${number}. ${player.nickname}`), DOM(`${player.rating}`)),
-          );
-
-          if (number == 1) {
-            //item.style.background = 'rgba(255,50,0,0.9)';
-
-            item.classList.add('animation1');
-          }
-          /*
-                else if(number == 2){
-                    
-                    item.style.background = 'rgba(255,100,0,0.9)';
-                    
-                }
-                else if(number == 3){
-                    
-                    item.style.background = 'rgba(150,50,255,0.9)';
-                    
-                }
-                else if(number == 4){
-                    
-                    item.style.background = 'rgba(50,100,200,0.9)';
-                    
-                }
-                */
-          top.append(item);
-
-          number++;
-        }
-      },
-      App.CURRENT_MM,
-      'top',
-    );
-
-    let party = DOM({ style: 'party' }, middle);
-
-    let players = new Array();
-
-    data = data ? data : await App.api.request(App.CURRENT_MM, 'loadParty');
-
-    MM.partyId = data.id;
-    MM.partyMembersCount = Object.keys(data?.users || {}).length || 1;
-    if (data && ('mode' in data)) {
-      CastleNAVBAR.setMode(Number(data.mode) + 1, { syncParty: false });
-    }
-
-    MM.activeSelectHero = data.users[App.storage.data.id].hero;
-
-    MM.searchActive(data.users[MM.partyId].ready);
-
-    for (let key in data.users) {
-      players.push({
-        id: key,
-        hero: data.users[key].hero,
-        nickname: data.users[key].nickname,
-        ready: data.users[key].ready,
-        rating: data.users[key].rating,
-        skin: data.users[key].skin,
-      });
-    }
-
-    if (players.length < 5) {
-      while (players.length < 5) {
-        players.push({ id: 0, hero: 0, nickname: '', ready: 0 });
-      }
-    }
-
-    for (let item of players) {
-      let img = DOM({ style: 'party-middle-item-middle' });
-
-      let rank = Rank.createRankNode(item.rating);
-      img.append(rank);
-
-      let status = DOM({ style: 'party-middle-item-not-ready' }, DOM({}, 'Не готов'));
-
-      if (item.id) {
-        if (item.ready) {
-          status.firstChild.innerText = Lang.text('ready');
-
-          status.classList.replace('party-middle-item-not-ready', 'party-middle-item-ready');
-        } else if (MM.partyId == item.id) {
-          status.firstChild.innerText = Lang.text('ready');
-
-          status.classList.replace('party-middle-item-not-ready', 'party-middle-item-ready');
-        } else if (item.id == App.storage.data.id) {
-          status.onclick = async () => {
-            if (NativeAPI.status) {
-              if (PWGame.gameConnectionTestIsActive) {
-                return;
-              }
-
-              PWGame.gameConnectionTestIsActive = true;
-
-              try {
-                await PWGame.check();
-
-                await PWGame.checkUpdates();
-              } catch (e) {
-                PWGame.gameConnectionTestIsActive = false;
-                throw e;
-              }
-
-              PWGame.gameConnectionTestIsActive = false;
-            } else {
-              return;
-            }
-
-            await App.api.request(App.CURRENT_MM, 'readyParty', {
-              id: MM.partyId,
-            });
-
-            status.onclick = false;
-          };
-
-          status.innerText = 'Подтвердить';
-        }
-
-        const heroImg = item.hero ? `url(content/hero/${item.hero}/${item.skin ? item.skin : 1}.webp)` : `url(content/hero/empty.webp)`;
-        img.style.backgroundImage = `${heroImg}, url(content/hero/background.png)`;
-        img.style.backgroundRepeat = 'no-repeat, no-repeat';
-        img.style.backgroundPosition = 'center, center';
-        img.style.backgroundSize = 'contain, contain';
-      } else {
-        img.innerText = '+';
-
-        status.style.opacity = 0;
-
-        // lvl.style.opacity = 0;
-
-        //rank.style.opacity = 0;
-      }
-
-      let nickname = DOM({ style: 'party-middle-item-nickname' }, `${item.nickname ? item.nickname : 'Добавить'}`);
-
-      let player = DOM({ id: `PP${item.id}`, style: 'party-middle-item' }, nickname, img, status); // TODO use this for lvl and rank
-      // let player = DOM({id:`PP${item.id}`,style:'party-middle-item'},nickname,img,status);
-
-      player.dataset.id = item.id;
-
-      if (MM.partyId == App.storage.data.id && player.dataset.id != App.storage.data.id && player.dataset.id != 0) {
-        nickname.append(
-          DOM(
-            {
-              domaudio: domAudioPresets.bigButton,
-              tag: 'span',
-              event: [
-                'click',
-                async () => {
-                  await App.api.request(App.CURRENT_MM, 'leaderKickParty', {
-                    id: player.dataset.id,
-                  });
-                },
-              ],
-            },
-            '[X]',
-          ),
-        );
-      }
-
-      if (MM.partyId != App.storage.data.id && player.dataset.id == App.storage.data.id) {
-        nickname.append(
-          DOM(
-            {
-              domaudio: domAudioPresets.bigButton,
-              tag: 'span',
-              event: [
-                'click',
-                async () => {
-                  await App.api.request(App.CURRENT_MM, 'leaveParty', {
-                    id: MM.partyId,
-                  });
-
-                  await View.refreshCastlePlayOnly();
-                },
-              ],
-            },
-            '[X]',
-          ),
-        );
-      }
-
-      img.addEventListener('click', async () => {
-        if (player.dataset.id == App.storage.data.id) {
-          if (MM.active) {
-            return;
-          }
-
-          let request = await App.api.request('build', 'heroAll');
-
-          MM.hero = request;
-
-          let bannedHeroesResponse = new Array();
-          try {
-            bannedHeroesResponse = await App.api.request(App.CURRENT_MM, 'bannedHeroes', { mode: CastleNAVBAR.mode });
-          } catch (error) {
-            bannedHeroesResponse = new Array();
-          }
-
-          const bannedHeroes = new Set(
-            (Array.isArray(bannedHeroesResponse) ? bannedHeroesResponse : new Array())
-              .map((id) => Number(id))
-              .filter((id) => Number.isFinite(id) && id > 0),
-          );
-
-          request.push({ id: 0 });
-
-          let bodyHero = DOM({ style: 'party-hero' });
-
-          let preload = new PreloadImages(bodyHero);
-
-          for (let item of request) {
-            let hero = DOM({ domaudio: domAudioPresets.smallButton });
-
-            const isBannedInMode = item.id && bannedHeroes.has(Number(item.id));
-            if (isBannedInMode) {
-              hero.style.filter = 'grayscale(100%)';
-              hero.style.opacity = '0.6';
-              hero.title = Lang.text('thisHeroIsUnavailableInCurrentGameMode');
-            }
-
-            hero.addEventListener('click', async () => {
-              if (isBannedInMode) {
-                App.error(Lang.text('thisHeroIsUnavailableInCurrentGameMode'));
-                return;
-              }
-
-              try {
-                await App.api.request(App.CURRENT_MM, 'heroParty', {
-                  id: MM.partyId,
-                  hero: item.id,
-                });
-              } catch (error) {
-                return App.error(error);
-              }
-
-              MM.activeSelectHero = item.id;
-
-              Splash.hide();
-            });
-
-            if (item.id) {
-              hero.dataset.url = `content/hero/${item.id}/${item.skin ? item.skin : 1}.webp`;
-            } else {
-              hero.dataset.url = `content/hero/empty.webp`;
-            }
-
-            preload.add(hero);
-          }
-
-          Splash.show(bodyHero, false);
-        }
-
-        if (player.dataset.id == 0 && (!MM.partyId || MM.partyId == App.storage.data.id)) {
-          let input = DOM({ tag: 'input', style: 'search-input' });
-
-          let body = DOM({ style: 'search-body' });
-
-          let search = DOM(
-            { style: 'search' },
-            input,
-            body,
-            DOM(
-              {
-                domaudio: domAudioPresets.closeButton,
-                style: 'search-bottom',
-                event: [
-                  'click',
-                  () => {
-                    Splash.hide();
-                  },
-                ],
-              },
-              Lang.text('back'),
-            ),
-          );
-
-          input.addEventListener('input', async () => {
-            let request = await App.api.request(App.CURRENT_MM, 'findUser', {
-              name: input.value,
-            });
-
-            if (body.firstChild) {
-              while (body.firstChild) {
-                body.firstChild.remove();
-              }
-            }
-
-            for (let item of request) {
-              body.append(
-                DOM(
-                  {
-                    domaudio: domAudioPresets.defaultButton,
-                    event: [
-                      'click',
-                      async () => {
-                        await App.api.request(App.CURRENT_MM, 'inviteParty', {
-                          id: item.id,
-                          mode: CastleNAVBAR.mode,
-                        });
-
-                        App.notify(`Приглашение отправлено игроку ${item.nickname}`, 1000);
-
-                        // Splash.hide();
-                      },
-                    ],
-                  },
-                  item.nickname,
-                ),
-              );
-            }
-          });
-
-          Splash.show(search, false);
-
-          input.focus();
-        }
-      });
-
-      middle.append(player);
-    }
-
-    body.append(View.header(), DOM({ style: 'main-body-column' }, top, party));
-
-    return body;
-  }
   /*
     static async history(isWindow) {
 
@@ -4693,7 +4552,7 @@ export class View {
         const [result] = await Promise.all([
           isHeroStatsView
             ? App.api.request(App.CURRENT_MM, 'topHeroStats')
-            : App.api.request(App.CURRENT_MM, 'top', { limit: 100, hero: heroId, mode: activeMode }),
+            : App.api.request(App.CURRENT_MM, activePlayerPeriod === 'recent' ? 'topActive' : 'top', { limit: 100, hero: heroId, mode: activeMode }),
           (async () => {
             if (!MM.hero) {
               try {
@@ -4715,13 +4574,20 @@ export class View {
           makeHeroStatsTable(listScroll);
           listScroll.removeAttribute('aria-busy');
         } else {
-          renderPlayerList(Array.isArray(result) ? result : [], currentLoadId);
+          if (!Array.isArray(result)) throw new Error('Invalid Hall of Fame response');
+          renderPlayerList(result, currentLoadId);
         }
       } catch (error) {
         if (!body.isConnected || currentLoadId !== loadId) return;
         console.error('Hall of Fame failed to load', error);
         listScroll.removeAttribute('aria-busy');
-        showListStatus('topLoadError', true);
+        const reason = typeof error === 'string' ? error : error?.message;
+        const recentError = !isHeroStatsView && activePlayerPeriod === 'recent';
+        const statusKey = recentError && reason === 'activeRatingIndexRequired'
+          ? 'topRecentPlayersNotReady'
+          : recentError && ['activeRatingBusy', 'activeRatingRetryLater'].includes(reason)
+            ? 'topRecentPlayersBusy' : 'topLoadError';
+        showListStatus(statusKey, true);
       }
     };
     showListStatus('topLoading');
@@ -4769,17 +4635,7 @@ export class View {
               tabButton.classList.toggle('is-active', selected);
               tabButton.setAttribute('aria-selected', String(selected));
             }
-            ++loadId;
-            listScroll.removeAttribute('aria-busy');
-            if (period === 'all') {
-              loadTop();
-            } else {
-              const status = DOM({ style: 'wtop-list-status' });
-              status.setAttribute('role', 'status');
-              status.append(DOM({ style: 'wtop-list-status-text' }, Lang.text('topRecentPlayersUnavailable')));
-              // TODO: Finish 30-day rankings after the technical server update is released.
-              listScroll.replaceChildren(status);
-            }
+            loadTop();
           }],
         });
         button.setAttribute('role', 'tab');
@@ -4798,7 +4654,7 @@ export class View {
       const now = Date.now();
       if (now >= nextUpdateAt) {
         nextUpdateAt = Timer.getNextMoscowMidnight(now);
-        if (isHeroStatsView || activePlayerPeriod === 'all') loadTop();
+        loadTop();
       }
       const remaining = Math.min(Timer.oneDay - 1000, Math.ceil((nextUpdateAt - now) / 1000) * 1000);
       updateTime.textContent = Timer.getFormattedTimer(remaining) || '00:00';

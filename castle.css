@@ -1932,6 +1932,15 @@ body {
   z-index: 130;
 }
 
+/* Keep hero navigation reachable above the build backdrop. */
+body:has(#wbuild) .castle-bottom-content-container {
+  z-index: 101;
+}
+
+body:has(#wbuild) .castle-bottom-content {
+  pointer-events: auto;
+}
+
 .castle-bottom-content-container::before {
   content: '';
   position: absolute;
@@ -2266,6 +2275,7 @@ body {
 }
 
 .castle-roster-list-search-wrap {
+  --castle-roster-search-raise: 0.4cqh;
   box-sizing: border-box;
   overflow: hidden;
   border: 1px solid rgb(217, 193, 111);
@@ -2276,10 +2286,10 @@ body {
 .castle-roster-list-search-wrap::before {
   content: '';
   position: absolute;
-  top: 0.55cqh;
-  right: 0.55cqh;
-  bottom: calc(var(--castle-hero-lists-content-lift) + 0.55cqh);
-  left: 0.55cqh;
+  top: calc(0.55cqh - var(--castle-roster-search-raise));
+  right: calc(0.55cqh - var(--castle-roster-search-raise));
+  bottom: calc(var(--castle-hero-lists-content-lift) + 0.55cqh + var(--castle-roster-search-raise));
+  left: calc(0.55cqh - var(--castle-roster-search-raise));
   border: 1px solid rgba(217, 193, 111, 0.72);
   border-radius: 999px;
   background:
@@ -2295,11 +2305,13 @@ body {
   background: transparent;
   padding-left: 1.4cqh;
   padding-bottom: calc(var(--castle-hero-lists-content-lift) + 0.15cqh);
+  top: calc(-1 * var(--castle-roster-search-raise));
   text-shadow: #000 0 0 0.5cqh;
 }
 
 .castle-roster-list-search-wrap .castle-hero-list-search-clear {
   z-index: 2;
+  top: calc(-1 * var(--castle-roster-search-raise));
 }
 
 .castle-bottom-content {
@@ -2777,6 +2789,38 @@ body {
   z-index: 3;
   pointer-events: none;
   filter: drop-shadow(0 0.35cqh 0.3cqh rgba(0, 0, 0, 0.7));
+}
+
+.castle-friend-last-seen {
+  position: absolute;
+  left: 50%;
+  bottom: 36cqh;
+  transform: translateX(-50%);
+  max-width: 88%;
+  padding: 0.6cqh 2.4cqh;
+  box-sizing: border-box;
+  border-radius: 3cqh;
+  border: 0.25cqh solid rgba(142, 150, 96, 0.7);
+  background: linear-gradient(rgba(20, 24, 18, 0.82), rgba(8, 10, 8, 0.82));
+  box-shadow: 0 0.4cqh 1cqh rgba(0, 0, 0, 0.55);
+  color: rgba(252, 229, 188, 0.92);
+  font: 6.6cqh / 1.2 'DejaVuSans', sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-shadow: rgba(0, 0, 0, 1) 0.1cqh 0.1cqh 0.2cqh;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.castle-friend-last-seen::before {
+  content: '🕓';
+  margin-right: 1cqh;
+  opacity: 0.85;
+}
+
+.castle-friend-last-seen.castle-friend-since::before {
+  content: '⏱';
 }
 
 .castle-friend-request {
@@ -3708,7 +3752,7 @@ body {
   padding: 0;
   border: 0;
   border-radius: 50%;
-  background: url('icons/hall-of-fame.png') center / 6.05cqh 6.05cqh no-repeat;
+  background: url('icons/hall-of-fame.png') center / 5.7cqh 5.7cqh no-repeat;
   opacity: 0.8;
   cursor: var(--cursor-pointer);
   transition: opacity 160ms ease, filter 160ms ease;
@@ -3718,6 +3762,42 @@ body {
 .launcher-hall-of-fame-quick-tab:focus-visible {
   opacity: 1;
   filter: brightness(1.1);
+}
+
+.launcher-restart-quick-tab {
+  position: fixed;
+  right: 1.15cqh;
+  top: 29.4cqh;
+  z-index: 80;
+  width: 6.4cqh;
+  height: 6.4cqh;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0.35cqh solid #e1c64d;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #b6e35a, #4f9a1f 55%, #2c5e10);
+  box-shadow: 0 0.35cqh 0.45cqh rgba(0, 0, 0, 0.52), 0 0 1cqh rgba(182, 227, 90, 0.55);
+  color: #fff6c8;
+  font: bold 3.6cqh / 1 'DejaVuSans', sans-serif;
+  text-shadow: 0 0.15cqh 0.25cqh rgba(0, 0, 0, 0.8);
+  cursor: var(--cursor-pointer);
+  animation: launcher-notification-pulse 1.4s ease-in-out infinite;
+  transition: filter 160ms ease;
+}
+
+.launcher-restart-quick-tab::before {
+  content: '⟳';
+}
+
+.launcher-restart-quick-tab:hover,
+.launcher-restart-quick-tab:focus-visible {
+  filter: brightness(1.15);
+}
+
+.launcher-restart-quick-tab.is-busy {
+  animation: none;
+  filter: grayscale(0.6);
+  cursor: default;
 }
 
 .launcher-hall-of-fame-quick-tab:focus-visible {
@@ -5456,5 +5536,75 @@ body {
 
   .launcher-notification-detail-title {
     font-size: 2.45cqh;
+  }
+}
+
+/* News panel: adaptive layout for any aspect ratio / DPI */
+.launcher-notifications-panel.is-news-tab .launcher-notifications-body {
+  grid-template-columns: minmax(26cqh, 31%) minmax(0, 1fr);
+}
+
+.launcher-news-item .launcher-notification-meta {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  row-gap: 0.25cqh;
+}
+
+.launcher-news-item .launcher-notification-title {
+  flex: 1 1 100%;
+}
+
+.launcher-news-item .launcher-notification-date {
+  font-size: 1.3cqh;
+  opacity: 0.85;
+}
+
+.launcher-news-item .launcher-notification-message {
+  -webkit-line-clamp: 1;
+}
+
+.launcher-news-banner {
+  padding-top: 6.2cqh;
+}
+
+.launcher-news-banner-content {
+  max-width: 100%;
+  min-width: 0;
+}
+
+.launcher-news-banner-title {
+  font-size: min(4.1cqh, 2.3cqw);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 780px), (max-height: 560px) {
+  .launcher-notifications-panel.is-news-tab .launcher-notifications-body {
+    grid-template-columns: 1fr;
+  }
+
+  .launcher-notifications-panel.is-news-tab .launcher-notifications-list {
+    padding-top: 5.6cqh;
+  }
+
+  .launcher-news-item .launcher-notification-meta {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .launcher-news-item .launcher-notification-title {
+    flex: 1 1 auto;
+  }
+
+  .launcher-news-banner {
+    min-height: 15cqh;
+    padding-top: 2.2cqh;
+  }
+
+  .launcher-news-banner-title {
+    font-size: min(3.3cqh, 3cqw);
   }
 }

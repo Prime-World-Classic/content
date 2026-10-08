@@ -1159,7 +1159,18 @@ export class Chat {
       const canModerate = App.isAdmin() || App.isHelper();
       let body = document.createDocumentFragment();
       const modalTitle = DOM({ style: 'title-modal' }, DOM({ style: 'title-modal-text' }, 'Чат'));
-      const nicknameLine = DOM({ id: 'friendRemoveText' }, String(data.nickname || ''));
+      const nicknameLine = DOM(
+        { id: 'friendRemoveText', style: 'chat-player-menu-nickname' },
+        DOM({ tag: 'span' }, String(data.nickname || '')),
+      );
+      nicknameLine.tabIndex = 0;
+      const updateNicknameOverflow = () => {
+        const overflow = Math.max(0, nicknameLine.firstChild.offsetWidth - nicknameLine.clientWidth);
+        nicknameLine.style.setProperty('--nickname-scroll-distance', `${overflow}px`);
+        nicknameLine.classList.toggle('chat-player-menu-nickname--overflowing', overflow > 1);
+      };
+      nicknameLine.addEventListener('mouseenter', updateNicknameOverflow);
+      nicknameLine.addEventListener('focus', updateNicknameOverflow);
 
       body.append(
         modalTitle,
@@ -1211,7 +1222,8 @@ export class Chat {
         ),
       );
 
-      Splash.show(body);
+      Splash.show(DOM({ style: 'chat-player-menu' }, body));
+      requestAnimationFrame(updateNicknameOverflow);
       return false;
     });
 
